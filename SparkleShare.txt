@@ -1,4 +1,4 @@
-Congratulations, you've successfully created a SparkleShare repository!
+Congratulations, you've successfully created a SparkleShare
 
 Any files you add or change in this folder will be automatically synced to 
 ssh://git@github.com/S-Balandine/NHIPS.git and everyone connected to it.
