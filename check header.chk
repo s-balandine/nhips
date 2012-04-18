@@ -1,0 +1,765 @@
+LABELBLOCK
+  LABEL transports
+    1  Baleiniere
+    2  Chameaux
+    3  Cheval
+    4  Mobylette
+    5  Moto
+    6  Pedestre
+    7  Pirogue
+    8  Velo
+    9  Voiture
+  END
+  LABEL formulaires
+    1  "Centre de sante"
+    2  Hopital
+  END
+  LABEL structures
+    1  Confessional
+    2  ONG.
+    3  Privee
+    4  Public
+  END
+  LABEL centres
+    1  Urbain
+    2  Rural
+  END
+  LABEL etats
+    3  Bon
+    2  Moyen
+    1  Mauvais
+    0  "Tres mauvais"
+  END
+  LABEL materiels
+    1  Banco
+    2  Semi-dur
+    3  Dur
+  END
+  LABEL eaux
+    1  Forage
+    2  Adduction
+    3  Non
+  END
+  LABEL ouinon
+    1  Oui
+    0  Non
+  END
+  LABEL deplacements
+    1  Pedestre
+    2  Animaux
+    3  Charette
+    4  "2 roues motorisées"
+    5  "4 roues motorisées"
+  END
+  LABEL hopitaux
+    1  "Hopital de district"
+    2  "Hopital regional"
+  END
+END
+
+date
+  MUSTENTER
+END
+
+etransport
+  COMMENT LEGAL USE transports SHOW
+  TYPE COMMENT 
+END
+
+etypstruct
+  COMMENT LEGAL USE formulaires SHOW
+  JUMPS
+    2 hstruct
+  END
+  MUSTENTER
+  TYPE COMMENT 
+END
+
+csstruct
+  COMMENT LEGAL USE structures SHOW
+  MUSTENTER
+  TYPE COMMENT 
+END
+
+cstype
+  COMMENT LEGAL USE centres SHOW
+  MUSTENTER
+  TYPE COMMENT 
+END
+
+cs
+  KEY UNIQUE 1
+END
+
+cszra
+  RANGE 0 9999
+END
+
+cszra1
+  RANGE 0 9999
+END
+
+cszra2
+  RANGE 0 9999
+END
+
+cszrb
+  RANGE 0 9999
+END
+
+cszrb1
+  RANGE 0 9999
+END
+
+cszrb2
+  RANGE 0 9999
+END
+
+cszrnmab
+  RANGE 0 9999
+END
+
+cszrnmab1
+  RANGE 0 9999
+END
+
+cszrnmab2
+  RANGE 0 9999
+END
+
+cszrtot
+  RANGE 0 9999
+END
+
+cszrtot1
+  RANGE 0 9999
+END
+
+cszrtot2
+  RANGE 0 9999
+END
+
+csmbtchir
+  RANGE 0 99
+  AUTOJUMP csmcentrif
+END
+
+csaconsult
+  RANGE 0 9999
+  AUTOJUMP csasuperv
+END
+
+csmcentrif
+  RANGE 0 99
+  AUTOJUMP csmcharsoi
+END
+
+csasuperv
+  RANGE 0 9999
+  AUTOJUMP csanouvcas
+END
+
+csmcharsoi
+  RANGE 0 99
+  AUTOJUMP csmincdech
+END
+
+csanouvcas
+  RANGE 0 9999
+  AUTOJUMP csaces
+END
+
+csmincdech
+  RANGE 0 99
+  AUTOJUMP csmlit
+END
+
+csaces
+  RANGE 0 9999
+  AUTOJUMP csaenfvacc
+END
+
+csmlit
+  RANGE 0 99
+  AUTOJUMP csmmicros
+END
+
+csaenfvacc
+  RANGE 0 9999
+  AUTOJUMP csaconspre
+END
+
+csmmicros
+  RANGE 0 99
+  AUTOJUMP csmotos
+END
+
+csaconspre
+  RANGE 0 9999
+  AUTOJUMP csaacc
+END
+
+csmotos
+  RANGE 0 99
+  AUTOJUMP csmpesebeb
+END
+
+csaacc
+  RANGE 0 9999
+  AUTOJUMP csaaccref
+END
+
+csmpesebeb
+  RANGE 0 99
+  AUTOJUMP csmpeseper
+END
+
+csaaccref
+  RANGE 0 9999
+  AUTOJUMP csautilbet
+END
+
+csmpeseper
+  RANGE 0 99
+  AUTOJUMP csmpotperf
+END
+
+csautilbet
+  RANGE 0 9999
+  AUTOJUMP csamalchro
+END
+
+csmpotperf
+  RANGE 0 99
+  AUTOJUMP csmrefrig
+END
+
+csamalchro
+  RANGE 0 9999
+  AUTOJUMP csacasref
+END
+
+csmrefrig
+  RANGE 0 99
+  AUTOJUMP csmtherm
+END
+
+csacasref
+  RANGE 0 9999
+  AUTOJUMP cssbat
+END
+
+csmtherm
+  RANGE 0 99
+  AUTOJUMP csmstethos
+END
+
+csmstethos
+  RANGE 0 99
+  AUTOJUMP csmstetobs
+END
+
+csmstetobs
+  RANGE 0 99
+  AUTOJUMP csmtableac
+END
+
+csmtableac
+  RANGE 0 99
+  AUTOJUMP csmtensio
+END
+
+csmtensio
+  AUTOJUMP csaconsult
+END
+
+cssbat
+  RANGE 0 99
+  AUTOJUMP cssdatcons
+END
+
+cstvoiture
+  RANGE 0 99
+  AUTOJUMP cstmoto
+END
+
+cssdatcons
+  AUTOJUMP cssetat
+END
+
+cstmoto
+  RANGE 0 99
+  AUTOJUMP cstmobylet
+END
+
+cssetat
+  COMMENT LEGAL USE etats SHOW
+  AUTOJUMP cssmaterie
+  TYPE COMMENT 
+END
+
+cstmobylet
+  RANGE 0 99
+  AUTOJUMP cstciviere
+END
+
+cssmaterie
+  COMMENT LEGAL USE materiels SHOW
+  AUTOJUMP cssloge
+  TYPE COMMENT 
+END
+
+cstciviere
+  RANGE 0 99
+  AUTOJUMP cstvelo
+END
+
+cssloge
+  RANGE 0 99
+  AUTOJUMP csssalle
+END
+
+cstvelo
+  RANGE 0 99
+  AUTOJUMP cstpirogue
+END
+
+csssalle
+  RANGE 0 99
+  AUTOJUMP csslatrin
+END
+
+cstpirogue
+  RANGE 0 99
+  AUTOJUMP cstchar
+END
+
+csslatrin
+  RANGE 0 99
+  AUTOJUMP cssdispeau
+END
+
+cstchar
+  RANGE 0 99
+  AUTOJUMP cstanimaux
+END
+
+cssdispeau
+  COMMENT LEGAL USE eaux SHOW
+  AUTOJUMP cssalielec
+  TYPE COMMENT 
+END
+
+cstanimaux
+  RANGE 0 99
+  AUTOJUMP cstextel
+END
+
+cssalielec
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP cssdatsupe
+  TYPE COMMENT 
+END
+
+cstextel
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP cstexradio
+  TYPE COMMENT 
+END
+
+cssdatsupe
+  AUTOJUMP cssevaceau
+END
+
+cstexradio
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP cstmsec
+  TYPE COMMENT 
+END
+
+cssevaceau
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP cstvoiture
+  TYPE COMMENT 
+END
+
+cstmsec
+  COMMENT LEGAL USE deplacements SHOW
+  TYPE COMMENT 
+END
+
+cstmpluie
+  COMMENT LEGAL USE deplacements SHOW
+  TYPE COMMENT 
+END
+
+hstruct
+  COMMENT LEGAL USE structures SHOW
+  MUSTENTER
+  TYPE COMMENT 
+END
+
+h
+  KEY UNIQUE 2
+END
+
+htype
+  COMMENT LEGAL USE hopitaux SHOW
+  MUSTENTER
+  TYPE COMMENT 
+END
+
+hmaspirat
+  RANGE 0 99
+  AUTOJUMP hmctfgelec
+END
+
+haconstot
+  RANGE 0 9999
+  AUTOJUMP haconsgyno
+END
+
+hmctfgelec
+  RANGE 0 99
+  AUTOJUMP hmctfgmanu
+END
+
+hmctfgmanu
+  RANGE 0 99
+  AUTOJUMP hmchariot
+END
+
+haconsgyno
+  RANGE 0 9999
+  AUTOJUMP haconspedt
+END
+
+hmchariot
+  RANGE 0 99
+  AUTOJUMP hmdetectpl
+END
+
+haconspedt
+  RANGE 0 9999
+  AUTOJUMP haconschir
+END
+
+hmdetectpl
+  RANGE 0 99
+  AUTOJUMP hmelectro
+END
+
+haconschir
+  RANGE 0 9999
+  AUTOJUMP haconsmedg
+END
+
+hmelectro
+  RANGE 0 99
+  AUTOJUMP hmetuve
+END
+
+haconsmedg
+  RANGE 0 9999
+  AUTOJUMP haconsdent
+END
+
+hmetuve
+  RANGE 0 99
+  AUTOJUMP hmextract
+END
+
+haconsdent
+  RANGE 0 9999
+  AUTOJUMP hacesarien
+END
+
+hmextract
+  RANGE 0 99
+  AUTOJUMP hmlampopem
+END
+
+hacesarien
+  RANGE 0 9999
+  AUTOJUMP hatothosp
+END
+
+hmlampopem
+  RANGE 0 99
+  AUTOJUMP hmlampopep
+END
+
+hatothosp
+  RANGE 0 9999
+  AUTOJUMP hajhospgyn
+END
+
+hmlampopep
+  RANGE 0 99
+  AUTOJUMP hmmicros
+END
+
+hmmicros
+  RANGE 0 99
+  AUTOJUMP hmnegatos
+END
+
+hajhospgyn
+  RANGE 0 9999
+  AUTOJUMP hajhospped
+END
+
+hmnegatos
+  RANGE 0 99
+  AUTOJUMP hmoxymetre
+END
+
+hajhospped
+  RANGE 0 9999
+  AUTOJUMP hajhospchi
+END
+
+hmoxymetre
+  RANGE 0 99
+  AUTOJUMP hmpssering
+END
+
+hajhospchi
+  RANGE 0 9999
+  AUTOJUMP hajhospmed
+END
+
+hmpssering
+  RANGE 0 99
+  AUTOJUMP hmpesepers
+END
+
+hajhospmed
+  RANGE 0 9999
+  AUTOJUMP hadursej
+END
+
+hmpesepers
+  RANGE 0 99
+  AUTOJUMP hmelectro1
+END
+
+hadursej
+  RANGE 0 9999
+  AUTOJUMP haaccou
+END
+
+hmelectro1
+  RANGE 0 99
+  AUTOJUMP hmgrpelec
+END
+
+hmgrpelec
+  RANGE 0 99
+  AUTOJUMP hmrespir
+END
+
+haaccou
+  RANGE 0 9999
+  AUTOJUMP haintvtchi
+END
+
+hmrespir
+  RANGE 0 99
+  AUTOJUMP hmtableacc
+END
+
+haintvtchi
+  RANGE 0 9999
+  AUTOJUMP hacasref
+END
+
+hmtableacc
+  RANGE 0 99
+  AUTOJUMP hmtablerea
+END
+
+hacasref
+  RANGE 0 9999
+  AUTOJUMP hatxoccup
+END
+
+hmtablerea
+  RANGE 0 99
+  AUTOJUMP hmtableope
+END
+
+hatxoccup
+  RANGE 0 9999
+  AUTOJUMP haactradio
+END
+
+hmtableope
+  RANGE 0 99
+  AUTOJUMP hmlithosp
+END
+
+hmlithosp
+  RANGE 0 99
+  AUTOJUMP hmappareil
+END
+
+haactradio
+  RANGE 0 9999
+  AUTOJUMP haactecho
+END
+
+hmappareil
+  RANGE 0 99
+  AUTOJUMP haconstot
+END
+
+haactecho
+  RANGE 0 9999
+  AUTOJUMP haactelect
+END
+
+haactelect
+  RANGE 0 9999
+  AUTOJUMP haactexbac
+END
+
+haactexbac
+  RANGE 0 9999
+  AUTOJUMP haactexbio
+END
+
+haactexbio
+  RANGE 0 9999
+  AUTOJUMP hatestvih
+END
+
+hatestvih
+  RANGE 0 9999
+  AUTOJUMP htambul
+END
+
+htambul
+  RANGE 0 99
+  AUTOJUMP htvelo
+END
+
+hibat
+  RANGE 0 99
+END
+
+hibat1
+  AUTOJUMP hisallehos
+END
+
+htvelo
+  RANGE 0 99
+  AUTOJUMP htmoto
+END
+
+hisallehos
+  RANGE 0 99
+END
+
+hisalleho1
+  AUTOJUMP hisallesoi
+END
+
+htmoto
+  RANGE 0 99
+  AUTOJUMP htvehicule
+END
+
+hisallesoi
+  RANGE 0 99
+END
+
+hisalleso1
+  AUTOJUMP hiloge
+END
+
+htvehicule
+  RANGE 0 99
+  AUTOJUMP htphotocop
+END
+
+hiloge
+  RANGE 0 99
+END
+
+hiloge1
+  AUTOJUMP hibatautre
+END
+
+htphotocop
+  RANGE 0 99
+  AUTOJUMP htordi
+END
+
+hibatautre
+  RANGE 0 99
+END
+
+hibatautr1
+  AUTOJUMP hiincdeche
+END
+
+htordi
+  RANGE 0 99
+  AUTOJUMP httel
+END
+
+hiincdeche
+  RANGE 0 99
+END
+
+hiincdech1
+  AUTOJUMP hiblocope
+END
+
+httel
+  RANGE 0 99
+  AUTOJUMP htfax
+END
+
+hiblocope
+  RANGE 0 99
+  AUTOJUMP hisanitair
+END
+
+htfax
+  RANGE 0 99
+  AUTOJUMP htradio
+END
+
+hisanitair
+  RANGE 0 99
+  AUTOJUMP hicuisine
+END
+
+htradio
+  RANGE 0 99
+  AUTOJUMP htinternet
+END
+
+hicuisine
+  RANGE 0 99
+  AUTOJUMP hidispeau
+END
+
+htinternet
+  RANGE 0 99
+  AUTOJUMP hibat
+END
+
+hidispeau
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP hialimelec
+  TYPE COMMENT 
+END
+
+hialimelec
+  COMMENT LEGAL USE ouinon SHOW
+  AUTOJUMP date
+  TYPE COMMENT 
+END

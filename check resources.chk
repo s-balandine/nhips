@@ -1,0 +1,115 @@
+
+@var@
+  range 0 25
+  if ((@var@2<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<>@var@2)) then
+    help "le total est différent de la somme des hommes et des femmes \n\ncontrolez les données svp" type=warning
+    goto @var@
+    exit
+  endif
+  if ((@var@3<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<@var@3)) then
+    help "le nombre de resources >=50 est supérieur à la somme des hommes et des femmes ou du total \n\ncontrolez les données svp" type=warning
+    goto @var@
+    exit
+  endif
+  if ((@var@3<>.) and (@var@2<>.) and (@var@2<@var@3)) then
+    help "le nombre de resources >=50 est supérieur au total \n\ncontrolez les données svp" type=warning
+    goto @var@
+    exit
+  endif
+  if ((@var@3<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le nombre de resources >=50 est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@
+    exit
+  endif
+  if ((@var@4<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le pourcentage d'administratif est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@
+    exit
+  endif
+end
+
+@var@1
+  range 0 25
+  if ((@var@2<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<>@var@2)) then
+    help "le total est différent de la somme des hommes et des femmes \n\ncontrolez les données svp" type=warning
+    goto @var@1
+    exit
+  endif
+  if ((@var@3<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<@var@3)) then
+    help "le nombre de resources >=50 est supérieur à la somme des hommes et des femmes ou du total \n\ncontrolez les données svp" type=warning
+    goto @var@1
+    exit
+  endif
+  if ((@var@3<>.) and (@var@2<>.) and (@var@2<@var@3)) then
+    help "le nombre de resources >=50 est supérieur au total \n\ncontrolez les données svp" type=warning
+    goto @var@1
+    exit
+  endif
+  if ((@var@3<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le nombre de resources >=50 est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@1
+    exit
+  endif
+  if ((@var@4<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le pourcentage d'administratif est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@1
+    exit
+  endif
+end
+
+@var@2
+  range 0 50
+  if ((@var@2<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<>@var@2)) then
+    help "le total est différent de la somme des hommes et des femmes \n\ncontrolez les données svp" type=warning
+    goto @var@2
+    exit
+  endif
+  if ((@var@3<>.) and ((@var@<>.) or (@var@1<>.)) and (@var@+@var@1<@var@3)) then
+    help "le nombre de resources >=50 est supérieur à la somme des hommes et des femmes ou du total \n\ncontrolez les données svp" type=warning
+    goto @var@2
+    exit
+  endif
+  if ((@var@3<>.) and (@var@2<>.) and (@var@2<@var@3)) then
+    help "le nombre de resources >=50 est supérieur au total \n\ncontrolez les données svp" type=warning
+    goto @var@2
+    exit
+  endif
+  if ((@var@3<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le nombre de resources >=50 est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@2
+    exit
+  endif
+  if ((@var@4<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le pourcentage d'administratif est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@2
+    exit
+  endif
+end
+
+@var@3
+  range 0 50
+  if ((@var@3<>.) and (@var@2<>.) and (@var@2<@var@3)) then
+    help "le nombre de resources >=50 est supérieur au total \n\ncontrolez les données svp" type=warning
+    goto @var@3
+    exit
+  endif
+  if ((@var@3<>.) and (@var@2<>.) and (@var@2<@var@3)) then
+    help "le nombre de resources >=50 est supérieur au total \n\ncontrolez les données svp" type=warning
+    goto @var@3
+    exit
+  endif
+  if ((@var@3<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le nombre de resources >=50 est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@3
+    exit
+  endif
+end
+
+@var@4
+  range 0 100
+  if ((@var@4<>.) and (@var@=.) and (@var@1=.) and (@var@2=.)) then
+    help "le pourcentage d'administratif est renseigné mais pas le nombre de ressources homme, femme ou total\n\ncontrolez les données svp" type=warning
+    goto @var@4
+    exit
+  endif
+end

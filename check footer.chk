@@ -1,0 +1,20 @@
+
+after file
+ define filename ___________________________________________________________________________________
+ let filename = string(day(today))
+ if month(today) < 10 then
+   if day(today) < 10 then
+     filename = "survey-0" + string(day(today))  +  "0" + string(month(today)) + string(year(today)) + ".rec" 
+   else
+     filename = "survey-"  + string(day(today))  +  "0" + string(month(today)) + string(year(today)) + ".rec"
+   endif
+ else
+   if day(today) < 10 then
+     filename = "survey-0" + string(day(today))  +        string(month(today)) + string(year(today)) + ".rec" 
+   else
+     filename = "survey-"  + string(day(today))  +        string(month(today))  + string(year(today)) + ".rec"
+   endif
+ endif
+ execute cmd  "/c mkdir backup" wait hide 
+ execute cmd "/c copy /y survey.rec backup\@filename" wait hide 
+end

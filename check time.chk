@@ -1,0 +1,24 @@
+
+@var@1
+  range 0 23
+  after entry
+    if ((@var@1=.) and (@var@2<>.)) then
+      help "vous devez renseigné l'heure\n\ncontrolez les données svp" type=warning
+      goto @var@1
+    endif
+  end
+end
+
+@var@2
+  range 0 59
+  after entry
+    if ((@var@1=.) and (@var@2<>.)) then
+      help "vous devez renseigné l'heure\n\ncontrolez les données svp" type=warning
+      goto @var@1
+    endif
+    if ((@var@1<>.) and (@var@2=.)) then
+      help "vous devez renseigné les minutes\n\ncontrolez les données svp" type=warning
+      goto @var@2
+    endif
+  end
+end
