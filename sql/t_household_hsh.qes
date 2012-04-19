@@ -1,9 +1,8 @@
-                             |==========================================
-                             |  SURVEY TITLE
-                             |  FORM
-                             |==========================================
-
-HSH_PRIMARY_KEY             |  Primary Key                             
+                            |==========================================
+                            |  SURVEY TITLE
+                            |  FORM
+                            |==========================================
+                            |HSH_PRIMARY_KEY             |  Primary Key                             
 HSH_IDENTIFIER_OF_CLUSTER   |  Identifier of Cluster                   @<A                                >
 HSH_IDENTIFIER_OF_HOUSEHOLD |  Identifier of Household                 @<A                                >
 HSH_INTERVIEW_SUPERVISOR    |  Interview Supervisor                    
