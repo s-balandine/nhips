@@ -72,8 +72,8 @@ For Each oTable In oTables
       Template = oTable.BeginScript
       Template = Replace(Template, vbCrLf, "\n")
       
-      P1 = InStr(1 , Template, "=", 1)
-      P2 = InStr(P1, "¤", Template, 1)
+      P1 = InStr(1 , Template, "¤", 1)
+      P2 = InStr(P1, Template, "¤", 1)
       
       While P1
       Wend
