@@ -78,7 +78,7 @@ For Each oTable In oTables
          Set oColumn=oTable.Columns.Item(Ni)
          If IsObject(oColumn) And Not (oColumn.Computed) Then
             If Mid(oColumn.DataType, 1, 7) = "VARCHAR" then
-              Desc = Desc & oColumn.Code &  Space(33-Len(oColumn.Code)) & "<A>" & Space(oColumn.Length) & ">" & vbCrLf
+              Desc = Desc & oColumn.Code &  Space(33-Len(oColumn.Code)) & "<A" & Space(oColumn.Length) & ">" & vbCrLf
             End If
          End If
       Next
