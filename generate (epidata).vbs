@@ -68,10 +68,11 @@ WScript.Echo "Création des tables (fichiers)"
 For Each oTable In oTables
    If IsObject(oTable) Then
       WScript.Echo "  " & oTable.Name
-	  
-	  Desc =        "/* SURVEY TITLE */" & vbCrLf
-	  Desc = Desc & "/* FORM */" & vbCrLf
-	  Desc = Desc & "/* .................................................................................... */" & vbCrLf & vbCrLf
+      
+	  Desc =        "================================================================================"
+	  Desc =        "  SURVEY TITLE" & vbCrLf
+	  Desc = Desc & "  FORM" & vbCrLf
+	  Desc = Desc & "================================================================================/" & vbCrLf & vbCrLf
       
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
