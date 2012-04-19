@@ -68,13 +68,9 @@ WScript.Echo "Création des tables (fichiers)"
 For Each oTable In oTables
    If IsObject(oTable) Then
       WScript.Echo "  " & oTable.Name
-      
-	  Desc =        "================================================================================"
-	  Desc =        "  SURVEY TITLE" & vbCrLf
-	  Desc = Desc & "  FORM" & vbCrLf
-	  Desc = Desc & "================================================================================/" & vbCrLf & vbCrLf
-      
+            
       CodeMax = 0
+      FieldMax = 0
       
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
@@ -82,8 +78,16 @@ For Each oTable In oTables
             If CodeMax < Len(oColumn.Code) then 
               CodeMax = Len(oColumn.Code)
             End if
+            If FieldMax < Len(oColumn.Length) then 
+              FieldMax = Len(oColumn.Length)
+            End if
          End If
       Next
+
+      Desc =        "|" & String(CodeMax + 40 + FieldMax)
+	  Desc =        "|  SURVEY TITLE" & vbCrLf
+	  Desc = Desc & "|  FORM" & vbCrLf
+	  Desc = Desc & "|" & vbCrLf & vbCrLf
 
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
