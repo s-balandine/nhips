@@ -74,9 +74,8 @@ For Each oTable In oTables
       
       P1 = InStr(1   , Template, "¤", 1)
       P2 = P1
-      Template = "kjh k jhkjh kj @@@@@ @@@@ "
       Set regEx = New RegExp
-      regEx.Pattern = "@+"
+      regEx.Pattern = "¤+"
       regEx.IgnoreCase = True
       regEx.Global = True
       Set Matches = regEx.Execute(Template)
