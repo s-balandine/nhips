@@ -67,86 +67,62 @@ WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
    If IsObject(oTable) And (oTable.Name="Household") Then
+   
       WScript.Echo "  " & oTable.Name
             
       Template = oTable.BeginScript
       Template = Replace(Template, vbCrLf, "\n")
       
-      P1 = InStr(1   , Template, "¤", 1)
-      P2 = P1
       
       Set regEx = New RegExp
       regEx.IgnoreCase = True
-      regEx.Global = True
+      'regEx.Global = True
       
-      regEx.Pattern = "¤+"
-      Set Matches1 = regEx.Execute(Template)
-      RetStr = ""
-      For Each Match in Matches1
-         RetStr = RetStr & "Match " & I & " found at position "
-         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
-         RetStr = RetStr & Match.Value & "'." & vbCRLF
-      Next
-      RetStr1 = RetStr
+      Do
       
-      regEx.Pattern = ":[A-Z_]+"
-      Set Matches2 = regEx.Execute(Template)
-      RetStr = ""
-      For Each Match in Matches2
-         RetStr = RetStr & "Match " & I & " found at position "
-         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
-         RetStr = RetStr & Match.Value & "'." & vbCRLF
-      Next
-      RetStr2 = RetStr
+	      regEx.Pattern = "¤+"
+	      Set Matches1 = regEx.Execute(Template)
+	      regEx.Pattern = ":[A-Z_]+"
+	      Set Matches2 = regEx.Execute(Template)
+	
+	      If Not Matches1 Then Break
+	      
+	      For Each Match in Matches1
+	         RetStr = RetStr & "Match " & I & " found at position "
+	         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
+	         RetStr = RetStr & Match.Value & "'." & vbCRLF
+	      Next
+	      RetStr1 = RetStr
+	      
+	      RetStr = ""
+	      For Each Match in Matches2
+	         RetStr = RetStr & "Match " & I & " found at position "
+	         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
+	         RetStr = RetStr & Match.Value & "'." & vbCRLF
+	      Next
+	      RetStr2 = RetStr
+	      
+	      Set oColumn=Nothing
+	      
+	      For Each Match in Matches2
+	        Set oColumn=oTable.Columns.Item(Match.Value)
+	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match.Value)Then
+	            Break
+	         End If
+	      Next 
+	      
+	      If Mid(oColumn.DataType, 1, 7) = "VARCHAR" Then
+	        Template = _
+	          Mid(Template, 1, Match.FirstIndex, Match.Length) + "@<A" & Space(oColumn.Length) & ">" + _
+	          Mid(Template, Match.FirstIndex + Match.Length)
+	      End If
       
-      Set oColumn=Nothing
+      Loop
       
-      For Each Match in Matches2
-        Set oColumn=oTable.Columns.Item(Match.Value)
-        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match.Value)Then
-            Break
-         End If
-      Next 
-      
-      CodeMax = 0
-      FieldMax = 0
-      
-      For Ni=0 to oTable.Columns.Count -1
-         Set oColumn=oTable.Columns.Item(Ni)
-         If IsObject(oColumn) And Not (oColumn.Computed) Then
-            If CodeMax < Len(oColumn.Code) then 
-              CodeMax = Len(oColumn.Code)
-            End if
-            If FieldMax < Len(oColumn.Length) then 
-              FieldMax = Len(oColumn.Length)
-            End if
-         End If
-      Next
-
-      Desc =        Space(CodeMax + 1) & "|" & String(40 + FieldMax, "=") & vbCrLf
-	  Desc = Desc & Space(CodeMax + 1) & "|  SURVEY TITLE" & vbCrLf
-	  Desc = Desc & Space(CodeMax + 1) & "|  FORM" & vbCrLf
-	  Desc = Desc & Space(CodeMax + 1) & "|" & String(40 + FieldMax, "=") & vbCrLf
-	  Desc = Desc & Space(CodeMax + 1) & "|"
-	  
-      For Ni=0 to oTable.Columns.Count -1
-         Set oColumn=oTable.Columns.Item(Ni)
-         If IsObject(oColumn) And Not (oColumn.Computed) Then
-            If oColumn.Comment="" Then
-              FieldLabel = oColumn.Name
-            Else
-              FieldLabel = oColumn.Comment
-            End if
-            Desc = Desc & oColumn.Code & Space(CodeMax + 1 -Len(oColumn.Code)) & "|  " & FieldLabel & Space(40-Len(FieldLabel))
-            If Mid(oColumn.DataType, 1, 7) = "VARCHAR" Then
-              Desc = Desc & "@<A" & Space(oColumn.Length) & ">"
-            End If
-            Desc = Desc & vbCrLf
-         End If
-      Next
+      Template = Replace(Template, "\n", vbCrLf)
    
 	  Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".qes", ForWriting, true)
-	  oFile.Write Desc & vbCrLf
+	  oFile.Write Template & vbCrLf
 	  oFile.Close
 	  
    End If
