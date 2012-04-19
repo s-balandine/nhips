@@ -82,7 +82,7 @@ For Each oTable In oTables
             Else
               FieldLabel = oColumn.Comment
             End if
-            Desc = Desc & oColumn.Code & Space(33-Len(oColumn.Code)) & FieldLabel
+            Desc = Desc & oColumn.Code & Space(33-Len(oColumn.Code)) & FieldLabel & Space(60-Len(FieldLabel))
             If Mid(oColumn.DataType, 1, 7) = "VARCHAR" Then
               Desc = Desc & "@<A" & Space(oColumn.Length) & ">" & vbCrLf
             End If
