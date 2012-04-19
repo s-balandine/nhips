@@ -78,7 +78,7 @@ For Each oTable In oTables
       Set regEx = New RegExp
       regEx.Pattern = "kj"
       regEx.IgnoreCase = True
-      'regEx.Global = True
+      regEx.Global = True
       Set Matches = regEx.Execute(Template)
       For Each Match in Matches
          RetStr = RetStr & "Match " & I & " found at position "
