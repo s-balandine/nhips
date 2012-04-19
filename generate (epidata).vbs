@@ -81,6 +81,7 @@ For Each oTable In oTables
       
       regEx.Pattern = "¤+"
       Set Matches1 = regEx.Execute(Template)
+      RetStr = ""
       For Each Match in Matches1
          RetStr = RetStr & "Match " & I & " found at position "
          RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
@@ -88,8 +89,9 @@ For Each oTable In oTables
       Next
       RetStr1 = RetStr
       
-      regEx.Pattern = "::.+"
+      regEx.Pattern = ":[A-Z_]+"
       Set Matches2 = regEx.Execute(Template)
+      RetStr = ""
       For Each Match in Matches2
          RetStr = RetStr & "Match " & I & " found at position "
          RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
