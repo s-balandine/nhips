@@ -87,8 +87,8 @@ For Each oTable In oTables
 	
 	      If Matches1.Count=0 Then Break
 	      
-	      Set Match1 = Matches1.Item(1)
-	      Set Match2 = Matches2.Item(1)
+	      Set Match1 = Matches1.Item(0)
+	      Set Match2 = Matches2.Item(0)
 	      
 	      Set oColumn=Nothing
 	      
