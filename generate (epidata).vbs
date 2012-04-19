@@ -71,6 +71,8 @@ For Each oTable In oTables
             
       Template = oTable.BeginScript
       
+      P = Pos(Template, "¤")
+      
       CodeMax = 0
       FieldMax = 0
       
