@@ -70,7 +70,7 @@ For Each oTable In oTables
       WScript.Echo "  " & oTable.Name
             
       Template = oTable.BeginScript
-      'Template = Replace(Template, vbCrLf, "\n")
+      Template = Replace(Template, vbCrLf, "\n")
       
       P1 = InStr(1   , Template, "¤", 1)
       P2 = P1
