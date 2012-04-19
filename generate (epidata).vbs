@@ -69,7 +69,6 @@ For Each oTable In oTables
    If IsObject(oTable) And (oTable.Name="Household") Then
       WScript.Echo "  " & oTable.Name
             
-      Template = oTable.DescriptionText
       Template = oTable.beginscript
       
       CodeMax = 0
