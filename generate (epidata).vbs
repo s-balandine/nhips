@@ -87,7 +87,7 @@ For Each oTable In oTables
       Desc =        "|" & String(CodeMax + 40 + FieldMax)
 	  Desc =        "|  SURVEY TITLE" & vbCrLf
 	  Desc = Desc & "|  FORM" & vbCrLf
-	  Desc = Desc & "|" & vbCrLf & vbCrLf
+	  Desc = Desc & "|" & String(CodeMax + 40 + FieldMax) & vbCrLf & vbCrLf
 
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
