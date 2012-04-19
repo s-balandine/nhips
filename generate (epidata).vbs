@@ -99,15 +99,12 @@ For Each oTable In oTables
       Next
       RetStr2 = RetStr
       
+      Set oColumn=Nothing
+      
       For Each Match in Matches2
         Set oColumn=oTable.Columns.Item(Match.Value)
-        If IsObject(oColumn) And Not (oColumn.Computed) Then
-            If CodeMax < Len(oColumn.Code) then 
-              CodeMax = Len(oColumn.Code)
-            End if
-            If FieldMax < Len(oColumn.Length) then 
-              FieldMax = Len(oColumn.Length)
-            End if
+        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match.Value)Then
+            Break
          End If
       Next 
       
