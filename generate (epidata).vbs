@@ -84,10 +84,10 @@ For Each oTable In oTables
          End If
       Next
 
-      Desc =        "|" & String(CodeMax + 40 + FieldMax, "=")
-	  Desc =        "|  SURVEY TITLE" & vbCrLf
-	  Desc = Desc & "|  FORM" & vbCrLf
-	  Desc = Desc & "|" & String(CodeMax + 40 + FieldMax, "=") & vbCrLf & vbCrLf
+      Desc =        Space(CodeMax + 2) & "|" & String(40 + FieldMax, "=") & vbCrLf
+	  Desc = Desc & Space(CodeMax + 2) & "|  SURVEY TITLE" & vbCrLf
+	  Desc = Desc & Space(CodeMax + 2) & "|  FORM" & vbCrLf
+	  Desc = Desc & Space(CodeMax + 2) & "|" & String(40 + FieldMax, "=") & vbCrLf & vbCrLf
 
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
