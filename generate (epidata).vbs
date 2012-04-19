@@ -70,6 +70,7 @@ For Each oTable In oTables
       WScript.Echo "  " & oTable.Name
             
       Template = oTable.DescriptionText
+      Template = oTable.beginscript
       
       CodeMax = 0
       FieldMax = 0
