@@ -75,7 +75,7 @@ For Each oTable In oTables
       P1 = InStr(1   , Template, "¤", 1)
       P2 = InStr(P1+1, Template, "¤", 1)
       
-      While P1
+      While InStr(P1+1, Template, "¤", 1) > 0
       Wend
       
       CodeMax = 0
