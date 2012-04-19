@@ -77,7 +77,7 @@ For Each oTable In oTables
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
          If IsObject(oColumn) And Not (oColumn.Computed) Then
-            Desc = Desc & Space(4) & oColumn.Code &  Space(33-Len(oColumn.Code)) & oColumn.DataType & vbCrLf
+            Desc = Desc & Space(4) & oColumn.Code &  Space(33-Len(oColumn.Code)) & oColumn.Type & oColumn.DataType & vbCrLf
          End If
       Next
    
