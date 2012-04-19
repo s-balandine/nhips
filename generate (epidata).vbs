@@ -98,7 +98,7 @@ For Each oTable In oTables
 	         End If
 	      Next 
 	      
-	      If Mid(oColumn.DataType, 1, 7) = "VARCHAR" Then
+	      If oColumn.Length>0 Then
 	        Template = _
 	          Mid(Template, 1, Match.FirstIndex, Match.Length) + "@<A" & Space(oColumn.Length) & ">" + _
 	          Mid(Template, Match.FirstIndex + Match.Length)
