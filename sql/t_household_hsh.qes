@@ -4,10 +4,20 @@
   HOUSEHOLD FORM
   ==============================================================  
   
-  IDENTIFICATION
+  INTERVIEW 
+  ..............................................................
+                                                       D  M    Y
+  Date:                                               ¤¤ ¤¤ ¤¤¤¤   :: HSH_VISIT_DAY HSH_VISIT_MONTH HSH_VISIT_YEAR
+  
+  Team                                            Supervisor: ¤¤   :: HSH_INTERVIEW_SUPERVISOR
+                                                 Interviewer: ¤¤   :: HSH_INTERVIEWER
+
+  Result:                                                     ¤<   :: HSH_VISIT_RESULT
+  
+  HOUSEHOLD IDENTIFICATION
   ..............................................................  
                                               Cluster  Household          
-  Identifier Numbers:                               ¤          ¤     > HSH_IDENTIFIER_OF_CLUSTER HSH_IDENTIFIER_OF_HOUSEHOLD                                
+  Identifier Numbers:                              ¤<         ¤<   :: HSH_IDENTIFIER_OF_CLUSTER HSH_IDENTIFIER_OF_HOUSEHOLD                                
   
-  Name of household head:                                      ¤     > HSH_HEAD
+  Name of household head:                                     ¤<   :: HSH_HEAD
 
