@@ -1,8 +1,7 @@
-/* SURVEY TITLE */
-/* FORM */
-/* .................................................................................... */
+  SURVEY TITLE
+  FORM
+================================================================================/
 
-    ISV_PRIMARYKEY                   LONG
-    ISV_NAMEFIRST                    VARCHAR(32)
-    ISV_NAMELAST                     VARCHAR(32)
+ISV_NAMEFIRST                    <A>                                >
+ISV_NAMELAST                     <A>                                >
 
