@@ -93,7 +93,7 @@ For Each oTable In oTables
 	      Set oColumn=Nothing
 	      
 	      For Each oColumn in oTable.Columns
-	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match.Value)Then
+	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match2.Value)Then
 	            Break
 	         End If
 	      Next 
