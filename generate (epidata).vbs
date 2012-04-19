@@ -102,6 +102,7 @@ For Each oTable In oTables
 	      
 	      If oColumn.DataType="SMALLINT" Then
 	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
+	        Template = Mid(Template, 1, Match2.FirstIndex) +                              Mid(Template, Match2.FirstIndex + Match2.Length)
 	      ElseIf oColumn.DataType="INTEGER" Then
 	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
 	      ElseIf oColumn.DataType="LONG" Then
