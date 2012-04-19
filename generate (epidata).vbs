@@ -87,25 +87,12 @@ For Each oTable In oTables
 	
 	      If Matches1.Count=0 Then Break
 	      
-	      For Each Match in Matches1
-	         RetStr = RetStr & "Match " & I & " found at position "
-	         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
-	         RetStr = RetStr & Match.Value & "'." & vbCRLF
-	      Next
-	      RetStr1 = RetStr
-	      
-	      RetStr = ""
-	      For Each Match in Matches2
-	         RetStr = RetStr & "Match " & I & " found at position "
-	         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
-	         RetStr = RetStr & Match.Value & "'." & vbCRLF
-	      Next
-	      RetStr2 = RetStr
+	      Set Match1 = Matches1[1]
+	      Set Match2 = Matches2[1]
 	      
 	      Set oColumn=Nothing
 	      
-	      For Each Match in Matches2
-	        Set oColumn=oTable.Columns.Item(Match.Value)
+	      For Each oColumn in oTable.Columns
 	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Name=Match.Value)Then
 	            Break
 	         End If
