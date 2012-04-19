@@ -109,7 +109,7 @@ For Each oTable In oTables
               FieldMax = Len(oColumn.Length)
             End if
          End If
-      Loop 
+      Next 
       
       CodeMax = 0
       FieldMax = 0
