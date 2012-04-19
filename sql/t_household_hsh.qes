@@ -1,7 +1,7 @@
   
   ==============================================================
-  NDHIWA HIV IMPACT IN POPULATION SURVEY
-  HOUSEHOLD FORM
+  NDHIWA HIV IMPACT IN POPULATION SURVEY              Typist: ¤¤                  
+  HOUSEHOLD FORM                                    Keyed by: ¤¤
   ==============================================================  
   
   INTERVIEW 
@@ -21,3 +21,11 @@
   
   Name of household head:                                     ¤<   :: HSH_HEAD
 
+  HOUSEHOLD
+  ..............................................................  
+              
+  Total persons in household:                                 ¤¤   :: HSH_COUNT_OF_PERSON
+  Total eligible women:                                       ¤¤   :: HSH_COUNT_OF_ELIGIBLE_WOMEN
+  Total eligible men:                                         ¤¤   :: HSH_COUNT_OF_ELIGIBLE_MEN
+  
+  Line No. of respondent:                                     ¤¤   :: HSH_RESPONDENT
