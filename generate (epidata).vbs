@@ -74,19 +74,30 @@ For Each oTable In oTables
       
       P1 = InStr(1   , Template, "¤", 1)
       P2 = P1
+      
       Set regEx = New RegExp
-      regEx.Pattern = "¤+"
       regEx.IgnoreCase = True
       regEx.Global = True
-      Set Matches = regEx.Execute(Template)
-      For Each Match in Matches
+      
+      regEx.Pattern = "¤+"
+      Set Matches1 = regEx.Execute(Template)
+      For Each Match in Matches1
          RetStr = RetStr & "Match " & I & " found at position "
          RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
          RetStr = RetStr & Match.Value & "'." & vbCRLF
       Next
-      RegExpTest = RetStr
-
-      Do
+      RetStr1 = RetStr
+      
+      regEx.Pattern = "::.+"
+      Set Matches2 = regEx.Execute(Template)
+      For Each Match in Matches2
+         RetStr = RetStr & "Match " & I & " found at position "
+         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
+         RetStr = RetStr & Match.Value & "'." & vbCRLF
+      Next
+      RetStr2 = RetStr
+      
+            Do
         P2 = InStr(P2+1, Template, "¤", 1)
         If P2 > 0 Then Break
       Loop 
