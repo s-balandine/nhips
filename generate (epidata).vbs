@@ -71,7 +71,11 @@ For Each oTable In oTables
             
       Template = oTable.BeginScript
       
-      P = Pos(Template, "¤")
+      P1 = InStr(    "¤", Template)
+      P2 = InStr(P1, "¤", Template)
+      
+      While P1
+      Wend
       
       CodeMax = 0
       FieldMax = 0
