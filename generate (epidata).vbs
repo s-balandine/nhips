@@ -85,7 +85,7 @@ For Each oTable In oTables
 	      regEx.Pattern = ":[A-Z_]+"
 	      Set Matches2 = regEx.Execute(Template)
 	
-	      If Matches1.Count=0 Then Break
+	      If Matches1.Count=0 Then Exit do
 	      
 	      Set Match1 = Matches1.Item(0)
 	      Set Match2 = Matches2.Item(0)
