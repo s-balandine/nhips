@@ -94,7 +94,7 @@ For Each oTable In oTables
 	      
 	      For Each oColumn in oTable.Columns
 	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Code=Mid(Match2.Value, 2)) Then
-	            Break
+	            Exit for
 	         End If
 	      Next 
 	      
