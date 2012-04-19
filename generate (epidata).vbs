@@ -74,6 +74,17 @@ For Each oTable In oTables
 	  Desc = Desc & "  FORM" & vbCrLf
 	  Desc = Desc & "================================================================================/" & vbCrLf & vbCrLf
       
+      CodeMax = 0
+      
+      For Ni=0 to oTable.Columns.Count -1
+         Set oColumn=oTable.Columns.Item(Ni)
+         If IsObject(oColumn) And Not (oColumn.Computed) Then
+            If CodeMax < Len(oColumn.Code) then 
+              CodeMax = Len(oColumn.Code)
+            End if
+         End If
+      Next
+
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
          If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -82,7 +93,7 @@ For Each oTable In oTables
             Else
               FieldLabel = oColumn.Comment
             End if
-            Desc = Desc & oColumn.Code & Space(30-Len(oColumn.Code)) & "|  " & FieldLabel & Space(40-Len(FieldLabel))
+            Desc = Desc & oColumn.Code & Space(CodeMax + 2-Len(oColumn.Code)) & "|  " & FieldLabel & Space(40-Len(FieldLabel))
             If Mid(oColumn.DataType, 1, 7) = "VARCHAR" Then
               Desc = Desc & "@<A" & Space(oColumn.Length) & ">"
             End If
