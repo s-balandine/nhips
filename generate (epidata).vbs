@@ -67,7 +67,7 @@ Desc = vbCrLf
 Desc = Desc & "/* Script DDL de création des tables */" & vbCrLf
 Desc = Desc & "/* .................................................................................... */" & vbCrLf & vbCrLf
 
-WScript.Echo "Création des tables"
+WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
    If IsObject(oTable) Then
@@ -81,12 +81,16 @@ For Each oTable In oTables
             If Ni=oTable.Columns.Count-1 Then Desc = Desc & ")^" & vbCrLf & vbCrLf Else Desc = Desc & "," & vbCrLf
          End If
       Next
+   
+	  Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".qes", ForWriting, true)
+	  oFile.Write Desc & vbCrLf
+	  oFile.Close
+	  
    End If
+   
 Next
 
-Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\create tables.sql", ForWriting, true)
-oFile.Write Desc & vbCrLf
-oFile.Close
+
 
 Desc = vbCrLf
 Desc = Desc & "/* Script DDL de création pour les vues */" & vbCrLf
