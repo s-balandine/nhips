@@ -85,7 +85,7 @@ For Each oTable In oTables
 	      regEx.Pattern = ":[A-Z_]+"
 	      Set Matches2 = regEx.Execute(Template)
 	
-	      If Not Matches1 Then Break
+	      If Matches1.Count=0 Then Break
 	      
 	      For Each Match in Matches1
 	         RetStr = RetStr & "Match " & I & " found at position "
