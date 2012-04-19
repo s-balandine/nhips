@@ -99,9 +99,16 @@ For Each oTable In oTables
       Next
       RetStr2 = RetStr
       
-            Do
-        P2 = InStr(P2+1, Template, "¤", 1)
-        If P2 > 0 Then Break
+      For Each Match in Matches2
+        Set oColumn=oTable.Columns.Item(Match.Value)
+        If IsObject(oColumn) And Not (oColumn.Computed) Then
+            If CodeMax < Len(oColumn.Code) then 
+              CodeMax = Len(oColumn.Code)
+            End if
+            If FieldMax < Len(oColumn.Length) then 
+              FieldMax = Len(oColumn.Length)
+            End if
+         End If
       Loop 
       
       CodeMax = 0
