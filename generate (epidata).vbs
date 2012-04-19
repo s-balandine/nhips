@@ -90,7 +90,7 @@ For Each oTable In oTables
 	      Set Match1 = Matches1.Item(0)
 	      Set Match2 = Matches2.Item(0)
 	      
-	      If Match2.Value =":HSH_IDENTIFIER_OF_CLUSTER" Then Exit
+	      If Match2.Value =":HSH_IDENTIFIER_OF_CLUSTER" Then Exit do
 	      
 	      Set oColumn=Nothing
 	      
