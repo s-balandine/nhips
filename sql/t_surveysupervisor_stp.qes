@@ -1,0 +1,21 @@
+/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    IVW_PRIMARYKEY                   LONG    IVW_NAMEFIRST                    VARCHAR(32)    IVW_NAMELAST                     VARCHAR(32)/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    HSH_PRIMARY_KEY                  LONG    HSH_IDENTIFIER_OF_CLUSTER        VARCHAR(32)    HSH_IDENTIFIER_OF_HOUSEHOLD      VARCHAR(32)    HSH_INTERVIEW_SUPERVISOR         LONG    HSH_INTERVIEWER                  LONG    HSH_SURVEY_TYPIST                LONG    HSH_SURVEY_SUPERVISOR            LONG    HSH_VISIT_DAY                    INTEGER    HSH_VISIT_MONTH                  INTEGER    HSH_VISIT_YEAR                   INTEGER    HSH_VISIT_RESULT                 SMALLINT/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    ISV_PRIMARYKEY                   LONG    ISV_NAMEFIRST                    VARCHAR(32)    ISV_NAMELAST                     VARCHAR(32)/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    ISV_PRIMARYKEY                   LONG    ISV_NAMEFIRST                    VARCHAR(32)    ISV_NAMELAST                     VARCHAR(32)/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    ISV_PRIMARYKEY                   LONG    ISV_NAMEFIRST                    VARCHAR(32)    ISV_NAMELAST                     VARCHAR(32)

@@ -1,0 +1,5 @@
+/* SURVEY TITLE */
+/* FORM */
+/* .................................................................................... */
+
+    IVW_PRIMARYKEY                   LONG    IVW_NAMEFIRST                    VARCHAR(32)    IVW_NAMELAST                     VARCHAR(32)
