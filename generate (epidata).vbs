@@ -100,11 +100,11 @@ For Each oTable In oTables
 	      
 	      If oColumn.DataType="SMALLINT" Then
 	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
-	      ElseIf If oColumn.DataType="INTEGER" Then
+	      ElseIf oColumn.DataType="INTEGER" Then
 	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
-	      ElseIf If oColumn.DataType="LONG" Then
+	      ElseIf oColumn.DataType="LONG" Then
 	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
-	      ElseIf If oColumn.DataType="VARCHAR" Then
+	      ElseIf oColumn.DataType="VARCHAR" Then
 	        Template = _
 	          Mid(Template, 1, Match.FirstIndex) + "@<A" & Space(oColumn.Length) & ">" + _
 	          Mid(Template, Match.FirstIndex + Match.Length)
