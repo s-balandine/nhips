@@ -73,10 +73,24 @@ For Each oTable In oTables
       'Template = Replace(Template, vbCrLf, "\n")
       
       P1 = InStr(1   , Template, "¤", 1)
-      P2 = InStr(P1+1, Template, "¤", 1)
+      P2 = P1
       
-      While InStr(P1+1, Template, "¤", 1) > 0
-      Wend
+      Set regEx = New RegExp
+      regEx.Pattern = "¤*"
+      regEx.IgnoreCase = True
+      regEx.Global = True
+      Set Matches = regEx.Execute(Template)
+      For Each Match in Matches
+         RetStr = RetStr & "Match " & I & " found at position "
+         RetStr = RetStr & Match.FirstIndex & ". Match Value is "'
+         RetStr = RetStr & Match.Value & "'." & vbCRLF
+      Next
+      RegExpTest = RetStr
+
+      Do
+        P2 = InStr(P2+1, Template, "¤", 1)
+        If P2 > 0 Then Break
+      Loop 
       
       CodeMax = 0
       FieldMax = 0
