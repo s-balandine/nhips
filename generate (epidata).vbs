@@ -63,22 +63,18 @@ set oDomains = SortCollection(oModel.Domains)
 
 Wiki = ""
 
-Desc = vbCrLf
-Desc = Desc & "/* Script DDL de création des tables */" & vbCrLf
-Desc = Desc & "/* .................................................................................... */" & vbCrLf & vbCrLf
-
 WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
    If IsObject(oTable) Then
       WScript.Echo "  " & oTable.Name
-      Desc = Desc & "CREATE TABLE " & oTable.Code & " (" & vbCrLf
+	  Desc = Desc & "/* SURVEY TITLE */" & vbCrLf
+	  Desc = Desc & "/* FORM */" & vbCrLf
+	  Desc = Desc & "/* .................................................................................... */" & vbCrLf & vbCrLf
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
          If IsObject(oColumn) And Not (oColumn.Computed) Then
             Desc = Desc & Space(4) & oColumn.Code &  Space(33-Len(oColumn.Code)) & oColumn.DataType
-            If oColumn.Mandatory Then Desc = Desc & " NOT NULL"
-            If Ni=oTable.Columns.Count-1 Then Desc = Desc & ")^" & vbCrLf & vbCrLf Else Desc = Desc & "," & vbCrLf
          End If
       Next
    
