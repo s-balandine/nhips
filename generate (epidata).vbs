@@ -76,7 +76,7 @@ For Each oTable In oTables
       P2 = P1
       
       Set regEx = New RegExp
-      regEx.Pattern = "\¤*"
+      regEx.Pattern = "=*"
       regEx.IgnoreCase = True
       regEx.Global = True
       Set Matches = regEx.Execute(Template)
