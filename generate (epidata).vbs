@@ -98,6 +98,8 @@ For Each oTable In oTables
 	         End If
 	      Next 
 	      
+	      WScript.Echo "    " & Match1.Value & ":" & Match2.Value & vbCrLf
+	      
 	      If oColumn.DataType="SMALLINT" Then
 	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
 	      ElseIf oColumn.DataType="INTEGER" Then
