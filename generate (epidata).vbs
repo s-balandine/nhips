@@ -77,7 +77,7 @@ For Each oTable In oTables
       For Ni=0 to oTable.Columns.Count -1
          Set oColumn=oTable.Columns.Item(Ni)
          If IsObject(oColumn) And Not (oColumn.Computed) Then
-            If oColumn.Comment Then
+            If oColumn.Comment="" Then
               FieldLabel = oColumn.Name
             Else
               FieldLabel = oColumn.Comment
