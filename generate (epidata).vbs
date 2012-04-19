@@ -11,6 +11,8 @@
 ' Args[0]: Path of model file *.pdm
 ' Args[1]: Space
 
+MsgBox(RegExpTest("is.", "IS1 is2 IS3 is4"))
+
 Set oArgs = WScript.Arguments
 
 Set oFileSystemObject = CreateObject("Scripting.FileSystemObject")
@@ -155,4 +157,17 @@ Function ExtendedAttribute (Column, AttributeName)
     s=replace(s, vbCrLf, "")
     s=replace(s, "'", "\'")
     ExtendedAttribute = s
+End Function
+
+Function RegExpTest(patrn, strng)
+  Dim regEx, retVal            ' Create variable.
+  Set regEx = New RegExp         ' Create regular expression.
+  regEx.Pattern = patrn         ' Set pattern.
+  regEx.IgnoreCase = False      ' Set case sensitivity.
+  retVal = regEx.Test(strng)      ' Execute the search test.
+  If retVal Then
+    RegExpTest = "One or more matches were found."
+  Else
+    RegExpTest = "No match was found."
+  End If
 End Function
