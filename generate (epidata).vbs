@@ -66,7 +66,7 @@ Wiki = ""
 WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
-   If IsObject(oTable) Then
+   If IsObject(oTable) And (oTable.Name="Household") Then
       WScript.Echo "  " & oTable.Name
             
       Template = oTable.Description
