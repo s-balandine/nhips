@@ -69,7 +69,7 @@ For Each oTable In oTables
    If IsObject(oTable) Then
       WScript.Echo "  " & oTable.Name
             
-      Template = oTable.Notes
+      Template = oTable.Description
       
       CodeMax = 0
       FieldMax = 0
