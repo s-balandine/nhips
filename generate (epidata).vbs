@@ -71,8 +71,8 @@ For Each oTable In oTables
             
       Template = oTable.BeginScript
       
-      P1 = InStr(    "¤", Template)
-      P2 = InStr(P1, "¤", Template)
+      P1 = InStr(    "¤", Template, 1)
+      P2 = InStr(P1, "¤", Template, 1)
       
       While P1
       Wend
