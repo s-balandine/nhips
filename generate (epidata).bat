@@ -1,1 +1,1 @@
-cscript "generate (epidata).vbs"
+wscript "generate (epidata).vbs"
