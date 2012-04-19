@@ -93,7 +93,7 @@ For Each oTable In oTables
 	      Set oColumn=Nothing
 	      
 	      For Each oColumn in oTable.Columns
-	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Code=Mid(Match2.Value, 2)Then
+	        If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.Code=Mid(Match2.Value, 2)) Then
 	            Break
 	         End If
 	      Next 
