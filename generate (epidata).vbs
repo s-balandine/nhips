@@ -99,15 +99,15 @@ For Each oTable In oTables
 	      Next 
 	      
 	      If oColumn.DataType="SMALLINT" Then
-	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
+	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
 	      ElseIf oColumn.DataType="INTEGER" Then
-	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
+	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
 	      ElseIf oColumn.DataType="LONG" Then
-	        Template = Mid(Template, 1, Match.FirstIndex) + String(Match.Length, "#") + Mid(Template, Match.FirstIndex + Match.Length)
+	        Template = Mid(Template, 1, Match1.FirstIndex) + String(Match1.Length, "#") + Mid(Template, Match1.FirstIndex + Match1.Length)
 	      ElseIf oColumn.DataType="VARCHAR" Then
 	        Template = _
-	          Mid(Template, 1, Match.FirstIndex) + "@<A" & Space(oColumn.Length) & ">" + _
-	          Mid(Template, Match.FirstIndex + Match.Length)
+	          Mid(Template, 1, Match1.FirstIndex) + "@<A" & Space(oColumn.Length) & ">" + _
+	          Mid(Template, Match1.FirstIndex + Match1.Length)
 	      End If
       
       Loop
