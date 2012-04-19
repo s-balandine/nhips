@@ -2,4 +2,7 @@
 /* FORM */
 /* .................................................................................... */
 
-    ISV_PRIMARYKEY                   LONG    ISV_NAMEFIRST                    VARCHAR(32)    ISV_NAMELAST                     VARCHAR(32)
+    ISV_PRIMARYKEY                   LONG
+    ISV_NAMEFIRST                    VARCHAR(32)
+    ISV_NAMELAST                     VARCHAR(32)
+
