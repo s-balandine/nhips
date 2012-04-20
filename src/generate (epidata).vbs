@@ -36,6 +36,10 @@ End If
 
 WScript.Echo StrModel
 
+If StrModel="" Then
+  StrModel = "model.pdm"
+End If
+
 If Not IsObject(ActiveModel) Then
   Set oApp = CreateObject("PowerDesigner.Application")
       oApp.InteractiveMode = 0
