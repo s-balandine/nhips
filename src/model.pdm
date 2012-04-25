@@ -6390,4 +6390,64 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 </c:ExtendedObjects>
 <c:ChildExtendedDependencies>
 <o:ExtendedDependency Id="o31">
-<a:ObjectID>72
+<a:ObjectID>723D0089-DD83-4039-81C1-72716CE58174</a:ObjectID>
+<a:CreationDate>1335364270</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335364311</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:ExtendedObject Ref="o45"/>
+</c:Object1>
+<c:Object2>
+<o:ExtendedObject Ref="o46"/>
+</c:Object2>
+</o:ExtendedDependency>
+<o:ExtendedDependency Id="o33">
+<a:ObjectID>1AC9A83B-4B65-4D07-8F46-7889FAD1F4FD</a:ObjectID>
+<a:CreationDate>1335364346</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335364365</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:ExtendedObject Ref="o46"/>
+</c:Object1>
+<c:Object2>
+<o:Table Ref="o44"/>
+</c:Object2>
+</o:ExtendedDependency>
+<o:ExtendedDependency Id="o36">
+<a:ObjectID>DE839C97-23DD-4824-86A7-6DB419CDD340</a:ObjectID>
+<a:CreationDate>1335365193</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335365193</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:ExtendedObject Ref="o46"/>
+</c:Object1>
+<c:Object2>
+<o:ExtendedObject Ref="o47"/>
+</c:Object2>
+</o:ExtendedDependency>
+</c:ChildExtendedDependencies>
+<c:TargetModels>
+<o:TargetModel Id="o189">
+<a:ObjectID>2480A7D6-BC54-47B2-AE93-E419F8DB70D3</a:ObjectID>
+<a:Name>Epidata</a:Name>
+<a:Code>Epidata</a:Code>
+<a:CreationDate>1318350478</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1318350478</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
+<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
