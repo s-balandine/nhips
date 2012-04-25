@@ -130,10 +130,11 @@ For Each oTable In oTables
 				    ColumnQuestionPrev = ColumnQuestion
 				    Desc = Desc & String(NCharMax, "-") & vbCrLf
 					If ColumnQuestionN > 10 Then 
-					Desc = Desc & "{Q" & ColumnSectionN & ColumnQuestionN  & "}" & Space(2) & vbCrLf 
+					Desc = Desc & ColumnSectionN & ColumnQuestionN & Space(2)
 					Else
-					Desc = Desc & "{Q" & ColumnSectionN & "0" & ColumnQuestionN & "}" & Space(2)  & vbCrLf
-					End if
+					Desc = Desc & ColumnSectionN & "0" & ColumnQuestionN & Space(2)
+					End If
+					Desc = Desc & ColumnQuestion & vbCrLf
 				    ColumnQuestionN = ColumnQuestionN + 1
 				End If
 				
