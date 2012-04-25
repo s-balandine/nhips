@@ -72,8 +72,10 @@ WScript.Echo "Création des tables (fichiers)"
 NCharWidth = 80
 NCharMax = 80
 
+Form="Household Eligible Women"
+
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household Eligible Women") Then
+	If IsObject(oTable) And (oTable.Name=Form) Then
 		
 		WScript.Echo "  " & oTable.Name
 				
@@ -205,7 +207,7 @@ For Each oTable In oTables
 Next
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household Eligible Women") Then
+	If IsObject(oTable) And (oTable.Name=Form) Then
 		
 		WScript.Echo "  " & oTable.Name
 				
