@@ -172,7 +172,7 @@ For Each oTable In oTables
 				Desc = Desc & ColumnName
 							
 				If oColumn.DataType="AUTOINCREMENT" Then
-					Desc = Desc & String(NCharMax - 15 , ".") & "<IDNUM>"
+					Desc = Desc & String(NCharMax - 12 , ".") & "<IDNUM>"
 				End If
 
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
