@@ -71,7 +71,6 @@ WScript.Echo "Création des tables (fichiers)"
 
 NCharWidth = 80
 NCharMax = 80
-SectionFirst=4
 
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Survey Supervisor") Then
@@ -80,6 +79,8 @@ For Each oTable In oTables
 				
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
+		
+		SectionFirst = ExtendedAttribute (oColumn, "SectionFirst")
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
