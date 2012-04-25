@@ -134,7 +134,7 @@ For Each oTable In oTables
 						ColumnPrefix = "Q"
 						ColumnSectionNOffset = ColumnSectionN - SectionFirst + 1
 					End If
-					Desc = Desc & vbCrLf & vbCrLf
+					Desc = Desc & vbCrLf
 					Desc = Desc & ColumnSectionNOffset & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 0
