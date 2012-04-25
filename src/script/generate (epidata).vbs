@@ -237,7 +237,7 @@ For Each oTable In oTables
 				Else
 					Desc = Desc & ExtendedAttribute (oColumn, "NameEpiData") & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
-					If oColumn.LowValue>=0 And oColumn.HighValue>0 Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
+					'If oColumn.LowValue>=0 And oColumn.HighValue>0 Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
 					If not oColumn.Domain is nothing Then
 						If oColumn.Domain.ListOfValues <> "" Then
 							Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
