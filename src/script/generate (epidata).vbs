@@ -116,17 +116,17 @@ For Each oTable In oTables
 		ColumnN = 0
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oModel, "Title")
+		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oTable, "Title")
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 				If oColumn.DataType="AUTOINCREMENT" Then
-					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - 10) & "<IDNUM>" & vbCrLf
+					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 20) & "Record ID: <IDNUM>" & vbCrLf
 				End If
 			End If
 		Next
 
-		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
