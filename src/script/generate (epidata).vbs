@@ -127,10 +127,6 @@ For Each oTable In oTables
 				If ColumnSection<>ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
 				    ColumnSectionPrev = ColumnSection
-				    Desc = Desc & vbCrLf & vbCrLf
-					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
-					Desc = Desc & String(NCharWidth, "=") & vbCrLf
-					ColumnQuestionN = 0
 					If ColumnSectionN - SectionFirst < 0 Then
 						ColumnPrefix = "S"
 						ColumnSectionNOffset = ColumnSectionN
@@ -138,6 +134,10 @@ For Each oTable In oTables
 						ColumnPrefix = "Q"
 						ColumnSectionNOffset = ColumnSectionN - SectionFirst
 					End If
+					Desc = Desc & vbCrLf & vbCrLf
+					Desc = Desc & ColumnSectionNOffset & "." & ColumnSection & vbCrLf
+					Desc = Desc & String(NCharWidth, "=") & vbCrLf
+					ColumnQuestionN = 0
 				End If
 				
 				
