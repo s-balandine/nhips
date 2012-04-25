@@ -119,7 +119,7 @@ For Each oTable In oTables
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Primary) Then
+			If IsObject(oColumn) And oColumn.Primary Then
 				If oColumn.DataType="AUTOINCREMENT" Then
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - 10) & "<IDNUM>" & vbCrLf
 				End If
@@ -127,7 +127,7 @@ For Each oTable In oTables
 		Next
 
 		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharWidth, "=")
+		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.Primary) Then
