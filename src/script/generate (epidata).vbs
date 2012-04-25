@@ -110,8 +110,8 @@ For Each oTable In oTables
 					Desc = Desc & String(oColumn.Length, "#") & "  "
 				End If
 				
-				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
-					Desc = Desc & String(oColumn.Length, "#") & "  "
+				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
+					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
 				Desc = Desc & vbCrLf
