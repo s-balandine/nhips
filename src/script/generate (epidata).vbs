@@ -216,12 +216,13 @@ For Each oTable In oTables
 			End If
 		Next 
 		
+		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.chk", ForWriting, true)
+		oFile.Write Desc & vbCrLf
+		oFile.Close
+		
 	End If
 Next
 
-Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase("Household Eligible Men2") & ".test.chk", ForWriting, true)
-oFile.Write Desc & vbCrLf
-oFile.Close
 
 Set oApp = Nothing
 
