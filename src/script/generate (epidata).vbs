@@ -75,7 +75,7 @@ For Each oTable In oTables
 		Desc = ""
 		
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.qes", ForWriting, true)
-		oFile.Write Template & vbCrLf
+		oFile.Write Desc & vbCrLf
 		oFile.Close
 	End If
 Next
