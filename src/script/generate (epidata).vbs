@@ -110,7 +110,7 @@ For Each oTable In oTables
 		Desc = String(NCharMax, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharMax, "=") & vbCrLf
+		Desc = Desc & String(NCharMax, "=") & vbCrLf & vbCrLf
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
