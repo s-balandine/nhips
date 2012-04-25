@@ -146,7 +146,7 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				Desc = Desc & Space(50)
+				Desc = Desc & Space(40)
 				
 				If ColumnQuestionN > 10 Then 
 					Desc = Desc & "{Q" & ColumnSectionN & ColumnQuestionN & ColumnN & "}" & Space(2)
