@@ -86,8 +86,8 @@ For Each oTable In oTables
 					NCharMaxColumnName = Len(oColumn.Name)
 				End If
 				
-				If NCharMaxColumnSize < Len(oColumn.Size) Then
-					NCharMaxColumnSize = Len(oColumn.Size)
+				If NCharMaxColumnSize < oColumn.Size Then
+					NCharMaxColumnSize = oColumn.Size
 				End If
 				
 			End If
