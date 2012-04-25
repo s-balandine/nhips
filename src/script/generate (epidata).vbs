@@ -69,7 +69,8 @@ Wiki = ""
 
 WScript.Echo "Création des tables (fichiers)"
 
-NCharMax = 120
+NCharWidth = 80
+NCharMax = 80
 
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
@@ -107,10 +108,10 @@ For Each oTable In oTables
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
 		
-		Desc = String(NCharMax, "=") & vbCrLf
+		Desc = String(NCharWidth, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharMax, "=") & vbCrLf & vbCrLf
+		Desc = Desc & String(NCharWidth, "=") & vbCrLf & vbCrLf
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -124,12 +125,12 @@ For Each oTable In oTables
 				    ColumnSectionPrev = ColumnSection
 				    Desc = Desc & vbCrLf & vbCrLf
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
-					Desc = Desc & String(NCharMax, "=") & vbCrLf
+					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 				End If
 				
 				If ColumnQuestion<>ColumnQuestionPrev Then
 				    ColumnQuestionPrev = ColumnQuestion
-				    Desc = Desc & String(NCharMax, "-") & vbCrLf
+				    Desc = Desc & String(NCharWidth, "-") & vbCrLf
 					If ColumnQuestionN > 10 Then 
 					Desc = Desc & ColumnSectionN & ColumnQuestionN & Space(2)
 					Else
