@@ -119,7 +119,7 @@ For Each oTable In oTables
 				ColumnSection = ExtendedAttribute (oColumn, "Section")
 				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
 				
-				If ColumnSection=ColumnSectionPrev Then
+				If ColumnSection<>ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
 				    ColumnSectionPrev = ColumnSection
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
