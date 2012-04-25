@@ -126,6 +126,17 @@ For Each oTable In oTables
 					Desc = Desc & String(NCharMax, "=") & vbCrLf
 				End If
 				
+				If ColumnQuestion<>ColumnQuestionPrev Then
+				    ColumnQuestionPrev = ColumnQuestion
+				    Desc = Desc & String(NCharMax, "-") & vbCrLf
+					If ColumnQuestionN > 10 Tthen 
+					Desc = Desc & "{Q" & ColumnSectionN & ColumnQuestionN  & "}" & Space(2) & vbCrLf 
+					Else
+					Desc = Desc & "{Q" & ColumnSectionN & "0" & ColumnQuestionN & "}" & Space(2)  & vbCrLf
+					End if
+				    ColumnQuestionN = ColumnQuestionN + 1
+				End If
+				
 				Desc = Desc & ColumnName
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
