@@ -249,7 +249,7 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
 				Desc = Desc & vbCrLf
 				If oColumn.Primary Then 
-				    Desc = Desc & "recid" & vbCrLf		
+				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				Else
