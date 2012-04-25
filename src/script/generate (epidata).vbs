@@ -188,20 +188,22 @@ For Each oTable In oTables
 	End If
 Next
 
-Desc = ""
+Desc = "LABELBLOCK"
 
 For Each oDomain In oDomains
-	If IsObject(oDomain) Then
-		
-		WScript.Echo "  " & oTable.Name
-				
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-			End If
-		Next 
-		
+	If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
+		Values = oDomain.ListOfValues
+		Values = Split(Values, vbNewLine, -1, 1)
+		Desc = Desc & "  LABEL " & oDomain.Code & vbCrLf
+		For i=0 To UBound(Values)
+			Value = Values(i)
+			Value = Split(Value, vbTab, -1, 1)
+			Desc=Desc & "    "& Value(0) & " " & Value(1) & vbCrLf
+		Next
 	End If
 Next
+
+Desc = Desc & "END"
 
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
