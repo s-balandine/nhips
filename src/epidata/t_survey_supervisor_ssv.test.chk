@@ -1,0 +1,116 @@
+LABELBLOCK
+  LABEL d_l_eligible
+    0 "Non"
+    1 "Oui"
+   END
+  LABEL d_ni_ethnic
+    1 "Embu"
+    2 "Kalenjin"
+    3 "Kamba"
+    4 "Kikuyu"
+    5 "Kisii"
+    6 "Luhya"
+    7 "Luo"
+    8 "Masai"
+    9 "Meru"
+    10 "Mijikenda / Swahili"
+    11 "Somali"
+    12 "Taita / Taveta"
+    97 "Other"
+    99 "Not specified"
+   END
+  LABEL d_ni_marital_status
+    1 "Married or living together"
+    2 "Divorced or separated"
+    3 "Widowed"
+    4 "Never married and never lived together"
+    99 "Not specified"
+   END
+  LABEL d_ni_visit_result_household
+    1 "Completed"
+    2 "No household member at home"
+    3 "No competent respondent at home"
+    4 "Entire household absent for extended pariod of time"
+    5 "Postponed"
+    6 "Refused"
+    7 "Dwelling vacant"
+    8 "Address not a dwelling"
+    9 "Dwelling destroyed"
+    10 "Dwelling not found"
+    97 "Other"
+    99 "Not specified"
+   END
+  LABEL d_ni_relationship
+    1 "Head"
+    2 "Wife or Husband"
+    3 "Son or Daughter"
+    4 "Son-in-law or Daugther-in-law"
+    5 "GrandChild"
+    6 "Parent"
+    7 "Parent-in-law"
+    8 "Borther or Sister"
+    9 "Other relative"
+    10 "Adopted / Foster / StepChild"
+    11 "Not related"
+    98 "Don't know"
+    99 "Not specified"
+   END
+  LABEL d_ni_sex
+    1 "Male"
+    2 "Female"
+    99 "Not specified"
+   END
+  LABEL d_ni_yesno
+    1 "Yes"
+    2 "No"
+    99 "Not specified"
+   END
+  LABEL d_ni_visit_result_household_member
+    1 "Completed"
+    2 "Not at home"
+    3 "Postponed"
+    4 "Refused"
+    5 "Partly completed"
+    6 "Incapacited"
+    97 "Other"
+    99 "Not specified"
+   END
+  LABEL d_ni_school_level
+    1 "Primary"
+    2 "Post-primary or vocational"
+    3 "Secondary or a level"
+    4 "Higher"
+    99 "Not specified"
+   END
+  LABEL d_text_1_read_ability
+    1 "Cannont read at all"
+    2 "Able to read only part of sentence"
+    3 "Able to read whole sentence"
+    99 "Not specified"
+   END
+  LABEL d_text_1_place
+    1 "Nairobi / Kisumu"
+    2 "Other place"
+    3 "Country side"
+    4 "Outside Kenya"
+    99 "Not specified"
+   END
+  LABEL d_ni_place_type
+    1 "City"
+    2 "Town"
+    3 "Country side"
+    99 "Not specified"
+   END
+END
+
+recid
+  KEY UNIQUE 1
+  NOENTER
+END
+
+Q1001
+END
+
+Q1002
+END
+
