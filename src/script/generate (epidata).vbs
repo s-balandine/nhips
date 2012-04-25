@@ -105,6 +105,8 @@ For Each oTable In oTables
 		ColumnSectionN = 0
 		ColumnSection = ""
 		ColumnSectionPrev = ""
+	    ColumnQuestionN = 0
+	    ColumnQuestion = ""
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
 		
