@@ -157,10 +157,10 @@ For Each oTable In oTables
 				Desc = Desc & Space(37-4)
 				
 				If ColumnQuestionN > 10 Then 
-					Desc = Desc & "({Q" & ColumnSectionN & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+					Desc = Desc & "({" & ColumnPrefix & ColumnSectionN & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
 					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & ColumnQuestionN-1 & ColumnN
 				Else
-					Desc = Desc & "({Q" & ColumnSectionN & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionN & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
 					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & "0" & ColumnQuestionN-1 & ColumnN
 				End If
 						
