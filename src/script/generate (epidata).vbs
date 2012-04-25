@@ -104,7 +104,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
-				Desc = Desc & oColumn.Name & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".") & vbCrLf
+				Desc = Desc & oColumn.Name & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".")
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 					Desc = Desc & String(oColumn.Length, "#") & "  "
