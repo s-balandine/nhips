@@ -154,7 +154,7 @@ For Each oTable In oTables
 					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & ColumnQuestionN-1 & ColumnN
 				Else
 					Desc = Desc & "({Q" & ColumnSectionN & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & ColumnQuestionN-1 & ColumnN
+					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & "0" & ColumnQuestionN-1 & ColumnN
 				End If
 						
 				Desc = Desc & ColumnName
