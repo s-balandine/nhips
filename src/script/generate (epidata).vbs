@@ -228,7 +228,17 @@ For Each oTable In oTables
 			End If
 		Next
 		
+		Desc = Desc & "END" & vbCrLf & vbCrLf
+		
+		Desc = Desc & "AFTER RECORD" & vbCrLf
+		For Each oColumn in oTable.Columns
+			Desc = Desc & " IF (ID1 = .) THEN" & vbCrLf
+			Desc = Desc & "  HELP ""ID-number must be entered"" TYPE=ERROR" & vbCrLf
+			Desc = Desc & "  GOTO ID1" & vbCrLf
+			Desc = Desc & " ENDIF" & vbCrLf
+		Next
 		Desc = Desc & "END" & vbCrLf
+
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
