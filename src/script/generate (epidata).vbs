@@ -228,7 +228,7 @@ For Each oTable In oTables
 		Desc = Desc & "END" & vbCrLf
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "LMabel")<>"") Then
+			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
 				Desc = Desc & vbCrLf
 				If oColumn.Primary Then 
 				    Desc = Desc & "recid" & vbCrLf		
