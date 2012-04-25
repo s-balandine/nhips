@@ -107,14 +107,17 @@ AFTER RECORD
  IF (Q1001 = .) THEN
   HELP "Number must be entered" TYPE=ERROR
   GOTO Q1001
+  EXIT
  ENDIF
  IF (Q1001 = .) THEN
   HELP "Firstname must be entered" TYPE=ERROR
   GOTO Q1001
+  EXIT
  ENDIF
  IF (Q1002 = .) THEN
   HELP "Lastname must be entered" TYPE=ERROR
   GOTO Q1002
+  EXIT
  ENDIF
 END
 
