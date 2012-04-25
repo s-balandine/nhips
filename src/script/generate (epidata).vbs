@@ -82,12 +82,18 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
+				ColumnSize = 0
+				
+				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
+					ColumnSize = oColumn.Size	
+				End If
+				
 				If NCharMaxColumnName < Len(oColumn.Name) Then
 					NCharMaxColumnName = Len(oColumn.Name)
 				End If
 				
-				If NCharMaxColumnSize < oColumn.Size Then
-					NCharMaxColumnSize = oColumn.Size
+				If NCharMaxColumnSize < ColumnSize Then
+					NCharMaxColumnSize = ColumnSize
 				End If
 				
 			End If
