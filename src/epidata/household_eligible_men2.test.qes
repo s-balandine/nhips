@@ -6,56 +6,56 @@ WOMAN\'S QUESTIONNAIRE
 1.Identification
 ==================================
 ----------------------------------
-{Q10}  
+10  Identifiers
 No. Cluster....................###  
 No. Household...................##  
 No. Household Member............##  
 2.Interviewer
 ==================================
 ----------------------------------
-{Q201}  
+201  Date
 Day
 Month
 Year
 ----------------------------------
-{Q202}  
+202  Actors
 No. Interviewer.................##  
 No. Supervisor..................##  
 ----------------------------------
-{Q203}  
+203  Result
 Result
 Result (Other)
 3.Office
 ==================================
 ----------------------------------
-{Q304}  
+304  Actors
 No. Typist......................##  
 No. Supervisor..................##  
 4.Responden\'t background
 ==================================
 ----------------------------------
-{Q405}  
+405  In what month and year were you born?
 Month unknown
 Month
 Year unknown
 Year
 ----------------------------------
-{Q406}  
+406  How old were you at your last birthday?
 Age unknown
 Age in completed year
 ----------------------------------
-{Q407}  
+407  Have you ever attended school?
 
 ----------------------------------
-{Q408}  
+408  What is the highest level of school you attended: primary, secondary, or higher? 
 
 ----------------------------------
-{Q409}  
+409  What is the highest (grade/form/year) you completed at that level? 
 ................................##  
 5.
 ==================================
 ----------------------------------
-{Q5010}  
+5010  
 
 
 
