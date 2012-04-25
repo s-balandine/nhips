@@ -248,7 +248,7 @@ For Each oTable In oTables
 						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
-					Desc = Desc & Mid(Replace(S, "::", vbCrLf & "  "), 2) & vbCrLf 
+					Desc = Desc & Mid(Replace(S, "::", vbCrLf & "  "), 3) & vbCrLf 
 					For Each oBusinessRule in oColumn.AttachedRules
 						If IsObject(oBusinessRule) Then
 							Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
