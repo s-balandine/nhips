@@ -121,7 +121,7 @@ For Each oTable In oTables
 		Desc = Desc & String(NCharWidth, "=")
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.IsPrimary) Then
+			If IsObject(oColumn) And Not (oColumn.Primary) Then
 				If oColumn.DataType="AUTOINCREMENT" Then
 					Desc = Desc & "<IDNUM>"
 				End If
@@ -129,7 +129,7 @@ For Each oTable In oTables
 		Next
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.IsPrimary) Then
+			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.Primary) Then
 
 				ColumnName = ExtendedAttribute (oColumn, "Label")
 				ColumnSection = ExtendedAttribute (oColumn, "Section")
