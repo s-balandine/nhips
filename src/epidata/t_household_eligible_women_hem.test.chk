@@ -6,7 +6,7 @@ END
 q1001
   MUSTENTER
   AFTER ENTRY
-    LET recid=Q1001
+    LET recid=String(Q1001)+"."+String(Q1002)+"."+String(Q1003)
   END
 END
 
