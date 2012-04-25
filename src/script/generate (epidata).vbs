@@ -70,6 +70,14 @@ Wiki = ""
 WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
+	If IsObject(oTable) And (oTable.Name="Household") Then
+		WScript.Echo "  " & oTable.Name
+		Desc = ""
+		
+		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.qes", ForWriting, true)
+		oFile.Write Template & vbCrLf
+		oFile.Close
+	End If
 Next
 
 Set oApp = Nothing
