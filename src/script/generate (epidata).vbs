@@ -123,6 +123,8 @@ For Each oTable In oTables
 			If IsObject(oColumn) And oColumn.Primary Then
 				If oColumn.DataType="AUTOINCREMENT" Then
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 20) & "Record ID: <IDNUM>" & vbCrLf
+				Else
+				    Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 20) & "Record ID: <IDNUM>" & vbCrLf
 				End If
 			End If
 		Next
