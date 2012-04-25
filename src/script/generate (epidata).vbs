@@ -70,7 +70,7 @@ Wiki = ""
 WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household") Then
+	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
 		
 		WScript.Echo "  " & oTable.Name
 		
