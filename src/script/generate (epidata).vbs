@@ -73,7 +73,7 @@ NCharWidth = 80
 NCharMax = 80
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Survey Supervisor") Then
+	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
 		
 		WScript.Echo "  " & oTable.Name
 				
