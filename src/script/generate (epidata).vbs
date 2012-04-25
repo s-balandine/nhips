@@ -242,9 +242,9 @@ For Each oTable In oTables
 							Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf 
 						End If
 					End If
-					For Each oBusinessRule in oColumn.BusinessRules
-						If IsObject(oColumn) And Not (oColumn.Computed) Then
-							Desc = Desc & LCase(oBusinessRule.Domain.Code) & vbCrLf 
+					For Each oBusinessRule in oColumn.AttachedRules
+						If IsObject(oBusinessRule) Then
+							Desc = Desc & LCase(oBusinessRule.Code) & vbCrLf 
 						End if
 					Next
 				End If
