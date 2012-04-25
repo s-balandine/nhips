@@ -104,13 +104,15 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
-				Desc = Desc & oColumn.Name & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".")
+				Desc = Desc & oColumn.Name
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
+					Desc = Desc & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".")
 					Desc = Desc & String(oColumn.Length, "#") & "  "
 				End If
 				
 				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
+					Desc = Desc & String(NCharMax - Len(oColumn.Name) - oColumn.Length - 3, ".")
 					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
