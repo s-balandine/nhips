@@ -190,7 +190,7 @@ For Each oTable In oTables
 				End If
 								
 				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
-					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length - 1, ".")
+					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
