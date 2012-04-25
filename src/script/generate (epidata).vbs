@@ -218,7 +218,7 @@ For Each oTable In oTables
 			If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
 				Values = oDomain.ListOfValues
 				Values = Split(Values, vbNewLine, -1, 1)
-				Desc = Desc & "  LABEL " & LCase(oDomain.Code) & vbCrLf
+				Desc = Desc & "  LABEL " & UCase(oDomain.Code) & vbCrLf
 				For i=0 To UBound(Values)
 					Value = Values(i)
 					Value = Split(Value, vbTab, -1, 1)
