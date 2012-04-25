@@ -22,7 +22,7 @@ StrModel = ""
 If oArgs.count()>0 Then
   StrModel = oArgs(0)
 Else
-  Set oFolder = oFileSystemObject.getFolder(".").ParentFolder.ParentFolder
+  Set oFolder = oFileSystemObject.getFolder(".").ParentFolder
   Set oFiles = oFolder.Files
   If oFiles.Count <> 0 Then
     For Each oFile in oFolder.Files
