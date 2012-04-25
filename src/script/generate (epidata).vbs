@@ -145,9 +145,9 @@ For Each oTable In oTables
 				    ColumnQuestionPrev = ColumnQuestion
 				    Desc = Desc & String(NCharWidth, "-") & vbCrLf
 					If ColumnQuestionN > 10 Then 
-					Desc = Desc & ColumnPrefix & ColumnSectionN & ColumnQuestionN-ColumnSectionNOffset & Space(2)
+					Desc = Desc & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN & Space(2)
 					Else
-					Desc = Desc & ColumnPrefix & ColumnSectionN & "0" & ColumnQuestionN-ColumnSectionNOffset & Space(2)
+					Desc = Desc & ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN & Space(2)
 					End If
 					Desc = Desc & ColumnQuestion & vbCrLf
 				    ColumnQuestionN = ColumnQuestionN + 1
@@ -159,11 +159,11 @@ For Each oTable In oTables
 				Desc = Desc & Space(37-4)
 				
 				If ColumnQuestionN > 10 Then 
-					Desc = Desc & "({" & ColumnPrefix & ColumnSectionN & ColumnQuestionN-ColumnSectionNOffset-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & ColumnQuestionN-ColumnSectionNOffset-1 & ColumnN
+					Desc = Desc & "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
 				Else
-					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionN & "0" & ColumnQuestionN-ColumnSectionNOffset-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionN & "0" & ColumnQuestionN-ColumnSectionNOffset-1 & ColumnN
+					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & ColumnN
 				End If
 						
 				Desc = Desc & ColumnName
