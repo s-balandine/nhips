@@ -229,7 +229,18 @@ For Each oTable In oTables
 		Next
 		
 		Desc = Desc & "END" & vbCrLf & vbCrLf
-		
+
+		Desc = Desc & "BEFORE RECORD" & vbCrLf
+		For Each oColumn in oTable.Columns
+		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") Then
+			    ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
+				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
+				Desc = Desc & "  LET " & ColumnName & "=" & oColumn.DefaultValue & vbCrLf
+				Desc = Desc & " ENDIF" & vbCrLf
+			End If
+		Next
+		Desc = Desc & "END" & vbCrLf
+
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 		    If IsObject(oColumn) And (oColumn.Mandatory) Then
