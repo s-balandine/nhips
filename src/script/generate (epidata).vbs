@@ -239,7 +239,8 @@ For Each oTable In oTables
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 					
 					If not oColumn.Domain is nothing Then
 						If oColumn.Domain.ListOfValues <> "" Then
-							Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf 
+							Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
+							Desc = Desc & "  TYPE COMMENT" & vbCrLf
 						End If
 					End If
 					For Each oBusinessRule in oColumn.AttachedRules
