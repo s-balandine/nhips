@@ -103,3 +103,98 @@ LABELBLOCK
    END
 END
 
+Q1001
+  MUSTENTER
+  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
+  \viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
+    LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
+  END\par
+  }
+  
+END
+
+Q1002
+  MUSTENTER
+  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
+  \viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
+    LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
+  END\par
+  }
+  
+END
+
+Q1003
+  MUSTENTER
+  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
+  \viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
+    LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
+  END\par
+  }
+  
+END
+
+Q2001
+  MUSTENTER
+END
+
+Q2002
+  MUSTENTER
+END
+
+Q2003
+  MUSTENTER
+END
+
+Q2011
+END
+
+Q2012
+END
+
+Q2021
+  MUSTENTER
+  COMMENT LEGAL USE d_ni_visit_result_household_member SHOW
+  TYPE COMMENT
+END
+
+Q2022
+  MUSTENTER
+END
+
+Q3001
+END
+
+Q3002
+END
+
+Q4001
+  MUSTENTER
+  COMMENT LEGAL USE d_ni_yesno SHOW
+  TYPE COMMENT
+  
+END
+
+Q4002
+  MUSTENTER
+END
+
+Q4003
+  MUSTENTER
+  COMMENT LEGAL USE d_ni_yesno SHOW
+  TYPE COMMENT
+END
+
+Q4004
+  MUSTENTER
+END
+
+Q4011
+  MUSTENTER
+  COMMENT LEGAL USE d_ni_yesno SHOW
+  TYPE COMMENT
+END
+
+Q4012
+  MUSTENTER
+END
+
