@@ -131,15 +131,15 @@ For Each oTable In oTables
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 0
+					If ColumnSectionN - SectionFirst < 0 Then
+						ColumnPrefix = "S"
+						ColumnSectionNOffset = ColumnSectionN
+					Else
+						ColumnPrefix = "Q"
+						ColumnSectionNOffset = ColumnSectionN - SectionFirst
+					End If
 				End If
 				
-				If ColumnSectionN - SectionFirst < 0 Then
-					ColumnPrefix = "S"
-					ColumnSectionNOffset = 0
-				Else
-					ColumnPrefix = "Q"
-					ColumnSectionNOffset = SectionFirst
-				End If
 				
 				If ColumnQuestion<>ColumnQuestionPrev Then
 				    ColumnQuestionPrev = ColumnQuestion
