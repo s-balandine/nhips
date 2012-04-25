@@ -109,6 +109,7 @@ For Each oTable In oTables
 	    ColumnQuestion = ""
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
+		ColumnN = 0
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
@@ -142,7 +143,16 @@ For Each oTable In oTables
 				    ColumnQuestionN = ColumnQuestionN + 1
 				End If
 				
+				ColumnN = ColumnN + 1
+				
 				Desc = Desc & Space(50)
+				
+				If ColumnQuestionN > 10 Then 
+					Desc = Desc & "{Q" & ColumnSection & "0" & ColumnQuestionN & ColumnN & Space(2)
+				Else
+					Desc = Desc & "{Q" & ColumnSection & ColumnQuestionN & ColumnN & Space(2)
+				End If
+						
 				Desc = Desc & ColumnName
 							
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
