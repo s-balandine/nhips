@@ -130,7 +130,7 @@ For Each oTable In oTables
 				
 				If ColumnQuestion<>ColumnQuestionPrev Then
 				    ColumnQuestionPrev = ColumnQuestion
-				    
+				    Desc = Desc & String(NCharWidth, "-") & vbCrLf
 					If ColumnQuestionN > 10 Then 
 					Desc = Desc & ColumnSectionN & ColumnQuestionN & Space(2)
 					Else
@@ -153,7 +153,6 @@ For Each oTable In oTables
 					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
-				Desc = Desc & String(NCharWidth, "-") & vbCrLf
 				Desc = Desc & vbCrLf
 			End If
 		Next 
