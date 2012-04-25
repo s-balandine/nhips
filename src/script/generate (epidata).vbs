@@ -231,20 +231,18 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
 				Desc = Desc & vbCrLf
-				Desc = Desc & ColumnName & vbCrLf
-				
+				Desc = Desc & ColumnName & vbCrLf		
 				If oColumn.Primary Then 
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
-				End If
-				If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 
-				
-				If not oColumn.Domain is nothing Then
-					If oColumn.Domain.ListOfValues <> "" Then
-						Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf 
+				Else
+					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 					
+					If not oColumn.Domain is nothing Then
+						If oColumn.Domain.ListOfValues <> "" Then
+							Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf 
+						End If
 					End If
 				End If
-          
 				Desc = Desc & "END" & vbCrLf
 			End If
 		Next 
