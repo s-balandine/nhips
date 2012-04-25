@@ -40,39 +40,39 @@ S300  Actors
 4.Responden\'t background
 ================================================================================
 --------------------------------------------------------------------------------
-Q400  In what month and year were you born?
-                                 ({Q400.1})  Month unknown
-                                 ({Q400.2})  Month
-                                 ({Q400.3})  Year unknown
-                                 ({Q400.4})  Year
+Q40-4  In what month and year were you born?
+                                 ({Q40-4.1})  Month unknown
+                                 ({Q40-4.2})  Month
+                                 ({Q40-4.3})  Year unknown
+                                 ({Q40-4.4})  Year
 --------------------------------------------------------------------------------
-Q401  How old were you at your last birthday?
-                                 ({Q401.1})  Age unknown
-                                 ({Q401.2})  Age in completed year
+Q40-3  How old were you at your last birthday?
+                                 ({Q40-3.1})  Age unknown
+                                 ({Q40-3.2})  Age in completed year
 --------------------------------------------------------------------------------
-Q402  Have you ever attended school?
-                                 ({Q402.1})  
+Q40-2  Have you ever attended school?
+                                 ({Q40-2.1})  
 --------------------------------------------------------------------------------
-Q403  What is the highest level of school you attended: primary, secondary, or higher? 
-                                 ({Q403.1})  
+Q40-1  What is the highest level of school you attended: primary, secondary, or higher? 
+                                 ({Q40-1.1})  
 --------------------------------------------------------------------------------
-Q404  What is the highest (grade/form/year) you completed at that level? 
-                                 ({Q404.1})  ................................##  
+Q400  What is the highest (grade/form/year) you completed at that level? 
+                                 ({Q400.1})  ................................##  
 
 
 5.
 ================================================================================
 --------------------------------------------------------------------------------
-Q500  
-                                 ({Q500.1})  
-                                 ({Q500.2})  
-                                 ({Q500.3})  
-                                 ({Q500.4})  ................................##  
-                                 ({Q500.5})  
-                                 ({Q500.6})  
-                                 ({Q500.7})  
-                                 ({Q500.8})  .<A                               >  
-                                 ({Q500.9})  
-                                 ({Q500.10})  ................................##  
-                                 ({Q500.11})  
+Q50-4  
+                                 ({Q50-4.1})  
+                                 ({Q50-4.2})  
+                                 ({Q50-4.3})  
+                                 ({Q50-4.4})  ................................##  
+                                 ({Q50-4.5})  
+                                 ({Q50-4.6})  
+                                 ({Q50-4.7})  
+                                 ({Q50-4.8})  .<A                               >  
+                                 ({Q50-4.9})  
+                                 ({Q50-4.10})  ................................##  
+                                 ({Q50-4.11})  
 
