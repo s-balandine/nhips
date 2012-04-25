@@ -141,6 +141,7 @@ For Each oTable In oTables
 					End If
 					Desc = Desc & ColumnQuestion & vbCrLf
 				    ColumnQuestionN = ColumnQuestionN + 1
+				    ColumnN = 0
 				End If
 				
 				ColumnN = ColumnN + 1
