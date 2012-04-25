@@ -150,9 +150,9 @@ For Each oTable In oTables
 				Desc = Desc & Space(37-4)
 				
 				If ColumnQuestionN > 10 Then 
-					Desc = Desc & "({Q" & ColumnSectionN & ColumnQuestionN & "." & ColumnN & "})" & Space(2)
+					Desc = Desc & "({Q" & ColumnSectionN & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
 				Else
-					Desc = Desc & "({Q" & ColumnSectionN & "0" & ColumnQuestionN & "." & ColumnN & "})" & Space(2)
+					Desc = Desc & "({Q" & ColumnSectionN & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
 				End If
 						
 				Desc = Desc & ColumnName
