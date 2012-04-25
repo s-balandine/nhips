@@ -247,7 +247,8 @@ For Each oTable In oTables
 							Desc = Desc & "  TYPE COMMENT" & vbCrLf
 						End If
 					End If
-					Desc = Desc & Replace(ExtendedAttribute(oColumn, "Check"), "::", "  " & vbCrLf) & vbCrLf 
+					S = ExtendedAttribute(oColumn, "Check")
+					Desc = Desc & Replace(S, "::", "  " & vbCrLf) & vbCrLf 
 					For Each oBusinessRule in oColumn.AttachedRules
 						If IsObject(oBusinessRule) Then
 							Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
