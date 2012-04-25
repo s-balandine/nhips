@@ -74,7 +74,7 @@ NCharMax = 80
 SectionFirst=4
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
+	If IsObject(oTable) And (oTable.Name="Survey Supervisor") Then
 		
 		WScript.Echo "  " & oTable.Name
 				
