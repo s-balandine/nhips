@@ -8,12 +8,14 @@ recid
 END
 
 q1001
+  MUSTENTER
   AFTER ENTRY
     LET recid=q1001
   END
 END
 
 q1002
+  MUSTENTER
   AFTER ENTRY
     LET recid=q1002
   END
