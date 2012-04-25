@@ -121,11 +121,11 @@ For Each oTable In oTables
 		Desc = Desc & String(NCharWidth, "=")
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.IsPrimary) Then
-				If oColumn.DataType="AUTOINCREMENT" Then
-					Desc = Desc & "<IDNUM>"
-				End If
-			End If
+			'If IsObject(oColumn) And Not (oColumn.IsPrimary) Then
+			'	If oColumn.DataType="AUTOINCREMENT" Then
+			'		Desc = Desc & "<IDNUM>"
+			'	End If
+			'End If
 		End If
 
 		For Each oColumn in oTable.Columns
