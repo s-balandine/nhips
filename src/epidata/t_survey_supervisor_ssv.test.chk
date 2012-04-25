@@ -11,7 +11,7 @@ END
 
 q1002
   AFTER ENTRY
-    LET recid=COPY(q1001; 1, 1)+"."+q1002
+    LET recid=q1002
   END
 END
 
