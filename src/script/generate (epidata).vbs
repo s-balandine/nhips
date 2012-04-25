@@ -229,13 +229,13 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
 				Desc = Desc & vbCrLf
-				Desc = Desc & ColumnName & vbCrLf		
 				If oColumn.Primary Then 
+				    Desc = Desc & "recid" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				Else
+					Desc = Desc & ExtendedAttribute (oColumn, "NameEpiData") & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 					
 					If not oColumn.Domain is nothing Then
 						If oColumn.Domain.ListOfValues <> "" Then
