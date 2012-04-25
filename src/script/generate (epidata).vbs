@@ -99,12 +99,12 @@ For Each oTable In oTables
 			End If
 		Next 
 
-		
+		NCharMax = NCharMaxColumnName + NCharMaxColumnSize + 2
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
-				Desc = Desc + oColumn.Name
+				Desc = Desc + oColumn.Name & vbCrLf
 				
 			End If
 		Next 
