@@ -244,7 +244,7 @@ For Each oTable In oTables
 					End If
 					For Each oBusinessRule in oColumn.AttachedRules
 						If IsObject(oBusinessRule) Then
-							Desc = Desc & LCase(oBusinessRule.Code) & vbCrLf 
+							Desc = Desc & "  " & Replace(oBusinessRule.ClientExpression, vbCrLf, vbCrLf & "  ") & vbCrLf 
 						End if
 					Next
 				End If
