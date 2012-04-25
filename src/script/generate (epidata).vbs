@@ -233,6 +233,10 @@ For Each oTable In oTables
 				Desc = Desc & vbCrLf
 				Desc = Desc & ColumnName & vbCrLf
 				
+				If oColumn.Primary Then 
+				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
+					Desc = Desc & "  NOENTER" & vbCrLf 
+				End If
 				If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 
 				
 				If not oColumn.Domain is nothing Then
