@@ -5062,7 +5062,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {ECA03C8F-34A5-4AFB-A8AD-00FA12B087B1},H2,1=0
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,11=Identifiers
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1001
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5086,7 +5086,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {ECA03C8F-34A5-4AFB-A8AD-00FA12B087B1},H2,1=0
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,11=Identifiers
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1003
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1002
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5199,7 +5199,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {ECA03C8F-34A5-4AFB-A8AD-00FA12B087B1},H2,1=0
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,11=Identifiers
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3001
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5221,7 +5221,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Actors
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,14=No. Supervisor
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=Interviewer
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2012
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1001
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5251,7 +5251,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Result
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Result
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=Interviewer
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2021
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1011
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5281,7 +5281,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,14=Result (Other)
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=Interviewer
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Result
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2022
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1012
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5302,7 +5302,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,6=Office
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Actors
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,10=No. Typist
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2001
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5323,7 +5323,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,14=No. Supervisor
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Actors
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,6=Office
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2002
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5348,7 +5348,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,13=Month unknown
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3001
 
 </a:ExtendedAttributesText>
 <c:AttachedRules>
@@ -5374,7 +5374,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3002
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5399,7 +5399,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,12=Year unknown
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1003
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3003
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5422,7 +5422,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1004
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3004
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5447,7 +5447,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,39=How old were you at your last birthday?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,11=Age unknown
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1011
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3011
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5470,7 +5470,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,21=Age in completed year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,39=How old were you at your last birthday?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1012
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3012
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5495,7 +5495,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,30=Have you ever attended school?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1021
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3021
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5521,7 +5521,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,324={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=105
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,81=What is the highest level of school you attended: primary, secondary, or higher? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1031
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3031
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5541,7 +5541,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,310={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=106
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,67=What is the highest (grade/form/year) you completed at that level? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q1041
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q3041
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5563,7 +5563,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4001
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5587,7 +5587,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=109
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4002
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5609,7 +5609,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=110
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2003
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4003
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5627,7 +5627,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,118={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2004
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4004
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5649,7 +5649,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,118={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.2
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2005
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4005
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5672,7 +5672,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=111
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2006
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4006
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5704,7 +5704,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=112
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2007
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4007
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5722,7 +5722,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,118={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=112.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2008
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4008
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5744,7 +5744,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,116={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=113
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q2009
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=q4009
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5763,7 +5763,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,119={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=113.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=q20010
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=q40010
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5785,7 +5785,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,117={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=114
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=q20011
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=q40011
 
 </a:ExtendedAttributesText>
 <c:Domain>
