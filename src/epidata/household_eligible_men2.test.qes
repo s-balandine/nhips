@@ -8,7 +8,7 @@ WOMAN\'S QUESTIONNAIRE
 1.Identification
 ================================================================================
 --------------------------------------------------------------------------------
-100  Identifiers
+Q00  Identifiers
                                                   No. Cluster....................###  
                                                   No. Household...................##  
                                                   No. Household Member............##  
@@ -17,16 +17,16 @@ WOMAN\'S QUESTIONNAIRE
 2.Interviewer
 ================================================================================
 --------------------------------------------------------------------------------
-201  Date
+Q01  Date
                                                   Day
                                                   Month
                                                   Year
 --------------------------------------------------------------------------------
-202  Actors
+Q02  Actors
                                                   No. Interviewer.................##  
                                                   No. Supervisor..................##  
 --------------------------------------------------------------------------------
-203  Result
+Q03  Result
                                                   Result
                                                   Result (Other)
 
@@ -34,7 +34,7 @@ WOMAN\'S QUESTIONNAIRE
 3.Office
 ================================================================================
 --------------------------------------------------------------------------------
-304  Actors
+Q04  Actors
                                                   No. Typist......................##  
                                                   No. Supervisor..................##  
 
@@ -42,30 +42,30 @@ WOMAN\'S QUESTIONNAIRE
 4.Responden\'t background
 ================================================================================
 --------------------------------------------------------------------------------
-405  In what month and year were you born?
+Q05  In what month and year were you born?
                                                   Month unknown
                                                   Month
                                                   Year unknown
                                                   Year
 --------------------------------------------------------------------------------
-406  How old were you at your last birthday?
+Q06  How old were you at your last birthday?
                                                   Age unknown
                                                   Age in completed year
 --------------------------------------------------------------------------------
-407  Have you ever attended school?
+Q07  Have you ever attended school?
                                                   
 --------------------------------------------------------------------------------
-408  What is the highest level of school you attended: primary, secondary, or higher? 
+Q08  What is the highest level of school you attended: primary, secondary, or higher? 
                                                   
 --------------------------------------------------------------------------------
-409  What is the highest (grade/form/year) you completed at that level? 
+Q09  What is the highest (grade/form/year) you completed at that level? 
                                                   ................................##  
 
 
 5.
 ================================================================================
 --------------------------------------------------------------------------------
-5010  
+Q010  
                                                   
                                                   
                                                   
