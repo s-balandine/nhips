@@ -9,72 +9,72 @@ WOMAN\'S QUESTIONNAIRE
 ================================================================================
 --------------------------------------------------------------------------------
 Q.00  Identifiers
-                                                  No. Cluster....................###  
-                                                  No. Household...................##  
-                                                  No. Household Member............##  
+                                                  {QIdentification11  No. Cluster....................###  
+                                                  {QIdentification12  No. Household...................##  
+                                                  {QIdentification13  No. Household Member............##  
 
 
 2.Interviewer
 ================================================================================
 --------------------------------------------------------------------------------
 Q.01  Date
-                                                  Day
-                                                  Month
-                                                  Year
+                                                  {QInterviewer24  Day
+                                                  {QInterviewer25  Month
+                                                  {QInterviewer26  Year
 --------------------------------------------------------------------------------
 Q.02  Actors
-                                                  No. Interviewer.................##  
-                                                  No. Supervisor..................##  
+                                                  {QInterviewer37  No. Interviewer.................##  
+                                                  {QInterviewer38  No. Supervisor..................##  
 --------------------------------------------------------------------------------
 Q.03  Result
-                                                  Result
-                                                  Result (Other)
+                                                  {QInterviewer49  Result
+                                                  {QInterviewer410  Result (Other)
 
 
 3.Office
 ================================================================================
 --------------------------------------------------------------------------------
 Q.04  Actors
-                                                  No. Typist......................##  
-                                                  No. Supervisor..................##  
+                                                  {QOffice511  No. Typist......................##  
+                                                  {QOffice512  No. Supervisor..................##  
 
 
 4.Responden\'t background
 ================================================================================
 --------------------------------------------------------------------------------
 Q.05  In what month and year were you born?
-                                                  Month unknown
-                                                  Month
-                                                  Year unknown
-                                                  Year
+                                                  {QResponden\'t background613  Month unknown
+                                                  {QResponden\'t background614  Month
+                                                  {QResponden\'t background615  Year unknown
+                                                  {QResponden\'t background616  Year
 --------------------------------------------------------------------------------
 Q.06  How old were you at your last birthday?
-                                                  Age unknown
-                                                  Age in completed year
+                                                  {QResponden\'t background717  Age unknown
+                                                  {QResponden\'t background718  Age in completed year
 --------------------------------------------------------------------------------
 Q.07  Have you ever attended school?
-                                                  
+                                                  {QResponden\'t background819  
 --------------------------------------------------------------------------------
 Q.08  What is the highest level of school you attended: primary, secondary, or higher? 
-                                                  
+                                                  {QResponden\'t background920  
 --------------------------------------------------------------------------------
 Q.09  What is the highest (grade/form/year) you completed at that level? 
-                                                  ................................##  
+                                                  {QResponden\'t background1021  ................................##  
 
 
 5.
 ================================================================================
 --------------------------------------------------------------------------------
 Q.010  
-                                                  
-                                                  
-                                                  
-                                                  ................................##  
-                                                  
-                                                  
-                                                  
-                                                  .<A                               >  
-                                                  
-                                                  ................................##  
-                                                  
+                                                  {Q01122  
+                                                  {Q01123  
+                                                  {Q01124  
+                                                  {Q01125  ................................##  
+                                                  {Q01126  
+                                                  {Q01127  
+                                                  {Q01128  
+                                                  {Q01129  .<A                               >  
+                                                  {Q01130  
+                                                  {Q01131  ................................##  
+                                                  {Q01132  
 
