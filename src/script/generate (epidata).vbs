@@ -190,8 +190,8 @@ Next
 
 Desc = ""
 
-For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
+For Each oDomain In oDomains
+	If IsObject(oDomain) Then
 		
 		WScript.Echo "  " & oTable.Name
 				
