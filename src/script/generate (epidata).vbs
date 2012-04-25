@@ -205,7 +205,7 @@ For Each oTable In oTables
 Next
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
+	If IsObject(oTable) And (oTable.Name="Household Eligible Women") Then
 		
 		WScript.Echo "  " & oTable.Name
 				
