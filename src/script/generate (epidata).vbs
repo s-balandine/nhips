@@ -107,7 +107,7 @@ For Each oTable In oTables
 				Desc = Desc & oColumn.Name & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".") & vbCrLf
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
-					ColumnSize = oColumn.Length	
+					Desc = Desc & String(oColumn.Length, "#")
 				End If
 				
 				Desc = Desc & vbCrLf
