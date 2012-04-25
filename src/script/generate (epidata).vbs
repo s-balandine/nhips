@@ -268,7 +268,7 @@ Function ExtendedAttribute (Object, AttributeName)
 End Function
 
 Function SetExtendedAttribute (Object, AttributeName, Value)
-    Object.SetExtendedAttribute(oModel.DBMS.Code & "." & AttributeName, Value)
+    Object.SetExtendedAttribute oModel.DBMS.Code & "." & AttributeName, Value 
 End Function
 
 Function RegExpTest(patrn, strng)
