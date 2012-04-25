@@ -110,7 +110,7 @@ For Each oTable In oTables
 		Desc = String(NCharMax, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharMax, "=") & vbCrLf & vbCrLf
+		Desc = Desc & String(NCharMax, "=")
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -122,6 +122,7 @@ For Each oTable In oTables
 				If ColumnSection<>ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
 				    ColumnSectionPrev = ColumnSection
+				    Desc = Desc & vbCrLf & vbCrLf
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharMax, "=") & vbCrLf
 				End If
