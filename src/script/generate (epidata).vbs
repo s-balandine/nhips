@@ -104,8 +104,13 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
-				Desc = Desc + oColumn.Name & vbCrLf
+				Desc = Desc & oColumn.Name & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".") & vbCrLf
 				
+				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
+					ColumnSize = oColumn.Length	
+				End If
+				
+				Desc = Desc & vbCrLf
 			End If
 		Next 
 		
