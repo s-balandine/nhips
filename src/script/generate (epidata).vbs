@@ -121,6 +121,7 @@ For Each oTable In oTables
 				
 				If ColumnSection=ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
+				    ColumnSectionPrev = ColumnSection
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharMax, "=") & vbCrLf
 				End If
