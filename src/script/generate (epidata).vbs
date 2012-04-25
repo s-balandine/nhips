@@ -74,7 +74,7 @@ For Each oTable In oTables
 		
 		WScript.Echo "  " & oTable.Name
 		
-		Desc = ""
+		Desc = ExtendedAttribute (oColumn, "Title")
 		
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
@@ -210,8 +210,8 @@ Function Include (Scriptname)
     oFile.Close
 End Function
 
-Function ExtendedAttribute (Column, AttributeName)
-    s=Column.GetExtendedAttribute(oModel.DBMS.Code & "." & AttributeName)
+Function ExtendedAttribute (Object, AttributeName)
+    s=Object.GetExtendedAttribute(oModel.DBMS.Code & "." & AttributeName)
     s=replace(s, vbCrLf, "")
     s=replace(s, "'", "\'")
     ExtendedAttribute = s
