@@ -71,8 +71,26 @@ WScript.Echo "Création des tables (fichiers)"
 
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household") Then
+		
 		WScript.Echo "  " & oTable.Name
+		
 		Desc = ""
+		
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+
+				NCharMaxColumnName = Max(NCharMaxColumnName, Len(oColumn.Name))
+				
+			End If
+		Next 
+
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+
+				Desc = Desc + oColumn.Name
+				
+			End If
+		Next 
 		
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.qes", ForWriting, true)
 		oFile.Write Desc & vbCrLf
