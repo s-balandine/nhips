@@ -75,12 +75,7 @@ For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
 		
 		WScript.Echo "  " & oTable.Name
-		
-		Desc = String(NCharMax, "=") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharMax, "=") & vbCrLf
-		
+				
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
 		
@@ -112,6 +107,11 @@ For Each oTable In oTables
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
 		
+		Desc = String(NCharMax, "=") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
+		Desc = Desc & String(NCharMax, "=") & vbCrLf
+
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
