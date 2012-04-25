@@ -71,6 +71,7 @@ WScript.Echo "Création des tables (fichiers)"
 
 NCharWidth = 80
 NCharMax = 80
+SectionFirst=4
 
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
@@ -130,6 +131,12 @@ For Each oTable In oTables
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 0
+				End If
+				
+				If ColumnSectionN - SectionFirst < 0 Then
+					ColumnPrefix = "S"
+				Else
+					ColumnPrefix = "Q"
 				End If
 				
 				If ColumnQuestion<>ColumnQuestionPrev Then
