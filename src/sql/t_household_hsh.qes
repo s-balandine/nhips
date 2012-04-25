@@ -1,1 +1,29 @@
+  ==============================================================
+  NDHIWA HIV IMPACT IN POPULATION SURVEY            Typist: >__<   :HSH_VISIT_RESULT                  
+  HOUSEHOLD FORM                                  Keyed by: >__<   :HSH_VISIT_RESULT
+  ==============================================================  
+  
+  INTERVIEW 
+  ..............................................................
+                                                   D    M      Y
+  Date:                                         >__< >__< >____<   :HSH_VISIT_DAY :HSH_VISIT_MONTH :HSH_VISIT_YEAR
+  
+  Team                                         Supervisor:  >__<   :HSH_INTERVIEW_SUPERVISOR
+                                              Interviewer:  >__<   :HSH_INTERVIEWER
 
+  Result:                                                   >__<   :HSH_VISIT_RESULT
+                                                            >__<   :HSH_VISIT_RESULT_OTHER
+
+  HOUSEHOLD IDENTIFICATION
+  ..............................................................  
+                                              Cluster  Household          
+  Identifier Numbers:                           >__<        >__<  :HSH_IDENTIFIER_OF_CLUSTER :HSH_IDENTIFIER_OF_HOUSEHOLD                                
+
+  HOUSEHOLD
+  ..............................................................  
+              
+  Total persons in household:                               >__<   :HSH_COUNT_OF_PERSON
+  Total eligible women:                                     >__<   :HSH_COUNT_OF_ELIGIBLE_WOMEN
+  Total eligible men:                                       >__<   :HSH_COUNT_OF_ELIGIBLE_MEN
+  
+  Line No. of respondent:                                   >__<   :HSH_RESPONDENT
