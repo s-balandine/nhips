@@ -188,6 +188,8 @@ For Each oTable In oTables
 	End If
 Next
 
+Desc = ""
+
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
 		
@@ -198,11 +200,25 @@ For Each oTable In oTables
 			End If
 		Next 
 		
-		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.chk", ForWriting, true)
-		oFile.Write Desc & vbCrLf
-		oFile.Close
 	End If
 Next
+
+For Each oTable In oTables
+	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
+		
+		WScript.Echo "  " & oTable.Name
+				
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+			End If
+		Next 
+		
+	End If
+Next
+
+Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.chk", ForWriting, true)
+oFile.Write Desc & vbCrLf
+oFile.Close
 
 Set oApp = Nothing
 
