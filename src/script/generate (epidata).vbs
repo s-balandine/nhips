@@ -51,7 +51,7 @@ Else
 End If
 
 strPathModel = CreateFolder(oFileSystemObject.GetParentFolderName(oModel.Filename))
-strPathSQL = CreateFolder(strPathModel & "\sql")
+strPathSQL = CreateFolder(strPathModel & "\epidata")
 
 Set opts = oModel.GetPackageOptions()
 
@@ -68,6 +68,13 @@ set oDomains = SortCollection(oModel.Domains)
 Wiki = ""
 
 WScript.Echo "Création des tables (fichiers)"
+
+For Each oTable In oTables
+Next
+
+Set oApp = Nothing
+
+WScript.Quit
 
 For Each oTable In oTables
    If IsObject(oTable) And (oTable.Name="Household") Then
