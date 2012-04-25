@@ -1,9 +1,9 @@
 LABELBLOCK
-  LABEL D_L_ELIGIBLE
+  LABEL d_l_eligible
     0 Non
     1 Oui
    END
-  LABEL D_NI_ETHNIC
+  LABEL d_ni_ethnic
     1 Embu
     2 Kalenjin
     3 Kamba
@@ -19,14 +19,14 @@ LABELBLOCK
     97 Other
     99 Not specified
    END
-  LABEL D_NI_MARITAL_STATUS
+  LABEL d_ni_marital_status
     1 Married or living together
     2 Divorced or separated
     3 Widowed
     4 Never married and never lived together
     99 Not specified
    END
-  LABEL D_NI_VISIT_RESULT_HOUSEHOLD
+  LABEL d_ni_visit_result_household
     1 Completed
     2 No household member at home
     3 No competent respondent at home
@@ -40,7 +40,7 @@ LABELBLOCK
     97 Other
     99 Not specified
    END
-  LABEL D_NI_RELATIONSHIP
+  LABEL d_ni_relationship
     1 Head
     2 Wife or Husband
     3 Son or Daughter
@@ -55,17 +55,17 @@ LABELBLOCK
     98 Don't know
     99 Not specified
    END
-  LABEL D_NI_SEX
+  LABEL d_ni_sex
     1 Male
     2 Female
     99 Not specified
    END
-  LABEL D_NI_YESNO
+  LABEL d_ni_yesno
     1 Yes
     2 No
     99 Not specified
    END
-  LABEL D_NI_VISIT_RESULT_HOUSEHOLD_MEMBER
+  LABEL d_ni_visit_result_household_member
     1 Completed
     2 Not at home
     3 Postponed
@@ -75,27 +75,27 @@ LABELBLOCK
     97 Other
     99 Not specified
    END
-  LABEL D_NI_SCHOOL_LEVEL
+  LABEL d_ni_school_level
     1 Primary
     2 Post-primary or vocational
     3 Secondary or a level
     4 Higher
     99 Not specified
    END
-  LABEL D_TEXT_1_READ_ABILITY
+  LABEL d_text_1_read_ability
     1 Cannont read at all
     2 Able to read only part of sentence
     3 Able to read whole sentence
     99 Not specified
    END
-  LABEL D_TEXT_1_PLACE
+  LABEL d_text_1_place
     1 Nairobi / Kisumu
     2 Other place
     3 Country side
     4 Outside Kenya
     99 Not specified
    END
-  LABEL D_NI_PLACE_TYPE
+  LABEL d_ni_place_type
     1 City
     2 Town
     3 Country side
