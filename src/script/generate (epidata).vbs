@@ -110,7 +110,7 @@ For Each oTable In oTables
 		Desc = String(NCharMax, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
-		Desc = Desc & String(NCharMax, "=")
+		Desc = Desc & String(NCharMax, "=") & vbCrLf & vbCrLf
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -139,8 +139,9 @@ For Each oTable In oTables
 				    ColumnQuestionN = ColumnQuestionN + 1
 				End If
 				
+				Desc = Desc & Space(50)
 				Desc = Desc & ColumnName
-				
+							
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					Desc = Desc & String(oColumn.Length, "#") & "  "
