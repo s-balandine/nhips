@@ -105,7 +105,7 @@ END
 
 AFTER RECORD
  IF (Q1001 = .) THEN
-  HELP "Number must be entered" TYPE=ERROR
+  HELP "RecID must be entered" TYPE=ERROR
   GOTO Q1001
   EXIT
  ENDIF
