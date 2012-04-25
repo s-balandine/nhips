@@ -3487,6 +3487,23 @@ END\par
 <a:Length>32</a:Length>
 </o:PhysicalDomain>
 <o:PhysicalDomain Id="o73">
+<a:ObjectID>BAD93447-AA79-4FBA-9AB7-EC070D591EDC</a:ObjectID>
+<a:Name>Place</a:Name>
+<a:Code>D_TEXT_1_PLACE</a:Code>
+<a:CreationDate>1335198755</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335199079</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:DefaultValue>99</a:DefaultValue>
+<a:ListOfValues>1	Nairobi / Kisumu
+2	Other place
+3	Country side
+4	Outside Kenya
+99	Not specified</a:ListOfValues>
+<a:DataType>INTEGER</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:PhysicalDomain>
+<o:PhysicalDomain Id="o74">
 <a:ObjectID>196B38C0-789B-41F7-9190-C2C015A2D3B5</a:ObjectID>
 <a:Name>Visit Result Household</a:Name>
 <a:Code>D_NI_VISIT_RESULT_HOUSEHOLD</a:Code>
@@ -3511,7 +3528,7 @@ END\par
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o74">
+<o:PhysicalDomain Id="o75">
 <a:ObjectID>623884DF-7840-4B18-A68F-823B90FF6106</a:ObjectID>
 <a:Name>RelationShip</a:Name>
 <a:Code>D_NI_RELATIONSHIP</a:Code>
@@ -3544,7 +3561,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 }
 </a:Description>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o75">
+<o:PhysicalDomain Id="o76">
 <a:ObjectID>89F336EA-A9E5-4E32-9E89-F566002748A8</a:ObjectID>
 <a:Name>Sex</a:Name>
 <a:Code>D_NI_SEX</a:Code>
@@ -3559,7 +3576,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o76">
+<o:PhysicalDomain Id="o77">
 <a:ObjectID>6230584D-0764-4345-A85B-B88935F8E46D</a:ObjectID>
 <a:Name>YesNo</a:Name>
 <a:Code>D_NI_YESNO</a:Code>
@@ -3574,7 +3591,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o77">
+<o:PhysicalDomain Id="o78">
 <a:ObjectID>20F6AF7B-DDA3-4EFE-A4C0-DF7FF997C8CD</a:ObjectID>
 <a:Name>Visit Result Household Member</a:Name>
 <a:Code>D_NI_VISIT_RESULT_HOUSEHOLD_MEMBER</a:Code>
@@ -3595,7 +3612,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o78">
+<o:PhysicalDomain Id="o79">
 <a:ObjectID>ECF64B8B-7D2E-42B1-A7F0-FB64E3445685</a:ObjectID>
 <a:Name>School Level</a:Name>
 <a:Code>D_NI_SCHOOL_LEVEL</a:Code>
@@ -3612,7 +3629,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o79">
+<o:PhysicalDomain Id="o80">
 <a:ObjectID>9248FE55-F7C0-4AA5-A671-82E8E5A335EE</a:ObjectID>
 <a:Name>Read Ability</a:Name>
 <a:Code>D_TEXT_1_READ_ABILITY</a:Code>
@@ -3626,23 +3643,6 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 3	Able to read whole sentence
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
-</o:PhysicalDomain>
-<o:PhysicalDomain Id="o80">
-<a:ObjectID>BAD93447-AA79-4FBA-9AB7-EC070D591EDC</a:ObjectID>
-<a:Name>Place</a:Name>
-<a:Code>D_TEXT_1_PLACE</a:Code>
-<a:CreationDate>1335198755</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335199079</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:DefaultValue>99</a:DefaultValue>
-<a:ListOfValues>1	Nairobi / Kisumu
-2	Other place
-3	Country side
-4	Outside Kenya
-99	Not specified</a:ListOfValues>
-<a:DataType>INTEGER</a:DataType>
-<a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
 <o:PhysicalDomain Id="o81">
 <a:ObjectID>74C77877-06E4-4EA4-A679-935CAFD5C9CA</a:ObjectID>
@@ -4014,7 +4014,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o73"/>
+<o:PhysicalDomain Ref="o74"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o97">
@@ -4545,7 +4545,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o74"/>
+<o:PhysicalDomain Ref="o75"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o120">
@@ -4563,7 +4563,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o75"/>
+<o:PhysicalDomain Ref="o76"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o121">
@@ -4581,7 +4581,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o122">
@@ -4599,7 +4599,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o123">
@@ -4881,7 +4881,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o74"/>
+<o:PhysicalDomain Ref="o75"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o133">
@@ -4899,7 +4899,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o75"/>
+<o:PhysicalDomain Ref="o76"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o134">
@@ -4917,7 +4917,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o135">
@@ -4935,7 +4935,7 @@ END
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o136">
@@ -5384,7 +5384,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o77"/>
+<o:PhysicalDomain Ref="o78"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o151">
@@ -5476,7 +5476,7 @@ END
 <o:BusinessRule Ref="o53"/>
 </c:AttachedRules>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o155">
@@ -5525,7 +5525,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o157">
@@ -5574,7 +5574,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o159">
@@ -5622,7 +5622,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o161">
@@ -5648,7 +5648,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o78"/>
+<o:PhysicalDomain Ref="o79"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o162">
@@ -5690,7 +5690,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o79"/>
+<o:PhysicalDomain Ref="o80"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o164">
@@ -5714,7 +5714,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o80"/>
+<o:PhysicalDomain Ref="o73"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o165">
@@ -5736,7 +5736,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o166">
@@ -5776,7 +5776,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o168">
@@ -5871,7 +5871,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o172">
@@ -5912,7 +5912,7 @@ END
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o76"/>
+<o:PhysicalDomain Ref="o77"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
