@@ -188,7 +188,7 @@ For Each oTable In oTables
 	End If
 Next
 
-Desc = "LABELBLOCK"
+Desc = "LABELBLOCK" & vbCrLf
 
 For Each oDomain In oDomains
 	If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
@@ -200,6 +200,7 @@ For Each oDomain In oDomains
 			Value = Split(Value, vbTab, -1, 1)
 			Desc=Desc & "    "& Value(0) & " " & Value(1) & vbCrLf
 		Next
+		Desc = Desc & "   END" & vbCrLf
 	End If
 Next
 
