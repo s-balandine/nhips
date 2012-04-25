@@ -129,6 +129,7 @@ For Each oTable In oTables
 				    Desc = Desc & vbCrLf & vbCrLf
 					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
+					ColumnQuestionN = 0
 				End If
 				
 				If ColumnQuestion<>ColumnQuestionPrev Then
