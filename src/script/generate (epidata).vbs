@@ -160,10 +160,10 @@ For Each oTable In oTables
 				
 				If ColumnQuestionN > 10 Then 
 					Desc = Desc & "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
+					SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
 				Else
 					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", "q" & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & ColumnN
+					SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & ColumnN
 				End If
 						
 				Desc = Desc & ColumnName
