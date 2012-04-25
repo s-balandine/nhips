@@ -132,7 +132,7 @@ For Each oTable In oTables
 						ColumnSectionNOffset = ColumnSectionN
 					Else
 						ColumnPrefix = "Q"
-						ColumnSectionNOffset = ColumnSectionN - SectionFirst
+						ColumnSectionNOffset = ColumnSectionN - SectionFirst + 1
 					End If
 					Desc = Desc & vbCrLf & vbCrLf
 					Desc = Desc & ColumnSectionNOffset & "." & ColumnSection & vbCrLf
