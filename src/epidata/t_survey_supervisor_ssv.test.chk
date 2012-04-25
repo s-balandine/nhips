@@ -26,6 +26,13 @@ LABELBLOCK
     4 "Never married and never lived together"
     99 "Not specified"
    END
+  LABEL d_text_1_place
+    1 "Nairobi / Kisumu"
+    2 "Other place"
+    3 "Country side"
+    4 "Outside Kenya"
+    99 "Not specified"
+   END
   LABEL d_ni_visit_result_household
     1 "Completed"
     2 "No household member at home"
@@ -88,13 +95,6 @@ LABELBLOCK
     3 "Able to read whole sentence"
     99 "Not specified"
    END
-  LABEL d_text_1_place
-    1 "Nairobi / Kisumu"
-    2 "Other place"
-    3 "Country side"
-    4 "Outside Kenya"
-    99 "Not specified"
-   END
   LABEL d_ni_place_type
     1 "City"
     2 "Town"
@@ -109,8 +109,10 @@ recid
 END
 
 Q1001
+AFTER ENTRY  LET recid=COPY(q1001; 1, 1)+"."+q1002END
 END
 
 Q1002
+AFTER ENTRY  LET recid=COPY(q1001; 1, 1)+"."+q1002END
 END
 
