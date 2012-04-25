@@ -88,6 +88,8 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
 				ColumnSize = 0
+				ColumnSection = ExtendedAttribute (oColumn, "Section")
+				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
 				ColumnName = ExtendedAttribute (oColumn, "Label")
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
