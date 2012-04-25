@@ -232,10 +232,14 @@ For Each oTable In oTables
 		
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-			Desc = Desc & " IF (ID1 = .) THEN" & vbCrLf
-			Desc = Desc & "  HELP ""ID-number must be entered"" TYPE=ERROR" & vbCrLf
-			Desc = Desc & "  GOTO ID1" & vbCrLf
-			Desc = Desc & " ENDIF" & vbCrLf
+		    If IsObject(oColumn) And (oColumn.Mandatory) Then
+			    ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
+			    ColumnLabel = ExtendedAttribute (oColumn, "Label")
+				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
+				Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
+				Desc = Desc & "  GOTO " & ColumnName & "" & vbCrLf
+				Desc = Desc & " ENDIF" & vbCrLf
+			End If
 		Next
 		Desc = Desc & "END" & vbCrLf
 
