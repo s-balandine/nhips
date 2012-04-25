@@ -83,6 +83,7 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
 				ColumnSize = 0
+				ColumnName = ExtendedAttribute (oColumn, "Label")
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 					ColumnSize = oColumn.Length	
@@ -104,15 +105,17 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
-				Desc = Desc & oColumn.Name
+				ColumnName = ExtendedAttribute (oColumn, "Label")
+				
+				Desc = Desc & ColumnName
 				
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
-					Desc = Desc & String(NCharMax - Len(oColumn.Name) - oColumn.Length, ".")
+					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					Desc = Desc & String(oColumn.Length, "#") & "  "
 				End If
 				
 				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
-					Desc = Desc & String(NCharMax - Len(oColumn.Name) - oColumn.Length - 1, ".")
+					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length - 1, ".")
 					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
