@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="nhips" basedir=".">
+	<import file="../share/database/build/build.xml" />
+
+	<target name="create" depends="compile.db" description="">
+		<isql script="create database (simplified)" dir="${dir.sql}" />
+		<move file="${db.file}" tofile="${db.file.simple}" />
+	</target>
+
+    <target name="compile.sql" depends="prepare"  description="">
+        <exec executable="cscript.exe" dir="${dir.project.scripts}">
+            <arg value="generate (${model.dbms}).vbs" />
+            <arg value="${dir.src}/${model.file}" />
+        </exec>
+    	<copy file="${dir.sql}/create schema.sql" tofile="${dir.build.properties.db}/create database.sql" />
+    </target>
+
+	<target name="compile.metadata" depends="prepare"  description="">
+        <exec executable="cscript.exe" dir="${dir.project.scripts}">
+            <arg value="generate (metadata).vbs" />
+            <arg value="${dir.src}/${model.file}" />
+        </exec>
+    </target>
+
+</project>
