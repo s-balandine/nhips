@@ -265,6 +265,10 @@ Function ExtendedAttribute (Object, AttributeName)
     ExtendedAttribute = s
 End Function
 
+Function SetExtendedAttribute (Object, AttributeName, Value)
+    Object.SetExtendedAttribute(oModel.DBMS.Code & "." & AttributeName, Value)
+End Function
+
 Function RegExpTest(patrn, strng)
   Dim regEx, retVal            ' Create variable.
   Set regEx = New RegExp         ' Create regular expression.
