@@ -3195,39 +3195,6 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INTEGER</a:DataType>
 </o:PhysicalDomain>
 <o:PhysicalDomain Id="o48">
-<a:ObjectID>9FD9709C-16B6-4846-8F24-43CEC291960C</a:ObjectID>
-<a:Name>Numeric 1</a:Name>
-<a:Code>D_N_NUMERIC_1</a:Code>
-<a:CreationDate>1334667051</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335357175</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:DataType>NUMERIC(1)</a:DataType>
-<a:Length>1</a:Length>
-</o:PhysicalDomain>
-<o:PhysicalDomain Id="o49">
-<a:ObjectID>FE75D573-4417-415A-8A83-1D768C19F0F0</a:ObjectID>
-<a:Name>Numeric 2</a:Name>
-<a:Code>D_N_NUMERIC_2</a:Code>
-<a:CreationDate>1334667051</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335357174</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:DataType>NUMERIC(2)</a:DataType>
-<a:Length>2</a:Length>
-</o:PhysicalDomain>
-<o:PhysicalDomain Id="o50">
-<a:ObjectID>05E9371A-6847-4E43-843E-13BE7AE7F5DF</a:ObjectID>
-<a:Name>Numeric 3</a:Name>
-<a:Code>D_N_NUMERIC_3</a:Code>
-<a:CreationDate>1334667051</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335357173</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:DataType>NUMERIC(3)</a:DataType>
-<a:Length>3</a:Length>
-</o:PhysicalDomain>
-<o:PhysicalDomain Id="o51">
 <a:ObjectID>51DE066E-8E10-4CF1-9970-FA12F6ED2058</a:ObjectID>
 <a:Name>Key Foreign</a:Name>
 <a:Code>D_NL_KEY_FOREIGN</a:Code>
@@ -3237,18 +3204,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>S-Balandine</a:Modifier>
 <a:DataType>LONG</a:DataType>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o52">
-<a:ObjectID>2D88CD99-7A73-4239-B5B9-9122E05B106B</a:ObjectID>
-<a:Name>Key Primary</a:Name>
-<a:Code>D_NL_KEY_PRIMARY</a:Code>
-<a:CreationDate>1334763129</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335193678</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:DataType>LONG</a:DataType>
-<a:Mandatory>1</a:Mandatory>
-</o:PhysicalDomain>
-<o:PhysicalDomain Id="o53">
+<o:PhysicalDomain Id="o49">
 <a:ObjectID>9A457F55-E642-4C0C-804C-2FD1CB3DA8FD</a:ObjectID>
 <a:Name>Year</a:Name>
 <a:Code>D_NI_YEAR</a:Code>
@@ -3261,7 +3217,18 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o54">
+<o:PhysicalDomain Id="o50">
+<a:ObjectID>2D88CD99-7A73-4239-B5B9-9122E05B106B</a:ObjectID>
+<a:Name>Key Primary</a:Name>
+<a:Code>D_NL_KEY_PRIMARY</a:Code>
+<a:CreationDate>1334763129</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335193678</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:DataType>LONG</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:PhysicalDomain>
+<o:PhysicalDomain Id="o51">
 <a:ObjectID>C3624B2D-D423-467A-B3EE-454FBB0C76C0</a:ObjectID>
 <a:Name>Marital Status</a:Name>
 <a:Code>D_NI_MARITAL_STATUS</a:Code>
@@ -3278,7 +3245,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o55">
+<o:PhysicalDomain Id="o52">
 <a:ObjectID>B6E7A520-11B9-4522-9292-7468D9B6895E</a:ObjectID>
 <a:Name>Month</a:Name>
 <a:Code>D_NI_MONTH</a:Code>
@@ -3291,7 +3258,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:PhysicalDomain>
-<o:PhysicalDomain Id="o56">
+<o:PhysicalDomain Id="o53">
 <a:ObjectID>235528DB-1042-4F65-9C38-2B1A3D48AB6E</a:ObjectID>
 <a:Name>Name</a:Name>
 <a:Code>D_T_NAME</a:Code>
@@ -3301,6 +3268,39 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>S-Balandine</a:Modifier>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
+</o:PhysicalDomain>
+<o:PhysicalDomain Id="o54">
+<a:ObjectID>9FD9709C-16B6-4846-8F24-43CEC291960C</a:ObjectID>
+<a:Name>Numeric 1</a:Name>
+<a:Code>D_N_NUMERIC_1</a:Code>
+<a:CreationDate>1334667051</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335357175</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:DataType>NUMERIC(1)</a:DataType>
+<a:Length>1</a:Length>
+</o:PhysicalDomain>
+<o:PhysicalDomain Id="o55">
+<a:ObjectID>FE75D573-4417-415A-8A83-1D768C19F0F0</a:ObjectID>
+<a:Name>Numeric 2</a:Name>
+<a:Code>D_N_NUMERIC_2</a:Code>
+<a:CreationDate>1334667051</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335357174</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:DataType>NUMERIC(2)</a:DataType>
+<a:Length>2</a:Length>
+</o:PhysicalDomain>
+<o:PhysicalDomain Id="o56">
+<a:ObjectID>05E9371A-6847-4E43-843E-13BE7AE7F5DF</a:ObjectID>
+<a:Name>Numeric 3</a:Name>
+<a:Code>D_N_NUMERIC_3</a:Code>
+<a:CreationDate>1334667051</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335357173</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:DataType>NUMERIC(3)</a:DataType>
+<a:Length>3</a:Length>
 </o:PhysicalDomain>
 <o:PhysicalDomain Id="o57">
 <a:ObjectID>D24EF411-9B0C-469B-BA6D-B4D2E2E86B48</a:ObjectID>
@@ -3511,7 +3511,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o68">
@@ -3526,7 +3526,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o69">
@@ -3541,7 +3541,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
@@ -3679,7 +3679,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>3</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o50"/>
+<o:PhysicalDomain Ref="o56"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o72">
@@ -3694,7 +3694,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o73">
@@ -3708,7 +3708,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o74">
@@ -3722,7 +3722,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o75">
@@ -3736,7 +3736,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o76">
@@ -3750,7 +3750,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o77">
@@ -3782,7 +3782,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o55"/>
+<o:PhysicalDomain Ref="o52"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o79">
@@ -3798,7 +3798,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o53"/>
+<o:PhysicalDomain Ref="o49"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o80">
@@ -3840,7 +3840,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o82">
@@ -3854,7 +3854,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o83">
@@ -3868,7 +3868,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o84">
@@ -3882,7 +3882,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o85">
@@ -3896,7 +3896,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
@@ -3943,7 +3943,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o88">
@@ -3957,7 +3957,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o89">
@@ -3971,7 +3971,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
@@ -4017,7 +4017,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o92">
@@ -4031,7 +4031,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o93">
@@ -4045,7 +4045,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
@@ -4091,7 +4091,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o96">
@@ -4105,7 +4105,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o97">
@@ -4119,7 +4119,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 </c:Columns>
@@ -4257,7 +4257,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>3</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o50"/>
+<o:PhysicalDomain Ref="o56"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o100">
@@ -4272,7 +4272,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o101">
@@ -4287,7 +4287,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o102">
@@ -4301,7 +4301,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o103">
@@ -4419,7 +4419,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o54"/>
+<o:PhysicalDomain Ref="o51"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o109">
@@ -4593,7 +4593,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>3</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o50"/>
+<o:PhysicalDomain Ref="o56"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o113">
@@ -4608,7 +4608,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o114">
@@ -4623,7 +4623,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o115">
@@ -4637,7 +4637,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <c:Domain>
-<o:PhysicalDomain Ref="o56"/>
+<o:PhysicalDomain Ref="o53"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o116">
@@ -4755,7 +4755,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <c:Domain>
-<o:PhysicalDomain Ref="o54"/>
+<o:PhysicalDomain Ref="o51"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o122">
@@ -4939,7 +4939,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o50"/>
+<o:PhysicalDomain Ref="o56"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o126">
@@ -4957,7 +4957,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o127">
@@ -4975,7 +4975,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o128">
@@ -4992,7 +4992,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o129">
@@ -5009,7 +5009,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o130">
@@ -5026,7 +5026,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o131">
@@ -5043,7 +5043,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o132">
@@ -5081,7 +5081,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o55"/>
+<o:PhysicalDomain Ref="o52"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o134">
@@ -5100,7 +5100,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o53"/>
+<o:PhysicalDomain Ref="o49"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o135">
@@ -5195,7 +5195,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o55"/>
+<o:PhysicalDomain Ref="o52"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o139">
@@ -5235,7 +5235,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o53"/>
+<o:PhysicalDomain Ref="o49"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o141">
@@ -5336,7 +5336,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o146">
@@ -5418,7 +5418,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o150">
@@ -5548,7 +5548,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 
 </a:ExtendedAttributesText>
 <c:Domain>
-<o:PhysicalDomain Ref="o49"/>
+<o:PhysicalDomain Ref="o55"/>
 </c:Domain>
 </o:Column>
 <o:Column Id="o156">
