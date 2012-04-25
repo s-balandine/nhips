@@ -106,6 +106,8 @@ For Each oTable In oTables
 
 		NCharMax = NCharMaxColumnName + NCharMaxColumnSize + 2
 		
+		ColumnSectionN = 0
+		ColumnSection = ""
 		ColumnSectionPrev = ""
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
@@ -118,8 +120,8 @@ For Each oTable In oTables
 				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
 				
 				If ColumnSection=ColumnSectionPrev Then
-				    ColumnSectionN = ColumnSection + 1
-					Desc = Desc & ColumnSection & vbCrLf
+				    ColumnSectionN = ColumnSectionN + 1
+					Desc = Desc & ColumnSectionN & "." & ColumnSection & vbCrLf
 					Desc = Desc & String(NCharMax, "=") & vbCrLf
 				End If
 				
