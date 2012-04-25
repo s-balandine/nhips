@@ -213,6 +213,10 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
+				ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
+				Desc = Desc & ColumnName & vbCrLf
+				If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 
+				Desc = Desc & "END" & vbCrLf
 			End If
 		Next 
 		
