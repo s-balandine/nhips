@@ -5,7 +5,7 @@ END
 
 q1001
   AFTER ENTRY
-    LET RECID=Q1001
+    LET recid=q1001
   END
 END
 
