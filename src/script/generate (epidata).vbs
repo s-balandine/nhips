@@ -88,11 +88,8 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
 				ColumnSize = 0
-				ColumnSection = ExtendedAttribute (oColumn, "Section")
-				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
-				ColumnName = ExtendedAttribute (oColumn, "Label")
-				
-				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
+			    
+			    If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 					ColumnSize = oColumn.Length	
 				End If
 				
@@ -109,10 +106,22 @@ For Each oTable In oTables
 
 		NCharMax = NCharMaxColumnName + NCharMaxColumnSize + 2
 		
+		ColumnSectionPrev = ""
+	    ColumnQuestionPrev = ""
+		ColumnNamePrev = ""
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
 				ColumnName = ExtendedAttribute (oColumn, "Label")
+				ColumnSection = ExtendedAttribute (oColumn, "Section")
+				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
+				
+				If ColumnSection=ColumnSectionPrev Then
+				    ColumnSectionN = ColumnSection + 1
+					Desc = Desc & ColumnSection & vbCrLf
+					Desc = Desc & String(NCharMax, "=") & vbCrLf
+				End If
 				
 				Desc = Desc & ColumnName
 				
