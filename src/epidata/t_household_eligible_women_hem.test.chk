@@ -103,24 +103,24 @@ LABELBLOCK
    END
 END
 
-
+recid
   KEY UNIQUE 1
   NOENTER
 END
 
 Q1001
   MUSTENTER
-calcidentifier
+  
 END
 
 Q1002
   MUSTENTER
-calcidentifier
+  
 END
 
 Q1003
   MUSTENTER
-calcidentifier
+  
 END
 
 Q2001
@@ -160,7 +160,7 @@ END
 Q4001
   MUSTENTER
   COMMENT LEGAL USE d_ni_yesno SHOW
-skipifvalueequalyes
+  
 END
 
 Q4002
