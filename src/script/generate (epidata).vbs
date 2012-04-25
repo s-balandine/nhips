@@ -69,12 +69,17 @@ Wiki = ""
 
 WScript.Echo "Création des tables (fichiers)"
 
+NCharMax = 120
+
 For Each oTable In oTables
 	If IsObject(oTable) And (oTable.Name="Household Eligible Men2") Then
 		
 		WScript.Echo "  " & oTable.Name
 		
-		Desc = ExtendedAttribute (oColumn, "Title")
+		Desc = String(NCharMax, "=")
+		Desc = Desc & ExtendedAttribute (oModel, "Title")
+		Desc = Desc & ExtendedAttribute (oTable, "Title")
+		Desc = Desc & String(NCharMax, "=")
 		
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
