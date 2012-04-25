@@ -216,7 +216,15 @@ For Each oTable In oTables
 				ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
 				Desc = Desc & vbCrLf
 				Desc = Desc & ColumnName & vbCrLf
+				
 				If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf 
+				
+				If not oColumn.Domain is nothing Then
+					If oColumn.Domain.ListOfValues <> "" Then
+						Desc = Desc & "  COMMENT LEGAL USE " & LCase(oColumn.Domain.Code) & " SHOW" & vbCrLf 
+					End If
+				End If
+          
 				Desc = Desc & "END" & vbCrLf
 			End If
 		Next 
