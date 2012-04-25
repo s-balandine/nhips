@@ -76,10 +76,10 @@ For Each oTable In oTables
 		
 		WScript.Echo "  " & oTable.Name
 		
-		Desc = String(NCharMax, "=")
-		Desc = Desc & ExtendedAttribute (oModel, "Title")
-		Desc = Desc & ExtendedAttribute (oTable, "Title")
-		Desc = Desc & String(NCharMax, "=")
+		Desc = String(NCharMax, "=") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
+		Desc = Desc & String(NCharMax, "=") & vbCrLf
 		
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
