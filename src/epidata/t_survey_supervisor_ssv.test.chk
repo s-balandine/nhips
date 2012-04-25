@@ -109,16 +109,10 @@ recid
 END
 
 Q1001
-  
-AFTER ENTRY  
-   LET recid=COPY(q1001; 1, 1)+"."+q1002  
-END
+  AFTER ENTRY     LET recid=COPY(q1001; 1, 1)+"."+q1002  END
 END
 
 Q1002
-  
-AFTER ENTRY  
-   LET recid=COPY(Q1001; 1, 1)+"."+Q1002  
-END
+  AFTER ENTRY     LET recid=COPY(Q1001; 1, 1)+"."+Q1002  END
 END
 
