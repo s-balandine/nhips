@@ -203,7 +203,7 @@ For Each oTable In oTables
 				For i=0 To UBound(Values)
 					Value = Values(i)
 					Value = Split(Value, vbTab, -1, 1)
-					Desc=Desc & "    "& Value(0) & " " & Value(1) & vbCrLf
+					Desc=Desc & "    " & Value(0) & " """ & Value(1) & """" & vbCrLf
 				Next
 				Desc = Desc & "   END" & vbCrLf
 			End If
