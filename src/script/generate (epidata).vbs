@@ -87,6 +87,7 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
 				ColumnSize = 0
+			    ColumnName = ExtendedAttribute (oColumn, "Label")
 			    
 			    If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 					ColumnSize = oColumn.Length	
