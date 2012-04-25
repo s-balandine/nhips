@@ -239,7 +239,7 @@ For Each oTable In oTables
 				Desc = Desc & " ENDIF" & vbCrLf
 			End If
 		Next
-		Desc = Desc & "END" & vbCrLf
+		Desc = Desc & "END" & vbCrLf & vbCrLf
 
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
