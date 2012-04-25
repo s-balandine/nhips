@@ -111,6 +111,7 @@ BEFORE RECORD
   LET Q1002=Unnamed
  ENDIF
 END
+
 AFTER RECORD
  IF (Q1001 = .) THEN
   HELP "Number must be entered" TYPE=ERROR
