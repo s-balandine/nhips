@@ -238,7 +238,7 @@ For Each oTable In oTables
 				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
 				Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
 				Desc = Desc & "  GOTO " & ColumnName & "" & vbCrLf
-				Desc = Desc & "  EXIT" & ColumnName & "" & vbCrLf
+				Desc = Desc & "  EXIT" & "" & vbCrLf
 				Desc = Desc & " ENDIF" & vbCrLf
 			End If
 		Next
