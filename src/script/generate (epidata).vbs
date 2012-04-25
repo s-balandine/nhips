@@ -253,7 +253,7 @@ For Each oTable In oTables
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				Else
-					Desc = Desc & ExtendedAttribute (oColumn, "NameEpiData") & vbCrLf		
+					Desc = Desc & UCase(ExtendedAttribute (oColumn, "NameEpiData")) & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
 					'If oColumn.LowValue>=0 And oColumn.HighValue>0 Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
 					If not oColumn.Domain is nothing Then
