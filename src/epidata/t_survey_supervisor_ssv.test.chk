@@ -121,7 +121,7 @@ AFTER RECORD
  ENDIF
 END
 
-recid
+RECID
   KEY UNIQUE 1
   NOENTER
 END
@@ -130,7 +130,7 @@ Q1001
   MUSTENTER
 
   AFTER ENTRY
-     LET recid=COPY(q1001; 1, 1)+"."+q1002
+     LET recid=COPY(Q1001; 1, 1)+"."+Q1002
   END
 END
 
