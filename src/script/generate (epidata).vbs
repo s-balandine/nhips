@@ -77,6 +77,7 @@ For Each oTable In oTables
 		Desc = ""
 		
 		NCharMaxColumnName = 0
+		NCharMaxColumnSize = 0
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -85,9 +86,15 @@ For Each oTable In oTables
 					NCharMaxColumnName = Len(oColumn.Name)
 				End If
 				
+				If NCharMaxColumnSize < Len(oColumn.Size) Then
+					NCharMaxColumnSize = Len(oColumn.Size)
+				End If
+				
 			End If
 		Next 
 
+		
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 
