@@ -191,7 +191,7 @@ For Each oTable In oTables
 					Desc = Desc & Space(NCharWidth - NCharMax)
 					ColumnQuestionBreak = False
 				Else
-				    'Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion))
+				    Desc = Desc & Space(NCharWidth - NCharMax - 12)
 				End If
 				
 				If ColumnQuestionN > 10 Then 
