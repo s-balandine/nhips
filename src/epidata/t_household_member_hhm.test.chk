@@ -139,43 +139,86 @@ LABELBLOCK
 END
 
 BEFORE RECORD
- IF (Q2011 = .) THEN
-  LET Q2011=Unnamed
+ IF (Q2001 = .) THEN
+  LET Q2001=Unnamed
  ENDIF
- IF (Q2012 = .) THEN
-  LET Q2012=Unnamed
+ IF (Q2002 = .) THEN
+  LET Q2002=99
+ ENDIF
+ IF (Q2003 = .) THEN
+  LET Q2003=99
+ ENDIF
+ IF (Q2007 = .) THEN
+  LET Q2007=99
+ ENDIF
+ IF (Q2008 = .) THEN
+  LET Q2008=0
+ ENDIF
+ IF (Q2009 = .) THEN
+  LET Q2009=0
  ENDIF
 END
 
 AFTER RECORD
- IF (RECID = .) THEN
+ IF ( = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO RECID
+  GOTO 
   EXIT
  ENDIF
- IF (Q2011 = .) THEN
-  HELP "Firstname must be entered" TYPE=ERROR
-  GOTO Q2011
+ IF ( = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO 
   EXIT
  ENDIF
- IF (Q2012 = .) THEN
-  HELP "Lastname must be entered" TYPE=ERROR
-  GOTO Q2012
+ IF ( = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO 
   EXIT
  ENDIF
-END
-
-Q2011
-  MUSTENTER
-  ::AFTER ENTRY::
-     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002::
-  END
-END
-
-Q2012
-  MUSTENTER
-  ::AFTER ENTRY::
-     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002::
-  END
+ IF (Q2001 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2001
+  EXIT
+ ENDIF
+ IF (Q2002 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2002
+  EXIT
+ ENDIF
+ IF (Q2003 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2003
+  EXIT
+ ENDIF
+ IF (Q2004 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2004
+  EXIT
+ ENDIF
+ IF (Q2005 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2005
+  EXIT
+ ENDIF
+ IF (Q2006 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2006
+  EXIT
+ ENDIF
+ IF (Q2007 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2007
+  EXIT
+ ENDIF
+ IF (Q2008 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2008
+  EXIT
+ ENDIF
+ IF (Q2009 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2009
+  EXIT
+ ENDIF
 END
 

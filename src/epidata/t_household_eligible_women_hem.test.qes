@@ -6,113 +6,120 @@ WOMAN\'S QUESTIONNAIRE                                  {Rec}ord {ID}: <A       
 1.IDENTIFICATION
 ================================================================================
 --------------------------------------------------------------------------------
-S100  Identifiers                ({S100.1})  No. Cluster....................###  
-                                 ({S100.2})  No. Household...................##  
-                                 ({S100.3})  No. Household Member............##  
+S101  Identifiers             ({S101.1})  No. Cluster.......................###  
+                              ({S101.2})  No. Household......................##  
+                              ({S101.3})  No. Household Member...............##  
 
 2.INTERVIEWER
 ================================================================================
 --------------------------------------------------------------------------------
-S200  Date                       ({S200.1})  Day.............................##  
-                                 ({S200.2})  Month...........................##  
-                                 ({S200.3})  Year..........................####  
+S201  Date                    ({S201.1})  Day................................##  
+                              ({S201.2})  Month..............................##  
+                              ({S201.3})  Year.............................####  
 --------------------------------------------------------------------------------
-S201  Actors                     ({S201.1})  No. Interviewer.................##  
-                                 ({S201.2})  No. Supervisor..................##  
+S202  Actors                              Interviewer:
+                              ({S202.1})    <A                                  >
+                                          Supervisor:
+                              ({S202.2})    <A                                  >
 --------------------------------------------------------------------------------
-S202  Result                     ({S202.1})  Result..........................##  
-                                 ({S202.2})    <A                               >
+S203  Result                  ({S203.1})  Result.............................##  
+                                          Result (Other):
+                              ({S203.2})       <A                               >
 
 3.OFFICE
 ================================================================================
 --------------------------------------------------------------------------------
-S300  Actors                     ({S300.1})  No. Typist......................##  
-                                 ({S300.2})  No. Supervisor..................##  
+S301  Actors                              Typist:
+                              ({S301.1})    <A                                  >
+                                          Supervisor:
+                              ({S301.2})    <A                                  >
 
 1.RESPONDEN\'T BACKGROUND
 ================================================================================
 --------------------------------------------------------------------------------
-Q100  Record the time            ({Q100.1})  Hour............................##  
-                                 ({Q100.2})  Minute..........................##  
+Q101  Record the time         ({Q101.1})  Hour...............................##  
+                              ({Q101.2})  Minute.............................##  
 --------------------------------------------------------------------------------
-Q101  In what month and year were you born?
+Q102  In what month and year were you born?
 
-                                 ({Q101.1})  Month unknown...................##  
-                                 ({Q101.2})  Month...........................##  
-                                 ({Q101.3})  Year unknown....................##  
-                                 ({Q101.4})  Year..........................####  
+                              ({Q102.1})  Month unknown.......................<A>
+                              ({Q102.2})  Month..............................##  
+                              ({Q102.3})  Year unknown........................<A>
+                              ({Q102.4})  Year.............................####  
 --------------------------------------------------------------------------------
-Q102  How old were you at your last birthday?
+Q103  How old were you at your last birthday?
 
-                                 ({Q102.1})  Age unknown.....................##  
-                                 ({Q102.2})  Age in completed year...........##  
+                              ({Q103.1})  Age unknown.........................<A>
+                              ({Q103.2})  Age in completed year..............##  
 --------------------------------------------------------------------------------
-Q103  Have you ever attended school?
+Q104  Have you ever attended school?
 
-                                 ({Q103.1})  ................................##  
+                              ({Q104.1})  ....................................<A>
 --------------------------------------------------------------------------------
-Q104  What is the highest level of school you attended: primary, secondary, or 
+Q105  What is the highest level of school you attended: primary, secondary, or 
       higher? 
 
-                                 ({Q104.1})  ................................##  
+                              ({Q105.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q105  What is the highest (grade/form/year) you completed at that level? 
+Q106  What is the highest (grade/form/year) you completed at that level? 
 
-                                 ({Q105.1})  ................................##  
+                              ({Q106.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q106  Can you read any part of the sentence to me?
+Q107  Continued if school is primary...
 
-                                 ({Q106.1})  ................................##  
 --------------------------------------------------------------------------------
-Q107  For most of the time until you were 12 years old, did you live in 
+Q108  Can you read any part of the sentence to me?
+
+                              ({Q108.1})  ...................................##  
+                                          Specify language:
+                              ({Q108.2})       <A                               >
+--------------------------------------------------------------------------------
+Q109  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the counbtry side?
 
-                                 ({Q107.1})  ................................##  
+                              ({Q109.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q108  Are you a permanent resisdent ?
+Q1010  How long have you been living continuously in Ndhiwa? 
 
-                                 ({Q108.1})  ................................##  
+                              ({Q110.1})  ...................................##  
+                              ({Q110.2})  Specify years......................##  
 --------------------------------------------------------------------------------
-Q109  How long have you been living continuously in Ndhiwa? 
-
-                                 ({Q109.1})  Always..........................##  
-                                 ({Q109.2})  Years...........................##  
---------------------------------------------------------------------------------
-Q1010  Just before you moved here, did you live in a city a town, or in the 
+Q111  Just before you moved here, did you live in a city a town, or in the 
       countryside?
 
-                                 ({Q110.1})  ................................##  
+                              ({Q111.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q111  What is your ethnic group/tribe?
+Q112  What is your ethnic group/tribe?
 
-                                 ({Q111.1})  ................................##  
-                                 ({Q111.2})    <A                               >
+                              ({Q112.1})  ...................................##  
+                                          Specify:
+                              ({Q112.2})       <A                               >
 --------------------------------------------------------------------------------
-Q112  In the last 12 months, how many times have you been away from home for 
+Q113  In the last 12 months, how many times have you been away from home for 
       one or more nights?
 
-                                 ({Q112.1})  ................................##  
-                                 ({Q112.2})  Specify number of nights or mo..##  
+                              ({Q113.1})  ...................................##  
+                              ({Q113.2})  Specify number of nights or month..##  
 --------------------------------------------------------------------------------
-Q113  Are you currently married or living together with a man as if married?
+Q114  Are you currently married or living together with a man as if married?
 
-                                 ({Q113.1})  ................................##  
+                              ({Q114.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q114  What is your marital status now: are you widowed, divorced, or separated?
+Q115  What is your marital status now: are you widowed, divorced, or separated?
 
-                                 ({Q114.1})  ................................##  
+                              ({Q115.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q115  Is your (husband/partner) living with you now or is he staying elsewhere?
+Q116  Is your (husband/partner) living with you now or is he staying elsewhere?
 
-                                 ({Q115.1})  ................................##  
+                              ({Q116.1})  ...................................##  
 --------------------------------------------------------------------------------
-Q116  Aside from your own housework, have you done any work in the last seven 
+Q117  Aside from your own housework, have you done any work in the last seven 
       days?
 
-                                 ({Q116.1})  ................................##  
+                              ({Q117.1})  ....................................<A>
 --------------------------------------------------------------------------------
-Q117  In the last seven days, have you done any of these things or any other 
+Q118  In the last seven days, have you done any of these things or any other 
       work?
 
-                                 ({Q117.1})  ................................##  
+                              ({Q118.1})  ....................................<A>
 

@@ -67,7 +67,7 @@ set oDomains = SortCollection(oModel.Domains)
 
 Wiki = ""
 
-WScript.Echo "Création des tables (fichiers)"
+WScript.Echo "Création des fichiers QES"
 
 NCharWidth = 80
 NCharMax = 80
@@ -76,8 +76,8 @@ Form="Household Eligible Women"
 'Form="Survey Supervisor"
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name=Form) Then
-		
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then	
 		WScript.Echo "  " & oTable.Name
 				
 		NCharMaxColumnName = 0
@@ -118,7 +118,7 @@ For Each oTable In oTables
 		ColumnSectionN = 0
 		ColumnSection = ""
 		ColumnSectionPrev = ""
-	    ColumnQuestionN = 0
+	    ColumnQuestionN = 1
 	    ColumnQuestion = ""
 	    ColumnQuestionPrev = ""
 		ColumnNamePrev = ""
@@ -162,7 +162,7 @@ For Each oTable In oTables
 					Desc = Desc & vbCrLf
 					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
-					ColumnQuestionN = 0
+					ColumnQuestionN = 1
 				End If
 				
 				
@@ -193,48 +193,55 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				If ColumnSectionN>=4 And ColumnN>4 Then Exit For
+				If Not oColumn.CannotModify Then
 				
-				If ColumnQuestionNotBreak Then
-					If NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 > 0 Then 
-				    	Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 - 1)
-				    End If
-				    ColumnQuestionNotBreak = False
-				Else				
-				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - 1)
-				End If
-				
-				If ColumnQuestionN > 10 Then 
-					Desc = Desc & "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
-				Else
-					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-					SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & ColumnN
-				End If
-							
-				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
-				    If (Len(ColumnName)+ oColumn.Length + 2) >= NCharMax Then
-						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2) 
-						Desc = Desc & String(2, ".")
-					Else
-						Desc = Desc & ColumnName
-						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+					If ColumnSectionN>=4 And ColumnN>4 Then Exit For
+					
+					If ColumnQuestionNotBreak Then
+						If NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 > 0 Then 
+					    	Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 - 1)
+					    End If
+					    ColumnQuestionNotBreak = False
+					Else				
+					    Desc = Desc & Space(NCharWidth - NCharMax - 12 - 1)
 					End If
-					Desc = Desc & String(oColumn.Length, "#") & "  "
-				End If
+					
+					If ColumnQuestionN > 10 Then 
+						ColumnNameEpiData = "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+						SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
+					Else
+						ColumnNameEpiData = "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+						SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN
+					End If
 								
-				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
-					If (Len(ColumnName)+ oColumn.Length + 6) >= NCharMax Then
-						'Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2) 
-						'Desc = Desc & String(2, ".")
-					Else
-						Desc = Desc & ColumnName
-						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+					If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
+					    Desc = Desc & ColumnNameEpiData
+					    If (Len(ColumnName)+ oColumn.Length + 2) >= NCharMax Then
+							Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2) 
+							Desc = Desc & String(2, ".")
+						Else
+							Desc = Desc & ColumnName
+							Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+						End If
+						Desc = Desc & String(oColumn.Length, "#") & "  "
 					End If
-					Desc = Desc & "  <A" & String(oColumn.Length - 1, " ") & ">"
+									
+					If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
+						If (Len(ColumnName)+ oColumn.Length + 6) >= NCharMax Then
+							Desc = Desc & Space(12) & ColumnName & ":" & vbCrLf
+							Desc = Desc & Space(NCharWidth - NCharMax - 13)
+							Desc = Desc & ColumnNameEpiData & Space(NCharMax - oColumn.Length)
+						Else
+							Desc = Desc & ColumnNameEpiData
+							Desc = Desc & ColumnName
+							Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+						End If
+						Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">"
+					End If
+									
+					Desc = Desc & vbCrLf
+					
 				End If
-				
-				Desc = Desc & vbCrLf
 			End If
 		Next 
 		
@@ -244,9 +251,11 @@ For Each oTable In oTables
 	End If
 Next
 
+WScript.Echo "Création des fichiers CHK"
+
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name=Form) Then
-		
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc = "LABELBLOCK" & vbCrLf
@@ -259,7 +268,11 @@ For Each oTable In oTables
 				For i=0 To UBound(Values)
 					Value = Values(i)
 					Value = Split(Value, vbTab, -1, 1)
-					Desc=Desc & "    " & Value(0) & " """ & Value(1) & """" & vbCrLf
+					If InStr(Value(1), "-") > 0 Then
+						Desc=Desc & "    " & Value(0) & " """ & Mid(Value(1), InStr(Value(1), "-") + 1) & """" & vbCrLf 
+					Else
+					    Desc=Desc & "    " & Value(0) & " """ & Value(1) & """" & vbCrLf 
+					End If
 				Next
 				Desc = Desc & "   END" & vbCrLf
 			End If
@@ -269,8 +282,8 @@ For Each oTable In oTables
 
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") Then
-			    ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
+		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") And Not (oColumn.CannotModify) Then
+			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
 				Desc = Desc & "  LET " & ColumnName & "=" & oColumn.DefaultValue & vbCrLf
 				Desc = Desc & " ENDIF" & vbCrLf
@@ -280,8 +293,8 @@ For Each oTable In oTables
 
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-		    If IsObject(oColumn) And (oColumn.Mandatory) Then
-			    ColumnName = ExtendedAttribute (oColumn, "NameEpiData")
+		    If IsObject(oColumn) And (oColumn.Mandatory) And Not (oColumn.CannotModify) Then
+			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 			    ColumnLabel = ExtendedAttribute (oColumn, "Label")
 				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
 				Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
@@ -300,10 +313,11 @@ For Each oTable In oTables
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
-				Else
-					Desc = Desc & UCase(ExtendedAttribute (oColumn, "NameEpiData")) & vbCrLf		
+				ElseIf Not (oColumn.CannotModify) Then
+					ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
-					'If oColumn.LowValue>=0 And oColumn.HighValue>0 Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
+					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
 					If not oColumn.Domain is nothing Then
 						If oColumn.Domain.ListOfValues <> "" Then
 							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
@@ -311,16 +325,27 @@ For Each oTable In oTables
 						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
-					Desc = Desc & Replace(S, "::", vbCrLf & "  ") & vbCrLf 
-					For Each oBusinessRule in oColumn.AttachedRules
-						If IsObject(oBusinessRule) Then
-							Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
-						End if
-					Next
+					If Len(S) > 0 Then
+						S = Mid(S, 1, Len(S)-3)
+						Desc = Desc & "  " & Replace(S, "  ", vbCrLf & "    ") & vbCrLf & "  END" & vbCrLf 
+						For Each oBusinessRule in oColumn.AttachedRules
+							If IsObject(oBusinessRule) Then
+								'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
+							End if
+						Next
+					End If
 				End If
 				Desc = Desc & "END" & vbCrLf
 			End If
 		Next 
+		
+		For Each oColumn in oTable.Columns
+	       If IsObject(oColumn) Then
+				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+				Desc = Replace(Desc, oColumn.Code & " ", ColumnName & " ")
+				Desc = Replace(Desc, oColumn.Code & vbCrLf, ColumnName & vbCrLf) 
+			End If
+		Next
 		
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.chk", ForWriting, true)
 		oFile.Write Desc & vbCrLf
