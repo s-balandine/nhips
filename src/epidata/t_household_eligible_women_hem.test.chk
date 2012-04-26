@@ -56,6 +56,12 @@ LABELBLOCK
     4 "Outside Kenya"
     99 "Not specified"
    END
+  LABEL D_NI_PLACE_TYPE
+    1 "City"
+    2 "Town"
+    3 "Country side"
+    99 "Not specified"
+   END
   LABEL D_NI_VISIT_RESULT_HOUSEHOLD
     1 "Completed"
     2 "No household member at home"
@@ -118,26 +124,17 @@ LABELBLOCK
     3 "Able to read whole sentence"
     99 "Not specified"
    END
-  LABEL D_NI_PLACE_TYPE
-    1 "City"
-    2 "Town"
-    3 "Country side"
-    99 "Not specified"
-   END
 END
 
 BEFORE RECORD
  IF (S2021 = .) THEN
   LET S2021=99
  ENDIF
- IF (Q1001 = .) THEN
-  LET Q1001=99
- ENDIF
- IF (Q1003 = .) THEN
-  LET Q1003=99
- ENDIF
  IF (Q1011 = .) THEN
   LET Q1011=99
+ ENDIF
+ IF (Q1013 = .) THEN
+  LET Q1013=99
  ENDIF
  IF (Q1021 = .) THEN
   LET Q1021=99
@@ -145,8 +142,8 @@ BEFORE RECORD
  IF (Q1031 = .) THEN
   LET Q1031=99
  ENDIF
- IF (Q1051 = .) THEN
-  LET Q1051=99
+ IF (Q1041 = .) THEN
+  LET Q1041=99
  ENDIF
  IF (Q1061 = .) THEN
   LET Q1061=99
@@ -180,6 +177,9 @@ BEFORE RECORD
  ENDIF
  IF (Q1161 = .) THEN
   LET Q1161=99
+ ENDIF
+ IF (Q1171 = .) THEN
+  LET Q1171=99
  ENDIF
 END
 
@@ -250,38 +250,43 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q1001 = .) THEN
-  HELP "Month unknown must be entered" TYPE=ERROR
+  HELP "Hour must be entered" TYPE=ERROR
   GOTO Q1001
   EXIT
  ENDIF
  IF (Q1002 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP "Minute must be entered" TYPE=ERROR
   GOTO Q1002
   EXIT
  ENDIF
- IF (Q1003 = .) THEN
-  HELP "Year unknown must be entered" TYPE=ERROR
-  GOTO Q1003
-  EXIT
- ENDIF
- IF (Q1004 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q1004
-  EXIT
- ENDIF
  IF (Q1011 = .) THEN
-  HELP "Age unknown must be entered" TYPE=ERROR
+  HELP "Month unknown must be entered" TYPE=ERROR
   GOTO Q1011
   EXIT
  ENDIF
  IF (Q1012 = .) THEN
-  HELP "Age in completed year must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q1012
   EXIT
  ENDIF
+ IF (Q1013 = .) THEN
+  HELP "Year unknown must be entered" TYPE=ERROR
+  GOTO Q1013
+  EXIT
+ ENDIF
+ IF (Q1014 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q1014
+  EXIT
+ ENDIF
  IF (Q1021 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Age unknown must be entered" TYPE=ERROR
   GOTO Q1021
+  EXIT
+ ENDIF
+ IF (Q1022 = .) THEN
+  HELP "Age in completed year must be entered" TYPE=ERROR
+  GOTO Q1022
   EXIT
  ENDIF
  IF (Q1031 = .) THEN
@@ -310,28 +315,23 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q1081 = .) THEN
-  HELP "Always must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q1081
   EXIT
  ENDIF
- IF (Q1082 = .) THEN
-  HELP "Years must be entered" TYPE=ERROR
-  GOTO Q1082
+ IF (Q1091 = .) THEN
+  HELP "Always must be entered" TYPE=ERROR
+  GOTO Q1091
   EXIT
  ENDIF
- IF (Q1091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q1091
+ IF (Q1092 = .) THEN
+  HELP "Years must be entered" TYPE=ERROR
+  GOTO Q1092
   EXIT
  ENDIF
  IF (Q1101 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q1101
-  EXIT
- ENDIF
- IF (Q1102 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q1102
   EXIT
  ENDIF
  IF (Q1111 = .) THEN
@@ -340,13 +340,18 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q1112 = .) THEN
-  HELP "Specify number of nights or months must be entered" TYPE=ERROR
+  HELP "Specify must be entered" TYPE=ERROR
   GOTO Q1112
   EXIT
  ENDIF
  IF (Q1121 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q1121
+  EXIT
+ ENDIF
+ IF (Q1122 = .) THEN
+  HELP "Specify number of nights or months must be entered" TYPE=ERROR
+  GOTO Q1122
   EXIT
  ENDIF
  IF (Q1131 = .) THEN
@@ -367,6 +372,11 @@ AFTER RECORD
  IF (Q1161 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q1161
+  EXIT
+ ENDIF
+ IF (Q1171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1171
   EXIT
  ENDIF
 END
@@ -453,8 +463,6 @@ END
 
 Q1001
   MUSTENTER
-  COMMENT LEGAL USE D_NI_YESNO SHOW
-  TYPE COMMENT
 
   
 END
@@ -462,18 +470,7 @@ END
 Q1002
   MUSTENTER
 
-END
-
-Q1003
-  MUSTENTER
-  COMMENT LEGAL USE D_NI_YESNO SHOW
-  TYPE COMMENT
-
-END
-
-Q1004
-  MUSTENTER
-
+  
 END
 
 Q1011
@@ -481,6 +478,7 @@ Q1011
   COMMENT LEGAL USE D_NI_YESNO SHOW
   TYPE COMMENT
 
+  
 END
 
 Q1012
@@ -488,24 +486,48 @@ Q1012
 
 END
 
-Q1081
+Q1013
   MUSTENTER
   COMMENT LEGAL USE D_NI_YESNO SHOW
   TYPE COMMENT
 
 END
 
-Q1082
+Q1014
   MUSTENTER
 
 END
 
-Q1102
+Q1021
+  MUSTENTER
+  COMMENT LEGAL USE D_NI_YESNO SHOW
+  TYPE COMMENT
+
+END
+
+Q1022
+  MUSTENTER
+
+END
+
+Q1091
+  MUSTENTER
+  COMMENT LEGAL USE D_NI_YESNO SHOW
+  TYPE COMMENT
+
+END
+
+Q1092
   MUSTENTER
 
 END
 
 Q1112
+  MUSTENTER
+
+END
+
+Q1122
   MUSTENTER
 
 END
