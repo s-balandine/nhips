@@ -127,59 +127,59 @@ LABELBLOCK
 END
 
 BEFORE RECORD
+ IF (S2021 = .) THEN
+  LET S2021=99
+ ENDIF
+ IF (Q1001 = .) THEN
+  LET Q1001=99
+ ENDIF
+ IF (Q1003 = .) THEN
+  LET Q1003=99
+ ENDIF
+ IF (Q1011 = .) THEN
+  LET Q1011=99
+ ENDIF
+ IF (Q1021 = .) THEN
+  LET Q1021=99
+ ENDIF
+ IF (Q1031 = .) THEN
+  LET Q1031=99
+ ENDIF
+ IF (Q1051 = .) THEN
+  LET Q1051=99
+ ENDIF
+ IF (Q2001 = .) THEN
+  LET Q2001=99
+ ENDIF
+ IF (Q2011 = .) THEN
+  LET Q2011=99
+ ENDIF
  IF (Q2021 = .) THEN
   LET Q2021=99
  ENDIF
- IF (Q4001 = .) THEN
-  LET Q4001=99
+ IF (Q2041 = .) THEN
+  LET Q2041=99
  ENDIF
- IF (Q4003 = .) THEN
-  LET Q4003=99
+ IF (Q2051 = .) THEN
+  LET Q2051=99
  ENDIF
- IF (Q4011 = .) THEN
-  LET Q4011=99
+ IF (Q2071 = .) THEN
+  LET Q2071=99
  ENDIF
- IF (Q4021 = .) THEN
-  LET Q4021=99
+ IF (Q2091 = .) THEN
+  LET Q2091=99
  ENDIF
- IF (Q4031 = .) THEN
-  LET Q4031=99
+ IF (Q2101 = .) THEN
+  LET Q2101=99
  ENDIF
- IF (Q4051 = .) THEN
-  LET Q4051=99
+ IF (Q2111 = .) THEN
+  LET Q2111=99
  ENDIF
- IF (Q5001 = .) THEN
-  LET Q5001=99
+ IF (Q2121 = .) THEN
+  LET Q2121=99
  ENDIF
- IF (Q5011 = .) THEN
-  LET Q5011=99
- ENDIF
- IF (Q5021 = .) THEN
-  LET Q5021=99
- ENDIF
- IF (Q5041 = .) THEN
-  LET Q5041=99
- ENDIF
- IF (Q5051 = .) THEN
-  LET Q5051=99
- ENDIF
- IF (Q5071 = .) THEN
-  LET Q5071=99
- ENDIF
- IF (Q5091 = .) THEN
-  LET Q5091=99
- ENDIF
- IF (Q5101 = .) THEN
-  LET Q5101=99
- ENDIF
- IF (Q5111 = .) THEN
-  LET Q5111=99
- ENDIF
- IF (Q5121 = .) THEN
-  LET Q5121=99
- ENDIF
- IF (Q5131 = .) THEN
-  LET Q5131=99
+ IF (Q2131 = .) THEN
+  LET Q2131=99
  ENDIF
 END
 
@@ -189,189 +189,189 @@ AFTER RECORD
   GOTO 
   EXIT
  ENDIF
- IF (Q1001 = .) THEN
+ IF (S1001 = .) THEN
   HELP "No. Cluster must be entered" TYPE=ERROR
+  GOTO S1001
+  EXIT
+ ENDIF
+ IF (S1002 = .) THEN
+  HELP "No. Household must be entered" TYPE=ERROR
+  GOTO S1002
+  EXIT
+ ENDIF
+ IF (S1003 = .) THEN
+  HELP "No. Household Member must be entered" TYPE=ERROR
+  GOTO S1003
+  EXIT
+ ENDIF
+ IF (S2001 = .) THEN
+  HELP "Day must be entered" TYPE=ERROR
+  GOTO S2001
+  EXIT
+ ENDIF
+ IF (S2002 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO S2002
+  EXIT
+ ENDIF
+ IF (S2003 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO S2003
+  EXIT
+ ENDIF
+ IF (S2011 = .) THEN
+  HELP "No. Interviewer must be entered" TYPE=ERROR
+  GOTO S2011
+  EXIT
+ ENDIF
+ IF (S2012 = .) THEN
+  HELP "No. Supervisor must be entered" TYPE=ERROR
+  GOTO S2012
+  EXIT
+ ENDIF
+ IF (S2021 = .) THEN
+  HELP "Result must be entered" TYPE=ERROR
+  GOTO S2021
+  EXIT
+ ENDIF
+ IF (S2022 = .) THEN
+  HELP "Result (Other) must be entered" TYPE=ERROR
+  GOTO S2022
+  EXIT
+ ENDIF
+ IF (S3001 = .) THEN
+  HELP "No. Typist must be entered" TYPE=ERROR
+  GOTO S3001
+  EXIT
+ ENDIF
+ IF (S3002 = .) THEN
+  HELP "No. Supervisor must be entered" TYPE=ERROR
+  GOTO S3002
+  EXIT
+ ENDIF
+ IF (Q1001 = .) THEN
+  HELP "Month unknown must be entered" TYPE=ERROR
   GOTO Q1001
   EXIT
  ENDIF
  IF (Q1002 = .) THEN
-  HELP "No. Household must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q1002
   EXIT
  ENDIF
  IF (Q1003 = .) THEN
-  HELP "No. Household Member must be entered" TYPE=ERROR
+  HELP "Year unknown must be entered" TYPE=ERROR
   GOTO Q1003
   EXIT
  ENDIF
+ IF (Q1004 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q1004
+  EXIT
+ ENDIF
+ IF (Q1011 = .) THEN
+  HELP "Age unknown must be entered" TYPE=ERROR
+  GOTO Q1011
+  EXIT
+ ENDIF
+ IF (Q1012 = .) THEN
+  HELP "Age in completed year must be entered" TYPE=ERROR
+  GOTO Q1012
+  EXIT
+ ENDIF
+ IF (Q1021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1021
+  EXIT
+ ENDIF
+ IF (Q1031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1031
+  EXIT
+ ENDIF
+ IF (Q1041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1041
+  EXIT
+ ENDIF
+ IF (Q1051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1051
+  EXIT
+ ENDIF
  IF (Q2001 = .) THEN
-  HELP "Day must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2001
   EXIT
  ENDIF
- IF (Q2002 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q2002
-  EXIT
- ENDIF
- IF (Q2003 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q2003
-  EXIT
- ENDIF
  IF (Q2011 = .) THEN
-  HELP "No. Interviewer must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2011
   EXIT
  ENDIF
- IF (Q2012 = .) THEN
-  HELP "No. Supervisor must be entered" TYPE=ERROR
-  GOTO Q2012
-  EXIT
- ENDIF
  IF (Q2021 = .) THEN
-  HELP "Result must be entered" TYPE=ERROR
+  HELP "Always must be entered" TYPE=ERROR
   GOTO Q2021
   EXIT
  ENDIF
- IF (Q2022 = .) THEN
-  HELP "Result (Other) must be entered" TYPE=ERROR
-  GOTO Q2022
-  EXIT
- ENDIF
- IF (Q3001 = .) THEN
-  HELP "No. Typist must be entered" TYPE=ERROR
-  GOTO Q3001
-  EXIT
- ENDIF
- IF (Q3002 = .) THEN
-  HELP "No. Supervisor must be entered" TYPE=ERROR
-  GOTO Q3002
-  EXIT
- ENDIF
- IF (Q4001 = .) THEN
-  HELP "Month unknown must be entered" TYPE=ERROR
-  GOTO Q4001
-  EXIT
- ENDIF
- IF (Q4002 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q4002
-  EXIT
- ENDIF
- IF (Q4003 = .) THEN
-  HELP "Year unknown must be entered" TYPE=ERROR
-  GOTO Q4003
-  EXIT
- ENDIF
- IF (Q4004 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q4004
-  EXIT
- ENDIF
- IF (Q4011 = .) THEN
-  HELP "Age unknown must be entered" TYPE=ERROR
-  GOTO Q4011
-  EXIT
- ENDIF
- IF (Q4012 = .) THEN
-  HELP "Age in completed year must be entered" TYPE=ERROR
-  GOTO Q4012
-  EXIT
- ENDIF
- IF (Q4021 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4021
-  EXIT
- ENDIF
- IF (Q4031 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4031
-  EXIT
- ENDIF
- IF (Q4041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4041
-  EXIT
- ENDIF
- IF (Q4051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4051
-  EXIT
- ENDIF
- IF (Q5001 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5001
-  EXIT
- ENDIF
- IF (Q5011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5011
-  EXIT
- ENDIF
- IF (Q5021 = .) THEN
-  HELP "Always must be entered" TYPE=ERROR
-  GOTO Q5021
-  EXIT
- ENDIF
- IF (Q5031 = .) THEN
+ IF (Q2031 = .) THEN
   HELP "Years must be entered" TYPE=ERROR
-  GOTO Q5031
+  GOTO Q2031
   EXIT
  ENDIF
- IF (Q5041 = .) THEN
+ IF (Q2041 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5041
+  GOTO Q2041
   EXIT
  ENDIF
- IF (Q5051 = .) THEN
+ IF (Q2051 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5051
+  GOTO Q2051
   EXIT
  ENDIF
- IF (Q5061 = .) THEN
+ IF (Q2061 = .) THEN
   HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5061
+  GOTO Q2061
   EXIT
  ENDIF
- IF (Q5071 = .) THEN
+ IF (Q2071 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5071
+  GOTO Q2071
   EXIT
  ENDIF
- IF (Q5081 = .) THEN
+ IF (Q2081 = .) THEN
   HELP "Specify number of nights or months must be entered" TYPE=ERROR
-  GOTO Q5081
+  GOTO Q2081
   EXIT
  ENDIF
- IF (Q5091 = .) THEN
+ IF (Q2091 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5091
+  GOTO Q2091
   EXIT
  ENDIF
- IF (Q5101 = .) THEN
+ IF (Q2101 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5101
+  GOTO Q2101
   EXIT
  ENDIF
- IF (Q5111 = .) THEN
+ IF (Q2111 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5111
+  GOTO Q2111
   EXIT
  ENDIF
- IF (Q5121 = .) THEN
+ IF (Q2121 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5121
+  GOTO Q2121
   EXIT
  ENDIF
- IF (Q5131 = .) THEN
+ IF (Q2131 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5131
+  GOTO Q2131
   EXIT
  ENDIF
 END
 
-Q1001
+S1001
   MUSTENTER
 
   {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
@@ -382,7 +382,7 @@ END\par
 
 END
 
-Q1002
+S1002
   MUSTENTER
 
   {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
@@ -393,7 +393,7 @@ END\par
 
 END
 
-Q1003
+S1003
   MUSTENTER
 
   {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
@@ -404,54 +404,54 @@ END\par
 
 END
 
-Q2001
+S2001
   MUSTENTER
 
 END
 
-Q2002
+S2002
   MUSTENTER
 
 END
 
-Q2003
+S2003
   MUSTENTER
 
 END
 
-Q2011
+S2011
   MUSTENTER
 
 END
 
-Q2012
+S2012
   MUSTENTER
 
 END
 
-Q2021
+S2021
   MUSTENTER
   COMMENT LEGAL USE D_NI_VISIT_RESULT_HOUSEHOLD_MEMBER SHOW
   TYPE COMMENT
 
 END
 
-Q2022
+S2022
   MUSTENTER
 
 END
 
-Q3001
+S3001
   MUSTENTER
 
 END
 
-Q3002
+S3002
   MUSTENTER
 
 END
 
-Q4001
+Q1001
   MUSTENTER
   COMMENT LEGAL USE D_NI_YESNO SHOW
   TYPE COMMENT
@@ -459,53 +459,53 @@ Q4001
   
 END
 
-Q4002
+Q1002
   MUSTENTER
 
 END
 
-Q4003
-  MUSTENTER
-  COMMENT LEGAL USE D_NI_YESNO SHOW
-  TYPE COMMENT
-
-END
-
-Q4004
-  MUSTENTER
-
-END
-
-Q4011
+Q1003
   MUSTENTER
   COMMENT LEGAL USE D_NI_YESNO SHOW
   TYPE COMMENT
 
 END
 
-Q4012
+Q1004
   MUSTENTER
 
 END
 
-Q5021
+Q1011
   MUSTENTER
   COMMENT LEGAL USE D_NI_YESNO SHOW
   TYPE COMMENT
 
 END
 
-Q5031
+Q1012
   MUSTENTER
 
 END
 
-Q5061
+Q2021
+  MUSTENTER
+  COMMENT LEGAL USE D_NI_YESNO SHOW
+  TYPE COMMENT
+
+END
+
+Q2031
   MUSTENTER
 
 END
 
-Q5081
+Q2061
+  MUSTENTER
+
+END
+
+Q2081
   MUSTENTER
 
 END
