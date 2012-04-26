@@ -139,79 +139,196 @@ LABELBLOCK
 END
 
 BEFORE RECORD
- IF (Q2008 = .) THEN
-  LET Q2008=99
+ IF (Q3013 = .) THEN
+  LET Q3013=2012
  ENDIF
- IF (Q2009 = .) THEN
-  LET Q2009=Unnamed
+ IF (Q3031 = .) THEN
+  LET Q3031=99
  ENDIF
 END
 
 AFTER RECORD
- IF ( = .) THEN
+ IF (RECID = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO 
+  GOTO RECID
   EXIT
  ENDIF
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
+ IF (Q2011 = .) THEN
+  HELP "No. Cluster must be entered" TYPE=ERROR
+  GOTO Q2011
   EXIT
  ENDIF
- IF (Q2001 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2001
+ IF (Q2012 = .) THEN
+  HELP "No. Household must be entered" TYPE=ERROR
+  GOTO Q2012
   EXIT
  ENDIF
- IF (Q2002 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2002
+ IF (Q3011 = .) THEN
+  HELP "Day must be entered" TYPE=ERROR
+  GOTO Q3011
   EXIT
  ENDIF
- IF (Q2005 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2005
+ IF (Q3012 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q3012
   EXIT
  ENDIF
- IF (Q2006 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2006
+ IF (Q3013 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q3013
   EXIT
  ENDIF
- IF (Q2007 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2007
+ IF (Q3021 = .) THEN
+  HELP "Interviewer must be entered" TYPE=ERROR
+  GOTO Q3021
   EXIT
  ENDIF
- IF (Q2008 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2008
+ IF (Q3022 = .) THEN
+  HELP "Supervisor must be entered" TYPE=ERROR
+  GOTO Q3022
   EXIT
  ENDIF
- IF (Q2009 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2009
+ IF (Q3031 = .) THEN
+  HELP "Result must be entered" TYPE=ERROR
+  GOTO Q3031
   EXIT
  ENDIF
- IF (Q20010 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20010
+ IF (Q3032 = .) THEN
+  HELP "Result (Other) must be entered" TYPE=ERROR
+  GOTO Q3032
   EXIT
  ENDIF
- IF (Q20011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20011
+ IF (Q4011 = .) THEN
+  HELP "Typist must be entered" TYPE=ERROR
+  GOTO Q4011
   EXIT
  ENDIF
- IF (Q20012 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20012
+ IF (Q4012 = .) THEN
+  HELP "Supervisor must be entered" TYPE=ERROR
+  GOTO Q4012
   EXIT
  ENDIF
- IF (Q20013 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20013
+ IF (Q5011 = .) THEN
+  HELP "Total persons must be entered" TYPE=ERROR
+  GOTO Q5011
   EXIT
  ENDIF
+ IF (Q5012 = .) THEN
+  HELP "Total eligible women must be entered" TYPE=ERROR
+  GOTO Q5012
+  EXIT
+ ENDIF
+ IF (Q5013 = .) THEN
+  HELP "Total eligible men must be entered" TYPE=ERROR
+  GOTO Q5013
+  EXIT
+ ENDIF
+ IF (Q5014 = .) THEN
+  HELP "No. of respondent must be entered" TYPE=ERROR
+  GOTO Q5014
+  EXIT
+ ENDIF
+END
+
+Q2011
+  MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q2011 <
+    
+     10 THEN LET RECID = "00" + Q2011
+     IF Q2011 <
+     100 THEN LET RECID =
+     "0" + Q2011
+     IF Q2011 >= 100 THEN LET RECID =
+    
+    
+    
+    
+    
+    Q2011
+     LET RECID = RECID + "." + Q2012
+  END
+END
+
+Q2012
+  MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q2011 <
+    
+     10 THEN LET RECID = "00" + Q2011
+     IF Q2011 <
+     100 THEN LET RECID =
+     "0" + Q2011
+     IF Q2011 >= 100 THEN LET RECID =
+    
+    
+    
+    
+    
+    Q2011
+     LET RECID = RECID + "." + Q2012
+  END
+END
+
+Q3011
+  MUSTENTER
+  RANGE 1 31
+END
+
+Q3012
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q3013
+  MUSTENTER
+  RANGE 2012 2014
+END
+
+Q3021
+  MUSTENTER
+END
+
+Q3022
+  MUSTENTER
+END
+
+Q3031
+  MUSTENTER
+  COMMENT LEGAL USE D_NI_VISIT_RESULT_HOUSEHOLD SHOW
+  TYPE COMMENT
+  JUMPS RESET
+    97 SKIPNEXTFIELD
+  END
+END
+
+Q3032
+  MUSTENTER
+END
+
+Q4011
+  MUSTENTER
+END
+
+Q4012
+  MUSTENTER
+END
+
+Q5011
+  MUSTENTER
+END
+
+Q5012
+  MUSTENTER
+END
+
+Q5013
+  MUSTENTER
+END
+
+Q5014
+  MUSTENTER
 END
 
