@@ -113,6 +113,8 @@ For Each oTable In oTables
 		    NCharMax = NCharMaxColumnSize + 2
 		End If
 		
+		NCharMax = NCharMaxColumnSize + 2
+		
 		ColumnSectionN = 0
 		ColumnSection = ""
 		ColumnSectionPrev = ""
