@@ -190,7 +190,7 @@ For Each oTable In oTables
 				If ColumnSectionN=4 Then Exit For
 				
 				If ColumnQuestionNotBreak Then 
-				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion)-10)
+				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion))
 				Else				
 				    Desc = Desc & Space(NCharWidth - NCharMax - 12)
 				    ColumnQuestionNotBreak = True
