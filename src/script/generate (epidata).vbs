@@ -193,7 +193,7 @@ For Each oTable In oTables
 							
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
 				    If (Len(ColumnName)+ oColumn.Length + 2) >= NCharMax Then
-						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
+						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2) 
 						Desc = Desc & String(2, ".")
 					Else
 						Desc = Desc & ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
