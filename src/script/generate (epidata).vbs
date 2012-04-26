@@ -184,7 +184,11 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				Desc = Desc & Space(NCharWidth - NCharMax - 12)
+				If Len(ColumnQuestion) > (NCharWidth - NCharMax) Then 
+					Desc = Desc & Space(NCharWidth - NCharMax - 12)
+				Else
+				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion))
+				End If
 				
 				If ColumnQuestionN > 10 Then 
 					Desc = Desc & "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
