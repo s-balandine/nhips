@@ -113,7 +113,7 @@ For Each oTable In oTables
 		    NCharMax = NCharMaxColumnSize + 2
 		End If
 		
-		NCharMax = 32
+		NCharMax = NCharMaxColumnSize + 2
 		
 		ColumnSectionN = 0
 		ColumnSection = ""
@@ -196,7 +196,7 @@ For Each oTable In oTables
 						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
 						Desc = Desc & String(2, ".")
 					Else
-						Desc = Desc & ColumnName
+						Desc = Desc & ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
 						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					End If
 					Desc = Desc & String(oColumn.Length, "#") & "  "
