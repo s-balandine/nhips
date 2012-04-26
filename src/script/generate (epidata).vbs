@@ -107,7 +107,11 @@ For Each oTable In oTables
 			End If
 		Next 
 
-		NCharMax = NCharMaxColumnName + NCharMaxColumnSize + 2
+		If NCharMaxColumnName > NCharMaxColumnSize Then
+			NCharMax = NCharMaxColumnName + 2
+		Else
+		    NCharMax = NCharMaxColumnSize + 2
+		End If
 		
 		ColumnSectionN = 0
 		ColumnSection = ""
