@@ -185,7 +185,7 @@ For Each oTable In oTables
 				ColumnN = ColumnN + 1
 				
 				If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12) Then 
-					Desc = Desc & Space(NCharWidth - NCharMax - 12)
+					Desc = Desc & Space(NCharWidth - NCharMax)
 				Else
 				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion))
 				End If
