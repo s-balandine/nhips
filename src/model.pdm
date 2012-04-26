@@ -3949,10 +3949,10 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Firstname
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,359={383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Firstname
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
@@ -3975,10 +3975,10 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,357={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,8=Lastname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.2
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
@@ -4152,6 +4152,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.1
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4167,6 +4170,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.2
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4181,6 +4187,9 @@ N	2-No</a:ListOfValues>
 <a:Modifier>S-Balandine</a:Modifier>
 <a:DataType>VARCHAR(35)</a:DataType>
 <a:Length>35</a:Length>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.3
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o72"/>
 </c:Domain>
@@ -4195,6 +4204,9 @@ N	2-No</a:ListOfValues>
 <a:Modifier>S-Balandine</a:Modifier>
 <a:DataType>VARCHAR(35)</a:DataType>
 <a:Length>35</a:Length>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.4
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o72"/>
 </c:Domain>
@@ -4212,6 +4224,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.5
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o65"/>
 </c:Domain>
@@ -4229,6 +4244,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.6
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o78"/>
 </c:Domain>
@@ -4246,6 +4264,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(4)</a:DataType>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.7
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o63"/>
 </c:Domain>
@@ -4274,6 +4295,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.8
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o90"/>
 </c:Domain>
@@ -4290,6 +4314,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.9
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o79"/>
 </c:Domain>
@@ -4305,6 +4332,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,62={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,7=Q200.10
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4320,6 +4350,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,62={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,7=Q200.11
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4335,6 +4368,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,62={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,7=Q200.12
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4350,6 +4386,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,62={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,7=Q200.13
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o81"/>
 </c:Domain>
@@ -4420,11 +4459,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,359={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Firstname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.1
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4445,11 +4484,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,357={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,8=Lastname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.2
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4523,11 +4562,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,359={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Firstname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.1
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4548,11 +4587,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,357={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,8=Lastname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.2
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4628,11 +4667,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,359={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Firstname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.1
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4653,11 +4692,11 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,357={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,358={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,68=::AFTER ENTRY
 ::   LET RECID=COPY(Q1001, 1, 1) + &quot;.&quot; + Q1002
 ::END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,8=Lastname
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.2
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,14=Identification
 
@@ -4846,6 +4885,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.1
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o79"/>
 </c:Domain>
@@ -4875,6 +4917,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.2
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o89"/>
 </c:Domain>
@@ -4894,6 +4939,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.3
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o91"/>
 </c:Domain>
@@ -4911,6 +4959,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.4
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o92"/>
 </c:Domain>
@@ -4928,6 +4979,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.5
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o92"/>
 </c:Domain>
@@ -4945,6 +4999,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.6
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o64"/>
 </c:Domain>
@@ -4966,6 +5023,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.7
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o75"/>
 </c:Domain>
@@ -4984,6 +5044,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.8
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o67"/>
 </c:Domain>
@@ -5002,6 +5065,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.9
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o67"/>
 </c:Domain>
@@ -5188,6 +5254,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.1
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o79"/>
 </c:Domain>
@@ -5217,6 +5286,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.2
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o89"/>
 </c:Domain>
@@ -5236,6 +5308,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.3
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o91"/>
 </c:Domain>
@@ -5253,6 +5328,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.4
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o92"/>
 </c:Domain>
@@ -5270,6 +5348,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.5
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o92"/>
 </c:Domain>
@@ -5287,6 +5368,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.6
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o64"/>
 </c:Domain>
@@ -5308,6 +5392,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.7
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o75"/>
 </c:Domain>
@@ -5326,6 +5413,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.8
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o67"/>
 </c:Domain>
@@ -5344,6 +5434,9 @@ N	2-No</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q200.9
+
+</a:ExtendedAttributesText>
 <c:Domain>
 <o:PhysicalDomain Ref="o67"/>
 </c:Domain>
@@ -6993,141 +7086,4 @@ N	2-No</a:ListOfValues>
 <a:Creator>S-Balandine</a:Creator>
 <a:ModificationDate>1317140082</a:ModificationDate>
 <a:Modifier>S-Balandine</a:Modifier>
-</o:Group>
-</c:DefaultGroups>
-<c:ExtendedObjects>
-<o:ExtendedObject Id="o53">
-<a:ObjectID>2BD981FC-68D3-4311-A788-DAD8C636BCAA</a:ObjectID>
-<a:Name>Form Woman</a:Name>
-<a:Code>FORMWOMAN</a:Code>
-<a:CreationDate>1335363986</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335364993</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,71={C1586C58-2193-4878-8935-C7A7383724E7},Label,21=WOMAN&#39;S QUESTIONNAIRE
-
-</a:ExtendedAttributesText>
-</o:ExtendedObject>
-<o:ExtendedObject Id="o54">
-<a:ObjectID>83C8F03E-3424-42C0-86F9-53BE3182F97C</a:ObjectID>
-<a:Name>Page Form</a:Name>
-<a:Code>PAGEFORM</a:Code>
-<a:CreationDate>1335364237</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335365145</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:Comment>sdfsdfsdfsdf</a:Comment>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={C1586C58-2193-4878-8935-C7A7383724E7},Label,11=Survey data
-
-</a:ExtendedAttributesText>
-</o:ExtendedObject>
-<o:ExtendedObject Id="o215">
-<a:ObjectID>CD89586B-B2F8-415A-B5BB-C4D56BFED104</a:ObjectID>
-<a:Name>Q100</a:Name>
-<a:Code>Q100</a:Code>
-<a:CreationDate>1335364237</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335364553</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:Comment>sdfsdfsdfsdf</a:Comment>
-</o:ExtendedObject>
-<o:ExtendedObject Id="o55">
-<a:ObjectID>DFBA90F6-061D-428E-950F-22245526B6C3</a:ObjectID>
-<a:Name>Q1</a:Name>
-<a:Code>Q1</a:Code>
-<a:CreationDate>1335365151</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335365174</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,64={C1586C58-2193-4878-8935-C7A7383724E7},Label,14=Identification
-
-</a:ExtendedAttributesText>
-</o:ExtendedObject>
-<o:ExtendedObject Id="o57">
-<a:ObjectID>70E31C4C-8A20-4E6B-9D9D-3DCBA8F2DEEC</a:ObjectID>
-<a:Name>Q2</a:Name>
-<a:Code>Q2</a:Code>
-<a:CreationDate>1335365197</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335365227</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,58={C1586C58-2193-4878-8935-C7A7383724E7},Label,9=Interview
-
-</a:ExtendedAttributesText>
-</o:ExtendedObject>
-<o:ExtendedObject Id="o59">
-<a:ObjectID>9D115B7C-B81B-4456-8D23-BAB35A2950F6</a:ObjectID>
-<a:Name>Q3</a:Name>
-<a:Code>Q3</a:Code>
-<a:CreationDate>1335365255</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335365287</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,61={C1586C58-2193-4878-8935-C7A7383724E7},Label,11=Supervision
-
-</a:ExtendedAttributesText>
-</o:ExtendedObject>
-</c:ExtendedObjects>
-<c:ChildExtendedDependencies>
-<o:ExtendedDependency Id="o31">
-<a:ObjectID>723D0089-DD83-4039-81C1-72716CE58174</a:ObjectID>
-<a:CreationDate>1335364270</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335364311</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<c:Object1>
-<o:ExtendedObject Ref="o53"/>
-</c:Object1>
-<c:Object2>
-<o:ExtendedObject Ref="o54"/>
-</c:Object2>
-</o:ExtendedDependency>
-<o:ExtendedDependency Id="o33">
-<a:ObjectID>1AC9A83B-4B65-4D07-8F46-7889FAD1F4FD</a:ObjectID>
-<a:CreationDate>1335364346</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335364365</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<c:Object1>
-<o:ExtendedObject Ref="o54"/>
-</c:Object1>
-<c:Object2>
-<o:Table Ref="o52"/>
-</c:Object2>
-</o:ExtendedDependency>
-<o:ExtendedDependency Id="o36">
-<a:ObjectID>DE839C97-23DD-4824-86A7-6DB419CDD340</a:ObjectID>
-<a:CreationDate>1335365193</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1335365193</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<c:Object1>
-<o:ExtendedObject Ref="o54"/>
-</c:Object1>
-<c:Object2>
-<o:ExtendedObject Ref="o55"/>
-</c:Object2>
-</o:ExtendedDependency>
-</c:ChildExtendedDependencies>
-<c:TargetModels>
-<o:TargetModel Id="o216">
-<a:ObjectID>2480A7D6-BC54-47B2-AE93-E419F8DB70D3</a:ObjectID>
-<a:Name>Epidata</a:Name>
-<a:Code>Epidata</a:Code>
-<a:CreationDate>1318350478</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>1318350478</a:ModificationDate>
-<a:Modifier>S-Balandine</a:Modifier>
-<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
-<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
-<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
-<c:SessionShortcuts>
-<o:Shortcut Ref="o3"/>
-</c:SessionShortcuts>
-</o:TargetModel>
-</c:TargetModels>
-</o:Model>
-</c:Children>
-</o:RootObject>
-
-</Model>
+</o:Gro
