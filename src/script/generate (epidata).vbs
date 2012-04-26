@@ -176,10 +176,10 @@ For Each oTable In oTables
 					End If
 					Desc = Desc & ColumnQuestion
 					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12) Then 
-					    ColumnQuestionBreak = True
+					    ColumnQuestionNotBreak = False
 						Desc = Desc & vbCrLf
 					Else
-					    ColumnQuestionBreak = False
+					    ColumnQuestionNotBreak = True
 					End If
 				    ColumnQuestionN = ColumnQuestionN + 1
 				    ColumnN = 0
@@ -187,7 +187,7 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				If ColumnQuestionBreak Then 
+				If Not ColumnQuestionNotBreak Then 
 					Desc = Desc & Space(NCharWidth - NCharMax)
 					ColumnQuestionBreak = False
 				Else
