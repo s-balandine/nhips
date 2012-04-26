@@ -187,7 +187,7 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				If ColumnQuestionN >3 Then Exit For
+				If ColumnSectionN=4 Then Exit For
 				
 				If ColumnQuestionNotBreak Then 
 				    Desc = Desc & Space(NCharWidth - NCharMax - 12)
