@@ -356,39 +356,6 @@ AFTER RECORD
  ENDIF
 END
 
-S1001
-  MUSTENTER
-
-  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
-\viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
-  LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
-END\par
-}
-
-END
-
-S1002
-  MUSTENTER
-
-  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
-\viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
-  LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
-END\par
-}
-
-END
-
-S1003
-  MUSTENTER
-
-  {\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}}
-\viewkind4\uc1\pard\f0\fs17 AFTER ENTRY\par
-  LET HEW_IDENTIFIER=HEW_CLUSTER+HEW_HOUSEHOLD+HEW_HOUSEHOLD_MEMBER\par
-END\par
-}
-
-END
-
 S2001
   MUSTENTER
 
