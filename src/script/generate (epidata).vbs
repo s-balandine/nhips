@@ -175,7 +175,7 @@ For Each oTable In oTables
 						Desc = Desc & ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN & Space(2)
 					End If
 					Desc = Desc & ColumnQuestion
-					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12) Then 
+					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12 - 6) Then 
 					    ColumnQuestionNotBreak = False
 						Desc = Desc & vbCrLf
 					Else
