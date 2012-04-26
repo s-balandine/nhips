@@ -178,8 +178,8 @@ For Each oTable In oTables
 						Desc = Desc & ColumnQuestion
 					Else
 						ColumnQuestionPart = Mid(ColumnQuestion, 1, InStrRev(ColumnQuestion, " ", NCharWidth-6)) 
-						ColumnQuestion     = Mid(ColumnQuestion, InStrRev(ColumnQuestion, " ", NCharWidth-6)) 
-						Desc = Desc & ColumnQuestionPart & vbCrLf & ColumnQuestion
+						ColumnQuestion     = Mid(ColumnQuestion, InStrRev(ColumnQuestion, " ", NCharWidth-6)+1) 
+						Desc = Desc & ColumnQuestionPart & vbCrLf & Space(6) & ColumnQuestion
 					End If
 					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12 - 6) Then 
 					    ColumnQuestionNotBreak = False
