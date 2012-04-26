@@ -84,7 +84,7 @@ For Each oTable In oTables
 		NCharMaxColumnSize = 0
 		
 		SectionFirst = ExtendedAttribute (oTable, "SectionFirst")
-		SectionFirst = 1
+		'SectionFirst = 1
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
