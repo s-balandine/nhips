@@ -187,10 +187,10 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				If Not ColumnQuestionNotBreak Then 
-					Desc = Desc & Space(NCharWidth - NCharMax)
-					ColumnQuestionBreak = False
-				Else
+				If ColumnQuestionNotBreak Then 
+				    Desc = Desc & Space(NCharWidth - NCharMax)
+				    ColumnQuestionNotBreak = True
+				Else				
 				    'Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion)-1)
 				End If
 				
