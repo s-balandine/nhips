@@ -234,41 +234,10 @@ Q2011
   MUSTENTER
   AFTER ENTRY
     IGNOREMISSING
-    IF Q2011 <
-    
-     10 THEN LET RECID = "00" + Q2011
-     IF Q2011 <
-     100 THEN LET RECID =
-     "0" + Q2011
-     IF Q2011 >= 100 THEN LET RECID =
-    
-    
-    
-    
-    
-    Q2011
-     LET RECID = RECID + "." + Q2012
-  END
-END
-
-Q2012
-  MUSTENTER
-  AFTER ENTRY
-    IGNOREMISSING
-    IF Q2011 <
-    
-     10 THEN LET RECID = "00" + Q2011
-     IF Q2011 <
-     100 THEN LET RECID =
-     "0" + Q2011
-     IF Q2011 >= 100 THEN LET RECID =
-    
-    
-    
-    
-    
-    Q2011
-     LET RECID = RECID + "." + Q2012
+    IF Q2011 < 10 THEN LET RECID = "00" + Q2011
+    IF Q2011 < 100 THEN LET RECID = "0" + Q2011
+    IF Q2011 >= 100 THEN LET RECID = Q2011
+    LET RECID = RECID + "." + Q2012
   END
 END
 
