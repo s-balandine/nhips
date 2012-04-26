@@ -196,6 +196,7 @@ For Each oTable In oTables
 						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
 						Desc = Desc & String(2, ".")
 					Else
+						Desc = Desc & ColumnName
 						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					End If
 					Desc = Desc & String(oColumn.Length, "#") & "  "
