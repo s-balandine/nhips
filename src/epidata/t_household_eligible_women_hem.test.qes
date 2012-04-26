@@ -46,7 +46,7 @@ Q402  Have you ever attended school?
                                   ({Q402.1})  
 --------------------------------------------------------------------------------
 Q403  What is the highest level of school you attended: primary, secondary, or 
- higher?                    ({Q403.1})  
+      higher?                     ({Q403.1})  
 --------------------------------------------------------------------------------
 Q404  What is the highest (grade/form/year) you completed at that level? 
                                   ({Q404.1})  ................................##  
@@ -58,7 +58,7 @@ Q405  Can you read any part of the sentence to me?
 ================================================================================
 --------------------------------------------------------------------------------
 Q500  For most of the time until you were 12 years old, did you live in 
- Nairobi, Kisumu, in another city, or in the counbtry side?
+      Nairobi, Kisumu, in another city, or in the counbtry side?
                                   ({Q500.1})  
 --------------------------------------------------------------------------------
 Q501  Are you a permanent resisdent ?
@@ -70,7 +70,7 @@ Q502  How long have you been living continuously in Ndhiwa?
 Q503                              ({Q503.1})  Years...........................##  
 --------------------------------------------------------------------------------
 Q504  Just before you moved here, did you live in a city a town, or in the 
- countryside?               ({Q504.1})  
+      countryside?                ({Q504.1})  
 --------------------------------------------------------------------------------
 Q505  What is your ethnic group/tribe?
                                   ({Q505.1})  
@@ -78,7 +78,7 @@ Q505  What is your ethnic group/tribe?
 Q506                              ({Q506.1})  <A                               >  
 --------------------------------------------------------------------------------
 Q507  In the last 12 months, how many times have you been away from home for 
- one or more nights?        ({Q507.1})  ................................##  
+      one or more nights?         ({Q507.1})  ................................##  
 --------------------------------------------------------------------------------
 Q508                              ({Q508.1})  Specify number of nights or mo..##  
 --------------------------------------------------------------------------------
@@ -92,8 +92,8 @@ Q511  Is your (husband/partner) living with you now or is he staying elsewhere?
                                   ({Q511.1})  ................................##  
 --------------------------------------------------------------------------------
 Q512  Aside from your own housework, have you done any work in the last seven 
- days?                      ({Q512.1})  
+      days?                       ({Q512.1})  
 --------------------------------------------------------------------------------
 Q513  In the last seven days, have you done any of these things or any other 
- work?                      ({Q513.1})  
+      work?                       ({Q513.1})  
 
