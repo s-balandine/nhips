@@ -231,7 +231,7 @@ For Each oTable In oTables
 						Desc = Desc & ColumnName
 						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
 					End If
-					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
+					Desc = Desc & "  <A" & String(oColumn.Length - 1, " ") & ">"
 				End If
 				
 				Desc = Desc & vbCrLf
