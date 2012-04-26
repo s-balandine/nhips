@@ -5872,7 +5872,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,336={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5001
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4051
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,44=Can you read any part of the sentence to me?
@@ -5899,7 +5899,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,294={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=109
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5002
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5001
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,124=For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the counbtry side?
 
 </a:ExtendedAttributesText>
@@ -5921,7 +5921,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,84={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=Are you a permanent resisdent ?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,144={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=Are you a permanent resisdent ?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5011
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5943,7 +5944,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,278={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=110
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5003
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5021
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,54=How long have you been living continuously in Ndhiwa? 
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Always
 
@@ -5964,7 +5965,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,172={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5004
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5031
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Years
 
 </a:ExtendedAttributesText>
@@ -5988,7 +5989,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,250={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=111
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5006
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5041
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,81=Just before you moved here, did you live in a city a town, or in the countryside?
 
 </a:ExtendedAttributesText>
@@ -6022,7 +6023,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,201={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=112
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5007
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5051
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=What is your ethnic group/tribe?
 
 </a:ExtendedAttributesText>
@@ -6042,7 +6043,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,174={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=112.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5008
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5061
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 
 </a:ExtendedAttributesText>
@@ -6067,7 +6068,7 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,259={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=113
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5009
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5071
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,90=In the last 12 months, how many times have you been away from home for one or more nights?
 
 </a:ExtendedAttributesText>
@@ -6086,8 +6087,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,203={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=113.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q50010
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,202={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=113.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5081
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,34=Specify number of nights or months
 
 </a:ExtendedAttributesText>
@@ -6111,7 +6112,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,123={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Are you currently married or living together with a man as if married?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,183={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Are you currently married or living together with a man as if married?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5091
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6134,7 +6136,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,126={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=What is your marital status now: are you widowed, divorced, or separated?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,186={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=What is your marital status now: are you widowed, divorced, or separated?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5101
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6156,7 +6159,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,126={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Is your (husband/partner) living with you now or is he staying elsewhere?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,186={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Is your (husband/partner) living with you now or is he staying elsewhere?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5111
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6177,7 +6181,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,130={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,77=Aside from your own housework, have you done any work in the last seven days?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,190={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,77=Aside from your own housework, have you done any work in the last seven days?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5121
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6198,7 +6203,8 @@ http://www.abs.gov.au/Ausstats/abs@.nsf/0/534FBDF95A8F9E9CCA25703C0082B0DE?opend
 99	Not specified</a:ListOfValues>
 <a:DataType>INTEGER</a:DataType>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,129={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=In the last seven days, have you done any of these things or any other work?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,189={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=In the last seven days, have you done any of these things or any other work?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5131
 
 </a:ExtendedAttributesText>
 <c:Domain>
