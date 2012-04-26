@@ -175,7 +175,7 @@ For Each oTable In oTables
 						Desc = Desc & ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN & Space(2)
 					End If
 					Desc = Desc & ColumnQuestion
-					If Len(ColumnQuestion) > (NCharWidth - NCharMax) Then 
+					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12) Then 
 						Desc = Desc & vbCrLf 
 					End If
 				    ColumnQuestionN = ColumnQuestionN + 1
@@ -184,7 +184,7 @@ For Each oTable In oTables
 				
 				ColumnN = ColumnN + 1
 				
-				If Len(ColumnQuestion) > (NCharWidth - NCharMax) Then 
+				If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12) Then 
 					Desc = Desc & Space(NCharWidth - NCharMax - 12)
 				Else
 				    Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion))
