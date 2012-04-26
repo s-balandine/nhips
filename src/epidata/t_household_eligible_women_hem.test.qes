@@ -21,7 +21,7 @@ S201  Actors                     ({S201.1})  No. Interviewer.................##
                                  ({S201.2})  No. Supervisor..................##  
 --------------------------------------------------------------------------------
 S202  Result                     ({S202.1})  Result..........................##  
-                                 ({S202.2})  <A                               >  
+                                 ({S202.2})    <A                               >
 
 3.OFFICE
 ================================================================================
@@ -83,7 +83,7 @@ Q109  Just before you moved here, did you live in a city a town, or in the
 Q1010  What is your ethnic group/tribe?
 
                                  ({Q110.1})  ................................##  
-                                 ({Q110.2})  <A                               >  
+                                 ({Q110.2})    <A                               >
 --------------------------------------------------------------------------------
 Q111  In the last 12 months, how many times have you been away from home for 
       one or more nights?
