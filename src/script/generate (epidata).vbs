@@ -347,9 +347,10 @@ For Each oTable In oTables
 			End If
 		Next
 		
-		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".test.chk", ForWriting, true)
+		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Code) & ".chk", ForWriting, true)
 		oFile.Write Desc & vbCrLf
 		oFile.Close
+		
 		
 	End If
 Next
