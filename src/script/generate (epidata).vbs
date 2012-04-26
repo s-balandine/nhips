@@ -190,11 +190,14 @@ For Each oTable In oTables
 					Desc = Desc & "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
 					SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & ColumnN
 				End If
-						
-				Desc = Desc & ColumnName
 							
 				If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
-					Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+				    If (Len(ColumnName)+ oColumn.Length + 2) >= NCharMax Then
+						Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2 - 2) 
+						Desc = Desc & String(2, ".")
+					Else
+						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+					End If
 					Desc = Desc & String(oColumn.Length, "#") & "  "
 				End If
 								
