@@ -32,84 +32,87 @@ S300  Actors                     ({S300.1})  No. Typist......................##
 1.RESPONDEN\'T BACKGROUND
 ================================================================================
 --------------------------------------------------------------------------------
-Q100  In what month and year were you born?
-
-                                 ({Q100.1})  Month unknown...................##  
-                                 ({Q100.2})  Month...........................##  
-                                 ({Q100.3})  Year unknown....................##  
-                                 ({Q100.4})  Year..........................####  
+Q100  Record the time            ({Q100.1})  Hour............................##  
+                                 ({Q100.2})  Minute..........................##  
 --------------------------------------------------------------------------------
-Q101  How old were you at your last birthday?
+Q101  In what month and year were you born?
 
-                                 ({Q101.1})  Age unknown.....................##  
-                                 ({Q101.2})  Age in completed year...........##  
+                                 ({Q101.1})  Month unknown...................##  
+                                 ({Q101.2})  Month...........................##  
+                                 ({Q101.3})  Year unknown....................##  
+                                 ({Q101.4})  Year..........................####  
 --------------------------------------------------------------------------------
-Q102  Have you ever attended school?
+Q102  How old were you at your last birthday?
 
-                                 ({Q102.1})  ................................##  
+                                 ({Q102.1})  Age unknown.....................##  
+                                 ({Q102.2})  Age in completed year...........##  
 --------------------------------------------------------------------------------
-Q103  What is the highest level of school you attended: primary, secondary, or 
-      higher? 
+Q103  Have you ever attended school?
 
                                  ({Q103.1})  ................................##  
 --------------------------------------------------------------------------------
-Q104  What is the highest (grade/form/year) you completed at that level? 
+Q104  What is the highest level of school you attended: primary, secondary, or 
+      higher? 
 
                                  ({Q104.1})  ................................##  
 --------------------------------------------------------------------------------
-Q105  Can you read any part of the sentence to me?
+Q105  What is the highest (grade/form/year) you completed at that level? 
 
                                  ({Q105.1})  ................................##  
 --------------------------------------------------------------------------------
-Q106  For most of the time until you were 12 years old, did you live in 
-      Nairobi, Kisumu, in another city, or in the counbtry side?
+Q106  Can you read any part of the sentence to me?
 
                                  ({Q106.1})  ................................##  
 --------------------------------------------------------------------------------
-Q107  Are you a permanent resisdent ?
+Q107  For most of the time until you were 12 years old, did you live in 
+      Nairobi, Kisumu, in another city, or in the counbtry side?
 
                                  ({Q107.1})  ................................##  
 --------------------------------------------------------------------------------
-Q108  How long have you been living continuously in Ndhiwa? 
+Q108  Are you a permanent resisdent ?
 
-                                 ({Q108.1})  Always..........................##  
-                                 ({Q108.2})  Years...........................##  
+                                 ({Q108.1})  ................................##  
 --------------------------------------------------------------------------------
-Q109  Just before you moved here, did you live in a city a town, or in the 
+Q109  How long have you been living continuously in Ndhiwa? 
+
+                                 ({Q109.1})  Always..........................##  
+                                 ({Q109.2})  Years...........................##  
+--------------------------------------------------------------------------------
+Q1010  Just before you moved here, did you live in a city a town, or in the 
       countryside?
 
-                                 ({Q109.1})  ................................##  
---------------------------------------------------------------------------------
-Q1010  What is your ethnic group/tribe?
-
                                  ({Q110.1})  ................................##  
-                                 ({Q110.2})    <A                               >
 --------------------------------------------------------------------------------
-Q111  In the last 12 months, how many times have you been away from home for 
-      one or more nights?
+Q111  What is your ethnic group/tribe?
 
                                  ({Q111.1})  ................................##  
-                                 ({Q111.2})  Specify number of nights or mo..##  
+                                 ({Q111.2})    <A                               >
 --------------------------------------------------------------------------------
-Q112  Are you currently married or living together with a man as if married?
+Q112  In the last 12 months, how many times have you been away from home for 
+      one or more nights?
 
                                  ({Q112.1})  ................................##  
+                                 ({Q112.2})  Specify number of nights or mo..##  
 --------------------------------------------------------------------------------
-Q113  What is your marital status now: are you widowed, divorced, or separated?
+Q113  Are you currently married or living together with a man as if married?
 
                                  ({Q113.1})  ................................##  
 --------------------------------------------------------------------------------
-Q114  Is your (husband/partner) living with you now or is he staying elsewhere?
+Q114  What is your marital status now: are you widowed, divorced, or separated?
 
                                  ({Q114.1})  ................................##  
 --------------------------------------------------------------------------------
-Q115  Aside from your own housework, have you done any work in the last seven 
-      days?
+Q115  Is your (husband/partner) living with you now or is he staying elsewhere?
 
                                  ({Q115.1})  ................................##  
 --------------------------------------------------------------------------------
-Q116  In the last seven days, have you done any of these things or any other 
-      work?
+Q116  Aside from your own housework, have you done any work in the last seven 
+      days?
 
                                  ({Q116.1})  ................................##  
+--------------------------------------------------------------------------------
+Q117  In the last seven days, have you done any of these things or any other 
+      work?
+
+                                 ({Q117.1})  ................................##  
 
