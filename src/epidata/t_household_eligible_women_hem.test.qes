@@ -53,47 +53,41 @@ Q104  What is the highest (grade/form/year) you completed at that level?
 --------------------------------------------------------------------------------
 Q105  Can you read any part of the sentence to me?
                                   ({Q105.1})  ................................##  
-
-2.
-================================================================================
 --------------------------------------------------------------------------------
-Q200  For most of the time until you were 12 years old, did you live in 
+Q106  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the counbtry side?
-                                  ({Q200.1})  ................................##  
+                                  ({Q106.1})  ................................##  
 --------------------------------------------------------------------------------
-Q201  Are you a permanent resisdent ?
-                                  ({Q201.1})  ................................##  
+Q107  Are you a permanent resisdent ?
+                                  ({Q107.1})  ................................##  
 --------------------------------------------------------------------------------
-Q202  How long have you been living continuously in Ndhiwa? 
-                                  ({Q202.1})  Always..........................##  
+Q108  How long have you been living continuously in Ndhiwa? 
+                                  ({Q108.1})  Always..........................##  
+                                  ({Q108.2})  Years...........................##  
 --------------------------------------------------------------------------------
-Q203                              ({Q203.1})  Years...........................##  
+Q109  Just before you moved here, did you live in a city a town, or in the 
+      countryside?                ({Q109.1})  ................................##  
 --------------------------------------------------------------------------------
-Q204  Just before you moved here, did you live in a city a town, or in the 
-      countryside?                ({Q204.1})  ................................##  
+Q1010  What is your ethnic group/tribe?
+                                  ({Q110.1})  ................................##  
+                                  ({Q110.2})  <A                               >  
 --------------------------------------------------------------------------------
-Q205  What is your ethnic group/tribe?
-                                  ({Q205.1})  ................................##  
+Q111  In the last 12 months, how many times have you been away from home for 
+      one or more nights?         ({Q111.1})  ................................##  
+                                  ({Q111.2})  Specify number of nights or mo..##  
 --------------------------------------------------------------------------------
-Q206                              ({Q206.1})  <A                               >  
+Q112  Are you currently married or living together with a man as if married?
+                                  ({Q112.1})  ................................##  
 --------------------------------------------------------------------------------
-Q207  In the last 12 months, how many times have you been away from home for 
-      one or more nights?         ({Q207.1})  ................................##  
+Q113  What is your marital status now: are you widowed, divorced, or separated?
+                                  ({Q113.1})  ................................##  
 --------------------------------------------------------------------------------
-Q208                              ({Q208.1})  Specify number of nights or mo..##  
+Q114  Is your (husband/partner) living with you now or is he staying elsewhere?
+                                  ({Q114.1})  ................................##  
 --------------------------------------------------------------------------------
-Q209  Are you currently married or living together with a man as if married?
-                                  ({Q209.1})  ................................##  
+Q115  Aside from your own housework, have you done any work in the last seven 
+      days?                       ({Q115.1})  ................................##  
 --------------------------------------------------------------------------------
-Q2010  What is your marital status now: are you widowed, divorced, or separated?
-                                  ({Q210.1})  ................................##  
---------------------------------------------------------------------------------
-Q211  Is your (husband/partner) living with you now or is he staying elsewhere?
-                                  ({Q211.1})  ................................##  
---------------------------------------------------------------------------------
-Q212  Aside from your own housework, have you done any work in the last seven 
-      days?                       ({Q212.1})  ................................##  
---------------------------------------------------------------------------------
-Q213  In the last seven days, have you done any of these things or any other 
-      work?                       ({Q213.1})  ................................##  
+Q116  In the last seven days, have you done any of these things or any other 
+      work?                       ({Q116.1})  ................................##  
 
