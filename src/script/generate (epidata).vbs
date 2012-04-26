@@ -183,7 +183,7 @@ For Each oTable In oTables
 					End If
 					If Len(ColumnQuestion) > (NCharWidth - NCharMax - 12 - 6) Then 
 					    ColumnQuestionNotBreak = False
-						Desc = Desc & vbCrLf
+						Desc = Desc & vbCrLf & vbCrLf
 					Else
 					    ColumnQuestionNotBreak = True
 					End If
