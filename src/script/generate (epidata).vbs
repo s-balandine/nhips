@@ -160,7 +160,7 @@ For Each oTable In oTables
 						ColumnSectionNOffset = ColumnSectionN - SectionFirst + 1
 					End If
 					Desc = Desc & vbCrLf
-					Desc = Desc & ColumnSectionNOffset & "." & ColumnSection & vbCrLf
+					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 0
 				End If
