@@ -224,7 +224,13 @@ For Each oTable In oTables
 				End If
 								
 				If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
-					'Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+					If (Len(ColumnName)+ oColumn.Length + 6) >= NCharMax Then
+						'Desc = Desc & Mid(ColumnName, 1, NCharMax - oColumn.Length - 2) 
+						'Desc = Desc & String(2, ".")
+					Else
+						Desc = Desc & ColumnName
+						Desc = Desc & String(NCharMax - Len(ColumnName) - oColumn.Length, ".")
+					End If
 					Desc = Desc & "<A" & String(oColumn.Length - 1, " ") & ">  "
 				End If
 				
