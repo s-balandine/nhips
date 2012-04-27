@@ -114,6 +114,7 @@ For Each oTable In oTables
 		End If
 		
 		NCharMax = NCharMaxColumnSize + 2
+		NCharMax = 34
 		
 		ColumnSectionN = 0
 		ColumnSection = ""
