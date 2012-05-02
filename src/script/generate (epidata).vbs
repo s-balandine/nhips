@@ -76,10 +76,12 @@ Form="Eligible Woman"
 'Form="Survey Supervisor"
 
 For Each oTable In oTables
-    WScript.Echo "  " & oTable.Name
+    
 	If IsObject(oTable) And (oTable.Name=Form) Then
 	'If IsObject(oTable) Then	
 				
+		WScript.Echo "  " & oTable.Name
+		
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
 		
@@ -131,6 +133,7 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
+			    WScript.Echo "    Key Primary: " & oColumn.Name
 				If oColumn.DataType="AUTOINCREMENT" Then
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 22)
 					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
@@ -145,7 +148,8 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.Primary) Then
-
+				WScript.Echo "    Question: " & oColumn.Name
+				
 				ColumnName = ExtendedAttribute (oColumn, "Label")
 				ColumnSection = ExtendedAttribute (oColumn, "Section")
 				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
