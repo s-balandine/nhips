@@ -329,10 +329,12 @@ For Each oTable In oTables
 					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
 					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
-						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 	
-					Else If oColumn.Domain.ListOfValues <> "" Then
-						Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
-						Desc = Desc & "  TYPE COMMENT" & vbCrLf
+						If oColumn.Domain.ListOfValues <> "" Then
+							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
+							Desc = Desc & "  TYPE COMMENT" & vbCrLf
+						Else
+						    Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 	
+						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
 					If Len(S) > 0 Then
