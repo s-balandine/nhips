@@ -153,6 +153,7 @@ For Each oTable In oTables
 				ColumnName = ExtendedAttribute (oColumn, "Label")
 				ColumnSection = ExtendedAttribute (oColumn, "Section")
 				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
+				ColumnQuestionOffset = ExtendedAttribute (oColumn, "CheckOffset")
 				
 				If ColumnSection<>ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
@@ -196,7 +197,7 @@ For Each oTable In oTables
 				    ColumnN = 0
 				End If
 				
-				ColumnN = ColumnN + 1
+				ColumnN = ColumnN + 1 + ColumnQuestionOffset
 				
 				If Not oColumn.CannotModify Then
 				
