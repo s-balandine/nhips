@@ -92,59 +92,62 @@ Q113  In the last 12 months, how many times have you been away from home for
 Q114  In the last 12 months, have you been away from home for more than one 
       month at a time?
 
-                                 ({Q114.1})  ..............................####  
+                                 ({Q114.1})  .................................#  
 --------------------------------------------------------------------------------
 Q115  Are you currently married or living together with a man as if married?
 
                                  ({Q115.1})  .................................#  
-                                 ({Q115.2})  .................................#  
 --------------------------------------------------------------------------------
-Q116  What is your marital status now: are you widowed, divorced, or separated?
+Q116  Have you ever been married or lived together with a man as if married?
 
                                  ({Q116.1})  .................................#  
 --------------------------------------------------------------------------------
-Q117  Is your (husband/partner) living with you now or is he staying elsewhere?
+Q117  What is your marital status now: are you widowed, divorced, or separated?
 
-                                 ({Q117.1})  ................................##  
+                                 ({Q117.1})  .................................#  
 --------------------------------------------------------------------------------
-Q118  Aside from your own housework, have you done any work in the last seven 
+Q118  Is your (husband/partner) living with you now or is he staying elsewhere?
+
+                                 ({Q118.1})  ................................##  
+--------------------------------------------------------------------------------
+Q119  Aside from your own housework, have you done any work in the last seven 
       days?
-
-                                 ({Q118.1})  .................................#  
---------------------------------------------------------------------------------
-Q119  In the last seven days, have you done any of these things or any other 
-      work?
 
                                  ({Q119.1})  .................................#  
 --------------------------------------------------------------------------------
-Q120  Although you did not work in the last seven days, do you have any job or 
-      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
+Q120  In the last seven days, have you done any of these things or any other 
+      work?
 
                                  ({Q120.1})  .................................#  
 --------------------------------------------------------------------------------
-Q121  Have you done any work in the last 12 months?
+Q121  Although you did not work in the last seven days, do you have any job or 
+      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 
                                  ({Q121.1})  .................................#  
 --------------------------------------------------------------------------------
-Q122  What is your occupation, that is, what kind of work do you mainly 
+Q122  Have you done any work in the last 12 months?
+
+                                 ({Q122.1})  .................................#  
+--------------------------------------------------------------------------------
+Q123  What is your occupation, that is, what kind of work do you mainly 
       do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 
-                                 ({Q122.1})  ................................##  
+                                 ({Q123.1})  ................................##  
 --------------------------------------------------------------------------------
-Q123  Do you do this work for a member of your family, for someone else, or are 
+Q124  Do you do this work for a member of your family, for someone else, or are 
       you self-employed?
-
-                                 ({Q123.1})  .................................#  
---------------------------------------------------------------------------------
-Q124  Do you usually work throughout the year, or do you work seasonally, or 
-      only once in a while?
 
                                  ({Q124.1})  .................................#  
 --------------------------------------------------------------------------------
-Q125  Are you paid in cash or kind for this work or are you not paid at 
-      all?																																																																																																				
+Q125  Do you usually work throughout the year, or do you work seasonally, or 
+      only once in a while?
 
                                  ({Q125.1})  .................................#  
+--------------------------------------------------------------------------------
+Q126  Are you paid in cash or kind for this work or are you not paid at 
+      all?																																																																																																				
+
+                                 ({Q126.1})  .................................#  
 
 2.REPRODUCTION
 ================================================================================
