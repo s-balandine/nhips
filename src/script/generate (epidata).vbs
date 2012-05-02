@@ -321,6 +321,7 @@ For Each oTable In oTables
 				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
+				Desc = Desc & "* " & oColumn.Name & " (" & oColumn.Code & "): " & oColumn.DataType & vbCrLf
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
 				Else
@@ -338,7 +339,6 @@ For Each oTable In oTables
 						End If
 					Next
 				End If
-				Desc = Desc & "* " & oColumn.Name & " (" & oColumn.Code & ")" & vbCrLf
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
