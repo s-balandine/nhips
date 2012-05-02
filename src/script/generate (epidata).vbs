@@ -321,11 +321,15 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				WScript.Echo "    Attribute: " & oColumn.Name
+				ColumnName = oColumn.Name
+				ColumnCode = oColumn.Name
+				
+				WScript.Echo "    Attribute: " & ColumnName
+				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 				Desc = Desc & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "NameEpiData") & " | "
-				Desc = Desc & & oColumn.Name & " | "
-				Desc = Desc & & oColumn.Code & " | "
+				Desc = Desc & & ColumnName & " | "
+				Desc = Desc & & ColumnCode & " | "
 				Desc = Desc & & oColumn.DataType & vbCrLf
 				Desc = Desc & & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
