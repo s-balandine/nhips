@@ -184,9 +184,9 @@ Q207  How many boys and girls have died?
                                  ({Q207.1})  Boys dead.......................##  
                                  ({Q207.2})  Girls dead......................##  
 --------------------------------------------------------------------------------
-Q208  Total children ever born   ({Q209.1})  Total births....................##  
+Q208  Total children ever born   ({Q208.1})  Total births....................##  
 --------------------------------------------------------------------------------
-Q2010  In what month and year was your last child born?
+Q209  In what month and year was your last child born?
 
                                  ({Q210.1})  Months..........................##  
                                  ({Q210.2})  Years.........................####  
