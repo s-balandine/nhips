@@ -235,7 +235,7 @@ For Each oTable In oTables
 						If (Len(ColumnName)+ oColumn.Length + 6) >= NCharMax Then
 							Desc = Desc & Space(12) & ColumnName & ":" & vbCrLf
 							Desc = Desc & Space(NCharWidth - NCharMax - 13)
-							'Desc = Desc & ColumnNameEpiData & Space(NCharMax - oColumn.Length)
+							Desc = Desc & ColumnNameEpiData & Space(NCharMax - oColumn.Length - 3)
 						Else
 							Desc = Desc & ColumnNameEpiData
 							Desc = Desc & ColumnName
