@@ -1015,21 +1015,24 @@ AFTER RECORD
  ENDIF
 END
 
-* Identifiers > Household identifierS1011
+* Identifiers > Household identifier
+S1011
   MUSTENTER
   AFTER ENTRY
     LET RECID = S1011 + S1012
   END
 END
 
-* Identifiers > Respondent\'s line number S1012
+* Identifiers > Respondent\'s line number 
+S1012
   MUSTENTER
   AFTER ENTRY
     LET RECID = S1011 + S1012
   END
 END
 
-* Date > Day of interviewS2011
+* Date > Day of interview
+S2011
   MUSTENTER
   RANGE 1 31
 END
@@ -1043,20 +1046,24 @@ S2012
   MISSINGVALUE  98
 END
 
-* Date > Year of interviewS2013
+* Date > Year of interview
+S2013
   MUSTENTER
   RANGE 2012 2014
 END
 
-* Actors on the field? > InterviewerS2021
+* Actors on the field? > Interviewer
+S2021
   MUSTENTER
 END
 
-* Actors on the field? > SupervisorS2022
+* Actors on the field? > Supervisor
+S2022
   MUSTENTER
 END
 
-* Result > Result* Allowed Values
+* Result > Result
+* Allowed Values
 *    1: Completed
 *    2: Not at home
 *    3: Postponed
@@ -1073,29 +1080,35 @@ S2031
   END
 END
 
-* Result > Result (Other)S2032
+* Result > Result (Other)
+S2032
   MUSTENTER
 END
 
-* Actors at the office? > EditorS2041
+* Actors at the office? > Editor
+S2041
   MUSTENTER
 END
 
-* Actors at the office? > KeyerS2042
+* Actors at the office? > Keyer
+S2042
   MUSTENTER
 END
 
-* Record the time > HourS3011
+* Record the time > Hour
+S3011
   MUSTENTER
   RANGE 0 23
 END
 
-* Record the time > MinuteS3012
+* Record the time > Minute
+S3012
   MUSTENTER
   RANGE 0 59
 END
 
-* In what month and year were you born? > Month* Allowed Values
+* In what month and year were you born? > Month
+* Allowed Values
 *    98: Don't know
 S3021
   MUSTENTER
@@ -1103,7 +1116,8 @@ S3021
   MISSINGVALUE  98
 END
 
-* In what month and year were you born? > Year* Allowed Values
+* In what month and year were you born? > Year
+* Allowed Values
 *    9998: Don't know
 S3022
   MUSTENTER
@@ -1111,7 +1125,8 @@ S3022
   MISSINGVALUE  9998
 END
 
-* How old were you at your last birthday? > Age in completed year* Allowed Values
+* How old were you at your last birthday? > Age in completed year
+* Allowed Values
 *    98: Don't know
 S3031
   MUSTENTER
@@ -1119,11 +1134,13 @@ S3031
   MISSINGVALUE  98
 END
 
-* Can you read any part of the sentence to me? > Specify languageS3082
+* Can you read any part of the sentence to me? > Specify language
+S3082
   MUSTENTER
 END
 
-* How long have you been living continuously in Ndhiwa?  > Specify years* Allowed Values
+* How long have you been living continuously in Ndhiwa?  > Specify years
+* Allowed Values
 *    98: Always
 *    99: Visitor
 S3101
@@ -1132,50 +1149,60 @@ S3101
   MISSINGVALUE  98 99
 END
 
-* What is your ethnic group/tribe? > SpecifyS3122
+* What is your ethnic group/tribe? > Specify
+S3122
   MUSTENTER
 END
 
-* In the last 12 months, how many times have you been away from home for one or more nights? > Number of nightsS3131
+* In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
+S3131
   MUSTENTER
 END
 
-* How many sons and daughters live with you?  > Sons at homeQ1031
-  MUSTENTER
-  RANGE 0 20
-END
-
-* How many sons and daughters live with you?  > Daughters at homeQ1032
+* How many sons and daughters live with you?  > Sons at home
+Q1031
   MUSTENTER
   RANGE 0 20
 END
 
-* How many sons are alive but do not live with you? > Sons elsewhereQ1051
+* How many sons and daughters live with you?  > Daughters at home
+Q1032
   MUSTENTER
   RANGE 0 20
 END
 
-* How many sons are alive but do not live with you? > Daughters elsewhereQ1052
+* How many sons are alive but do not live with you? > Sons elsewhere
+Q1051
   MUSTENTER
   RANGE 0 20
 END
 
-* How many boys and girls have died? > Boys deadQ1071
+* How many sons are alive but do not live with you? > Daughters elsewhere
+Q1052
   MUSTENTER
   RANGE 0 20
 END
 
-* How many boys and girls have died? > Girls deadQ1072
+* How many boys and girls have died? > Boys dead
+Q1071
   MUSTENTER
   RANGE 0 20
 END
 
-* Total children ever born > Total birthsQ1081
+* How many boys and girls have died? > Girls dead
+Q1072
   MUSTENTER
   RANGE 0 20
 END
 
-* In what month and year was your last child born? > Months* Allowed Values
+* Total children ever born > Total births
+Q1081
+  MUSTENTER
+  RANGE 0 20
+END
+
+* In what month and year was your last child born? > Months
+* Allowed Values
 *    98: Don't know
 Q1091
   MUSTENTER
@@ -1183,7 +1210,8 @@ Q1091
   MISSINGVALUE  98
 END
 
-* In what month and year was your last child born? > Years* Allowed Values
+* In what month and year was your last child born? > Years
+* Allowed Values
 *    9998: Don't know
 Q1092
   MUSTENTER
@@ -1191,24 +1219,29 @@ Q1092
   MISSINGVALUE  9998
 END
 
-* Birth history number of last birth > Birth history numberQ2021
+* Birth history number of last birth > Birth history number
+Q2021
   MUSTENTER
   RANGE 1 6
 END
 
-* What name was given to your last baby? > NameQ2031
+* What name was given to your last baby? > Name
+Q2031
   MUSTENTER
 END
 
-* Whom did you see?  > SpecifyQ2062
+* Whom did you see?  > Specify
+Q2062
   MUSTENTER
 END
 
-* Where did you receive antenatal care for this pregnancy? > SpecifyQ2072
+* Where did you receive antenatal care for this pregnancy? > Specify
+Q2072
   MUSTENTER
 END
 
-* How many months pregnant were you when you first received antenatal care for this pregnancy? > Months* Allowed Values
+* How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
+* Allowed Values
 *    98: Don't know
 Q2081
   MUSTENTER
@@ -1216,33 +1249,40 @@ Q2081
   MISSINGVALUE  98
 END
 
-* How many times did you receive antenatal care during this pregnancy? > Numer of timesQ2091
+* How many times did you receive antenatal care during this pregnancy? > Numer of times
+Q2091
   MUSTENTER
 END
 
-* Who assisted with the delivery of last baby ?  > SpecifyQ2102
+* Who assisted with the delivery of last baby ?  > Specify
+Q2102
   MUSTENTER
 END
 
-* How long after last baby was delivered did you stay there? > HoursQ2121
+* How long after last baby was delivered did you stay there? > Hours
+Q2121
   MUSTENTER
   RANGE 0 23
 END
 
-* How long after last baby was delivered did you stay there? > DaysQ2122
+* How long after last baby was delivered did you stay there? > Days
+Q2122
   MUSTENTER
   RANGE 1 31
 END
 
-* How long after last baby was delivered did you stay there? > WeeksQ2123
+* How long after last baby was delivered did you stay there? > Weeks
+Q2123
   MUSTENTER
 END
 
-* What age was last baby when you stopped to breasfeed him/her? > MonthsQ2151
+* What age was last baby when you stopped to breasfeed him/her? > Months
+Q2151
   MUSTENTER
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?* Allowed Values
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
+* Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
@@ -1252,7 +1292,8 @@ Q3021
   TYPE COMMENT
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?* Allowed Values
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
+* Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
@@ -1262,7 +1303,8 @@ Q3022
   TYPE COMMENT
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?* Allowed Values
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
+* Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
@@ -1272,28 +1314,34 @@ Q3023
   TYPE COMMENT
 END
 
-* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > MonthsQ3071
+* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
+Q3071
   MUSTENTER
   RANGE 0 9
 END
 
-* Where was the test done? > SpecifyQ3082
+* Where was the test done? > Specify
+Q3082
   MUSTENTER
 END
 
-* How many months ago was your most recent HIV test? > Months agoQ3161
+* How many months ago was your most recent HIV test? > Months ago
+Q3161
   MUSTENTER
 END
 
-* Where was the test done? > SpecifyQ3202
+* Where was the test done? > Specify
+Q3202
   MUSTENTER
 END
 
-* Where is that? > SpecifyQ3222
+* Where is that? > Specify
+Q3222
   MUSTENTER
 END
 
-* When were you first tested positive for the AIDS virus? > Month* Allowed Values
+* When were you first tested positive for the AIDS virus? > Month
+* Allowed Values
 *    98: Don't know
 Q5061
   MUSTENTER
@@ -1301,7 +1349,8 @@ Q5061
   MISSINGVALUE  98
 END
 
-* When were you first tested positive for the AIDS virus? > Year* Allowed Values
+* When were you first tested positive for the AIDS virus? > Year
+* Allowed Values
 *    9998: Don't know
 Q5062
   MUSTENTER
@@ -1309,11 +1358,13 @@ Q5062
   MISSINGVALUE  9998
 END
 
-* Where was the test done? > SpecifyQ5072
+* Where was the test done? > Specify
+Q5072
   MUSTENTER
 END
 
-* When did you first start Antiretroviral therapy? > Month* Allowed Values
+* When did you first start Antiretroviral therapy? > Month
+* Allowed Values
 *    98: Don't know
 Q5121
   MUSTENTER
@@ -1321,7 +1372,8 @@ Q5121
   MISSINGVALUE  98
 END
 
-* When did you first start Antiretroviral therapy? > Year* Allowed Values
+* When did you first start Antiretroviral therapy? > Year
+* Allowed Values
 *    9998: Don't know
 Q5122
   MUSTENTER
@@ -1329,7 +1381,8 @@ Q5122
   MISSINGVALUE  9998
 END
 
-* When was your last consultation? > Month* Allowed Values
+* When was your last consultation? > Month
+* Allowed Values
 *    98: Don't know
 Q5141
   MUSTENTER
@@ -1337,7 +1390,8 @@ Q5141
   MISSINGVALUE  98
 END
 
-* When was your last consultation? > Year* Allowed Values
+* When was your last consultation? > Year
+* Allowed Values
 *    9998: Don't know
 Q5142
   MUSTENTER
@@ -1345,15 +1399,18 @@ Q5142
   MISSINGVALUE  9998
 END
 
-* Where are you now receiving ART? > SpecifyQ5152
+* Where are you now receiving ART? > Specify
+Q5152
   MUSTENTER
 END
 
-* In which district is this place? > SpecifyQ5162
+* In which district is this place? > Specify
+Q5162
   MUSTENTER
 END
 
-* When was your last consultation? > Month* Allowed Values
+* When was your last consultation? > Month
+* Allowed Values
 *    98: Don't know
 Q5191
   MUSTENTER
@@ -1361,7 +1418,8 @@ Q5191
   MISSINGVALUE  98
 END
 
-* When was your last consultation? > Year* Allowed Values
+* When was your last consultation? > Year
+* Allowed Values
 *    9998: Don't know
 Q5192
   MUSTENTER
@@ -1369,27 +1427,33 @@ Q5192
   MISSINGVALUE  9998
 END
 
-* Where are you now receiving care? > SpecifyQ5202
+* Where are you now receiving care? > Specify
+Q5202
   MUSTENTER
 END
 
-* In which district is this place? > SpecifyQ5212
+* In which district is this place? > Specify
+Q5212
   MUSTENTER
 END
 
-* Why did you stop? > SpecifyQ5232
+* Why did you stop? > Specify
+Q5232
   MUSTENTER
 END
 
-* Interviewer\'s observations > Comments about specific questionsQ6011
+* Interviewer\'s observations > Comments about specific questions
+Q6011
   MUSTENTER
 END
 
-* Interviewer\'s observations > Comments about respondentQ6012
+* Interviewer\'s observations > Comments about respondent
+Q6012
   MUSTENTER
 END
 
-* Interviewer\'s observations > Any other commentsQ6013
+* Interviewer\'s observations > Any other comments
+Q6013
   MUSTENTER
 END
 
