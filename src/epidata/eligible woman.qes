@@ -278,82 +278,82 @@ Q403  Are there any special drugs that a doctor or a nurse can give to a woman
 --------------------------------------------------------------------------------
 Q404  Were you offered a test for the AIDS virus as part of your antenatal care?
 
-                                 ({Q404.1})  .................................#  
+                                 ({Q407.1})  .................................#  
 --------------------------------------------------------------------------------
-Q405  I don't want to know the results, but were you tested for the AIDS virus 
+Q408  I don't want to know the results, but were you tested for the AIDS virus 
       as part of your antenatal 
-
-                                 ({Q405.1})  .................................#  
---------------------------------------------------------------------------------
-Q406  How many months pregnant were you when you were first tested for the AIDS 
-      virus as a part of your antenatal care for this pregnancy?
-
-                                 ({Q406.1})  Months...........................#  
---------------------------------------------------------------------------------
-Q407  Where was the test done?   ({Q407.1})  ................................##  
-                                             Specify:
-                                 ({Q407.2})     <A                               >
---------------------------------------------------------------------------------
-Q408  I don't want to know the results, but did you get the results of the 
-      test?
 
                                  ({Q408.1})  .................................#  
 --------------------------------------------------------------------------------
-Q409  All women are supposed to receive counseling after being tested. After 
-      you were tested, did you receive counseling?
+Q409  How many months pregnant were you when you were first tested for the AIDS 
+      virus as a part of your antenatal care for this pregnancy?
 
-                                 ({Q409.1})  .................................#  
+                                 ({Q409.1})  Months...........................#  
 --------------------------------------------------------------------------------
-Q4010  Between the time you went for delivery but before the baby was born, were 
-      you offered a test for the AIDS virus?
-
-                                 ({Q410.1})  .................................#  
+Q4010  Where was the test done?   ({Q410.1})  ................................##  
+                                             Specify:
+                                 ({Q410.2})     <A                               >
 --------------------------------------------------------------------------------
-Q411  I don't want to know the results, but were you tested for the AIDS virus 
-      at that time?
+Q411  I don't want to know the results, but did you get the results of the 
+      test?
 
                                  ({Q411.1})  .................................#  
 --------------------------------------------------------------------------------
-Q412  I don't want to know the results, but did you get the results of the 
-      test?
+Q412  All women are supposed to receive counseling after being tested. After 
+      you were tested, did you receive counseling?
 
                                  ({Q412.1})  .................................#  
 --------------------------------------------------------------------------------
-Q413  Have you been tested for the AIDS virus since that time you were tested 
-      during your pregnancy?
+Q413  Between the time you went for delivery but before the baby was born, were 
+      you offered a test for the AIDS virus?
 
-                                 ({Q413.1})  .................................#  
+                                 ({Q414.1})  .................................#  
 --------------------------------------------------------------------------------
-Q414  How many months ago was your most recent HIV test?
-
-                                 ({Q414.1})  Months ago......................##  
---------------------------------------------------------------------------------
-Q415  I don't want to know the results, but have you ever been tested to see 
-      if you have the AIDS virus?
+Q415  I don't want to know the results, but were you tested for the AIDS virus 
+      at that time?
 
                                  ({Q415.1})  .................................#  
 --------------------------------------------------------------------------------
-Q416  How many months ago was your most recent HIV test?
-
-                                 ({Q416.1})  ................................##  
---------------------------------------------------------------------------------
-Q417  I don't want to know the results, but did you get the results of the 
+Q416  I don't want to know the results, but did you get the results of the 
       test?
+
+                                 ({Q416.1})  .................................#  
+--------------------------------------------------------------------------------
+Q417  Have you been tested for the AIDS virus since that time you were tested 
+      during your pregnancy?
 
                                  ({Q417.1})  .................................#  
 --------------------------------------------------------------------------------
-Q418  Where was the test done?   ({Q418.1})  ................................##  
-                                             Specify:
-                                 ({Q418.2})     <A                               >
+Q418  How many months ago was your most recent HIV test?
+
+                                 ({Q418.1})  Months ago......................##  
 --------------------------------------------------------------------------------
-Q419  Do you know of a place where people can go to get tested for the AIDS 
-      virus?
+Q419  I don't want to know the results, but have you ever been tested to see 
+      if you have the AIDS virus?
 
                                  ({Q419.1})  .................................#  
 --------------------------------------------------------------------------------
-Q420  Where is that?             ({Q420.1})  .................................<A>
+Q420  How many months ago was your most recent HIV test?
+
+                                 ({Q420.1})  ................................##  
+--------------------------------------------------------------------------------
+Q421  I don't want to know the results, but did you get the results of the 
+      test?
+
+                                 ({Q421.1})  .................................#  
+--------------------------------------------------------------------------------
+Q422  Where was the test done?   ({Q422.1})  ................................##  
                                              Specify:
-                                 ({Q420.2})     <A                               >
+                                 ({Q422.2})     <A                               >
+--------------------------------------------------------------------------------
+Q423  Do you know of a place where people can go to get tested for the AIDS 
+      virus?
+
+                                 ({Q423.1})  .................................#  
+--------------------------------------------------------------------------------
+Q424  Where is that?             ({Q424.1})  .................................<A>
+                                             Specify:
+                                 ({Q424.2})     <A                               >
 
 5.HIV TESTING
 ================================================================================
