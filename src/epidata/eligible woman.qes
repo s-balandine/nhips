@@ -196,65 +196,65 @@ Q209  In what month and year was your last child born?
 --------------------------------------------------------------------------------
 Q301  Birth history number of last birth
 
-                                 ({Q301.1})  Birth history number.............#  
+                                 ({Q303.1})  Birth history number.............#  
 --------------------------------------------------------------------------------
-Q302  What name was given to your last baby?
+Q304  What name was given to your last baby?
 
                                              Name:
-                                 ({Q302.1})     <A                               >
+                                 ({Q304.1})     <A                               >
 --------------------------------------------------------------------------------
-Q303  Is last baby still alive?  ({Q303.1})  .................................#  
+Q305  Is last baby still alive?  ({Q305.1})  .................................#  
 --------------------------------------------------------------------------------
-Q304  Did you see anyone for antenatal care for this pregnancy?
+Q306  Did you see anyone for antenatal care for this pregnancy?
 
-                                 ({Q304.1})  .................................#  
+                                 ({Q306.1})  .................................#  
 --------------------------------------------------------------------------------
-Q305  Whom did you see?          ({Q305.1})  ................................##  
+Q307  Whom did you see?          ({Q307.1})  ................................##  
                                              Specify:
-                                 ({Q305.2})     <A                               >
+                                 ({Q307.2})     <A                               >
 --------------------------------------------------------------------------------
-Q306  Where did you receive antenatal care for this pregnancy?
+Q308  Where did you receive antenatal care for this pregnancy?
 
-                                 ({Q306.1})  ................................##  
+                                 ({Q308.1})  ................................##  
                                              Specify:
-                                 ({Q306.2})     <A                               >
+                                 ({Q308.2})     <A                               >
 --------------------------------------------------------------------------------
-Q307  How many months pregnant were you when you first received antenatal care 
+Q309  How many months pregnant were you when you first received antenatal care 
       for this pregnancy?
 
-                                 ({Q307.1})  Months..........................##  
+                                 ({Q309.1})  Months..........................##  
 --------------------------------------------------------------------------------
-Q308  How many times did you receive antenatal care during this pregnancy?
+Q3010  How many times did you receive antenatal care during this pregnancy?
 
-                                 ({Q308.1})  Numer of times..................##  
+                                 ({Q310.1})  Numer of times..................##  
 --------------------------------------------------------------------------------
-Q309  Who assisted with the delivery of last baby ? 
+Q311  Who assisted with the delivery of last baby ? 
 
-                                 ({Q309.1})  ................................##  
+                                 ({Q311.1})  ................................##  
                                              Specify:
-                                 ({Q309.2})     <A                               >
+                                 ({Q311.2})     <A                               >
 --------------------------------------------------------------------------------
-Q3010  Where did you give birth to last baby?
+Q312  Where did you give birth to last baby?
 
-                                 ({Q310.1})  ................................##  
+                                 ({Q312.1})  ................................##  
 --------------------------------------------------------------------------------
-Q311  How long after last baby was delivered did you stay there?
+Q313  How long after last baby was delivered did you stay there?
 
-                                 ({Q311.1})  Hours...........................##  
-                                 ({Q311.2})  Days............................##  
-                                 ({Q311.3})  Weeks...........................##  
+                                 ({Q313.1})  Hours...........................##  
+                                 ({Q313.2})  Days............................##  
+                                 ({Q313.3})  Weeks...........................##  
 --------------------------------------------------------------------------------
-Q312  Did you ever breastfeed last baby?
+Q314  Did you ever breastfeed last baby?
 
-                                 ({Q313.1})  .................................#  
+                                 ({Q315.1})  .................................#  
 --------------------------------------------------------------------------------
-Q314  Are you still breastfeeding last baby?
+Q316  Are you still breastfeeding last baby?
 
-                                 ({Q314.1})  .................................#  
+                                 ({Q316.1})  .................................#  
 --------------------------------------------------------------------------------
-Q315  What age was last baby when you stopped to breasfeed him/her?
+Q317  What age was last baby when you stopped to breasfeed him/her?
 
-                                 ({Q315.1})  Months..........................##  
+                                 ({Q317.1})  Months..........................##  
 
 4.HIV / AIDS
 ================================================================================
