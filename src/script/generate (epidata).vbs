@@ -320,6 +320,10 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
 				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
+				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
+				If ExtendedAttribute(oColumn, "Label") <> "" Then 
+					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label")
+				End If
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
