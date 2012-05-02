@@ -1034,7 +1034,8 @@ END
   RANGE 1 31
 END
 
-* Date > Month of interview* Allowed Values
+* Date > Month of interview
+* Allowed Values
 *    98: Don't know
 S2012
   MUSTENTER
