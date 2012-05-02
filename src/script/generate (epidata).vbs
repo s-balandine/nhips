@@ -327,7 +327,7 @@ For Each oTable In oTables
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "NameEpiData") & " | "
 				Desc = Desc & ColumnName & " (" & ColumnCode & ")" & " | "
 				Desc = Desc & oColumn.DataType & vbCrLf
-				Desc = Desc & ExtendedAttribute(oColumn, "Question")
+				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
 				Else
