@@ -1014,15 +1014,15 @@ AFTER RECORD
  ENDIF
 END
 
-* Identifiers* Identifier (HEW_IDENTIFIER): VARCHAR(9)
-
+* RECID | Identifier | RECID | VARCHAR(9)
+* Identifiers
 RECID
   KEY UNIQUE 1
   NOENTER
 END
 
-* Identifiers* Household (HEW_HOUSEHOLD): NUMERIC(3)
- > Household identifier
+* S101.1 | Household | S1011 | NUMERIC(3)
+* Identifiers > Household identifier
 S1011
   MUSTENTER
   AFTER ENTRY
@@ -1030,8 +1030,8 @@ S1011
   END
 END
 
-* Identifiers* Respondent (HEW_RESPONDENT): NUMERIC(2)
- > Respondent\'s line number 
+* S101.2 | Respondent | S1012 | NUMERIC(2)
+* Identifiers > Respondent\'s line number 
 S1012
   MUSTENTER
   AFTER ENTRY
@@ -1039,15 +1039,15 @@ S1012
   END
 END
 
-* Date* Day (HEW_DAY): NUMERIC(2)
- > Day of interview
+* S201.1 | Day | S2011 | NUMERIC(2)
+* Date > Day of interview
 S2011
   MUSTENTER
   RANGE 1 31
 END
 
-* Date* Month (HEW_MONTH): NUMERIC(2)
- > Month of interview
+* S201.2 | Month | S2012 | NUMERIC(2)
+* Date > Month of interview
 * Allowed Values
 *    98: Don't know
 S2012
@@ -1056,27 +1056,27 @@ S2012
   MISSINGVALUE  98
 END
 
-* Date* Year (HEW_YEAR): NUMERIC(4)
- > Year of interview
+* S201.3 | Year | S2013 | NUMERIC(4)
+* Date > Year of interview
 S2013
   MUSTENTER
   RANGE 2012 2014
 END
 
-* Actors on the field?* Field Interviewer (HEW_FIELD_INTERVIEWER): VARCHAR(35)
- > Interviewer
+* S202.1 | Field Interviewer | S2021 | VARCHAR(35)
+* Actors on the field? > Interviewer
 S2021
   MUSTENTER
 END
 
-* Actors on the field?* Field Supervisor (HEW_FIELD_SUPERVISOR): VARCHAR(35)
- > Supervisor
+* S202.2 | Field Supervisor | S2022 | VARCHAR(35)
+* Actors on the field? > Supervisor
 S2022
   MUSTENTER
 END
 
-* Result* Result (HEW_RESULT): NUMERIC(2)
- > Result
+* S203.1 | Result | S2031 | NUMERIC(2)
+* Result > Result
 * Allowed Values
 *    1: Completed
 *    2: Not at home
@@ -1094,40 +1094,40 @@ S2031
   END
 END
 
-* Result* Result (Other) (HEW_RESULT__OTHER_): VARCHAR(32)
- > Result (Other)
+* S203.2 | Result (Other) | S2032 | VARCHAR(32)
+* Result > Result (Other)
 S2032
   MUSTENTER
 END
 
-* Actors at the office?* Office Editor (HEW_OFFICE_EDITOR): VARCHAR(35)
- > Editor
+* S204.1 | Office Editor | S2041 | VARCHAR(35)
+* Actors at the office? > Editor
 S2041
   MUSTENTER
 END
 
-* Actors at the office?* Office Keyer (HEW_OFFICE_KEYER): VARCHAR(35)
- > Keyer
+* S204.2 | Office Keyer | S2042 | VARCHAR(35)
+* Actors at the office? > Keyer
 S2042
   MUSTENTER
 END
 
-* Record the time* Record Time (Hour) (HEW_RECORD_TIME__HOUR_): NUMERIC(2)
- > Hour
+* S301.1 | Record Time (Hour) | S3011 | NUMERIC(2)
+* Record the time > Hour
 S3011
   MUSTENTER
   RANGE 0 23
 END
 
-* Record the time* Record Time (Minute) (HEW_RECORD_TIME__MINUTE_): NUMERIC(2)
- > Minute
+* S301.2 | Record Time (Minute) | S3012 | NUMERIC(2)
+* Record the time > Minute
 S3012
   MUSTENTER
   RANGE 0 59
 END
 
-* In what month and year were you born?* Birth (Month) (HEW_BIRTH__MONTH_): NUMERIC(2)
- > Month
+* S302.1 | Birth (Month) | S3021 | NUMERIC(2)
+* In what month and year were you born? > Month
 * Allowed Values
 *    98: Don't know
 S3021
@@ -1136,8 +1136,8 @@ S3021
   MISSINGVALUE  98
 END
 
-* In what month and year were you born?* Birth (Year) (HEW_BIRTH__YEAR_): NUMERIC(4)
- > Year
+* S302.2 | Birth (Year) | S3022 | NUMERIC(4)
+* In what month and year were you born? > Year
 * Allowed Values
 *    9998: Don't know
 S3022
@@ -1146,8 +1146,8 @@ S3022
   MISSINGVALUE  9998
 END
 
-* How old were you at your last birthday?* Age (HEW_AGE): NUMERIC(2)
- > Age in completed year
+* S303.1 | Age | S3031 | NUMERIC(2)
+* How old were you at your last birthday? > Age in completed year
 * Allowed Values
 *    98: Don't know
 S3031
@@ -1156,8 +1156,8 @@ S3031
   MISSINGVALUE  98
 END
 
-* Have you ever attended school?* School (HEW_SCHOOL): NUMERIC(1)
-
+* S304.1 | School | S3041 | NUMERIC(1)
+* Have you ever attended school?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1170,8 +1170,8 @@ S3041
   END
 END
 
-* What is the highest level of school you attended: primary, secondary, or higher? * Highest Educational Level (HEW_HIGHEST_EDUCATIONAL_LEVEL): NUMERIC(2)
-
+* S305.1 | Highest Educational Level | S3051 | NUMERIC(2)
+* What is the highest level of school you attended: primary, secondary, or higher? 
 * Allowed Values
 *    1: Primary
 *    2: Post-primary / Vocational
@@ -1183,8 +1183,8 @@ S3051
   TYPE COMMENT
 END
 
-* What is the highest (grade/form/year) you completed at that level? * Highest Year of Education (HEW_HIGHEST_YEAR_OF_EDUCATION): NUMERIC(2)
-
+* S306.1 | Highest Year of Education | S3061 | NUMERIC(2)
+* What is the highest (grade/form/year) you completed at that level? 
 S3061
   MUSTENTER
   IF
@@ -1193,8 +1193,8 @@ S3061
   END
 END
 
-* Can you read any part of the sentence to me?* Literacy (HEW_LITERACY): NUMERIC(2)
-
+* S307.1 | Literacy | S3071 | NUMERIC(2)
+* Can you read any part of the sentence to me?
 * Allowed Values
 *    1: No, cannont read at all
 *    2: Yes, able to read only part of sentence
@@ -1213,14 +1213,14 @@ S3071
   END
 END
 
-* Can you read any part of the sentence to me?* Literacy (Language) (HEW_LITERACY__LANGUAGE_): VARCHAR(32)
- > Specify language
+* S307.2 | Literacy (Language) | S3072 | VARCHAR(32)
+* Can you read any part of the sentence to me? > Specify language
 S3072
   MUSTENTER
 END
 
-* For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?* Place of Residence Before (HEW_PLACE_OF_RESIDENCE_BEFORE): NUMERIC(1)
-
+* S308.1 | Place of Residence Before | S3081 | NUMERIC(1)
+* For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
 * Allowed Values
 *    1: Nairobi / Kisumu
 *    2: Other City / Town
@@ -1236,8 +1236,8 @@ S3081
   END
 END
 
-* How long have you been living continuously in Ndhiwa? * Residence Duration (HEW_RESIDENCE_DURATION): NUMERIC(2)
- > Specify years
+* S309.1 | Residence Duration | S3091 | NUMERIC(2)
+* How long have you been living continuously in Ndhiwa?  > Specify years
 * Allowed Values
 *    98: Always
 *    99: Visitor
@@ -1247,8 +1247,8 @@ S3091
   MISSINGVALUE  98 99
 END
 
-* Just before you moved here, did you live in a city a town, or in the countryside?* Type of Place of Residence Before (HEW_TYPE_OF_PLACE_OF_RESIDENCE_BEFORE): NUMERIC(2)
-
+* S3101 | Type of Place of Residence Before | S3101 | NUMERIC(2)
+* Just before you moved here, did you live in a city a town, or in the countryside?
 * Allowed Values
 *    0: Capital, large city
 *    1: Small city
@@ -1260,8 +1260,8 @@ S3101
   TYPE COMMENT
 END
 
-* What is your ethnic group/tribe?* Ethnic (HEW_ETHNIC): NUMERIC(2)
-
+* S3111 | Ethnic | S3111 | NUMERIC(2)
+* What is your ethnic group/tribe?
 * Allowed Values
 *    1: Embu
 *    2: Kalenjin
@@ -1282,27 +1282,27 @@ S3111
   TYPE COMMENT
 END
 
-* What is your ethnic group/tribe?* Ethnic (Other) (HEW_ETHNIC__OTHER_): VARCHAR(32)
- > Specify
+* S3112 | Ethnic (Other) | S3112 | VARCHAR(32)
+* What is your ethnic group/tribe? > Specify
 S3112
   MUSTENTER
 END
 
-* In the last 12 months, how many times have you been away from home for one or more nights?* Outside Night (HEW_OUTSIDE_NIGHT): NUMERIC(2)
- > Number of nights
+* S3121 | Outside Night | S3121 | NUMERIC(2)
+* In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
 S3121
   MUSTENTER
 END
 
-* In the last 12 months, have you been away from home for more than one month at a time?* Outside Month (HEW_OUTSIDE_MONTH): NUMERIC(4)
-
+* S3131 | Outside Month | S3131 | NUMERIC(4)
+* In the last 12 months, have you been away from home for more than one month at a time?
 S3131
   MUSTENTER
   RANGE 2012 2014
 END
 
-* Are you currently married or living together with a man as if married?* Union (HEW_UNION): NUMERIC(1)
-
+* S3141 | Union | S3141 | NUMERIC(1)
+* Are you currently married or living together with a man as if married?
 * Allowed Values
 *    1: Yes, currently married
 *    2: Yes, living with a man
@@ -1313,8 +1313,8 @@ S3141
   TYPE COMMENT
 END
 
-* Are you currently married or living together with a man as if married?* Marital Statut in Past (HEW_MARITAL_STATUT_IN_PAST): NUMERIC(1)
-
+* S3142 | Marital Statut in Past | S3142 | NUMERIC(1)
+* Are you currently married or living together with a man as if married?
 * Allowed Values
 *    1: Yes, formerly married
 *    2: Yes, lived with a man
@@ -1325,8 +1325,8 @@ S3142
   TYPE COMMENT
 END
 
-* What is your marital status now: are you widowed, divorced, or separated?* Marital Status (HEW_MARITAL_STATUS): NUMERIC(1)
-
+* S3151 | Marital Status | S3151 | NUMERIC(1)
+* What is your marital status now: are you widowed, divorced, or separated?
 * Allowed Values
 *    1: Widowed
 *    2: Divorced
@@ -1337,8 +1337,8 @@ S3151
   TYPE COMMENT
 END
 
-* Is your (husband/partner) living with you now or is he staying elsewhere?* Husband Status (HEW_HUSBAND_STATUS): NUMERIC(2)
-
+* S3161 | Husband Status | S3161 | NUMERIC(2)
+* Is your (husband/partner) living with you now or is he staying elsewhere?
 * Allowed Values
 *    1: Living with her
 *    2: Staying elsewhere
@@ -1348,8 +1348,8 @@ S3161
   TYPE COMMENT
 END
 
-* Aside from your own housework, have you done any work in the last seven days?* Worked in last week (HEW_WORKED_IN_LAST_WEEK): NUMERIC(1)
-
+* S3171 | Worked in last week | S3171 | NUMERIC(1)
+* Aside from your own housework, have you done any work in the last seven days?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1359,8 +1359,8 @@ S3171
   TYPE COMMENT
 END
 
-* In the last seven days, have you done any of these things or any other work?* Worked in last week 2 (HEW_WORKED_IN_LAST_WEEK_2): NUMERIC(1)
-
+* S3181 | Worked in last week 2 | S3181 | NUMERIC(1)
+* In the last seven days, have you done any of these things or any other work?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1370,8 +1370,8 @@ S3181
   TYPE COMMENT
 END
 
-* Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?* Work absence (HEW_WORK_ABSENCE): NUMERIC(1)
-
+* S3191 | Work absence | S3191 | NUMERIC(1)
+* Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1381,8 +1381,8 @@ S3191
   TYPE COMMENT
 END
 
-* Have you done any work in the last 12 months?* Worked in last 12 months (HEW_WORKED_IN_LAST_12_MONTHS): NUMERIC(1)
-
+* S3201 | Worked in last 12 months | S3201 | NUMERIC(1)
+* Have you done any work in the last 12 months?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1392,8 +1392,8 @@ S3201
   TYPE COMMENT
 END
 
-* What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															* Occupation (HEW_OCCUPATION): NUMERIC(2)
-
+* S3211 | Occupation | S3211 | NUMERIC(2)
+* What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 * Allowed Values
 *    1: ?
 *    2: ?
@@ -1405,8 +1405,8 @@ S3211
   TYPE COMMENT
 END
 
-* Do you do this work for a member of your family, for someone else, or are you self-employed?* Work Class (HEW_WORK_CLASS): NUMERIC(1)
-
+* S3221 | Work Class | S3221 | NUMERIC(1)
+* Do you do this work for a member of your family, for someone else, or are you self-employed?
 * Allowed Values
 *    1: For family member
 *    2: For someone else
@@ -1417,8 +1417,8 @@ S3221
   TYPE COMMENT
 END
 
-* Do you usually work throughout the year, or do you work seasonally, or only once in a while?* Work Time (HEW_WORK_TIME): NUMERIC(1)
-
+* S3231 | Work Time | S3231 | NUMERIC(1)
+* Do you usually work throughout the year, or do you work seasonally, or only once in a while?
 * Allowed Values
 *    1: All year
 *    2: Seasonal
@@ -1429,8 +1429,8 @@ S3231
   TYPE COMMENT
 END
 
-* Are you paid in cash or kind for this work or are you not paid at all?																																																																																																				* Work Earn (HEW_WORK_EARN): NUMERIC(1)
-
+* S3241 | Work Earn | S3241 | NUMERIC(1)
+* Are you paid in cash or kind for this work or are you not paid at all?																																																																																																				
 * Allowed Values
 *    1: Cash only
 *    2: Cash and kind
@@ -1442,8 +1442,8 @@ S3241
   TYPE COMMENT
 END
 
-* Have you ever given birth?* Birth Given (HEW_BIRTH_GIVEN): NUMERIC(1)
-
+* Q101.1 | Birth Given | Q1011 | NUMERIC(1)
+* Have you ever given birth?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1453,8 +1453,8 @@ Q1011
   TYPE COMMENT
 END
 
-* Do you have any sons or daughters to whom you have given birth who are now living with you?* Child at Home (HEW_CHILD_AT_HOME): NUMERIC(1)
-
+* Q102.1 | Child at Home | Q1021 | NUMERIC(1)
+* Do you have any sons or daughters to whom you have given birth who are now living with you?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1464,22 +1464,22 @@ Q1021
   TYPE COMMENT
 END
 
-* How many sons and daughters live with you? * Sons at Home (HEW_SONS_AT_HOME): NUMERIC(2)
- > Sons at home
+* Q103.1 | Sons at Home | Q1031 | NUMERIC(2)
+* How many sons and daughters live with you?  > Sons at home
 Q1031
   MUSTENTER
   RANGE 0 20
 END
 
-* How many sons and daughters live with you? * Daughters at Home (HEW_DAUGHTERS_AT_HOME): NUMERIC(2)
- > Daughters at home
+* Q103.2 | Daughters at Home | Q1032 | NUMERIC(2)
+* How many sons and daughters live with you?  > Daughters at home
 Q1032
   MUSTENTER
   RANGE 0 20
 END
 
-* Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?* Child Elsewhere (HEW_CHILD_ELSEWHERE): NUMERIC(1)
-
+* Q104.1 | Child Elsewhere | Q1041 | NUMERIC(1)
+* Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1489,22 +1489,22 @@ Q1041
   TYPE COMMENT
 END
 
-* How many sons are alive but do not live with you?* Sons Elsewhere (HEW_SONS_ELSEWHERE): NUMERIC(2)
- > Sons elsewhere
+* Q105.1 | Sons Elsewhere | Q1051 | NUMERIC(2)
+* How many sons are alive but do not live with you? > Sons elsewhere
 Q1051
   MUSTENTER
   RANGE 0 20
 END
 
-* How many sons are alive but do not live with you?* Daughters Elsewhere (HEW_DAUGHTERS_ELSEWHERE): NUMERIC(2)
- > Daughters elsewhere
+* Q105.2 | Daughters Elsewhere | Q1052 | NUMERIC(2)
+* How many sons are alive but do not live with you? > Daughters elsewhere
 Q1052
   MUSTENTER
   RANGE 0 20
 END
 
-* Have you ever given birth to a boy or girl who was born alive but later died?* Child Died (HEW_CHILD_DIED): NUMERIC(1)
-
+* Q106.1 | Child Died | Q1061 | NUMERIC(1)
+* Have you ever given birth to a boy or girl who was born alive but later died?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1514,29 +1514,29 @@ Q1061
   TYPE COMMENT
 END
 
-* How many boys and girls have died?* Sons Died (HEW_SONS_DIED): NUMERIC(2)
- > Boys dead
+* Q107.1 | Sons Died | Q1071 | NUMERIC(2)
+* How many boys and girls have died? > Boys dead
 Q1071
   MUSTENTER
   RANGE 0 20
 END
 
-* How many boys and girls have died?* Daughters Died (HEW_DAUGHTERS_DIED): NUMERIC(2)
- > Girls dead
+* Q107.2 | Daughters Died | Q1072 | NUMERIC(2)
+* How many boys and girls have died? > Girls dead
 Q1072
   MUSTENTER
   RANGE 0 20
 END
 
-* Total children ever born* Total Children (HEW_TOTAL_CHILDREN): NUMERIC(2)
- > Total births
+* Q108.1 | Total Children | Q1081 | NUMERIC(2)
+* Total children ever born > Total births
 Q1081
   MUSTENTER
   RANGE 0 20
 END
 
-* In what month and year was your last child born?* Pregnancy Ended Month (HEW_PREGNANCY_ENDED_MONTH): NUMERIC(2)
- > Months
+* Q109.1 | Pregnancy Ended Month | Q1091 | NUMERIC(2)
+* In what month and year was your last child born? > Months
 * Allowed Values
 *    98: Don't know
 Q1091
@@ -1545,8 +1545,8 @@ Q1091
   MISSINGVALUE  98
 END
 
-* In what month and year was your last child born?* Pregnancy Ended Year (HEW_PREGNANCY_ENDED_YEAR): NUMERIC(4)
- > Years
+* Q109.2 | Pregnancy Ended Year | Q1092 | NUMERIC(4)
+* In what month and year was your last child born? > Years
 * Allowed Values
 *    9998: Don't know
 Q1092
@@ -1555,21 +1555,21 @@ Q1092
   MISSINGVALUE  9998
 END
 
-* Birth history number of last birth* Last Baby Index (HEW_LAST_BABY_INDEX): NUMERIC(1)
- > Birth history number
+* Q201.1 | Last Baby Index | Q2011 | NUMERIC(1)
+* Birth history number of last birth > Birth history number
 Q2011
   MUSTENTER
   RANGE 1 6
 END
 
-* What name was given to your last baby?* Last Baby Name (HEW_LAST_BABY_NAME): VARCHAR(32)
- > Name
+* Q202.1 | Last Baby Name | Q2021 | VARCHAR(32)
+* What name was given to your last baby? > Name
 Q2021
   MUSTENTER
 END
 
-* Is last baby still alive?* Last Baby Alive (HEW_LAST_BABY_ALIVE): NUMERIC(1)
-
+* Q203.1 | Last Baby Alive | Q2031 | NUMERIC(1)
+* Is last baby still alive?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1579,8 +1579,8 @@ Q2031
   TYPE COMMENT
 END
 
-* Did you see anyone for antenatal care for this pregnancy?* Antenatal Care (HEW_ANTENATAL_CARE): NUMERIC(1)
-
+* Q204.1 | Antenatal Care | Q2041 | NUMERIC(1)
+* Did you see anyone for antenatal care for this pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1590,8 +1590,8 @@ Q2041
   TYPE COMMENT
 END
 
-* Whom did you see? * Antenatal Care Whom (HEW_ANTENATAL_CARE_WHOM): NUMERIC(2)
-
+* Q205.1 | Antenatal Care Whom | Q2051 | NUMERIC(2)
+* Whom did you see? 
 * Allowed Values
 *    A: Health personnel: Doctor
 *    B: Health personnel: Nurse, midwife
@@ -1605,14 +1605,14 @@ Q2051
   TYPE COMMENT
 END
 
-* Whom did you see? * Antenatal Care Whom (Other) (HEW_ANTENATAL_CARE_WHOM__OTHER_): VARCHAR(32)
- > Specify
+* Q205.2 | Antenatal Care Whom (Other) | Q2052 | VARCHAR(32)
+* Whom did you see?  > Specify
 Q2052
   MUSTENTER
 END
 
-* Where did you receive antenatal care for this pregnancy?* Antenatal Care Where (HEW_ANTENATAL_CARE_WHERE): NUMERIC(2)
-
+* Q206.1 | Antenatal Care Where | Q2061 | NUMERIC(2)
+* Where did you receive antenatal care for this pregnancy?
 * Allowed Values
 *    A: Home: Respondent's home
 *    B: Home: Other home
@@ -1629,14 +1629,14 @@ Q2061
   TYPE COMMENT
 END
 
-* Where did you receive antenatal care for this pregnancy?* Antenatal Care Where (Other) (HEW_ANTENATAL_CARE_WHERE__OTHER_): VARCHAR(32)
- > Specify
+* Q206.2 | Antenatal Care Where (Other) | Q2062 | VARCHAR(32)
+* Where did you receive antenatal care for this pregnancy? > Specify
 Q2062
   MUSTENTER
 END
 
-* How many months pregnant were you when you first received antenatal care for this pregnancy?* Antenatal Care When (HEW_ANTENATAL_CARE_WHEN): NUMERIC(2)
- > Months
+* Q207.1 | Antenatal Care When | Q2071 | NUMERIC(2)
+* How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
 * Allowed Values
 *    98: Don't know
 Q2071
@@ -1645,14 +1645,14 @@ Q2071
   MISSINGVALUE  98
 END
 
-* How many times did you receive antenatal care during this pregnancy?* Antenatal Care How Many (HEW_ANTENATAL_CARE_HOW_MANY): NUMERIC(2)
- > Numer of times
+* Q208.1 | Antenatal Care How Many | Q2081 | NUMERIC(2)
+* How many times did you receive antenatal care during this pregnancy? > Numer of times
 Q2081
   MUSTENTER
 END
 
-* Who assisted with the delivery of last baby ? * Delivery Whom (HEW_DELIVERY_WHOM): NUMERIC(2)
-
+* Q209.1 | Delivery Whom | Q2091 | NUMERIC(2)
+* Who assisted with the delivery of last baby ? 
 * Allowed Values
 *    A: Health personnel: Doctor
 *    B: Health personnel: Nurse, midwife
@@ -1666,14 +1666,14 @@ Q2091
   TYPE COMMENT
 END
 
-* Who assisted with the delivery of last baby ? * Delivery Whom (Other) (HEW_DELIVERY_WHOM__OTHER_): VARCHAR(32)
- > Specify
+* Q209.2 | Delivery Whom (Other) | Q2092 | VARCHAR(32)
+* Who assisted with the delivery of last baby ?  > Specify
 Q2092
   MUSTENTER
 END
 
-* Where did you give birth to last baby?* Delivery  Where (HEW_DELIVERY__WHERE): NUMERIC(2)
-
+* Q2101 | Delivery  Where | Q2101 | NUMERIC(2)
+* Where did you give birth to last baby?
 * Allowed Values
 *    A: Home: Respondent's home
 *    B: Home: Other home
@@ -1690,28 +1690,28 @@ Q2101
   TYPE COMMENT
 END
 
-* How long after last baby was delivered did you stay there?* Delivery Discharge (Hour) (HEW_DELIVERY_DISCHARGE__HOUR_): NUMERIC(2)
- > Hours
+* Q2111 | Delivery Discharge (Hour) | Q2111 | NUMERIC(2)
+* How long after last baby was delivered did you stay there? > Hours
 Q2111
   MUSTENTER
   RANGE 0 23
 END
 
-* How long after last baby was delivered did you stay there?* Delivery Discharge (Day) (HEW_DELIVERY_DISCHARGE__DAY_): NUMERIC(2)
- > Days
+* Q2112 | Delivery Discharge (Day) | Q2112 | NUMERIC(2)
+* How long after last baby was delivered did you stay there? > Days
 Q2112
   MUSTENTER
   RANGE 1 31
 END
 
-* How long after last baby was delivered did you stay there?* Delivery Discharge (Week) (HEW_DELIVERY_DISCHARGE__WEEK_): NUMERIC(2)
- > Weeks
+* Q2113 | Delivery Discharge (Week) | Q2113 | NUMERIC(2)
+* How long after last baby was delivered did you stay there? > Weeks
 Q2113
   MUSTENTER
 END
 
-* Did you ever breastfeed last baby?* Breasfeeding (HEW_BREASFEEDING): NUMERIC(1)
-
+* Q2121 | Breasfeeding | Q2121 | NUMERIC(1)
+* Did you ever breastfeed last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1721,8 +1721,8 @@ Q2121
   TYPE COMMENT
 END
 
-* Are you still breastfeeding last baby?* Breasfeeding Still (HEW_BREASFEEDING_STILL): NUMERIC(1)
-
+* Q2131 | Breasfeeding Still | Q2131 | NUMERIC(1)
+* Are you still breastfeeding last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1732,14 +1732,14 @@ Q2131
   TYPE COMMENT
 END
 
-* What age was last baby when you stopped to breasfeed him/her?* Breasfeeding Duration (HEW_BREASFEEDING_DURATION): NUMERIC(2)
- > Months
+* Q2141 | Breasfeeding Duration | Q2141 | NUMERIC(2)
+* What age was last baby when you stopped to breasfeed him/her? > Months
 Q2141
   MUSTENTER
 END
 
-* Have you ever heard of an illness called AIDS?* AIDS Disease (HEW_AIDS_DISEASE): NUMERIC(1)
-
+* Q301.1 | AIDS Disease | Q3011 | NUMERIC(1)
+* Have you ever heard of an illness called AIDS?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1749,8 +1749,8 @@ Q3011
   TYPE COMMENT
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby:* AIDS During Pregnancy (HEW_AIDS_DURING_PREGNANCY): NUMERIC(1)
- > During pregnancy?
+* Q302.1 | AIDS During Pregnancy | Q3021 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1761,8 +1761,8 @@ Q3021
   TYPE COMMENT
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby:* AIDS During Delivery (HEW_AIDS_DURING_DELIVERY): NUMERIC(1)
- > During delivery?
+* Q302.2 | AIDS During Delivery | Q3022 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1773,8 +1773,8 @@ Q3022
   TYPE COMMENT
 END
 
-* Can the virus that causes AIDS be transmitted from a mother to her baby:* AIDS By Breastfeeding (HEW_AIDS_BY_BREASTFEEDING): NUMERIC(1)
- > By breastfeeding?
+* Q302.3 | AIDS By Breastfeeding | Q3023 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1785,8 +1785,8 @@ Q3023
   TYPE COMMENT
 END
 
-* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?* AIDS Drug Given (HEW_AIDS_DRUG_GIVEN): NUMERIC(1)
-
+* Q303.1 | AIDS Drug Given | Q3031 | NUMERIC(1)
+* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1797,8 +1797,8 @@ Q3031
   TYPE COMMENT
 END
 
-* Were you offered a test for the AIDS virus as part of your antenatal care?* AIDS Antenatal Test Offered (HEW_AIDS_ANTENATAL_TEST_OFFERED): NUMERIC(1)
-
+* Q304.1 | AIDS Antenatal Test Offered | Q3041 | NUMERIC(1)
+* Were you offered a test for the AIDS virus as part of your antenatal care?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1808,8 +1808,8 @@ Q3041
   TYPE COMMENT
 END
 
-* I don\'t want to know the results, but were you tested for the AIDS virus as part of your antenatal * AIDS Antenatal Test (HEW_AIDS_ANTENATAL_TEST): NUMERIC(1)
-
+* Q305.1 | AIDS Antenatal Test | Q3051 | NUMERIC(1)
+* I don\'t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1819,15 +1819,15 @@ Q3051
   TYPE COMMENT
 END
 
-* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy?* AIDS Antenatal Test When (HEW_AIDS_ANTENATAL_TEST_WHEN): NUMERIC(1)
- > Months
+* Q306.1 | AIDS Antenatal Test When | Q3061 | NUMERIC(1)
+* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
 Q3061
   MUSTENTER
   RANGE 0 9
 END
 
-* Where was the test done?* AIDS Antenatal Test Where (HEW_AIDS_ANTENATAL_TEST_WHERE): NUMERIC(2)
-
+* Q307.1 | AIDS Antenatal Test Where | Q3071 | NUMERIC(2)
+* Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
 *    12: Public sector: Government health center
@@ -1853,14 +1853,14 @@ Q3071
   TYPE COMMENT
 END
 
-* Where was the test done?* AIDS Antenatal Test Where (Other) (HEW_AIDS_ANTENATAL_TEST_WHERE__OTHER_): VARCHAR(32)
- > Specify
+* Q307.2 | AIDS Antenatal Test Where (Other) | Q3072 | VARCHAR(32)
+* Where was the test done? > Specify
 Q3072
   MUSTENTER
 END
 
-* I don\'t want to know the results, but did you get the results of the test?* AIDS Antenatal Test Got (HEW_AIDS_ANTENATAL_TEST_GOT): NUMERIC(1)
-
+* Q308.1 | AIDS Antenatal Test Got | Q3081 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1870,8 +1870,8 @@ Q3081
   TYPE COMMENT
 END
 
-* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?* AIDS Antenatal Test Counceling (HEW_AIDS_ANTENATAL_TEST_COUNCELING): NUMERIC(1)
-
+* Q309.1 | AIDS Antenatal Test Counceling | Q3091 | NUMERIC(1)
+* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1882,8 +1882,8 @@ Q3091
   TYPE COMMENT
 END
 
-* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?* AIDS Pregnancy Test Offered (HEW_AIDS_PREGNANCY_TEST_OFFERED): NUMERIC(1)
-
+* Q3101 | AIDS Pregnancy Test Offered | Q3101 | NUMERIC(1)
+* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1893,8 +1893,8 @@ Q3101
   TYPE COMMENT
 END
 
-* I don\'t want to know the results, but were you tested for the AIDS virus at that time?* AIDS Pregnancy Test (HEW_AIDS_PREGNANCY_TEST): NUMERIC(1)
-
+* Q3111 | AIDS Pregnancy Test | Q3111 | NUMERIC(1)
+* I don\'t want to know the results, but were you tested for the AIDS virus at that time?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1904,8 +1904,8 @@ Q3111
   TYPE COMMENT
 END
 
-* I don\'t want to know the results, but did you get the results of the test?* AIDS Pregnancy Test Got (HEW_AIDS_PREGNANCY_TEST_GOT): NUMERIC(1)
-
+* Q3121 | AIDS Pregnancy Test Got | Q3121 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1915,8 +1915,8 @@ Q3121
   TYPE COMMENT
 END
 
-* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?* k (HEW_K): NUMERIC(1)
-
+* Q3131 | k | Q3131 | NUMERIC(1)
+* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1926,14 +1926,14 @@ Q3131
   TYPE COMMENT
 END
 
-* How many months ago was your most recent HIV test?* AIDS Test Last (HEW_AIDS_TEST_LAST): NUMERIC(2)
- > Months ago
+* Q3141 | AIDS Test Last | Q3141 | NUMERIC(2)
+* How many months ago was your most recent HIV test? > Months ago
 Q3141
   MUSTENTER
 END
 
-* I don\'t want to know the results, but have you ever been tested to see if you have the AIDS virus?* Column_102 (HEW_COLUMN_102): NUMERIC(1)
-
+* Q3151 | Column_102 | Q3151 | NUMERIC(1)
+* I don\'t want to know the results, but have you ever been tested to see if you have the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1943,14 +1943,14 @@ Q3151
   TYPE COMMENT
 END
 
-* How many months ago was your most recent HIV test?* Column_103 (HEW_COLUMN_103): NUMERIC(2)
-
+* Q3161 | Column_103 | Q3161 | NUMERIC(2)
+* How many months ago was your most recent HIV test?
 Q3161
   MUSTENTER
 END
 
-* I don\'t want to know the results, but did you get the results of the test?* Column_104 (HEW_COLUMN_104): NUMERIC(1)
-
+* Q3171 | Column_104 | Q3171 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1960,8 +1960,8 @@ Q3171
   TYPE COMMENT
 END
 
-* Where was the test done?* Column_106 (HEW_COLUMN_106): NUMERIC(2)
-
+* Q3181 | Column_106 | Q3181 | NUMERIC(2)
+* Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
 *    12: Public sector: Government health center
@@ -1987,14 +1987,14 @@ Q3181
   TYPE COMMENT
 END
 
-* Where was the test done?* Column_107 (HEW_COLUMN_107): VARCHAR(32)
- > Specify
+* Q3182 | Column_107 | Q3182 | VARCHAR(32)
+* Where was the test done? > Specify
 Q3182
   MUSTENTER
 END
 
-* Do you know of a place where people can go to get tested for the AIDS virus?* AIDS Test Place (HEW_AIDS_TEST_PLACE): NUMERIC(1)
-
+* Q3191 | AIDS Test Place | Q3191 | NUMERIC(1)
+* Do you know of a place where people can go to get tested for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2004,8 +2004,8 @@ Q3191
   TYPE COMMENT
 END
 
-* Where is that?* AIDS Test Place Where (COLUMN_110): VARCHAR(1)
-
+* Q3201 | AIDS Test Place Where | Q3201 | VARCHAR(1)
+* Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
 *    B: Public sector: Government health center
@@ -2027,14 +2027,14 @@ Q3201
   TYPE COMMENT
 END
 
-* Where is that?* AIDS Test Place Where (Where) (HEW_AIDS_TEST_PLACE_WHERE__WHERE_): VARCHAR(32)
- > Specify
+* Q3202 | AIDS Test Place Where (Where) | Q3202 | VARCHAR(32)
+* Where is that? > Specify
 Q3202
   MUSTENTER
 END
 
-* Consent* Consent (HEW_CONSENT): NUMERIC(1)
-
+* Q401.1 | Consent | Q4011 | NUMERIC(1)
+* Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
@@ -2044,8 +2044,8 @@ Q4011
   TYPE COMMENT
 END
 
-* Consent Ask* Consent Ask (HEW_CONSENT_ASK): NUMERIC(1)
-
+* Q402.1 | Consent Ask | Q4021 | NUMERIC(1)
+* Consent Ask
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2055,8 +2055,8 @@ Q4021
   TYPE COMMENT
 END
 
-* Consent Parent* Consent Parent (HEW_CONSENT_PARENT): NUMERIC(1)
-
+* Q403.1 | Consent Parent | Q4031 | NUMERIC(1)
+* Consent Parent
 * Allowed Values
 *    1: Granted
 *    2: Refused
@@ -2066,8 +2066,8 @@ Q4031
   TYPE COMMENT
 END
 
-* Consent Parent Ask* Consent Parent Ask (HEW_CONSENT_PARENT_ASK): NUMERIC(1)
-
+* Q404.1 | Consent Parent Ask | Q4041 | NUMERIC(1)
+* Consent Parent Ask
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2077,8 +2077,8 @@ Q4041
   TYPE COMMENT
 END
 
-* Did you know you were infected with AIDS?* AIDS Infected (HEW_AIDS_INFECTED): NUMERIC(1)
-
+* Q501.1 | AIDS Infected | Q5011 | NUMERIC(1)
+* Did you know you were infected with AIDS?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2088,8 +2088,8 @@ Q5011
   TYPE COMMENT
 END
 
-* Have you already had a HIV test that showed you were infected with AIDS? * AIDS Infected Test (HEW_AIDS_INFECTED_TEST): NUMERIC(1)
-
+* Q502.1 | AIDS Infected Test | Q5021 | NUMERIC(1)
+* Have you already had a HIV test that showed you were infected with AIDS? 
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2099,8 +2099,8 @@ Q5021
   TYPE COMMENT
 END
 
-* When were you first tested positive for the AIDS virus?* AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH): NUMERIC(2)
- > Month
+* Q503.1 | AIDS Positive Test Month | Q5031 | NUMERIC(2)
+* When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
 Q5031
@@ -2109,8 +2109,8 @@ Q5031
   MISSINGVALUE  98
 END
 
-* When were you first tested positive for the AIDS virus?* AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR): NUMERIC(4)
- > Year
+* Q503.2 | AIDS Positive Test Year | Q5032 | NUMERIC(4)
+* When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
 Q5032
@@ -2119,8 +2119,8 @@ Q5032
   MISSINGVALUE  9998
 END
 
-* Where was the test done?* AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE): NUMERIC(2)
-
+* Q504.1 | AIDS Positive Test Where | Q5041 | NUMERIC(2)
+* Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
 *    12: Public sector: Government health center
@@ -2146,14 +2146,14 @@ Q5041
   TYPE COMMENT
 END
 
-* Where was the test done?* AIDS Positive Test Where (Other) (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_): VARCHAR(32)
- > Specify
+* Q504.2 | AIDS Positive Test Where (Other) | Q5042 | VARCHAR(32)
+* Where was the test done? > Specify
 Q5042
   MUSTENTER
 END
 
-* After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?* AIDS Care (HEW_AIDS_CARE): NUMERIC(1)
-
+* Q505.1 | AIDS Care | Q5051 | NUMERIC(1)
+* After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2163,8 +2163,8 @@ Q5051
   TYPE COMMENT
 END
 
-* Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?* AIDS Blood Sample (HEW_AIDS_BLOOD_SAMPLE): NUMERIC(1)
-
+* Q506.1 | AIDS Blood Sample | Q5061 | NUMERIC(1)
+* Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2175,8 +2175,8 @@ Q5061
   TYPE COMMENT
 END
 
-* Did you get the results of this exam?* AIDS Blood Sample Result (HEW_AIDS_BLOOD_SAMPLE_RESULT): NUMERIC(1)
-
+* Q507.1 | AIDS Blood Sample Result | Q5071 | NUMERIC(1)
+* Did you get the results of this exam?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2187,8 +2187,8 @@ Q5071
   TYPE COMMENT
 END
 
-* Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?* ART Initiated (HEW_ART_INITIATED): NUMERIC(1)
-
+* Q508.1 | ART Initiated | Q5081 | NUMERIC(1)
+* Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2198,8 +2198,8 @@ Q5081
   TYPE COMMENT
 END
 
-* When did you first start Antiretroviral therapy?* ART Start Month (HEW_ART_START_MONTH): NUMERIC(2)
- > Month
+* Q509.1 | ART Start Month | Q5091 | NUMERIC(2)
+* When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
 Q5091
@@ -2208,8 +2208,8 @@ Q5091
   MISSINGVALUE  98
 END
 
-* When did you first start Antiretroviral therapy?* ART Start Year (HEW_ART_START_YEAR): NUMERIC(4)
- > Year
+* Q509.2 | ART Start Year | Q5092 | NUMERIC(4)
+* When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
 Q5092
@@ -2218,8 +2218,8 @@ Q5092
   MISSINGVALUE  9998
 END
 
-* Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?* ART Still (HEW_ART_STILL): NUMERIC(1)
-
+* Q5101 | ART Still | Q5101 | NUMERIC(1)
+* Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2229,8 +2229,8 @@ Q5101
   TYPE COMMENT
 END
 
-* When was your last consultation?* ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH): NUMERIC(2)
- > Month
+* Q5111 | ART Last Consultation Month | Q5111 | NUMERIC(2)
+* When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
 Q5111
@@ -2239,8 +2239,8 @@ Q5111
   MISSINGVALUE  98
 END
 
-* When was your last consultation?* ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR): NUMERIC(4)
- > Year
+* Q5112 | ART Last Consultation Year | Q5112 | NUMERIC(4)
+* When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
 Q5112
@@ -2249,20 +2249,20 @@ Q5112
   MISSINGVALUE  9998
 END
 
-* Where are you now receiving ART?* ART Where (HEW_ART_WHERE): VARCHAR(32)
-
+* Q5121 | ART Where | Q5121 | VARCHAR(32)
+* Where are you now receiving ART?
 Q5121
   MUSTENTER
 END
 
-* Where are you now receiving ART?* ART Where (Other) (HEW_ART_WHERE__OTHER_): VARCHAR(32)
- > Specify
+* Q5122 | ART Where (Other) | Q5122 | VARCHAR(32)
+* Where are you now receiving ART? > Specify
 Q5122
   MUSTENTER
 END
 
-* In which district is this place?* ART District (HEW_ART_DISTRICT): NUMERIC(1)
-
+* Q5131 | ART District | Q5131 | NUMERIC(1)
+* In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
@@ -2273,20 +2273,20 @@ Q5131
   TYPE COMMENT
 END
 
-* In which district is this place?* ART District (Other) (HEW_ART_DISTRICT__OTHER_): VARCHAR(32)
- > Specify
+* Q5132 | ART District (Other) | Q5132 | VARCHAR(32)
+* In which district is this place? > Specify
 Q5132
   MUSTENTER
 END
 
-* What is the name of this place?* ART Place (HEW_ART_PLACE): VARCHAR(32)
-
+* Q5141 | ART Place | Q5141 | VARCHAR(32)
+* What is the name of this place?
 Q5141
   MUSTENTER
 END
 
-* Are you still followed up for the AIDS infection?* AIDS Follow (HEW_AIDS_FOLLOW): NUMERIC(1)
-
+* Q5151 | AIDS Follow | Q5151 | NUMERIC(1)
+* Are you still followed up for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2296,8 +2296,8 @@ Q5151
   TYPE COMMENT
 END
 
-* When was your last consultation?* AIDS Last Consultation Month (HEW_AIDS_LAST_CONSULTATION_MONTH): NUMERIC(2)
- > Month
+* Q5161 | AIDS Last Consultation Month | Q5161 | NUMERIC(2)
+* When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
 Q5161
@@ -2306,8 +2306,8 @@ Q5161
   MISSINGVALUE  98
 END
 
-* When was your last consultation?* AIDS Last Consultation Year (HEW_AIDS_LAST_CONSULTATION_YEAR): NUMERIC(4)
- > Year
+* Q5162 | AIDS Last Consultation Year | Q5162 | NUMERIC(4)
+* When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
 Q5162
@@ -2316,20 +2316,20 @@ Q5162
   MISSINGVALUE  9998
 END
 
-* Where are you now receiving care?* AIDS Where (HEW_AIDS_WHERE): VARCHAR(32)
-
+* Q5171 | AIDS Where | Q5171 | VARCHAR(32)
+* Where are you now receiving care?
 Q5171
   MUSTENTER
 END
 
-* Where are you now receiving care?* AIDS Where (Other) (HEW_AIDS_WHERE__OTHER_): VARCHAR(32)
- > Specify
+* Q5172 | AIDS Where (Other) | Q5172 | VARCHAR(32)
+* Where are you now receiving care? > Specify
 Q5172
   MUSTENTER
 END
 
-* In which district is this place?* AIDS District (HEW_AIDS_DISTRICT): NUMERIC(1)
-
+* Q5181 | AIDS District | Q5181 | NUMERIC(1)
+* In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
@@ -2340,20 +2340,20 @@ Q5181
   TYPE COMMENT
 END
 
-* In which district is this place?* AIDS District (Other) (HEW_AIDS_DISTRICT__OTHER_): VARCHAR(32)
- > Specify
+* Q5182 | AIDS District (Other) | Q5182 | VARCHAR(32)
+* In which district is this place? > Specify
 Q5182
   MUSTENTER
 END
 
-* What is the name of this place?* AIDS Place (HEW_AIDS_PLACE): VARCHAR(32)
-
+* Q5191 | AIDS Place | Q5191 | VARCHAR(32)
+* What is the name of this place?
 Q5191
   MUSTENTER
 END
 
-* Why did you stop?* AIDS Stop (HEW_AIDS_STOP): NUMERIC(2)
-
+* Q5201 | AIDS Stop | Q5201 | NUMERIC(2)
+* Why did you stop?
 * Allowed Values
 *    1: No one was attending
 *    2: Stock out
@@ -2372,14 +2372,14 @@ Q5201
   TYPE COMMENT
 END
 
-* Why did you stop?* AIDS Stop (Other) (HEW_AIDS_STOP__OTHER_): VARCHAR(32)
- > Specify
+* Q5202 | AIDS Stop (Other) | Q5202 | VARCHAR(32)
+* Why did you stop? > Specify
 Q5202
   MUSTENTER
 END
 
-* Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?* ART Pregnancy (HEW_ART_PREGNANCY): NUMERIC(1)
-
+* Q5211 | ART Pregnancy | Q5211 | NUMERIC(1)
+* Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2389,8 +2389,8 @@ Q5211
   TYPE COMMENT
 END
 
-* After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?* ART Delivery (HEW_ART_DELIVERY): NUMERIC(1)
-
+* Q5221 | ART Delivery | Q5221 | NUMERIC(1)
+* After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2400,32 +2400,32 @@ Q5221
   TYPE COMMENT
 END
 
-* Interviewer\'s observations* Comment Question (HEW_COMMENT_QUESTION): VARCHAR(32)
- > Comments about specific questions
+* Q601.1 | Comment Question | Q6011 | VARCHAR(32)
+* Interviewer\'s observations > Comments about specific questions
 Q6011
   MUSTENTER
 END
 
-* Interviewer\'s observations* Comment Respondent (HEW_COMMENT_RESPONDENT): VARCHAR(32)
- > Comments about respondent
+* Q601.2 | Comment Respondent | Q6012 | VARCHAR(32)
+* Interviewer\'s observations > Comments about respondent
 Q6012
   MUSTENTER
 END
 
-* Interviewer\'s observations* Comment Other (HEW_COMMENT_OTHER): VARCHAR(32)
- > Any other comments
+* Q601.3 | Comment Other | Q6013 | VARCHAR(32)
+* Interviewer\'s observations > Any other comments
 Q6013
   MUSTENTER
 END
 
-* Supervisor\'s observations* Comment Supervisor (HEW_COMMENT_SUPERVISOR): VARCHAR(32)
-
+* Q602.1 | Comment Supervisor | Q6021 | VARCHAR(32)
+* Supervisor\'s observations
 Q6021
   MUSTENTER
 END
 
-* Editor\'s observations* Comment Editor (HEW_COMMENT_EDITOR): VARCHAR(32)
-
+* Q603.1 | Comment Editor | Q6031 | VARCHAR(32)
+* Editor\'s observations
 Q6031
   MUSTENTER
 END
