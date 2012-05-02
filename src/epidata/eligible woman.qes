@@ -30,463 +30,463 @@ S204  Actors at the office?                  Editor:
                                              Keyer:
                                  ({S204.2})  <A                                  >
 
-3.RESPONDEN\'T BACKGROUND
+1.RESPONDEN\'T BACKGROUND
 ================================================================================
 --------------------------------------------------------------------------------
-S301  Record the time            ({S301.1})  Hour............................##  
-                                 ({S301.2})  Minute..........................##  
+Q101  Record the time            ({Q101.1})  Hour............................##  
+                                 ({Q101.2})  Minute..........................##  
 --------------------------------------------------------------------------------
-S302  In what month and year were you born?
+Q102  In what month and year were you born?
 
-                                 ({S302.1})  Month...........................##  
-                                 ({S302.2})  Year..........................####  
+                                 ({Q102.1})  Month...........................##  
+                                 ({Q102.2})  Year..........................####  
 --------------------------------------------------------------------------------
-S303  How old were you at your last birthday?
+Q103  How old were you at your last birthday?
 
-                                 ({S303.1})  Age in completed year...........##  
+                                 ({Q103.1})  Age in completed year...........##  
 --------------------------------------------------------------------------------
-S304  Have you ever attended school?
-
-                                 ({S304.1})  .................................#  
---------------------------------------------------------------------------------
-S305  What is the highest level of school you attended: primary, secondary, or 
-      higher? 
-
-                                 ({S305.1})  ................................##  
---------------------------------------------------------------------------------
-S306  What is the highest (grade/form/year) you completed at that level? 
-
-                                 ({S306.1})  ................................##  
---------------------------------------------------------------------------------
-S307  Can you read any part of the sentence to me?
-
-                                 ({S307.1})  ................................##  
-                                             Specify language:
-                                 ({S307.2})     <A                               >
---------------------------------------------------------------------------------
-S308  For most of the time until you were 12 years old, did you live in 
-      Nairobi, Kisumu, in another city, or in the country side?
-
-                                 ({S308.1})  .................................#  
---------------------------------------------------------------------------------
-S309  How long have you been living continuously in Ndhiwa? 
-
-                                 ({S309.1})  Specify years...................##  
---------------------------------------------------------------------------------
-S3010  Just before you moved here, did you live in a city a town, or in the 
-      countryside?
-
-                                 ({S310.1})  ................................##  
---------------------------------------------------------------------------------
-S311  What is your ethnic group/tribe?
-
-                                 ({S311.1})  ................................##  
-                                             Specify:
-                                 ({S311.2})     <A                               >
---------------------------------------------------------------------------------
-S312  In the last 12 months, how many times have you been away from home for 
-      one or more nights?
-
-                                 ({S312.1})  Number of nights................##  
---------------------------------------------------------------------------------
-S313  In the last 12 months, have you been away from home for more than one 
-      month at a time?
-
-                                 ({S313.1})  ..............................####  
---------------------------------------------------------------------------------
-S314  Are you currently married or living together with a man as if married?
-
-                                 ({S314.1})  .................................#  
-                                 ({S314.2})  .................................#  
---------------------------------------------------------------------------------
-S315  What is your marital status now: are you widowed, divorced, or separated?
-
-                                 ({S315.1})  .................................#  
---------------------------------------------------------------------------------
-S316  Is your (husband/partner) living with you now or is he staying elsewhere?
-
-                                 ({S316.1})  ................................##  
---------------------------------------------------------------------------------
-S317  Aside from your own housework, have you done any work in the last seven 
-      days?
-
-                                 ({S317.1})  .................................#  
---------------------------------------------------------------------------------
-S318  In the last seven days, have you done any of these things or any other 
-      work?
-
-                                 ({S318.1})  .................................#  
---------------------------------------------------------------------------------
-S319  Although you did not work in the last seven days, do you have any job or 
-      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
-
-                                 ({S319.1})  .................................#  
---------------------------------------------------------------------------------
-S320  Have you done any work in the last 12 months?
-
-                                 ({S320.1})  .................................#  
---------------------------------------------------------------------------------
-S321  What is your occupation, that is, what kind of work do you mainly 
-      do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
-
-                                 ({S321.1})  ................................##  
---------------------------------------------------------------------------------
-S322  Do you do this work for a member of your family, for someone else, or are 
-      you self-employed?
-
-                                 ({S322.1})  .................................#  
---------------------------------------------------------------------------------
-S323  Do you usually work throughout the year, or do you work seasonally, or 
-      only once in a while?
-
-                                 ({S323.1})  .................................#  
---------------------------------------------------------------------------------
-S324  Are you paid in cash or kind for this work or are you not paid at 
-      all?																																																																																																				
-
-                                 ({S324.1})  .................................#  
-
-1.REPRODUCTION
-================================================================================
---------------------------------------------------------------------------------
-Q101  Have you ever given birth? ({Q101.1})  .................................#  
---------------------------------------------------------------------------------
-Q102  Do you have any sons or daughters to whom you have given birth who are 
-      now living with you?
-
-                                 ({Q102.1})  .................................#  
---------------------------------------------------------------------------------
-Q103  How many sons and daughters live with you? 
-
-                                 ({Q103.1})  Sons at home....................##  
-                                 ({Q103.2})  Daughters at home...............##  
---------------------------------------------------------------------------------
-Q104  Do you have any sons or daughters to whom you have given birth who are 
-      alive but do not live with you?
+Q104  Have you ever attended school?
 
                                  ({Q104.1})  .................................#  
 --------------------------------------------------------------------------------
-Q105  How many sons are alive but do not live with you?
+Q105  What is the highest level of school you attended: primary, secondary, or 
+      higher? 
 
-                                 ({Q105.1})  Sons elsewhere..................##  
-                                 ({Q105.2})  Daughters elsewhere.............##  
+                                 ({Q105.1})  ................................##  
 --------------------------------------------------------------------------------
-Q106  Have you ever given birth to a boy or girl who was born alive but later 
-      died?
+Q106  What is the highest (grade/form/year) you completed at that level? 
 
-                                 ({Q106.1})  .................................#  
+                                 ({Q106.1})  ................................##  
 --------------------------------------------------------------------------------
-Q107  How many boys and girls have died?
+Q107  Can you read any part of the sentence to me?
 
-                                 ({Q107.1})  Boys dead.......................##  
-                                 ({Q107.2})  Girls dead......................##  
+                                 ({Q107.1})  ................................##  
+                                             Specify language:
+                                 ({Q107.2})     <A                               >
 --------------------------------------------------------------------------------
-Q108  Total children ever born   ({Q108.1})  Total births....................##  
+Q108  For most of the time until you were 12 years old, did you live in 
+      Nairobi, Kisumu, in another city, or in the country side?
+
+                                 ({Q108.1})  .................................#  
 --------------------------------------------------------------------------------
-Q109  In what month and year was your last child born?
+Q109  How long have you been living continuously in Ndhiwa? 
 
-                                 ({Q109.1})  Months..........................##  
-                                 ({Q109.2})  Years.........................####  
+                                 ({Q109.1})  Specify years...................##  
+--------------------------------------------------------------------------------
+Q1010  Just before you moved here, did you live in a city a town, or in the 
+      countryside?
 
-2.PREGNANCY AND POSTNATAL CARE
+                                 ({Q110.1})  ................................##  
+--------------------------------------------------------------------------------
+Q111  What is your ethnic group/tribe?
+
+                                 ({Q111.1})  ................................##  
+                                             Specify:
+                                 ({Q111.2})     <A                               >
+--------------------------------------------------------------------------------
+Q112  In the last 12 months, how many times have you been away from home for 
+      one or more nights?
+
+                                 ({Q112.1})  Number of nights................##  
+--------------------------------------------------------------------------------
+Q113  In the last 12 months, have you been away from home for more than one 
+      month at a time?
+
+                                 ({Q113.1})  ..............................####  
+--------------------------------------------------------------------------------
+Q114  Are you currently married or living together with a man as if married?
+
+                                 ({Q114.1})  .................................#  
+                                 ({Q114.2})  .................................#  
+--------------------------------------------------------------------------------
+Q115  What is your marital status now: are you widowed, divorced, or separated?
+
+                                 ({Q115.1})  .................................#  
+--------------------------------------------------------------------------------
+Q116  Is your (husband/partner) living with you now or is he staying elsewhere?
+
+                                 ({Q116.1})  ................................##  
+--------------------------------------------------------------------------------
+Q117  Aside from your own housework, have you done any work in the last seven 
+      days?
+
+                                 ({Q117.1})  .................................#  
+--------------------------------------------------------------------------------
+Q118  In the last seven days, have you done any of these things or any other 
+      work?
+
+                                 ({Q118.1})  .................................#  
+--------------------------------------------------------------------------------
+Q119  Although you did not work in the last seven days, do you have any job or 
+      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
+
+                                 ({Q119.1})  .................................#  
+--------------------------------------------------------------------------------
+Q120  Have you done any work in the last 12 months?
+
+                                 ({Q120.1})  .................................#  
+--------------------------------------------------------------------------------
+Q121  What is your occupation, that is, what kind of work do you mainly 
+      do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
+
+                                 ({Q121.1})  ................................##  
+--------------------------------------------------------------------------------
+Q122  Do you do this work for a member of your family, for someone else, or are 
+      you self-employed?
+
+                                 ({Q122.1})  .................................#  
+--------------------------------------------------------------------------------
+Q123  Do you usually work throughout the year, or do you work seasonally, or 
+      only once in a while?
+
+                                 ({Q123.1})  .................................#  
+--------------------------------------------------------------------------------
+Q124  Are you paid in cash or kind for this work or are you not paid at 
+      all?																																																																																																				
+
+                                 ({Q124.1})  .................................#  
+
+2.REPRODUCTION
 ================================================================================
 --------------------------------------------------------------------------------
-Q201  Birth history number of last birth
+Q201  Have you ever given birth? ({Q201.1})  .................................#  
+--------------------------------------------------------------------------------
+Q202  Do you have any sons or daughters to whom you have given birth who are 
+      now living with you?
 
-                                 ({Q201.1})  Birth history number.............#  
+                                 ({Q202.1})  .................................#  
 --------------------------------------------------------------------------------
-Q202  What name was given to your last baby?
+Q203  How many sons and daughters live with you? 
 
-                                             Name:
-                                 ({Q202.1})     <A                               >
+                                 ({Q203.1})  Sons at home....................##  
+                                 ({Q203.2})  Daughters at home...............##  
 --------------------------------------------------------------------------------
-Q203  Is last baby still alive?  ({Q203.1})  .................................#  
---------------------------------------------------------------------------------
-Q204  Did you see anyone for antenatal care for this pregnancy?
+Q204  Do you have any sons or daughters to whom you have given birth who are 
+      alive but do not live with you?
 
                                  ({Q204.1})  .................................#  
 --------------------------------------------------------------------------------
-Q205  Whom did you see?          ({Q205.1})  ................................##  
-                                             Specify:
-                                 ({Q205.2})     <A                               >
+Q205  How many sons are alive but do not live with you?
+
+                                 ({Q205.1})  Sons elsewhere..................##  
+                                 ({Q205.2})  Daughters elsewhere.............##  
 --------------------------------------------------------------------------------
-Q206  Where did you receive antenatal care for this pregnancy?
+Q206  Have you ever given birth to a boy or girl who was born alive but later 
+      died?
 
-                                 ({Q206.1})  ................................##  
-                                             Specify:
-                                 ({Q206.2})     <A                               >
+                                 ({Q206.1})  .................................#  
 --------------------------------------------------------------------------------
-Q207  How many months pregnant were you when you first received antenatal care 
-      for this pregnancy?
+Q207  How many boys and girls have died?
 
-                                 ({Q207.1})  Months..........................##  
+                                 ({Q207.1})  Boys dead.......................##  
+                                 ({Q207.2})  Girls dead......................##  
 --------------------------------------------------------------------------------
-Q208  How many times did you receive antenatal care during this pregnancy?
-
-                                 ({Q208.1})  Numer of times..................##  
+Q208  Total children ever born   ({Q208.1})  Total births....................##  
 --------------------------------------------------------------------------------
-Q209  Who assisted with the delivery of last baby ? 
+Q209  In what month and year was your last child born?
 
-                                 ({Q209.1})  ................................##  
-                                             Specify:
-                                 ({Q209.2})     <A                               >
---------------------------------------------------------------------------------
-Q2010  Where did you give birth to last baby?
+                                 ({Q209.1})  Months..........................##  
+                                 ({Q209.2})  Years.........................####  
 
-                                 ({Q210.1})  ................................##  
---------------------------------------------------------------------------------
-Q211  How long after last baby was delivered did you stay there?
-
-                                 ({Q211.1})  Hours...........................##  
-                                 ({Q211.2})  Days............................##  
-                                 ({Q211.3})  Weeks...........................##  
---------------------------------------------------------------------------------
-Q212  Did you ever breastfeed last baby?
-
-                                 ({Q212.1})  .................................#  
---------------------------------------------------------------------------------
-Q213  Are you still breastfeeding last baby?
-
-                                 ({Q213.1})  .................................#  
---------------------------------------------------------------------------------
-Q214  What age was last baby when you stopped to breasfeed him/her?
-
-                                 ({Q214.1})  Months..........................##  
-
-3.HIV / AIDS
+3.PREGNANCY AND POSTNATAL CARE
 ================================================================================
 --------------------------------------------------------------------------------
-Q301  Have you ever heard of an illness called AIDS?
+Q301  Birth history number of last birth
 
-                                 ({Q301.1})  .................................#  
+                                 ({Q301.1})  Birth history number.............#  
 --------------------------------------------------------------------------------
-Q302  Can the virus that causes AIDS be transmitted from a mother to her baby:
+Q302  What name was given to your last baby?
 
-                                 ({Q302.1})  During pregnancy?................#  
-                                 ({Q302.2})  During delivery?.................#  
-                                 ({Q302.3})  By breastfeeding?................#  
+                                             Name:
+                                 ({Q302.1})     <A                               >
 --------------------------------------------------------------------------------
-Q303  Are there any special drugs that a doctor or a nurse can give to a woman 
-      infected with the AIDS virus to reduce the risk of transmission to the baby?
-
-                                 ({Q303.1})  .................................#  
+Q303  Is last baby still alive?  ({Q303.1})  .................................#  
 --------------------------------------------------------------------------------
-Q304  Were you offered a test for the AIDS virus as part of your antenatal care?
+Q304  Did you see anyone for antenatal care for this pregnancy?
 
                                  ({Q304.1})  .................................#  
 --------------------------------------------------------------------------------
-Q305  I don\'t want to know the results, but were you tested for the AIDS virus 
-      as part of your antenatal 
-
-                                 ({Q305.1})  .................................#  
---------------------------------------------------------------------------------
-Q306  How many months pregnant were you when you were first tested for the AIDS 
-      virus as a part of your antenatal care for this pregnancy?
-
-                                 ({Q306.1})  Months...........................#  
---------------------------------------------------------------------------------
-Q307  Where was the test done?   ({Q307.1})  ................................##  
+Q305  Whom did you see?          ({Q305.1})  ................................##  
                                              Specify:
-                                 ({Q307.2})     <A                               >
+                                 ({Q305.2})     <A                               >
 --------------------------------------------------------------------------------
-Q308  I don\'t want to know the results, but did you get the results of the 
-      test?
+Q306  Where did you receive antenatal care for this pregnancy?
 
-                                 ({Q308.1})  .................................#  
+                                 ({Q306.1})  ................................##  
+                                             Specify:
+                                 ({Q306.2})     <A                               >
 --------------------------------------------------------------------------------
-Q309  All women are supposed to receive counseling after being tested. After 
-      you were tested, did you receive counseling?
+Q307  How many months pregnant were you when you first received antenatal care 
+      for this pregnancy?
 
-                                 ({Q309.1})  .................................#  
+                                 ({Q307.1})  Months..........................##  
 --------------------------------------------------------------------------------
-Q3010  Between the time you went for delivery but before the baby was born, were 
-      you offered a test for the AIDS virus?
+Q308  How many times did you receive antenatal care during this pregnancy?
 
-                                 ({Q310.1})  .................................#  
+                                 ({Q308.1})  Numer of times..................##  
 --------------------------------------------------------------------------------
-Q311  I don\'t want to know the results, but were you tested for the AIDS virus 
-      at that time?
+Q309  Who assisted with the delivery of last baby ? 
 
-                                 ({Q311.1})  .................................#  
+                                 ({Q309.1})  ................................##  
+                                             Specify:
+                                 ({Q309.2})     <A                               >
 --------------------------------------------------------------------------------
-Q312  I don\'t want to know the results, but did you get the results of the 
-      test?
+Q3010  Where did you give birth to last baby?
+
+                                 ({Q310.1})  ................................##  
+--------------------------------------------------------------------------------
+Q311  How long after last baby was delivered did you stay there?
+
+                                 ({Q311.1})  Hours...........................##  
+                                 ({Q311.2})  Days............................##  
+                                 ({Q311.3})  Weeks...........................##  
+--------------------------------------------------------------------------------
+Q312  Did you ever breastfeed last baby?
 
                                  ({Q312.1})  .................................#  
 --------------------------------------------------------------------------------
-Q313  Have you been tested for the AIDS virus since that time you were tested 
-      during your pregnancy?
+Q313  Are you still breastfeeding last baby?
 
                                  ({Q313.1})  .................................#  
 --------------------------------------------------------------------------------
-Q314  How many months ago was your most recent HIV test?
+Q314  What age was last baby when you stopped to breasfeed him/her?
 
-                                 ({Q314.1})  Months ago......................##  
---------------------------------------------------------------------------------
-Q315  I don\'t want to know the results, but have you ever been tested to see 
-      if you have the AIDS virus?
+                                 ({Q314.1})  Months..........................##  
 
-                                 ({Q315.1})  .................................#  
+4.HIV / AIDS
+================================================================================
 --------------------------------------------------------------------------------
-Q316  How many months ago was your most recent HIV test?
+Q401  Have you ever heard of an illness called AIDS?
 
-                                 ({Q316.1})  ................................##  
+                                 ({Q401.1})  .................................#  
 --------------------------------------------------------------------------------
-Q317  I don\'t want to know the results, but did you get the results of the 
+Q402  Can the virus that causes AIDS be transmitted from a mother to her baby:
+
+                                 ({Q402.1})  During pregnancy?................#  
+                                 ({Q402.2})  During delivery?.................#  
+                                 ({Q402.3})  By breastfeeding?................#  
+--------------------------------------------------------------------------------
+Q403  Are there any special drugs that a doctor or a nurse can give to a woman 
+      infected with the AIDS virus to reduce the risk of transmission to the baby?
+
+                                 ({Q403.1})  .................................#  
+--------------------------------------------------------------------------------
+Q404  Were you offered a test for the AIDS virus as part of your antenatal care?
+
+                                 ({Q404.1})  .................................#  
+--------------------------------------------------------------------------------
+Q405  I don\'t want to know the results, but were you tested for the AIDS virus 
+      as part of your antenatal 
+
+                                 ({Q405.1})  .................................#  
+--------------------------------------------------------------------------------
+Q406  How many months pregnant were you when you were first tested for the AIDS 
+      virus as a part of your antenatal care for this pregnancy?
+
+                                 ({Q406.1})  Months...........................#  
+--------------------------------------------------------------------------------
+Q407  Where was the test done?   ({Q407.1})  ................................##  
+                                             Specify:
+                                 ({Q407.2})     <A                               >
+--------------------------------------------------------------------------------
+Q408  I don\'t want to know the results, but did you get the results of the 
       test?
 
-                                 ({Q317.1})  .................................#  
+                                 ({Q408.1})  .................................#  
 --------------------------------------------------------------------------------
-Q318  Where was the test done?   ({Q318.1})  ................................##  
+Q409  All women are supposed to receive counseling after being tested. After 
+      you were tested, did you receive counseling?
+
+                                 ({Q409.1})  .................................#  
+--------------------------------------------------------------------------------
+Q4010  Between the time you went for delivery but before the baby was born, were 
+      you offered a test for the AIDS virus?
+
+                                 ({Q410.1})  .................................#  
+--------------------------------------------------------------------------------
+Q411  I don\'t want to know the results, but were you tested for the AIDS virus 
+      at that time?
+
+                                 ({Q411.1})  .................................#  
+--------------------------------------------------------------------------------
+Q412  I don\'t want to know the results, but did you get the results of the 
+      test?
+
+                                 ({Q412.1})  .................................#  
+--------------------------------------------------------------------------------
+Q413  Have you been tested for the AIDS virus since that time you were tested 
+      during your pregnancy?
+
+                                 ({Q413.1})  .................................#  
+--------------------------------------------------------------------------------
+Q414  How many months ago was your most recent HIV test?
+
+                                 ({Q414.1})  Months ago......................##  
+--------------------------------------------------------------------------------
+Q415  I don\'t want to know the results, but have you ever been tested to see 
+      if you have the AIDS virus?
+
+                                 ({Q415.1})  .................................#  
+--------------------------------------------------------------------------------
+Q416  How many months ago was your most recent HIV test?
+
+                                 ({Q416.1})  ................................##  
+--------------------------------------------------------------------------------
+Q417  I don\'t want to know the results, but did you get the results of the 
+      test?
+
+                                 ({Q417.1})  .................................#  
+--------------------------------------------------------------------------------
+Q418  Where was the test done?   ({Q418.1})  ................................##  
                                              Specify:
-                                 ({Q318.2})     <A                               >
+                                 ({Q418.2})     <A                               >
 --------------------------------------------------------------------------------
-Q319  Do you know of a place where people can go to get tested for the AIDS 
+Q419  Do you know of a place where people can go to get tested for the AIDS 
       virus?
 
-                                 ({Q319.1})  .................................#  
+                                 ({Q419.1})  .................................#  
 --------------------------------------------------------------------------------
-Q320  Where is that?             ({Q320.1})  .................................<A>
+Q420  Where is that?             ({Q420.1})  .................................<A>
                                              Specify:
-                                 ({Q320.2})     <A                               >
+                                 ({Q420.2})     <A                               >
 
-4.HIV TESTING
+5.HIV TESTING
 ================================================================================
 --------------------------------------------------------------------------------
-Q401  Consent                    ({Q401.1})  .................................#  
+Q501  Consent                    ({Q501.1})  .................................#  
 --------------------------------------------------------------------------------
-Q402  Consent Ask                ({Q402.1})  .................................#  
+Q502  Consent Ask                ({Q502.1})  .................................#  
 --------------------------------------------------------------------------------
-Q403  Consent Parent             ({Q403.1})  .................................#  
+Q503  Consent Parent             ({Q503.1})  .................................#  
 --------------------------------------------------------------------------------
-Q404  Consent Parent Ask         ({Q404.1})  .................................#  
+Q504  Consent Parent Ask         ({Q504.1})  .................................#  
 
-5.ART COVERAGE
+6.ART COVERAGE
 ================================================================================
 --------------------------------------------------------------------------------
-Q501  Did you know you were infected with AIDS?
+Q601  Did you know you were infected with AIDS?
 
-                                 ({Q501.1})  .................................#  
+                                 ({Q601.1})  .................................#  
 --------------------------------------------------------------------------------
-Q502  Have you already had a HIV test that showed you were infected with AIDS? 
+Q602  Have you already had a HIV test that showed you were infected with AIDS? 
 
-                                 ({Q502.1})  .................................#  
+                                 ({Q602.1})  .................................#  
 --------------------------------------------------------------------------------
-Q503  When were you first tested positive for the AIDS virus?
+Q603  When were you first tested positive for the AIDS virus?
 
-                                 ({Q503.1})  Month...........................##  
-                                 ({Q503.2})  Year..........................####  
+                                 ({Q603.1})  Month...........................##  
+                                 ({Q603.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q504  Where was the test done?   ({Q504.1})  ................................##  
+Q604  Where was the test done?   ({Q604.1})  ................................##  
                                              Specify:
-                                 ({Q504.2})     <A                               >
+                                 ({Q604.2})     <A                               >
 --------------------------------------------------------------------------------
-Q505  After you discovered you were infected with the virus that causes AIDS, 
+Q605  After you discovered you were infected with the virus that causes AIDS, 
       did you ever seek care for the AIDS infection?
 
-                                 ({Q505.1})  .................................#  
+                                 ({Q605.1})  .................................#  
 --------------------------------------------------------------------------------
-Q506  Did you get some blood sample taken to check the CD4 when you first went 
+Q606  Did you get some blood sample taken to check the CD4 when you first went 
       to receive care for the AIDS virus?
 
-                                 ({Q506.1})  .................................#  
+                                 ({Q606.1})  .................................#  
 --------------------------------------------------------------------------------
-Q507  Did you get the results of this exam?
+Q607  Did you get the results of this exam?
 
-                                 ({Q507.1})  .................................#  
+                                 ({Q607.1})  .................................#  
 --------------------------------------------------------------------------------
-Q508  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
+Q608  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
       AIDS virus?
 
-                                 ({Q508.1})  .................................#  
+                                 ({Q608.1})  .................................#  
 --------------------------------------------------------------------------------
-Q509  When did you first start Antiretroviral therapy?
+Q609  When did you first start Antiretroviral therapy?
 
-                                 ({Q509.1})  Month...........................##  
-                                 ({Q509.2})  Year..........................####  
+                                 ({Q609.1})  Month...........................##  
+                                 ({Q609.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q5010  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
+Q6010  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
       AIDS virus?
 
-                                 ({Q510.1})  .................................#  
+                                 ({Q610.1})  .................................#  
 --------------------------------------------------------------------------------
-Q511  When was your last consultation?
+Q611  When was your last consultation?
 
-                                 ({Q511.1})  Month...........................##  
-                                 ({Q511.2})  Year..........................####  
+                                 ({Q611.1})  Month...........................##  
+                                 ({Q611.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q512  Where are you now receiving ART?
-
-                                             :
-                                 ({Q512.1})     <A                               >
-                                             Specify:
-                                 ({Q512.2})     <A                               >
---------------------------------------------------------------------------------
-Q513  In which district is this place?
-
-                                 ({Q513.1})  .................................#  
-                                             Specify:
-                                 ({Q513.2})     <A                               >
---------------------------------------------------------------------------------
-Q514  What is the name of this place?
+Q612  Where are you now receiving ART?
 
                                              :
-                                 ({Q514.1})     <A                               >
+                                 ({Q612.1})     <A                               >
+                                             Specify:
+                                 ({Q612.2})     <A                               >
 --------------------------------------------------------------------------------
-Q515  Are you still followed up for the AIDS infection?
+Q613  In which district is this place?
 
-                                 ({Q515.1})  .................................#  
+                                 ({Q613.1})  .................................#  
+                                             Specify:
+                                 ({Q613.2})     <A                               >
 --------------------------------------------------------------------------------
-Q516  When was your last consultation?
-
-                                 ({Q516.1})  Month...........................##  
-                                 ({Q516.2})  Year..........................####  
---------------------------------------------------------------------------------
-Q517  Where are you now receiving care?
+Q614  What is the name of this place?
 
                                              :
-                                 ({Q517.1})     <A                               >
-                                             Specify:
-                                 ({Q517.2})     <A                               >
+                                 ({Q614.1})     <A                               >
 --------------------------------------------------------------------------------
-Q518  In which district is this place?
+Q615  Are you still followed up for the AIDS infection?
 
-                                 ({Q518.1})  .................................#  
-                                             Specify:
-                                 ({Q518.2})     <A                               >
+                                 ({Q615.1})  .................................#  
 --------------------------------------------------------------------------------
-Q519  What is the name of this place?
+Q616  When was your last consultation?
+
+                                 ({Q616.1})  Month...........................##  
+                                 ({Q616.2})  Year..........................####  
+--------------------------------------------------------------------------------
+Q617  Where are you now receiving care?
 
                                              :
-                                 ({Q519.1})     <A                               >
---------------------------------------------------------------------------------
-Q520  Why did you stop?          ({Q520.1})  ................................##  
+                                 ({Q617.1})     <A                               >
                                              Specify:
-                                 ({Q520.2})     <A                               >
+                                 ({Q617.2})     <A                               >
 --------------------------------------------------------------------------------
-Q521  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
+Q618  In which district is this place?
+
+                                 ({Q618.1})  .................................#  
+                                             Specify:
+                                 ({Q618.2})     <A                               >
+--------------------------------------------------------------------------------
+Q619  What is the name of this place?
+
+                                             :
+                                 ({Q619.1})     <A                               >
+--------------------------------------------------------------------------------
+Q620  Why did you stop?          ({Q620.1})  ................................##  
+                                             Specify:
+                                 ({Q620.2})     <A                               >
+--------------------------------------------------------------------------------
+Q621  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
 
-                                 ({Q521.1})  .................................#  
+                                 ({Q621.1})  .................................#  
 --------------------------------------------------------------------------------
-Q522  After delivery, did your child receive ART, Antiretroviral Treatment, to 
+Q622  After delivery, did your child receive ART, Antiretroviral Treatment, to 
       prevent acquiring the AIDS virus?
 
-                                 ({Q522.1})  .................................#  
+                                 ({Q622.1})  .................................#  
 
-6.OBSERVATIONS
+7.OBSERVATIONS
 ================================================================================
 --------------------------------------------------------------------------------
-Q601  Interviewer\'s observations            Comments about specific questions:
-                                 ({Q601.1})     <A                               >
+Q701  Interviewer\'s observations            Comments about specific questions:
+                                 ({Q701.1})     <A                               >
                                              Comments about respondent:
-                                 ({Q601.2})     <A                               >
+                                 ({Q701.2})     <A                               >
                                              Any other comments:
-                                 ({Q601.3})     <A                               >
+                                 ({Q701.3})     <A                               >
 --------------------------------------------------------------------------------
-Q602  Supervisor\'s observations             :
-                                 ({Q602.1})     <A                               >
+Q702  Supervisor\'s observations             :
+                                 ({Q702.1})     <A                               >
 --------------------------------------------------------------------------------
-Q603  Editor\'s observations                 :
-                                 ({Q603.1})     <A                               >
+Q703  Editor\'s observations                 :
+                                 ({Q703.1})     <A                               >
 
