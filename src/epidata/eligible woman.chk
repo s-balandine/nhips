@@ -299,8 +299,8 @@ BEFORE RECORD
  IF (Q1231 = .) THEN
   LET Q1231=99
  ENDIF
- IF (Q3021 = .) THEN
-  LET Q3021=Unnamed
+ IF (Q3041 = .) THEN
+  LET Q3041=Unnamed
  ENDIF
  IF (Q6141 = .) THEN
   LET Q6141=Unnamed
@@ -584,23 +584,13 @@ AFTER RECORD
   GOTO Q2102
   EXIT
  ENDIF
- IF (Q3011 = .) THEN
-  HELP "Birth history number must be entered" TYPE=ERROR
-  GOTO Q3011
-  EXIT
- ENDIF
- IF (Q3021 = .) THEN
-  HELP "Name must be entered" TYPE=ERROR
-  GOTO Q3021
-  EXIT
- ENDIF
  IF (Q3031 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Birth history number must be entered" TYPE=ERROR
   GOTO Q3031
   EXIT
  ENDIF
  IF (Q3041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Name must be entered" TYPE=ERROR
   GOTO Q3041
   EXIT
  ENDIF
@@ -609,74 +599,84 @@ AFTER RECORD
   GOTO Q3051
   EXIT
  ENDIF
- IF (Q3052 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3052
-  EXIT
- ENDIF
  IF (Q3061 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3061
   EXIT
  ENDIF
- IF (Q3062 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3062
-  EXIT
- ENDIF
  IF (Q3071 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3071
   EXIT
  ENDIF
+ IF (Q3072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3072
+  EXIT
+ ENDIF
  IF (Q3081 = .) THEN
-  HELP "Numer of times must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3081
   EXIT
  ENDIF
+ IF (Q3082 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3082
+  EXIT
+ ENDIF
  IF (Q3091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q3091
   EXIT
  ENDIF
- IF (Q3092 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3092
-  EXIT
- ENDIF
  IF (Q3101 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Numer of times must be entered" TYPE=ERROR
   GOTO Q3101
   EXIT
  ENDIF
  IF (Q3111 = .) THEN
-  HELP "Hours must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3111
   EXIT
  ENDIF
  IF (Q3112 = .) THEN
-  HELP "Days must be entered" TYPE=ERROR
+  HELP "Specify must be entered" TYPE=ERROR
   GOTO Q3112
   EXIT
  ENDIF
- IF (Q3113 = .) THEN
-  HELP "Weeks must be entered" TYPE=ERROR
-  GOTO Q3113
+ IF (Q3121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3121
   EXIT
  ENDIF
  IF (Q3131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Hours must be entered" TYPE=ERROR
   GOTO Q3131
   EXIT
  ENDIF
- IF (Q3141 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3141
+ IF (Q3132 = .) THEN
+  HELP "Days must be entered" TYPE=ERROR
+  GOTO Q3132
+  EXIT
+ ENDIF
+ IF (Q3133 = .) THEN
+  HELP "Weeks must be entered" TYPE=ERROR
+  GOTO Q3133
   EXIT
  ENDIF
  IF (Q3151 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3151
+  EXIT
+ ENDIF
+ IF (Q3161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3161
+  EXIT
+ ENDIF
+ IF (Q3171 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q3171
   EXIT
  ENDIF
  IF (Q4011 = .) THEN
@@ -1608,42 +1608,42 @@ Q2102
   MISSINGVALUE  9998
 END
 
-* Q301.1 | Q3011 (HEW_LAST_BABY_INDEX) | NUMERIC(1)
+* Q303.1 | Q3031 (HEW_LAST_BABY_INDEX) | NUMERIC(1)
 Birth history number of last birth > Birth history number
-Q3011
+Q3031
   MUSTENTER
   RANGE 1 6
 END
 
-* Q302.1 | Q3021 (HEW_LAST_BABY_NAME) | VARCHAR(32)
+* Q304.1 | Q3041 (HEW_LAST_BABY_NAME) | VARCHAR(32)
 What name was given to your last baby? > Name
-Q3021
+Q3041
   MUSTENTER
 END
 
-* Q303.1 | Q3031 (HEW_LAST_BABY_ALIVE) | NUMERIC(1)
+* Q305.1 | Q3051 (HEW_LAST_BABY_ALIVE) | NUMERIC(1)
 Is last baby still alive?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3031
+Q3051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q304.1 | Q3041 (HEW_ANTENATAL_CARE) | NUMERIC(1)
+* Q306.1 | Q3061 (HEW_ANTENATAL_CARE) | NUMERIC(1)
 Did you see anyone for antenatal care for this pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3041
+Q3061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q305.1 | Q3051 (HEW_ANTENATAL_CARE_WHOM) | NUMERIC(2)
+* Q307.1 | Q3071 (HEW_ANTENATAL_CARE_WHOM) | NUMERIC(2)
 Whom did you see? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1652,19 +1652,19 @@ Whom did you see?
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-Q3051
+Q3071
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q305.2 | Q3052 (HEW_ANTENATAL_CARE_WHOM__OTHER_) | VARCHAR(32)
+* Q307.2 | Q3072 (HEW_ANTENATAL_CARE_WHOM__OTHER_) | VARCHAR(32)
 Whom did you see?  > Specify
-Q3052
+Q3072
   MUSTENTER
 END
 
-* Q306.1 | Q3061 (HEW_ANTENATAL_CARE_WHERE) | NUMERIC(2)
+* Q308.1 | Q3081 (HEW_ANTENATAL_CARE_WHERE) | NUMERIC(2)
 Where did you receive antenatal care for this pregnancy?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -1676,35 +1676,35 @@ Where did you receive antenatal care for this pregnancy?
 *    G: Private medical sector: Private hospital, clinic
 *    H: Private medical sector: Other private medical
 *    X: Other
-Q3061
+Q3081
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT
 END
 
-* Q306.2 | Q3062 (HEW_ANTENATAL_CARE_WHERE__OTHER_) | VARCHAR(32)
+* Q308.2 | Q3082 (HEW_ANTENATAL_CARE_WHERE__OTHER_) | VARCHAR(32)
 Where did you receive antenatal care for this pregnancy? > Specify
-Q3062
+Q3082
   MUSTENTER
 END
 
-* Q307.1 | Q3071 (HEW_ANTENATAL_CARE_WHEN) | NUMERIC(2)
+* Q309.1 | Q3091 (HEW_ANTENATAL_CARE_WHEN) | NUMERIC(2)
 How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
 * Allowed Values
 *    98: Don't know
-Q3071
+Q3091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q308.1 | Q3081 (HEW_ANTENATAL_CARE_HOW_MANY) | NUMERIC(2)
+* Q3101 | Q3101 (HEW_ANTENATAL_CARE_HOW_MANY) | NUMERIC(2)
 How many times did you receive antenatal care during this pregnancy? > Numer of times
-Q3081
+Q3101
   MUSTENTER
 END
 
-* Q309.1 | Q3091 (HEW_DELIVERY_WHOM) | NUMERIC(2)
+* Q3111 | Q3111 (HEW_DELIVERY_WHOM) | NUMERIC(2)
 Who assisted with the delivery of last baby ? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1713,19 +1713,19 @@ Who assisted with the delivery of last baby ?
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-Q3091
+Q3111
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q309.2 | Q3092 (HEW_DELIVERY_WHOM__OTHER_) | VARCHAR(32)
+* Q3112 | Q3112 (HEW_DELIVERY_WHOM__OTHER_) | VARCHAR(32)
 Who assisted with the delivery of last baby ?  > Specify
-Q3092
+Q3112
   MUSTENTER
 END
 
-* Q3101 | Q3101 (HEW_DELIVERY__WHERE) | NUMERIC(2)
+* Q3121 | Q3121 (HEW_DELIVERY__WHERE) | NUMERIC(2)
 Where did you give birth to last baby?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -1737,57 +1737,57 @@ Where did you give birth to last baby?
 *    G: Private medical sector: Private hospital, clinic
 *    H: Private medical sector: Other private medical
 *    X: Other
-Q3101
+Q3121
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT
 END
 
-* Q3111 | Q3111 (HEW_DELIVERY_DISCHARGE__HOUR_) | NUMERIC(2)
+* Q3131 | Q3131 (HEW_DELIVERY_DISCHARGE__HOUR_) | NUMERIC(2)
 How long after last baby was delivered did you stay there? > Hours
-Q3111
+Q3131
   MUSTENTER
   RANGE 0 23
 END
 
-* Q3112 | Q3112 (HEW_DELIVERY_DISCHARGE__DAY_) | NUMERIC(2)
+* Q3132 | Q3132 (HEW_DELIVERY_DISCHARGE__DAY_) | NUMERIC(2)
 How long after last baby was delivered did you stay there? > Days
-Q3112
+Q3132
   MUSTENTER
   RANGE 1 31
 END
 
-* Q3113 | Q3113 (HEW_DELIVERY_DISCHARGE__WEEK_) | NUMERIC(2)
+* Q3133 | Q3133 (HEW_DELIVERY_DISCHARGE__WEEK_) | NUMERIC(2)
 How long after last baby was delivered did you stay there? > Weeks
-Q3113
+Q3133
   MUSTENTER
 END
 
-* Q3131 | Q3131 (HEW_BREASFEEDING) | NUMERIC(1)
+* Q3151 | Q3151 (HEW_BREASFEEDING) | NUMERIC(1)
 Did you ever breastfeed last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3131
+Q3151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q3141 | Q3141 (HEW_BREASFEEDING_STILL) | NUMERIC(1)
+* Q3161 | Q3161 (HEW_BREASFEEDING_STILL) | NUMERIC(1)
 Are you still breastfeeding last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3141
+Q3161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q3151 | Q3151 (HEW_BREASFEEDING_DURATION) | NUMERIC(2)
+* Q3171 | Q3171 (HEW_BREASFEEDING_DURATION) | NUMERIC(2)
 What age was last baby when you stopped to breasfeed him/her? > Months
-Q3151
+Q3171
   MUSTENTER
 END
 
