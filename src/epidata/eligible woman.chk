@@ -1,0 +1,1329 @@
+LABELBLOCK
+  LABEL D_N_AIDS_STOP_REASON
+    1 "No one was attending"
+    2 "Stock out"
+    3 "Unfriendly staff"
+    4 "Spontaneous"
+    5 "Advised to stop"
+    6 "Throught i was cured/feel good"
+    7 "Side effect"
+    8 "Moved away"
+    9 "Transport cost"
+    10 "Stop pmtct"
+    96 "Other"
+   END
+  LABEL D_T_CHECK
+    Y "Yes"
+    N "No"
+   END
+  LABEL D_N_CONSENT
+    1 "Granted"
+    2 "Refused"
+   END
+  LABEL D_N_DISTRICT
+    1 "Ndhiwa district"
+    2 "Homa bay"
+    3 "Other"
+   END
+  LABEL D_N_DURATION_OF_RESIDENCE
+    1 "Live here, since ever"
+    2 "Live here, since less than one year"
+    3 "Live here, since more than one years"
+    4 "Visitor, since less than one year"
+    5 "Visitor, since more than one years"
+   END
+  LABEL D_N_ELIGIBLE
+    0 "Non"
+    1 "Oui"
+   END
+  LABEL D_N_ETHNIC
+    1 "Embu"
+    2 "Kalenjin"
+    3 "Kamba"
+    4 "Kikuyu"
+    5 "Kisii"
+    6 "Luhya"
+    7 "Luo"
+    8 "Masai"
+    9 "Meru"
+    10 "Mijikenda / Swahili"
+    11 "Somali"
+    12 "Taita / Taveta"
+    96 "Other"
+   END
+  LABEL D_N_HEALTH_FACILITY_TYPE
+    11 "Public sector: Government hospital"
+    12 "Public sector: Government health center"
+    13 "alone VCT Center"
+    14 "Public sector: Family planning clinic"
+    15 "Public sector: Mobile clinic"
+    16 "Public sector: Fieldworker"
+    17 "Public sector: School based clinic"
+    18 "Public sector: Other public"
+    21 "Private medical sector: Private hospital/clinic/doctor"
+    22 "alone VCT Center"
+    23 "Private medical sector: Pharmacy"
+    24 "Private medical sector: Mobile clinic"
+    25 "Private medical sector: Fieldworker"
+    26 "Private medical sector: School based clinic"
+    27 "Private medical sector: Other private"
+    31 "Other source: Home"
+    32 "Other source: Correctional facility"
+    98 "Other"
+   END
+  LABEL D_T_HEALTH_FACILITY_TYPE_2
+    A "Public sector: Government hospital"
+    B "Public sector: Government health center"
+    C "alone VCT Center"
+    D "Public sector: Family planning clinic"
+    E "Public sector: Mobile clinic"
+    F "Public sector: Fieldworker"
+    G "Public sector: Other public"
+    H "Private medical sector: Private hospital/clinic/doctor"
+    I "alone VCT Center"
+    J "Private medical sector: Pharmacy"
+    K "Private medical sector: Mobile clinic"
+    L "Private medical sector: Fieldworker"
+    M "Private medical sector: Other private"
+    X "Other"
+   END
+  LABEL D_N_HEALTH_FACILITY_TYPE_3
+    11 "Public sector: Government hospital"
+    12 "Public sector: Government health center"
+    13 "Public sector: Government dispensary"
+    18 "Public sector: Other public"
+    21 "Private medical sector: Private hospital/clinic/doctor"
+    27 "Private medical sector: Other private"
+    96 "Other"
+   END
+  LABEL D_N_HEALTH_ASSISTANT_TYPE
+    A "Health personnel: Doctor"
+    B "Health personnel: Nurse, midwife"
+    C "Health personnel: Auxiliary midwife"
+    D "Other person: Traditional birth attendant"
+    E "Other person: Relative/Friend"
+    X "Other person: Other"
+    Y "No one"
+   END
+  LABEL D_N_HEALTH_WORK_PLACE
+    A "Home: Respondent's home"
+    B "Home: Other home"
+    C "Public sector: Government hospital"
+    D "Public sector: Government health center"
+    E "Public sector: Government health post"
+    F "Public sector: Other public"
+    G "Private medical sector: Private hospital, clinic"
+    H "Private medical sector: Other private medical"
+    X "Other"
+   END
+  LABEL D_N_HEALTH_WORKER_TYPE
+    A "Health personnel: Doctor"
+    B "Health personnel: Nurse, midwife"
+    C "Health personnel: Auxiliary midwife"
+    D "Other person: Traditional birth attendant"
+    E "Other person: Community/village health worker"
+    X "Other person: Other"
+   END
+  LABEL D_N_HIGHEST_EDUCATIONAL_LEVEL
+    1 "Primary"
+    2 "primary or vocational"
+    3 "Secondary or a level"
+    4 "Higher"
+    99 "Not specified"
+   END
+  LABEL D_N_HUSBAND_STATUS
+    1 "Living with her"
+    2 "Staying elsewhere"
+    99 "Not specified"
+   END
+  LABEL D_N_LITERACY
+    1 "No, cannont read at all"
+    2 "Yes, able to read only part of sentence"
+    3 "Yes, able to read whole sentence"
+    4 "Not applicable, no card with required language"
+    5 "Not applicable, blind or Visually impaired"
+    6 "Not applicable, too young"
+    99 "Not specified"
+   END
+  LABEL D_N_MARITAL_STATUS
+    1 "Married or living together"
+    2 "Divorced or separated"
+    3 "Widowed"
+    4 "Never married and never lived together"
+    99 "Not specified"
+   END
+  LABEL D_N_MARITAL_STATUS_DETAIL
+    1 "Widowed"
+    2 "Divorced"
+    3 "Separated"
+   END
+  LABEL D_N_MARITAL_STATUS_IN_PAST
+    1 "Yes, formerly married"
+    2 "Yes, lived with a man"
+    3 "No"
+   END
+  LABEL D_N_OCCUPATION
+    1 "?"
+    2 "?"
+    3 "?"
+    4 "?"
+    99 "Not specified"
+   END
+  LABEL D_N_OUTSIDE
+    1 "One or more nights"
+    2 "One or more months"
+    3 "None"
+    99 "Not specified"
+   END
+  LABEL D_N_PLACE_OF_RESIDENCE
+    1 "Nairobi / Kisumu"
+    2 "Other City / Town"
+    3 "Countryside"
+    4 "Outside Kenya"
+   END
+  LABEL D_N_RELATIONSHIP_TO_HEAD
+    1 "Head"
+    2 "Wife or husband"
+    3 "Son/daughter"
+    4 "in-law"
+    5 "Grandchild"
+    6 "Parent"
+    7 "in-law"
+    8 "Brother/sister"
+    9 "Other relative"
+    10 "Adopted/foster child"
+    11 "Not related"
+    98 "Don't know"
+    99 "Not specified"
+   END
+  LABEL D_N_RESULT_OF_HOUSEHOLD_INTERVIEW
+    1 "Completed"
+    2 "No household member at home"
+    3 "No competent respondent at home"
+    4 "Entire household absent for extended period of time"
+    5 "Postponed"
+    6 "Refused"
+    7 "Dwelling vacant"
+    8 "Address not a dwelling"
+    9 "Dwelling destroyed"
+    10 "Dwelling not found"
+    97 "Other"
+    99 "Not specified"
+   END
+  LABEL D_N_RESULT_OF_RESPONDENT_INTERVIEW
+    1 "Completed"
+    2 "Not at home"
+    3 "Postponed"
+    4 "Refused"
+    5 "Partly completed"
+    6 "Incapacited"
+    97 "Other"
+    99 "Not specified"
+   END
+  LABEL D_N_SEX
+    1 "Male"
+    2 "Female"
+    99 "Not specified"
+   END
+  LABEL D_N_TYPE_OF_PLACE_OF_RESIDENCE
+    0 "Capital, large city"
+    1 "Small city"
+    2 "Town"
+    3 "Countryside"
+    99 "Not specified"
+   END
+  LABEL D_N_YES_OR_NO
+    1 "Yes"
+    2 "No"
+   END
+  LABEL D_N_WORK_CLASS
+    1 "For family member"
+    2 "For someone else"
+    3 "employed"
+   END
+  LABEL D_N_WORK_TIME
+    1 "All year"
+    2 "Seasonal"
+    3 "Occasional"
+   END
+  LABEL D_N_WORK_EARN
+    1 "Cash only"
+    2 "Cash and kind"
+    3 "In kind only"
+    4 "Not paid"
+   END
+  LABEL D_N_YES_OR_NO_OR_IGNORE
+    1 "Yes"
+    2 "No"
+    8 "Don't know"
+   END
+  LABEL D_N_YEARS_OF_RESIDENCE
+    98 "Always"
+    99 "Visitor"
+   END
+  LABEL D_N_UNION_STATUS
+    1 "Yes, currently married"
+    2 "Yes, living with a man"
+    3 "No, not in union"
+   END
+END
+
+BEFORE RECORD
+ IF (S2013 = .) THEN
+  LET S2013=2012
+ ENDIF
+ IF (S2031 = .) THEN
+  LET S2031=99
+ ENDIF
+ IF (S3051 = .) THEN
+  LET S3051=99
+ ENDIF
+ IF (S3081 = .) THEN
+  LET S3081=99
+ ENDIF
+ IF (S3091 = .) THEN
+  LET S3091=99
+ ENDIF
+ IF (S3111 = .) THEN
+  LET S3111=99
+ ENDIF
+ IF (S3121 = .) THEN
+  LET S3121=99
+ ENDIF
+ IF (S3141 = .) THEN
+  LET S3141=2012
+ ENDIF
+ IF (S3152 = .) THEN
+  LET S3152=99
+ ENDIF
+ IF (S3161 = .) THEN
+  LET S3161=99
+ ENDIF
+ IF (S3171 = .) THEN
+  LET S3171=99
+ ENDIF
+ IF (S3221 = .) THEN
+  LET S3221=99
+ ENDIF
+ IF (Q2031 = .) THEN
+  LET Q2031=Unnamed
+ ENDIF
+ IF (Q4171 = .) THEN
+  LET Q4171=Unnamed
+ ENDIF
+ IF (Q4221 = .) THEN
+  LET Q4221=Unnamed
+ ENDIF
+ IF (Q4231 = .) THEN
+  LET Q4231=99
+ ENDIF
+END
+
+AFTER RECORD
+ IF (RECID = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO RECID
+  EXIT
+ ENDIF
+ IF (S1011 = .) THEN
+  HELP "Household identifier must be entered" TYPE=ERROR
+  GOTO S1011
+  EXIT
+ ENDIF
+ IF (S1012 = .) THEN
+  HELP "Respondent\'s line number  must be entered" TYPE=ERROR
+  GOTO S1012
+  EXIT
+ ENDIF
+ IF (S2011 = .) THEN
+  HELP "Day of interview must be entered" TYPE=ERROR
+  GOTO S2011
+  EXIT
+ ENDIF
+ IF (S2012 = .) THEN
+  HELP "Month of interview must be entered" TYPE=ERROR
+  GOTO S2012
+  EXIT
+ ENDIF
+ IF (S2013 = .) THEN
+  HELP "Year of interview must be entered" TYPE=ERROR
+  GOTO S2013
+  EXIT
+ ENDIF
+ IF (S2021 = .) THEN
+  HELP "Interviewer must be entered" TYPE=ERROR
+  GOTO S2021
+  EXIT
+ ENDIF
+ IF (S2022 = .) THEN
+  HELP "Supervisor must be entered" TYPE=ERROR
+  GOTO S2022
+  EXIT
+ ENDIF
+ IF (S2031 = .) THEN
+  HELP "Result must be entered" TYPE=ERROR
+  GOTO S2031
+  EXIT
+ ENDIF
+ IF (S2032 = .) THEN
+  HELP "Result (Other) must be entered" TYPE=ERROR
+  GOTO S2032
+  EXIT
+ ENDIF
+ IF (S2041 = .) THEN
+  HELP "Editor must be entered" TYPE=ERROR
+  GOTO S2041
+  EXIT
+ ENDIF
+ IF (S2042 = .) THEN
+  HELP "Keyer must be entered" TYPE=ERROR
+  GOTO S2042
+  EXIT
+ ENDIF
+ IF (S3011 = .) THEN
+  HELP "Hour must be entered" TYPE=ERROR
+  GOTO S3011
+  EXIT
+ ENDIF
+ IF (S3012 = .) THEN
+  HELP "Minute must be entered" TYPE=ERROR
+  GOTO S3012
+  EXIT
+ ENDIF
+ IF (S3021 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO S3021
+  EXIT
+ ENDIF
+ IF (S3022 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO S3022
+  EXIT
+ ENDIF
+ IF (S3031 = .) THEN
+  HELP "Age in completed year must be entered" TYPE=ERROR
+  GOTO S3031
+  EXIT
+ ENDIF
+ IF (S3041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3041
+  EXIT
+ ENDIF
+ IF (S3051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3051
+  EXIT
+ ENDIF
+ IF (S3061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3061
+  EXIT
+ ENDIF
+ IF (S3081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3081
+  EXIT
+ ENDIF
+ IF (S3082 = .) THEN
+  HELP "Specify language must be entered" TYPE=ERROR
+  GOTO S3082
+  EXIT
+ ENDIF
+ IF (S3091 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3091
+  EXIT
+ ENDIF
+ IF (S3101 = .) THEN
+  HELP "Specify years must be entered" TYPE=ERROR
+  GOTO S3101
+  EXIT
+ ENDIF
+ IF (S3111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3111
+  EXIT
+ ENDIF
+ IF (S3121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3121
+  EXIT
+ ENDIF
+ IF (S3122 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO S3122
+  EXIT
+ ENDIF
+ IF (S3131 = .) THEN
+  HELP "Number of nights must be entered" TYPE=ERROR
+  GOTO S3131
+  EXIT
+ ENDIF
+ IF (S3141 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3141
+  EXIT
+ ENDIF
+ IF (S3151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3151
+  EXIT
+ ENDIF
+ IF (S3152 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3152
+  EXIT
+ ENDIF
+ IF (S3161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3161
+  EXIT
+ ENDIF
+ IF (S3171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3171
+  EXIT
+ ENDIF
+ IF (S3181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3181
+  EXIT
+ ENDIF
+ IF (S3191 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3191
+  EXIT
+ ENDIF
+ IF (S3201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3201
+  EXIT
+ ENDIF
+ IF (S3211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3211
+  EXIT
+ ENDIF
+ IF (S3221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3221
+  EXIT
+ ENDIF
+ IF (S3231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3231
+  EXIT
+ ENDIF
+ IF (S3241 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3241
+  EXIT
+ ENDIF
+ IF (S3251 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO S3251
+  EXIT
+ ENDIF
+ IF (Q1011 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1011
+  EXIT
+ ENDIF
+ IF (Q1021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1021
+  EXIT
+ ENDIF
+ IF (Q1031 = .) THEN
+  HELP "Sons at home must be entered" TYPE=ERROR
+  GOTO Q1031
+  EXIT
+ ENDIF
+ IF (Q1032 = .) THEN
+  HELP "Daughters at home must be entered" TYPE=ERROR
+  GOTO Q1032
+  EXIT
+ ENDIF
+ IF (Q1041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1041
+  EXIT
+ ENDIF
+ IF (Q1051 = .) THEN
+  HELP "Sons elsewhere must be entered" TYPE=ERROR
+  GOTO Q1051
+  EXIT
+ ENDIF
+ IF (Q1052 = .) THEN
+  HELP "Daughters elsewhere must be entered" TYPE=ERROR
+  GOTO Q1052
+  EXIT
+ ENDIF
+ IF (Q1061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1061
+  EXIT
+ ENDIF
+ IF (Q1071 = .) THEN
+  HELP "Boys dead must be entered" TYPE=ERROR
+  GOTO Q1071
+  EXIT
+ ENDIF
+ IF (Q1072 = .) THEN
+  HELP "Girls dead must be entered" TYPE=ERROR
+  GOTO Q1072
+  EXIT
+ ENDIF
+ IF (Q1081 = .) THEN
+  HELP "Total births must be entered" TYPE=ERROR
+  GOTO Q1081
+  EXIT
+ ENDIF
+ IF (Q1091 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q1091
+  EXIT
+ ENDIF
+ IF (Q1092 = .) THEN
+  HELP "Years must be entered" TYPE=ERROR
+  GOTO Q1092
+  EXIT
+ ENDIF
+ IF (Q2021 = .) THEN
+  HELP "Birth history number must be entered" TYPE=ERROR
+  GOTO Q2021
+  EXIT
+ ENDIF
+ IF (Q2031 = .) THEN
+  HELP "Name must be entered" TYPE=ERROR
+  GOTO Q2031
+  EXIT
+ ENDIF
+ IF (Q2041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2041
+  EXIT
+ ENDIF
+ IF (Q2051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2051
+  EXIT
+ ENDIF
+ IF (Q2061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2061
+  EXIT
+ ENDIF
+ IF (Q2062 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q2062
+  EXIT
+ ENDIF
+ IF (Q2071 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2071
+  EXIT
+ ENDIF
+ IF (Q2072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q2072
+  EXIT
+ ENDIF
+ IF (Q2081 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q2081
+  EXIT
+ ENDIF
+ IF (Q2091 = .) THEN
+  HELP "Numer of times must be entered" TYPE=ERROR
+  GOTO Q2091
+  EXIT
+ ENDIF
+ IF (Q2101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2101
+  EXIT
+ ENDIF
+ IF (Q2102 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q2102
+  EXIT
+ ENDIF
+ IF (Q2111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2111
+  EXIT
+ ENDIF
+ IF (Q2121 = .) THEN
+  HELP "Hours must be entered" TYPE=ERROR
+  GOTO Q2121
+  EXIT
+ ENDIF
+ IF (Q2122 = .) THEN
+  HELP "Days must be entered" TYPE=ERROR
+  GOTO Q2122
+  EXIT
+ ENDIF
+ IF (Q2123 = .) THEN
+  HELP "Weeks must be entered" TYPE=ERROR
+  GOTO Q2123
+  EXIT
+ ENDIF
+ IF (Q2131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2131
+  EXIT
+ ENDIF
+ IF (Q2141 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2141
+  EXIT
+ ENDIF
+ IF (Q2151 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q2151
+  EXIT
+ ENDIF
+ IF (Q3011 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3011
+  EXIT
+ ENDIF
+ IF (Q3021 = .) THEN
+  HELP "During pregnancy? must be entered" TYPE=ERROR
+  GOTO Q3021
+  EXIT
+ ENDIF
+ IF (Q3022 = .) THEN
+  HELP "During delivery? must be entered" TYPE=ERROR
+  GOTO Q3022
+  EXIT
+ ENDIF
+ IF (Q3023 = .) THEN
+  HELP "By breastfeeding? must be entered" TYPE=ERROR
+  GOTO Q3023
+  EXIT
+ ENDIF
+ IF (Q3031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3031
+  EXIT
+ ENDIF
+ IF (Q3051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3051
+  EXIT
+ ENDIF
+ IF (Q3061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3061
+  EXIT
+ ENDIF
+ IF (Q3071 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q3071
+  EXIT
+ ENDIF
+ IF (Q3081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3081
+  EXIT
+ ENDIF
+ IF (Q3082 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3082
+  EXIT
+ ENDIF
+ IF (Q3091 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3091
+  EXIT
+ ENDIF
+ IF (Q3101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3101
+  EXIT
+ ENDIF
+ IF (Q3121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3121
+  EXIT
+ ENDIF
+ IF (Q3131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3131
+  EXIT
+ ENDIF
+ IF (Q3141 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3141
+  EXIT
+ ENDIF
+ IF (Q3151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3151
+  EXIT
+ ENDIF
+ IF (Q3161 = .) THEN
+  HELP "Months ago must be entered" TYPE=ERROR
+  GOTO Q3161
+  EXIT
+ ENDIF
+ IF (Q3171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3171
+  EXIT
+ ENDIF
+ IF (Q3181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3181
+  EXIT
+ ENDIF
+ IF (Q3191 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3191
+  EXIT
+ ENDIF
+ IF (Q3201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3201
+  EXIT
+ ENDIF
+ IF (Q3202 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3202
+  EXIT
+ ENDIF
+ IF (Q3211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3211
+  EXIT
+ ENDIF
+ IF (Q3221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3221
+  EXIT
+ ENDIF
+ IF (Q3222 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3222
+  EXIT
+ ENDIF
+ IF (Q4011 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4011
+  EXIT
+ ENDIF
+ IF (Q4021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4021
+  EXIT
+ ENDIF
+ IF (Q4041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4041
+  EXIT
+ ENDIF
+ IF (Q4061 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q4061
+  EXIT
+ ENDIF
+ IF (Q4062 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q4062
+  EXIT
+ ENDIF
+ IF (Q4071 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4071
+  EXIT
+ ENDIF
+ IF (Q4072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4072
+  EXIT
+ ENDIF
+ IF (Q4081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4081
+  EXIT
+ ENDIF
+ IF (Q4091 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4091
+  EXIT
+ ENDIF
+ IF (Q4101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4101
+  EXIT
+ ENDIF
+ IF (Q4111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4111
+  EXIT
+ ENDIF
+ IF (Q4121 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q4121
+  EXIT
+ ENDIF
+ IF (Q4122 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q4122
+  EXIT
+ ENDIF
+ IF (Q4131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4131
+  EXIT
+ ENDIF
+ IF (Q4141 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q4141
+  EXIT
+ ENDIF
+ IF (Q4142 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q4142
+  EXIT
+ ENDIF
+ IF (Q4152 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4152
+  EXIT
+ ENDIF
+ IF (Q4161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4161
+  EXIT
+ ENDIF
+ IF (Q4162 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4162
+  EXIT
+ ENDIF
+ IF (Q4171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4171
+  EXIT
+ ENDIF
+ IF (Q4181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4181
+  EXIT
+ ENDIF
+ IF (Q4191 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q4191
+  EXIT
+ ENDIF
+ IF (Q4192 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q4192
+  EXIT
+ ENDIF
+ IF (Q4202 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4202
+  EXIT
+ ENDIF
+ IF (Q4211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4211
+  EXIT
+ ENDIF
+ IF (Q4212 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4212
+  EXIT
+ ENDIF
+ IF (Q4221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4221
+  EXIT
+ ENDIF
+ IF (Q4231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4231
+  EXIT
+ ENDIF
+ IF (Q4232 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4232
+  EXIT
+ ENDIF
+ IF (Q4251 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4251
+  EXIT
+ ENDIF
+ IF (Q4261 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4261
+  EXIT
+ ENDIF
+ IF (Q5011 = .) THEN
+  HELP "Comments about specific questions must be entered" TYPE=ERROR
+  GOTO Q5011
+  EXIT
+ ENDIF
+ IF (Q5012 = .) THEN
+  HELP "Comments about respondent must be entered" TYPE=ERROR
+  GOTO Q5012
+  EXIT
+ ENDIF
+ IF (Q5013 = .) THEN
+  HELP "Any other comments must be entered" TYPE=ERROR
+  GOTO Q5013
+  EXIT
+ ENDIF
+ IF (Q5021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5021
+  EXIT
+ ENDIF
+ IF (Q5031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5031
+  EXIT
+ ENDIF
+ IF (Q6011 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6011
+  EXIT
+ ENDIF
+ IF (Q6021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6021
+  EXIT
+ ENDIF
+ IF (Q6031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6031
+  EXIT
+ ENDIF
+ IF (Q6041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6041
+  EXIT
+ ENDIF
+ IF (Q6051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6051
+  EXIT
+ ENDIF
+END
+
+S1011
+  MUSTENTER
+  AFTER ENTRY
+    LET RECID = HEW_CLUSTER + HEW_HOUSEHOLD + HEW_HOUSEHOLD_MEMBER
+  END
+END
+
+S1012
+  MUSTENTER
+  AFTER ENTRY
+    LET RECID = HEW_CLUSTER + HEW_HOUSEHOLD + HEW_HOUSEHOLD_MEMBER
+  END
+END
+
+S2011
+  MUSTENTER
+  RANGE 1 31
+END
+
+S2012
+  MUSTENTER
+  RANGE 1 12
+END
+
+S2013
+  MUSTENTER
+  RANGE 2012 2014
+END
+
+S2021
+  MUSTENTER
+END
+
+S2022
+  MUSTENTER
+END
+
+S2031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_RESULT_OF_RESPONDENT_INTERVIEW SHOW
+  TYPE COMMENT
+  JUMPS RESET
+    97 SKIPNEXTFIELD
+  END
+END
+
+S2032
+  MUSTENTER
+END
+
+S2041
+  MUSTENTER
+END
+
+S2042
+  MUSTENTER
+END
+
+S3011
+  MUSTENTER
+  RANGE 0 23
+END
+
+S3012
+  MUSTENTER
+  RANGE 0 59
+END
+
+S3021
+  MUSTENTER
+  RANGE 1 12
+END
+
+S3022
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+S3031
+  MUSTENTER
+  RANGE 0 96
+END
+
+S3082
+  MUSTENTER
+END
+
+S3101
+  MUSTENTER
+  RANGE 1 97
+  COMMENT LEGAL USE D_N_YEARS_OF_RESIDENCE SHOW
+  TYPE COMMENT
+END
+
+S3122
+  MUSTENTER
+END
+
+S3131
+  MUSTENTER
+END
+
+Q1031
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1032
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1051
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1052
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1071
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1072
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1081
+  MUSTENTER
+  RANGE 0 20
+END
+
+Q1091
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q1092
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+Q2021
+  MUSTENTER
+  RANGE 1 6
+END
+
+Q2031
+  MUSTENTER
+END
+
+Q2062
+  MUSTENTER
+END
+
+Q2072
+  MUSTENTER
+END
+
+Q2081
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q2091
+  MUSTENTER
+END
+
+Q2102
+  MUSTENTER
+END
+
+Q2121
+  MUSTENTER
+  RANGE 0 23
+END
+
+Q2122
+  MUSTENTER
+  RANGE 1 31
+END
+
+Q2123
+  MUSTENTER
+END
+
+Q2151
+  MUSTENTER
+END
+
+Q3021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+Q3022
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+Q3023
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+Q3071
+  MUSTENTER
+  RANGE 0 9
+END
+
+Q3082
+  MUSTENTER
+END
+
+Q3161
+  MUSTENTER
+END
+
+Q3202
+  MUSTENTER
+END
+
+Q3222
+  MUSTENTER
+END
+
+Q4061
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q4062
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+Q4072
+  MUSTENTER
+END
+
+Q4121
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q4122
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+Q4141
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q4142
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+Q4152
+  MUSTENTER
+END
+
+Q4162
+  MUSTENTER
+END
+
+Q4191
+  MUSTENTER
+  RANGE 1 12
+END
+
+Q4192
+  MUSTENTER
+  RANGE 1920 2012
+END
+
+Q4202
+  MUSTENTER
+END
+
+Q4212
+  MUSTENTER
+END
+
+Q4232
+  MUSTENTER
+END
+
+Q5011
+  MUSTENTER
+END
+
+Q5012
+  MUSTENTER
+END
+
+Q5013
+  MUSTENTER
+END
+
