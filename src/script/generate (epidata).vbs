@@ -319,7 +319,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				ColumnName = oColumn.Name
-				ColumnCode = oColumn.Name
+				ColumnCode = oColumn.Code
 				
 				WScript.Echo "    Attribute: " & ColumnName
 				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
