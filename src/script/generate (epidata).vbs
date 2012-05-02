@@ -192,19 +192,16 @@ For Each oTable In oTables
 					    ColumnQuestionNotBreak = True
 					End If
 				    ColumnQuestionN = ColumnQuestionN + 1
+				    If ExtendedAttribute(oColumn, "CheckOffset") <> "" Then
+						ColumnQuestionN = ColumnQuestionN + ExtendedAttribute(oColumn, "CheckOffset")
+					End if
 				    ColumnN = 0
 				End If
 				
 				ColumnN = ColumnN + 1
-				
-				If ExtendedAttribute(oColumn, "CheckOffset") <> "" Then
-					ColumnN = ColumnN + ExtendedAttribute(oColumn, "CheckOffset")
-				End if
-				
+								
 				If Not oColumn.CannotModify Then
-				
-					If ColumnSectionN>=4 And ColumnN>4 Then Exit For
-					
+									
 					If ColumnQuestionNotBreak Then
 						If NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 > 0 Then 
 					    	Desc = Desc & Space(NCharWidth - NCharMax - 12 - Len(ColumnQuestion) - 6 - 1)
