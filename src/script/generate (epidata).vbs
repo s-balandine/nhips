@@ -153,7 +153,6 @@ For Each oTable In oTables
 				ColumnName = ExtendedAttribute (oColumn, "Label")
 				ColumnSection = ExtendedAttribute (oColumn, "Section")
 				ColumnQuestion = ExtendedAttribute (oColumn, "Question")
-				ColumnQuestionOffset = ExtendedAttribute (oColumn, "CheckOffset")
 				
 				If ColumnSection<>ColumnSectionPrev Then
 				    ColumnSectionN = ColumnSectionN + 1
@@ -170,8 +169,7 @@ For Each oTable In oTables
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
 				End If
-				
-				
+						
 				If ColumnQuestion<>ColumnQuestionPrev Then
 				    ColumnQuestionPrev = ColumnQuestion
 				    Desc = Desc & String(NCharWidth, "-") & vbCrLf
@@ -197,7 +195,11 @@ For Each oTable In oTables
 				    ColumnN = 0
 				End If
 				
-				ColumnN = ColumnN + 1 + ColumnQuestionOffset
+				ColumnN = ColumnN + 1
+				
+				If ExtendedAttribute(oColumn, "CheckOffset") <> "" Then
+					ColumnN = ColumnN + 1 + ExtendedAttribute(oColumn, "CheckOffset")
+				End if
 				
 				If Not oColumn.CannotModify Then
 				
