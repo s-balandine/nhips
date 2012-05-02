@@ -324,6 +324,18 @@ For Each oTable In oTables
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label")
 				End If
+				If oColumn.Domain.ListOfValues <> "" Then
+					Values = oColumn.Domain..ListOfValues
+					Values = Split(Values, vbNewLine, -1, 1)
+					Desc = Desc & "* Allowed Values" & vbCrLf
+					For i=0 To UBound(Values)
+						If Values(i) <> "" Then
+							Value = Values(i)
+							Value = Split(Value, vbTab, -1, 1)
+							Desc=Desc & "*    " & Value(0) & ": " & Value(1) & vbCrLf 
+						End If
+					Next
+				End If
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
