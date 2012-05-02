@@ -250,6 +250,8 @@ For Each oTable In oTables
 			End If
 		Next 
 		
+		Desc = Replace(Desc, "\'", "'") 
+		
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Name) & ".qes", ForWriting, true)
 		oFile.Write Desc & vbCrLf
 		oFile.Close
