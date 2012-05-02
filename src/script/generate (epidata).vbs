@@ -325,7 +325,7 @@ For Each oTable In oTables
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label")
 				End If
 				If oColumn.Domain.ListOfValues <> "" Then
-					Values = oColumn.Domain..ListOfValues
+					Values = oColumn.Domain.ListOfValues
 					Values = Split(Values, vbNewLine, -1, 1)
 					Desc = Desc & "* Allowed Values" & vbCrLf
 					For i=0 To UBound(Values)
