@@ -320,7 +320,10 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
-				Desc = Desc & "* " & ExtendedAttribute(oColumn, "NameEpiData") & " | " &  oColumn.Name & " | " & oColumn.Code & " | " & oColumn.DataType & vbCrLf
+				Desc = Desc & "* " & ExtendedAttribute(oColumn, "NameEpiData") & " | "
+				Desc = Desc & "* " & oColumn.Name & " | "
+				Desc = Desc & "* " & oColumn.Code & " | "
+				Desc = Desc & "* " & oColumn.DataType & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
