@@ -322,7 +322,9 @@ For Each oTable In oTables
 				Desc = Desc & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
-					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf 
+					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
+				Else
+				    Desc = Desc & vbCrLf
 				End If
 				If oColumn.Domain.ListOfValues <> "" Then
 					Values = oColumn.Domain.ListOfValues
