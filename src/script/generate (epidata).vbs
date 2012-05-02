@@ -267,6 +267,7 @@ For Each oTable In oTables
 		
 		For Each oDomain In oDomains
 			If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
+				WScript.Echo "    Labels: " & oDomain.Name
 				Values = oDomain.ListOfValues
 				Values = Split(Values, vbNewLine, -1, 1)
 				Desc = Desc & "  LABEL " & UCase(oDomain.Code) & vbCrLf
@@ -290,6 +291,7 @@ For Each oTable In oTables
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") And Not (oColumn.CannotModify) Then
+			    WScript.Echo "    DefaultValue: " & oColumn.Name
 			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
 				Desc = Desc & "  LET " & ColumnName & "=" & oColumn.DefaultValue & vbCrLf
@@ -301,6 +303,7 @@ For Each oTable In oTables
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 		    If IsObject(oColumn) And (oColumn.Mandatory) And Not (oColumn.CannotModify) Then
+			    WScript.Echo "    Mandatory: " & oColumn.Name
 			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 			    ColumnLabel = ExtendedAttribute (oColumn, "Label")
 				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
@@ -315,6 +318,7 @@ For Each oTable In oTables
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
+				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
