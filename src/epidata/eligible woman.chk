@@ -272,47 +272,47 @@ BEFORE RECORD
  IF (S2031 = .) THEN
   LET S2031=99
  ENDIF
- IF (S3051 = .) THEN
-  LET S3051=99
+ IF (Q1051 = .) THEN
+  LET Q1051=99
  ENDIF
- IF (S3071 = .) THEN
-  LET S3071=99
+ IF (Q1071 = .) THEN
+  LET Q1071=99
  ENDIF
- IF (S3081 = .) THEN
-  LET S3081=99
+ IF (Q1081 = .) THEN
+  LET Q1081=99
  ENDIF
- IF (S3101 = .) THEN
-  LET S3101=99
+ IF (Q1101 = .) THEN
+  LET Q1101=99
  ENDIF
- IF (S3111 = .) THEN
-  LET S3111=99
+ IF (Q1111 = .) THEN
+  LET Q1111=99
  ENDIF
- IF (S3131 = .) THEN
-  LET S3131=2012
+ IF (Q1131 = .) THEN
+  LET Q1131=2012
  ENDIF
- IF (S3142 = .) THEN
-  LET S3142=99
+ IF (Q1142 = .) THEN
+  LET Q1142=99
  ENDIF
- IF (S3151 = .) THEN
-  LET S3151=99
+ IF (Q1151 = .) THEN
+  LET Q1151=99
  ENDIF
- IF (S3161 = .) THEN
-  LET S3161=99
+ IF (Q1161 = .) THEN
+  LET Q1161=99
  ENDIF
- IF (S3211 = .) THEN
-  LET S3211=99
+ IF (Q1211 = .) THEN
+  LET Q1211=99
  ENDIF
- IF (Q2021 = .) THEN
-  LET Q2021=Unnamed
+ IF (Q3021 = .) THEN
+  LET Q3021=Unnamed
  ENDIF
- IF (Q5141 = .) THEN
-  LET Q5141=Unnamed
+ IF (Q6141 = .) THEN
+  LET Q6141=Unnamed
  ENDIF
- IF (Q5191 = .) THEN
-  LET Q5191=Unnamed
+ IF (Q6191 = .) THEN
+  LET Q6191=Unnamed
  ENDIF
- IF (Q5201 = .) THEN
-  LET Q5201=99
+ IF (Q6201 = .) THEN
+  LET Q6201=99
  ENDIF
 END
 
@@ -377,169 +377,29 @@ AFTER RECORD
   GOTO S2042
   EXIT
  ENDIF
- IF (S3011 = .) THEN
-  HELP "Hour must be entered" TYPE=ERROR
-  GOTO S3011
-  EXIT
- ENDIF
- IF (S3012 = .) THEN
-  HELP "Minute must be entered" TYPE=ERROR
-  GOTO S3012
-  EXIT
- ENDIF
- IF (S3021 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO S3021
-  EXIT
- ENDIF
- IF (S3022 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO S3022
-  EXIT
- ENDIF
- IF (S3031 = .) THEN
-  HELP "Age in completed year must be entered" TYPE=ERROR
-  GOTO S3031
-  EXIT
- ENDIF
- IF (S3041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3041
-  EXIT
- ENDIF
- IF (S3051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3051
-  EXIT
- ENDIF
- IF (S3061 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3061
-  EXIT
- ENDIF
- IF (S3071 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3071
-  EXIT
- ENDIF
- IF (S3072 = .) THEN
-  HELP "Specify language must be entered" TYPE=ERROR
-  GOTO S3072
-  EXIT
- ENDIF
- IF (S3081 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3081
-  EXIT
- ENDIF
- IF (S3091 = .) THEN
-  HELP "Specify years must be entered" TYPE=ERROR
-  GOTO S3091
-  EXIT
- ENDIF
- IF (S3101 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3101
-  EXIT
- ENDIF
- IF (S3111 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3111
-  EXIT
- ENDIF
- IF (S3112 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO S3112
-  EXIT
- ENDIF
- IF (S3121 = .) THEN
-  HELP "Number of nights must be entered" TYPE=ERROR
-  GOTO S3121
-  EXIT
- ENDIF
- IF (S3131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3131
-  EXIT
- ENDIF
- IF (S3141 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3141
-  EXIT
- ENDIF
- IF (S3142 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3142
-  EXIT
- ENDIF
- IF (S3151 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3151
-  EXIT
- ENDIF
- IF (S3161 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3161
-  EXIT
- ENDIF
- IF (S3171 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3171
-  EXIT
- ENDIF
- IF (S3181 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3181
-  EXIT
- ENDIF
- IF (S3191 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3191
-  EXIT
- ENDIF
- IF (S3201 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3201
-  EXIT
- ENDIF
- IF (S3211 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3211
-  EXIT
- ENDIF
- IF (S3221 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3221
-  EXIT
- ENDIF
- IF (S3231 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3231
-  EXIT
- ENDIF
- IF (S3241 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO S3241
-  EXIT
- ENDIF
  IF (Q1011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Hour must be entered" TYPE=ERROR
   GOTO Q1011
   EXIT
  ENDIF
+ IF (Q1012 = .) THEN
+  HELP "Minute must be entered" TYPE=ERROR
+  GOTO Q1012
+  EXIT
+ ENDIF
  IF (Q1021 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q1021
   EXIT
  ENDIF
- IF (Q1031 = .) THEN
-  HELP "Sons at home must be entered" TYPE=ERROR
-  GOTO Q1031
+ IF (Q1022 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q1022
   EXIT
  ENDIF
- IF (Q1032 = .) THEN
-  HELP "Daughters at home must be entered" TYPE=ERROR
-  GOTO Q1032
+ IF (Q1031 = .) THEN
+  HELP "Age in completed year must be entered" TYPE=ERROR
+  GOTO Q1031
   EXIT
  ENDIF
  IF (Q1041 = .) THEN
@@ -548,13 +408,8 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q1051 = .) THEN
-  HELP "Sons elsewhere must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q1051
-  EXIT
- ENDIF
- IF (Q1052 = .) THEN
-  HELP "Daughters elsewhere must be entered" TYPE=ERROR
-  GOTO Q1052
   EXIT
  ENDIF
  IF (Q1061 = .) THEN
@@ -563,43 +418,128 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q1071 = .) THEN
-  HELP "Boys dead must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q1071
   EXIT
  ENDIF
  IF (Q1072 = .) THEN
-  HELP "Girls dead must be entered" TYPE=ERROR
+  HELP "Specify language must be entered" TYPE=ERROR
   GOTO Q1072
   EXIT
  ENDIF
  IF (Q1081 = .) THEN
-  HELP "Total births must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q1081
   EXIT
  ENDIF
  IF (Q1091 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP "Specify years must be entered" TYPE=ERROR
   GOTO Q1091
   EXIT
  ENDIF
- IF (Q1092 = .) THEN
-  HELP "Years must be entered" TYPE=ERROR
-  GOTO Q1092
+ IF (Q1101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1101
+  EXIT
+ ENDIF
+ IF (Q1111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1111
+  EXIT
+ ENDIF
+ IF (Q1112 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q1112
+  EXIT
+ ENDIF
+ IF (Q1121 = .) THEN
+  HELP "Number of nights must be entered" TYPE=ERROR
+  GOTO Q1121
+  EXIT
+ ENDIF
+ IF (Q1131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1131
+  EXIT
+ ENDIF
+ IF (Q1141 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1141
+  EXIT
+ ENDIF
+ IF (Q1142 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1142
+  EXIT
+ ENDIF
+ IF (Q1151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1151
+  EXIT
+ ENDIF
+ IF (Q1161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1161
+  EXIT
+ ENDIF
+ IF (Q1171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1171
+  EXIT
+ ENDIF
+ IF (Q1181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1181
+  EXIT
+ ENDIF
+ IF (Q1191 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1191
+  EXIT
+ ENDIF
+ IF (Q1201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1201
+  EXIT
+ ENDIF
+ IF (Q1211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1211
+  EXIT
+ ENDIF
+ IF (Q1221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1221
+  EXIT
+ ENDIF
+ IF (Q1231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1231
+  EXIT
+ ENDIF
+ IF (Q1241 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q1241
   EXIT
  ENDIF
  IF (Q2011 = .) THEN
-  HELP "Birth history number must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2011
   EXIT
  ENDIF
  IF (Q2021 = .) THEN
-  HELP "Name must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2021
   EXIT
  ENDIF
  IF (Q2031 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Sons at home must be entered" TYPE=ERROR
   GOTO Q2031
+  EXIT
+ ENDIF
+ IF (Q2032 = .) THEN
+  HELP "Daughters at home must be entered" TYPE=ERROR
+  GOTO Q2032
   EXIT
  ENDIF
  IF (Q2041 = .) THEN
@@ -608,12 +548,12 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q2051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Sons elsewhere must be entered" TYPE=ERROR
   GOTO Q2051
   EXIT
  ENDIF
  IF (Q2052 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
+  HELP "Daughters elsewhere must be entered" TYPE=ERROR
   GOTO Q2052
   EXIT
  ENDIF
@@ -622,84 +562,39 @@ AFTER RECORD
   GOTO Q2061
   EXIT
  ENDIF
- IF (Q2062 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q2062
-  EXIT
- ENDIF
  IF (Q2071 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP "Boys dead must be entered" TYPE=ERROR
   GOTO Q2071
   EXIT
  ENDIF
+ IF (Q2072 = .) THEN
+  HELP "Girls dead must be entered" TYPE=ERROR
+  GOTO Q2072
+  EXIT
+ ENDIF
  IF (Q2081 = .) THEN
-  HELP "Numer of times must be entered" TYPE=ERROR
+  HELP "Total births must be entered" TYPE=ERROR
   GOTO Q2081
   EXIT
  ENDIF
  IF (Q2091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q2091
   EXIT
  ENDIF
  IF (Q2092 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
+  HELP "Years must be entered" TYPE=ERROR
   GOTO Q2092
   EXIT
  ENDIF
- IF (Q2101 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2101
-  EXIT
- ENDIF
- IF (Q2111 = .) THEN
-  HELP "Hours must be entered" TYPE=ERROR
-  GOTO Q2111
-  EXIT
- ENDIF
- IF (Q2112 = .) THEN
-  HELP "Days must be entered" TYPE=ERROR
-  GOTO Q2112
-  EXIT
- ENDIF
- IF (Q2113 = .) THEN
-  HELP "Weeks must be entered" TYPE=ERROR
-  GOTO Q2113
-  EXIT
- ENDIF
- IF (Q2121 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2121
-  EXIT
- ENDIF
- IF (Q2131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2131
-  EXIT
- ENDIF
- IF (Q2141 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
-  GOTO Q2141
-  EXIT
- ENDIF
  IF (Q3011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Birth history number must be entered" TYPE=ERROR
   GOTO Q3011
   EXIT
  ENDIF
  IF (Q3021 = .) THEN
-  HELP "During pregnancy? must be entered" TYPE=ERROR
+  HELP "Name must be entered" TYPE=ERROR
   GOTO Q3021
-  EXIT
- ENDIF
- IF (Q3022 = .) THEN
-  HELP "During delivery? must be entered" TYPE=ERROR
-  GOTO Q3022
-  EXIT
- ENDIF
- IF (Q3023 = .) THEN
-  HELP "By breastfeeding? must be entered" TYPE=ERROR
-  GOTO Q3023
   EXIT
  ENDIF
  IF (Q3031 = .) THEN
@@ -717,23 +612,28 @@ AFTER RECORD
   GOTO Q3051
   EXIT
  ENDIF
+ IF (Q3052 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3052
+  EXIT
+ ENDIF
  IF (Q3061 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3061
   EXIT
  ENDIF
+ IF (Q3062 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3062
+  EXIT
+ ENDIF
  IF (Q3071 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q3071
   EXIT
  ENDIF
- IF (Q3072 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3072
-  EXIT
- ENDIF
  IF (Q3081 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Numer of times must be entered" TYPE=ERROR
   GOTO Q3081
   EXIT
  ENDIF
@@ -742,14 +642,29 @@ AFTER RECORD
   GOTO Q3091
   EXIT
  ENDIF
+ IF (Q3092 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3092
+  EXIT
+ ENDIF
  IF (Q3101 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3101
   EXIT
  ENDIF
  IF (Q3111 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Hours must be entered" TYPE=ERROR
   GOTO Q3111
+  EXIT
+ ENDIF
+ IF (Q3112 = .) THEN
+  HELP "Days must be entered" TYPE=ERROR
+  GOTO Q3112
+  EXIT
+ ENDIF
+ IF (Q3113 = .) THEN
+  HELP "Weeks must be entered" TYPE=ERROR
+  GOTO Q3113
   EXIT
  ENDIF
  IF (Q3121 = .) THEN
@@ -763,48 +678,8 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q3141 = .) THEN
-  HELP "Months ago must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q3141
-  EXIT
- ENDIF
- IF (Q3151 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3151
-  EXIT
- ENDIF
- IF (Q3161 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3161
-  EXIT
- ENDIF
- IF (Q3171 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3171
-  EXIT
- ENDIF
- IF (Q3181 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3181
-  EXIT
- ENDIF
- IF (Q3182 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3182
-  EXIT
- ENDIF
- IF (Q3191 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3191
-  EXIT
- ENDIF
- IF (Q3201 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3201
-  EXIT
- ENDIF
- IF (Q3202 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3202
   EXIT
  ENDIF
  IF (Q4011 = .) THEN
@@ -813,8 +688,18 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q4021 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "During pregnancy? must be entered" TYPE=ERROR
   GOTO Q4021
+  EXIT
+ ENDIF
+ IF (Q4022 = .) THEN
+  HELP "During delivery? must be entered" TYPE=ERROR
+  GOTO Q4022
+  EXIT
+ ENDIF
+ IF (Q4023 = .) THEN
+  HELP "By breastfeeding? must be entered" TYPE=ERROR
+  GOTO Q4023
   EXIT
  ENDIF
  IF (Q4031 = .) THEN
@@ -825,6 +710,101 @@ AFTER RECORD
  IF (Q4041 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q4041
+  EXIT
+ ENDIF
+ IF (Q4051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4051
+  EXIT
+ ENDIF
+ IF (Q4061 = .) THEN
+  HELP "Months must be entered" TYPE=ERROR
+  GOTO Q4061
+  EXIT
+ ENDIF
+ IF (Q4071 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4071
+  EXIT
+ ENDIF
+ IF (Q4072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4072
+  EXIT
+ ENDIF
+ IF (Q4081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4081
+  EXIT
+ ENDIF
+ IF (Q4091 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4091
+  EXIT
+ ENDIF
+ IF (Q4101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4101
+  EXIT
+ ENDIF
+ IF (Q4111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4111
+  EXIT
+ ENDIF
+ IF (Q4121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4121
+  EXIT
+ ENDIF
+ IF (Q4131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4131
+  EXIT
+ ENDIF
+ IF (Q4141 = .) THEN
+  HELP "Months ago must be entered" TYPE=ERROR
+  GOTO Q4141
+  EXIT
+ ENDIF
+ IF (Q4151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4151
+  EXIT
+ ENDIF
+ IF (Q4161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4161
+  EXIT
+ ENDIF
+ IF (Q4171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4171
+  EXIT
+ ENDIF
+ IF (Q4181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4181
+  EXIT
+ ENDIF
+ IF (Q4182 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4182
+  EXIT
+ ENDIF
+ IF (Q4191 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4191
+  EXIT
+ ENDIF
+ IF (Q4201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4201
+  EXIT
+ ENDIF
+ IF (Q4202 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4202
   EXIT
  ENDIF
  IF (Q5011 = .) THEN
@@ -838,13 +818,8 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q5031 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q5031
-  EXIT
- ENDIF
- IF (Q5032 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5032
   EXIT
  ENDIF
  IF (Q5041 = .) THEN
@@ -852,154 +827,9 @@ AFTER RECORD
   GOTO Q5041
   EXIT
  ENDIF
- IF (Q5042 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5042
-  EXIT
- ENDIF
- IF (Q5051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5051
-  EXIT
- ENDIF
- IF (Q5061 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5061
-  EXIT
- ENDIF
- IF (Q5071 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5071
-  EXIT
- ENDIF
- IF (Q5081 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5081
-  EXIT
- ENDIF
- IF (Q5091 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q5091
-  EXIT
- ENDIF
- IF (Q5092 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5092
-  EXIT
- ENDIF
- IF (Q5101 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5101
-  EXIT
- ENDIF
- IF (Q5111 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q5111
-  EXIT
- ENDIF
- IF (Q5112 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5112
-  EXIT
- ENDIF
- IF (Q5121 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5121
-  EXIT
- ENDIF
- IF (Q5122 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5122
-  EXIT
- ENDIF
- IF (Q5131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5131
-  EXIT
- ENDIF
- IF (Q5132 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5132
-  EXIT
- ENDIF
- IF (Q5141 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5141
-  EXIT
- ENDIF
- IF (Q5151 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5151
-  EXIT
- ENDIF
- IF (Q5161 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q5161
-  EXIT
- ENDIF
- IF (Q5162 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5162
-  EXIT
- ENDIF
- IF (Q5171 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5171
-  EXIT
- ENDIF
- IF (Q5172 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5172
-  EXIT
- ENDIF
- IF (Q5181 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5181
-  EXIT
- ENDIF
- IF (Q5182 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5182
-  EXIT
- ENDIF
- IF (Q5191 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5191
-  EXIT
- ENDIF
- IF (Q5201 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5201
-  EXIT
- ENDIF
- IF (Q5202 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5202
-  EXIT
- ENDIF
- IF (Q5211 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5211
-  EXIT
- ENDIF
- IF (Q5221 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5221
-  EXIT
- ENDIF
  IF (Q6011 = .) THEN
-  HELP "Comments about specific questions must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q6011
-  EXIT
- ENDIF
- IF (Q6012 = .) THEN
-  HELP "Comments about respondent must be entered" TYPE=ERROR
-  GOTO Q6012
-  EXIT
- ENDIF
- IF (Q6013 = .) THEN
-  HELP "Any other comments must be entered" TYPE=ERROR
-  GOTO Q6013
   EXIT
  ENDIF
  IF (Q6021 = .) THEN
@@ -1008,8 +838,178 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q6031 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q6031
+  EXIT
+ ENDIF
+ IF (Q6032 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6032
+  EXIT
+ ENDIF
+ IF (Q6041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6041
+  EXIT
+ ENDIF
+ IF (Q6042 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6042
+  EXIT
+ ENDIF
+ IF (Q6051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6051
+  EXIT
+ ENDIF
+ IF (Q6061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6061
+  EXIT
+ ENDIF
+ IF (Q6071 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6071
+  EXIT
+ ENDIF
+ IF (Q6081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6081
+  EXIT
+ ENDIF
+ IF (Q6091 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q6091
+  EXIT
+ ENDIF
+ IF (Q6092 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6092
+  EXIT
+ ENDIF
+ IF (Q6101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6101
+  EXIT
+ ENDIF
+ IF (Q6111 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q6111
+  EXIT
+ ENDIF
+ IF (Q6112 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6112
+  EXIT
+ ENDIF
+ IF (Q6121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6121
+  EXIT
+ ENDIF
+ IF (Q6122 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6122
+  EXIT
+ ENDIF
+ IF (Q6131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6131
+  EXIT
+ ENDIF
+ IF (Q6132 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6132
+  EXIT
+ ENDIF
+ IF (Q6141 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6141
+  EXIT
+ ENDIF
+ IF (Q6151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6151
+  EXIT
+ ENDIF
+ IF (Q6161 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q6161
+  EXIT
+ ENDIF
+ IF (Q6162 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6162
+  EXIT
+ ENDIF
+ IF (Q6171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6171
+  EXIT
+ ENDIF
+ IF (Q6172 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6172
+  EXIT
+ ENDIF
+ IF (Q6181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6181
+  EXIT
+ ENDIF
+ IF (Q6182 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6182
+  EXIT
+ ENDIF
+ IF (Q6191 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6191
+  EXIT
+ ENDIF
+ IF (Q6201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6201
+  EXIT
+ ENDIF
+ IF (Q6202 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6202
+  EXIT
+ ENDIF
+ IF (Q6211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6211
+  EXIT
+ ENDIF
+ IF (Q6221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6221
+  EXIT
+ ENDIF
+ IF (Q7011 = .) THEN
+  HELP "Comments about specific questions must be entered" TYPE=ERROR
+  GOTO Q7011
+  EXIT
+ ENDIF
+ IF (Q7012 = .) THEN
+  HELP "Comments about respondent must be entered" TYPE=ERROR
+  GOTO Q7012
+  EXIT
+ ENDIF
+ IF (Q7013 = .) THEN
+  HELP "Any other comments must be entered" TYPE=ERROR
+  GOTO Q7013
+  EXIT
+ ENDIF
+ IF (Q7021 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q7021
+  EXIT
+ ENDIF
+ IF (Q7031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q7031
   EXIT
  ENDIF
 END
@@ -1112,88 +1112,88 @@ S2042
   MUSTENTER
 END
 
-* S301.1 | Record Time (Hour) | S3011 | NUMERIC(2)
+* Q101.1 | Record Time (Hour) | Q1011 | NUMERIC(2)
 * Record the time > Hour
-S3011
+Q1011
   MUSTENTER
   RANGE 0 23
 END
 
-* S301.2 | Record Time (Minute) | S3012 | NUMERIC(2)
+* Q101.2 | Record Time (Minute) | Q1012 | NUMERIC(2)
 * Record the time > Minute
-S3012
+Q1012
   MUSTENTER
   RANGE 0 59
 END
 
-* S302.1 | Birth (Month) | S3021 | NUMERIC(2)
+* Q102.1 | Birth (Month) | Q1021 | NUMERIC(2)
 * In what month and year were you born? > Month
 * Allowed Values
 *    98: Don't know
-S3021
+Q1021
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* S302.2 | Birth (Year) | S3022 | NUMERIC(4)
+* Q102.2 | Birth (Year) | Q1022 | NUMERIC(4)
 * In what month and year were you born? > Year
 * Allowed Values
 *    9998: Don't know
-S3022
+Q1022
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* S303.1 | Age | S3031 | NUMERIC(2)
+* Q103.1 | Age | Q1031 | NUMERIC(2)
 * How old were you at your last birthday? > Age in completed year
 * Allowed Values
 *    98: Don't know
-S3031
+Q1031
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE  98
 END
 
-* S304.1 | School | S3041 | NUMERIC(1)
+* Q104.1 | School | Q1041 | NUMERIC(1)
 * Have you ever attended school?
 * Allowed Values
 *    1: Yes
 *    2: No
-S3041
+Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
   JUMPS RESET
-    2 S3071
+    2 Q1071
   END
 END
 
-* S305.1 | Highest Educational Level | S3051 | NUMERIC(2)
+* Q105.1 | Highest Educational Level | Q1051 | NUMERIC(2)
 * What is the highest level of school you attended: primary, secondary, or higher? 
 * Allowed Values
 *    1: Primary
 *    2: Post-primary / Vocational
 *    3: Secondary / A level
 *    4: Higher
-S3051
+Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL SHOW
   TYPE COMMENT
 END
 
-* S306.1 | Highest Year of Education | S3061 | NUMERIC(2)
+* Q106.1 | Highest Year of Education | Q1061 | NUMERIC(2)
 * What is the highest (grade/form/year) you completed at that level? 
-S3061
+Q1061
   MUSTENTER
   IF
     HEW_HIGHEST_EDUCATIONAL_LEVEL>2 THEN
-    GOTO S3081
+    GOTO Q1081
   END
 END
 
-* S307.1 | Literacy | S3071 | NUMERIC(2)
+* Q107.1 | Literacy | Q1071 | NUMERIC(2)
 * Can you read any part of the sentence to me?
 * Allowed Values
 *    1: No, cannont read at all
@@ -1201,7 +1201,7 @@ END
 *    3: Yes, able to read whole sentence
 *    4: Not applicable, no card with required language
 *    5: Not applicable, blind or Visually impaired
-S3071
+Q1071
   MUSTENTER
   COMMENT LEGAL USE D_N_LITERACY SHOW
   TYPE COMMENT
@@ -1213,54 +1213,54 @@ S3071
   END
 END
 
-* S307.2 | Literacy (Language) | S3072 | VARCHAR(32)
+* Q107.2 | Literacy (Language) | Q1072 | VARCHAR(32)
 * Can you read any part of the sentence to me? > Specify language
-S3072
+Q1072
   MUSTENTER
 END
 
-* S308.1 | Place of Residence Before | S3081 | NUMERIC(1)
+* Q108.1 | Place of Residence Before | Q1081 | NUMERIC(1)
 * For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
 * Allowed Values
 *    1: Nairobi / Kisumu
 *    2: Other City / Town
 *    3: Countryside
 *    4: Outside Kenya
-S3081
+Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE SHOW
   TYPE COMMENT
   JUMPS RESET
-    98 S3121
-    99 S3121
+    98 Q1121
+    99 Q1121
   END
 END
 
-* S309.1 | Residence Duration | S3091 | NUMERIC(2)
+* Q109.1 | Residence Duration | Q1091 | NUMERIC(2)
 * How long have you been living continuously in Ndhiwa?  > Specify years
 * Allowed Values
 *    98: Always
 *    99: Visitor
-S3091
+Q1091
   MUSTENTER
   RANGE 1 97
   MISSINGVALUE  98 99
 END
 
-* S3101 | Type of Place of Residence Before | S3101 | NUMERIC(2)
+* Q1101 | Type of Place of Residence Before | Q1101 | NUMERIC(2)
 * Just before you moved here, did you live in a city a town, or in the countryside?
 * Allowed Values
 *    0: Capital, large city
 *    1: Small city
 *    2: Town
 *    3: Countryside
-S3101
+Q1101
   MUSTENTER
   COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE SHOW
   TYPE COMMENT
 END
 
-* S3111 | Ethnic | S3111 | NUMERIC(2)
+* Q1111 | Ethnic | Q1111 | NUMERIC(2)
 * What is your ethnic group/tribe?
 * Allowed Values
 *    1: Embu
@@ -1276,311 +1276,210 @@ END
 *    11: Somali
 *    12: Taita / Taveta
 *    96: Other
-S3111
+Q1111
   MUSTENTER
   COMMENT LEGAL USE D_N_ETHNIC SHOW
   TYPE COMMENT
 END
 
-* S3112 | Ethnic (Other) | S3112 | VARCHAR(32)
+* Q1112 | Ethnic (Other) | Q1112 | VARCHAR(32)
 * What is your ethnic group/tribe? > Specify
-S3112
+Q1112
   MUSTENTER
 END
 
-* S3121 | Outside Night | S3121 | NUMERIC(2)
+* Q1121 | Outside Night | Q1121 | NUMERIC(2)
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
-S3121
+Q1121
   MUSTENTER
 END
 
-* S3131 | Outside Month | S3131 | NUMERIC(4)
+* Q1131 | Outside Month | Q1131 | NUMERIC(4)
 * In the last 12 months, have you been away from home for more than one month at a time?
-S3131
+Q1131
   MUSTENTER
   RANGE 2012 2014
 END
 
-* S3141 | Union | S3141 | NUMERIC(1)
+* Q1141 | Union | Q1141 | NUMERIC(1)
 * Are you currently married or living together with a man as if married?
 * Allowed Values
 *    1: Yes, currently married
 *    2: Yes, living with a man
 *    3: No, not in union
-S3141
+Q1141
   MUSTENTER
   COMMENT LEGAL USE D_N_UNION_STATUS SHOW
   TYPE COMMENT
 END
 
-* S3142 | Marital Statut in Past | S3142 | NUMERIC(1)
+* Q1142 | Marital Statut in Past | Q1142 | NUMERIC(1)
 * Are you currently married or living together with a man as if married?
 * Allowed Values
 *    1: Yes, formerly married
 *    2: Yes, lived with a man
 *    3: No
-S3142
+Q1142
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST SHOW
   TYPE COMMENT
 END
 
-* S3151 | Marital Status | S3151 | NUMERIC(1)
+* Q1151 | Marital Status | Q1151 | NUMERIC(1)
 * What is your marital status now: are you widowed, divorced, or separated?
 * Allowed Values
 *    1: Widowed
 *    2: Divorced
 *    3: Separated
-S3151
+Q1151
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL SHOW
   TYPE COMMENT
 END
 
-* S3161 | Husband Status | S3161 | NUMERIC(2)
+* Q1161 | Husband Status | Q1161 | NUMERIC(2)
 * Is your (husband/partner) living with you now or is he staying elsewhere?
 * Allowed Values
 *    1: Living with her
 *    2: Staying elsewhere
-S3161
+Q1161
   MUSTENTER
   COMMENT LEGAL USE D_N_HUSBAND_STATUS SHOW
   TYPE COMMENT
 END
 
-* S3171 | Worked in last week | S3171 | NUMERIC(1)
+* Q1171 | Worked in last week | Q1171 | NUMERIC(1)
 * Aside from your own housework, have you done any work in the last seven days?
 * Allowed Values
 *    1: Yes
 *    2: No
-S3171
+Q1171
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* S3181 | Worked in last week 2 | S3181 | NUMERIC(1)
+* Q1181 | Worked in last week 2 | Q1181 | NUMERIC(1)
 * In the last seven days, have you done any of these things or any other work?
 * Allowed Values
 *    1: Yes
 *    2: No
-S3181
+Q1181
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* S3191 | Work absence | S3191 | NUMERIC(1)
+* Q1191 | Work absence | Q1191 | NUMERIC(1)
 * Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 * Allowed Values
 *    1: Yes
 *    2: No
-S3191
+Q1191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* S3201 | Worked in last 12 months | S3201 | NUMERIC(1)
+* Q1201 | Worked in last 12 months | Q1201 | NUMERIC(1)
 * Have you done any work in the last 12 months?
 * Allowed Values
 *    1: Yes
 *    2: No
-S3201
+Q1201
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* S3211 | Occupation | S3211 | NUMERIC(2)
+* Q1211 | Occupation | Q1211 | NUMERIC(2)
 * What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 * Allowed Values
 *    1: ?
 *    2: ?
 *    3: ?
 *    4: ?
-S3211
+Q1211
   MUSTENTER
   COMMENT LEGAL USE D_N_OCCUPATION SHOW
   TYPE COMMENT
 END
 
-* S3221 | Work Class | S3221 | NUMERIC(1)
+* Q1221 | Work Class | Q1221 | NUMERIC(1)
 * Do you do this work for a member of your family, for someone else, or are you self-employed?
 * Allowed Values
 *    1: For family member
 *    2: For someone else
 *    3: Self-employed
-S3221
+Q1221
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_CLASS SHOW
   TYPE COMMENT
 END
 
-* S3231 | Work Time | S3231 | NUMERIC(1)
+* Q1231 | Work Time | Q1231 | NUMERIC(1)
 * Do you usually work throughout the year, or do you work seasonally, or only once in a while?
 * Allowed Values
 *    1: All year
 *    2: Seasonal
 *    3: Occasional
-S3231
+Q1231
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_TIME SHOW
   TYPE COMMENT
 END
 
-* S3241 | Work Earn | S3241 | NUMERIC(1)
+* Q1241 | Work Earn | Q1241 | NUMERIC(1)
 * Are you paid in cash or kind for this work or are you not paid at all?																																																																																																				
 * Allowed Values
 *    1: Cash only
 *    2: Cash and kind
 *    3: In kind only
 *    4: Not paid
-S3241
+Q1241
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_EARN SHOW
   TYPE COMMENT
 END
 
-* Q101.1 | Birth Given | Q1011 | NUMERIC(1)
+* Q201.1 | Birth Given | Q2011 | NUMERIC(1)
 * Have you ever given birth?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q1011
+Q2011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q102.1 | Child at Home | Q1021 | NUMERIC(1)
+* Q202.1 | Child at Home | Q2021 | NUMERIC(1)
 * Do you have any sons or daughters to whom you have given birth who are now living with you?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q1021
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q103.1 | Sons at Home | Q1031 | NUMERIC(2)
-* How many sons and daughters live with you?  > Sons at home
-Q1031
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q103.2 | Daughters at Home | Q1032 | NUMERIC(2)
-* How many sons and daughters live with you?  > Daughters at home
-Q1032
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q104.1 | Child Elsewhere | Q1041 | NUMERIC(1)
-* Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q1041
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q105.1 | Sons Elsewhere | Q1051 | NUMERIC(2)
-* How many sons are alive but do not live with you? > Sons elsewhere
-Q1051
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q105.2 | Daughters Elsewhere | Q1052 | NUMERIC(2)
-* How many sons are alive but do not live with you? > Daughters elsewhere
-Q1052
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q106.1 | Child Died | Q1061 | NUMERIC(1)
-* Have you ever given birth to a boy or girl who was born alive but later died?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q1061
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q107.1 | Sons Died | Q1071 | NUMERIC(2)
-* How many boys and girls have died? > Boys dead
-Q1071
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q107.2 | Daughters Died | Q1072 | NUMERIC(2)
-* How many boys and girls have died? > Girls dead
-Q1072
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q108.1 | Total Children | Q1081 | NUMERIC(2)
-* Total children ever born > Total births
-Q1081
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q109.1 | Pregnancy Ended Month | Q1091 | NUMERIC(2)
-* In what month and year was your last child born? > Months
-* Allowed Values
-*    98: Don't know
-Q1091
-  MUSTENTER
-  RANGE 1 12
-  MISSINGVALUE  98
-END
-
-* Q109.2 | Pregnancy Ended Year | Q1092 | NUMERIC(4)
-* In what month and year was your last child born? > Years
-* Allowed Values
-*    9998: Don't know
-Q1092
-  MUSTENTER
-  RANGE 1920 2012
-  MISSINGVALUE  9998
-END
-
-* Q201.1 | Last Baby Index | Q2011 | NUMERIC(1)
-* Birth history number of last birth > Birth history number
-Q2011
-  MUSTENTER
-  RANGE 1 6
-END
-
-* Q202.1 | Last Baby Name | Q2021 | VARCHAR(32)
-* What name was given to your last baby? > Name
 Q2021
   MUSTENTER
-END
-
-* Q203.1 | Last Baby Alive | Q2031 | NUMERIC(1)
-* Is last baby still alive?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q2031
-  MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q204.1 | Antenatal Care | Q2041 | NUMERIC(1)
-* Did you see anyone for antenatal care for this pregnancy?
+* Q203.1 | Sons at Home | Q2031 | NUMERIC(2)
+* How many sons and daughters live with you?  > Sons at home
+Q2031
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q203.2 | Daughters at Home | Q2032 | NUMERIC(2)
+* How many sons and daughters live with you?  > Daughters at home
+Q2032
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q204.1 | Child Elsewhere | Q2041 | NUMERIC(1)
+* Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1590,7 +1489,108 @@ Q2041
   TYPE COMMENT
 END
 
-* Q205.1 | Antenatal Care Whom | Q2051 | NUMERIC(2)
+* Q205.1 | Sons Elsewhere | Q2051 | NUMERIC(2)
+* How many sons are alive but do not live with you? > Sons elsewhere
+Q2051
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q205.2 | Daughters Elsewhere | Q2052 | NUMERIC(2)
+* How many sons are alive but do not live with you? > Daughters elsewhere
+Q2052
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q206.1 | Child Died | Q2061 | NUMERIC(1)
+* Have you ever given birth to a boy or girl who was born alive but later died?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q2061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q207.1 | Sons Died | Q2071 | NUMERIC(2)
+* How many boys and girls have died? > Boys dead
+Q2071
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q207.2 | Daughters Died | Q2072 | NUMERIC(2)
+* How many boys and girls have died? > Girls dead
+Q2072
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q208.1 | Total Children | Q2081 | NUMERIC(2)
+* Total children ever born > Total births
+Q2081
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q209.1 | Pregnancy Ended Month | Q2091 | NUMERIC(2)
+* In what month and year was your last child born? > Months
+* Allowed Values
+*    98: Don't know
+Q2091
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE  98
+END
+
+* Q209.2 | Pregnancy Ended Year | Q2092 | NUMERIC(4)
+* In what month and year was your last child born? > Years
+* Allowed Values
+*    9998: Don't know
+Q2092
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE  9998
+END
+
+* Q301.1 | Last Baby Index | Q3011 | NUMERIC(1)
+* Birth history number of last birth > Birth history number
+Q3011
+  MUSTENTER
+  RANGE 1 6
+END
+
+* Q302.1 | Last Baby Name | Q3021 | VARCHAR(32)
+* What name was given to your last baby? > Name
+Q3021
+  MUSTENTER
+END
+
+* Q303.1 | Last Baby Alive | Q3031 | NUMERIC(1)
+* Is last baby still alive?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q304.1 | Antenatal Care | Q3041 | NUMERIC(1)
+* Did you see anyone for antenatal care for this pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q305.1 | Antenatal Care Whom | Q3051 | NUMERIC(2)
 * Whom did you see? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1599,19 +1599,19 @@ END
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-Q2051
+Q3051
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q205.2 | Antenatal Care Whom (Other) | Q2052 | VARCHAR(32)
+* Q305.2 | Antenatal Care Whom (Other) | Q3052 | VARCHAR(32)
 * Whom did you see?  > Specify
-Q2052
+Q3052
   MUSTENTER
 END
 
-* Q206.1 | Antenatal Care Where | Q2061 | NUMERIC(2)
+* Q306.1 | Antenatal Care Where | Q3061 | NUMERIC(2)
 * Where did you receive antenatal care for this pregnancy?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -1623,35 +1623,35 @@ END
 *    G: Private medical sector: Private hospital, clinic
 *    H: Private medical sector: Other private medical
 *    X: Other
-Q2061
+Q3061
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT
 END
 
-* Q206.2 | Antenatal Care Where (Other) | Q2062 | VARCHAR(32)
+* Q306.2 | Antenatal Care Where (Other) | Q3062 | VARCHAR(32)
 * Where did you receive antenatal care for this pregnancy? > Specify
-Q2062
+Q3062
   MUSTENTER
 END
 
-* Q207.1 | Antenatal Care When | Q2071 | NUMERIC(2)
+* Q307.1 | Antenatal Care When | Q3071 | NUMERIC(2)
 * How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
 * Allowed Values
 *    98: Don't know
-Q2071
+Q3071
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q208.1 | Antenatal Care How Many | Q2081 | NUMERIC(2)
+* Q308.1 | Antenatal Care How Many | Q3081 | NUMERIC(2)
 * How many times did you receive antenatal care during this pregnancy? > Numer of times
-Q2081
+Q3081
   MUSTENTER
 END
 
-* Q209.1 | Delivery Whom | Q2091 | NUMERIC(2)
+* Q309.1 | Delivery Whom | Q3091 | NUMERIC(2)
 * Who assisted with the delivery of last baby ? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1660,19 +1660,19 @@ END
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-Q2091
+Q3091
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q209.2 | Delivery Whom (Other) | Q2092 | VARCHAR(32)
+* Q309.2 | Delivery Whom (Other) | Q3092 | VARCHAR(32)
 * Who assisted with the delivery of last baby ?  > Specify
-Q2092
+Q3092
   MUSTENTER
 END
 
-* Q2101 | Delivery  Where | Q2101 | NUMERIC(2)
+* Q3101 | Delivery  Where | Q3101 | NUMERIC(2)
 * Where did you give birth to last baby?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -1684,228 +1684,34 @@ END
 *    G: Private medical sector: Private hospital, clinic
 *    H: Private medical sector: Other private medical
 *    X: Other
-Q2101
+Q3101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT
 END
 
-* Q2111 | Delivery Discharge (Hour) | Q2111 | NUMERIC(2)
+* Q3111 | Delivery Discharge (Hour) | Q3111 | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Hours
-Q2111
+Q3111
   MUSTENTER
   RANGE 0 23
 END
 
-* Q2112 | Delivery Discharge (Day) | Q2112 | NUMERIC(2)
+* Q3112 | Delivery Discharge (Day) | Q3112 | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Days
-Q2112
+Q3112
   MUSTENTER
   RANGE 1 31
 END
 
-* Q2113 | Delivery Discharge (Week) | Q2113 | NUMERIC(2)
+* Q3113 | Delivery Discharge (Week) | Q3113 | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Weeks
-Q2113
+Q3113
   MUSTENTER
 END
 
-* Q2121 | Breasfeeding | Q2121 | NUMERIC(1)
+* Q3121 | Breasfeeding | Q3121 | NUMERIC(1)
 * Did you ever breastfeed last baby?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q2121
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q2131 | Breasfeeding Still | Q2131 | NUMERIC(1)
-* Are you still breastfeeding last baby?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q2131
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q2141 | Breasfeeding Duration | Q2141 | NUMERIC(2)
-* What age was last baby when you stopped to breasfeed him/her? > Months
-Q2141
-  MUSTENTER
-END
-
-* Q301.1 | AIDS Disease | Q3011 | NUMERIC(1)
-* Have you ever heard of an illness called AIDS?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3011
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q302.1 | AIDS During Pregnancy | Q3021 | NUMERIC(1)
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
-Q3021
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
-END
-
-* Q302.2 | AIDS During Delivery | Q3022 | NUMERIC(1)
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
-Q3022
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
-END
-
-* Q302.3 | AIDS By Breastfeeding | Q3023 | NUMERIC(1)
-* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
-Q3023
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
-END
-
-* Q303.1 | AIDS Drug Given | Q3031 | NUMERIC(1)
-* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
-Q3031
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
-END
-
-* Q304.1 | AIDS Antenatal Test Offered | Q3041 | NUMERIC(1)
-* Were you offered a test for the AIDS virus as part of your antenatal care?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3041
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q305.1 | AIDS Antenatal Test | Q3051 | NUMERIC(1)
-* I don\'t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3051
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q306.1 | AIDS Antenatal Test When | Q3061 | NUMERIC(1)
-* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
-Q3061
-  MUSTENTER
-  RANGE 0 9
-END
-
-* Q307.1 | AIDS Antenatal Test Where | Q3071 | NUMERIC(2)
-* Where was the test done?
-* Allowed Values
-*    11: Public sector: Government hospital
-*    12: Public sector: Government health center
-*    13: Public sector: Stand-alone VCT Center
-*    14: Public sector: Family planning clinic
-*    15: Public sector: Mobile clinic
-*    16: Public sector: Fieldworker
-*    17: Public sector: School based clinic
-*    18: Public sector: Other public
-*    21: Private medical sector: Private hospital/clinic/doctor
-*    22: Private medical sector: Stand-alone VCT Center
-*    23: Private medical sector: Pharmacy
-*    24: Private medical sector: Mobile clinic
-*    25: Private medical sector: Fieldworker
-*    26: Private medical sector: School based clinic
-*    27: Private medical sector: Other private
-*    31: Other source: Home
-*    32: Other source: Correctional facility
-*    98: Other
-Q3071
-  MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
-  TYPE COMMENT
-END
-
-* Q307.2 | AIDS Antenatal Test Where (Other) | Q3072 | VARCHAR(32)
-* Where was the test done? > Specify
-Q3072
-  MUSTENTER
-END
-
-* Q308.1 | AIDS Antenatal Test Got | Q3081 | NUMERIC(1)
-* I don\'t want to know the results, but did you get the results of the test?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3081
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q309.1 | AIDS Antenatal Test Counceling | Q3091 | NUMERIC(1)
-* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
-Q3091
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
-END
-
-* Q3101 | AIDS Pregnancy Test Offered | Q3101 | NUMERIC(1)
-* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3101
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q3111 | AIDS Pregnancy Test | Q3111 | NUMERIC(1)
-* I don\'t want to know the results, but were you tested for the AIDS virus at that time?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q3111
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q3121 | AIDS Pregnancy Test Got | Q3121 | NUMERIC(1)
-* I don\'t want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1915,8 +1721,8 @@ Q3121
   TYPE COMMENT
 END
 
-* Q3131 | k | Q3131 | NUMERIC(1)
-* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
+* Q3131 | Breasfeeding Still | Q3131 | NUMERIC(1)
+* Are you still breastfeeding last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1926,41 +1732,101 @@ Q3131
   TYPE COMMENT
 END
 
-* Q3141 | AIDS Test Last | Q3141 | NUMERIC(2)
-* How many months ago was your most recent HIV test? > Months ago
+* Q3141 | Breasfeeding Duration | Q3141 | NUMERIC(2)
+* What age was last baby when you stopped to breasfeed him/her? > Months
 Q3141
   MUSTENTER
 END
 
-* Q3151 | Column_102 | Q3151 | NUMERIC(1)
-* I don\'t want to know the results, but have you ever been tested to see if you have the AIDS virus?
+* Q401.1 | AIDS Disease | Q4011 | NUMERIC(1)
+* Have you ever heard of an illness called AIDS?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3151
+Q4011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q3161 | Column_103 | Q3161 | NUMERIC(2)
-* How many months ago was your most recent HIV test?
-Q3161
-  MUSTENTER
-END
-
-* Q3171 | Column_104 | Q3171 | NUMERIC(1)
-* I don\'t want to know the results, but did you get the results of the test?
+* Q402.1 | AIDS During Pregnancy | Q4021 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3171
+*    8: Don't know
+Q4021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q402.2 | AIDS During Delivery | Q4022 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q4022
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q402.3 | AIDS By Breastfeeding | Q4023 | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q4023
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q403.1 | AIDS Drug Given | Q4031 | NUMERIC(1)
+* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q4031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q404.1 | AIDS Antenatal Test Offered | Q4041 | NUMERIC(1)
+* Were you offered a test for the AIDS virus as part of your antenatal care?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q3181 | Column_106 | Q3181 | NUMERIC(2)
+* Q405.1 | AIDS Antenatal Test | Q4051 | NUMERIC(1)
+* I don\'t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q406.1 | AIDS Antenatal Test When | Q4061 | NUMERIC(1)
+* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
+Q4061
+  MUSTENTER
+  RANGE 0 9
+END
+
+* Q407.1 | AIDS Antenatal Test Where | Q4071 | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -1981,30 +1847,164 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-Q3181
+Q4071
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q3182 | Column_107 | Q3182 | VARCHAR(32)
+* Q407.2 | AIDS Antenatal Test Where (Other) | Q4072 | VARCHAR(32)
 * Where was the test done? > Specify
-Q3182
+Q4072
   MUSTENTER
 END
 
-* Q3191 | AIDS Test Place | Q3191 | NUMERIC(1)
-* Do you know of a place where people can go to get tested for the AIDS virus?
+* Q408.1 | AIDS Antenatal Test Got | Q4081 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q3191
+Q4081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q3201 | AIDS Test Place Where | Q3201 | VARCHAR(1)
+* Q409.1 | AIDS Antenatal Test Counceling | Q4091 | NUMERIC(1)
+* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q4091
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q4101 | AIDS Pregnancy Test Offered | Q4101 | NUMERIC(1)
+* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4101
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4111 | AIDS Pregnancy Test | Q4111 | NUMERIC(1)
+* I don\'t want to know the results, but were you tested for the AIDS virus at that time?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4111
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4121 | AIDS Pregnancy Test Got | Q4121 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4131 | k | Q4131 | NUMERIC(1)
+* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4131
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4141 | AIDS Test Last | Q4141 | NUMERIC(2)
+* How many months ago was your most recent HIV test? > Months ago
+Q4141
+  MUSTENTER
+END
+
+* Q4151 | Column_102 | Q4151 | NUMERIC(1)
+* I don\'t want to know the results, but have you ever been tested to see if you have the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4161 | Column_103 | Q4161 | NUMERIC(2)
+* How many months ago was your most recent HIV test?
+Q4161
+  MUSTENTER
+END
+
+* Q4171 | Column_104 | Q4171 | NUMERIC(1)
+* I don\'t want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4171
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4181 | Column_106 | Q4181 | NUMERIC(2)
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q4181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  TYPE COMMENT
+END
+
+* Q4182 | Column_107 | Q4182 | VARCHAR(32)
+* Where was the test done? > Specify
+Q4182
+  MUSTENTER
+END
+
+* Q4191 | AIDS Test Place | Q4191 | NUMERIC(1)
+* Do you know of a place where people can go to get tested for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4191
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4201 | AIDS Test Place Where | Q4201 | VARCHAR(1)
 * Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
@@ -2021,75 +2021,31 @@ END
 *    L: Private medical sector: Fieldworker
 *    M: Private medical sector: Other private
 *    X: Other
-Q3201
+Q4201
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2 SHOW
   TYPE COMMENT
 END
 
-* Q3202 | AIDS Test Place Where (Where) | Q3202 | VARCHAR(32)
+* Q4202 | AIDS Test Place Where (Where) | Q4202 | VARCHAR(32)
 * Where is that? > Specify
-Q3202
+Q4202
   MUSTENTER
 END
 
-* Q401.1 | Consent | Q4011 | NUMERIC(1)
+* Q501.1 | Consent | Q5011 | NUMERIC(1)
 * Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-Q4011
-  MUSTENTER
-  COMMENT LEGAL USE D_N_CONSENT SHOW
-  TYPE COMMENT
-END
-
-* Q402.1 | Consent Ask | Q4021 | NUMERIC(1)
-* Consent Ask
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4021
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q403.1 | Consent Parent | Q4031 | NUMERIC(1)
-* Consent Parent
-* Allowed Values
-*    1: Granted
-*    2: Refused
-Q4031
-  MUSTENTER
-  COMMENT LEGAL USE D_N_CONSENT SHOW
-  TYPE COMMENT
-END
-
-* Q404.1 | Consent Parent Ask | Q4041 | NUMERIC(1)
-* Consent Parent Ask
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4041
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q501.1 | AIDS Infected | Q5011 | NUMERIC(1)
-* Did you know you were infected with AIDS?
-* Allowed Values
-*    1: Yes
-*    2: No
 Q5011
   MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT
 END
 
-* Q502.1 | AIDS Infected Test | Q5021 | NUMERIC(1)
-* Have you already had a HIV test that showed you were infected with AIDS? 
+* Q502.1 | Consent Ask | Q5021 | NUMERIC(1)
+* Consent Ask
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2099,27 +2055,71 @@ Q5021
   TYPE COMMENT
 END
 
-* Q503.1 | AIDS Positive Test Month | Q5031 | NUMERIC(2)
+* Q503.1 | Consent Parent | Q5031 | NUMERIC(1)
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q5031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT SHOW
+  TYPE COMMENT
+END
+
+* Q504.1 | Consent Parent Ask | Q5041 | NUMERIC(1)
+* Consent Parent Ask
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q601.1 | AIDS Infected | Q6011 | NUMERIC(1)
+* Did you know you were infected with AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q6011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q602.1 | AIDS Infected Test | Q6021 | NUMERIC(1)
+* Have you already had a HIV test that showed you were infected with AIDS? 
+* Allowed Values
+*    1: Yes
+*    2: No
+Q6021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q603.1 | AIDS Positive Test Month | Q6031 | NUMERIC(2)
 * When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
-Q5031
+Q6031
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q503.2 | AIDS Positive Test Year | Q5032 | NUMERIC(4)
+* Q603.2 | AIDS Positive Test Year | Q6032 | NUMERIC(4)
 * When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
-Q5032
+Q6032
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q504.1 | AIDS Positive Test Where | Q5041 | NUMERIC(2)
+* Q604.1 | AIDS Positive Test Where | Q6041 | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2140,219 +2140,219 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-Q5041
+Q6041
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q504.2 | AIDS Positive Test Where (Other) | Q5042 | VARCHAR(32)
+* Q604.2 | AIDS Positive Test Where (Other) | Q6042 | VARCHAR(32)
 * Where was the test done? > Specify
-Q5042
+Q6042
   MUSTENTER
 END
 
-* Q505.1 | AIDS Care | Q5051 | NUMERIC(1)
+* Q605.1 | AIDS Care | Q6051 | NUMERIC(1)
 * After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5051
+Q6051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q506.1 | AIDS Blood Sample | Q5061 | NUMERIC(1)
+* Q606.1 | AIDS Blood Sample | Q6061 | NUMERIC(1)
 * Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-Q5061
+Q6061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT
 END
 
-* Q507.1 | AIDS Blood Sample Result | Q5071 | NUMERIC(1)
+* Q607.1 | AIDS Blood Sample Result | Q6071 | NUMERIC(1)
 * Did you get the results of this exam?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-Q5071
+Q6071
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT
 END
 
-* Q508.1 | ART Initiated | Q5081 | NUMERIC(1)
+* Q608.1 | ART Initiated | Q6081 | NUMERIC(1)
 * Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5081
+Q6081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q509.1 | ART Start Month | Q5091 | NUMERIC(2)
+* Q609.1 | ART Start Month | Q6091 | NUMERIC(2)
 * When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
-Q5091
+Q6091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q509.2 | ART Start Year | Q5092 | NUMERIC(4)
+* Q609.2 | ART Start Year | Q6092 | NUMERIC(4)
 * When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
-Q5092
+Q6092
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q5101 | ART Still | Q5101 | NUMERIC(1)
+* Q6101 | ART Still | Q6101 | NUMERIC(1)
 * Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5101
+Q6101
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q5111 | ART Last Consultation Month | Q5111 | NUMERIC(2)
+* Q6111 | ART Last Consultation Month | Q6111 | NUMERIC(2)
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
-Q5111
+Q6111
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q5112 | ART Last Consultation Year | Q5112 | NUMERIC(4)
+* Q6112 | ART Last Consultation Year | Q6112 | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
-Q5112
+Q6112
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q5121 | ART Where | Q5121 | VARCHAR(32)
+* Q6121 | ART Where | Q6121 | VARCHAR(32)
 * Where are you now receiving ART?
-Q5121
+Q6121
   MUSTENTER
 END
 
-* Q5122 | ART Where (Other) | Q5122 | VARCHAR(32)
+* Q6122 | ART Where (Other) | Q6122 | VARCHAR(32)
 * Where are you now receiving ART? > Specify
-Q5122
+Q6122
   MUSTENTER
 END
 
-* Q5131 | ART District | Q5131 | NUMERIC(1)
+* Q6131 | ART District | Q6131 | NUMERIC(1)
 * In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
 *    3: Other
-Q5131
+Q6131
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT SHOW
   TYPE COMMENT
 END
 
-* Q5132 | ART District (Other) | Q5132 | VARCHAR(32)
+* Q6132 | ART District (Other) | Q6132 | VARCHAR(32)
 * In which district is this place? > Specify
-Q5132
+Q6132
   MUSTENTER
 END
 
-* Q5141 | ART Place | Q5141 | VARCHAR(32)
+* Q6141 | ART Place | Q6141 | VARCHAR(32)
 * What is the name of this place?
-Q5141
+Q6141
   MUSTENTER
 END
 
-* Q5151 | AIDS Follow | Q5151 | NUMERIC(1)
+* Q6151 | AIDS Follow | Q6151 | NUMERIC(1)
 * Are you still followed up for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5151
+Q6151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q5161 | AIDS Last Consultation Month | Q5161 | NUMERIC(2)
+* Q6161 | AIDS Last Consultation Month | Q6161 | NUMERIC(2)
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
-Q5161
+Q6161
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q5162 | AIDS Last Consultation Year | Q5162 | NUMERIC(4)
+* Q6162 | AIDS Last Consultation Year | Q6162 | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
-Q5162
+Q6162
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q5171 | AIDS Where | Q5171 | VARCHAR(32)
+* Q6171 | AIDS Where | Q6171 | VARCHAR(32)
 * Where are you now receiving care?
-Q5171
+Q6171
   MUSTENTER
 END
 
-* Q5172 | AIDS Where (Other) | Q5172 | VARCHAR(32)
+* Q6172 | AIDS Where (Other) | Q6172 | VARCHAR(32)
 * Where are you now receiving care? > Specify
-Q5172
+Q6172
   MUSTENTER
 END
 
-* Q5181 | AIDS District | Q5181 | NUMERIC(1)
+* Q6181 | AIDS District | Q6181 | NUMERIC(1)
 * In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
 *    3: Other
-Q5181
+Q6181
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT SHOW
   TYPE COMMENT
 END
 
-* Q5182 | AIDS District (Other) | Q5182 | VARCHAR(32)
+* Q6182 | AIDS District (Other) | Q6182 | VARCHAR(32)
 * In which district is this place? > Specify
-Q5182
+Q6182
   MUSTENTER
 END
 
-* Q5191 | AIDS Place | Q5191 | VARCHAR(32)
+* Q6191 | AIDS Place | Q6191 | VARCHAR(32)
 * What is the name of this place?
-Q5191
+Q6191
   MUSTENTER
 END
 
-* Q5201 | AIDS Stop | Q5201 | NUMERIC(2)
+* Q6201 | AIDS Stop | Q6201 | NUMERIC(2)
 * Why did you stop?
 * Allowed Values
 *    1: No one was attending
@@ -2366,67 +2366,67 @@ END
 *    9: Transport cost
 *    10: Stop pmtct
 *    96: Other
-Q5201
+Q6201
   MUSTENTER
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON SHOW
   TYPE COMMENT
 END
 
-* Q5202 | AIDS Stop (Other) | Q5202 | VARCHAR(32)
+* Q6202 | AIDS Stop (Other) | Q6202 | VARCHAR(32)
 * Why did you stop? > Specify
-Q5202
+Q6202
   MUSTENTER
 END
 
-* Q5211 | ART Pregnancy | Q5211 | NUMERIC(1)
+* Q6211 | ART Pregnancy | Q6211 | NUMERIC(1)
 * Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5211
+Q6211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q5221 | ART Delivery | Q5221 | NUMERIC(1)
+* Q6221 | ART Delivery | Q6221 | NUMERIC(1)
 * After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q5221
+Q6221
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q601.1 | Comment Question | Q6011 | VARCHAR(32)
+* Q701.1 | Comment Question | Q7011 | VARCHAR(32)
 * Interviewer\'s observations > Comments about specific questions
-Q6011
+Q7011
   MUSTENTER
 END
 
-* Q601.2 | Comment Respondent | Q6012 | VARCHAR(32)
+* Q701.2 | Comment Respondent | Q7012 | VARCHAR(32)
 * Interviewer\'s observations > Comments about respondent
-Q6012
+Q7012
   MUSTENTER
 END
 
-* Q601.3 | Comment Other | Q6013 | VARCHAR(32)
+* Q701.3 | Comment Other | Q7013 | VARCHAR(32)
 * Interviewer\'s observations > Any other comments
-Q6013
+Q7013
   MUSTENTER
 END
 
-* Q602.1 | Comment Supervisor | Q6021 | VARCHAR(32)
+* Q702.1 | Comment Supervisor | Q7021 | VARCHAR(32)
 * Supervisor\'s observations
-Q6021
+Q7021
   MUSTENTER
 END
 
-* Q603.1 | Comment Editor | Q6031 | VARCHAR(32)
+* Q703.1 | Comment Editor | Q7031 | VARCHAR(32)
 * Editor\'s observations
-Q6031
+Q7031
   MUSTENTER
 END
 
