@@ -317,7 +317,7 @@ For Each oTable In oTables
 
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) And (ExtendedAttribute(oColumn, "Label")<>"") Then
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
