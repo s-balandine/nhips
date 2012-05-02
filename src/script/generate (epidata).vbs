@@ -324,10 +324,10 @@ For Each oTable In oTables
 				WScript.Echo "    Attribute: " & oColumn.Name
 				Desc = Desc & vbCrLf
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "NameEpiData") & " | "
-				Desc = Desc & "* " & oColumn.Name & " | "
-				Desc = Desc & "* " & oColumn.Code & " | "
-				Desc = Desc & "* " & oColumn.DataType & vbCrLf
-				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
+				Desc = Desc & & oColumn.Name & " | "
+				Desc = Desc & & oColumn.Code & " | "
+				Desc = Desc & & oColumn.DataType & vbCrLf
+				Desc = Desc & & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
 				Else
