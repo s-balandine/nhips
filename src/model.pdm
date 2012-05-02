@@ -6471,7 +6471,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,479={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S308.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S307.1
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,44=Can you read any part of the sentence to me?
@@ -6499,7 +6499,7 @@ END
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,403={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S308.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S307.2
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,16=Specify language
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,44=Can you read any part of the sentence to me?
@@ -6527,7 +6527,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,482={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=109
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S309.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S308.1
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,123=For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,64=JUMPS RESET
@@ -6555,8 +6555,8 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,362={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3101
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,363={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S309.1
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,13=Specify years
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,54=How long have you been living continuously in Ndhiwa? 
@@ -6583,7 +6583,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,324={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=111
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3111
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3101
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,81=Just before you moved here, did you live in a city a town, or in the countryside?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
@@ -6618,7 +6618,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,275={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=112
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3121
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3111
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=What is your ethnic group/tribe?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
@@ -6639,7 +6639,7 @@ END
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,333={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=112.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3122
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3112
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=What is your ethnic group/tribe?
@@ -6661,7 +6661,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,401={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=113.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3131
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3121
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,16=Number of nights
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,90=In the last 12 months, how many times have you been away from home for one or more nights?
@@ -6687,7 +6687,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,273={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,86=In the last 12 months, have you been away from home for more than one month at a time?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3131
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6709,7 +6709,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,257={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Are you currently married or living together with a man as if married?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3151
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3141
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6733,7 +6733,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,257={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Are you currently married or living together with a man as if married?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3152
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3142
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6757,7 +6757,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,260={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=What is your marital status now: are you widowed, divorced, or separated?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3161
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3151
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6780,7 +6780,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,260={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Is your (husband/partner) living with you now or is he staying elsewhere?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3171
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3161
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6802,7 +6802,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,264={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,77=Aside from your own housework, have you done any work in the last seven days?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3181
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3171
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6824,7 +6824,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,263={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=In the last seven days, have you done any of these things or any other work?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3191
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3181
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 
 </a:ExtendedAttributesText>
@@ -6847,7 +6847,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,369={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,181=Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3201
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3191
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6869,7 +6869,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,232={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,45=Have you done any work in the last 12 months?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3211
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3201
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6914,7 +6914,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 																									
 																									
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3221
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3211
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6937,7 +6937,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,279={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=Do you do this work for a member of your family, for someone else, or are you self-employed?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3231
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3221
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6960,7 +6960,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,279={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=Do you usually work throughout the year, or do you work seasonally, or only once in a while?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3241
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3231
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6988,7 +6988,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 																									
 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3251
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S3241
 
 </a:ExtendedAttributesText>
 <c:Domain>
