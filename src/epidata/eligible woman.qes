@@ -17,18 +17,18 @@ S201  Date                       ({S201.1})  Day of interview................##
                                  ({S201.3})  Year of interview.............####  
 --------------------------------------------------------------------------------
 S202  Actors on the field?                   Interviewer:
-                                 <A                                  >
+                                 ({S202.1})  <A                                  >
                                              Supervisor:
-                                 <A                                  >
+                                 ({S202.2})  <A                                  >
 --------------------------------------------------------------------------------
 S203  Result                     ({S203.1})  Result..........................##  
                                              Result (Other):
-                                 <A                               >
+                                 ({S203.2})     <A                               >
 --------------------------------------------------------------------------------
 S204  Actors at the office?                  Editor:
-                                 <A                                  >
+                                 ({S204.1})  <A                                  >
                                              Keyer:
-                                 <A                                  >
+                                 ({S204.2})  <A                                  >
 
 3.RESPONDEN\'T BACKGROUND
 ================================================================================
@@ -65,7 +65,7 @@ S308  Can you read any part of the sentence to me?
 
                                  ({S308.1})  ................................##  
                                              Specify language:
-                                 <A                               >
+                                 ({S308.2})     <A                               >
 --------------------------------------------------------------------------------
 S309  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the country side?
@@ -85,7 +85,7 @@ S312  What is your ethnic group/tribe?
 
                                  ({S312.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({S312.2})     <A                               >
 --------------------------------------------------------------------------------
 S313  In the last 12 months, how many times have you been away from home for 
       one or more nights?
@@ -130,8 +130,7 @@ S321  Have you done any work in the last 12 months?
                                  ({S321.1})  .................................#  
 --------------------------------------------------------------------------------
 S322  What is your occupation, that is, what kind of work do you mainly 
-      do?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    What is your occupation, that is, what kind of work do you mainly do?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-
+      do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 
                                  ({S322.1})  ................................##  
 --------------------------------------------------------------------------------
@@ -146,7 +145,7 @@ S324  Do you usually work throughout the year, or do you work seasonally, or
                                  ({S324.1})  .................................#  
 --------------------------------------------------------------------------------
 S325  Are you paid in cash or kind for this work or are you not paid at 
-      all?                                                                                                                                                                                                                                                                                                                                                                                                                
+      all?																																																																																																				
 
                                  ({S325.1})  .................................#  
 
@@ -205,7 +204,7 @@ Q202  Birth history number of last birth
 Q203  What name was given to your last baby?
 
                                              Name:
-                                 <A                               >
+                                 ({Q203.1})     <A                               >
 --------------------------------------------------------------------------------
 Q204  Is last baby still alive?  ({Q204.1})  .................................#  
 --------------------------------------------------------------------------------
@@ -215,13 +214,13 @@ Q205  Did you see anyone for antenatal care for this pregnancy?
 --------------------------------------------------------------------------------
 Q206  Whom did you see?          ({Q206.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q206.2})     <A                               >
 --------------------------------------------------------------------------------
 Q207  Where did you receive antenatal care for this pregnancy?
 
                                  ({Q207.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q207.2})     <A                               >
 --------------------------------------------------------------------------------
 Q208  How many months pregnant were you when you first received antenatal care 
       for this pregnancy?
@@ -236,7 +235,7 @@ Q2010  Who assisted with the delivery of last baby ?
 
                                  ({Q210.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q210.2})     <A                               >
 --------------------------------------------------------------------------------
 Q211  Where did you give birth to last baby?
 
@@ -298,7 +297,7 @@ Q307  How many months pregnant were you when you were first tested for the AIDS
 --------------------------------------------------------------------------------
 Q308  Where was the test done?   ({Q308.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q308.2})     <A                               >
 --------------------------------------------------------------------------------
 Q309  I don\'t want to know the results, but did you get the results of the 
       test?
@@ -352,7 +351,7 @@ Q319  I don\'t want to know the results, but did you get the results of the
 --------------------------------------------------------------------------------
 Q320  Where was the test done?   ({Q320.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q320.2})     <A                               >
 --------------------------------------------------------------------------------
 Q321  Do you know of a place where people can go to get tested for the AIDS 
       virus?
@@ -361,159 +360,159 @@ Q321  Do you know of a place where people can go to get tested for the AIDS
 --------------------------------------------------------------------------------
 Q322  Where is that?             ({Q322.1})  .................................<A>
                                              Specify:
-                                 <A                               >
+                                 ({Q322.2})     <A                               >
 --------------------------------------------------------------------------------
 Q323  Check Age                  
 
-4.ART COVERAGE
+4.HIV TESTING
 ================================================================================
 --------------------------------------------------------------------------------
-Q401  Did you know you were infected with AIDS?
-
-                                 ({Q401.1})  .................................#  
+Q401  Consent                    ({Q401.1})  .................................#  
 --------------------------------------------------------------------------------
-Q402  Have you already had a HIV test that showed you were infected with AIDS? 
-
-                                 ({Q402.1})  .................................#  
+Q402  Consent Ask                ({Q402.1})  .................................#  
 --------------------------------------------------------------------------------
-Q403  Check                      
+Q403  Consent Parent             ({Q403.1})  .................................#  
+--------------------------------------------------------------------------------
+Q404  Consent Parent Ask         ({Q404.1})  .................................#  
+--------------------------------------------------------------------------------
+Q405  Check Marital Statut       ({Q405.1})  .................................#  
+
+5.ART COVERAGE
+================================================================================
+--------------------------------------------------------------------------------
+Q501  Did you know you were infected with AIDS?
+
+                                 ({Q501.1})  .................................#  
+--------------------------------------------------------------------------------
+Q502  Have you already had a HIV test that showed you were infected with AIDS? 
+
+                                 ({Q502.1})  .................................#  
+--------------------------------------------------------------------------------
+Q503  Check                      
                                  
 --------------------------------------------------------------------------------
-Q404  Consent                    ({Q404.1})  .................................#  
+Q504  Consent                    ({Q504.1})  .................................#  
 --------------------------------------------------------------------------------
-Q405  Check                      
+Q505  Check                      
                                  
 --------------------------------------------------------------------------------
-Q406  When were you first tested positive for the AIDS virus?
+Q506  When were you first tested positive for the AIDS virus?
 
-                                 ({Q406.1})  Month...........................##  
-                                 ({Q406.2})  Year..........................####  
+                                 ({Q506.1})  Month...........................##  
+                                 ({Q506.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q407  Where was the test done?   ({Q407.1})  ................................##  
+Q507  Where was the test done?   ({Q507.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q507.2})     <A                               >
 --------------------------------------------------------------------------------
-Q408  After you discovered you were infected with the virus that causes AIDS, 
+Q508  After you discovered you were infected with the virus that causes AIDS, 
       did you ever seek care for the AIDS infection?
 
-                                 ({Q408.1})  .................................#  
+                                 ({Q508.1})  .................................#  
 --------------------------------------------------------------------------------
-Q409  Did you get some blood sample taken to check the CD4 when you first went 
+Q509  Did you get some blood sample taken to check the CD4 when you first went 
       to receive care for the AIDS virus?
 
-                                 ({Q409.1})  .................................#  
+                                 ({Q509.1})  .................................#  
 --------------------------------------------------------------------------------
-Q4010  Did you get the results of this exam?
+Q5010  Did you get the results of this exam?
 
-                                 ({Q410.1})  .................................#  
+                                 ({Q510.1})  .................................#  
 --------------------------------------------------------------------------------
-Q411  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
+Q511  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
       AIDS virus?
 
-                                 ({Q411.1})  .................................#  
+                                 ({Q511.1})  .................................#  
 --------------------------------------------------------------------------------
-Q412  When did you first start Antiretroviral therapy?
+Q512  When did you first start Antiretroviral therapy?
 
-                                 ({Q412.1})  Month...........................##  
-                                 ({Q412.2})  Year..........................####  
+                                 ({Q512.1})  Month...........................##  
+                                 ({Q512.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q413  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
+Q513  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
       AIDS virus?
 
-                                 ({Q413.1})  .................................#  
+                                 ({Q513.1})  .................................#  
 --------------------------------------------------------------------------------
-Q414  When was your last consultation?
+Q514  When was your last consultation?
 
-                                 ({Q414.1})  Month...........................##  
-                                 ({Q414.2})  Year..........................####  
+                                 ({Q514.1})  Month...........................##  
+                                 ({Q514.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q415  Where are you now receiving ART?
+Q515  Where are you now receiving ART?
 
                                  
                                              Specify:
-                                 <A                               >
+                                 ({Q515.2})     <A                               >
 --------------------------------------------------------------------------------
-Q416  In which district is this place?
+Q516  In which district is this place?
 
-                                 ({Q416.1})  .................................#  
+                                 ({Q516.1})  .................................#  
                                              Specify:
-                                 <A                               >
+                                 ({Q516.2})     <A                               >
 --------------------------------------------------------------------------------
-Q417  What is the name of this place?
+Q517  What is the name of this place?
 
                                              :
-                                 <A                               >
+                                 ({Q517.1})     <A                               >
 --------------------------------------------------------------------------------
-Q418  Are you still followed up for the AIDS infection?
+Q518  Are you still followed up for the AIDS infection?
 
-                                 ({Q418.1})  .................................#  
+                                 ({Q518.1})  .................................#  
 --------------------------------------------------------------------------------
-Q419  When was your last consultation?
+Q519  When was your last consultation?
 
-                                 ({Q419.1})  Month...........................##  
-                                 ({Q419.2})  Year..........................####  
+                                 ({Q519.1})  Month...........................##  
+                                 ({Q519.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q420  Where are you now receiving care?
+Q520  Where are you now receiving care?
 
                                  
                                              Specify:
-                                 <A                               >
+                                 ({Q520.2})     <A                               >
 --------------------------------------------------------------------------------
-Q421  In which district is this place?
+Q521  In which district is this place?
 
-                                 ({Q421.1})  .................................#  
+                                 ({Q521.1})  .................................#  
                                              Specify:
-                                 <A                               >
+                                 ({Q521.2})     <A                               >
 --------------------------------------------------------------------------------
-Q422  What is the name of this place?
+Q522  What is the name of this place?
 
                                              :
-                                 <A                               >
+                                 ({Q522.1})     <A                               >
 --------------------------------------------------------------------------------
-Q423  Why did you stop?          ({Q423.1})  ................................##  
+Q523  Why did you stop?          ({Q523.1})  ................................##  
                                              Specify:
-                                 <A                               >
+                                 ({Q523.2})     <A                               >
 --------------------------------------------------------------------------------
-Q424  Check                      
+Q524  Check                      
                                  
                                  
 --------------------------------------------------------------------------------
-Q425  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
+Q525  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
 
-                                 ({Q425.1})  .................................#  
+                                 ({Q525.1})  .................................#  
 --------------------------------------------------------------------------------
-Q426  After delivery, did your child receive ART, Antiretroviral Treatment, to 
+Q526  After delivery, did your child receive ART, Antiretroviral Treatment, to 
       prevent acquiring the AIDS virus?
 
-                                 ({Q426.1})  .................................#  
+                                 ({Q526.1})  .................................#  
 
-5.OBSERVATIONS
+6.OBSERVATIONS
 ================================================================================
 --------------------------------------------------------------------------------
-Q501  Interviewer\'s observations            Comments about specific questions:
-                                 <A                                                                                                                                                                                                                                                               >
+Q601  Interviewer\'s observations            Comments about specific questions:
+                                 ({Q601.1})     <A                               >
                                              Comments about respondent:
-                                 <A                                                                                                                                                                                                                                                               >
+                                 ({Q601.2})     <A                               >
                                              Any other comments:
-                                 <A                                                                                                                                                                                                                                                               >
+                                 ({Q601.3})     <A                               >
 --------------------------------------------------------------------------------
-Q502  Supervisor\'s observations             :
-                                 <A                                                                                                                                                                                                                                                               >
+Q602  Supervisor\'s observations             :
+                                 ({Q602.1})     <A                               >
 --------------------------------------------------------------------------------
-Q503  Editor\'s observations                 :
-                                 <A                                                                                                                                                                                                                                                               >
-
-6.HIV TESTING
-================================================================================
---------------------------------------------------------------------------------
-Q601  Consent                    ({Q601.1})  .................................#  
---------------------------------------------------------------------------------
-Q602  Consent Ask                ({Q602.1})  .................................#  
---------------------------------------------------------------------------------
-Q603  Consent Parent             ({Q603.1})  .................................#  
---------------------------------------------------------------------------------
-Q604  Consent Parent Ask         ({Q604.1})  .................................#  
---------------------------------------------------------------------------------
-Q605  Check Marital Statut       ({Q605.1})  .................................#  
+Q603  Editor\'s observations                 :
+                                 ({Q603.1})     <A                               >
 
