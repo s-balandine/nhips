@@ -72,7 +72,7 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="Eligible Women"
+Form="Eligible Woman"
 'Form="Survey Supervisor"
 
 For Each oTable In oTables
