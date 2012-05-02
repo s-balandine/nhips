@@ -58,96 +58,93 @@ S306  What is the highest (grade/form/year) you completed at that level?
 
                                  ({S306.1})  ................................##  
 --------------------------------------------------------------------------------
-S307  Continued if school is primary...
+S307  Can you read any part of the sentence to me?
 
---------------------------------------------------------------------------------
-S308  Can you read any part of the sentence to me?
-
-                                 ({S308.1})  ................................##  
+                                 ({S307.1})  ................................##  
                                              Specify language:
-                                 ({S308.2})     <A                               >
+                                 ({S307.2})     <A                               >
 --------------------------------------------------------------------------------
-S309  For most of the time until you were 12 years old, did you live in 
+S308  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the country side?
 
-                                 ({S309.1})  .................................#  
+                                 ({S308.1})  .................................#  
 --------------------------------------------------------------------------------
-S3010  How long have you been living continuously in Ndhiwa? 
+S309  How long have you been living continuously in Ndhiwa? 
 
-                                 ({S310.1})  Specify years...................##  
+                                 ({S309.1})  Specify years...................##  
 --------------------------------------------------------------------------------
-S311  Just before you moved here, did you live in a city a town, or in the 
+S3010  Just before you moved here, did you live in a city a town, or in the 
       countryside?
 
-                                 ({S311.1})  ................................##  
+                                 ({S310.1})  ................................##  
 --------------------------------------------------------------------------------
-S312  What is your ethnic group/tribe?
+S311  What is your ethnic group/tribe?
 
-                                 ({S312.1})  ................................##  
+                                 ({S311.1})  ................................##  
                                              Specify:
-                                 ({S312.2})     <A                               >
+                                 ({S311.2})     <A                               >
 --------------------------------------------------------------------------------
-S313  In the last 12 months, how many times have you been away from home for 
+S312  In the last 12 months, how many times have you been away from home for 
       one or more nights?
 
-                                 ({S313.1})  Number of nights................##  
+                                 ({S312.1})  Number of nights................##  
 --------------------------------------------------------------------------------
-S314  In the last 12 months, have you been away from home for more than one 
+S313  In the last 12 months, have you been away from home for more than one 
       month at a time?
 
-                                 ({S314.1})  ..............................####  
+                                 ({S313.1})  ..............................####  
 --------------------------------------------------------------------------------
-S315  Are you currently married or living together with a man as if married?
+S314  Are you currently married or living together with a man as if married?
+
+                                 ({S314.1})  .................................#  
+                                 ({S314.2})  .................................#  
+--------------------------------------------------------------------------------
+S315  What is your marital status now: are you widowed, divorced, or separated?
 
                                  ({S315.1})  .................................#  
-                                 ({S315.2})  .................................#  
 --------------------------------------------------------------------------------
-S316  What is your marital status now: are you widowed, divorced, or separated?
+S316  Is your (husband/partner) living with you now or is he staying elsewhere?
 
-                                 ({S316.1})  .................................#  
+                                 ({S316.1})  ................................##  
 --------------------------------------------------------------------------------
-S317  Is your (husband/partner) living with you now or is he staying elsewhere?
-
-                                 ({S317.1})  ................................##  
---------------------------------------------------------------------------------
-S318  Aside from your own housework, have you done any work in the last seven 
+S317  Aside from your own housework, have you done any work in the last seven 
       days?
+
+                                 ({S317.1})  .................................#  
+--------------------------------------------------------------------------------
+S318  In the last seven days, have you done any of these things or any other 
+      work?
 
                                  ({S318.1})  .................................#  
 --------------------------------------------------------------------------------
-S319  In the last seven days, have you done any of these things or any other 
-      work?
+S319  Although you did not work in the last seven days, do you have any job or 
+      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 
                                  ({S319.1})  .................................#  
 --------------------------------------------------------------------------------
-S320  Although you did not work in the last seven days, do you have any job or 
-      business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
+S320  Have you done any work in the last 12 months?
 
                                  ({S320.1})  .................................#  
 --------------------------------------------------------------------------------
-S321  Have you done any work in the last 12 months?
-
-                                 ({S321.1})  .................................#  
---------------------------------------------------------------------------------
-S322  What is your occupation, that is, what kind of work do you mainly 
+S321  What is your occupation, that is, what kind of work do you mainly 
       do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 
-                                 ({S322.1})  ................................##  
+                                 ({S321.1})  ................................##  
 --------------------------------------------------------------------------------
-S323  Do you do this work for a member of your family, for someone else, or are 
+S322  Do you do this work for a member of your family, for someone else, or are 
       you self-employed?
+
+                                 ({S322.1})  .................................#  
+--------------------------------------------------------------------------------
+S323  Do you usually work throughout the year, or do you work seasonally, or 
+      only once in a while?
 
                                  ({S323.1})  .................................#  
 --------------------------------------------------------------------------------
-S324  Do you usually work throughout the year, or do you work seasonally, or 
-      only once in a while?
-
-                                 ({S324.1})  .................................#  
---------------------------------------------------------------------------------
-S325  Are you paid in cash or kind for this work or are you not paid at 
+S324  Are you paid in cash or kind for this work or are you not paid at 
       all?																																																																																																				
 
-                                 ({S325.1})  .................................#  
+                                 ({S324.1})  .................................#  
 
 1.REPRODUCTION
 ================================================================================
