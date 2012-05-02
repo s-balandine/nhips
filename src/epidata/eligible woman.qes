@@ -309,60 +309,56 @@ Q3010  All women are supposed to receive counseling after being tested. After
 
                                  ({Q310.1})  .................................#  
 --------------------------------------------------------------------------------
-Q311  Check                      
---------------------------------------------------------------------------------
-Q312  Between the time you went for delivery but before the baby was born, were 
+Q311  Between the time you went for delivery but before the baby was born, were 
       you offered a test for the AIDS virus?
+
+                                 ({Q311.1})  .................................#  
+--------------------------------------------------------------------------------
+Q312  I don\'t want to know the results, but were you tested for the AIDS virus 
+      at that time?
 
                                  ({Q312.1})  .................................#  
 --------------------------------------------------------------------------------
-Q313  I don\'t want to know the results, but were you tested for the AIDS virus 
-      at that time?
+Q313  I don\'t want to know the results, but did you get the results of the 
+      test?
 
                                  ({Q313.1})  .................................#  
 --------------------------------------------------------------------------------
-Q314  I don\'t want to know the results, but did you get the results of the 
-      test?
+Q314  Have you been tested for the AIDS virus since that time you were tested 
+      during your pregnancy?
 
                                  ({Q314.1})  .................................#  
 --------------------------------------------------------------------------------
-Q315  Have you been tested for the AIDS virus since that time you were tested 
-      during your pregnancy?
+Q315  How many months ago was your most recent HIV test?
 
-                                 ({Q315.1})  .................................#  
+                                 ({Q315.1})  Months ago......................##  
 --------------------------------------------------------------------------------
-Q316  How many months ago was your most recent HIV test?
-
-                                 ({Q316.1})  Months ago......................##  
---------------------------------------------------------------------------------
-Q317  I don\'t want to know the results, but have you ever been tested to see 
+Q316  I don\'t want to know the results, but have you ever been tested to see 
       if you have the AIDS virus?
 
-                                 ({Q317.1})  .................................#  
+                                 ({Q316.1})  .................................#  
 --------------------------------------------------------------------------------
-Q318  How many months ago was your most recent HIV test?
+Q317  How many months ago was your most recent HIV test?
 
-                                 ({Q318.1})  ................................##  
+                                 ({Q317.1})  ................................##  
 --------------------------------------------------------------------------------
-Q319  I don\'t want to know the results, but did you get the results of the 
+Q318  I don\'t want to know the results, but did you get the results of the 
       test?
 
-                                 ({Q319.1})  .................................#  
+                                 ({Q318.1})  .................................#  
 --------------------------------------------------------------------------------
-Q320  Where was the test done?   ({Q320.1})  ................................##  
+Q319  Where was the test done?   ({Q319.1})  ................................##  
                                              Specify:
-                                 ({Q320.2})     <A                               >
+                                 ({Q319.2})     <A                               >
 --------------------------------------------------------------------------------
-Q321  Do you know of a place where people can go to get tested for the AIDS 
+Q320  Do you know of a place where people can go to get tested for the AIDS 
       virus?
 
-                                 ({Q321.1})  .................................#  
+                                 ({Q320.1})  .................................#  
 --------------------------------------------------------------------------------
-Q322  Where is that?             ({Q322.1})  .................................<A>
+Q321  Where is that?             ({Q321.1})  .................................<A>
                                              Specify:
-                                 ({Q322.2})     <A                               >
---------------------------------------------------------------------------------
-Q323  Check Age                  
+                                 ({Q321.2})     <A                               >
 
 4.HIV TESTING
 ================================================================================
@@ -374,8 +370,6 @@ Q402  Consent Ask                ({Q402.1})  .................................#
 Q403  Consent Parent             ({Q403.1})  .................................#  
 --------------------------------------------------------------------------------
 Q404  Consent Parent Ask         ({Q404.1})  .................................#  
---------------------------------------------------------------------------------
-Q405  Check Marital Statut       ({Q405.1})  .................................#  
 
 5.ART COVERAGE
 ================================================================================
@@ -388,117 +382,107 @@ Q502  Have you already had a HIV test that showed you were infected with AIDS?
 
                                  ({Q502.1})  .................................#  
 --------------------------------------------------------------------------------
-Q503  Check                      
-                                 
---------------------------------------------------------------------------------
-Q504  Consent                    ({Q504.1})  .................................#  
---------------------------------------------------------------------------------
-Q505  Check                      
-                                 
---------------------------------------------------------------------------------
-Q506  When were you first tested positive for the AIDS virus?
+Q503  When were you first tested positive for the AIDS virus?
 
-                                 ({Q506.1})  Month...........................##  
-                                 ({Q506.2})  Year..........................####  
+                                 ({Q503.1})  Month...........................##  
+                                 ({Q503.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q507  Where was the test done?   ({Q507.1})  ................................##  
+Q504  Where was the test done?   ({Q504.1})  ................................##  
                                              Specify:
-                                 ({Q507.2})     <A                               >
+                                 ({Q504.2})     <A                               >
 --------------------------------------------------------------------------------
-Q508  After you discovered you were infected with the virus that causes AIDS, 
+Q505  After you discovered you were infected with the virus that causes AIDS, 
       did you ever seek care for the AIDS infection?
+
+                                 ({Q505.1})  .................................#  
+--------------------------------------------------------------------------------
+Q506  Did you get some blood sample taken to check the CD4 when you first went 
+      to receive care for the AIDS virus?
+
+                                 ({Q506.1})  .................................#  
+--------------------------------------------------------------------------------
+Q507  Did you get the results of this exam?
+
+                                 ({Q507.1})  .................................#  
+--------------------------------------------------------------------------------
+Q508  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
+      AIDS virus?
 
                                  ({Q508.1})  .................................#  
 --------------------------------------------------------------------------------
-Q509  Did you get some blood sample taken to check the CD4 when you first went 
-      to receive care for the AIDS virus?
+Q509  When did you first start Antiretroviral therapy?
 
-                                 ({Q509.1})  .................................#  
+                                 ({Q509.1})  Month...........................##  
+                                 ({Q509.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q5010  Did you get the results of this exam?
+Q5010  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
+      AIDS virus?
 
                                  ({Q510.1})  .................................#  
 --------------------------------------------------------------------------------
-Q511  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
-      AIDS virus?
+Q511  When was your last consultation?
 
-                                 ({Q511.1})  .................................#  
+                                 ({Q511.1})  Month...........................##  
+                                 ({Q511.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q512  When did you first start Antiretroviral therapy?
+Q512  Where are you now receiving ART?
 
-                                 ({Q512.1})  Month...........................##  
-                                 ({Q512.2})  Year..........................####  
+                                             :
+                                 ({Q512.1})     <A                               >
+                                             Specify:
+                                 ({Q512.2})     <A                               >
 --------------------------------------------------------------------------------
-Q513  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
-      AIDS virus?
+Q513  In which district is this place?
 
                                  ({Q513.1})  .................................#  
---------------------------------------------------------------------------------
-Q514  When was your last consultation?
-
-                                 ({Q514.1})  Month...........................##  
-                                 ({Q514.2})  Year..........................####  
---------------------------------------------------------------------------------
-Q515  Where are you now receiving ART?
-
-                                 
                                              Specify:
-                                 ({Q515.2})     <A                               >
+                                 ({Q513.2})     <A                               >
 --------------------------------------------------------------------------------
-Q516  In which district is this place?
+Q514  What is the name of this place?
 
-                                 ({Q516.1})  .................................#  
-                                             Specify:
-                                 ({Q516.2})     <A                               >
+                                             :
+                                 ({Q514.1})     <A                               >
 --------------------------------------------------------------------------------
-Q517  What is the name of this place?
+Q515  Are you still followed up for the AIDS infection?
+
+                                 ({Q515.1})  .................................#  
+--------------------------------------------------------------------------------
+Q516  When was your last consultation?
+
+                                 ({Q516.1})  Month...........................##  
+                                 ({Q516.2})  Year..........................####  
+--------------------------------------------------------------------------------
+Q517  Where are you now receiving care?
 
                                              :
                                  ({Q517.1})     <A                               >
+                                             Specify:
+                                 ({Q517.2})     <A                               >
 --------------------------------------------------------------------------------
-Q518  Are you still followed up for the AIDS infection?
+Q518  In which district is this place?
 
                                  ({Q518.1})  .................................#  
+                                             Specify:
+                                 ({Q518.2})     <A                               >
 --------------------------------------------------------------------------------
-Q519  When was your last consultation?
+Q519  What is the name of this place?
 
-                                 ({Q519.1})  Month...........................##  
-                                 ({Q519.2})  Year..........................####  
+                                             :
+                                 ({Q519.1})     <A                               >
 --------------------------------------------------------------------------------
-Q520  Where are you now receiving care?
-
-                                 
+Q520  Why did you stop?          ({Q520.1})  ................................##  
                                              Specify:
                                  ({Q520.2})     <A                               >
 --------------------------------------------------------------------------------
-Q521  In which district is this place?
-
-                                 ({Q521.1})  .................................#  
-                                             Specify:
-                                 ({Q521.2})     <A                               >
---------------------------------------------------------------------------------
-Q522  What is the name of this place?
-
-                                             :
-                                 ({Q522.1})     <A                               >
---------------------------------------------------------------------------------
-Q523  Why did you stop?          ({Q523.1})  ................................##  
-                                             Specify:
-                                 ({Q523.2})     <A                               >
---------------------------------------------------------------------------------
-Q524  Check                      
-                                 
-                                 
---------------------------------------------------------------------------------
-Q525  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
+Q521  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
 
-                                 ({Q525.1})  .................................#  
+                                 ({Q521.1})  .................................#  
 --------------------------------------------------------------------------------
-Q526  After delivery, did your child receive ART, Antiretroviral Treatment, to 
+Q522  After delivery, did your child receive ART, Antiretroviral Treatment, to 
       prevent acquiring the AIDS virus?
 
-                                 ({Q526.1})  .................................#  
+                                 ({Q522.1})  .................................#  
 
 6.OBSERVATIONS
 ================================================================================
