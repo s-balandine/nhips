@@ -338,6 +338,7 @@ For Each oTable In oTables
 						End If
 					Next
 				End If
+				Desc = Desc & "* " & oColumn.Name & " (" & oColumn.Code & ")" & vbCrLf
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
@@ -378,7 +379,7 @@ For Each oTable In oTables
 						Next
 					End If
 				End If
-				Desc = Desc & "END" & vbCrLf
+				Desc = Desc & "END" & vbCrLf	
 			End If
 		Next 
 		
