@@ -198,7 +198,7 @@ For Each oTable In oTables
 				ColumnN = ColumnN + 1
 				
 				If ExtendedAttribute(oColumn, "CheckOffset") <> "" Then
-					ColumnN = ColumnN + 1 + ExtendedAttribute(oColumn, "CheckOffset")
+					ColumnN = ColumnN + ExtendedAttribute(oColumn, "CheckOffset")
 				End if
 				
 				If Not oColumn.CannotModify Then
