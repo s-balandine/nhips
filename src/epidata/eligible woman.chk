@@ -1609,7 +1609,7 @@ Q2102
 END
 
 * Q303.1 | Q3031 (HEW_LAST_BABY_INDEX) | NUMERIC(1)
-Birth history number of last birth > Birth history number
+* Birth history number of last birth > Birth history number
 Q3031
   MUSTENTER
   RANGE 1 6
