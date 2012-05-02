@@ -328,12 +328,11 @@ For Each oTable In oTables
 					ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
-					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 														
-					If not oColumn.Domain is nothing Then
-						If oColumn.Domain.ListOfValues <> "" Then
-							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
-							Desc = Desc & "  TYPE COMMENT" & vbCrLf
-						End If
+					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
+						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 	
+					Else If oColumn.Domain.ListOfValues <> "" Then
+						Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
+						Desc = Desc & "  TYPE COMMENT" & vbCrLf
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
 					If Len(S) > 0 Then
