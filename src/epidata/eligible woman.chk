@@ -412,9 +412,9 @@ AFTER RECORD
   GOTO Q1051
   EXIT
  ENDIF
- IF (Q1061 = .) THEN
+ IF (Q1063 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q1061
+  GOTO Q1063
   EXIT
  ENDIF
  IF (Q1071 = .) THEN
@@ -572,9 +572,9 @@ AFTER RECORD
   GOTO Q2072
   EXIT
  ENDIF
- IF (Q2081 = .) THEN
+ IF (Q2083 = .) THEN
   HELP "Total births must be entered" TYPE=ERROR
-  GOTO Q2081
+  GOTO Q2083
   EXIT
  ENDIF
  IF (Q2091 = .) THEN
@@ -1183,9 +1183,9 @@ Q1051
   TYPE COMMENT
 END
 
-* Q106.1 | * Highest Year of Education | * Q1061 | * NUMERIC(2)
+* Q106.3 | * Highest Year of Education | * Q1063 | * NUMERIC(2)
 * What is the highest (grade/form/year) you completed at that level? 
-Q1061
+Q1063
   MUSTENTER
   IF
     HEW_HIGHEST_EDUCATIONAL_LEVEL>2 THEN
@@ -1528,9 +1528,9 @@ Q2072
   RANGE 0 20
 END
 
-* Q208.1 | * Total Children | * Q2081 | * NUMERIC(2)
+* Q208.3 | * Total Children | * Q2083 | * NUMERIC(2)
 * Total children ever born > Total births
-Q2081
+Q2083
   MUSTENTER
   RANGE 0 20
 END
