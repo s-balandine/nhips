@@ -76,9 +76,9 @@ Form="Eligible Women"
 'Form="Survey Supervisor"
 
 For Each oTable In oTables
+    WScript.Echo "  " & oTable.Name
 	If IsObject(oTable) And (oTable.Name=Form) Then
 	'If IsObject(oTable) Then	
-		WScript.Echo "  " & oTable.Name
 				
 		NCharMaxColumnName = 0
 		NCharMaxColumnSize = 0
