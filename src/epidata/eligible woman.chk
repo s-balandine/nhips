@@ -709,29 +709,9 @@ AFTER RECORD
   GOTO Q4031
   EXIT
  ENDIF
- IF (Q4041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4041
-  EXIT
- ENDIF
- IF (Q4051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4051
-  EXIT
- ENDIF
- IF (Q4061 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
-  GOTO Q4061
-  EXIT
- ENDIF
  IF (Q4071 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q4071
-  EXIT
- ENDIF
- IF (Q4072 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4072
   EXIT
  ENDIF
  IF (Q4081 = .) THEN
@@ -740,13 +720,18 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q4091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q4091
   EXIT
  ENDIF
  IF (Q4101 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q4101
+  EXIT
+ ENDIF
+ IF (Q4102 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4102
   EXIT
  ENDIF
  IF (Q4111 = .) THEN
@@ -759,13 +744,8 @@ AFTER RECORD
   GOTO Q4121
   EXIT
  ENDIF
- IF (Q4131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4131
-  EXIT
- ENDIF
  IF (Q4141 = .) THEN
-  HELP "Months ago must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q4141
   EXIT
  ENDIF
@@ -785,13 +765,8 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q4181 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months ago must be entered" TYPE=ERROR
   GOTO Q4181
-  EXIT
- ENDIF
- IF (Q4182 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4182
   EXIT
  ENDIF
  IF (Q4191 = .) THEN
@@ -804,9 +779,34 @@ AFTER RECORD
   GOTO Q4201
   EXIT
  ENDIF
- IF (Q4202 = .) THEN
+ IF (Q4211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4211
+  EXIT
+ ENDIF
+ IF (Q4221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4221
+  EXIT
+ ENDIF
+ IF (Q4222 = .) THEN
   HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4202
+  GOTO Q4222
+  EXIT
+ ENDIF
+ IF (Q4231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4231
+  EXIT
+ ENDIF
+ IF (Q4241 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4241
+  EXIT
+ ENDIF
+ IF (Q4242 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q4242
   EXIT
  ENDIF
  IF (Q5011 = .) THEN
@@ -1901,72 +1901,19 @@ Q4031
   TYPE COMMENT
 END
 
-* Q404.1 | Q4041 (HEW_AIDS_ANTENATAL_TEST_OFFERED) | NUMERIC(1)
+* Q407.1 | Q4071 (HEW_AIDS_ANTENATAL_TEST_OFFERED) | NUMERIC(1)
 * Were you offered a test for the AIDS virus as part of your antenatal care?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q4041
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-  3
-  END
-END
-
-* Q405.1 | Q4051 (HEW_AIDS_ANTENATAL_TEST) | NUMERIC(1)
-* I don't want to know the results, but were you tested for the AIDS virus as part of your antenatal 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4051
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q406.1 | Q4061 (HEW_AIDS_ANTENATAL_TEST_WHEN) | NUMERIC(1)
-* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
-Q4061
-  MUSTENTER
-  RANGE 0 9
-END
-
-* Q407.1 | Q4071 (HEW_AIDS_ANTENATAL_TEST_WHERE) | NUMERIC(2)
-* Where was the test done?
-* Allowed Values
-*    11: Public sector: Government hospital
-*    12: Public sector: Government health center
-*    13: Public sector: Stand-alone VCT Center
-*    14: Public sector: Family planning clinic
-*    15: Public sector: Mobile clinic
-*    16: Public sector: Fieldworker
-*    17: Public sector: School based clinic
-*    18: Public sector: Other public
-*    21: Private medical sector: Private hospital/clinic/doctor
-*    22: Private medical sector: Stand-alone VCT Center
-*    23: Private medical sector: Pharmacy
-*    24: Private medical sector: Mobile clinic
-*    25: Private medical sector: Fieldworker
-*    26: Private medical sector: School based clinic
-*    27: Private medical sector: Other private
-*    31: Other source: Home
-*    32: Other source: Correctional facility
-*    98: Other
 Q4071
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q407.2 | Q4072 (HEW_AIDS_ANTENATAL_TEST_WHERE__OTHER_) | VARCHAR(32)
-* Where was the test done? > Specify
-Q4072
-  MUSTENTER
-END
-
-* Q408.1 | Q4081 (HEW_AIDS_ANTENATAL_TEST_GOT) | NUMERIC(1)
-* I don't want to know the results, but did you get the results of the test?
+* Q408.1 | Q4081 (HEW_AIDS_ANTENATAL_TEST) | NUMERIC(1)
+* I don't want to know the results, but were you tested for the AIDS virus as part of your antenatal 
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -1976,99 +1923,14 @@ Q4081
   TYPE COMMENT
 END
 
-* Q409.1 | Q4091 (HEW_AIDS_ANTENATAL_TEST_COUNCELING) | NUMERIC(1)
-* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
-* Allowed Values
-*    1: Yes
-*    2: No
-*    8: Don't know
+* Q409.1 | Q4091 (HEW_AIDS_ANTENATAL_TEST_WHEN) | NUMERIC(1)
+* How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
 Q4091
   MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
-  TYPE COMMENT
+  RANGE 0 9
 END
 
-* Q4101 | Q4101 (HEW_AIDS_PREGNANCY_TEST_OFFERED) | NUMERIC(1)
-* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4101
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-  1
-  END
-END
-
-* Q4111 | Q4111 (HEW_AIDS_PREGNANCY_TEST) | NUMERIC(1)
-* I don't want to know the results, but were you tested for the AIDS virus at that time?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4111
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q4121 | Q4121 (HEW_AIDS_PREGNANCY_TEST_GOT) | NUMERIC(1)
-* I don't want to know the results, but did you get the results of the test?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4121
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q4131 | Q4131 (HEW_K) | NUMERIC(1)
-* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4131
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q4141 | Q4141 (HEW_AIDS_TEST_LAST) | NUMERIC(2)
-* How many months ago was your most recent HIV test? > Months ago
-Q4141
-  MUSTENTER
-END
-
-* Q4151 | Q4151 (HEW_COLUMN_102) | NUMERIC(1)
-* I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4151
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q4161 | Q4161 (HEW_COLUMN_103) | NUMERIC(2)
-* How many months ago was your most recent HIV test?
-Q4161
-  MUSTENTER
-END
-
-* Q4171 | Q4171 (HEW_COLUMN_104) | NUMERIC(1)
-* I don't want to know the results, but did you get the results of the test?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q4171
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q4181 | Q4181 (HEW_COLUMN_106) | NUMERIC(2)
+* Q4101 | Q4101 (HEW_AIDS_ANTENATAL_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2089,20 +1951,93 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-Q4181
+Q4101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q4182 | Q4182 (HEW_COLUMN_107) | VARCHAR(32)
+* Q4102 | Q4102 (HEW_AIDS_ANTENATAL_TEST_WHERE__OTHER_) | VARCHAR(32)
 * Where was the test done? > Specify
-Q4182
+Q4102
   MUSTENTER
 END
 
-* Q4191 | Q4191 (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
-* Do you know of a place where people can go to get tested for the AIDS virus?
+* Q4111 | Q4111 (HEW_AIDS_ANTENATAL_TEST_GOT) | NUMERIC(1)
+* I don't want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4111
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4121 | Q4121 (HEW_AIDS_ANTENATAL_TEST_COUNCELING) | NUMERIC(1)
+* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q4121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Q4141 | Q4141 (HEW_AIDS_PREGNANCY_TEST_OFFERED) | NUMERIC(1)
+* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4141
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4151 | Q4151 (HEW_AIDS_PREGNANCY_TEST) | NUMERIC(1)
+* I don't want to know the results, but were you tested for the AIDS virus at that time?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4161 | Q4161 (HEW_AIDS_PREGNANCY_TEST_GOT) | NUMERIC(1)
+* I don't want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4161
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4171 | Q4171 (HEW_K) | NUMERIC(1)
+* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4171
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4181 | Q4181 (HEW_AIDS_TEST_LAST) | NUMERIC(2)
+* How many months ago was your most recent HIV test? > Months ago
+Q4181
+  MUSTENTER
+END
+
+* Q4191 | Q4191 (HEW_COLUMN_102) | NUMERIC(1)
+* I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -2112,7 +2047,68 @@ Q4191
   TYPE COMMENT
 END
 
-* Q4201 | Q4201 (COLUMN_110) | VARCHAR(1)
+* Q4201 | Q4201 (HEW_COLUMN_103) | NUMERIC(2)
+* How many months ago was your most recent HIV test?
+Q4201
+  MUSTENTER
+END
+
+* Q4211 | Q4211 (HEW_COLUMN_104) | NUMERIC(1)
+* I don't want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4211
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4221 | Q4221 (HEW_COLUMN_106) | NUMERIC(2)
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q4221
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  TYPE COMMENT
+END
+
+* Q4222 | Q4222 (HEW_COLUMN_107) | VARCHAR(32)
+* Where was the test done? > Specify
+Q4222
+  MUSTENTER
+END
+
+* Q4231 | Q4231 (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
+* Do you know of a place where people can go to get tested for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4231
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q4241 | Q4241 (COLUMN_110) | VARCHAR(1)
 * Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
@@ -2129,15 +2125,15 @@ END
 *    L: Private medical sector: Fieldworker
 *    M: Private medical sector: Other private
 *    X: Other
-Q4201
+Q4241
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2 SHOW
   TYPE COMMENT
 END
 
-* Q4202 | Q4202 (HEW_AIDS_TEST_PLACE_WHERE__WHERE_) | VARCHAR(32)
+* Q4242 | Q4242 (HEW_AIDS_TEST_PLACE_WHERE__WHERE_) | VARCHAR(32)
 * Where is that? > Specify
-Q4202
+Q4242
   MUSTENTER
 END
 
