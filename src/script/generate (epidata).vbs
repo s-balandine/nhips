@@ -331,7 +331,7 @@ For Each oTable In oTables
 					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
 						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 
 						If oColumn.Domain.ListOfValues <> "" Then
-							Values = oDomain.ListOfValues
+							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
 							Desc = Desc & "  MISSINGVALUE "
 							For i=0 To UBound(Values)
