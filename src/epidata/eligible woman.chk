@@ -303,17 +303,17 @@ BEFORE RECORD
  IF (S3221 = .) THEN
   LET S3221=99
  ENDIF
- IF (Q2031 = .) THEN
-  LET Q2031=Unnamed
+ IF (Q2021 = .) THEN
+  LET Q2021=Unnamed
  ENDIF
- IF (Q5171 = .) THEN
-  LET Q5171=Unnamed
+ IF (Q5141 = .) THEN
+  LET Q5141=Unnamed
  ENDIF
- IF (Q5221 = .) THEN
-  LET Q5221=Unnamed
+ IF (Q5191 = .) THEN
+  LET Q5191=Unnamed
  ENDIF
- IF (Q5231 = .) THEN
-  LET Q5231=99
+ IF (Q5201 = .) THEN
+  LET Q5201=99
  ENDIF
 END
 
@@ -588,13 +588,18 @@ AFTER RECORD
   GOTO Q1092
   EXIT
  ENDIF
- IF (Q2021 = .) THEN
+ IF (Q2011 = .) THEN
   HELP "Birth history number must be entered" TYPE=ERROR
+  GOTO Q2011
+  EXIT
+ ENDIF
+ IF (Q2021 = .) THEN
+  HELP "Name must be entered" TYPE=ERROR
   GOTO Q2021
   EXIT
  ENDIF
  IF (Q2031 = .) THEN
-  HELP "Name must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2031
   EXIT
  ENDIF
@@ -608,6 +613,11 @@ AFTER RECORD
   GOTO Q2051
   EXIT
  ENDIF
+ IF (Q2052 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q2052
+  EXIT
+ ENDIF
  IF (Q2061 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q2061
@@ -619,23 +629,23 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q2071 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q2071
   EXIT
  ENDIF
- IF (Q2072 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q2072
-  EXIT
- ENDIF
  IF (Q2081 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP "Numer of times must be entered" TYPE=ERROR
   GOTO Q2081
   EXIT
  ENDIF
  IF (Q2091 = .) THEN
-  HELP "Numer of times must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q2091
+  EXIT
+ ENDIF
+ IF (Q2092 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q2092
   EXIT
  ENDIF
  IF (Q2101 = .) THEN
@@ -643,29 +653,24 @@ AFTER RECORD
   GOTO Q2101
   EXIT
  ENDIF
- IF (Q2102 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q2102
-  EXIT
- ENDIF
  IF (Q2111 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Hours must be entered" TYPE=ERROR
   GOTO Q2111
   EXIT
  ENDIF
- IF (Q2121 = .) THEN
-  HELP "Hours must be entered" TYPE=ERROR
-  GOTO Q2121
-  EXIT
- ENDIF
- IF (Q2122 = .) THEN
+ IF (Q2112 = .) THEN
   HELP "Days must be entered" TYPE=ERROR
-  GOTO Q2122
+  GOTO Q2112
   EXIT
  ENDIF
- IF (Q2123 = .) THEN
+ IF (Q2113 = .) THEN
   HELP "Weeks must be entered" TYPE=ERROR
-  GOTO Q2123
+  GOTO Q2113
+  EXIT
+ ENDIF
+ IF (Q2121 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q2121
   EXIT
  ENDIF
  IF (Q2131 = .) THEN
@@ -674,13 +679,8 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q2141 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2141
-  EXIT
- ENDIF
- IF (Q2151 = .) THEN
   HELP "Months must be entered" TYPE=ERROR
-  GOTO Q2151
+  GOTO Q2141
   EXIT
  ENDIF
  IF (Q3011 = .) THEN
@@ -708,29 +708,34 @@ AFTER RECORD
   GOTO Q3031
   EXIT
  ENDIF
+ IF (Q3041 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3041
+  EXIT
+ ENDIF
  IF (Q3051 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3051
   EXIT
  ENDIF
  IF (Q3061 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months must be entered" TYPE=ERROR
   GOTO Q3061
   EXIT
  ENDIF
  IF (Q3071 = .) THEN
-  HELP "Months must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3071
+  EXIT
+ ENDIF
+ IF (Q3072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3072
   EXIT
  ENDIF
  IF (Q3081 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3081
-  EXIT
- ENDIF
- IF (Q3082 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3082
   EXIT
  ENDIF
  IF (Q3091 = .) THEN
@@ -741,6 +746,11 @@ AFTER RECORD
  IF (Q3101 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3101
+  EXIT
+ ENDIF
+ IF (Q3111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q3111
   EXIT
  ENDIF
  IF (Q3121 = .) THEN
@@ -754,7 +764,7 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q3141 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Months ago must be entered" TYPE=ERROR
   GOTO Q3141
   EXIT
  ENDIF
@@ -764,7 +774,7 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q3161 = .) THEN
-  HELP "Months ago must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q3161
   EXIT
  ENDIF
@@ -776,6 +786,11 @@ AFTER RECORD
  IF (Q3181 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q3181
+  EXIT
+ ENDIF
+ IF (Q3182 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q3182
   EXIT
  ENDIF
  IF (Q3191 = .) THEN
@@ -791,21 +806,6 @@ AFTER RECORD
  IF (Q3202 = .) THEN
   HELP "Specify must be entered" TYPE=ERROR
   GOTO Q3202
-  EXIT
- ENDIF
- IF (Q3211 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3211
-  EXIT
- ENDIF
- IF (Q3221 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q3221
-  EXIT
- ENDIF
- IF (Q3222 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q3222
   EXIT
  ENDIF
  IF (Q4011 = .) THEN
@@ -828,11 +828,6 @@ AFTER RECORD
   GOTO Q4041
   EXIT
  ENDIF
- IF (Q4051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4051
-  EXIT
- ENDIF
  IF (Q5011 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5011
@@ -843,29 +838,39 @@ AFTER RECORD
   GOTO Q5021
   EXIT
  ENDIF
+ IF (Q5031 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q5031
+  EXIT
+ ENDIF
+ IF (Q5032 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5032
+  EXIT
+ ENDIF
  IF (Q5041 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5041
   EXIT
  ENDIF
- IF (Q5061 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q5061
+ IF (Q5042 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5042
   EXIT
  ENDIF
- IF (Q5062 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5062
+ IF (Q5051 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5051
+  EXIT
+ ENDIF
+ IF (Q5061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5061
   EXIT
  ENDIF
  IF (Q5071 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5071
-  EXIT
- ENDIF
- IF (Q5072 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5072
   EXIT
  ENDIF
  IF (Q5081 = .) THEN
@@ -874,8 +879,13 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q5091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q5091
+  EXIT
+ ENDIF
+ IF (Q5092 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5092
   EXIT
  ENDIF
  IF (Q5101 = .) THEN
@@ -884,17 +894,22 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q5111 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q5111
   EXIT
  ENDIF
+ IF (Q5112 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5112
+  EXIT
+ ENDIF
  IF (Q5121 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q5121
   EXIT
  ENDIF
  IF (Q5122 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
+  HELP "Specify must be entered" TYPE=ERROR
   GOTO Q5122
   EXIT
  ENDIF
@@ -903,28 +918,28 @@ AFTER RECORD
   GOTO Q5131
   EXIT
  ENDIF
+ IF (Q5132 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5132
+  EXIT
+ ENDIF
  IF (Q5141 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q5141
   EXIT
  ENDIF
- IF (Q5142 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5142
-  EXIT
- ENDIF
- IF (Q5152 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5152
+ IF (Q5151 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5151
   EXIT
  ENDIF
  IF (Q5161 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q5161
   EXIT
  ENDIF
  IF (Q5162 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
+  HELP "Year must be entered" TYPE=ERROR
   GOTO Q5162
   EXIT
  ENDIF
@@ -933,19 +948,29 @@ AFTER RECORD
   GOTO Q5171
   EXIT
  ENDIF
+ IF (Q5172 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5172
+  EXIT
+ ENDIF
  IF (Q5181 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5181
   EXIT
  ENDIF
+ IF (Q5182 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5182
+  EXIT
+ ENDIF
  IF (Q5191 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q5191
   EXIT
  ENDIF
- IF (Q5192 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q5192
+ IF (Q5201 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5201
   EXIT
  ENDIF
  IF (Q5202 = .) THEN
@@ -958,34 +983,9 @@ AFTER RECORD
   GOTO Q5211
   EXIT
  ENDIF
- IF (Q5212 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5212
-  EXIT
- ENDIF
  IF (Q5221 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5221
-  EXIT
- ENDIF
- IF (Q5231 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5231
-  EXIT
- ENDIF
- IF (Q5232 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q5232
-  EXIT
- ENDIF
- IF (Q5251 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5251
-  EXIT
- ENDIF
- IF (Q5261 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5261
   EXIT
  ENDIF
  IF (Q6011 = .) THEN
@@ -1013,6 +1013,12 @@ AFTER RECORD
   GOTO Q6031
   EXIT
  ENDIF
+END
+
+* Identifiers
+RECID
+  KEY UNIQUE 1
+  NOENTER
 END
 
 * Identifiers > Household identifier
@@ -1134,9 +1140,81 @@ S3031
   MISSINGVALUE  98
 END
 
+* Have you ever attended school?
+* Allowed Values
+*    1: Yes
+*    2: No
+S3041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+  JUMPS RESET
+    N HEW_READING_ABILITY
+  END
+END
+
+* What is the highest level of school you attended: primary, secondary, or higher? 
+* Allowed Values
+*    1: Primary
+*    2: Post-primary or vocational
+*    3: Secondary or a level
+*    4: Higher
+S3051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL SHOW
+  TYPE COMMENT
+END
+
+* What is the highest (grade/form/year) you completed at that level? 
+S3061
+  MUSTENTER
+  IF
+    HEW_SCHOOL_LEVEL>2 THEN
+    GOTO HEW_FORMER_PLACE
+  END
+END
+
+* Continued if school is primary...
+* Allowed Values
+*    Y: 1-Yes
+*    N: 2-No
+END
+
+* Can you read any part of the sentence to me?
+* Allowed Values
+*    1: No, cannont read at all
+*    2: Yes, able to read only part of sentence
+*    3: Yes, able to read whole sentence
+*    4: Not applicable, no card with required language
+*    5: Not applicable, blind or Visually impaired
+*    6: Not applicable, too young
+S3081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_LITERACY SHOW
+  TYPE COMMENT
+  JUMPS RESET
+    1 SKIPNEXTFIELD
+    2 SKIPNEXTFIELD
+    3 SKIPNEXTFIELD
+    5 SKIPNEXTFIELD
+  END
+END
+
 * Can you read any part of the sentence to me? > Specify language
 S3082
   MUSTENTER
+END
+
+* For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
+* Allowed Values
+*    1: Nairobi / Kisumu
+*    2: Other City / Town
+*    3: Countryside
+*    4: Outside Kenya
+S3091
+  MUSTENTER
+  COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE SHOW
+  TYPE COMMENT
 END
 
 * How long have you been living continuously in Ndhiwa?  > Specify years
@@ -1149,6 +1227,39 @@ S3101
   MISSINGVALUE  98 99
 END
 
+* Just before you moved here, did you live in a city a town, or in the countryside?
+* Allowed Values
+*    0: Capital, large city
+*    1: Small city
+*    2: Town
+*    3: Countryside
+S3111
+  MUSTENTER
+  COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE SHOW
+  TYPE COMMENT
+END
+
+* What is your ethnic group/tribe?
+* Allowed Values
+*    1: Embu
+*    2: Kalenjin
+*    3: Kamba
+*    4: Kikuyu
+*    5: Kisii
+*    6: Luhya
+*    7: Luo
+*    8: Masai
+*    9: Meru
+*    10: Mijikenda / Swahili
+*    11: Somali
+*    12: Taita / Taveta
+*    96: Other
+S3121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_ETHNIC SHOW
+  TYPE COMMENT
+END
+
 * What is your ethnic group/tribe? > Specify
 S3122
   MUSTENTER
@@ -1157,6 +1268,161 @@ END
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
 S3131
   MUSTENTER
+END
+
+* In the last 12 months, have you been away from home for more than one month at a time?
+S3141
+  MUSTENTER
+  RANGE 2012 2014
+END
+
+* Are you currently married or living together with a man as if married?
+* Allowed Values
+*    1: Yes, currently married
+*    2: Yes, living with a man
+*    3: No, not in union
+S3151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_UNION_STATUS SHOW
+  TYPE COMMENT
+END
+
+* Are you currently married or living together with a man as if married?
+* Allowed Values
+*    1: Yes, formerly married
+*    2: Yes, lived with a man
+*    3: No
+S3152
+  MUSTENTER
+  COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST SHOW
+  TYPE COMMENT
+END
+
+* What is your marital status now: are you widowed, divorced, or separated?
+* Allowed Values
+*    1: Widowed
+*    2: Divorced
+*    3: Separated
+S3161
+  MUSTENTER
+  COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL SHOW
+  TYPE COMMENT
+END
+
+* Is your (husband/partner) living with you now or is he staying elsewhere?
+* Allowed Values
+*    1: Living with her
+*    2: Staying elsewhere
+S3171
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HUSBAND_STATUS SHOW
+  TYPE COMMENT
+END
+
+* Aside from your own housework, have you done any work in the last seven days?
+* Allowed Values
+*    1: Yes
+*    2: No
+S3181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* In the last seven days, have you done any of these things or any other work?
+* Allowed Values
+*    1: Yes
+*    2: No
+S3191
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
+* Allowed Values
+*    1: Yes
+*    2: No
+S3201
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Have you done any work in the last 12 months?
+* Allowed Values
+*    1: Yes
+*    2: No
+S3211
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
+* Allowed Values
+*    1: ?
+*    2: ?
+*    3: ?
+*    4: ?
+S3221
+  MUSTENTER
+  COMMENT LEGAL USE D_N_OCCUPATION SHOW
+  TYPE COMMENT
+END
+
+* Do you do this work for a member of your family, for someone else, or are you self-employed?
+* Allowed Values
+*    1: For family member
+*    2: For someone else
+*    3: Self-employed
+S3231
+  MUSTENTER
+  COMMENT LEGAL USE D_N_WORK_CLASS SHOW
+  TYPE COMMENT
+END
+
+* Do you usually work throughout the year, or do you work seasonally, or only once in a while?
+* Allowed Values
+*    1: All year
+*    2: Seasonal
+*    3: Occasional
+S3241
+  MUSTENTER
+  COMMENT LEGAL USE D_N_WORK_TIME SHOW
+  TYPE COMMENT
+END
+
+* Are you paid in cash or kind for this work or are you not paid at all?																																																																																																				
+* Allowed Values
+*    1: Cash only
+*    2: Cash and kind
+*    3: In kind only
+*    4: Not paid
+S3251
+  MUSTENTER
+  COMMENT LEGAL USE D_N_WORK_EARN SHOW
+  TYPE COMMENT
+END
+
+* Have you ever given birth?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Do you have any sons or daughters to whom you have given birth who are now living with you?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * How many sons and daughters live with you?  > Sons at home
@@ -1171,6 +1437,16 @@ Q1032
   RANGE 0 20
 END
 
+* Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
 * How many sons are alive but do not live with you? > Sons elsewhere
 Q1051
   MUSTENTER
@@ -1181,6 +1457,16 @@ END
 Q1052
   MUSTENTER
   RANGE 0 20
+END
+
+* Have you ever given birth to a boy or girl who was born alive but later died?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * How many boys and girls have died? > Boys dead
@@ -1220,65 +1506,177 @@ Q1092
 END
 
 * Birth history number of last birth > Birth history number
-Q2021
+Q2011
   MUSTENTER
   RANGE 1 6
 END
 
 * What name was given to your last baby? > Name
+Q2021
+  MUSTENTER
+END
+
+* Is last baby still alive?
+* Allowed Values
+*    1: Yes
+*    2: No
 Q2031
   MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Did you see anyone for antenatal care for this pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q2041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Whom did you see? 
+* Allowed Values
+*    A: Health personnel: Doctor
+*    B: Health personnel: Nurse, midwife
+*    C: Health personnel: Auxiliary midwife
+*    D: Other person: Traditional birth attendant
+*    E: Other person: Community/village health worker
+*    X: Other person: Other
+Q2051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
+  TYPE COMMENT
 END
 
 * Whom did you see?  > Specify
-Q2062
+Q2052
   MUSTENTER
 END
 
+* Where did you receive antenatal care for this pregnancy?
+* Allowed Values
+*    A: Home: Respondent's home
+*    B: Home: Other home
+*    C: Public sector: Government hospital
+*    D: Public sector: Government health center
+*    E: Public sector: Government health post
+*    F: Public sector: Other public
+*    G: Private medical sector: Private hospital, clinic
+*    H: Private medical sector: Other private medical
+*    X: Other
+Q2061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
+  TYPE COMMENT
+END
+
 * Where did you receive antenatal care for this pregnancy? > Specify
-Q2072
+Q2062
   MUSTENTER
 END
 
 * How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
 * Allowed Values
 *    98: Don't know
-Q2081
+Q2071
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
 * How many times did you receive antenatal care during this pregnancy? > Numer of times
+Q2081
+  MUSTENTER
+END
+
+* Who assisted with the delivery of last baby ? 
+* Allowed Values
+*    A: Health personnel: Doctor
+*    B: Health personnel: Nurse, midwife
+*    C: Health personnel: Auxiliary midwife
+*    D: Other person: Traditional birth attendant
+*    E: Other person: Community/village health worker
+*    X: Other person: Other
 Q2091
   MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
+  TYPE COMMENT
 END
 
 * Who assisted with the delivery of last baby ?  > Specify
-Q2102
+Q2092
   MUSTENTER
 END
 
+* Where did you give birth to last baby?
+* Allowed Values
+*    A: Home: Respondent's home
+*    B: Home: Other home
+*    C: Public sector: Government hospital
+*    D: Public sector: Government health center
+*    E: Public sector: Government health post
+*    F: Public sector: Other public
+*    G: Private medical sector: Private hospital, clinic
+*    H: Private medical sector: Other private medical
+*    X: Other
+Q2101
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
+  TYPE COMMENT
+END
+
 * How long after last baby was delivered did you stay there? > Hours
-Q2121
+Q2111
   MUSTENTER
   RANGE 0 23
 END
 
 * How long after last baby was delivered did you stay there? > Days
-Q2122
+Q2112
   MUSTENTER
   RANGE 1 31
 END
 
 * How long after last baby was delivered did you stay there? > Weeks
-Q2123
+Q2113
   MUSTENTER
 END
 
-* What age was last baby when you stopped to breasfeed him/her? > Months
-Q2151
+* Did you ever breastfeed last baby?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q2121
   MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Are you still breastfeeding last baby?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q2131
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* What age was last baby when you stopped to breasfeed him/her? > Months
+Q2141
+  MUSTENTER
+END
+
+* Have you ever heard of an illness called AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
@@ -1314,36 +1712,297 @@ Q3023
   TYPE COMMENT
 END
 
+* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Were you offered a test for the AIDS virus as part of your antenatal care?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* I don\'t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
 * How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
-Q3071
+Q3061
   MUSTENTER
   RANGE 0 9
 END
 
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q3071
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  TYPE COMMENT
+END
+
 * Where was the test done? > Specify
-Q3082
+Q3072
   MUSTENTER
 END
 
+* I don\'t want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3091
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3101
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* I don\'t want to know the results, but were you tested for the AIDS virus at that time?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3111
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* I don\'t want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3131
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
 * How many months ago was your most recent HIV test? > Months ago
+Q3141
+  MUSTENTER
+END
+
+* I don\'t want to know the results, but have you ever been tested to see if you have the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* How many months ago was your most recent HIV test?
 Q3161
   MUSTENTER
 END
 
+* I don\'t want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3171
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q3181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  TYPE COMMENT
+END
+
 * Where was the test done? > Specify
+Q3182
+  MUSTENTER
+END
+
+* Do you know of a place where people can go to get tested for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3191
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Where is that?
+* Allowed Values
+*    A: Public sector: Government hospital
+*    B: Public sector: Government health center
+*    C: Public sector: Stand-alone VCT Center
+*    D: Public sector: Family planning clinic
+*    E: Public sector: Mobile clinic
+*    F: Public sector: Fieldworker
+*    G: Public sector: Other public
+*    H: Private medical sector: Private hospital/clinic/doctor
+*    I: Private medical sector: Stand-alone VCT Center
+*    J: Private medical sector: Pharmacy
+*    K: Private medical sector: Mobile clinic
+*    L: Private medical sector: Fieldworker
+*    M: Private medical sector: Other private
+*    X: Other
+Q3201
+  MUSTENTER
+  COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2 SHOW
+  TYPE COMMENT
+END
+
+* Where is that? > Specify
 Q3202
   MUSTENTER
 END
 
-* Where is that? > Specify
-Q3222
+* Consent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q4011
   MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT SHOW
+  TYPE COMMENT
+END
+
+* Consent Ask
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q4031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT SHOW
+  TYPE COMMENT
+END
+
+* Consent Parent Ask
+* Allowed Values
+*    1: Yes
+*    2: No
+Q4041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Did you know you were infected with AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Have you already had a HIV test that showed you were infected with AIDS? 
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
-Q5061
+Q5031
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
@@ -1352,21 +2011,89 @@ END
 * When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
-Q5062
+Q5032
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Where was the test done? > Specify
-Q5072
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q5041
   MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
+  TYPE COMMENT
+END
+
+* Where was the test done? > Specify
+Q5042
+  MUSTENTER
+END
+
+* After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q5061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Did you get the results of this exam?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q5071
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
+  TYPE COMMENT
+END
+
+* Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
-Q5121
+Q5091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
@@ -1375,16 +2102,26 @@ END
 * When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
-Q5122
+Q5092
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
+* Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5101
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
-Q5141
+Q5111
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
@@ -1393,26 +2130,57 @@ END
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
-Q5142
+Q5112
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
+END
+
+* Where are you now receiving ART?
+Q5121
+  MUSTENTER
 END
 
 * Where are you now receiving ART? > Specify
-Q5152
+Q5122
   MUSTENTER
 END
 
-* In which district is this place? > Specify
-Q5162
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+Q5131
   MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT SHOW
+  TYPE COMMENT
+END
+
+* In which district is this place? > Specify
+Q5132
+  MUSTENTER
+END
+
+* What is the name of this place?
+Q5141
+  MUSTENTER
+END
+
+* Are you still followed up for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
-Q5191
+Q5161
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
@@ -1421,25 +2189,85 @@ END
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
-Q5192
+Q5162
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
+* Where are you now receiving care?
+Q5171
+  MUSTENTER
+END
+
 * Where are you now receiving care? > Specify
+Q5172
+  MUSTENTER
+END
+
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+Q5181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT SHOW
+  TYPE COMMENT
+END
+
+* In which district is this place? > Specify
+Q5182
+  MUSTENTER
+END
+
+* What is the name of this place?
+Q5191
+  MUSTENTER
+END
+
+* Why did you stop?
+* Allowed Values
+*    1: No one was attending
+*    2: Stock out
+*    3: Unfriendly staff
+*    4: Spontaneous
+*    5: Advised to stop
+*    6: Throught i was cured/feel good
+*    7: Side effect
+*    8: Moved away
+*    9: Transport cost
+*    10: Stop pmtct
+*    96: Other
+Q5201
+  MUSTENTER
+  COMMENT LEGAL USE D_N_AIDS_STOP_REASON SHOW
+  TYPE COMMENT
+END
+
+* Why did you stop? > Specify
 Q5202
   MUSTENTER
 END
 
-* In which district is this place? > Specify
-Q5212
+* Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5211
   MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
-* Why did you stop? > Specify
-Q5232
+* After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5221
   MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
 END
 
 * Interviewer\'s observations > Comments about specific questions
@@ -1454,6 +2282,16 @@ END
 
 * Interviewer\'s observations > Any other comments
 Q6013
+  MUSTENTER
+END
+
+* Supervisor\'s observations
+Q6021
+  MUSTENTER
+END
+
+* Editor\'s observations
+Q6031
   MUSTENTER
 END
 
