@@ -1,4 +1,7 @@
 LABELBLOCK
+  LABEL D_N_YEAR_BIRTH
+    9998 "Don't know"
+   END
   LABEL D_N_AIDS_STOP_REASON
     1 "No one was attending"
     2 "Stock out"
@@ -11,6 +14,9 @@ LABELBLOCK
     9 "Transport cost"
     10 "Stop pmtct"
     96 "Other"
+   END
+  LABEL D_N_AGE
+    98 "Don't know"
    END
   LABEL D_T_CHECK
     Y "Yes"
@@ -129,12 +135,10 @@ LABELBLOCK
     2 "primary or vocational"
     3 "Secondary or a level"
     4 "Higher"
-    99 "Not specified"
    END
   LABEL D_N_HUSBAND_STATUS
     1 "Living with her"
     2 "Staying elsewhere"
-    99 "Not specified"
    END
   LABEL D_N_LITERACY
     1 "No, cannont read at all"
@@ -143,14 +147,12 @@ LABELBLOCK
     4 "Not applicable, no card with required language"
     5 "Not applicable, blind or Visually impaired"
     6 "Not applicable, too young"
-    99 "Not specified"
    END
   LABEL D_N_MARITAL_STATUS
     1 "Married or living together"
     2 "Divorced or separated"
     3 "Widowed"
     4 "Never married and never lived together"
-    99 "Not specified"
    END
   LABEL D_N_MARITAL_STATUS_DETAIL
     1 "Widowed"
@@ -162,18 +164,19 @@ LABELBLOCK
     2 "Yes, lived with a man"
     3 "No"
    END
+  LABEL D_N_MONTH
+    98 "Don't know"
+   END
   LABEL D_N_OCCUPATION
     1 "?"
     2 "?"
     3 "?"
     4 "?"
-    99 "Not specified"
    END
   LABEL D_N_OUTSIDE
     1 "One or more nights"
     2 "One or more months"
     3 "None"
-    99 "Not specified"
    END
   LABEL D_N_PLACE_OF_RESIDENCE
     1 "Nairobi / Kisumu"
@@ -194,7 +197,6 @@ LABELBLOCK
     10 "Adopted/foster child"
     11 "Not related"
     98 "Don't know"
-    99 "Not specified"
    END
   LABEL D_N_RESULT_OF_HOUSEHOLD_INTERVIEW
     1 "Completed"
@@ -208,7 +210,6 @@ LABELBLOCK
     9 "Dwelling destroyed"
     10 "Dwelling not found"
     97 "Other"
-    99 "Not specified"
    END
   LABEL D_N_RESULT_OF_RESPONDENT_INTERVIEW
     1 "Completed"
@@ -218,19 +219,16 @@ LABELBLOCK
     5 "Partly completed"
     6 "Incapacited"
     97 "Other"
-    99 "Not specified"
    END
   LABEL D_N_SEX
     1 "Male"
     2 "Female"
-    99 "Not specified"
    END
   LABEL D_N_TYPE_OF_PLACE_OF_RESIDENCE
     0 "Capital, large city"
     1 "Small city"
     2 "Town"
     3 "Countryside"
-    99 "Not specified"
    END
   LABEL D_N_YES_OR_NO
     1 "Yes"
@@ -308,11 +306,14 @@ BEFORE RECORD
  IF (Q2031 = .) THEN
   LET Q2031=Unnamed
  ENDIF
- IF (Q4171 = .) THEN
-  LET Q4171=Unnamed
+ IF (Q5171 = .) THEN
+  LET Q5171=Unnamed
  ENDIF
- IF (Q4231 = .) THEN
-  LET Q4231=99
+ IF (Q5221 = .) THEN
+  LET Q5221=Unnamed
+ ENDIF
+ IF (Q5231 = .) THEN
+  LET Q5231=99
  ENDIF
 END
 
@@ -817,164 +818,24 @@ AFTER RECORD
   GOTO Q4021
   EXIT
  ENDIF
+ IF (Q4031 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q4031
+  EXIT
+ ENDIF
  IF (Q4041 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q4041
   EXIT
  ENDIF
- IF (Q4061 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q4061
-  EXIT
- ENDIF
- IF (Q4062 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q4062
-  EXIT
- ENDIF
- IF (Q4071 = .) THEN
+ IF (Q4051 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q4071
-  EXIT
- ENDIF
- IF (Q4072 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4072
-  EXIT
- ENDIF
- IF (Q4081 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4081
-  EXIT
- ENDIF
- IF (Q4091 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4091
-  EXIT
- ENDIF
- IF (Q4101 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4101
-  EXIT
- ENDIF
- IF (Q4111 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4111
-  EXIT
- ENDIF
- IF (Q4121 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q4121
-  EXIT
- ENDIF
- IF (Q4122 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q4122
-  EXIT
- ENDIF
- IF (Q4131 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4131
-  EXIT
- ENDIF
- IF (Q4141 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q4141
-  EXIT
- ENDIF
- IF (Q4142 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q4142
-  EXIT
- ENDIF
- IF (Q4152 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4152
-  EXIT
- ENDIF
- IF (Q4161 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4161
-  EXIT
- ENDIF
- IF (Q4162 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4162
-  EXIT
- ENDIF
- IF (Q4171 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4171
-  EXIT
- ENDIF
- IF (Q4181 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4181
-  EXIT
- ENDIF
- IF (Q4191 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q4191
-  EXIT
- ENDIF
- IF (Q4192 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q4192
-  EXIT
- ENDIF
- IF (Q4202 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4202
-  EXIT
- ENDIF
- IF (Q4211 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4211
-  EXIT
- ENDIF
- IF (Q4212 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4212
-  EXIT
- ENDIF
- IF (Q4221 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4221
-  EXIT
- ENDIF
- IF (Q4231 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4231
-  EXIT
- ENDIF
- IF (Q4232 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q4232
-  EXIT
- ENDIF
- IF (Q4251 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4251
-  EXIT
- ENDIF
- IF (Q4261 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q4261
+  GOTO Q4051
   EXIT
  ENDIF
  IF (Q5011 = .) THEN
-  HELP "Comments about specific questions must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q5011
-  EXIT
- ENDIF
- IF (Q5012 = .) THEN
-  HELP "Comments about respondent must be entered" TYPE=ERROR
-  GOTO Q5012
-  EXIT
- ENDIF
- IF (Q5013 = .) THEN
-  HELP "Any other comments must be entered" TYPE=ERROR
-  GOTO Q5013
   EXIT
  ENDIF
  IF (Q5021 = .) THEN
@@ -982,14 +843,164 @@ AFTER RECORD
   GOTO Q5021
   EXIT
  ENDIF
- IF (Q5031 = .) THEN
+ IF (Q5041 = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO Q5031
+  GOTO Q5041
+  EXIT
+ ENDIF
+ IF (Q5061 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q5061
+  EXIT
+ ENDIF
+ IF (Q5062 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5062
+  EXIT
+ ENDIF
+ IF (Q5071 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5071
+  EXIT
+ ENDIF
+ IF (Q5072 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5072
+  EXIT
+ ENDIF
+ IF (Q5081 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5081
+  EXIT
+ ENDIF
+ IF (Q5091 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5091
+  EXIT
+ ENDIF
+ IF (Q5101 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5101
+  EXIT
+ ENDIF
+ IF (Q5111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5111
+  EXIT
+ ENDIF
+ IF (Q5121 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q5121
+  EXIT
+ ENDIF
+ IF (Q5122 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5122
+  EXIT
+ ENDIF
+ IF (Q5131 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5131
+  EXIT
+ ENDIF
+ IF (Q5141 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q5141
+  EXIT
+ ENDIF
+ IF (Q5142 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5142
+  EXIT
+ ENDIF
+ IF (Q5152 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5152
+  EXIT
+ ENDIF
+ IF (Q5161 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5161
+  EXIT
+ ENDIF
+ IF (Q5162 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5162
+  EXIT
+ ENDIF
+ IF (Q5171 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5171
+  EXIT
+ ENDIF
+ IF (Q5181 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5181
+  EXIT
+ ENDIF
+ IF (Q5191 = .) THEN
+  HELP "Month must be entered" TYPE=ERROR
+  GOTO Q5191
+  EXIT
+ ENDIF
+ IF (Q5192 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q5192
+  EXIT
+ ENDIF
+ IF (Q5202 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5202
+  EXIT
+ ENDIF
+ IF (Q5211 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5211
+  EXIT
+ ENDIF
+ IF (Q5212 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5212
+  EXIT
+ ENDIF
+ IF (Q5221 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5221
+  EXIT
+ ENDIF
+ IF (Q5231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5231
+  EXIT
+ ENDIF
+ IF (Q5232 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q5232
+  EXIT
+ ENDIF
+ IF (Q5251 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5251
+  EXIT
+ ENDIF
+ IF (Q5261 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5261
   EXIT
  ENDIF
  IF (Q6011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Comments about specific questions must be entered" TYPE=ERROR
   GOTO Q6011
+  EXIT
+ ENDIF
+ IF (Q6012 = .) THEN
+  HELP "Comments about respondent must be entered" TYPE=ERROR
+  GOTO Q6012
+  EXIT
+ ENDIF
+ IF (Q6013 = .) THEN
+  HELP "Any other comments must be entered" TYPE=ERROR
+  GOTO Q6013
   EXIT
  ENDIF
  IF (Q6021 = .) THEN
@@ -1002,29 +1013,19 @@ AFTER RECORD
   GOTO Q6031
   EXIT
  ENDIF
- IF (Q6041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q6041
-  EXIT
- ENDIF
- IF (Q6051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q6051
-  EXIT
- ENDIF
 END
 
 S1011
   MUSTENTER
   AFTER ENTRY
-    LET RECID = HEW_CLUSTER + HEW_HOUSEHOLD + HEW_HOUSEHOLD_MEMBER
+    LET RECID = HEW_CLUSTER + S1011 + HEW_HOUSEHOLD_MEMBER
   END
 END
 
 S1012
   MUSTENTER
   AFTER ENTRY
-    LET RECID = HEW_CLUSTER + HEW_HOUSEHOLD + HEW_HOUSEHOLD_MEMBER
+    LET RECID = HEW_CLUSTER + S1011 + HEW_HOUSEHOLD_MEMBER
   END
 END
 
@@ -1036,6 +1037,8 @@ END
 S2012
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
 S2013
@@ -1085,16 +1088,22 @@ END
 S3021
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
 S3022
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
 S3031
   MUSTENTER
-  RANGE 0 96
+  RANGE 0 97
+  COMMENT LEGAL USE D_N_AGE SHOW
+  TYPE COMMENT
 END
 
 S3082
@@ -1154,11 +1163,15 @@ END
 Q1091
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
 Q1092
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
 Q2021
@@ -1181,6 +1194,8 @@ END
 Q2081
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
 Q2091
@@ -1248,79 +1263,95 @@ Q3222
   MUSTENTER
 END
 
-Q4061
+Q5061
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
-Q4062
+Q5062
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
-Q4072
+Q5072
   MUSTENTER
 END
 
-Q4121
+Q5121
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
-Q4122
+Q5122
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
-Q4141
+Q5141
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
-Q4142
+Q5142
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
-Q4152
+Q5152
   MUSTENTER
 END
 
-Q4162
+Q5162
   MUSTENTER
 END
 
-Q4191
+Q5191
   MUSTENTER
   RANGE 1 12
+  COMMENT LEGAL USE D_N_MONTH SHOW
+  TYPE COMMENT
 END
 
-Q4192
+Q5192
   MUSTENTER
   RANGE 1920 2012
+  COMMENT LEGAL USE D_N_YEAR_BIRTH SHOW
+  TYPE COMMENT
 END
 
-Q4202
+Q5202
   MUSTENTER
 END
 
-Q4212
+Q5212
   MUSTENTER
 END
 
-Q4232
+Q5232
   MUSTENTER
 END
 
-Q5011
+Q6011
   MUSTENTER
 END
 
-Q5012
+Q6012
   MUSTENTER
 END
 
-Q5013
+Q6013
   MUSTENTER
 END
 
