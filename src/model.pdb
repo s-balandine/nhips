@@ -7982,7 +7982,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,355={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=Were you offered a test for the AIDS virus as part of your antenatal care?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q404.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q407.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=3
 
@@ -8006,7 +8006,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,275={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,99=I don&#39;t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q405.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q408.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8029,7 +8029,7 @@ END
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,364={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,132=How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Months
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q406.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q409.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8065,9 +8065,9 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,200={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,199={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q407.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4101
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8085,10 +8085,10 @@ END
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,256={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,255={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q407.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4102
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8108,9 +8108,9 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,250={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,249={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q408.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4111
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8131,9 +8131,9 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,292={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,115=All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,291={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,115=All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q409.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4121
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8155,7 +8155,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,393={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,112=Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4101
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4141
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
 
@@ -8179,7 +8179,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,261={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,86=I don&#39;t want to know the results, but were you tested for the AIDS virus at that time?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4111
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4151
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8201,7 +8201,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,249={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4121
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4161
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8223,7 +8223,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,269={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,94=Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4131
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4171
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8244,7 +8244,7 @@ END
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,285={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,10=Months ago
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4181
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8266,7 +8266,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,273={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,98=I don&#39;t want to know the results, but have you ever been tested to see if you have the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4151
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4191
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8286,7 +8286,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,225={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4161
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4201
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8308,7 +8308,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,249={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4171
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4211
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8346,7 +8346,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,199={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4181
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4221
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8367,7 +8367,7 @@ END
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,255={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4182
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4222
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8389,7 +8389,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,251={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=Do you know of a place where people can go to get tested for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4191
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4231
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8423,7 +8423,7 @@ X	Other</a:ListOfValues>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,189={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4201
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4241
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8444,7 +8444,7 @@ X	Other</a:ListOfValues>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,245={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4202
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4242
 
 </a:ExtendedAttributesText>
 <c:Domain>
