@@ -17,15 +17,12 @@ Set oFileSystemObject = CreateObject("Scripting.FileSystemObject")
 
 Include oFileSystemObject.getFolder(".") & "\utils.vbs"
 
-StrModelId = "epitryps"
 StrModel = ""
-StrSpace = ""
 
 If oArgs.count()>0 Then
   StrModel = oArgs(0)
-  StrSpace = oArgs(1)
 Else
-  Set oFolder = oFileSystemObject.getFolder(".").ParentFolder.ParentFolder
+  Set oFolder = oFileSystemObject.getFolder(".").ParentFolder
   Set oFiles = oFolder.Files
   If oFiles.Count <> 0 Then
     For Each oFile in oFolder.Files
@@ -37,11 +34,17 @@ Else
   End If
 End If
 
-If StrModel="" Then WScript.Quit
+WScript.Echo StrModel
+
+If StrModel="" Then
+  StrModel = "model.pdm"
+End If
 
 If Not IsObject(ActiveModel) Then
   Set oApp = CreateObject("PowerDesigner.Application")
-  Set oModel = oApp.OpenModel(StrModel,0)
+      oApp.InteractiveMode = 0
+      oApp.Locked = False
+  Set oModel = oApp.OpenModel(StrModel, omf_DontOpenView Or omf_Hidden)
 Else
   Set oModel = ActiveModel
   strPathModel = oFileSystemObject.GetParentFolderName(ActiveModel.Filename)
