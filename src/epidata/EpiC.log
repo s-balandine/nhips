@@ -1,0 +1,7 @@
+
+COMMAND:        EpiC rev facility.qes * FIRST FORCE
+03/05/2012 19:24:36
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\facility.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\facility.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\facility.qes
+Revision can have resulted in loss of data in decimal number fields.
