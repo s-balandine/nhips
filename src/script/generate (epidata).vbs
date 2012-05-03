@@ -325,7 +325,7 @@ For Each oTable In oTables
 		Desc = "LABELBLOCK" & vbCrLf
 		
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.LowValue<>"") And (oColumn.HighValue<>"") And (oColumn.Domain.ListOfValues <> "")Then
+			If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.LowValue="") And (oColumn.HighValue="") And (oColumn.Domain.ListOfValues <> "")Then
 				Set oDomain = oColumn.Domain
 				WScript.Echo "    Labels: " & oDomain.Name
 				Values = oDomain.ListOfValues
