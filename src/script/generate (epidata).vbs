@@ -427,6 +427,8 @@ For Each oTable In oTables
 	       If IsObject(oColumn) Then
 				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 				Desc = Replace(Desc, oColumn.Code & " ", ColumnName & " ")
+				Desc = Replace(Desc, oColumn.Code & ",", ColumnName & ",")
+				Desc = Replace(Desc, oColumn.Code & "+", ColumnName & "+")
 				Desc = Replace(Desc, oColumn.Code & vbCrLf, ColumnName & vbCrLf) 
 			End If
 		Next
