@@ -327,30 +327,8 @@ For Each oTable In oTables
 		Desc = "LABELBLOCK" & vbCrLf
 		
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				If oColumn.Domain.ListOfValues <> "" Then
-					WScript.Echo "    Labels: " & oDomain.Name
-					Values = oDomain.ListOfValues
-					Values = Split(Values, vbNewLine, -1, 1)
-					Desc = Desc & "  LABEL " & UCase(oDomain.Code) & vbCrLf
-					For i=0 To UBound(Values)
-						If Values(i) <> "" Then
-							Value = Values(i)
-							Value = Split(Value, vbTab, -1, 1)
-							If InStr(Value(1), "-") > 0 Then
-								Desc=Desc & "    " & Value(0) & " """ & Mid(Value(1), InStr(Value(1), "-") + 1) & """" & vbCrLf 
-							Else
-							    Desc=Desc & "    " & Value(0) & " """ & Value(1) & """" & vbCrLf 
-							End If
-						End If
-					Next
-					Desc = Desc & "   END" & vbCrLf
-				End If
-			End If
-		Next
-		
-		For Each oDomain In oDomains
-			If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
+			If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.LowValue<>"") And (oColumn.HighValue<>"") And (oColumn.Domain.ListOfValues <> "")Then
+				Set oDomain = oColumn.Domain
 				WScript.Echo "    Labels: " & oDomain.Name
 				Values = oDomain.ListOfValues
 				Values = Split(Values, vbNewLine, -1, 1)
@@ -369,9 +347,8 @@ For Each oTable In oTables
 				Desc = Desc & "   END" & vbCrLf
 			End If
 		Next
-		
 		Desc = Desc & "END" & vbCrLf & vbCrLf
-
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				
