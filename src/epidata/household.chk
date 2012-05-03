@@ -68,9 +68,12 @@ END
 
 * Q201.1 | Day (HSH_DAY) | NUMERIC(2)
 * Date > Day of interview
+* Allowed Values
+*    98: Don't know
 Q2011
   MUSTENTER
   RANGE 1 31
+  MISSINGVALUE  98
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
@@ -85,21 +88,28 @@ END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
 * Date > Year of interview
+* Allowed Values
+*    98: Don't know
 Q2013
   MUSTENTER
   RANGE 2012 2014
+  MISSINGVALUE  98
 END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | VARCHAR(35)
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
+  COMMENT LEGAL "Field Interviewer"TYPE COMM
+  END
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
+  COMMENT LEGAL "Field Supervisor"TYPE COMM
+  END
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -119,7 +129,7 @@ Q2031
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
   TYPE COMMENT
   JUMPS RESET
-    97 SKIPNEXTFIELD
+    9 SKIPNEXTFIELD
   END
 END
 
@@ -133,12 +143,16 @@ END
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
+  COMMENT LEGAL "Office Editor"TYPE COMM
+  END
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | VARCHAR(35)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
+  COMMENT LEGAL "Office Keyer"TYPE COMM
+  END
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
