@@ -1,0 +1,134 @@
+{style}
+table.register{
+  border:    1px solid #cccccc;
+  border-collapse: collapse;}
+table.register thead    { 
+  border-bottom: 1px solid #cccccc}
+table.register thead td { 
+  border-bottom: 1px solid #cccccc;}
+table.register td { border-bottom: 1px dotted #AAAAAA; vertical-align: top; padding: 2px;}
+table.register tr.h1 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;
+  font-weight: bold;}
+table.register tr.h2 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;}
+border: 1px solid #cccccc; background-color: #FAFAFA}
+table.register tr.h3 td { border: 1px solid #003366}
+{style}
+
+{set-data:name|hidden=true}Year Birth{set-data}
+{set-data:name-link|hidden=true}Year Birth (Domain){set-data}
+{set-data:code|hidden=true}D_N_YEAR_BIRTH{set-data}
+{set-data:datatype|hidden=true}NUMERIC(4){set-data}
+{set-data:is-required|hidden=true}!DEV:Images^yes.png|align=center!{set-data}
+{set-data:default|hidden=true}{set-data}
+{set-data:comment|hidden=true}{set-data}
+{section}
+  {column:width=20%}
+    {panel}{navigator}{panel}
+    {panel:title=Sommaire}
+      {toc:indent=10px|maxLevel=3}
+    {panel}
+    {info:title=Information technique|icon=false}
+      ----
+      {table:class=spec}
+        {tr}
+          {td}*Nom*:{td}
+          {td}{get-data:name}{td}
+        {tr}
+        {tr}
+          {td}&nbsp;&nbsp;SQL:{td}
+          {td}{get-data:code}{td}
+        {tr}
+        {tr}
+          {td}*Type*:{td}
+          {td}{get-data:datatype}{td}
+        {tr}
+        {tr}
+          {td}*Obligatoire*:{td}
+          {td:style=float:left;}{get-data:is-required}{td}
+        {tr}
+      {table}
+    {info}
+  {column}
+  {column}
+h2. Définition
+
+
+
+h2. Raison et cas d'utilisation
+
+...
+
+h2. Discussion
+
+...
+
+h2. Contraintes 
+
+Seules les valeurs suivantes sont permises.
+{table:class=register|width=50%}
+  {thead}
+    {tr:class=h1}
+      {td:rowspan=2}Valeur{td}
+      {td:colspan=2}Code{td}
+    {tr}
+    {tr:class=h2}
+      {td}Court{td}
+      {td}Long{td}
+    {tr}
+  {thead}
+  {tbody}
+    {tr}{td}9998{td}{td}Don't know{td}{td}{td}{tr}
+  {tbody}
+{table}
+
+    h2. Liste des colonnes du domaine
+    {table:class=register|width=50%}
+      {thead}
+        {tr:class=h1}
+          {td}Table{td}
+          {td}Variable{td}
+          {td}Variable (SQL){td}
+        {tr}
+      {thead}
+      {tbody}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[Birth (Year)|Birth (Year) ()]{td}
+          {td}HEW_BIRTH__YEAR_{td}
+        {tr}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[Pregnancy Ended Year|Pregnancy Ended Year ()]{td}
+          {td}HEW_PREGNANCY_ENDED_YEAR{td}
+        {tr}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[AIDS Positive Test Year|AIDS Positive Test Year ()]{td}
+          {td}HEW_AIDS_POSITIVE_TEST_YEAR{td}
+        {tr}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[ART Start Year|ART Start Year ()]{td}
+          {td}HEW_ART_START_YEAR{td}
+        {tr}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[ART Last Consultation Year|ART Last Consultation Year ()]{td}
+          {td}HEW_ART_LAST_CONSULTATION_YEAR{td}
+        {tr}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[AIDS Last Consultation Year|AIDS Last Consultation Year ()]{td}
+          {td}HEW_AIDS_LAST_CONSULTATION_YEAR{td}
+        {tr}
+      {tbody}
+    {table}
+  {column}
+{section}
+

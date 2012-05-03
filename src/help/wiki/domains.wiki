@@ -1,0 +1,500 @@
+{style}
+table.register{
+  border:    1px solid #cccccc;
+  border-collapse: collapse;}
+table.register thead    { 
+  border-bottom: 1px solid #cccccc}
+table.register thead td { 
+  border-bottom: 1px solid #cccccc;}
+table.register td { border-bottom: 1px dotted #AAAAAA; vertical-align: top; padding: 2px;}
+table.register tr.h1 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;
+  font-weight: bold;}
+table.register tr.h2 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;}
+border: 1px solid #cccccc; background-color: #FAFAFA}
+table.register tr.h3 td { border: 1px solid #003366}
+{style}
+
+{table:class=register}
+  {thead}
+    {tr:class=h1}
+      {td:colspan=2}Domaine{td}
+      {td}Type{td}
+      {td}M{td}
+      {td}Defaut{td}
+      {td}Description{td}
+    {tr}
+  {thead}
+  {tbody}
+    {tr}
+      {td}[Year Birth|Year Birth (Domain)]{td}
+      {td}D_N_YEAR_BIRTH{td}
+      {td}NUMERIC(4){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[AIDS Stop Reason|AIDS Stop Reason (Domain)]{td}
+      {td}D_N_AIDS_STOP_REASON{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Age|Age (Domain)]{td}
+      {td}D_N_AGE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Birth history number|Birth history number (Domain)]{td}
+      {td}D_N_BIRTH_HISTORY_NUMBER{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Check|Check (Domain)]{td}
+      {td}D_T_CHECK{td}
+      {td}VARCHAR(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Code 9|Code 9 (Domain)]{td}
+      {td}D_N_CODE_9{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Comment|Comment (Domain)]{td}
+      {td}D_T_COMMENT{td}
+      {td}VARCHAR(32){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Consent|Consent (Domain)]{td}
+      {td}D_N_CONSENT{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Day|Day (Domain)]{td}
+      {td}D_N_DAY{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[District|District (Domain)]{td}
+      {td}D_N_DISTRICT{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Duration of Residence|Duration of Residence (Domain)]{td}
+      {td}D_N_DURATION_OF_RESIDENCE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Eligible|Eligible (Domain)]{td}
+      {td}D_N_ELIGIBLE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}0{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Ethnic|Ethnic (Domain)]{td}
+      {td}D_N_ETHNIC{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health Facility Type|Health Facility Type (Domain)]{td}
+      {td}D_N_HEALTH_FACILITY_TYPE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health Facility Type 2|Health Facility Type 2 (Domain)]{td}
+      {td}D_T_HEALTH_FACILITY_TYPE_2{td}
+      {td}VARCHAR(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health Facility Type 3|Health Facility Type 3 (Domain)]{td}
+      {td}D_N_HEALTH_FACILITY_TYPE_3{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health assistant type|Health assistant type (Domain)]{td}
+      {td}D_N_HEALTH_ASSISTANT_TYPE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health work place|Health work place (Domain)]{td}
+      {td}D_N_HEALTH_WORK_PLACE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Health worker type|Health worker type (Domain)]{td}
+      {td}D_N_HEALTH_WORKER_TYPE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Highest educational level|Highest educational level (Domain)]{td}
+      {td}D_N_HIGHEST_EDUCATIONAL_LEVEL{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Hour|Hour (Domain)]{td}
+      {td}D_N_HOUR{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Husband Status|Husband Status (Domain)]{td}
+      {td}D_N_HUSBAND_STATUS{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Identifier Cluster|Identifier Cluster (Domain)]{td}
+      {td}D_T_IDENTIFIER_CLUSTER{td}
+      {td}VARCHAR(3){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Identifier Household|Identifier Household (Domain)]{td}
+      {td}D_T_IDENTIFIER_HOUSEHOLD{td}
+      {td}VARCHAR(6){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Identifier Household Member|Identifier Household Member (Domain)]{td}
+      {td}D_T_IDENTIFIER_HOUSEHOLD_MEMBER{td}
+      {td}VARCHAR(9){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Identifier Name|Identifier Name (Domain)]{td}
+      {td}D_T_IDENTIFIER_NAME{td}
+      {td}VARCHAR(35){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Key Foreign|Key Foreign (Domain)]{td}
+      {td}D_NL_KEY_FOREIGN{td}
+      {td}LONG{td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Key Primary|Key Primary (Domain)]{td}
+      {td}D_NL_KEY_PRIMARY{td}
+      {td}LONG{td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Literacy|Literacy (Domain)]{td}
+      {td}D_N_LITERACY{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Marital Status|Marital Status (Domain)]{td}
+      {td}D_N_MARITAL_STATUS{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Marital Status Detail|Marital Status Detail (Domain)]{td}
+      {td}D_N_MARITAL_STATUS_DETAIL{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Marital Status In Past|Marital Status In Past (Domain)]{td}
+      {td}D_N_MARITAL_STATUS_IN_PAST{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Minute|Minute (Domain)]{td}
+      {td}D_N_MINUTE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Month|Month (Domain)]{td}
+      {td}D_N_MONTH{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Month (Pregnancies)|Month (Pregnancies) (Domain)]{td}
+      {td}D_N_MONTH__PREGNANCIES_{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Name|Name (Domain)]{td}
+      {td}D_T_NAME{td}
+      {td}VARCHAR(32){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Number of Household Member|Number of Household Member (Domain)]{td}
+      {td}D_N_NUMBER_OF_HOUSEHOLD_MEMBER{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Numeric 2|Numeric 2 (Domain)]{td}
+      {td}D_N_NUMERIC_2{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Numeric 3|Numeric 3 (Domain)]{td}
+      {td}D_N_NUMERIC_3{td}
+      {td}NUMERIC(3){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Numeric AutoInc|Numeric AutoInc (Domain)]{td}
+      {td}D_NI_NUMERIC_AUTOINC{td}
+      {td}AUTOINCREMENT{td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Occupation|Occupation (Domain)]{td}
+      {td}D_N_OCCUPATION{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Other|Other (Domain)]{td}
+      {td}D_T_OTHER{td}
+      {td}VARCHAR(32){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Outside|Outside (Domain)]{td}
+      {td}D_N_OUTSIDE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Place of Residence|Place of Residence (Domain)]{td}
+      {td}D_N_PLACE_OF_RESIDENCE{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Relationship to head|Relationship to head (Domain)]{td}
+      {td}D_N_RELATIONSHIP_TO_HEAD{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Result of household interview|Result of household interview (Domain)]{td}
+      {td}D_N_RESULT_OF_HOUSEHOLD_INTERVIEW{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Result of respondent interview|Result of respondent interview (Domain)]{td}
+      {td}D_N_RESULT_OF_RESPONDENT_INTERVIEW{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Sex|Sex (Domain)]{td}
+      {td}D_N_SEX{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Type of Place of Residence|Type of Place of Residence (Domain)]{td}
+      {td}D_N_TYPE_OF_PLACE_OF_RESIDENCE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Yes or No|Yes or No (Domain)]{td}
+      {td}D_N_YES_OR_NO{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Year Survey|Year Survey (Domain)]{td}
+      {td}D_N_YEAR_SURVEY{td}
+      {td}NUMERIC(4){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}2012{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Work Class|Work Class (Domain)]{td}
+      {td}D_N_WORK_CLASS{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Work Time|Work Time (Domain)]{td}
+      {td}D_N_WORK_TIME{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Work Earn|Work Earn (Domain)]{td}
+      {td}D_N_WORK_EARN{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Week|Week (Domain)]{td}
+      {td}D_N_WEEK{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Yes or No or Ignore|Yes or No or Ignore (Domain)]{td}
+      {td}D_N_YES_OR_NO_OR_IGNORE{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Years of Residence|Years of Residence (Domain)]{td}
+      {td}D_N_YEARS_OF_RESIDENCE{td}
+      {td}NUMERIC(2){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+    {tr}
+      {td}[Union Status|Union Status (Domain)]{td}
+      {td}D_N_UNION_STATUS{td}
+      {td}NUMERIC(1){td}
+      {td}!DEV:Images^yes.png|align=center!{td}
+      {td}{td}
+      {td}{td}
+    {tr}
+  {tbody}
+{table}
+
