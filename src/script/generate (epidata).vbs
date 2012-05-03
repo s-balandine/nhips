@@ -377,6 +377,7 @@ For Each oTable In oTables
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
+				    Desc = Desc & "  KEY 2" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				ElseIf Not (oColumn.CannotModify) Then
 					ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
