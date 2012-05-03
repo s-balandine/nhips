@@ -1,6 +1,6 @@
 ================================================================================
 NDHIWA HIV IMPACT IN POPULATION SURVEY
-WOMAN'S QUESTIONNAIRE                                  {Rec}ord {ID}: <A         >
+WOMAN'S QUESTIONNAIRE                                   {Rec}ord {ID}: <A         >
 ================================================================================
 
 1.RESPONDENT'S BASIC DATA
@@ -16,18 +16,18 @@ S201  Date                       ({S201.1})  Day of interview................##
                                  ({S201.2})  Month of interview..............##  
                                  ({S201.3})  Year of interview.............####  
 --------------------------------------------------------------------------------
-S202  Actors on the field?                   Interviewer:
+S202  Actors on the field?                 Interviewer:
                                  ({S202.1})  <A                                  >
-                                             Supervisor:
+                                           Supervisor:
                                  ({S202.2})  <A                                  >
 --------------------------------------------------------------------------------
 S203  Result                     ({S203.1})  Result..........................##  
-                                             Result (Other):
-                                 ({S203.2})     <A                               >
+                                           Result (Other):
+                                 ({S203.2})    <A                               >
 --------------------------------------------------------------------------------
-S204  Actors at the office?                  Editor:
+S204  Actors at the office?                Editor:
                                  ({S204.1})  <A                                  >
-                                             Keyer:
+                                           Keyer:
                                  ({S204.2})  <A                                  >
 
 1.RESPONDEN'T BACKGROUND
@@ -61,8 +61,8 @@ Q106  What is the highest (grade/form/year) you completed at that level?
 Q108  Can you read any part of the sentence to me?
 
                                  ({Q108.1})  ................................##  
-                                             Specify language:
-                                 ({Q108.2})     <A                               >
+                                           Specify language:
+                                 ({Q108.2})    <A                               >
 --------------------------------------------------------------------------------
 Q109  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the country side?
@@ -81,8 +81,8 @@ Q111  Just before you moved here, did you live in a city a town, or in the
 Q112  What is your ethnic group/tribe?
 
                                  ({Q112.1})  ................................##  
-                                             Specify:
-                                 ({Q112.2})     <A                               >
+                                           Specify:
+                                 ({Q112.2})    <A                               >
 --------------------------------------------------------------------------------
 Q113  In the last 12 months, how many times have you been away from home for 
       one or more nights?
@@ -200,8 +200,8 @@ Q301  Birth history number of last birth
 --------------------------------------------------------------------------------
 Q304  What name was given to your last baby?
 
-                                             Name:
-                                 ({Q304.1})     <A                               >
+                                           Name:
+                                 ({Q304.1})    <A                               >
 --------------------------------------------------------------------------------
 Q305  Is last baby still alive?  ({Q305.1})  .................................#  
 --------------------------------------------------------------------------------
@@ -210,14 +210,14 @@ Q306  Did you see anyone for antenatal care for this pregnancy?
                                  ({Q306.1})  .................................#  
 --------------------------------------------------------------------------------
 Q307  Whom did you see?          ({Q307.1})  ................................##  
-                                             Specify:
-                                 ({Q307.2})     <A                               >
+                                           Specify:
+                                 ({Q307.2})    <A                               >
 --------------------------------------------------------------------------------
 Q308  Where did you receive antenatal care for this pregnancy?
 
                                  ({Q308.1})  ................................##  
-                                             Specify:
-                                 ({Q308.2})     <A                               >
+                                           Specify:
+                                 ({Q308.2})    <A                               >
 --------------------------------------------------------------------------------
 Q309  How many months pregnant were you when you first received antenatal care 
       for this pregnancy?
@@ -231,14 +231,13 @@ Q3010  How many times did you receive antenatal care during this pregnancy?
 Q311  Who assisted with the delivery of last baby ? 
 
                                  ({Q311.1})  ................................##  
-                                             Specify:
-                                 ({Q311.2})     <A                               >
+                                           Specify:
+                                 ({Q311.2})    <A                               >
 --------------------------------------------------------------------------------
 Q312  Where did you give birth to last baby?
 
                                  ({Q312.1})  ................................##  
-                                             :
-                                 ({Q312.2})     <A                               >
+                                 ({Q312.2})    <A                               >
 --------------------------------------------------------------------------------
 Q313  How long after last baby was delivered did you stay there?
 
@@ -291,8 +290,8 @@ Q409  How many months pregnant were you when you were first tested for the AIDS
                                  ({Q409.1})  Months...........................#  
 --------------------------------------------------------------------------------
 Q4010  Where was the test done?   ({Q410.1})  ................................##  
-                                             Specify:
-                                 ({Q410.2})     <A                               >
+                                           Specify:
+                                 ({Q410.2})    <A                               >
 --------------------------------------------------------------------------------
 Q411  I don't want to know the results, but did you get the results of the 
       test?
@@ -343,17 +342,17 @@ Q421  I don't want to know the results, but did you get the results of the
                                  ({Q421.1})  .................................#  
 --------------------------------------------------------------------------------
 Q422  Where was the test done?   ({Q422.1})  ................................##  
-                                             Specify:
-                                 ({Q422.2})     <A                               >
+                                           Specify:
+                                 ({Q422.2})    <A                               >
 --------------------------------------------------------------------------------
 Q423  Do you know of a place where people can go to get tested for the AIDS 
       virus?
 
                                  ({Q423.1})  .................................#  
 --------------------------------------------------------------------------------
-Q424  Where is that?             ({Q424.1})  .................................<A>
-                                             Specify:
-                                 ({Q424.2})     <A                               >
+Q424  Where is that?             ({Q424.1})                                   <A>
+                                           Specify:
+                                 ({Q424.2})    <A                               >
 
 5.HIV TESTING
 ================================================================================
@@ -383,8 +382,8 @@ Q609  When were you first tested positive for the AIDS virus?
                                  ({Q611.2})  Year..........................####  
 --------------------------------------------------------------------------------
 Q612  Where was the test done?   ({Q612.1})  ................................##  
-                                             Specify:
-                                 ({Q612.2})     <A                               >
+                                           Specify:
+                                 ({Q612.2})    <A                               >
 --------------------------------------------------------------------------------
 Q613  After you discovered you were infected with the virus that causes AIDS, 
       did you ever seek care for the AIDS infection?
@@ -422,21 +421,19 @@ Q619  When was your last consultation?
 --------------------------------------------------------------------------------
 Q620  Where are you now receiving ART?
 
-                                             :
-                                 ({Q620.1})     <A                               >
-                                             Specify:
-                                 ({Q620.2})     <A                               >
+                                 ({Q620.1})    <A                               >
+                                           Specify:
+                                 ({Q620.2})    <A                               >
 --------------------------------------------------------------------------------
 Q621  In which district is this place?
 
                                  ({Q621.1})  .................................#  
-                                             Specify:
-                                 ({Q621.2})     <A                               >
+                                           Specify:
+                                 ({Q621.2})    <A                               >
 --------------------------------------------------------------------------------
 Q622  What is the name of this place?
 
-                                             :
-                                 ({Q622.1})     <A                               >
+                                 ({Q622.1})    <A                               >
 --------------------------------------------------------------------------------
 Q623  Are you still followed up for the AIDS infection?
 
@@ -449,25 +446,23 @@ Q624  When was your last consultation?
 --------------------------------------------------------------------------------
 Q625  Where are you now receiving care?
 
-                                             :
-                                 ({Q625.1})     <A                               >
-                                             Specify:
-                                 ({Q625.2})     <A                               >
+                                 ({Q625.1})    <A                               >
+                                           Specify:
+                                 ({Q625.2})    <A                               >
 --------------------------------------------------------------------------------
 Q626  In which district is this place?
 
                                  ({Q626.1})  .................................#  
-                                             Specify:
-                                 ({Q626.2})     <A                               >
+                                           Specify:
+                                 ({Q626.2})    <A                               >
 --------------------------------------------------------------------------------
 Q627  What is the name of this place?
 
-                                             :
-                                 ({Q627.1})     <A                               >
+                                 ({Q627.1})    <A                               >
 --------------------------------------------------------------------------------
 Q628  Why did you stop?          ({Q628.1})  ................................##  
-                                             Specify:
-                                 ({Q628.2})     <A                               >
+                                           Specify:
+                                 ({Q628.2})    <A                               >
 --------------------------------------------------------------------------------
 Q629  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
@@ -482,16 +477,14 @@ Q633  After delivery, did your child receive ART, Antiretroviral Treatment, to
 7.OBSERVATIONS
 ================================================================================
 --------------------------------------------------------------------------------
-Q701  Interviewer's observations            Comments about specific questions:
-                                 ({Q701.1})     <A                               >
-                                             Comments about respondent:
-                                 ({Q701.2})     <A                               >
-                                             Any other comments:
-                                 ({Q701.3})     <A                               >
+Q701  Interviewer's observations          Comments about specific questions:
+                                 ({Q701.1})    <A                               >
+                                           Comments about respondent:
+                                 ({Q701.2})    <A                               >
+                                           Any other comments:
+                                 ({Q701.3})    <A                               >
 --------------------------------------------------------------------------------
-Q702  Supervisor's observations             :
-                                 ({Q702.1})     <A                               >
+Q702  Supervisor's observations ({Q702.1})    <A                               >
 --------------------------------------------------------------------------------
-Q703  Editor's observations                 :
-                                 ({Q703.1})     <A                               >
+Q703  Editor's observations     ({Q703.1})    <A                               >
 
