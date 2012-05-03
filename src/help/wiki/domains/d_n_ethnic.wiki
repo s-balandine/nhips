@@ -1,0 +1,121 @@
+{style}
+table.register{
+  border:    1px solid #cccccc;
+  border-collapse: collapse;}
+table.register thead    { 
+  border-bottom: 1px solid #cccccc}
+table.register thead td { 
+  border-bottom: 1px solid #cccccc;}
+table.register td { border-bottom: 1px dotted #AAAAAA; vertical-align: top; padding: 2px;}
+table.register tr.h1 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;
+  font-weight: bold;}
+table.register tr.h2 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;}
+border: 1px solid #cccccc; background-color: #FAFAFA}
+table.register tr.h3 td { border: 1px solid #003366}
+{style}
+
+{set-data:name|hidden=true}Ethnic{set-data}
+{set-data:name-link|hidden=true}Ethnic (Domain){set-data}
+{set-data:code|hidden=true}D_N_ETHNIC{set-data}
+{set-data:datatype|hidden=true}NUMERIC(2){set-data}
+{set-data:is-required|hidden=true}!DEV:Images^yes.png|align=center!{set-data}
+{set-data:default|hidden=true}{set-data}
+{set-data:comment|hidden=true}{set-data}
+{section}
+  {column:width=20%}
+    {panel}{navigator}{panel}
+    {panel:title=Sommaire}
+      {toc:indent=10px|maxLevel=3}
+    {panel}
+    {info:title=Information technique|icon=false}
+      ----
+      {table:class=spec}
+        {tr}
+          {td}*Nom*:{td}
+          {td}{get-data:name}{td}
+        {tr}
+        {tr}
+          {td}&nbsp;&nbsp;SQL:{td}
+          {td}{get-data:code}{td}
+        {tr}
+        {tr}
+          {td}*Type*:{td}
+          {td}{get-data:datatype}{td}
+        {tr}
+        {tr}
+          {td}*Obligatoire*:{td}
+          {td:style=float:left;}{get-data:is-required}{td}
+        {tr}
+      {table}
+    {info}
+  {column}
+  {column}
+h2. Définition
+
+
+
+h2. Raison et cas d'utilisation
+
+...
+
+h2. Discussion
+
+...
+
+h2. Contraintes 
+
+Seules les valeurs suivantes sont permises.
+{table:class=register|width=50%}
+  {thead}
+    {tr:class=h1}
+      {td:rowspan=2}Valeur{td}
+      {td:colspan=2}Code{td}
+    {tr}
+    {tr:class=h2}
+      {td}Court{td}
+      {td}Long{td}
+    {tr}
+  {thead}
+  {tbody}
+    {tr}{td}1{td}{td}Embu{td}{td}{td}{tr}
+    {tr}{td}2{td}{td}Kalenjin{td}{td}{td}{tr}
+    {tr}{td}3{td}{td}Kamba{td}{td}{td}{tr}
+    {tr}{td}4{td}{td}Kikuyu{td}{td}{td}{tr}
+    {tr}{td}5{td}{td}Kisii{td}{td}{td}{tr}
+    {tr}{td}6{td}{td}Luhya{td}{td}{td}{tr}
+    {tr}{td}7{td}{td}Luo{td}{td}{td}{tr}
+    {tr}{td}8{td}{td}Masai{td}{td}{td}{tr}
+    {tr}{td}9{td}{td}Meru{td}{td}{td}{tr}
+    {tr}{td}10{td}{td}Mijikenda / Swahili{td}{td}{td}{tr}
+    {tr}{td}11{td}{td}Somali{td}{td}{td}{tr}
+    {tr}{td}12{td}{td}Taita / Taveta{td}{td}{td}{tr}
+    {tr}{td}96{td}{td}Other{td}{td}{td}{tr}
+  {tbody}
+{table}
+
+    h2. Liste des colonnes du domaine
+    {table:class=register|width=50%}
+      {thead}
+        {tr:class=h1}
+          {td}Table{td}
+          {td}Variable{td}
+          {td}Variable (SQL){td}
+        {tr}
+      {thead}
+      {tbody}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[Ethnic|Ethnic ()]{td}
+          {td}HEW_ETHNIC{td}
+        {tr}
+      {tbody}
+    {table}
+  {column}
+{section}
+

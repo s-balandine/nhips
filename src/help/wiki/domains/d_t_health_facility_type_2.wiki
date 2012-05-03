@@ -1,0 +1,122 @@
+{style}
+table.register{
+  border:    1px solid #cccccc;
+  border-collapse: collapse;}
+table.register thead    { 
+  border-bottom: 1px solid #cccccc}
+table.register thead td { 
+  border-bottom: 1px solid #cccccc;}
+table.register td { border-bottom: 1px dotted #AAAAAA; vertical-align: top; padding: 2px;}
+table.register tr.h1 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;
+  font-weight: bold;}
+table.register tr.h2 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;}
+border: 1px solid #cccccc; background-color: #FAFAFA}
+table.register tr.h3 td { border: 1px solid #003366}
+{style}
+
+{set-data:name|hidden=true}Health Facility Type 2{set-data}
+{set-data:name-link|hidden=true}Health Facility Type 2 (Domain){set-data}
+{set-data:code|hidden=true}D_T_HEALTH_FACILITY_TYPE_2{set-data}
+{set-data:datatype|hidden=true}VARCHAR(1){set-data}
+{set-data:is-required|hidden=true}!DEV:Images^yes.png|align=center!{set-data}
+{set-data:default|hidden=true}{set-data}
+{set-data:comment|hidden=true}{set-data}
+{section}
+  {column:width=20%}
+    {panel}{navigator}{panel}
+    {panel:title=Sommaire}
+      {toc:indent=10px|maxLevel=3}
+    {panel}
+    {info:title=Information technique|icon=false}
+      ----
+      {table:class=spec}
+        {tr}
+          {td}*Nom*:{td}
+          {td}{get-data:name}{td}
+        {tr}
+        {tr}
+          {td}&nbsp;&nbsp;SQL:{td}
+          {td}{get-data:code}{td}
+        {tr}
+        {tr}
+          {td}*Type*:{td}
+          {td}{get-data:datatype}{td}
+        {tr}
+        {tr}
+          {td}*Obligatoire*:{td}
+          {td:style=float:left;}{get-data:is-required}{td}
+        {tr}
+      {table}
+    {info}
+  {column}
+  {column}
+h2. Définition
+
+
+
+h2. Raison et cas d'utilisation
+
+...
+
+h2. Discussion
+
+...
+
+h2. Contraintes 
+
+Seules les valeurs suivantes sont permises.
+{table:class=register|width=50%}
+  {thead}
+    {tr:class=h1}
+      {td:rowspan=2}Valeur{td}
+      {td:colspan=2}Code{td}
+    {tr}
+    {tr:class=h2}
+      {td}Court{td}
+      {td}Long{td}
+    {tr}
+  {thead}
+  {tbody}
+    {tr}{td}A{td}{td}Public sector: Government hospital{td}{td}{td}{tr}
+    {tr}{td}B{td}{td}Public sector: Government health center{td}{td}{td}{tr}
+    {tr}{td}C{td}{td}Public sector: Stand-alone VCT Center{td}{td}{td}{tr}
+    {tr}{td}D{td}{td}Public sector: Family planning clinic{td}{td}{td}{tr}
+    {tr}{td}E{td}{td}Public sector: Mobile clinic{td}{td}{td}{tr}
+    {tr}{td}F{td}{td}Public sector: Fieldworker{td}{td}{td}{tr}
+    {tr}{td}G{td}{td}Public sector: Other public{td}{td}{td}{tr}
+    {tr}{td}H{td}{td}Private medical sector: Private hospital/clinic/doctor{td}{td}{td}{tr}
+    {tr}{td}I{td}{td}Private medical sector: Stand-alone VCT Center{td}{td}{td}{tr}
+    {tr}{td}J{td}{td}Private medical sector: Pharmacy{td}{td}{td}{tr}
+    {tr}{td}K{td}{td}Private medical sector: Mobile clinic{td}{td}{td}{tr}
+    {tr}{td}L{td}{td}Private medical sector: Fieldworker{td}{td}{td}{tr}
+    {tr}{td}M{td}{td}Private medical sector: Other private{td}{td}{td}{tr}
+    {tr}{td}X{td}{td}Other{td}{td}{td}{tr}
+  {tbody}
+{table}
+
+    h2. Liste des colonnes du domaine
+    {table:class=register|width=50%}
+      {thead}
+        {tr:class=h1}
+          {td}Table{td}
+          {td}Variable{td}
+          {td}Variable (SQL){td}
+        {tr}
+      {thead}
+      {tbody}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[AIDS Test Place Where|AIDS Test Place Where ()]{td}
+          {td}HEW_AIDS_TEST_PLACE_WHERE{td}
+        {tr}
+      {tbody}
+    {table}
+  {column}
+{section}
+

@@ -1,0 +1,93 @@
+{style}
+table.register{
+  border:    1px solid #cccccc;
+  border-collapse: collapse;}
+table.register thead    { 
+  border-bottom: 1px solid #cccccc}
+table.register thead td { 
+  border-bottom: 1px solid #cccccc;}
+table.register td { border-bottom: 1px dotted #AAAAAA; vertical-align: top; padding: 2px;}
+table.register tr.h1 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;
+  font-weight: bold;}
+table.register tr.h2 td { 
+  border-bottom: 1px solid #cccccc; 
+  background-color: #f0f0f0;
+  color: #003366;}
+border: 1px solid #cccccc; background-color: #FAFAFA}
+table.register tr.h3 td { border: 1px solid #003366}
+{style}
+
+{set-data:name|hidden=true}Birth history number{set-data}
+{set-data:name-link|hidden=true}Birth history number (Domain){set-data}
+{set-data:code|hidden=true}D_N_BIRTH_HISTORY_NUMBER{set-data}
+{set-data:datatype|hidden=true}NUMERIC(1){set-data}
+{set-data:is-required|hidden=true}!DEV:Images^yes.png|align=center!{set-data}
+{set-data:default|hidden=true}{set-data}
+{set-data:comment|hidden=true}{set-data}
+{section}
+  {column:width=20%}
+    {panel}{navigator}{panel}
+    {panel:title=Sommaire}
+      {toc:indent=10px|maxLevel=3}
+    {panel}
+    {info:title=Information technique|icon=false}
+      ----
+      {table:class=spec}
+        {tr}
+          {td}*Nom*:{td}
+          {td}{get-data:name}{td}
+        {tr}
+        {tr}
+          {td}&nbsp;&nbsp;SQL:{td}
+          {td}{get-data:code}{td}
+        {tr}
+        {tr}
+          {td}*Type*:{td}
+          {td}{get-data:datatype}{td}
+        {tr}
+        {tr}
+          {td}*Obligatoire*:{td}
+          {td:style=float:left;}{get-data:is-required}{td}
+        {tr}
+      {table}
+    {info}
+  {column}
+  {column}
+h2. Définition
+
+
+
+h2. Raison et cas d'utilisation
+
+...
+
+h2. Discussion
+
+...
+
+h2. Contraintes 
+
+
+    h2. Liste des colonnes du domaine
+    {table:class=register|width=50%}
+      {thead}
+        {tr:class=h1}
+          {td}Table{td}
+          {td}Variable{td}
+          {td}Variable (SQL){td}
+        {tr}
+      {thead}
+      {tbody}
+        {tr}
+          {td}[Eligible Woman]{td}
+          {td}[Last Baby Index|Last Baby Index ()]{td}
+          {td}HEW_LAST_BABY_INDEX{td}
+        {tr}
+      {tbody}
+    {table}
+  {column}
+{section}
+
