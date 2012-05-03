@@ -1,25 +1,6 @@
 
 INCLUDE "D:\users\s-balandine\share\nhips\src\epidata\included labels.chk"
 
-BEFORE RECORD
- IF (Q1011 = .) THEN
-  LET Q1011=Unnamed
- ENDIF
-END
-
-AFTER RECORD
- IF (RECID = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO RECID
-  EXIT
- ENDIF
- IF (Q1011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q1011
-  EXIT
- ENDIF
-END
-
 * RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
