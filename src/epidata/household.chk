@@ -100,7 +100,7 @@ END
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  COMMENT LEGAL "Field Interviewer"TYPE COMM
+  COMMENT LEGAL "Field Interview
   END
 END
 
@@ -108,7 +108,7 @@ END
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"TYPE COMM
+  COMMENT LEGAL "Field Supervis
   END
 END
 
@@ -150,7 +150,7 @@ END
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
-  COMMENT LEGAL "Office Editor"TYPE COMM
+  COMMENT LEGAL "Office Edit
   END
 END
 
@@ -158,7 +158,7 @@ END
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
-  COMMENT LEGAL "Office Keyer"TYPE COMM
+  COMMENT LEGAL "Office Key
   END
 END
 
