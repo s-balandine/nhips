@@ -1,188 +1,4 @@
 LABELBLOCK
-  LABEL D_N_YEAR_BIRTH
-    9998 "Don't know"
-   END
-  LABEL D_N_AIDS_STOP_REASON
-    1 "No one was attending"
-    2 "Stock out"
-    3 "Unfriendly staff"
-    4 "Spontaneous"
-    5 "Advised to stop"
-    6 "Throught i was cured/feel good"
-    7 "Side effect"
-    8 "Moved away"
-    9 "Transport cost"
-    10 "Stop pmtct"
-    96 "Other"
-   END
-  LABEL D_N_AGE
-    98 "Don't know"
-   END
-  LABEL D_T_CHECK
-    Y "Yes"
-    N "No"
-   END
-  LABEL D_N_CONSENT
-    1 "Granted"
-    2 "Refused"
-   END
-  LABEL D_N_DISTRICT
-    1 "Ndhiwa district"
-    2 "Homa bay"
-    3 "Other"
-   END
-  LABEL D_N_DURATION_OF_RESIDENCE
-    1 "Live here, since ever"
-    2 "Live here, since less than one year"
-    3 "Live here, since more than one years"
-    4 "Visitor, since less than one year"
-    5 "Visitor, since more than one years"
-   END
-  LABEL D_N_ELIGIBLE
-    0 "Non"
-    1 "Oui"
-   END
-  LABEL D_N_ETHNIC
-    1 "Embu"
-    2 "Kalenjin"
-    3 "Kamba"
-    4 "Kikuyu"
-    5 "Kisii"
-    6 "Luhya"
-    7 "Luo"
-    8 "Masai"
-    9 "Meru"
-    10 "Mijikenda / Swahili"
-    11 "Somali"
-    12 "Taita / Taveta"
-    96 "Other"
-   END
-  LABEL D_N_HEALTH_FACILITY_TYPE
-    11 "Public sector: Government hospital"
-    12 "Public sector: Government health center"
-    13 "alone VCT Center"
-    14 "Public sector: Family planning clinic"
-    15 "Public sector: Mobile clinic"
-    16 "Public sector: Fieldworker"
-    17 "Public sector: School based clinic"
-    18 "Public sector: Other public"
-    21 "Private medical sector: Private hospital/clinic/doctor"
-    22 "alone VCT Center"
-    23 "Private medical sector: Pharmacy"
-    24 "Private medical sector: Mobile clinic"
-    25 "Private medical sector: Fieldworker"
-    26 "Private medical sector: School based clinic"
-    27 "Private medical sector: Other private"
-    31 "Other source: Home"
-    32 "Other source: Correctional facility"
-    98 "Other"
-   END
-  LABEL D_T_HEALTH_FACILITY_TYPE_2
-    A "Public sector: Government hospital"
-    B "Public sector: Government health center"
-    C "alone VCT Center"
-    D "Public sector: Family planning clinic"
-    E "Public sector: Mobile clinic"
-    F "Public sector: Fieldworker"
-    G "Public sector: Other public"
-    H "Private medical sector: Private hospital/clinic/doctor"
-    I "alone VCT Center"
-    J "Private medical sector: Pharmacy"
-    K "Private medical sector: Mobile clinic"
-    L "Private medical sector: Fieldworker"
-    M "Private medical sector: Other private"
-    X "Other"
-   END
-  LABEL D_N_HEALTH_FACILITY_TYPE_3
-    11 "Public sector: Government hospital"
-    12 "Public sector: Government health center"
-    13 "Public sector: Government dispensary"
-    18 "Public sector: Other public"
-    21 "Private medical sector: Private hospital/clinic/doctor"
-    27 "Private medical sector: Other private"
-    96 "Other"
-   END
-  LABEL D_N_HEALTH_ASSISTANT_TYPE
-    A "Health personnel: Doctor"
-    B "Health personnel: Nurse, midwife"
-    C "Health personnel: Auxiliary midwife"
-    D "Other person: Traditional birth attendant"
-    E "Other person: Relative/Friend"
-    X "Other person: Other"
-    Y "No one"
-   END
-  LABEL D_N_HEALTH_WORK_PLACE
-    A "Home: Respondent's home"
-    B "Home: Other home"
-    C "Public sector: Government hospital"
-    D "Public sector: Government health center"
-    E "Public sector: Government health post"
-    F "Public sector: Other public"
-    G "Private medical sector: Private hospital, clinic"
-    H "Private medical sector: Other private medical"
-    X "Other"
-   END
-  LABEL D_N_HEALTH_WORKER_TYPE
-    A "Health personnel: Doctor"
-    B "Health personnel: Nurse, midwife"
-    C "Health personnel: Auxiliary midwife"
-    D "Other person: Traditional birth attendant"
-    E "Other person: Community/village health worker"
-    X "Other person: Other"
-   END
-  LABEL D_N_HIGHEST_EDUCATIONAL_LEVEL
-    1 "Primary"
-    2 "primary / Vocational"
-    3 "Secondary / A level"
-    4 "Higher"
-   END
-  LABEL D_N_HUSBAND_STATUS
-    1 "Living with her"
-    2 "Staying elsewhere"
-   END
-  LABEL D_N_LITERACY
-    1 "No, cannont read at all"
-    2 "Yes, able to read only part of sentence"
-    3 "Yes, able to read whole sentence"
-    4 "Not applicable, no card with required language"
-    5 "Not applicable, blind or Visually impaired"
-   END
-  LABEL D_N_MARITAL_STATUS
-    1 "Married or living together"
-    2 "Divorced or separated"
-    3 "Widowed"
-    4 "Never married and never lived together"
-   END
-  LABEL D_N_MARITAL_STATUS_DETAIL
-    1 "Widowed"
-    2 "Divorced"
-    3 "Separated"
-   END
-  LABEL D_N_MARITAL_STATUS_IN_PAST
-    1 "Yes, formerly married"
-    2 "Yes, lived with a man"
-    3 "No"
-   END
-  LABEL D_N_MONTH
-    98 "Don't know"
-   END
-  LABEL D_N_OCCUPATION
-    1 "?"
-    2 "?"
-    3 "?"
-    4 "?"
-   END
-  LABEL D_N_OUTSIDE
-    1 "One or more nights"
-    2 "One or more months"
-    3 "None"
-   END
-  LABEL D_N_PLACE_OF_RESIDENCE
-    1 "Nairobi / Kisumu"
-    2 "Other City / Town"
-    3 "Countryside"
-    4 "Outside Kenya"
-   END
   LABEL D_N_RELATIONSHIP_TO_HEAD
     1 "Head"
     2 "Wife or husband"
@@ -197,171 +13,40 @@ LABELBLOCK
     11 "Not related"
     98 "Don't know"
    END
-  LABEL D_N_RESULT_OF_HOUSEHOLD_INTERVIEW
-    1 "Completed"
-    2 "No household member at home"
-    3 "No competent respondent at home"
-    4 "Entire household absent for extended period of time"
-    5 "Postponed"
-    6 "Refused"
-    7 "Dwelling vacant"
-    8 "Address not a dwelling"
-    9 "Dwelling destroyed"
-    10 "Dwelling not found"
-    97 "Other"
-   END
-  LABEL D_N_RESULT_OF_RESPONDENT_INTERVIEW
-    1 "Completed"
-    2 "Not at home"
-    3 "Postponed"
-    4 "Refused"
-    5 "Partly completed"
-    6 "Incapacited"
-    97 "Other"
-   END
   LABEL D_N_SEX
     1 "Male"
     2 "Female"
-   END
-  LABEL D_N_TYPE_OF_PLACE_OF_RESIDENCE
-    0 "Capital, large city"
-    1 "Small city"
-    2 "Town"
-    3 "Countryside"
    END
   LABEL D_N_YES_OR_NO
     1 "Yes"
     2 "No"
    END
-  LABEL D_N_WORK_CLASS
-    1 "For family member"
-    2 "For someone else"
-    3 "employed"
-   END
-  LABEL D_N_WORK_TIME
-    1 "All year"
-    2 "Seasonal"
-    3 "Occasional"
-   END
-  LABEL D_N_WORK_EARN
-    1 "Cash only"
-    2 "Cash and kind"
-    3 "In kind only"
-    4 "Not paid"
-   END
-  LABEL D_N_YES_OR_NO_OR_IGNORE
+  LABEL D_N_YES_OR_NO
     1 "Yes"
     2 "No"
-    8 "Don't know"
    END
-  LABEL D_N_YEARS_OF_RESIDENCE
-    98 "Always"
-    99 "Visitor"
+  LABEL D_N_MARITAL_STATUS
+    1 "Married or living together"
+    2 "Divorced or separated"
+    3 "Widowed"
+    4 "Never married and never lived together"
    END
-  LABEL D_N_UNION_STATUS
-    1 "Yes, currently married"
-    2 "Yes, living with a man"
-    3 "No, not in union"
+  LABEL D_N_ELIGIBLE
+    0 "Non"
+    1 "Oui"
+   END
+  LABEL D_N_ELIGIBLE
+    0 "Non"
+    1 "Oui"
    END
 END
 
-BEFORE FILE
- CONFIRM
-END
-
-BEFORE RECORD
- IF (Q2002 = .) THEN
-  LET Q2002=Unnamed
- ENDIF
- IF (Q2003 = .) THEN
-  LET Q2003=99
- ENDIF
- IF (Q2004 = .) THEN
-  LET Q2004=99
- ENDIF
- IF (Q2008 = .) THEN
-  LET Q2008=99
- ENDIF
- IF (Q2009 = .) THEN
-  LET Q2009=0
- ENDIF
- IF (Q20010 = .) THEN
-  LET Q20010=0
- ENDIF
-END
-
-AFTER RECORD
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
-  EXIT
- ENDIF
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
-  EXIT
- ENDIF
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
-  EXIT
- ENDIF
- IF (Q2001 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2001
-  EXIT
- ENDIF
- IF (Q2002 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2002
-  EXIT
- ENDIF
- IF (Q2003 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2003
-  EXIT
- ENDIF
- IF (Q2004 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2004
-  EXIT
- ENDIF
- IF (Q2005 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2005
-  EXIT
- ENDIF
- IF (Q2006 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2006
-  EXIT
- ENDIF
- IF (Q2007 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2007
-  EXIT
- ENDIF
- IF (Q2008 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2008
-  EXIT
- ENDIF
- IF (Q2009 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2009
-  EXIT
- ENDIF
- IF (Q20010 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20010
-  EXIT
- ENDIF
-END
 
 *  | Identifier of Cluster (HSH_IDENTIFIER_OF_CLUSTER) | NUMERIC(3)
 * 
 RECID
   KEY UNIQUE 1
+  KEY 2
   NOENTER
 END
 
@@ -369,6 +54,7 @@ END
 * 
 RECID
   KEY UNIQUE 1
+  KEY 2
   NOENTER
 END
 
@@ -376,22 +62,23 @@ END
 * 
 RECID
   KEY UNIQUE 1
+  KEY 2
   NOENTER
 END
 
-* Q200.1 | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
+* Q100.1 | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
 * 
-Q2001
+Q1001
   MUSTENTER
 END
 
-* Q200.2 | Name (NAME) | VARCHAR(32)
+* Q100.2 | Name (NAME) | VARCHAR(32)
 * 
-Q2002
+Q1002
   MUSTENTER
 END
 
-* Q200.3 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
+* Q100.3 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
 * 
 * Allowed Values
 *    1: Head
@@ -406,85 +93,85 @@ END
 *    10: Adopted/foster child
 *    11: Not related
 *    98: Don't know
-Q2003
+Q1003
   MUSTENTER
   COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD SHOW
   TYPE COMMENT
 END
 
-* Q200.4 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
+* Q100.4 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * 
 * Allowed Values
 *    1: Male
 *    2: Female
-Q2004
+Q1004
   MUSTENTER
   COMMENT LEGAL USE D_N_SEX SHOW
   TYPE COMMENT
 END
 
-* Q200.5 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
+* Q100.5 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
 * 
 * Allowed Values
 *    1: Yes
 *    2: No
-Q2005
+Q1005
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q200.6 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
+* Q100.6 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
 * 
 * Allowed Values
 *    1: Yes
 *    2: No
-Q2006
+Q1006
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q200.7 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
+* Q100.7 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
 * 
 * Allowed Values
 *    98: Don't know
-Q2007
+Q1007
   MUSTENTER
   COMMENT LEGAL USE D_N_AGE SHOW
   TYPE COMMENT
 END
 
-* Q200.8 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
+* Q100.8 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
 * 
 * Allowed Values
 *    1: Married or living together
 *    2: Divorced or separated
 *    3: Widowed
 *    4: Never married and never lived together
-Q2008
+Q1008
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS SHOW
   TYPE COMMENT
 END
 
-* Q200.9 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
+* Q100.9 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
 * 
 * Allowed Values
 *    0: Non
 *    1: Oui
-Q2009
+Q1009
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE SHOW
   TYPE COMMENT
 END
 
-* Q200.10 | Is Eligible Men (HHM_IS_ELIGIBLE_MEN) | NUMERIC(2)
+* Q100.10 | Is Eligible Men (HHM_IS_ELIGIBLE_MEN) | NUMERIC(2)
 * 
 * Allowed Values
 *    0: Non
 *    1: Oui
-Q20010
+Q10010
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE SHOW
   TYPE COMMENT
