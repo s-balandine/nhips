@@ -76,8 +76,8 @@ Form="Office Editor"
 
 For Each oTable In oTables
     
-	If IsObject(oTable) And (oTable.Name=Form) Then
-	'If IsObject(oTable) Then	
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then	
 				
 		WScript.Echo "  " & oTable.Name
 		
@@ -289,8 +289,8 @@ Desc = Desc & "END" & vbCrLf & vbCrLf
 
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name=Form) Then
-	'If IsObject(oTable) Then		
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc = "INCLUDE ""included header.inc""" & vbCrLf & vbCrLf
