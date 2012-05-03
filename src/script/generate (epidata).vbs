@@ -72,7 +72,7 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="office editor"
+Form="Office Editor"
 
 For Each oTable In oTables
     
