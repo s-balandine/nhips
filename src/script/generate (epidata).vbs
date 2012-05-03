@@ -300,10 +300,6 @@ For Each oTable In oTables
 		Desc = "INCLUDE ""included header.inc""" & vbCrLf & vbCrLf
 		Desc = "INCLUDE ""included labels.inc""" & vbCrLf
 
-		Desc = Desc & "BEFORE FILE" & vbCrLf
-		Desc = Desc & " CONFIRM" & vbCrLf
-		Desc = Desc & "END" & vbCrLf & vbCrLf
-		
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") And Not (oColumn.CannotModify) Then
