@@ -1,5 +1,6 @@
+LABELBLOCK
+END
 
-INCLUDE D:\users\s-balandine\share\nhips\src\epidata\includedlabels.chk
 
 * RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
 * 
