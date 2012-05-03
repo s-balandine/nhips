@@ -9,13 +9,13 @@ echo . > "office keyer.rec"
 echo . > "eligible man.rec"
 echo . > "eligible woman.rec"
 
-%epic% rev "field interviewer.qes" * FIRST FORCE
-%epic% rev "field supervisor.qes" * FIRST FORCE
-%epic% rev "household.qes" * FIRST FORCE
-%epic% rev "household member.qes" * FIRST FORCE
-%epic% rev "office editor.qes" * FIRST FORCE
-%epic% rev "office keyer.qes" * FIRST FORCE
-%epic% rev "eligible man.qes" * FIRST FORCE
-%epic% rev "eligible woman.qes" * FIRST FORCE
+%epic% rev "field interviewer.qes" * AUTO FORCE
+%epic% rev "field supervisor.qes" * AUTO FORCE
+%epic% rev "household.qes" * AUTO FORCE
+%epic% rev "household member.qes" * AUTO FORCE
+%epic% rev "office editor.qes" * AUTO FORCE
+%epic% rev "office keyer.qes" * AUTO FORCE
+%epic% rev "eligible man.qes" * AUTO FORCE
+%epic% rev "eligible woman.qes" * AUTO FORCE
 
 pause
