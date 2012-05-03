@@ -137,7 +137,7 @@ For Each oTable In oTables
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 18)
 					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
 				Else
-				    Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length)
+				    Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 18)
 				    Desc = Desc & "{Rec}ord {ID}: <A" & Space(oColumn.Length) & ">" & vbCrLf
 				End If
 			End If
@@ -540,3 +540,12 @@ Function RegExpTest(patrn, strng)
     RegExpTest = "No match was found."
   End If
 End Function
+
+Function Min(V1, V2)
+  If V1>V2 Then
+    Min = V2
+  Else
+    Min = V1
+  End If
+End Function
+
