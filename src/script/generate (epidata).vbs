@@ -543,9 +543,9 @@ End Function
 
 Function Max(V1, V2)
   If V1<V2 Then
-    Min = V2
+    Max = V2
   Else
-    Min = V1
+    Max = V1
   End If
 End Function
 
