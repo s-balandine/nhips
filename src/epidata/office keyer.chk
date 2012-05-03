@@ -270,223 +270,54 @@ BEFORE FILE
 END
 
 BEFORE RECORD
- IF (Q2002 = .) THEN
-  LET Q2002=Unnamed
+ IF (Q2011 = .) THEN
+  LET Q2011=Unnamed
  ENDIF
- IF (Q2003 = .) THEN
-  LET Q2003=99
- ENDIF
- IF (Q2004 = .) THEN
-  LET Q2004=99
- ENDIF
- IF (Q2008 = .) THEN
-  LET Q2008=99
- ENDIF
- IF (Q2009 = .) THEN
-  LET Q2009=0
- ENDIF
- IF (Q20010 = .) THEN
-  LET Q20010=0
+ IF (Q2012 = .) THEN
+  LET Q2012=Unnamed
  ENDIF
 END
 
 AFTER RECORD
- IF ( = .) THEN
+ IF (RECID = .) THEN
   HELP " must be entered" TYPE=ERROR
-  GOTO 
+  GOTO RECID
   EXIT
  ENDIF
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
+ IF (Q2011 = .) THEN
+  HELP "Firstname must be entered" TYPE=ERROR
+  GOTO Q2011
   EXIT
  ENDIF
- IF ( = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO 
-  EXIT
- ENDIF
- IF (Q2001 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2001
-  EXIT
- ENDIF
- IF (Q2002 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2002
-  EXIT
- ENDIF
- IF (Q2003 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2003
-  EXIT
- ENDIF
- IF (Q2004 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2004
-  EXIT
- ENDIF
- IF (Q2005 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2005
-  EXIT
- ENDIF
- IF (Q2006 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2006
-  EXIT
- ENDIF
- IF (Q2007 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2007
-  EXIT
- ENDIF
- IF (Q2008 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2008
-  EXIT
- ENDIF
- IF (Q2009 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q2009
-  EXIT
- ENDIF
- IF (Q20010 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q20010
+ IF (Q2012 = .) THEN
+  HELP "Lastname must be entered" TYPE=ERROR
+  GOTO Q2012
   EXIT
  ENDIF
 END
 
-*  | Identifier of Cluster (HSH_IDENTIFIER_OF_CLUSTER) | NUMERIC(3)
+* RECID | Identifier (SSV_IDENTIFIER) | VARCHAR(35)
 * 
 RECID
   KEY UNIQUE 1
   NOENTER
 END
 
-*  | Identifier of Household (HSH_IDENTIFIER_OF_HOUSEHOLD) | NUMERIC(2)
-* 
-RECID
-  KEY UNIQUE 1
-  NOENTER
-END
-
-*  | Identifier of Household Member (HHM_IDENTIFIER_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
-* 
-RECID
-  KEY UNIQUE 1
-  NOENTER
-END
-
-* Q200.1 | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
-* 
-Q2001
+* Q201.1 | Name First (SSV_NAME_FIRST) | VARCHAR(32)
+* Name > Firstname
+Q2011
   MUSTENTER
+  ::AFTER ENTRY::
+     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002::
+  END
 END
 
-* Q200.2 | Name (NAME) | VARCHAR(32)
-* 
-Q2002
+* Q201.2 | Name Last (SSV_NAME_LAST) | VARCHAR(32)
+* Name > Lastname
+Q2012
   MUSTENTER
-END
-
-* Q200.3 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
-* 
-* Allowed Values
-*    1: Head
-*    2: Wife or husband
-*    3: Son/daughter
-*    4: Son/daughter-in-law
-*    5: Grandchild
-*    6: Parent
-*    7: Parent-in-law
-*    8: Brother/sister
-*    9: Other relative
-*    10: Adopted/foster child
-*    11: Not related
-*    98: Don't know
-Q2003
-  MUSTENTER
-  COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD SHOW
-  TYPE COMMENT
-END
-
-* Q200.4 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
-* 
-* Allowed Values
-*    1: Male
-*    2: Female
-Q2004
-  MUSTENTER
-  COMMENT LEGAL USE D_N_SEX SHOW
-  TYPE COMMENT
-END
-
-* Q200.5 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
-* 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q2005
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q200.6 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
-* 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q2006
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q200.7 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
-* 
-* Allowed Values
-*    98: Don't know
-Q2007
-  MUSTENTER
-  COMMENT LEGAL USE D_N_AGE SHOW
-  TYPE COMMENT
-END
-
-* Q200.8 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
-* 
-* Allowed Values
-*    1: Married or living together
-*    2: Divorced or separated
-*    3: Widowed
-*    4: Never married and never lived together
-Q2008
-  MUSTENTER
-  COMMENT LEGAL USE D_N_MARITAL_STATUS SHOW
-  TYPE COMMENT
-END
-
-* Q200.9 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
-* 
-* Allowed Values
-*    0: Non
-*    1: Oui
-Q2009
-  MUSTENTER
-  COMMENT LEGAL USE D_N_ELIGIBLE SHOW
-  TYPE COMMENT
-END
-
-* Q200.10 | Is Eligible Men (HHM_IS_ELIGIBLE_MEN) | NUMERIC(2)
-* 
-* Allowed Values
-*    0: Non
-*    1: Oui
-Q20010
-  MUSTENTER
-  COMMENT LEGAL USE D_N_ELIGIBLE SHOW
-  TYPE COMMENT
+  ::AFTER ENTRY::
+     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002::
+  END
 END
 
