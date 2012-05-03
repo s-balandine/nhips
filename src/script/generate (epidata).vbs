@@ -288,7 +288,7 @@ Desc = Desc & "END" & vbCrLf & vbCrLf
 
 Desc = Replace(Desc, "\'", "'") 
 
-Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\check labels.chk", ForWriting, true)
+Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\included labels.chk", ForWriting, true)
 oFile.Write Desc & vbCrLf
 oFile.Close
 
@@ -297,8 +297,8 @@ For Each oTable In oTables
 	'If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
-		Desc = "INCLUDE ""check header.inc""" & vbCrLf & vbCrLf
-		Desc = "INCLUDE ""check labels.inc""" & vbCrLf
+		Desc = "INCLUDE ""included header.inc""" & vbCrLf & vbCrLf
+		Desc = "INCLUDE ""included labels.inc""" & vbCrLf
 
 		Desc = Desc & "BEFORE FILE" & vbCrLf
 		Desc = Desc & " CONFIRM" & vbCrLf
