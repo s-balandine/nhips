@@ -1,6 +1,16 @@
 LABELBLOCK
-  LABEL D_N_MONTH
-    98 "Don't know"
+  LABEL D_N_RESULT_OF_HOUSEHOLD_INTERVIEW
+    1 "Completed"
+    2 "No household member at home"
+    3 "No competent respondent at home"
+    4 "Entire household absent for extended period of time"
+    5 "Postponed"
+    6 "Refused"
+    7 "Dwelling vacant"
+    8 "Address not a dwelling"
+    9 "Dwelling destroyed"
+    10 "Dwelling not found"
+    97 "Other"
    END
 END
 
