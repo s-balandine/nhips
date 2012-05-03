@@ -256,6 +256,7 @@ For Each oTable In oTables
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Name) & ".qes", ForWriting, true)
 		oFile.Write Desc & vbCrLf
 		oFile.Close
+		
 	End If
 Next
 
