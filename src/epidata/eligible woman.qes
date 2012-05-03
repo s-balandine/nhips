@@ -7,7 +7,7 @@ WOMAN'S QUESTIONNAIRE                                  {Rec}ord {ID}: <A        
 ================================================================================
 --------------------------------------------------------------------------------
 S101  Identifiers                ({S101.1})  Household identifier...........###  
-                                 ({S101.2})  Respondent's line number ......##  
+                                 ({S101.2})  No. Respondent..................##  
 
 2.CHARACTERISTICS OF INTERVIEW
 ================================================================================
@@ -472,12 +472,12 @@ Q628  Why did you stop?          ({Q628.1})  ................................##
 Q629  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
 
-                                 ({Q629.1})  .................................#  
+                                 ({Q632.1})  .................................#  
 --------------------------------------------------------------------------------
-Q630  After delivery, did your child receive ART, Antiretroviral Treatment, to 
+Q633  After delivery, did your child receive ART, Antiretroviral Treatment, to 
       prevent acquiring the AIDS virus?
 
-                                 ({Q630.1})  .................................#  
+                                 ({Q633.1})  .................................#  
 
 7.OBSERVATIONS
 ================================================================================
