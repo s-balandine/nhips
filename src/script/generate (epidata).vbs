@@ -407,6 +407,7 @@ For Each oTable In oTables
 						S = Mid(S, 1, Len(S)-3)
 						Desc = Desc & "  " & Replace(S, "  ", vbCrLf & "    ") & vbCrLf & "  END" & vbCrLf 
 						Desc = Desc & Replace(S, vbCrLf & "    " & vbCrLf, vbCrLf & "    ")
+						Desc = Desc & Replace(S, vbCrLf & "    " & vbCrLf, vbCrLf & "    ")
 						For Each oBusinessRule in oColumn.AttachedRules
 							If IsObject(oBusinessRule) Then
 								'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
