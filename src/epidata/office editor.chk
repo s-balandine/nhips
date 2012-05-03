@@ -6,6 +6,7 @@ END
 * 
 RECID
   KEY UNIQUE 1
+  KEY 2
   NOENTER
 END
 
