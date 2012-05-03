@@ -17,6 +17,7 @@ END
 * Identifiers
 RECID
   KEY UNIQUE 1
+  KEY 2
   NOENTER
 END
 
@@ -100,7 +101,7 @@ END
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  COMMENT LEGAL "Field Interview"
+  COMMENT LEGAL "Field Interviewer"
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
