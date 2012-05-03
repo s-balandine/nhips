@@ -10014,4 +10014,123 @@ END
 </c:ParentKey>
 <c:Joins>
 <o:ReferenceJoin Id="o323">
-<a:ObjectID>ED309BD1
+<a:ObjectID>ED309BD1-1C8E-4DB3-842A-0403F308FFA5</a:ObjectID>
+<a:CreationDate>1335462039</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335462063</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o131"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o176"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o33">
+<a:ObjectID>AF082FFB-91E6-44E0-A7EC-C38CB7510476</a:ObjectID>
+<a:Name>Reference_10</a:Name>
+<a:Code>REFERENCE_10</a:Code>
+<a:CreationDate>1335462090</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335462102</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o38"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o43"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o130"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o324">
+<a:ObjectID>1AB32E91-B0EC-4760-A906-043E6FE21DAD</a:ObjectID>
+<a:CreationDate>1335462090</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335462102</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o127"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o173"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o35">
+<a:ObjectID>51A06BF7-01EB-4D65-8BFD-004927C3841A</a:ObjectID>
+<a:Name>Reference_11</a:Name>
+<a:Code>REFERENCE_11</a:Code>
+<a:CreationDate>1335462155</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335462165</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o40"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o43"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o138"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o325">
+<a:ObjectID>7F985147-C98F-4D85-A45F-1DB9EF607692</a:ObjectID>
+<a:CreationDate>1335462155</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1335462165</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o135"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o177"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+</c:References>
+<c:DefaultGroups>
+<o:Group Id="o326">
+<a:ObjectID>B6333367-B14F-4E55-9704-6E4C6741ECBE</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1239126767</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1317140082</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o327">
+<a:ObjectID>2480A7D6-BC54-47B2-AE93-E419F8DB70D3</a:ObjectID>
+<a:Name>Epidata</a:Name>
+<a:Code>Epidata</a:Code>
+<a:CreationDate>1318350478</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1318350478</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
+<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
