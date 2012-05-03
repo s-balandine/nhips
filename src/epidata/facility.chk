@@ -1,4 +1,4 @@
-INCLUDE "check labels.inc"
+INCLUDE "included labels.inc"
 BEFORE FILE
  CONFIRM
 END
