@@ -5,3 +5,59 @@ Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\facility.rec
 Datafile D:\users\s-balandine\share\NHIPS\src\epidata\facility.rec was revised
 using D:\users\s-balandine\share\NHIPS\src\epidata\facility.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field interviewer.qes" * FIRST FORCE
+03/05/2012 19:27:22
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\field interviewer.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\field interviewer.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\field interviewer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field supervisor.qes" * FIRST FORCE
+03/05/2012 19:27:22
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\field supervisor.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\field supervisor.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\field supervisor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev household.qes * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\household.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\household.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\household.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "household member.qes" * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\household member.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\household member.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\household member.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office editor.qes" * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\office editor.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\office editor.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\office editor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office keyer.qes" * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\office keyer.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\office keyer.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\office keyer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible man.qes" * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\eligible man.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\eligible man.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\eligible man.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" * FIRST FORCE
+03/05/2012 19:27:23
+Revise datafile D:\users\s-balandine\share\NHIPS\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\NHIPS\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\NHIPS\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
