@@ -136,7 +136,7 @@ For Each oTable In oTables
 			If IsObject(oColumn) And oColumn.Primary Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
 				If oColumn.DataType="AUTOINCREMENT" Then
-					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 22)
+					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 16)
 					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
 				Else
 				    Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 15)
