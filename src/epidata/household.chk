@@ -100,16 +100,16 @@ END
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"
-  TYPE COMMENT
+  COMMENT LEGAL "Field Interviewer"TYPE COMM
+  END
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"
-  TYPE COMMENT
+  COMMENT LEGAL "Field Supervisor"TYPE COMM
+  END
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -129,7 +129,14 @@ Q2031
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
   TYPE COMMENT
   JUMPS RESET
-    9 SKIPNEXTFIELD
+    1 SKIPNEXTFIELD
+    2 SKIPNEXTFIELD
+    3 SKIPNEXTFIELD
+    4 SKIPNEXTFIELD
+    5 SKIPNEXTFIELD
+    6 SKIPNEXTFIELD
+    7 SKIPNEXTFIELD
+    8 SKIPNEXTFIELD
   END
 END
 
@@ -143,16 +150,16 @@ END
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"
-  TYPE COMMENT
+  COMMENT LEGAL "Office Editor"TYPE COMM
+  END
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | VARCHAR(35)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"
-  TYPE COMMENT
+  COMMENT LEGAL "Office Keyer"TYPE COMM
+  END
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
