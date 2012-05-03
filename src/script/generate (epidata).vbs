@@ -137,7 +137,7 @@ For Each oTable In oTables
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 18)
 					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
 				Else
-				    Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 16, 0))
+				    Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 14, 0))
 				    Desc = Desc & "{Rec}ord {ID}: <A" & Space(oColumn.Length) & ">" & vbCrLf
 				End If
 			End If
