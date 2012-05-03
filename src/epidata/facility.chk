@@ -1,5 +1,5 @@
 
-INCLUDE "included labels.chk"
+INCLUDE "D:\users\s-balandine\share\nhips\src\epidata\included labels.chk"
 
 BEFORE RECORD
  IF (Q1011 = .) THEN
