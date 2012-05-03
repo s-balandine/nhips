@@ -405,8 +405,8 @@ For Each oTable In oTables
 						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
-					If Len(S) > 0 Then
-						S = Mid(S, 1, Len(S)-3)
+					If Right(S, 3)="END" Then
+					    S = Mid(S, 1, Len(S)-3)
 						S = Replace(S, "      ", "  ¤¤¤¤")
 						S = Replace(S, "     ", "  ¤¤¤")
 						S = Replace(S, "    ", "  ¤¤")
@@ -419,6 +419,8 @@ For Each oTable In oTables
 								'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
 							End if
 						Next
+					ElseIf Len(S)>0 Then
+					  Desc = Desc & "  " & S & vbCrLf 
 					End If
 				End If
 				Desc = Desc & "END" & vbCrLf	
