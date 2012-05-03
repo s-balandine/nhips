@@ -77,8 +77,8 @@ Form="Eligible Woman"
 
 For Each oTable In oTables
     
-	If IsObject(oTable) And (oTable.Name=Form) Then
-	'If IsObject(oTable) Then	
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then	
 				
 		WScript.Echo "  " & oTable.Name
 		
@@ -261,8 +261,8 @@ Next
 WScript.Echo "Création des fichiers CHK"
 
 For Each oTable In oTables
-	If IsObject(oTable) And (oTable.Name=Form) Then
-	'If IsObject(oTable) Then		
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc = "LABELBLOCK" & vbCrLf
