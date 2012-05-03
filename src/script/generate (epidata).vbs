@@ -410,7 +410,7 @@ For Each oTable In oTables
 						S = Replace(S, "    ", "  ¤¤")
 						S = Replace(S, "   ", "  ¤")
 						S = Replace(S, "  ", vbCrLf & "    ")
-						Replace(S, "¤", " ")
+						S = Replace(S, "¤", " ")
 						Desc = Desc & "  " & S & vbCrLf & "  END" & vbCrLf 
 						For Each oBusinessRule in oColumn.AttachedRules
 							If IsObject(oBusinessRule) Then
