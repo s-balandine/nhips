@@ -302,14 +302,14 @@ BEFORE RECORD
  IF (Q3041 = .) THEN
   LET Q3041=Unnamed
  ENDIF
- IF (Q6141 = .) THEN
-  LET Q6141=Unnamed
- ENDIF
- IF (Q6191 = .) THEN
-  LET Q6191=Unnamed
- ENDIF
  IF (Q6201 = .) THEN
-  LET Q6201=99
+  LET Q6201=Unnamed
+ ENDIF
+ IF (Q6251 = .) THEN
+  LET Q6251=Unnamed
+ ENDIF
+ IF (Q6261 = .) THEN
+  LET Q6261=99
  ENDIF
 END
 
@@ -809,24 +809,14 @@ AFTER RECORD
   GOTO Q4242
   EXIT
  ENDIF
- IF (Q5011 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5011
-  EXIT
- ENDIF
- IF (Q5021 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5021
-  EXIT
- ENDIF
- IF (Q5031 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q5031
-  EXIT
- ENDIF
  IF (Q5041 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q5041
+  EXIT
+ ENDIF
+ IF (Q5061 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q5061
   EXIT
  ENDIF
  IF (Q6011 = .) THEN
@@ -839,39 +829,9 @@ AFTER RECORD
   GOTO Q6021
   EXIT
  ENDIF
- IF (Q6031 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q6031
-  EXIT
- ENDIF
- IF (Q6032 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q6032
-  EXIT
- ENDIF
- IF (Q6041 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q6041
-  EXIT
- ENDIF
- IF (Q6042 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q6042
-  EXIT
- ENDIF
- IF (Q6051 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q6051
-  EXIT
- ENDIF
  IF (Q6061 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q6061
-  EXIT
- ENDIF
- IF (Q6071 = .) THEN
-  HELP " must be entered" TYPE=ERROR
-  GOTO Q6071
   EXIT
  ENDIF
  IF (Q6081 = .) THEN
@@ -894,14 +854,14 @@ AFTER RECORD
   GOTO Q6101
   EXIT
  ENDIF
- IF (Q6111 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
-  GOTO Q6111
+ IF (Q6102 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6102
   EXIT
  ENDIF
- IF (Q6112 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q6112
+ IF (Q6111 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6111
   EXIT
  ENDIF
  IF (Q6121 = .) THEN
@@ -909,19 +869,9 @@ AFTER RECORD
   GOTO Q6121
   EXIT
  ENDIF
- IF (Q6122 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q6122
-  EXIT
- ENDIF
  IF (Q6131 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q6131
-  EXIT
- ENDIF
- IF (Q6132 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q6132
   EXIT
  ENDIF
  IF (Q6141 = .) THEN
@@ -930,27 +880,27 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q6151 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q6151
   EXIT
  ENDIF
+ IF (Q6152 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6152
+  EXIT
+ ENDIF
  IF (Q6161 = .) THEN
-  HELP "Month must be entered" TYPE=ERROR
+  HELP " must be entered" TYPE=ERROR
   GOTO Q6161
   EXIT
  ENDIF
- IF (Q6162 = .) THEN
-  HELP "Year must be entered" TYPE=ERROR
-  GOTO Q6162
-  EXIT
- ENDIF
  IF (Q6171 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q6171
   EXIT
  ENDIF
  IF (Q6172 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
+  HELP "Year must be entered" TYPE=ERROR
   GOTO Q6172
   EXIT
  ENDIF
@@ -969,14 +919,14 @@ AFTER RECORD
   GOTO Q6191
   EXIT
  ENDIF
+ IF (Q6192 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6192
+  EXIT
+ ENDIF
  IF (Q6201 = .) THEN
   HELP " must be entered" TYPE=ERROR
   GOTO Q6201
-  EXIT
- ENDIF
- IF (Q6202 = .) THEN
-  HELP "Specify must be entered" TYPE=ERROR
-  GOTO Q6202
   EXIT
  ENDIF
  IF (Q6211 = .) THEN
@@ -985,8 +935,58 @@ AFTER RECORD
   EXIT
  ENDIF
  IF (Q6221 = .) THEN
-  HELP " must be entered" TYPE=ERROR
+  HELP "Month must be entered" TYPE=ERROR
   GOTO Q6221
+  EXIT
+ ENDIF
+ IF (Q6222 = .) THEN
+  HELP "Year must be entered" TYPE=ERROR
+  GOTO Q6222
+  EXIT
+ ENDIF
+ IF (Q6231 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6231
+  EXIT
+ ENDIF
+ IF (Q6232 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6232
+  EXIT
+ ENDIF
+ IF (Q6241 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6241
+  EXIT
+ ENDIF
+ IF (Q6242 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6242
+  EXIT
+ ENDIF
+ IF (Q6251 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6251
+  EXIT
+ ENDIF
+ IF (Q6261 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6261
+  EXIT
+ ENDIF
+ IF (Q6262 = .) THEN
+  HELP "Specify must be entered" TYPE=ERROR
+  GOTO Q6262
+  EXIT
+ ENDIF
+ IF (Q6271 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6271
+  EXIT
+ ENDIF
+ IF (Q6281 = .) THEN
+  HELP " must be entered" TYPE=ERROR
+  GOTO Q6281
   EXIT
  ENDIF
  IF (Q7011 = .) THEN
@@ -1921,6 +1921,9 @@ Q4081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
+  JUMPS RESET
+    2 Q4191
+  END
 END
 
 * Q409.1 | Q4091 (HEW_AIDS_ANTENATAL_TEST_WHEN) | NUMERIC(1)
@@ -1955,6 +1958,23 @@ Q4101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT
+  JUMPS RESET
+    11 SKIPNEXTFIELD
+    12 SKIPNEXTFIELD
+    13 SKIPNEXTFIELD
+    14 SKIPNEXTFIELD
+    15 SKIPNEXTFIELD
+    16 SKIPNEXTFIELD
+    17 SKIPNEXTFIELD
+    21 SKIPNEXTFIELD
+    22 SKIPNEXTFIELD
+    23 SKIPNEXTFIELD
+    24 SKIPNEXTFIELD
+    25 SKIPNEXTFIELD
+    26 SKIPNEXTFIELD
+    31 SKIPNEXTFIELD
+    32 SKIPNEXTFIELD
+  END
 END
 
 * Q4102 | Q4102 (HEW_AIDS_ANTENATAL_TEST_WHERE__OTHER_) | VARCHAR(32)
@@ -1995,6 +2015,10 @@ Q4141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
+  JUMPS RESET
+    2
+    Q4231
+  END
 END
 
 * Q4151 | Q4151 (HEW_AIDS_PREGNANCY_TEST) | NUMERIC(1)
@@ -2006,6 +2030,10 @@ Q4151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
+  JUMPS RESET
+    2
+    Q4231
+  END
 END
 
 * Q4161 | Q4161 (HEW_AIDS_PREGNANCY_TEST_GOT) | NUMERIC(1)
@@ -2019,7 +2047,7 @@ Q4161
   TYPE COMMENT
 END
 
-* Q4171 | Q4171 (HEW_K) | NUMERIC(1)
+* Q4171 | Q4171 (HEW_AIDS_PREGNANCY_TEST_AFTER) | NUMERIC(1)
 * Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
 * Allowed Values
 *    1: Yes
@@ -2030,13 +2058,16 @@ Q4171
   TYPE COMMENT
 END
 
-* Q4181 | Q4181 (HEW_AIDS_TEST_LAST) | NUMERIC(2)
+* Q4181 | Q4181 (HEW_AIDS_TEST_MOST_RECENT) | NUMERIC(2)
 * How many months ago was your most recent HIV test? > Months ago
 Q4181
   MUSTENTER
+  AFTER ENTRY
+    GOTO HEW_CONSENT
+  END
 END
 
-* Q4191 | Q4191 (HEW_COLUMN_102) | NUMERIC(1)
+* Q4191 | Q4191 (HEW_AIDS_TEST) | NUMERIC(1)
 * I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
 * Allowed Values
 *    1: Yes
@@ -2045,15 +2076,22 @@ Q4191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
+  JUMPS RESET
+    2
+    Q4231
+  END
 END
 
-* Q4201 | Q4201 (HEW_COLUMN_103) | NUMERIC(2)
+* Q4201 | Q4201 (HEW_AIDS_TEST_WHEN) | NUMERIC(2)
 * How many months ago was your most recent HIV test?
 Q4201
   MUSTENTER
+  AFTER ENTRY
+    GOTO HEW_CONSENT
+  END
 END
 
-* Q4211 | Q4211 (HEW_COLUMN_104) | NUMERIC(1)
+* Q4211 | Q4211 (HEW_AIDS_TEST_RESULT) | NUMERIC(1)
 * I don't want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
@@ -2064,7 +2102,7 @@ Q4211
   TYPE COMMENT
 END
 
-* Q4221 | Q4221 (HEW_COLUMN_106) | NUMERIC(2)
+* Q4221 | Q4221 (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2091,10 +2129,27 @@ Q4221
   TYPE COMMENT
 END
 
-* Q4222 | Q4222 (HEW_COLUMN_107) | VARCHAR(32)
+* Q4222 | Q4222 (HEW_AIDS_TEST_WHERE__OTHER_) | VARCHAR(32)
 * Where was the test done? > Specify
 Q4222
   MUSTENTER
+  JUMPS RESET
+    11 HEW_CONSENT
+    12 HEW_CONSENT
+    13 HEW_CONSENT
+    14 HEW_CONSENT
+    15 HEW_CONSENT
+    16 HEW_CONSENT
+    17 HEW_CONSENT
+    21 HEW_CONSENT
+    22 HEW_CONSENT
+    23 HEW_CONSENT
+    24 HEW_CONSENT
+    25 HEW_CONSENT
+    26 HEW_CONSENT
+    31 HEW_CONSENT
+    32 HEW_CONSENT
+  END
 END
 
 * Q4231 | Q4231 (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
@@ -2106,9 +2161,12 @@ Q4231
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
+  AFTER ENTRY
+    GOTO HEW_CONSENT
+  END
 END
 
-* Q4241 | Q4241 (COLUMN_110) | VARCHAR(1)
+* Q4241 | Q4241 (HEW_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
 * Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
@@ -2129,6 +2187,19 @@ Q4241
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2 SHOW
   TYPE COMMENT
+  JUMPS RESET
+    A SKIPNEXTFIELD
+    B SKIPNEXTFIELD
+    C SKIPNEXTFIELD
+    D SKIPNEXTFIELD
+    E SKIPNEXTFIELD
+    F SKIPNEXTFIELD
+    H SKIPNEXTFIELD
+    I SKIPNEXTFIELD
+    J SKIPNEXTFIELD
+    K SKIPNEXTFIELD
+    L SKIPNEXTFIELD
+  END
 END
 
 * Q4242 | Q4242 (HEW_AIDS_TEST_PLACE_WHERE__WHERE_) | VARCHAR(32)
@@ -2137,51 +2208,35 @@ Q4242
   MUSTENTER
 END
 
-* Q501.1 | Q5011 (HEW_CONSENT) | NUMERIC(1)
+* Q504.1 | Q5041 (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
 * Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-Q5011
+Q5041
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT
+  IF HEW_HIV_TEST_CONSENT=2 THEN
+    GOTO WRITERECEN
+  END
 END
 
-* Q502.1 | Q5021 (HEW_CONSENT_ASK) | NUMERIC(1)
-* Consent Ask
-* Allowed Values
-*    1: Yes
-*    2: No
-Q5021
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q503.1 | Q5031 (HEW_CONSENT_PARENT) | NUMERIC(1)
+* Q506.1 | Q5061 (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-Q5031
+Q5061
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT
+  IF HEW_HIV_TEST_CONSENT_RESPONDENT=2 THEN
+    GOTO WRITERECEN
+  END
 END
 
-* Q504.1 | Q5041 (HEW_CONSENT_PARENT_ASK) | NUMERIC(1)
-* Consent Parent Ask
-* Allowed Values
-*    1: Yes
-*    2: No
-Q5041
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q601.1 | Q6011 (HEW_AIDS_INFECTED) | NUMERIC(1)
+* Q601.1 | Q6011 (HEW_AIDS_INFECTION) | NUMERIC(1)
 * Did you know you were infected with AIDS?
 * Allowed Values
 *    1: Yes
@@ -2192,7 +2247,7 @@ Q6011
   TYPE COMMENT
 END
 
-* Q602.1 | Q6021 (HEW_AIDS_INFECTED_TEST) | NUMERIC(1)
+* Q602.1 | Q6021 (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
 * Have you already had a HIV test that showed you were infected with AIDS? 
 * Allowed Values
 *    1: Yes
@@ -2203,27 +2258,55 @@ Q6021
   TYPE COMMENT
 END
 
-* Q603.1 | Q6031 (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
+* Q606.1 | Q6061 (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
+* Consent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q6061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT SHOW
+  TYPE COMMENT
+  IF HEW_BLOOD_SAMPLE_CONSENT=2 THEN
+    GOTO WRITERECEN
+  END
+END
+
+* Q608.1 | Q6081 (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q6081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT SHOW
+  TYPE COMMENT
+  IF HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2 THEN
+    GOTO WRITERECEN
+  END
+END
+
+* Q609.1 | Q6091 (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
 * When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
-Q6031
+Q6091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q603.2 | Q6032 (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
+* Q609.2 | Q6092 (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
 * When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
-Q6032
+Q6092
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q604.1 | Q6041 (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
+* Q6101 | Q6101 (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2244,219 +2327,219 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-Q6041
+Q6101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT
 END
 
-* Q604.2 | Q6042 (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(32)
+* Q6102 | Q6102 (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(32)
 * Where was the test done? > Specify
-Q6042
+Q6102
   MUSTENTER
 END
 
-* Q605.1 | Q6051 (HEW_AIDS_CARE) | NUMERIC(1)
+* Q6111 | Q6111 (HEW_AIDS_CARE) | NUMERIC(1)
 * After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q6051
+Q6111
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q606.1 | Q6061 (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
+* Q6121 | Q6121 (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
 * Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-Q6061
+Q6121
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT
 END
 
-* Q607.1 | Q6071 (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
+* Q6131 | Q6131 (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
 * Did you get the results of this exam?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-Q6071
+Q6131
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT
 END
 
-* Q608.1 | Q6081 (HEW_ART_INITIATED) | NUMERIC(1)
+* Q6141 | Q6141 (HEW_ART_INITIATED) | NUMERIC(1)
 * Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q6081
+Q6141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q609.1 | Q6091 (HEW_ART_START_MONTH) | NUMERIC(2)
+* Q6151 | Q6151 (HEW_ART_START_MONTH) | NUMERIC(2)
 * When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
-Q6091
+Q6151
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q609.2 | Q6092 (HEW_ART_START_YEAR) | NUMERIC(4)
+* Q6152 | Q6152 (HEW_ART_START_YEAR) | NUMERIC(4)
 * When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
-Q6092
+Q6152
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q6101 | Q6101 (HEW_ART_STILL) | NUMERIC(1)
+* Q6161 | Q6161 (HEW_ART_STILL) | NUMERIC(1)
 * Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q6101
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q6111 | Q6111 (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
-* When was your last consultation? > Month
-* Allowed Values
-*    98: Don't know
-Q6111
-  MUSTENTER
-  RANGE 1 12
-  MISSINGVALUE  98
-END
-
-* Q6112 | Q6112 (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
-* When was your last consultation? > Year
-* Allowed Values
-*    9998: Don't know
-Q6112
-  MUSTENTER
-  RANGE 1920 2012
-  MISSINGVALUE  9998
-END
-
-* Q6121 | Q6121 (HEW_ART_WHERE) | VARCHAR(32)
-* Where are you now receiving ART?
-Q6121
-  MUSTENTER
-END
-
-* Q6122 | Q6122 (HEW_ART_WHERE__OTHER_) | VARCHAR(32)
-* Where are you now receiving ART? > Specify
-Q6122
-  MUSTENTER
-END
-
-* Q6131 | Q6131 (HEW_ART_DISTRICT) | NUMERIC(1)
-* In which district is this place?
-* Allowed Values
-*    1: Ndhiwa district
-*    2: Homa bay
-*    3: Other
-Q6131
-  MUSTENTER
-  COMMENT LEGAL USE D_N_DISTRICT SHOW
-  TYPE COMMENT
-END
-
-* Q6132 | Q6132 (HEW_ART_DISTRICT__OTHER_) | VARCHAR(32)
-* In which district is this place? > Specify
-Q6132
-  MUSTENTER
-END
-
-* Q6141 | Q6141 (HEW_ART_PLACE) | VARCHAR(32)
-* What is the name of this place?
-Q6141
-  MUSTENTER
-END
-
-* Q6151 | Q6151 (HEW_AIDS_FOLLOW) | NUMERIC(1)
-* Are you still followed up for the AIDS infection?
-* Allowed Values
-*    1: Yes
-*    2: No
-Q6151
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
-  TYPE COMMENT
-END
-
-* Q6161 | Q6161 (HEW_AIDS_LAST_CONSULTATION_MONTH) | NUMERIC(2)
-* When was your last consultation? > Month
-* Allowed Values
-*    98: Don't know
 Q6161
   MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q6171 | Q6171 (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
+* When was your last consultation? > Month
+* Allowed Values
+*    98: Don't know
+Q6171
+  MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
 END
 
-* Q6162 | Q6162 (HEW_AIDS_LAST_CONSULTATION_YEAR) | NUMERIC(4)
+* Q6172 | Q6172 (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
-Q6162
+Q6172
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE  9998
 END
 
-* Q6171 | Q6171 (HEW_AIDS_WHERE) | VARCHAR(32)
-* Where are you now receiving care?
-Q6171
-  MUSTENTER
-END
-
-* Q6172 | Q6172 (HEW_AIDS_WHERE__OTHER_) | VARCHAR(32)
-* Where are you now receiving care? > Specify
-Q6172
-  MUSTENTER
-END
-
-* Q6181 | Q6181 (HEW_AIDS_DISTRICT) | NUMERIC(1)
-* In which district is this place?
-* Allowed Values
-*    1: Ndhiwa district
-*    2: Homa bay
-*    3: Other
+* Q6181 | Q6181 (HEW_ART_WHERE) | VARCHAR(32)
+* Where are you now receiving ART?
 Q6181
   MUSTENTER
-  COMMENT LEGAL USE D_N_DISTRICT SHOW
-  TYPE COMMENT
 END
 
-* Q6182 | Q6182 (HEW_AIDS_DISTRICT__OTHER_) | VARCHAR(32)
-* In which district is this place? > Specify
+* Q6182 | Q6182 (HEW_ART_WHERE__OTHER_) | VARCHAR(32)
+* Where are you now receiving ART? > Specify
 Q6182
   MUSTENTER
 END
 
-* Q6191 | Q6191 (HEW_AIDS_PLACE) | VARCHAR(32)
-* What is the name of this place?
+* Q6191 | Q6191 (HEW_ART_DISTRICT) | NUMERIC(1)
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
 Q6191
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT SHOW
+  TYPE COMMENT
+END
+
+* Q6192 | Q6192 (HEW_ART_DISTRICT__OTHER_) | VARCHAR(32)
+* In which district is this place? > Specify
+Q6192
   MUSTENTER
 END
 
-* Q6201 | Q6201 (HEW_AIDS_STOP) | NUMERIC(2)
+* Q6201 | Q6201 (HEW_ART_PLACE) | VARCHAR(32)
+* What is the name of this place?
+Q6201
+  MUSTENTER
+END
+
+* Q6211 | Q6211 (HEW_AIDS_FOLLOW) | NUMERIC(1)
+* Are you still followed up for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q6211
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO SHOW
+  TYPE COMMENT
+END
+
+* Q6221 | Q6221 (HEW_AIDS_LAST_CONSULTATION_MONTH) | NUMERIC(2)
+* When was your last consultation? > Month
+* Allowed Values
+*    98: Don't know
+Q6221
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE  98
+END
+
+* Q6222 | Q6222 (HEW_AIDS_LAST_CONSULTATION_YEAR) | NUMERIC(4)
+* When was your last consultation? > Year
+* Allowed Values
+*    9998: Don't know
+Q6222
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE  9998
+END
+
+* Q6231 | Q6231 (HEW_AIDS_WHERE) | VARCHAR(32)
+* Where are you now receiving care?
+Q6231
+  MUSTENTER
+END
+
+* Q6232 | Q6232 (HEW_AIDS_WHERE__OTHER_) | VARCHAR(32)
+* Where are you now receiving care? > Specify
+Q6232
+  MUSTENTER
+END
+
+* Q6241 | Q6241 (HEW_AIDS_DISTRICT) | NUMERIC(1)
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+Q6241
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT SHOW
+  TYPE COMMENT
+END
+
+* Q6242 | Q6242 (HEW_AIDS_DISTRICT__OTHER_) | VARCHAR(32)
+* In which district is this place? > Specify
+Q6242
+  MUSTENTER
+END
+
+* Q6251 | Q6251 (HEW_AIDS_PLACE) | VARCHAR(32)
+* What is the name of this place?
+Q6251
+  MUSTENTER
+END
+
+* Q6261 | Q6261 (HEW_AIDS_STOP) | NUMERIC(2)
 * Why did you stop?
 * Allowed Values
 *    1: No one was attending
@@ -2470,35 +2553,35 @@ END
 *    9: Transport cost
 *    10: Stop pmtct
 *    96: Other
-Q6201
+Q6261
   MUSTENTER
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON SHOW
   TYPE COMMENT
 END
 
-* Q6202 | Q6202 (HEW_AIDS_STOP__OTHER_) | VARCHAR(32)
+* Q6262 | Q6262 (HEW_AIDS_STOP__OTHER_) | VARCHAR(32)
 * Why did you stop? > Specify
-Q6202
+Q6262
   MUSTENTER
 END
 
-* Q6211 | Q6211 (HEW_ART_PREGNANCY) | NUMERIC(1)
+* Q6271 | Q6271 (HEW_ART_PREGNANCY) | NUMERIC(1)
 * Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q6211
+Q6271
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
 END
 
-* Q6221 | Q6221 (HEW_ART_DELIVERY) | NUMERIC(1)
+* Q6281 | Q6281 (HEW_ART_DELIVERY) | NUMERIC(1)
 * After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q6221
+Q6281
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT
