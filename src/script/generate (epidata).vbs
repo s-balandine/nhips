@@ -281,22 +281,22 @@ For Each oTable In oTables
 		Next
 		Desc = Desc & "END" & vbCrLf & vbCrLf
 
-		Desc = Desc & "AFTER RECORD" & vbCrLf
-		For Each oColumn in oTable.Columns
-		    If IsObject(oColumn) And (oColumn.Mandatory) And Not (oColumn.CannotModify) Then
-			    WScript.Echo "    Mandatory: " & oColumn.Name
-			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-			    ColumnLabel = ExtendedAttribute (oColumn, "Label")
-				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
-				Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
-				Desc = Desc & "  GOTO " & ColumnName & "" & vbCrLf
-				Desc = Desc & "  EXIT" & "" & vbCrLf
-				Desc = Desc & " ENDIF" & vbCrLf
-			End If
-		Next
-		Desc = Desc & "END" & vbCrLf
+		'Desc = Desc & "AFTER RECORD" & vbCrLf
+		'For Each oColumn in oTable.Columns
+		'    If IsObject(oColumn) And (oColumn.Mandatory) And Not (oColumn.CannotModify) Then
+		'	    WScript.Echo "    Mandatory: " & oColumn.Name
+		'	    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+		'	    ColumnLabel = ExtendedAttribute (oColumn, "Label")
+		'		Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
+		'		Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
+		'		Desc = Desc & "  GOTO " & ColumnName & "" & vbCrLf
+		'		Desc = Desc & "  EXIT" & "" & vbCrLf
+		'		Desc = Desc & " ENDIF" & vbCrLf
+		'	End If
+		'Next
+		'Desc = Desc & "END" & vbCrLf
 
-		Desc = "LABELBLOCK" & vbCrLf
+		Desc = Desc & "LABELBLOCK" & vbCrLf
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) And (oColumn.LowValue="") And (oColumn.HighValue="") And (oColumn.Domain.ListOfValues <> "")Then
