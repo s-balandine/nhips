@@ -1,6 +1,5 @@
 BEFORE FILE
   DEFINE NAME2 <A                                     >
-  DEFINE varRefDate <dd/mm/yyyy>
 END
 
 LABELBLOCK
