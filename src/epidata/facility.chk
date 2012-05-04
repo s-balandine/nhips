@@ -1,8 +1,5 @@
-INCLUDE "included header.chk"
-
-LABELBLOCK
-END
-
+INCLUDE "header.chk"
+INCLUDE "label.chk"
 
 * RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
 * 
