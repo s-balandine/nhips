@@ -10130,4 +10130,18 @@ END
 <a:Code>Epidata</a:Code>
 <a:CreationDate>1318350478</a:CreationDate>
 <a:Creator>S-Balandine</a:Creator>
-<a:ModificationDate>131835047
+<a:ModificationDate>1318350478</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
+<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
