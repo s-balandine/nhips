@@ -18,6 +18,6 @@ echo . > "eligible woman.rec"
 %epic% rev "eligible man.qes" * AUTO FORCE
 %epic% rev "eligible woman.qes" * AUTO FORCE
 
-%epic% import TXT "field interviewer.csv" "field interviewer.rec" delim=; q=all
+%epic% import TXT "field interviewer.csv" "field interviewer.rec" delim=; q=all replace
 
 pause
