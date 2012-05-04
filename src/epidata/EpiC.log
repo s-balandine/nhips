@@ -103,3 +103,10 @@ Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec
 Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec was revised
 using D:\users\s-balandine\share\nhips\src\epidata\eligible man.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" * AUTO FORCE
+04/05/2012 16:00:26
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
