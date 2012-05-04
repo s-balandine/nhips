@@ -6,7 +6,6 @@ END
 * 
 RECID
   KEY UNIQUE 1
-  KEY 2
   NOENTER
 END
 
@@ -28,5 +27,6 @@ Q1012
      IGNOREMISSING
      LET RECID=COPY( Q1011 , 1, 1) + ". " + Q1012
   END
+  KEY 2
 END
 
