@@ -1,4 +1,4 @@
-INCLUDE Household.chk
+INCLUDE "included header.chk"
 
 LABELBLOCK
 END
