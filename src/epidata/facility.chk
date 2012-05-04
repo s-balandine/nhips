@@ -1,4 +1,4 @@
-INCLUDE Household
+INCLUDE Household.chk
 
 LABELBLOCK
 END
