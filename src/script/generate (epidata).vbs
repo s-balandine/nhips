@@ -262,32 +262,6 @@ Next
 
 WScript.Echo "Création des fichiers CHK"
 
-Desc = "LABELBLOCK" & vbCrLf
-
-For Each oDomain In oDomains
-	If IsObject(oDomain) And (oDomain.ListOfValues<>"") Then
-		WScript.Echo "    Labels: " & oDomain.Name
-		Values = oDomain.ListOfValues
-		Values = Split(Values, vbNewLine, -1, 1)
-		Desc = Desc & "  LABEL " & UCase(oDomain.Code) & vbCrLf
-		For i=0 To UBound(Values)
-			If Values(i) <> "" Then
-				Value = Values(i)
-				Value = Split(Value, vbTab, -1, 1)
-				If InStr(Value(1), "-") > 0 Then
-					Desc=Desc & "    " & Value(0) & " """ & Mid(Value(1), InStr(Value(1), "-") + 1) & """" & vbCrLf 
-				Else
-				    Desc=Desc & "    " & Value(0) & " """ & Value(1) & """" & vbCrLf 
-				End If
-			End If
-		Next
-		Desc = Desc & "   END" & vbCrLf
-	End If
-Next
-
-Desc = Desc & "END" & vbCrLf & vbCrLf
-
-
 For Each oTable In oTables
 	'If IsObject(oTable) And (oTable.Name=Form) Then
 	If IsObject(oTable) Then		
