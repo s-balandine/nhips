@@ -20,4 +20,6 @@ echo . > "eligible woman.rec"
 
 %epic% import TXT "field interviewer.csv" "field interviewer.rec" delim=; q=all replace
 
+del *.old.rec
+
 pause
