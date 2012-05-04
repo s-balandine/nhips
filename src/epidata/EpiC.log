@@ -271,3 +271,23 @@ Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec
 Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec was revised
 using D:\users\s-balandine\share\nhips\src\epidata\eligible man.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" * AUTO FORCE
+04/05/2012 16:14:34
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC import TXT "field interviewer.csv" "field interviewer.rec" delim=; q=all replace
+04/05/2012 16:14:34
+Imports         D:\users\s-balandine\share\nhips\src\epidata\field interviewer.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+3 records with 11 field imported
