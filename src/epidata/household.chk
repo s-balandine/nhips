@@ -1,0 +1,195 @@
+LABELBLOCK
+  LABEL D_N_INTERVIEW_HOUSEHOLD_RESULT
+    1 "Completed"
+    2 "No household member at home or no competent respondent at home"
+    3 "Entire household absent for extended period of time"
+    4 "Postponed"
+    5 "Refused"
+    6 "Dwelling vacant or address not a dwelling"
+    7 "Dwelling destroyed"
+    8 "Dwelling not found"
+    9 "Other"
+   END
+END
+
+
+* RECID | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
+* Identifiers
+RECID
+  KEY UNIQUE 1
+  KEY 2
+  NOENTER
+END
+
+* Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
+* Identifiers > No. Cluster
+Q1011
+  MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1011 < 10 THEN
+      LET RECID ="00" + Q1011
+    ELSE
+      IF Q1011 < 100 THEN
+        LET RECID ="0" + Q1011
+      ELSE
+        LET RECID = Q1011
+      ENDIF
+    ENDIF
+    IF Q1012 < 10 THEN
+      LET RECID = RECID + "." + "0" + Q1012
+    ELSE
+      LET RECID = RECID + "." + Q1012
+    ENDIF
+  END
+END
+
+* Q101.2 | Household (HSH_HOUSEHOLD) | NUMERIC(2)
+* Identifiers > No. Household
+Q1012
+  MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1011 < 10 THEN
+      LET RECID ="00" + Q1011
+    ELSE
+      IF Q1011 < 100 THEN
+        LET RECID ="0" + Q1011
+      ELSE
+        LET RECID = Q1011
+      ENDIF
+    ENDIF
+    IF Q1012 < 10 THEN
+      LET RECID = RECID + "." + "0" + Q1012
+    ELSE
+      LET RECID = RECID + "." + Q1012
+    ENDIF
+  END
+END
+
+* Q201.1 | Day (HSH_DAY) | NUMERIC(2)
+* Date > Day of interview
+* Allowed Values
+*    98: Don't know
+Q2011
+  MUSTENTER
+  RANGE 1 31
+  MISSINGVALUE  98
+END
+
+* Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
+* Date > Month of interview
+* Allowed Values
+*    98: Don't know
+Q2012
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE  98
+END
+
+* Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
+* Date > Year of interview
+* Allowed Values
+*    98: Don't know
+Q2013
+  MUSTENTER
+  RANGE 2012 2014
+  MISSINGVALUE  98
+END
+
+* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | VARCHAR(35)
+* Actors on the field? > Interviewer
+Q2021
+  MUSTENTER
+  COMMENT LEGAL "Field Interviewer" SHOW
+END
+
+* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
+* Actors on the field? > Supervisor
+Q2022
+  MUSTENTER
+  COMMENT LEGAL "Field Supervisor" SHOW
+END
+
+* Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
+* Result > Result
+* Allowed Values
+*    1: Completed
+*    2: No household member at home or no competent respondent at home
+*    3: Entire household absent for extended period of time
+*    4: Postponed
+*    5: Refused
+*    6: Dwelling vacant or address not a dwelling
+*    7: Dwelling destroyed
+*    8: Dwelling not found
+*    9: Other
+Q2031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
+  TYPE COMMENT
+  JUMPS RESET
+    1 SKIPNEXTFIELD
+    2 SKIPNEXTFIELD
+    3 SKIPNEXTFIELD
+    4 SKIPNEXTFIELD
+    5 SKIPNEXTFIELD
+    6 SKIPNEXTFIELD
+    7 SKIPNEXTFIELD
+    8 SKIPNEXTFIELD
+  END
+END
+
+* Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(32)
+* Result > Result (Other)
+Q2032
+  MUSTENTER
+END
+
+* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | VARCHAR(35)
+* Actors at the office? > Editor
+Q2041
+  MUSTENTER
+  COMMENT LEGAL "Office Editor" SHOW
+END
+
+* Q204.2 | Keyer (HSH_KEYER) | VARCHAR(35)
+* Actors at the office? > Keyer
+Q2042
+  MUSTENTER
+  COMMENT LEGAL "Office Keyer" SHOW
+END
+
+* Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
+* Total number of visits
+Q2051
+  MUSTENTER
+  RANGE 1 5
+END
+
+* Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
+* Check persons in household > Total persons
+Q2061
+  MUSTENTER
+  RANGE 0 90
+END
+
+* Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
+* Check persons in household > Total eligible women
+Q2062
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
+* Check persons in household > Total eligible men
+Q2063
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
+* Check persons in household > No. of respondent
+Q2064
+  MUSTENTER
+END
+
