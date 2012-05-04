@@ -278,3 +278,58 @@ Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
 Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
 using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC import TXT persons.csv "field interviewer.rec" delim=; q=all replace
+04/05/2012 16:27:35
+Imports         D:\users\s-balandine\share\nhips\src\epidata\persons.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\persons.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT persons.csv "field supervisor.rec" delim=; q=all replace
+04/05/2012 16:27:35
+Imports         D:\users\s-balandine\share\nhips\src\epidata\persons.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\persons.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT persons.csv "office editor.rec" delim=; q=all replace
+04/05/2012 16:27:35
+Imports         D:\users\s-balandine\share\nhips\src\epidata\persons.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\persons.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT persons.csv "office keyer.rec" delim=; q=all replace
+04/05/2012 16:27:35
+Imports         D:\users\s-balandine\share\nhips\src\epidata\persons.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\persons.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): Error opening qes-file
