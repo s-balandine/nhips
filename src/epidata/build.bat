@@ -1,7 +1,5 @@
 set epic="C:\Program Files (x86)\Epidata\epic.exe"
 
-cd /d src\epidata
-
 echo . > "field interviewer.rec"
 echo . > "field supervisor.rec"
 echo . > "household.rec"
