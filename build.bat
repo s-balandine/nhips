@@ -20,10 +20,10 @@ echo . > "eligible woman.rec"
 %epic% rev "eligible man.qes"       "eligible man.rec"      AUTO FORCE
 %epic% rev "eligible woman.qes"     "eligible woman.rec"    AUTO FORCE
 
-%epic% import TXT "persons.csv" "field interviewer.rec" delim=; q=all replace
-%epic% import TXT "persons.csv" "field supervisor.rec"  delim=; q=all replace
-%epic% import TXT "persons.csv" "office editor.rec"     delim=; q=all replace
-%epic% import TXT "persons.csv" "office keyer.rec"      delim=; q=all replace
+%epic% import TXT "persons.csv" "field interviewer.rec" delim=; q=all replace ignorefirst
+%epic% import TXT "persons.csv" "field supervisor.rec"  delim=; q=all replace ignorefirst
+%epic% import TXT "persons.csv" "office editor.rec"     delim=; q=all replace ignorefirst
+%epic% import TXT "persons.csv" "office keyer.rec"      delim=; q=all replace ignorefirst
 
 copy *.chk ..\..\build
 copy *.rec ..\..\build
