@@ -293,8 +293,7 @@ For Each oTable In oTables
 	If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
-		Desc = "INCLUDE ""included header.inc""" & vbCrLf & vbCrLf
-		Desc = "INCLUDE ""included labels.inc""" & vbCrLf
+		Desc = "INCLUDE ""header.chk""" & vbCrLf & vbCrLf
 
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
