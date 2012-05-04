@@ -24,8 +24,8 @@ END
 * Name > Lastname
 Q1012
   MUSTENTER
-  AFTER ENTRY
-     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002
+  ::AFTER ENTRY::
+     LET RECID=COPY(Q1001, 1, 1) + "." + Q1002::
   END
 END
 
