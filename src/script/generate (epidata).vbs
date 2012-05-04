@@ -374,7 +374,6 @@ For Each oTable In oTables
 					Else
 						If oColumn.Domain.ListOfValues <> "" Then
 							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
-							Desc = Desc & "  TYPE COMMENT" & vbCrLf
 						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
