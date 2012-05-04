@@ -26,7 +26,7 @@ echo . > "eligible woman.rec"
 %epic% import TXT "person.csv" "office keyer.rec"      delim=; q=all replace ignorefirst
 
 del  *.old.rec
-move *.chk ..\..\build
+copy *.chk ..\..\build
 move *.rec ..\..\build
 
 
