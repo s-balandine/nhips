@@ -1,5 +1,5 @@
 BEFORE FILE
-  DEFINE NAME <A                                     >
+  DEFINE NAME2 <A                                     >
   DEFINE varRefDate <dd/mm/yyyy>
 END
 
@@ -18,5 +18,9 @@ END
 Q1011
   MUSTENTER
   KEY 2
+END
+
+NAME2
+  KEY UNIQUE 2
 END
 
