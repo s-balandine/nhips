@@ -607,3 +607,65 @@ Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec
 Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec was revised
 using D:\users\s-balandine\share\nhips\src\epidata\eligible man.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" "eligible woman.rec" AUTO FORCE
+04/05/2012 16:32:11
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC import TXT person.csv "field interviewer.rec" delim=; q=all replace ignorefirst
+04/05/2012 16:32:12
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\person.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT person.csv "field supervisor.rec" delim=; q=all replace ignorefirst
+04/05/2012 16:32:12
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\person.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT person.csv "office editor.rec" delim=; q=all replace ignorefirst
+04/05/2012 16:32:12
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\person.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): 
+Error opening qes-file
+
+COMMAND:        EpiC import TXT person.csv "office keyer.rec" delim=; q=all replace ignorefirst
+04/05/2012 16:32:12
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\person.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      All fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 8): Error opening qes-file
