@@ -18,4 +18,6 @@ echo . > "eligible woman.rec"
 %epic% rev "eligible man.qes" * AUTO FORCE
 %epic% rev "eligible woman.qes" * AUTO FORCE
 
+%epic% import TXT "field interviewer.txt" "field interviewer.rec" delim=;
+
 pause
