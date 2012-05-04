@@ -25,7 +25,7 @@ echo . > "..\..\build\eligible woman.rec"
 %epic% import TXT "persons.csv" "..\..\build\office editor.rec"     delim=; q=all replace
 %epic% import TXT "persons.csv" "..\..\build\office keyer.rec"      delim=; q=all replace
 
-cd ..\..
+cd ..\..\build
 
 del *.old.rec
 
