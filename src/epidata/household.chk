@@ -101,14 +101,14 @@ END
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  COMMENT LEGAL "Field Interviewer"
+  COMMENT LEGAL "Field Interviewer" SHOW
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor"
+  COMMENT LEGAL "Field Supervisor" SHOW
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -149,14 +149,14 @@ END
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
-  COMMENT LEGAL "Office Editor"
+  COMMENT LEGAL "Office Editor" SHOW
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | VARCHAR(35)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
-  COMMENT LEGAL "Office Keyer"
+  COMMENT LEGAL "Office Keyer" SHOW
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
