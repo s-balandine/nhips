@@ -1,7 +1,6 @@
 LABELBLOCK
 END
 
-
 * RECID | Identifier (SPV_IDENTIFIER) | VARCHAR(35)
 * 
 RECID
@@ -9,8 +8,8 @@ RECID
   NOENTER
 END
 
-* Q101.1 | Name First (SPV_NAME) | VARCHAR(32)
-* Name > Firstname
+* Q101.1 | Name (SPV_NAME) | VARCHAR(32)
+* Name
 Q1011
   MUSTENTER
   KEY 2
