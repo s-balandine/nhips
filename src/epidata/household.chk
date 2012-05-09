@@ -1,18 +1,4 @@
-INCLUDE "header.chk"
-
-LABELBLOCK
-  LABEL D_N_INTERVIEW_HOUSEHOLD_RESULT
-    1 "Completed"
-    2 "No household member at home or no competent respondent at home"
-    3 "Entire household absent for extended period of time"
-    4 "Postponed"
-    5 "Refused"
-    6 "Dwelling vacant or address not a dwelling"
-    7 "Dwelling destroyed"
-    8 "Dwelling not found"
-    9 "Other"
-   END
-END
+INCLUDE "header (labels).chk"
 
 
 * RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
