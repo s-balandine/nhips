@@ -275,17 +275,17 @@ For Each oTable In oTables
 				
 		Desc = "INCLUDE ""header.chk""" & vbCrLf & vbCrLf
 
-		Desc = Desc & "BEFORE RECORD" & vbCrLf
-		For Each oColumn in oTable.Columns
-		    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") And Not (oColumn.CannotModify) Then
-			    WScript.Echo "    DefaultValue: " & oColumn.Name
-			    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-				Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
-				Desc = Desc & "  LET " & ColumnName & "=" & oColumn.DefaultValue & vbCrLf
-				Desc = Desc & " ENDIF" & vbCrLf
-			End If
-		Next
-		Desc = Desc & "END" & vbCrLf & vbCrLf
+		'Desc = Desc & "BEFORE RECORD" & vbCrLf
+		'For Each oColumn in oTable.Columns
+		'    If IsObject(oColumn) And (oColumn.Mandatory) And (oColumn.DefaultValue<>"") And Not (oColumn.CannotModify) Then
+		'	    WScript.Echo "    DefaultValue: " & oColumn.Name
+	    '       ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+		'		Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
+		'		Desc = Desc & "  LET " & ColumnName & "=" & oColumn.DefaultValue & vbCrLf
+		'		Desc = Desc & " ENDIF" & vbCrLf
+		'	End If
+		'Next
+		'Desc = Desc & "END" & vbCrLf & vbCrLf
 
 		'Desc = Desc & "AFTER RECORD" & vbCrLf
 		'For Each oColumn in oTable.Columns
