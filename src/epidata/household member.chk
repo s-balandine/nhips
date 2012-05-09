@@ -2,7 +2,7 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE FILE
-  DEFINE IDS <A                                   >
+  DEFINE IDS <A  >
 END
 
 * RECID | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
