@@ -271,7 +271,7 @@ WScript.Echo "Création des fichiers CHK"
 Desc = "LABELBLOCK" & vbCrLf
 
 For Each oDomain in oModel.Domains
-	If IsObject(oDomain) And Not (oDomain.Computed) And (oDomain.LowValue="") And (oDomain.HighValue="") And (oDomain.ListOfValues <> "")Then
+	If IsObject(oDomain) And (oDomain.LowValue="") And (oDomain.HighValue="") And (oDomain.ListOfValues <> "")Then
 		WScript.Echo "    Labels: " & oDomain.Name
 		Values = oDomain.ListOfValues
 		Values = Split(Values, vbNewLine, -1, 1)
