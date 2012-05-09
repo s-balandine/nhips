@@ -4961,3 +4961,24 @@ Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
 3 records with 8 field imported
+
+COMMAND:        EpiC rev "field interviewer.qes" "field interviewer.rec" AUTO FORCE
+09/05/2012 19:34:24
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field supervisor.qes" "field supervisor.rec" AUTO FORCE
+09/05/2012 19:34:24
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev household.qes household.rec AUTO FORCE
+09/05/2012 19:34:24
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\household.qes
+Revision can have resulted in loss of data in decimal number fields.
