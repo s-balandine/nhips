@@ -145,7 +145,7 @@ For Each oTable In oTables
 		Desc = Desc & ExtendedAttribute (oTable, "Title")
 		
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And oColumn.Code="RECIDU" Then
+			If IsObject(oColumn) And (oColumn.Primary) Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
 				If oColumn.DataType="AUTOINCREMENT" Then
 					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - 18)
@@ -160,7 +160,7 @@ For Each oTable In oTables
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.Primary) Then
+			If IsObject(oColumn) And Not (oColumn.Computed) And Not (oColumn.Primary) And (oColumn.Name<>"Identifier (Natural)") Then
 				WScript.Echo "    Question: " & oColumn.Name
 				
 				ColumnName = ExtendedAttribute (oColumn, "Label")
