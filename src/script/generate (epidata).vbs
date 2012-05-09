@@ -357,6 +357,10 @@ For Each oTable In oTables
 				    Desc = Desc & "RECID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
+				ElseIf (oColumn.Name="Identifier (Natural)") Then
+				    Desc = Desc & "ID" & vbCrLf		
+				    Desc = Desc & "  KEY UNIQUE 2" & vbCrLf 
+					Desc = Desc & "  NOENTER" & vbCrLf 					
 				ElseIf Not (oColumn.CannotModify) Then
 					ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 					Desc = Desc & ColumnName & vbCrLf		
