@@ -302,6 +302,7 @@ For Each oTable In oTables
 		WScript.Echo "  " & oTable.Name
 				
 		Desc = "INCLUDE ""header.chk""" & vbCrLf & vbCrLf
+		Desc = "INCLUDE ""header (labels).chk""" & vbCrLf & vbCrLf
 
 		'Desc = Desc & "BEFORE RECORD" & vbCrLf
 		'For Each oColumn in oTable.Columns
