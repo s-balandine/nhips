@@ -141,7 +141,7 @@ For Each oTable In oTables
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn)  And (oColumn.Name="Identifier (Natural)") Then
-				Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length, 0))
+				Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length -2, 0))
 				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
