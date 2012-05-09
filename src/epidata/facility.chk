@@ -1,11 +1,5 @@
 INCLUDE "header.chk"
 
-BEFORE RECORD
- IF (Q1011 = .) THEN
-  LET Q1011=Unnamed
- ENDIF
-END
-
 LABELBLOCK
 END
 
