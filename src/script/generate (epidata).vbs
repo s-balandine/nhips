@@ -169,7 +169,7 @@ For Each oTable In oTables
 							End If
 						Next
 					End If 
-					Desc = Desc  & vbCrLf & String(NCharWidth, "=") & vbCrLf
+					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
 				End If
 						
