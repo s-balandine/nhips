@@ -162,10 +162,10 @@ For Each oTable In oTables
 					Desc = Desc & vbCrLf
 					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
 					If ColumnSectionN=1 Then
-						For Each oColumn in oTable.Columns
-							If IsObject(oColumn)  And (oColumn.Name="Identifier (Natural)") Then
-								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn.Length -2, 0))
-								Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
+						For Each oColumn2 in oTable.Columns
+							If IsObject(oColumn2)  And (oColumn2.Name="Identifier (Natural)") Then
+								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length -2, 0))
+								Desc = Desc & "<A" & Space(oColumn2.Length) & ">" & vbCrLf
 							End If
 						Next
 					End If 
