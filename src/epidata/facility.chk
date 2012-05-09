@@ -1,6 +1,6 @@
 INCLUDE "header.chk"
 
-BEFORE RECORD
+BEFORE FILE
  HIDE ID
 END
 
