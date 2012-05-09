@@ -1,5 +1,3 @@
-INCLUDE "header.chk"
-
 BEFORE FILE
  HIDE ID
 END
