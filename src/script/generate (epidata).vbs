@@ -405,7 +405,7 @@ For Each oTable In oTables
 								'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
 							End if
 						Next
-					If Right(S, 1)="¤" Then
+					ElseIf Right(S, 1)="¤" Then
 					 	Desc = Desc & "  " & Replace(S, "¤", vbCrLf) & vbCrLf
 					ElseIf Len(S)>0 Then
 					  Desc = Desc & "  " & S & vbCrLf 
