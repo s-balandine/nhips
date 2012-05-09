@@ -105,14 +105,14 @@ Q2013
   MISSINGVALUE  98
 END
 
-* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | LONG
+* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
-* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | LONG
+* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
@@ -152,14 +152,14 @@ Q2032
   MUSTENTER
 END
 
-* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | LONG
+* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
   COMMENT LEGAL "Office Editor" SHOW
 END
 
-* Q204.2 | Keyer (HSH_KEYER) | LONG
+* Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
