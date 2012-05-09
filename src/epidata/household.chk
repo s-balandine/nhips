@@ -1,14 +1,5 @@
 INCLUDE "header.chk"
 
-BEFORE RECORD
- IF (Q2013 = .) THEN
-  LET Q2013=2012
- ENDIF
- IF (Q2031 = .) THEN
-  LET Q2031=99
- ENDIF
-END
-
 LABELBLOCK
   LABEL D_N_INTERVIEW_HOUSEHOLD_RESULT
     1 "Completed"
@@ -24,11 +15,17 @@ LABELBLOCK
 END
 
 
-* RECID | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
-* Identifiers
+* RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
+* 
 RECID
   KEY UNIQUE 1
-  KEY 2
+  NOENTER
+END
+
+* ID | Identifier (Natural) (SPV_IDENTIFIER_NATURAL) | VARCHAR(6)
+* 
+ID
+  KEY UNIQUE 2
   NOENTER
 END
 
@@ -39,18 +36,18 @@ Q1011
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET RECID ="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET RECID ="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET RECID = Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET RECID = RECID + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET RECID = RECID + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
   END
 END
@@ -62,18 +59,18 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET RECID ="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET RECID ="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET RECID = Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET RECID = RECID + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET RECID = RECID + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
   END
 END
@@ -108,14 +105,14 @@ Q2013
   MISSINGVALUE  98
 END
 
-* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | VARCHAR(35)
+* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | LONG
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
-* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(35)
+* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | LONG
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
@@ -155,14 +152,14 @@ Q2032
   MUSTENTER
 END
 
-* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | VARCHAR(35)
+* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | LONG
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
   COMMENT LEGAL "Office Editor" SHOW
 END
 
-* Q204.2 | Keyer (HSH_KEYER) | VARCHAR(35)
+* Q204.2 | Keyer (HSH_KEYER) | LONG
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
@@ -201,5 +198,6 @@ END
 * Check persons in household > No. of respondent
 Q2064
   MUSTENTER
+  GOTO WRITEREC
 END
 
