@@ -17,34 +17,36 @@ ID
   NOENTER
 END
 
-* Q201.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
+* Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
-Q2011
+Q1011
   MUSTENTER
-  COMMENT LEGAL "Household" SHOWTYPE COMMENT IDAFTER ENTRY
+  
+    COMMENT LEGAL "Household" SHOW
+    TYPE COMMENT IDAFTER ENTRY
     IGNOREMISSING
-    LET ID= ID + "." + Q2012
+    LET ID= ID + "." + Q1012
   END
 END
 
-* Q201.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
+* Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
-Q2012
+Q1012
   MUSTENTER
   AFTER ENTRY
     IGNOREMISSING
-    LET ID= ID + "." + Q2012
+    LET ID= ID + "." + Q1012
   END
 END
 
-* Q202.1 | Name (NAME) | VARCHAR(32)
-* a
-Q2021
+* Q102.1 | Name (HHM_NM) | VARCHAR(32)
+* Name
+Q1021
   MUSTENTER
 END
 
-* Q203.1 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
-* b
+* Q103.1 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
+* What is the relationship of (NAME) to the head of the household?
 * Allowed Values
 *    1: Head
 *    2: Wife or husband
@@ -58,78 +60,79 @@ END
 *    10: Adopted/foster child
 *    11: Not related
 *    98: Don't know
-Q2031
+Q1031
   MUSTENTER
   COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD SHOW
 END
 
-* Q204.1 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
-* g
+* Q104.1 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
+* Is person male or female?
 * Allowed Values
 *    1: Male
 *    2: Female
-Q2041
+Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_SEX SHOW
 END
 
-* Q205.1 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
-* h
+* Q105.1 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
+* Does person usually live here?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q2051
+Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
 END
 
-* Q206.1 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
-* y
+* Q106.1 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
+* Did person stay here last night?
 * Allowed Values
 *    1: Yes
 *    2: No
-Q2061
+Q1061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
 END
 
-* Q207.1 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
-* f
+* Q107.1 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
+* How old is person?
 * Allowed Values
 *    98: Don't know
-Q2071
+Q1071
   MUSTENTER
-  COMMENT LEGAL USE D_N_AGE SHOW
+  RANGE 0 97
+  MISSINGVALUE  98
 END
 
-* Q208.1 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
-* g
+* Q108.1 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
+* What is person's current marital status?
 * Allowed Values
 *    1: Married or living together
 *    2: Divorced or separated
 *    3: Widowed
 *    4: Never married and never lived together
-Q2081
+Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS SHOW
 END
 
-* Q209.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
-* d
+* Q109.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
+* person eligiblity > Woman
 * Allowed Values
 *    0: Non
 *    1: Oui
-Q2091
+Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE SHOW
 END
 
-* Q2101 | Is Eligible Men (HHM_IS_ELIGIBLE_MEN) | NUMERIC(2)
-* f
+* Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
+* person eligiblity > Man
 * Allowed Values
 *    0: Non
 *    1: Oui
-Q2101
+Q1092
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE SHOW
   GOTO WRITEREC
