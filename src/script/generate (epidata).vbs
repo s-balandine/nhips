@@ -72,12 +72,12 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="Household"
+Form="Household Member"
 
 For Each oTable In oTables
     
-	'If IsObject(oTable) And (oTable.Name=Form) Then
-	If IsObject(oTable) Then	
+	If IsObject(oTable) And (oTable.Name=Form) Then
+	'If IsObject(oTable) Then	
 				
 		WScript.Echo "  " & oTable.Name
 		
@@ -297,8 +297,8 @@ oFile.Write Desc & vbCrLf
 oFile.Close
 
 For Each oTable In oTables
-	'If IsObject(oTable) And (oTable.Name=Form) Then
-	If IsObject(oTable) Then		
+     If IsObject(oTable) And (oTable.Name=Form) Then
+	'If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc =         "INCLUDE ""header.chk""" & vbCrLf & vbCrLf
