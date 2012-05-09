@@ -3197,3 +3197,131 @@ Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
 3 records with 11 field imported
+
+COMMAND:        EpiC rev "field interviewer.qes" "field interviewer.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field supervisor.qes" "field supervisor.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev household.qes household.rec AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\household.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "household member.qes" "household member.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\household member.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\household member.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\household member.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office editor.qes" "office editor.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\office editor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office keyer.qes" "office keyer.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\office keyer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible man.qes" "eligible man.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible man.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" "eligible woman.rec" AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev facility.qes facility.rec AUTO FORCE
+09/05/2012 17:16:08
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\facility.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC import TXT person.csv "field interviewer.rec" "qes=field interviewer.qes" delim=; q=none replace ignorefirst
+09/05/2012 17:16:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+3 records with 11 field imported
+
+COMMAND:        EpiC import TXT person.csv "field supervisor.rec" "qes=field supervisor.qes" delim=; q=none replace ignorefirst
+09/05/2012 17:16:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+3 records with 11 field imported
+
+COMMAND:        EpiC import TXT person.csv "office editor.rec" "qes=office editor.qes" delim=; q=none replace ignorefirst
+09/05/2012 17:16:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\office editor.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+3 records with 11 field imported
+
+COMMAND:        EpiC import TXT person.csv "office keyer.rec" "qes=office keyer.qes" delim=; q=none replace ignorefirst
+09/05/2012 17:16:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\person.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\office keyer.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+3 records with 11 field imported
+
+COMMAND:        EpiC import TXT facility.csv facility.rec qes=facility.qes delim=; q=none replace ignorefirst
+09/05/2012 17:16:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\facility.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\facility.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\facility.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+3 records with 8 field imported
