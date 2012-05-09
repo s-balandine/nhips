@@ -138,14 +138,7 @@ For Each oTable In oTables
 		Next
 		
 		Desc = Desc & ExtendedAttribute (oTable, "Title")
-		
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn)  And (oColumn.Name="Identifier (Natural)") Then
-				Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length -2, 0))
-				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
-			End If
-		Next
-		
+				
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
@@ -167,8 +160,16 @@ For Each oTable In oTables
 						ColumnSectionNOffset = ColumnSectionN - SectionFirst + 1
 					End If
 					Desc = Desc & vbCrLf
-					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
-					Desc = Desc & String(NCharWidth, "=") & vbCrLf
+					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
+					If ColumnSectionN=1 Then
+						For Each oColumn in oTable.Columns
+							If IsObject(oColumn)  And (oColumn.Name="Identifier (Natural)") Then
+								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn.Length -2, 0))
+								Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
+							End If
+						Next
+					End If 
+					Desc = Desc  & vbCrLf & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
 				End If
 						
