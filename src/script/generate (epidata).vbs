@@ -72,12 +72,12 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="Office Editor"
+Form="Office Keyer"
 
 For Each oTable In oTables
     
-	'If IsObject(oTable) And (oTable.Name=Form) Then
-	If IsObject(oTable) Then	
+	If IsObject(oTable) And (oTable.Name=Form) Then
+	'If IsObject(oTable) Then	
 				
 		WScript.Echo "  " & oTable.Name
 		
@@ -143,6 +143,20 @@ For Each oTable In oTables
 		Next
 		
 		Desc = Desc & ExtendedAttribute (oTable, "Title")
+		
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And oColumn.Code="RECIDU" Then
+			    WScript.Echo "    Key Primary: " & oColumn.Name
+				If oColumn.DataType="AUTOINCREMENT" Then
+					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - 18)
+					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
+				Else
+				    Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - oColumn.Length - 14, 0))
+				    Desc = Desc & "{Rec}ord {ID}: <A" & Space(oColumn.Length) & ">" & vbCrLf
+				End If
+			End If
+		Next
+		
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
@@ -263,8 +277,8 @@ Next
 WScript.Echo "Création des fichiers CHK"
 
 For Each oTable In oTables
-	'If IsObject(oTable) And (oTable.Name=Form) Then
-	If IsObject(oTable) Then		
+	If IsObject(oTable) And (oTable.Name=Form) Then
+	'If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc = "INCLUDE ""header.chk""" & vbCrLf & vbCrLf
