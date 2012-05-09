@@ -137,8 +137,7 @@ For Each oTable In oTables
 			End If
 		Next
 		
-		Desc = Desc & ExtendedAttribute (oTable, "Title")
-				
+		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf			
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
@@ -162,6 +161,7 @@ For Each oTable In oTables
 					Desc = Desc & vbCrLf
 					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
 					If ColumnSectionN=1 Then
+						ColumnSection = "{Id}entification"
 						For Each oColumn2 in oTable.Columns
 							If IsObject(oColumn2)  And (oColumn2.Name="Identifier (Natural)") Then
 								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length -2, 0))
