@@ -1,47 +1,4 @@
-INCLUDE "header.chk"
-
-LABELBLOCK
-  LABEL D_N_RELATIONSHIP_TO_HEAD
-    1 "Head"
-    2 "Wife or husband"
-    3 "Son/daughter"
-    4 "in-law"
-    5 "Grandchild"
-    6 "Parent"
-    7 "in-law"
-    8 "Brother/sister"
-    9 "Other relative"
-    10 "Adopted/foster child"
-    11 "Not related"
-    98 "Don't know"
-   END
-  LABEL D_N_SEX
-    1 "Male"
-    2 "Female"
-   END
-  LABEL D_N_YES_OR_NO
-    1 "Yes"
-    2 "No"
-   END
-  LABEL D_N_YES_OR_NO
-    1 "Yes"
-    2 "No"
-   END
-  LABEL D_N_MARITAL_STATUS
-    1 "Married or living together"
-    2 "Divorced or separated"
-    3 "Widowed"
-    4 "Never married and never lived together"
-   END
-  LABEL D_N_ELIGIBLE
-    0 "Non"
-    1 "Oui"
-   END
-  LABEL D_N_ELIGIBLE
-    0 "Non"
-    1 "Oui"
-   END
-END
+INCLUDE "header (labels).chk"
 
 
 *  | Identifier of Cluster (HSH_IDENTIFIER_OF_CLUSTER) | NUMERIC(3)
