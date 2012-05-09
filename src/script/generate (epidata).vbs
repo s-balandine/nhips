@@ -158,16 +158,18 @@ For Each oTable In oTables
 						ColumnPrefix = "Q"
 						ColumnSectionNOffset = ColumnSectionN - SectionFirst + 1
 					End If
-					Desc = Desc & vbCrLf
-					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
+					Desc = Desc & vbCrLf	
 					If ColumnSectionN=1 Then
 						ColumnSection = "{Id}entification"
+						Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
 						For Each oColumn2 in oTable.Columns
 							If IsObject(oColumn2)  And (oColumn2.Name="Identifier (Natural)") Then
 								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length - 4, 0))
 								Desc = Desc & "<A" & Space(oColumn2.Length) & ">" & vbCrLf
 							End If
 						Next
+					Else
+					    Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
 					End If 
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
