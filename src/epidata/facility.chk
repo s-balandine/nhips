@@ -1,9 +1,7 @@
 INCLUDE "header.chk"
 
 BEFORE RECORD
- IF (Q1011 = .) THEN
-  LET Q1011=Unnamed
- ENDIF
+ HIDE ID
 END
 
 LABELBLOCK
