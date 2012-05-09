@@ -164,7 +164,7 @@ For Each oTable In oTables
 						ColumnSection = "{Id}entification"
 						For Each oColumn2 in oTable.Columns
 							If IsObject(oColumn2)  And (oColumn2.Name="Identifier (Natural)") Then
-								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length -2, 0))
+								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length - 5, 0))
 								Desc = Desc & "<A" & Space(oColumn2.Length) & ">" & vbCrLf
 							End If
 						Next
