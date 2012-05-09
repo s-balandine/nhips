@@ -127,22 +127,22 @@ For Each oTable In oTables
 		ColumnN = 0
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oTable, "Title")
+		Desc = Desc & ExtendedAttribute (oModel, "Title")
 
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
 				If oColumn.DataType="AUTOINCREMENT" Then
-					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - 18)
+					Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - 18)
 					Desc = Desc & "{Rec}ord {ID}: <IDNUM>" & vbCrLf
 				Else
-				    Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 14, 0))
+				    Desc = Desc & Space(Max(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - oColumn.Length - 14, 0))
 				    Desc = Desc & "{Rec}ord {ID}: <A" & Space(oColumn.Length) & ">" & vbCrLf
 				End If
 			End If
 		Next
-
+		
+		Desc = Desc & ExtendedAttribute (oTable, "Title")
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
