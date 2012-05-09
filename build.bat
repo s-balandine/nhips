@@ -26,7 +26,7 @@ echo . > "facility.rec"
 %epic% import TXT "person.csv"    "field supervisor.rec"  qes="field supervisor.qes"  delim=; q=none replace ignorefirst
 %epic% import TXT "person.csv"    "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
 %epic% import TXT "person.csv"    "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
-%epic% import TXT "facility.csv"  "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
+::%epic% import TXT "facility.csv"  "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
 
 del  ..\..\build\*.eix
 
