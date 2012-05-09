@@ -10,6 +10,7 @@ echo . > "office editor.rec"
 echo . > "office keyer.rec"
 echo . > "eligible man.rec"
 echo . > "eligible woman.rec"
+echo . > "facility.rec"
 
 %epic% rev "field interviewer.qes"  "field interviewer.rec" AUTO FORCE
 %epic% rev "field supervisor.qes"   "field supervisor.rec"  AUTO FORCE
@@ -19,11 +20,13 @@ echo . > "eligible woman.rec"
 %epic% rev "office keyer.qes"       "office keyer.rec"      AUTO FORCE
 %epic% rev "eligible man.qes"       "eligible man.rec"      AUTO FORCE
 %epic% rev "eligible woman.qes"     "eligible woman.rec"    AUTO FORCE
+%epic% rev "facility.qes"           "facility.rec"          AUTO FORCE
 
-%epic% import TXT "person.csv" "field interviewer.rec" qes="field interviewer.qes" delim=; q=none replace ignorefirst
-%epic% import TXT "person.csv" "field supervisor.rec"  qes="field supervisor.qes"  delim=; q=none replace ignorefirst
-%epic% import TXT "person.csv" "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
-%epic% import TXT "person.csv" "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
+%epic% import TXT "person.csv"    "field interviewer.rec" qes="field interviewer.qes" delim=; q=none replace ignorefirst
+%epic% import TXT "person.csv"    "field supervisor.rec"  qes="field supervisor.qes"  delim=; q=none replace ignorefirst
+%epic% import TXT "person.csv"    "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
+%epic% import TXT "person.csv"    "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
+%epic% import TXT "facility.csv"  "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
 
 del  ..\..\build\*.eix
 
