@@ -404,7 +404,7 @@ For Each oTable In oTables
 					  Desc = Desc & "  " & S & vbCrLf 
 					End If
 				End If
-				If oColumn.Index = oTable.Columns.Count Then
+				If oColumn = oTable.Columns(oTable.Columns.Count) Then
 					Desc = Desc & "  GOTO WRITEREC" & vbCrLf	
 				End if
 				Desc = Desc & "END" & vbCrLf	
