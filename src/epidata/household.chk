@@ -71,9 +71,8 @@ Q2011
   RANGE 1 31
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 31"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 31 (
+98:Don't know)"
   END
 END
 
@@ -86,9 +85,8 @@ Q2012
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -101,9 +99,8 @@ Q2013
   RANGE 2012 2014
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between2012 and 2014"(
-98:Don't know)
-"
+    TYPE "Allowed values between 2012 and 2014 (
+98:Don't know)"
   END
 END
 
@@ -138,7 +135,8 @@ Q2031
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -178,7 +176,7 @@ Q2051
   RANGE 1 5
 
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 5""
+    TYPE "Allowed values between 1 and 5"
   END
 END
 
@@ -189,7 +187,7 @@ Q2061
   RANGE 0 90
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 90""
+    TYPE "Allowed values between 0 and 90"
   END
 END
 
@@ -200,7 +198,7 @@ Q2062
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -211,7 +209,7 @@ Q2063
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
