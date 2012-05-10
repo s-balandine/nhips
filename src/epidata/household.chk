@@ -38,13 +38,6 @@ RECID
   NOENTER
 END
 
-* ID | Identifier (Natural) (SPV_IDENTIFIER_NATURAL) | VARCHAR(6)
-* 
-ID
-  KEY UNIQUE 2
-  NOENTER
-END
-
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
 * Identifiers > No. Cluster
 Q1011
@@ -52,18 +45,18 @@ Q1011
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET ID="00" + Q1011
+      LET RECID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET ID="0" + Q1011
+        LET RECID="0" + Q1011
       ELSE
-        LET ID= Q1011
+        LET RECID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
+      LET RECID= RECID + "." + "0" + Q1012
     ELSE
-      LET ID= ID + "." + Q1012
+      LET RECID= RECID + "." + Q1012
     ENDIF
   END
 END
@@ -75,18 +68,18 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET ID="00" + Q1011
+      LET RECID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET ID="0" + Q1011
+        LET RECID="0" + Q1011
       ELSE
-        LET ID= Q1011
+        LET RECID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
+      LET RECID= RECID + "." + "0" + Q1012
     ELSE
-      LET ID= ID + "." + Q1012
+      LET RECID= RECID + "." + Q1012
     ENDIF
   END
 END
