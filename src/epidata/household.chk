@@ -70,10 +70,6 @@ Q2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE  98
-  BEFORE ENTRY
-    TYPE "Allowed values between 1 and 31 (
-98:Don't know)"
-  END
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
@@ -84,10 +80,6 @@ Q2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE  98
-  BEFORE ENTRY
-    TYPE "Allowed values between 1 and 12 (
-98:Don't know)"
-  END
 END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
@@ -98,10 +90,6 @@ Q2013
   MUSTENTER
   RANGE 2012 2014
   MISSINGVALUE  98
-  BEFORE ENTRY
-    TYPE "Allowed values between 2012 and 2014 (
-98:Don't know)"
-  END
 END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
@@ -132,11 +120,8 @@ END
 *    9: Other
 Q2031
   MUSTENTER
-  COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
-  TYPE COMMENT LEGAL SHOW
-  BEFORE ENTRY
-    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9"
-  END
+  COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
+  TYPE COMMENT LEGAL
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -175,9 +160,6 @@ Q2051
   MUSTENTER
   RANGE 1 5
 
-  BEFORE ENTRY
-    TYPE "Allowed values between 1 and 5"
-  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -186,9 +168,6 @@ Q2061
   MUSTENTER
   RANGE 0 90
 
-  BEFORE ENTRY
-    TYPE "Allowed values between 0 and 90"
-  END
 END
 
 * Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
@@ -197,9 +176,6 @@ Q2062
   MUSTENTER
   RANGE 0 20
 
-  BEFORE ENTRY
-    TYPE "Allowed values between 0 and 20"
-  END
 END
 
 * Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
@@ -208,9 +184,6 @@ Q2063
   MUSTENTER
   RANGE 0 20
 
-  BEFORE ENTRY
-    TYPE "Allowed values between 0 and 20"
-  END
 END
 
 * Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
