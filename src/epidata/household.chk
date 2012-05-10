@@ -45,18 +45,18 @@ Q1011
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET RECID="00" + Q1011
+      LET HSID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET RECID="0" + Q1011
+        LET HSID="0" + Q1011
       ELSE
-        LET RECID= Q1011
+        LET HSID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET RECID= RECID + "." + "0" + Q1012
+      LET HSID= HSID + "." + "0" + Q1012
     ELSE
-      LET RECID= RECID + "." + Q1012
+      LET HSID= HSID + "." + Q1012
     ENDIF
   END
 END
@@ -68,18 +68,18 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET RECID="00" + Q1011
+      LET HSID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET RECID="0" + Q1011
+        LET HSID="0" + Q1011
       ELSE
-        LET RECID= Q1011
+        LET HSID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET RECID= RECID + "." + "0" + Q1012
+      LET HSID= HSID + "." + "0" + Q1012
     ELSE
-      LET RECID= RECID + "." + Q1012
+      LET HSID= HSID + "." + Q1012
     ENDIF
   END
 END
