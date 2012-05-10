@@ -180,6 +180,9 @@ END
 Q2051
   MUSTENTER
   RANGE 1 5
+  AFTER ENTRY
+    RELATE HSID "household member"
+  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
