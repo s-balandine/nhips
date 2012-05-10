@@ -1,7 +1,6 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-
 * RECID | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
@@ -21,16 +20,16 @@ END
 Q1011
   MUSTENTER
   COMMENT LEGAL "Household" SHOW
-TYPE COMMENT ID
-AFTER ENTRY
-  IGNOREMISSING
-  IF Q1012 < 10 THEN
-    LET ID= ID + "." + "0" + Q1012
-  ELSE
-    LET ID= ID + "." + Q1012
-  ENDIF
-END
-
+  TYPE COMMENT ID
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1012 < 10 THEN
+      LET ID= ID + "." + "0" + Q1012
+    ELSE
+      LET ID= ID + "." + Q1012
+    ENDIF
+  END
+  
 END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -38,14 +37,14 @@ END
 Q1012
   MUSTENTER
   AFTER ENTRY
-  IGNOREMISSING
-  IF Q1012 < 10 THEN
-    LET ID= ID + "." + "0" + Q1012
-  ELSE
-    LET ID= ID + "." + Q1012
-  ENDIF
-END
-
+    IGNOREMISSING
+    IF Q1012 < 10 THEN
+      LET ID= ID + "." + "0" + Q1012
+    ELSE
+      LET ID= ID + "." + Q1012
+    ENDIF
+  END
+  
 END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
