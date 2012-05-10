@@ -45,13 +45,12 @@ Q1012
   MUSTENTER
   AFTER ENTRY
   IGNOREMISSING
-  IF Q1012 < 10 THEN
-    LET ID= Q1011S + "." + "0" + Q1012
-  ELSE
-    LET ID= Q1011S + "." + Q1012
-  ENDIF
-END
-
+    IF Q1012 < 10 THEN
+      LET ID= Q1011S + "." + "0" + Q1012
+    ELSE
+      LET ID= Q1011S + "." + Q1012
+    ENDIF
+  END
 END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
