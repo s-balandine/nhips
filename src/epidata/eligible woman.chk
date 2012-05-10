@@ -203,7 +203,12 @@ END
 * What is the highest (grade/form/year) you completed at that level? 
 Q1071
   MUSTENTER
-  AFTER ENTRY  IF  Q1051 >2 THEN    GOTO Q1091  ENDIFENDIF
+  AFTER ENTRY
+    IF
+    Q1051 >2 THEN
+      GOTO Q1091
+    ENDIF
+  END
 END
 
 * Q108.1 | Literacy (HEW_LITERACY) | NUMERIC(2)
