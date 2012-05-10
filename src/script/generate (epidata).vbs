@@ -411,7 +411,7 @@ For Each oTable In oTables
 							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
 							Desc = Desc & "  BEFORE ENTRY" & vbCrLf
-							Desc = Desc & "    TYPE "
+							Desc = Desc & "    TYPE ""Allowed values are "
 							For i=0 To UBound(Values)
 								If Values(i) <> "" Then
 									Value = Values(i)
@@ -420,6 +420,7 @@ For Each oTable In oTables
 									If i < UBound(Values) Then Desc=Desc & " or "
 								End If
 							Next
+							Desc = Desc & """" & vbCrLf
 							Desc = Desc & "  END" & vbCrLf
 						End If
 					End If
