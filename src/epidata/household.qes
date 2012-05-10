@@ -1,7 +1,8 @@
 ================================================================================
-NDHIWA HIV IMPACT IN POPULATION SURVEY                       {Rec}ord {ID}: <IDNUM> <dd/mm/yyyy> ##.## <dd/mm/yyyy> ##.## ###
+NDHIWA HIV IMPACT IN POPULATION SURVEY                       {Rec}ord {ID}: <IDNUM>
 HOUSEHOLD QUESTIONNAIRE
 ================================================================================
+
 
 1.{ID}ENTIFICATION                                                      <A      >
 ================================================================================
@@ -31,5 +32,9 @@ Q205  Total number of visits     ({Q205.1})  ................................##
 Q206  Check persons in household ({Q206.1})  Total persons...................##  
                                  ({Q206.2})  Total eligible women............##  
                                  ({Q206.3})  Total eligible men..............##  
-                                 ({Q206.4})  No. of respondent...............##  
+                                 ({Q206.4})  No. of respondent...............##
 
+================================================================================                                
+{Rec}ord {crea}ted on:  <dd/mm/yyyy> ##.##
+{Rec}ord {upd}a{t}ed on: <dd/mm/yyyy> ##.## 
+{Rec}ord {Time}:     ###
