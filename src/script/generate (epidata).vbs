@@ -386,9 +386,9 @@ For Each oTable In oTables
 						End If
 						Desc = Desc & vbCrLf
 						Desc = Desc & "  BEFORE ENTRY" & vbCrLf
-						Desc = Desc & "    TYPE ""Allowed values between" & oColumn.LowValue & " and " & oColumn.HighValue & """"
+						Desc = Desc & "    TYPE ""Allowed values between " & oColumn.LowValue & " and " & oColumn.HighValue
 						If oColumn.Domain.ListOfValues <> "" Then
-							Desc = Desc & "(" & vbCrLf
+							Desc = Desc & " (" & vbCrLf
 							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
 							For i=0 To UBound(Values)
@@ -399,7 +399,7 @@ For Each oTable In oTables
 									If i < UBound(Values) Then Desc=Desc & ", "
 								End If
 							Next
-							Desc = Desc & ")" & vbCrLf
+							Desc = Desc & ")"
 						End If
 						Desc = Desc & """" & vbCrLf
 						Desc = Desc & "  END" & vbCrLf
