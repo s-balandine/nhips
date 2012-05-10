@@ -29,7 +29,15 @@ echo . > "facility.rec"
 %epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
 %epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
 
-echo "%epidata%" "field interviewer.rec" > "field interviewer.bat" 
+echo start "" %epidata% "field interviewer.rec" > "field interviewer.bat" 
+echo start "" %epidata% "field supervisor.rec" > "field supervisor.bat"
+echo start "" %epidata% "household.rec" > "household.bat"
+echo start "" %epidata% "household member.rec" > "household member.bat"
+echo start "" %epidata% "office editor.rec" > "office editor.bat"
+echo start "" %epidata% "office keyer.rec" > "office keyer.bat"
+echo start "" %epidata% "eligible man.rec" > "eligible man.bat"
+echo start "" %epidata% "eligible woman.rec" > "eligible woman.bat"
+echo start "" %epidata% "facility.rec" > "facility.bat"
 
 del  ..\..\build\*.eix
 
