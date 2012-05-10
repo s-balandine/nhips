@@ -405,8 +405,8 @@ For Each oTable In oTables
 						Desc = Desc & "  END" & vbCrLf
 					Else
 						If oColumn.Domain.ListOfValues <> "" Then
-							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
-							Desc = Desc & "  TYPE COMMENT LEGAL SHOW" & vbCrLf
+							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & vbCrLf
+							Desc = Desc & "  TYPE COMMENT LEGAL" & vbCrLf
 							
 							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
