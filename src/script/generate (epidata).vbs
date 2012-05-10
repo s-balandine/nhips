@@ -169,7 +169,7 @@ For Each oTable In oTables
 							End If
 						Next
 					Else
-					    Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
+					    Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
 					End If 
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
