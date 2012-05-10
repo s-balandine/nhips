@@ -1,40 +1,18 @@
+INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-BEFORE RECORD
-  RECCREA = NOW
-  RECCREA1 = NUM2TIME(NOW)
-  RECUPDT = NOW
-  RECUPDT1 = NUM2TIME(NOW)
-END
-
-AFTER RECORD
-  RECTIME = (TIME2NUM(NUM2TIME(NOW))-TIME2NUM(RECUPDT1)) * 24 * 60 * 3600
-END
-
-RECCREA
-  NOENTER
-END
-
-RECCREA1
-  NOENTER
-END
-
-RECUPDT
-  NOENTER
-END
-
-RECUPDT1
-  NOENTER
-END
-
-RECTIME
-  NOENTER
-END
 
 * RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
 * 
-HSID
+RECID
   KEY UNIQUE 1
+  NOENTER
+END
+
+* ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
+* 
+ID
+  KEY UNIQUE 2
   NOENTER
 END
 
@@ -45,18 +23,18 @@ Q1011
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET HSID="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET HSID="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET HSID= Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET HSID= HSID + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET HSID= HSID + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
   END
 END
@@ -68,18 +46,18 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET HSID="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET HSID="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET HSID= Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET HSID= HSID + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET HSID= HSID + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
   END
 END
@@ -180,9 +158,6 @@ END
 Q2051
   MUSTENTER
   RANGE 1 5
-  AFTER ENTRY
-    RELATE HSID "household member"
-  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)

@@ -1,3 +1,4 @@
+INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 
@@ -9,6 +10,13 @@ RECID
 END
 
 *  | Identifier of Household (HSH_IDENTIFIER_OF_HOUSEHOLD) | NUMERIC(2)
+* 
+RECID
+  KEY UNIQUE 1
+  NOENTER
+END
+
+*  | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
   KEY UNIQUE 1
