@@ -51,6 +51,15 @@ LABELBLOCK
     12 "Taita / Taveta"
     96 "Other"
    END
+  LABEL D_N_HEALTH_ASSISTANT_TYPE
+    A "Health personnel: Doctor"
+    B "Health personnel: Nurse, midwife"
+    C "Health personnel: Auxiliary midwife"
+    D "Other person: Traditional birth attendant"
+    E "Other person: Relative/Friend"
+    X "Other person: Other"
+    Y "No one"
+   END
   LABEL D_N_HEALTH_FACILITY_TYPE
     11 "Public sector: Government hospital"
     12 "Public sector: Government health center"
@@ -96,16 +105,7 @@ LABELBLOCK
     27 "Private medical sector: Other private"
     96 "Other"
    END
-  LABEL D_N_HEALTH_ASSISTANT_TYPE
-    A "Health personnel: Doctor"
-    B "Health personnel: Nurse, midwife"
-    C "Health personnel: Auxiliary midwife"
-    D "Other person: Traditional birth attendant"
-    E "Other person: Relative/Friend"
-    X "Other person: Other"
-    Y "No one"
-   END
-  LABEL D_N_HEALTH_WORK_PLACE
+  LABEL D_T_HEALTH_WORK_PLACE
     A "Home: Respondent's home"
     B "Home: Other home"
     C "Public sector: Government hospital"
@@ -116,7 +116,7 @@ LABELBLOCK
     H "Private medical sector: Other private medical"
     X "Other"
    END
-  LABEL D_N_HEALTH_WORKER_TYPE
+  LABEL D_T_HEALTH_WORKER_TYPE
     A "Health personnel: Doctor"
     B "Health personnel: Nurse, midwife"
     C "Health personnel: Auxiliary midwife"
