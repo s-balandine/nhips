@@ -371,10 +371,11 @@ For Each oTable In oTables
 					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
 					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
-						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue & vbCrLf 
+						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue
 						If oColumn.Domain.ListOfValues <> "" Then
 							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
+							Desc = Desc & vbCrLf
 							Desc = Desc & "  MISSINGVALUE "
 							For i=0 To UBound(Values)
 								If Values(i) <> "" Then
