@@ -1,31 +1,36 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-BEFORE FILE
-  DEFINE IDS ___________________
-END
 
 * RECID | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
 * 
-HMID
+RECID
   KEY UNIQUE 1
+  NOENTER
+END
+
+* ID | Identifier (Natural) (HHM_IDENTIFIER_NATURAL) | VARCHAR(9)
+* 
+ID
+  KEY UNIQUE 2
   NOENTER
 END
 
 * Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
-HSID
+Q1011
   MUSTENTER
   COMMENT LEGAL "Household" SHOW
-  AFTER ENTRY
-    IGNOREMISSING
-    IF Q1012 < 10 THEN
-      LET HMID= HSID + "." + "0" + Q1012
-    ELSE
-      LET HMID= HSID + "." + Q1012
-    ENDIF
-  END
-  KEY 2
+TYPE COMMENT ID
+AFTER ENTRY
+  IGNOREMISSING
+  IF Q1012 < 10 THEN
+    LET ID= ID + "." + "0" + Q1012
+  ELSE
+    LET ID= ID + "." + Q1012
+  ENDIF
+END
+
 END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -34,12 +39,13 @@ Q1012
   MUSTENTER
   AFTER ENTRY
   IGNOREMISSING
-    IF Q1012 < 10 THEN
-      LET HMID= HSID + "." + "0" + Q1012
-    ELSE
-      LET HMID= HSID + "." + Q1012
-    ENDIF
-  END
+  IF Q1012 < 10 THEN
+    LET ID= ID + "." + "0" + Q1012
+  ELSE
+    LET ID= ID + "." + Q1012
+  ENDIF
+END
+
 END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
