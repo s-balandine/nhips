@@ -388,7 +388,21 @@ For Each oTable In oTables
 					Else
 						If oColumn.Domain.ListOfValues <> "" Then
 							Desc = Desc & "  COMMENT LEGAL USE " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
-							Desc = Desc & "  TYPE COMMENT " & UCase(oColumn.Domain.Code) & " SHOW" & vbCrLf
+							Desc = Desc & "  TYPE COMMENT LEGAL SHOW" & vbCrLf
+							
+							Values = oColumn.Domain.ListOfValues
+							Values = Split(Values, vbNewLine, -1, 1)
+							Desc = Desc & "  BEFORE ENTRY" & vbCrLf
+							Desc = Desc & "    TYPE "
+							For i=0 To UBound(Values)
+								If Values(i) <> "" Then
+									Value = Values(i)
+									Value = Split(Value, vbTab, -1, 1)
+									Desc=Desc & Value(0) 
+									If i < UBound(Values) Then Desc=Desc & " or "
+								End If
+							Next
+							Desc = Desc & "  END" & vbCrLf
 						End If
 					End If
 					S = ExtendedAttribute(oColumn, "Check")
