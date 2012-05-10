@@ -440,7 +440,7 @@ For Each oTable In oTables
 							End if
 						Next
 					ElseIf Right(S, 1)="¤" Then
-					 	Desc = Desc & "  " & Replace(S, "¤", vbCrLf & "  ") & vbCrLf
+					 	Desc = Desc & "  " & Replace(S, "¤", vbCrLf & "  ")
 					ElseIf Len(S)>0 Then
 					  Desc = Desc & "  " & S & vbCrLf 
 					End If
