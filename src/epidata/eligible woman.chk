@@ -34,9 +34,8 @@ S2011
   RANGE 1 31
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 31"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 31 (
+98:Don't know)"
   END
 END
 
@@ -49,9 +48,8 @@ S2012
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -64,9 +62,8 @@ S2013
   RANGE 2012 2014
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between2012 and 2014"(
-98:Don't know)
-"
+    TYPE "Allowed values between 2012 and 2014 (
+98:Don't know)"
   END
 END
 
@@ -101,7 +98,8 @@ S2031
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -141,7 +139,7 @@ S2051
   RANGE 1 5
 
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 5""
+    TYPE "Allowed values between 1 and 5"
   END
 END
 
@@ -152,7 +150,7 @@ Q1011
   RANGE 0 23
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 23""
+    TYPE "Allowed values between 0 and 23"
   END
   TOPOFSCREEN
 END
@@ -164,7 +162,7 @@ Q1012
   RANGE 0 59
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 59""
+    TYPE "Allowed values between 0 and 59"
   END
 END
 
@@ -177,9 +175,8 @@ Q1021
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -192,9 +189,8 @@ Q1022
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -207,9 +203,8 @@ Q1031
   RANGE 0 97
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 97"(
-98:Don't know)
-"
+    TYPE "Allowed values between 0 and 97 (
+98:Don't know)"
   END
 END
 
@@ -223,7 +218,8 @@ Q1041
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q1081
   END
@@ -241,7 +237,8 @@ Q1051
   COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4"
+  END
 END
 
 * Q107.1 | Highest Year of Education (HEW_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
@@ -267,7 +264,8 @@ Q1081
   COMMENT LEGAL USE D_N_LITERACY SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4 or 5  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -294,7 +292,8 @@ Q1091
   COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4"
+  END
 END
 
 * Q1101 | Residence Duration (HEW_RESIDENCE_DURATION) | NUMERIC(2)
@@ -307,9 +306,8 @@ Q1101
   RANGE 1 97
   MISSINGVALUE  98 99
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 97"(
-98:Always, 99:Visitor)
-"
+    TYPE "Allowed values between 1 and 97 (
+98:Always, 99:Visitor)"
   END
   JUMPS RESET
     98 Q1131
@@ -329,7 +327,8 @@ Q1111
   COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 0 or 1 or 2 or 3  END
+    TYPE "Allowed values are 0 or 1 or 2 or 3"
+  END
 END
 
 * Q1121 | Ethnic (HEW_ETHNIC) | NUMERIC(2)
@@ -353,7 +352,8 @@ Q1121
   COMMENT LEGAL USE D_N_ETHNIC SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 96  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 96"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -392,7 +392,8 @@ Q1141
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q1151 | Union (HEW_UNION) | NUMERIC(1)
@@ -406,7 +407,8 @@ Q1151
   COMMENT LEGAL USE D_N_UNION_STATUS SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
   JUMPS RESET
     1 Q1181
     2 Q1181
@@ -424,7 +426,8 @@ Q1161
   COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
 END
 
 * Q1171 | Marital Status (HEW_MARITAL_STATUS) | NUMERIC(1)
@@ -438,7 +441,8 @@ Q1171
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
   
     JUMPS RESET
       1 SKIPNEXTFIELD
@@ -458,7 +462,8 @@ Q1181
   COMMENT LEGAL USE D_N_HUSBAND_STATUS SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q1191 | Worked in last week (HEW_WORKED_IN_LAST_WEEK) | NUMERIC(1)
@@ -471,7 +476,8 @@ Q1191
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     1 Q1231
   END
@@ -487,7 +493,8 @@ Q1201
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     1 Q1231
   END
@@ -503,7 +510,8 @@ Q1211
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     1 Q1231
   END
@@ -519,7 +527,8 @@ Q1221
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q1251
   END
@@ -537,7 +546,8 @@ Q1231
   COMMENT LEGAL USE D_N_OCCUPATION SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4"
+  END
 END
 
 * Q1241 | Work Class (HEW_WORK_CLASS) | NUMERIC(1)
@@ -551,7 +561,8 @@ Q1241
   COMMENT LEGAL USE D_N_WORK_CLASS SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
 END
 
 * Q1251 | Work Time (HEW_WORK_TIME) | NUMERIC(1)
@@ -565,7 +576,8 @@ Q1251
   COMMENT LEGAL USE D_N_WORK_TIME SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
 END
 
 * Q1261 | Work Earn (HEW_WORK_EARN) | NUMERIC(1)
@@ -580,7 +592,8 @@ Q1261
   COMMENT LEGAL USE D_N_WORK_EARN SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4"
+  END
 END
 
 * Q201.1 | Birth Given (HEW_BIRTH_GIVEN) | NUMERIC(1)
@@ -593,7 +606,8 @@ Q2011
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   TOPOFSCREENJUMPS RESET
     2 Q2061
   END
@@ -609,7 +623,8 @@ Q2021
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q2041
   END
@@ -622,7 +637,7 @@ Q2031
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -633,7 +648,7 @@ Q2032
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -647,7 +662,8 @@ Q2041
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q2061
   END
@@ -660,7 +676,7 @@ Q2051
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -671,7 +687,7 @@ Q2052
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -685,7 +701,8 @@ Q2061
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q2081
   END
@@ -698,7 +715,7 @@ Q2071
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -709,7 +726,7 @@ Q2072
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -720,7 +737,7 @@ Q2081
   RANGE 0 20
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 20""
+    TYPE "Allowed values between 0 and 20"
   END
 END
 
@@ -733,9 +750,8 @@ Q2101
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -748,9 +764,8 @@ Q2102
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -761,7 +776,7 @@ Q3031
   RANGE 1 6
 
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 6""
+    TYPE "Allowed values between 1 and 6"
   END
   TOPOFSCREEN
 END
@@ -782,7 +797,8 @@ Q3051
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q306.1 | Antenatal Care (HEW_ATNT_CARE) | NUMERIC(1)
@@ -795,7 +811,8 @@ Q3061
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 HEW_DELIVERY_WHOM
   END
@@ -815,7 +832,8 @@ Q3071
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE A or B or C or D or E or X or   END
+    TYPE "Allowed values are A or B or C or D or E or X or "
+  END
   JUMPS RESET
     A SKIPNEXTFIELD
     B SKIPNEXTFIELD
@@ -848,7 +866,8 @@ Q3081
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE A or B or C or D or E or F or G or H or X or   END
+    TYPE "Allowed values are A or B or C or D or E or F or G or H or X or "
+  END
   JUMPS RESET
     A SKIPNEXTFIELD
     B SKIPNEXTFIELD
@@ -874,9 +893,8 @@ Q3091
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -900,7 +918,8 @@ Q3111
   COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE A or B or C or D or E or X or   END
+    TYPE "Allowed values are A or B or C or D or E or X or "
+  END
   JUMPS RESET
     A SKIPNEXTFIELD
     B SKIPNEXTFIELD
@@ -934,7 +953,8 @@ Q3121
   COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE A or B or C or D or E or F or G or H or X or   END
+    TYPE "Allowed values are A or B or C or D or E or F or G or H or X or "
+  END
   JUMPS RESET
     11 HEW_BREASFEEDING
     12 HEW_BREASFEEDING
@@ -958,7 +978,7 @@ Q3131
   RANGE 0 23
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 23""
+    TYPE "Allowed values between 0 and 23"
   END
 END
 
@@ -971,9 +991,8 @@ Q3132
   RANGE 1 31
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 31"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 31 (
+98:Don't know)"
   END
 END
 
@@ -993,7 +1012,8 @@ Q3141
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q3161 | Breastfeeding Still (HEW_BF_STILL) | NUMERIC(1)
@@ -1006,7 +1026,8 @@ Q3161
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
   END
@@ -1028,7 +1049,8 @@ Q4011
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   TOPOFSCREENJUMPS RESET
     2 SKIPNEXTFIELD
   END
@@ -1045,7 +1067,8 @@ Q4021
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q402.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
@@ -1059,7 +1082,8 @@ Q4022
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q402.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
@@ -1073,7 +1097,8 @@ Q4023
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q403.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
@@ -1087,7 +1112,8 @@ Q4031
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q407.1 | AIDS Antenatal Test Offered (HEW_AIDS_ATNT_TEST_OFFERED) | NUMERIC(1)
@@ -1100,7 +1126,8 @@ Q4071
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q408.1 | AIDS Antenatal Test (HEW_AIDS_ATNT_TEST) | NUMERIC(1)
@@ -1113,7 +1140,8 @@ Q4081
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q4191
   END
@@ -1126,7 +1154,7 @@ Q4091
   RANGE 0 9
 
   BEFORE ENTRY
-    TYPE "Allowed values between0 and 9""
+    TYPE "Allowed values between 0 and 9"
   END
 END
 
@@ -1156,7 +1184,8 @@ Q4101
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98  END
+    TYPE "Allowed values are 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98"
+  END
   JUMPS RESET
     11 SKIPNEXTFIELD
     12 SKIPNEXTFIELD
@@ -1192,7 +1221,8 @@ Q4111
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q4121 | AIDS Antenatal Test Counceling (HEW_AIDS_ATNT_TEST_COUNCELING) | NUMERIC(1)
@@ -1206,7 +1236,8 @@ Q4121
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q4141 | AIDS Pregnancy Test Offered (HEW_AIDS_PGC_TEST_OFFERED) | NUMERIC(1)
@@ -1219,7 +1250,8 @@ Q4141
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2
     Q4231
@@ -1236,7 +1268,8 @@ Q4151
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2
     Q4231
@@ -1253,7 +1286,8 @@ Q4161
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q4171 | AIDS Pregnancy Test After (HEW_AIDS_PGC_TEST_AFTER) | NUMERIC(1)
@@ -1266,7 +1300,8 @@ Q4171
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q4181 | AIDS Test Most Recent (HEW_AIDS_TEST_MOST_RECENT) | NUMERIC(2)
@@ -1288,7 +1323,8 @@ Q4191
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2
     Q4231
@@ -1314,7 +1350,8 @@ Q4211
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q4221 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
@@ -1343,7 +1380,8 @@ Q4221
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98  END
+    TYPE "Allowed values are 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98"
+  END
 END
 
 * Q4222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(32)
@@ -1379,7 +1417,8 @@ Q4231
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   AFTER ENTRY
     GOTO HEW_CONSENT
   END
@@ -1407,7 +1446,8 @@ Q4241
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2 SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE A or B or C or D or E or F or G or H or I or J or K or L or M or X  END
+    TYPE "Allowed values are A or B or C or D or E or F or G or H or I or J or K or L or M or X"
+  END
   JUMPS RESET
     A SKIPNEXTFIELD
     B SKIPNEXTFIELD
@@ -1439,7 +1479,8 @@ Q5041
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   IF HEW_HIV_TEST_CONSENT=2 THEN  GOTO WRITERECENDIF
 END
 
@@ -1453,7 +1494,8 @@ Q5061
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   IF HEW_HIV_TEST_CONSENT_RESPONDENT=2 THEN  GOTO WRITERECENDIF
 END
 
@@ -1467,7 +1509,8 @@ Q6011
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   TOPOFSCREEN
 END
 
@@ -1481,7 +1524,8 @@ Q6021
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q606.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
@@ -1494,7 +1538,8 @@ Q6061
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   IF HEW_BLOOD_SAMPLE_CONSENT=2 THEN  GOTO WRITERECENDIF
 END
 
@@ -1508,7 +1553,8 @@ Q6081
   COMMENT LEGAL USE D_N_CONSENT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   IF HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2 THEN  GOTO WRITERECENDIF
 END
 
@@ -1521,9 +1567,8 @@ Q6111
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -1536,9 +1581,8 @@ Q6112
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -1568,7 +1612,8 @@ Q6121
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98  END
+    TYPE "Allowed values are 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 31 or 32 or 98"
+  END
   JUMPS RESET
     11 SKIPNEXTFIELD
     12 SKIPNEXTFIELD
@@ -1604,7 +1649,8 @@ Q6131
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   IF HEW_TOTAL_CHILDREN=0 THEN  GOTO WRITERECENDIFIF HEW_PREGNANCY_ENDED_YEAR<2010 THEN  GOTO WRITERECENDIFIF HEW_ANTENATAL_CARE=2 THEN  GOTO WRITERECENDIF
 END
 
@@ -1619,7 +1665,8 @@ Q6141
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
   JUMPS RESET
     2 SKIPNEXTFIELD
     8 SKIPNEXTFIELD
@@ -1637,7 +1684,8 @@ Q6151
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 8  END
+    TYPE "Allowed values are 1 or 2 or 8"
+  END
 END
 
 * Q6161 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
@@ -1650,7 +1698,8 @@ Q6161
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q6231
   END
@@ -1665,9 +1714,8 @@ Q6171
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -1680,9 +1728,8 @@ Q6172
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -1696,7 +1743,8 @@ Q6181
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q6281
   END
@@ -1711,9 +1759,8 @@ Q6191
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -1726,9 +1773,8 @@ Q6192
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -1761,7 +1807,8 @@ Q6211
   COMMENT LEGAL USE D_N_DISTRICT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
   JUMPS RESET
     3 SKIPNEXTFIELD
   END
@@ -1790,7 +1837,8 @@ Q6231
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
   JUMPS RESET
     2 Q6281
   END
@@ -1805,9 +1853,8 @@ Q6241
   RANGE 1 12
   MISSINGVALUE  98
   BEFORE ENTRY
-    TYPE "Allowed values between1 and 12"(
-98:Don't know)
-"
+    TYPE "Allowed values between 1 and 12 (
+98:Don't know)"
   END
 END
 
@@ -1820,9 +1867,8 @@ Q6242
   RANGE 1920 2012
   MISSINGVALUE  9998
   BEFORE ENTRY
-    TYPE "Allowed values between1920 and 2012"(
-9998:Don't know)
-"
+    TYPE "Allowed values between 1920 and 2012 (
+9998:Don't know)"
   END
 END
 
@@ -1855,7 +1901,8 @@ Q6261
   COMMENT LEGAL USE D_N_DISTRICT SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3  END
+    TYPE "Allowed values are 1 or 2 or 3"
+  END
   JUMPS RESET
     3 SKIPNEXTFIELD
   END
@@ -1892,7 +1939,8 @@ Q6281
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 96  END
+    TYPE "Allowed values are 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 96"
+  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -1923,7 +1971,8 @@ Q6321
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q6331 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
@@ -1936,7 +1985,8 @@ Q6331
   COMMENT LEGAL USE D_N_YES_OR_NO SHOW
   TYPE COMMENT LEGAL SHOW
   BEFORE ENTRY
-    TYPE 1 or 2  END
+    TYPE "Allowed values are 1 or 2"
+  END
 END
 
 * Q701.1 | Comment (HEW_COMMENT) | VARCHAR(32)
