@@ -1,7 +1,6 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-
 *  | Identifier of Cluster (HSH_IDENTIFIER_OF_CLUSTER) | NUMERIC(3)
 * 
 RECID
