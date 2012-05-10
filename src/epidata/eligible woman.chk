@@ -203,10 +203,7 @@ END
 * What is the highest (grade/form/year) you completed at that level? 
 Q1071
   MUSTENTER
-  IF
-    HEW_HIGHEST_EDUCATIONAL_LEVEL>2 THEN
-    GOTO Q1091
-  END
+  AFTER ENTRY  IF  Q1051 >2 THEN    GOTO Q1091  ENDIFENDIF
 END
 
 * Q108.1 | Literacy (HEW_LITERACY) | NUMERIC(2)
@@ -373,12 +370,10 @@ Q1171
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL
   TYPE COMMENT LEGAL
-  
-    JUMPS RESET
-      1 SKIPNEXTFIELD
-      2 SKIPNEXTFIELD
-      3 SKIPNEXTFIELD
-    
+  JUMPS RESET
+    1 SKIPNEXTFIELD
+    2 SKIPNEXTFIELD
+    3 SKIPNEXTFIELD
   END
 END
 
@@ -450,7 +445,7 @@ Q1221
 END
 
 * Q1231 | Occupation (HEW_OCCUPATION) | NUMERIC(2)
-* What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
+* What is your occupation, that is, what kind of work do you mainly do?What is your occupation, that is, what kind of work do you mainly do?
 * Allowed Values
 *    1: ?
 *    2: ?
@@ -487,7 +482,7 @@ Q1251
 END
 
 * Q1261 | Work Earn (HEW_WORK_EARN) | NUMERIC(1)
-* Are you paid in cash or kind for this work or are you not paid at all?																																																																																																				
+* Are you paid in cash or kind for this work or are you not paid at all?
 * Allowed Values
 *    1: Cash only
 *    2: Cash and kind
@@ -671,7 +666,7 @@ Q3061
   END
 END
 
-* Q307.1 | Antenatal Care Whom (HEW_ATNT_CARE_WHOM) | NUMERIC(2)
+* Q307.1 | Antenatal Care Whom (HEW_ATNT_CARE_WHOM) | VARCHAR(1)
 * Whom did you see? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -682,7 +677,7 @@ END
 *    X: Other person: Other
 Q3071
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE
+  COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
   JUMPS RESET
     A SKIPNEXTFIELD
@@ -699,7 +694,7 @@ Q3072
   MUSTENTER
 END
 
-* Q308.1 | Antenatal Care Where (HEW_ATNT_CARE_WHERE) | NUMERIC(2)
+* Q308.1 | Antenatal Care Where (HEW_ATNT_CARE_WHERE) | VARCHAR(1)
 * Where did you receive antenatal care for this pregnancy?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -713,7 +708,7 @@ END
 *    X: Other
 Q3081
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE
+  COMMENT LEGAL USE D_T_HEALTH_WORK_PLACE
   TYPE COMMENT LEGAL
   JUMPS RESET
     A SKIPNEXTFIELD
@@ -747,7 +742,7 @@ Q3101
   MUSTENTER
 END
 
-* Q3111 | Delivery Whom (HEW_DLVR_WHOM) | NUMERIC(2)
+* Q3111 | Delivery Whom (HEW_DLVR_WHOM) | VARCHAR(1)
 * Who assisted with the delivery of last baby ? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -758,7 +753,7 @@ END
 *    X: Other person: Other
 Q3111
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_WORKER_TYPE
+  COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
   JUMPS RESET
     A SKIPNEXTFIELD
@@ -776,7 +771,7 @@ Q3112
   MUSTENTER
 END
 
-* Q3121 | Delivery Where (HEW_DLVR_WHERE) | NUMERIC(2)
+* Q3121 | Delivery Where (HEW_DLVR_WHERE) | VARCHAR(1)
 * Where did you give birth to last baby?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -790,7 +785,7 @@ END
 *    X: Other
 Q3121
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_WORK_PLACE
+  COMMENT LEGAL USE D_T_HEALTH_WORK_PLACE
   TYPE COMMENT LEGAL
   JUMPS RESET
     11 Q3141
