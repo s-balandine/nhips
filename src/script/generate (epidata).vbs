@@ -376,7 +376,7 @@ For Each oTable In oTables
 							Values = oColumn.Domain.ListOfValues
 							Values = Split(Values, vbNewLine, -1, 1)
 							Desc = Desc & vbCrLf
-							Desc = Desc & "  MISSINGVALUE "
+							Desc = Desc & "  MISSINGVALUE"
 							For i=0 To UBound(Values)
 								If Values(i) <> "" Then
 									Value = Values(i)
