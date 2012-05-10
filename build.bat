@@ -28,7 +28,9 @@ echo . > "facility.rec"
 %epic% import TXT "office editor.csv"     "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
 %epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
 %epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
-%epic% import TXT "household.csv"         "household.rec"        qes="household.qes"          delim=; q=none replace ignorefirst
+%epic% import TXT "household.csv"         "household.rec"         qes="household.qes"         delim=; q=none replace ignorefirst
+%epic% import TXT "household member.csv"  "household member.rec"  qes="household member.qes"  delim=; q=none replace ignorefirst
+%epic% import TXT "eligible woman.csv"    "eligible woman.rec"    qes="eligible woman.qes"    delim=; q=none replace ignorefirst
 
 echo start "" %epidata% "field interviewer.rec" > "..\..\build\field interviewer.bat" 
 echo start "" %epidata% "field supervisor.rec" > "..\..\build\field supervisor.bat"
