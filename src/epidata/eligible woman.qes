@@ -53,9 +53,9 @@ Q105  What is the highest level of school you attended: primary, secondary, or
 --------------------------------------------------------------------------------
 Q106  What is the highest (grade/form/year) you completed at that level? 
 
-                                 ({Q107.1})  ................................##  
+                                 ({Q106.1})  ................................##  
 --------------------------------------------------------------------------------
-Q108  Can you read any part of the sentence to me?
+Q107  Can you read any part of the sentence to me?
 
                                  ({Q108.1})  ................................##  
                                            Specify language:
@@ -470,18 +470,4 @@ Q633  After delivery, did your child receive ART, Antiretroviral Treatment, to
       prevent acquiring the AIDS virus?
 
                                  ({Q633.1})  .................................#  
-
-7.OBSERVATIONS
-================================================================================
---------------------------------------------------------------------------------
-Q701  Interviewer's observations          Comments about specific questions:
-                                 ({Q701.1})    <A                               >
-                                           Comments about respondent:
-                                 ({Q701.2})    <A                               >
-                                           Any other comments:
-                                 ({Q701.3})    <A                               >
---------------------------------------------------------------------------------
-Q702  Supervisor's observations ({Q702.1})    <A                               >
---------------------------------------------------------------------------------
-Q703  Editor's observations     ({Q703.1})    <A                               >
 
