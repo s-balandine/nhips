@@ -29,8 +29,7 @@ Q1011
       LET ID= ID + "." + Q1012
     ENDIF
   END
-  
-END
+  END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
@@ -44,8 +43,7 @@ Q1012
       LET ID= ID + "." + Q1012
     ENDIF
   END
-  
-END
+  END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
