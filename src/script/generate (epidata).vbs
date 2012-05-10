@@ -401,7 +401,7 @@ For Each oTable In oTables
 							Next
 							Desc = Desc & ")" & vbCrLf
 						End If
-						Desc = Desc & vbCrLf
+						Desc = Desc & """" & vbCrLf
 						Desc = Desc & "  END" & vbCrLf
 					Else
 						If oColumn.Domain.ListOfValues <> "" Then
