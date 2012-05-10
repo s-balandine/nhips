@@ -29,22 +29,20 @@ echo . > "facility.rec"
 %epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
 %epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
 
-echo start "" %epidata% "field interviewer.rec" > "field interviewer.bat" 
-echo start "" %epidata% "field supervisor.rec" > "field supervisor.bat"
-echo start "" %epidata% "household.rec" > "household.bat"
-echo start "" %epidata% "household member.rec" > "household member.bat"
-echo start "" %epidata% "office editor.rec" > "office editor.bat"
-echo start "" %epidata% "office keyer.rec" > "office keyer.bat"
-echo start "" %epidata% "eligible man.rec" > "eligible man.bat"
-echo start "" %epidata% "eligible woman.rec" > "eligible woman.bat"
-echo start "" %epidata% "facility.rec" > "facility.bat"
+echo start "" %epidata% "field interviewer.rec" > "..\..\build\field interviewer.bat" 
+echo start "" %epidata% "field supervisor.rec" > "..\..\build\field supervisor.bat"
+echo start "" %epidata% "household.rec" > "..\..\build\household.bat"
+echo start "" %epidata% "household member.rec" > "..\..\build\household member.bat"
+echo start "" %epidata% "office editor.rec" > "..\..\build\office editor.bat"
+echo start "" %epidata% "office keyer.rec" > "..\..\build\office keyer.bat"
+echo start "" %epidata% "eligible man.rec" > "..\..\build\eligible man.bat"
+echo start "" %epidata% "eligible woman.rec" > "..\..\build\eligible woman.bat"
+echo start "" %epidata% "facility.rec" > "..\..\build\facility.bat"
 
 del  ..\..\build\*.eix
 
 del  *.old.rec
 copy *.chk ..\..\build
 move *.rec ..\..\build
-
-
 
 pause
