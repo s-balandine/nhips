@@ -463,6 +463,7 @@ For Each oTable In oTables
 		Next
 		
 		Desc = Replace(Desc, "\'", "'") 
+		Desc = Replace(Desc, vbTab, "") 
 		
 		Set oFile = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Name) & ".chk", ForWriting, true)
 		oFile.Write Desc & vbCrLf
