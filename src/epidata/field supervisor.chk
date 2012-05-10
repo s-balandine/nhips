@@ -1,7 +1,6 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-
 * RECID | Identifier (SPV_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
