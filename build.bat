@@ -1,4 +1,5 @@
 set epic="C:\Program Files (x86)\Epidata\epic.exe"
+set epidata="C:\Program Files (x86)\Epidata\epidata.exe"
 
 cd /d src\epidata
 
@@ -27,6 +28,8 @@ echo . > "facility.rec"
 %epic% import TXT "office editor.csv"     "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
 %epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
 %epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
+
+echo "%epidata%" "field interviewer.rec" > "field interviewer.bat" 
 
 del  ..\..\build\*.eix
 
