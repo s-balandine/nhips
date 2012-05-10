@@ -7,36 +7,25 @@ END
 
 * RECID | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
 * 
-RECID
+HMID
   KEY UNIQUE 1
-  NOENTER
-END
-
-* ID | Identifier (Natural) (HHM_IDENTIFIER_NATURAL) | VARCHAR(9)
-* 
-ID
-  KEY UNIQUE 2
   NOENTER
 END
 
 * Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
-Q1011
+HSID
   MUSTENTER
   COMMENT LEGAL "Household" SHOW
-  TYPE COMMENT Q1011S
+  TYPE COMMENT HSID
   AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET ID= Q1011S + "." + "0" + Q1012
+      LET HMID= HSID + "." + "0" + Q1012
     ELSE
-      LET ID= Q1011S + "." + Q1012
+      LET HMID= HSID + "." + Q1012
     ENDIF
   END
-END
-
-Q1011S
-  NOENTER
 END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -46,9 +35,9 @@ Q1012
   AFTER ENTRY
   IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET ID= Q1011S + "." + "0" + Q1012
+      LET HMID= HSID + "." + "0" + Q1012
     ELSE
-      LET ID= Q1011S + "." + Q1012
+      LET HMID= HSID + "." + Q1012
     ENDIF
   END
 END
