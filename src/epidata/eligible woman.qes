@@ -19,8 +19,7 @@ S202  Actors on the field?       ({S202.1})  Interviewer..................#####
                                  ({S202.2})  Supervisor...................#####  
 --------------------------------------------------------------------------------
 S203  Result                     ({S203.1})  Result..........................##  
-                                           Result (Other):
-                                 ({S203.2})                    <A               >
+                                 ({S203.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
 S204  Actors at the office?      ({S204.1})  Editor.......................#####  
                                  ({S204.2})  Keyer........................#####  
@@ -58,8 +57,7 @@ Q106  What is the highest (grade/form/year) you completed at that level?
 Q107  Can you read any part of the sentence to me?
 
                                  ({Q108.1})  ................................##  
-                                           Specify language:
-                                 ({Q108.2})                    <A               >
+                                 ({Q108.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
 Q109  For most of the time until you were 12 years old, did you live in 
       Nairobi, Kisumu, in another city, or in the country side?
@@ -68,7 +66,7 @@ Q109  For most of the time until you were 12 years old, did you live in
 --------------------------------------------------------------------------------
 Q1010  How long have you been living continuously in Ndhiwa? 
 
-                                 ({Q110.1})  Specify years...................##  
+                                 ({Q110.1})  Specify.........................##  
 --------------------------------------------------------------------------------
 Q111  Just before you moved here, did you live in a city a town, or in the 
       countryside?
