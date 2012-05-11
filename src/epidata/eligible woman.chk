@@ -96,7 +96,7 @@ S2031
 END
 
 * S203.2 | Result (Other) (HEW_RESULT_OTHER) | VARCHAR(16)
-* Result > Result (Other)
+* Result > Specify
 S2032
   MUSTENTER
 END
@@ -226,7 +226,7 @@ Q1081
 END
 
 * Q108.2 | Literacy Language (HEW_LITERACY__LANGUAGE_) | VARCHAR(16)
-* Can you read any part of the sentence to me? > Specify language
+* Can you read any part of the sentence to me? > Specify
 Q1082
   MUSTENTER
 END
@@ -245,7 +245,7 @@ Q1091
 END
 
 * Q1101 | Residence Duration (HEW_RESIDENCE_DURATION) | NUMERIC(2)
-* How long have you been living continuously in Ndhiwa?  > Specify years
+* How long have you been living continuously in Ndhiwa?  > Specify
 * Allowed Values
 *    98: Always
 *    99: Visitor
