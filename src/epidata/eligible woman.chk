@@ -95,7 +95,7 @@ S2031
   END
 END
 
-* S203.2 | Result (Other) (HEW_RESULT_OTHER) | VARCHAR(32)
+* S203.2 | Result (Other) (HEW_RESULT_OTHER) | VARCHAR(16)
 * Result > Result (Other)
 S2032
   MUSTENTER
@@ -225,7 +225,7 @@ Q1081
   END
 END
 
-* Q108.2 | Literacy Language (HEW_LITERACY__LANGUAGE_) | VARCHAR(32)
+* Q108.2 | Literacy Language (HEW_LITERACY__LANGUAGE_) | VARCHAR(16)
 * Can you read any part of the sentence to me? > Specify language
 Q1082
   MUSTENTER
@@ -308,7 +308,7 @@ Q1121
   END
 END
 
-* Q1122 | Ethnic Other (HEW_ETHNIC__OTHER_) | VARCHAR(32)
+* Q1122 | Ethnic Other (HEW_ETHNIC__OTHER_) | VARCHAR(16)
 * What is your ethnic group/tribe? > Specify
 Q1122
   MUSTENTER
@@ -684,7 +684,7 @@ Q3071
   END
 END
 
-* Q307.2 | Antenatal Care Whom Other (HEW_ATNT_CARE_WHOM_S) | VARCHAR(32)
+* Q307.2 | Antenatal Care Whom Other (HEW_ATNT_CARE_WHOM_S) | VARCHAR(16)
 * Whom did you see?  > Specify
 Q3072
   MUSTENTER
@@ -716,7 +716,7 @@ Q3081
   END
 END
 
-* Q308.2 | Antenatal Care Where Other (HEW_ATNT_CARE_WHERE_S) | VARCHAR(32)
+* Q308.2 | Antenatal Care Where Other (HEW_ATNT_CARE_WHERE_S) | VARCHAR(16)
 * Where did you receive antenatal care for this pregnancy? > Specify
 Q3082
   MUSTENTER
@@ -761,7 +761,7 @@ Q3111
   END
 END
 
-* Q3112 | Delivery Whom Other (HEW_DLVR_WHOM_S) | VARCHAR(32)
+* Q3112 | Delivery Whom Other (HEW_DLVR_WHOM_S) | VARCHAR(16)
 * Who assisted with the delivery of last baby ?  > Specify
 Q3112
   MUSTENTER
@@ -793,7 +793,7 @@ Q3121
   END
 END
 
-* Q3122 | Delivery Where  Other (HEW_DLVR_WHERE__S) | VARCHAR(32)
+* Q3122 | Delivery Where  Other (HEW_DLVR_WHERE__S) | VARCHAR(16)
 * Where did you give birth to last baby?
 Q3122
   MUSTENTER
@@ -1007,7 +1007,7 @@ Q4101
   END
 END
 
-* Q4102 | AIDS Antenatal Test Where Other (HEW_AIDS_ATNT_TEST_WHERE_S) | VARCHAR(32)
+* Q4102 | AIDS Antenatal Test Where Other (HEW_AIDS_ATNT_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 Q4102
   MUSTENTER
@@ -1164,7 +1164,7 @@ Q4221
   TYPE COMMENT LEGAL
 END
 
-* Q4222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(32)
+* Q4222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 Q4222
   MUSTENTER
@@ -1237,7 +1237,7 @@ Q4241
   END
 END
 
-* Q4242 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(32)
+* Q4242 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
 * Where is that? > Specify
 Q4242
   MUSTENTER
@@ -1328,7 +1328,6 @@ Q6061
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   BEFORE ENTRY
-    DEFINE AGE ##.##
     IF ( Q1022 <> 98) THEN
       LET AGE = Q1022
       IF ( HEW_BIRTH_MONTH <> 98) THEN
@@ -1346,12 +1345,14 @@ Q6061
     ENDIF
     IF ( Q1171 <> 4 THEN
       GOTO Q6081
-    ENDIFENDAFTER ENTRY
+    ENDIF
+  END
+  AFTER ENTRY
     IF Q6061 =2 THEN
       GOTO WRITEREC
     ENDIF
   END
-END
+  END
 
 * Q608.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
@@ -1438,7 +1439,7 @@ Q6121
   END
 END
 
-* Q6122 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(32)
+* Q6122 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(16)
 * Where was the test done? > Specify
 Q6122
   MUSTENTER
@@ -1574,7 +1575,7 @@ Q6201
   END
 END
 
-* Q6202 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(32)
+* Q6202 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
 * Where are you now receiving ART? > Specify
 Q6202
   MUSTENTER
@@ -1595,7 +1596,7 @@ Q6211
   END
 END
 
-* Q6212 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(32)
+* Q6212 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
 Q6212
   MUSTENTER
@@ -1664,7 +1665,7 @@ Q6251
   END
 END
 
-* Q6252 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(32)
+* Q6252 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
 * Where are you now receiving care? > Specify
 Q6252
   MUSTENTER
@@ -1685,7 +1686,7 @@ Q6261
   END
 END
 
-* Q6262 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(32)
+* Q6262 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
 Q6262
   MUSTENTER
@@ -1729,7 +1730,7 @@ Q6281
   END
 END
 
-* Q6282 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(32)
+* Q6282 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
 * Why did you stop? > Specify
 Q6282
   MUSTENTER
