@@ -133,7 +133,7 @@ Q2031
   END
 END
 
-* Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(32)
+* Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(16)
 * Result > Result (Other)
 Q2032
   MUSTENTER
