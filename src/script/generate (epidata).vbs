@@ -463,7 +463,7 @@ For Each oTable In oTables
 						Desc = Desc & "    ELSE" & vbCrLf 
 						Desc = Desc & "      HIDE" & vbCrLf 
 						Desc = Desc & "      CLEAR" & vbCrLf
-						Desc = Desc & "    END IF" & vbCrLf 	
+						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
 				End If
