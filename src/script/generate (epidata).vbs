@@ -462,13 +462,24 @@ For Each oTable In oTables
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
 						F1 = False		
 						For Each oColumn1 in oTable.Columns
+						    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
 						    If oColumn1.Code=S2 Then Exit For
 						    If F1 Then
-						    	Desc = Desc & "      UNHIDE " & UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", "")) & vbCrLf   
+						    	Desc = Desc & "      HIDE " & oColumn1Name & vbCrLf   
+						    	Desc = Desc & "      CLEAR " & oColumn1Name & vbCrLf   
 						    End if
 							If oColumn1.Code=oColumn.Code Then F1=True 			
 						Next
 						Desc = Desc & "    ELSE" & vbCrLf 
+						F1 = False		
+						For Each oColumn1 in oTable.Columns
+						    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
+						    If oColumn1.Code=S2 Then Exit For
+						    If F1 Then
+						    	Desc = Desc & "      UNHIDE " & oColumn1Name & vbCrLf   
+						    End if
+							If oColumn1.Code=oColumn.Code Then F1=True 			
+						Next						
 						Desc = Desc & "      HIDE" & vbCrLf 
 						Desc = Desc & "      CLEAR" & vbCrLf
 						Desc = Desc & "    ENDIF" & vbCrLf 	
