@@ -19,9 +19,10 @@ END
 * Identifiers > No. Household member
 S1011
   MUSTENTER
-  COMMENT LEGAL "Household Member" SHOW
-  TYPE COMMENT ID
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
+END
 
 * S201.1 | Day (HEW_DAY) | NUMERIC(2)
 * Date > Day of interview
@@ -31,6 +32,9 @@ S2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S201.2 | Month (HEW_M) | NUMERIC(2)
@@ -41,30 +45,43 @@ S2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S201.3 | Year (HEW_YEAR) | NUMERIC(4)
 * Date > Year of interview
 * Allowed Values
+*    11: 2011
+*    12: 2012
+*    13: 2013
 *    98: Don't know
 S2013
   MUSTENTER
   RANGE 2012 2014
-  MISSINGVALUE 98
+  MISSINGVALUE 11 12 13 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S202.1 | Field Interviewer (HEW_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
 S2021
   MUSTENTER
-  COMMENT LEGAL "Field Interviewer" SHOW
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S202.2 | Field Supervisor (HEW_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
 S2022
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor" SHOW
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S203.1 | Result (HEW_RESULT) | NUMERIC(2)
@@ -83,15 +100,8 @@ S2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -99,20 +109,27 @@ END
 * Result > Specify
 S2032
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S204.1 | Office editor (HEW_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
 S2041
   MUSTENTER
-  COMMENT LEGAL "Office Editor" SHOW
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S204.2 | Keyer (HEW_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
 S2042
   MUSTENTER
-  COMMENT LEGAL "Office Keyer" SHOW
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * S205.1 | Number of visits (HEW_NUMBER_OF_VISITS) | NUMERIC(2)
@@ -120,6 +137,9 @@ END
 S2051
   MUSTENTER
   RANGE 1 5
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q101.1 | Record Time Hour (HEW_RECORD_TIME_H) | NUMERIC(2)
@@ -127,7 +147,9 @@ END
 Q1011
   MUSTENTER
   RANGE 0 23
-  TOPOFSCREEN
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q101.2 | Record Time Minute (HEW_RECORD_TIME_M) | NUMERIC(2)
@@ -135,6 +157,9 @@ END
 Q1012
   MUSTENTER
   RANGE 0 59
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q102.1 | Birth Month (HEW_BIRTH_M) | NUMERIC(2)
@@ -145,6 +170,9 @@ Q1021
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q102.2 | Birth Year (HEW_BIRTH_YEAR) | NUMERIC(4)
@@ -155,6 +183,9 @@ Q1022
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q103.1 | Age (HEW_AGE) | NUMERIC(2)
@@ -165,6 +196,9 @@ Q1031
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q104.1 | School (HEW_SCHOOL) | NUMERIC(1)
@@ -176,8 +210,8 @@ Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q1081
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -192,6 +226,9 @@ Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q106.1 | Highest Year of Education (HEW_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
@@ -199,9 +236,7 @@ END
 Q1061
   MUSTENTER
   AFTER ENTRY
-    IF Q1051 >2 THEN
-      GOTO Q1091
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -217,11 +252,8 @@ Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_LITERACY
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -229,6 +261,9 @@ END
 * Can you read any part of the sentence to me? > Specify
 Q1082
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q109.1 | Place of Residence Before (HEW_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(1)
@@ -242,6 +277,9 @@ Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1101 | Residence Duration (HEW_RESIDENCE_DURATION) | NUMERIC(2)
@@ -253,9 +291,8 @@ Q1101
   MUSTENTER
   RANGE 1 97
   MISSINGVALUE 98 99
-  JUMPS RESET
-    98 Q1131
-    99 Q1131
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -270,6 +307,9 @@ Q1111
   MUSTENTER
   COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1121 | Ethnic (HEW_ETHNIC) | NUMERIC(2)
@@ -292,19 +332,8 @@ Q1121
   MUSTENTER
   COMMENT LEGAL USE D_N_ETHNIC
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
-    9 SKIPNEXTFIELD
-    10 SKIPNEXTFIELD
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -312,12 +341,18 @@ END
 * What is your ethnic group/tribe? > Specify
 Q1122
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1131 | Outside Night (HEW_OUTSIDE_NIGHT) | NUMERIC(2)
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
 Q1131
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1141 | Outside Month (HEW_OUTSIDE_MONTH) | NUMERIC(1)
@@ -329,6 +364,9 @@ Q1141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1151 | Union (HEW_UNION) | NUMERIC(1)
@@ -341,9 +379,8 @@ Q1151
   MUSTENTER
   COMMENT LEGAL USE D_N_UNION_STATUS
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 Q1181
-    2 Q1181
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -357,6 +394,9 @@ Q1161
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1171 | Marital Status (HEW_MARITAL_STATUS) | NUMERIC(1)
@@ -369,10 +409,8 @@ Q1171
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -385,6 +423,9 @@ Q1181
   MUSTENTER
   COMMENT LEGAL USE D_N_HUSBAND_STATUS
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1191 | Worked in last week (HEW_WORKED_IN_LAST_WEEK) | NUMERIC(1)
@@ -396,8 +437,8 @@ Q1191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 Q1231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -410,8 +451,8 @@ Q1201
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 Q1231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -424,8 +465,8 @@ Q1211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 Q1231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -438,8 +479,8 @@ Q1221
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q1251
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -454,6 +495,9 @@ Q1231
   MUSTENTER
   COMMENT LEGAL USE D_N_OCCUPATION
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1241 | Work Class (HEW_WORK_CLASS) | NUMERIC(1)
@@ -466,6 +510,9 @@ Q1241
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_CLASS
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1251 | Work Time (HEW_WORK_TIME) | NUMERIC(1)
@@ -478,6 +525,9 @@ Q1251
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_TIME
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q1261 | Work Earn (HEW_WORK_EARN) | NUMERIC(1)
@@ -491,6 +541,9 @@ Q1261
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_EARN
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q201.1 | Birth Given (HEW_BIRTH_GIVEN) | NUMERIC(1)
@@ -502,8 +555,8 @@ Q2011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q2061
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -516,8 +569,8 @@ Q2021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q2041
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -526,6 +579,9 @@ END
 Q2031
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q203.2 | Daughters at Home (HEW_DAUGHTERS_AT_HOME) | NUMERIC(2)
@@ -533,6 +589,9 @@ END
 Q2032
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q204.1 | Child Elsewhere (HEW_CHILD_ELSEWHERE) | NUMERIC(1)
@@ -544,8 +603,8 @@ Q2041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q2061
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -554,6 +613,9 @@ END
 Q2051
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q205.2 | Daughters Elsewhere (HEW_DAUGHTERS_ELSEWHERE) | NUMERIC(2)
@@ -561,6 +623,9 @@ END
 Q2052
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q206.1 | Child Died (HEW_CHILD_DIED) | NUMERIC(1)
@@ -572,8 +637,8 @@ Q2061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q2081
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -582,6 +647,9 @@ END
 Q2071
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q207.2 | Daughters Died (HEW_DAUGHTERS_DIED) | NUMERIC(2)
@@ -589,6 +657,9 @@ END
 Q2072
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q208.1 | Total Children (HEW_TOTAL_CHILDREN) | NUMERIC(2)
@@ -596,6 +667,9 @@ END
 Q2081
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q2101 | Pregnancy Ended Month (HEW_PREGNANCY_ENDED_MONTH) | NUMERIC(2)
@@ -606,6 +680,9 @@ Q2101
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q2102 | Pregnancy Ended Year (HEW_PREGNANCY_ENDED_YEAR) | NUMERIC(4)
@@ -617,9 +694,7 @@ Q2102
   RANGE 1920 2012
   MISSINGVALUE 9998
   AFTER ENTRY
-    IF Q2102 =9998 THEN
-      GOTO Q4011
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -628,13 +703,18 @@ END
 Q3031
   MUSTENTER
   RANGE 1 6
-  TOPOFSCREEN
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q304.1 | Last Baby Name (HEW_LAST_BABY_NAME) | VARCHAR(32)
 * What name was given to your last baby? > Name
 Q3041
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q305.1 | Last Baby Alive (HEW_LAST_BABY_ALIVE) | NUMERIC(1)
@@ -646,6 +726,9 @@ Q3051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q306.1 | Antenatal Care (HEW_ATNT_CARE) | NUMERIC(1)
@@ -657,8 +740,8 @@ Q3061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q3111
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -675,12 +758,8 @@ Q3071
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    A SKIPNEXTFIELD
-    B SKIPNEXTFIELD
-    C SKIPNEXTFIELD
-    D SKIPNEXTFIELD
-    E SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -688,6 +767,9 @@ END
 * Whom did you see?  > Specify
 Q3072
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q308.1 | Antenatal Care Where (HEW_ATNT_CARE_WHERE) | VARCHAR(1)
@@ -706,13 +788,8 @@ Q3081
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORK_PLACE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    A SKIPNEXTFIELD
-    B SKIPNEXTFIELD
-    C SKIPNEXTFIELD
-    D SKIPNEXTFIELD
-    E SKIPNEXTFIELD
-    G SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -720,6 +797,9 @@ END
 * Where did you receive antenatal care for this pregnancy? > Specify
 Q3082
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q309.1 | Antenatal Care When (HEW_ATNT_CARE_WHEN) | NUMERIC(2)
@@ -730,12 +810,18 @@ Q3091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3101 | Antenatal Care How Many (HEW_ATNT_CARE_HOW_MANY) | NUMERIC(2)
 * How many times did you receive antenatal care during this pregnancy? > Numer of times
 Q3101
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3111 | Delivery Whom (HEW_DLVR_WHOM) | VARCHAR(1)
@@ -751,13 +837,8 @@ Q3111
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    A SKIPNEXTFIELD
-    B SKIPNEXTFIELD
-    C SKIPNEXTFIELD
-    D SKIPNEXTFIELD
-    E SKIPNEXTFIELD
-    Y SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -765,31 +846,29 @@ END
 * Who assisted with the delivery of last baby ?  > Specify
 Q3112
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
-* Q3121 | Delivery Where (HEW_DLVR_WHERE) | VARCHAR(1)
+* Q3121 | Delivery Where (HEW_DLVR_WHERE) | NUMERIC(2)
 * Where did you give birth to last baby?
 * Allowed Values
-*    A: Home: Respondent's home
-*    B: Home: Other home
-*    C: Public sector: Government hospital
-*    D: Public sector: Government health center
-*    E: Public sector: Government health post
-*    F: Public sector: Other public
-*    G: Private medical sector: Private hospital, clinic
-*    H: Private medical sector: Other private medical
-*    X: Other
+*    11: Home: Your home
+*    12: Home: Other home
+*    21: Public sector: Government hospital
+*    22: Public sector: Government health center
+*    23: Public sector: Government health post
+*    26: Public sector: Other
+*    31: Private medical sector: Private hospital/clinic
+*    36: Private medical sector: Other
+*    96: Other
 Q3121
   MUSTENTER
-  COMMENT LEGAL USE D_T_HEALTH_WORK_PLACE
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE_4
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    11 Q3141
-    12 Q3141
-    21 SKIPNEXTFIELD
-    22 SKIPNEXTFIELD
-    23 SKIPNEXTFIELD
-    31 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -797,6 +876,9 @@ END
 * Where did you give birth to last baby?
 Q3122
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3131 | Delivery Discharge Hour (HEW_DLVR_DCG_H) | NUMERIC(2)
@@ -804,6 +886,9 @@ END
 Q3131
   MUSTENTER
   RANGE 0 23
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3132 | Delivery Discharge Day (HEW_DLVR_DCG_DAY) | NUMERIC(2)
@@ -814,12 +899,18 @@ Q3132
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3133 | Delivery Discharge Week (HEW_DLVR_DCG_W) | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Weeks
 Q3133
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q3141 | Breastfeeding (HEW_BF) | NUMERIC(1)
@@ -832,9 +923,7 @@ Q3141
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q3051 = 1 THEN
-      GOTO Q4011
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -847,8 +936,8 @@ Q3161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -856,6 +945,9 @@ END
 * What age was last baby when you stopped to breasfeed him/her? > Months
 Q3171
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q401.1 | AIDS Disease (HEW_AIDS_DSS) | NUMERIC(1)
@@ -867,8 +959,8 @@ Q4011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -882,6 +974,9 @@ Q4021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q402.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
@@ -894,6 +989,9 @@ Q4022
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q402.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
@@ -906,6 +1004,9 @@ Q4023
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q403.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
@@ -919,15 +1020,7 @@ Q4031
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q2081 = 0 THEN
-      GOTO Q4191
-    ENDIF
-    IF Q2102 < 2010 THEN
-      GOTO Q4191
-    ENDIF
-    IF Q3061 = 2 THEN
-      GOTO Q4191
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -940,6 +1033,9 @@ Q4071
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q408.1 | AIDS Antenatal Test (HEW_AIDS_ATNT_TEST) | NUMERIC(1)
@@ -951,8 +1047,8 @@ Q4081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q4191
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -961,6 +1057,9 @@ END
 Q4091
   MUSTENTER
   RANGE 0 9
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4101 | AIDS Antenatal Test Where (HEW_AIDS_ATNT_TEST_WHERE) | NUMERIC(2)
@@ -988,22 +1087,8 @@ Q4101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-    14 SKIPNEXTFIELD
-    15 SKIPNEXTFIELD
-    16 SKIPNEXTFIELD
-    17 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
-    22 SKIPNEXTFIELD
-    23 SKIPNEXTFIELD
-    24 SKIPNEXTFIELD
-    25 SKIPNEXTFIELD
-    26 SKIPNEXTFIELD
-    31 SKIPNEXTFIELD
-    32 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1011,6 +1096,9 @@ END
 * Where was the test done? > Specify
 Q4102
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4111 | AIDS Antenatal Test Got (HEW_AIDS_ATNT_TEST_GOT) | NUMERIC(1)
@@ -1022,6 +1110,9 @@ Q4111
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4121 | AIDS Antenatal Test Counceling (HEW_AIDS_ATNT_TEST_COUNCELING) | NUMERIC(1)
@@ -1035,12 +1126,7 @@ Q4121
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q4101 < 21 THEN
-      GOTO Q4171
-    ENDIF
-    IF Q4101 > 36 THEN
-      GOTO Q4171
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1053,8 +1139,8 @@ Q4141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q4231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1067,8 +1153,8 @@ Q4151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q4231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1081,6 +1167,9 @@ Q4161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4171 | AIDS Pregnancy Test After (HEW_AIDS_PGC_TEST_AFTER) | NUMERIC(1)
@@ -1092,6 +1181,9 @@ Q4171
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4181 | AIDS Test Most Recent (HEW_AIDS_TEST_MOST_RECENT) | NUMERIC(2)
@@ -1099,7 +1191,7 @@ END
 Q4181
   MUSTENTER
   AFTER ENTRY
-    GOTO Q5041
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1112,8 +1204,8 @@ Q4191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q4231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1122,7 +1214,7 @@ END
 Q4201
   MUSTENTER
   AFTER ENTRY
-    GOTO Q5041
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1135,6 +1227,9 @@ Q4211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4221 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
@@ -1162,28 +1257,17 @@ Q4221
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q4222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 Q4222
   MUSTENTER
-  JUMPS RESET
-    11 Q5041
-    12 Q5041
-    13 Q5041
-    14 Q5041
-    15 Q5041
-    16 Q5041
-    17 Q5041
-    21 Q5041
-    22 Q5041
-    23 Q5041
-    24 Q5041
-    25 Q5041
-    26 Q5041
-    31 Q5041
-    32 Q5041
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1197,7 +1281,7 @@ Q4231
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    GOTO Q5041
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1222,18 +1306,8 @@ Q4241
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    A SKIPNEXTFIELD
-    B SKIPNEXTFIELD
-    C SKIPNEXTFIELD
-    D SKIPNEXTFIELD
-    E SKIPNEXTFIELD
-    F SKIPNEXTFIELD
-    H SKIPNEXTFIELD
-    I SKIPNEXTFIELD
-    J SKIPNEXTFIELD
-    K SKIPNEXTFIELD
-    L SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1241,6 +1315,9 @@ END
 * Where is that? > Specify
 Q4242
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q504.1 | HIV Test Consent (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
@@ -1252,32 +1329,10 @@ Q5041
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
-  BEFORE ENTRY
-    IF ( Q1022 <> 98) THEN
-      LET AGE = Q1022
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = AGE + ( HEW_BIRTH_MONTH / 12)
-      ENDIF
-    ELSE
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = HEW_BIRTH_MONTH / 12
-      ELSE
-        LET AGE = 98
-      ENDIF
-    ENDIF
-    IF (AGE>=18) AND (AGE<=49) THEN
-      GOTO Q5061
-    ENDIF
-    IF ( Q1171 <> 4 THEN
-      GOTO Q5061
-    ENDIF
-  END
   AFTER ENTRY
-    IF Q5041 =2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
-  END
+END
 
 * Q506.1 | HIV Test Consent Respondent (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
@@ -1289,9 +1344,7 @@ Q5061
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q5061 =2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1304,7 +1357,9 @@ Q6011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  TOPOFSCREEN
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q602.1 | AIDS Infection Test (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
@@ -1316,6 +1371,9 @@ Q6021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q606.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
@@ -1327,32 +1385,10 @@ Q6061
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
-  BEFORE ENTRY
-    IF ( Q1022 <> 98) THEN
-      LET AGE = Q1022
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = AGE + ( HEW_BIRTH_MONTH / 12)
-      ENDIF
-    ELSE
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = HEW_BIRTH_MONTH / 12
-      ELSE
-        LET AGE = 98
-      ENDIF
-    ENDIF
-    IF (AGE>=18) AND (AGE<=49) THEN
-      GOTO Q6081
-    ENDIF
-    IF ( Q1171 <> 4 THEN
-      GOTO Q6081
-    ENDIF
-  END
   AFTER ENTRY
-    IF Q6061 =2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
-  END
+END
 
 * Q608.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
@@ -1364,9 +1400,7 @@ Q6081
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q6081 =2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1378,10 +1412,8 @@ Q6111
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
-  BEFORE ENTRY
-    IF ( Q6021 =2 THEN
-      GOTO WRITEREC
-    ENDIF
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1393,6 +1425,9 @@ Q6112
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6121 | AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
@@ -1420,22 +1455,8 @@ Q6121
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-     14 SKIPNEXTFIELD
-    15 SKIPNEXTFIELD
-    16 SKIPNEXTFIELD
-    17 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
-    22 SKIPNEXTFIELD
-    23 SKIPNEXTFIELD
-    24 SKIPNEXTFIELD
-    25 SKIPNEXTFIELD
-    26 SKIPNEXTFIELD
-    31 SKIPNEXTFIELD
-    32 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1443,6 +1464,9 @@ END
 * Where was the test done? > Specify
 Q6122
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6131 | AIDS Care (HEW_AIDS_CARE) | NUMERIC(1)
@@ -1455,15 +1479,7 @@ Q6131
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q2081 =0 THEN
-      GOTO WRITEREC
-     ENDIF
-    IF Q2102 <2010 THEN
-      GOTO WRITEREC
-     ENDIF
-    IF HEW_ANTENATAL_CARE =2 THEN
-      GOTO WRITEREC
-     ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1477,9 +1493,8 @@ Q6141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1493,6 +1508,9 @@ Q6151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6161 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
@@ -1504,8 +1522,8 @@ Q6161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q6231
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1517,6 +1535,9 @@ Q6171
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6172 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
@@ -1527,6 +1548,9 @@ Q6172
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6181 | ART Still (HEW_ART_STILL) | NUMERIC(1)
@@ -1538,8 +1562,8 @@ Q6181
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q6281
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1551,6 +1575,9 @@ Q6191
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6192 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
@@ -1561,17 +1588,17 @@ Q6192
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6201 | ART Where (HEW_ART_WHERE) | VARCHAR(32)
 * Where are you now receiving ART?
 Q6201
   MUSTENTER
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1579,6 +1606,9 @@ END
 * Where are you now receiving ART? > Specify
 Q6202
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6211 | ART District (HEW_ART_DISTRICT) | NUMERIC(1)
@@ -1591,8 +1621,8 @@ Q6211
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1600,6 +1630,9 @@ END
 * In which district is this place? > Specify
 Q6212
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6221 | ART Place (HEW_ART_PLACE) | VARCHAR(32)
@@ -1607,15 +1640,7 @@ END
 Q6221
   MUSTENTER
   AFTER ENTRY
-    IF Q2081 =0 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF Q2102 <2010 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF HEW_ANTENATAL_CARE =2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1628,8 +1653,8 @@ Q6231
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q6281
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1641,6 +1666,9 @@ Q6241
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6242 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
@@ -1651,17 +1679,17 @@ Q6242
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6251 | AIDS Where (HEW_AIDS_WHERE) | VARCHAR(32)
 * Where are you now receiving care?
 Q6251
   MUSTENTER
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1669,6 +1697,9 @@ END
 * Where are you now receiving care? > Specify
 Q6252
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6261 | AIDS District (HEW_AIDS_DISTRICT) | NUMERIC(1)
@@ -1681,8 +1712,8 @@ Q6261
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1690,12 +1721,18 @@ END
 * In which district is this place? > Specify
 Q6262
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6271 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(32)
 * What is the name of this place?
 Q6271
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6281 | AIDS Stop (HEW_AIDS_STOP) | NUMERIC(2)
@@ -1716,17 +1753,8 @@ Q6281
   MUSTENTER
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
-    9 SKIPNEXTFIELD
-    10 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1735,15 +1763,7 @@ END
 Q6282
   MUSTENTER
   AFTER ENTRY
-    IF Q2081 = 0 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF Q2102 < 2010 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF Q3061 = 2 THEN
-      GOTO WRITEREC
-    ENDIF
+    INCLUDE eligible woman (skip).chk
   END
 END
 
@@ -1756,6 +1776,9 @@ Q6321
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
 END
 
 * Q6331 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
@@ -1767,6 +1790,9 @@ Q6331
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible woman (skip).chk
+  END
   GOTO WRITEREC
 END
 
