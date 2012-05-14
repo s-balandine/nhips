@@ -1,5 +1,11 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
+BEFORE RECORD
+  HIDE RECID
+  HIDE ID
+  HIDE Q101.1
+  HIDE Q101.2
+END
 
 * RECID | Identifier (SPV_IDENTIFIER) | AUTOINCREMENT
 * 
@@ -19,18 +25,12 @@ END
 * Name > Firstname
 Q1011
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE field supervisor (skip).chk
-  END
 END
 
 * Q101.2 | Name Last (SPV_NAME_LAST) | VARCHAR(32)
 * Name > Lastname
 Q1012
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE field supervisor (skip).chk
-  END
   GOTO WRITEREC
 END
 

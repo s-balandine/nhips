@@ -1,5 +1,25 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
+BEFORE RECORD
+  HIDE RECID
+  HIDE ID
+  HIDE Q101.1
+  HIDE Q101.2
+  HIDE Q201.1
+  HIDE Q201.2
+  HIDE Q201.3
+  HIDE Q202.1
+  HIDE Q202.2
+  HIDE Q203.1
+  HIDE Q203.2
+  HIDE Q204.1
+  HIDE Q204.2
+  HIDE Q205.1
+  HIDE Q206.1
+  HIDE Q206.2
+  HIDE Q206.3
+  HIDE Q206.4
+END
 
 * RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
 * 
@@ -19,18 +39,12 @@ END
 * Identifiers > No. Cluster
 Q1011
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q101.2 | Household (HSH_HOUSEHOLD) | NUMERIC(2)
 * Identifiers > No. Household
 Q1012
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q201.1 | Day (HSH_DAY) | NUMERIC(2)
@@ -41,9 +55,6 @@ Q2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
@@ -54,9 +65,6 @@ Q2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
@@ -70,27 +78,18 @@ Q2013
   MUSTENTER
   RANGE 2012 2014
   MISSINGVALUE 11 12 13 98
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -109,36 +108,24 @@ Q2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(16)
 * Result > Result (Other)
 Q2032
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
@@ -146,9 +133,6 @@ END
 Q2051
   MUSTENTER
   RANGE 1 5
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -156,9 +140,6 @@ END
 Q2061
   MUSTENTER
   RANGE 0 90
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
@@ -166,9 +147,6 @@ END
 Q2062
   MUSTENTER
   RANGE 0 20
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
@@ -176,18 +154,12 @@ END
 Q2063
   MUSTENTER
   RANGE 0 20
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
 END
 
 * Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
 * Check persons in household > No. of respondent
 Q2064
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE household (skip).chk
-  END
   GOTO WRITEREC
 END
 
