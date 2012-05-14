@@ -458,7 +458,7 @@ For Each oTable In oTables
 					S = ExtendedAttribute(oColumn, "Enabled")
 					If Len(S)>0 Then
 						Desc = Desc & "  BEFORE ENTRY" & vbCrLf 
-						Desc = Desc & "    IF (" & S & ") THEN" & vbCrLf 
+						Desc = Desc & "    IF " & S & " THEN" & vbCrLf 
 						Desc = Desc & "      UNHIDE" & vbCrLf 
 						Desc = Desc & "    ELSE" & vbCrLf 
 						Desc = Desc & "      HIDE" & vbCrLf 
