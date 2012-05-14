@@ -20,21 +20,7 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-    IGNOREMISSING
-    IF Q1011 < 10 THEN
-      LET ID="00" + Q1011
-    ELSE
-      IF Q1011 < 100 THEN
-        LET ID="0" + Q1011
-      ELSE
-        LET ID= Q1011
-      ENDIF
-    ENDIF
-    IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
-    ELSE
-      LET ID= ID + "." + Q1012
-    ENDIF
+    INCLUDE household (skip).chk
   END
 END
 
@@ -43,21 +29,7 @@ END
 Q1012
   MUSTENTER
   AFTER ENTRY
-    IGNOREMISSING
-    IF Q1011 < 10 THEN
-      LET ID="00" + Q1011
-    ELSE
-      IF Q1011 < 100 THEN
-        LET ID="0" + Q1011
-      ELSE
-        LET ID= Q1011
-      ENDIF
-    ENDIF
-    IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
-    ELSE
-      LET ID= ID + "." + Q1012
-    ENDIF
+    INCLUDE household (skip).chk
   END
 END
 
@@ -69,6 +41,9 @@ Q2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
@@ -79,30 +54,43 @@ Q2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
 * Date > Year of interview
 * Allowed Values
+*    11: 2011
+*    12: 2012
+*    13: 2013
 *    98: Don't know
 Q2013
   MUSTENTER
   RANGE 2012 2014
-  MISSINGVALUE 98
+  MISSINGVALUE 11 12 13 98
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
-  COMMENT LEGAL "Field Interviewer" SHOW
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
-  COMMENT LEGAL "Field Supervisor" SHOW
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -121,15 +109,8 @@ Q2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
+  AFTER ENTRY
+    INCLUDE household (skip).chk
   END
 END
 
@@ -137,20 +118,27 @@ END
 * Result > Result (Other)
 Q2032
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
-  COMMENT LEGAL "Office Editor" SHOW
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
-  COMMENT LEGAL "Office Keyer" SHOW
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
@@ -158,6 +146,9 @@ END
 Q2051
   MUSTENTER
   RANGE 1 5
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -165,6 +156,9 @@ END
 Q2061
   MUSTENTER
   RANGE 0 90
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
@@ -172,6 +166,9 @@ END
 Q2062
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
@@ -179,12 +176,18 @@ END
 Q2063
   MUSTENTER
   RANGE 0 20
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
 END
 
 * Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
 * Check persons in household > No. of respondent
 Q2064
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE household (skip).chk
+  END
   GOTO WRITEREC
 END
 

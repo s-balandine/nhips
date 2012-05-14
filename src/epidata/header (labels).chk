@@ -16,6 +16,21 @@ LABELBLOCK
     Y "Yes"
     N "No"
    END
+  LABEL D_N_CIRCUMCISION_PLACE
+    1 "Health facility"
+    2 "Home of a health worker/health professsional"
+    3 "Own home"
+    4 "Other home"
+    8 "Don't know"
+   END
+  LABEL D_N_CIRCUMCISOR
+    1 "Traditional practitioner"
+    2 "Family/Friend"
+    3 "Health worker/Health professional"
+    4 "Religious leader"
+    6 "Other"
+    8 "Don't know"
+   END
   LABEL D_N_CONSENT
     1 "Granted"
     2 "Refused"
@@ -24,6 +39,12 @@ LABELBLOCK
     1 "Ndhiwa district"
     2 "Homa bay"
     3 "Other"
+   END
+  LABEL D_N_DRAWING
+    1 "Drawing 1"
+    2 "Drawing 2"
+    3 "Drawing 3"
+    8 "Don't know"
    END
   LABEL D_N_DURATION_OF_RESIDENCE
     1 "Live here, since ever"
@@ -103,6 +124,17 @@ LABELBLOCK
     18 "Public sector: Other public"
     21 "Private medical sector: Private hospital/clinic/doctor"
     27 "Private medical sector: Other private"
+    96 "Other"
+   END
+  LABEL D_N_HEALTH_FACILITY_TYPE_4
+    11 "Home: Your home"
+    12 "Home: Other home"
+    21 "Public sector: Government hospital"
+    22 "Public sector: Government health center"
+    23 "Public sector: Government health post"
+    26 "Public sector: Other"
+    31 "Private medical sector: Private hospital/clinic"
+    36 "Private medical sector: Other"
     96 "Other"
    END
   LABEL D_T_HEALTH_WORK_PLACE
@@ -221,6 +253,12 @@ LABELBLOCK
   LABEL D_N_YES_OR_NO
     1 "Yes"
     2 "No"
+   END
+  LABEL D_N_YEAR
+    11 "2011"
+    12 "2012"
+    13 "2013"
+    98 "Don't know"
    END
   LABEL D_N_WORK_CLASS
     1 "For family member"
