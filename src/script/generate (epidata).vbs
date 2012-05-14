@@ -462,10 +462,11 @@ For Each oTable In oTables
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
 						F1 = False		
 						For Each oColumn1 in oTable.Columns
+						    If oColumn1.Code=S2 Then Exit For
 						    If F1 Then
 						    	Desc = Desc & "      UNHIDE " & UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", "")) & vbCrLf   
 						    End if
-							If oColumn1.Code=S1 Then F1=True 
+							If oColumn1.Code=oColumn.Code Then F1=True 			
 						Next
 						Desc = Desc & "    ELSE" & vbCrLf 
 						Desc = Desc & "      HIDE" & vbCrLf 
