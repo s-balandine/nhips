@@ -330,14 +330,6 @@ For Each oTable In oTables
 		'	End If
 		'Next
 		'Desc = Desc & "END" & vbCrLf
-
-		Desc = Desc &  "BEFORE RECORD" & vbCrLf
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				Desc = Desc & "  HIDE " & ExtendedAttribute(oColumn, "NameEpiData") & vbCrLf
-			End if
-		Next
-		Desc = Desc &  "END" & vbCrLf
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
