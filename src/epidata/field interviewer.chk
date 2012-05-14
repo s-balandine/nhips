@@ -1,11 +1,5 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
-BEFORE RECORD
-  HIDE RECID
-  HIDE ID
-  HIDE Q101.1
-  HIDE Q101.2
-END
 
 * RECID | Identifier (IVW_IDENTIFIER) | AUTOINCREMENT
 * 
