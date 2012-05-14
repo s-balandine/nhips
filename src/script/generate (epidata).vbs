@@ -455,11 +455,18 @@ For Each oTable In oTables
 					'ElseIf Len(S)>0 Then
 					'  Desc = Desc & "  " & S & vbCrLf 
 					'End If
-					S = ExtendedAttribute(oColumn, "Enabled")
-					If Len(S)>0 Then
-						Desc = Desc & "  BEFORE ENTRY" & vbCrLf 
-						Desc = Desc & "    IF " & S & " THEN" & vbCrLf 
-						Desc = Desc & "      UNHIDE" & vbCrLf 
+					S1 = ExtendedAttribute(oColumn, "Skip")
+					S2 = ExtendedAttribute(oColumn, "Skip To")
+					If (Len(S1)+Len(S2))>0 Then
+						Desc = Desc & "  AFTER ENTRY" & vbCrLf 
+						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
+						F1 = False		
+						For Each oColumn1 in oTable.Columns
+						    If F1 Then
+						    	Desc = Desc & "      UNHIDE " & UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", "")) & vbCrLf   
+						    End if
+							If oColumn1.Code=S1 Then F1=True 
+						Next
 						Desc = Desc & "    ELSE" & vbCrLf 
 						Desc = Desc & "      HIDE" & vbCrLf 
 						Desc = Desc & "      CLEAR" & vbCrLf
