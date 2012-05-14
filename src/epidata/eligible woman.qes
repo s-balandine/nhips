@@ -227,7 +227,7 @@ Q311  Who assisted with the delivery of last baby ?
 --------------------------------------------------------------------------------
 Q312  Where did you give birth to last baby?
 
-                                 ({Q312.1})                                   <A>
+                                 ({Q312.1})  ................................##  
                                  ({Q312.2})                    <A               >
 --------------------------------------------------------------------------------
 Q313  How long after last baby was delivered did you stay there?
