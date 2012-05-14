@@ -472,8 +472,6 @@ For Each oTable In oTables
 						    End if
 							If oColumn1.Code=oColumn.Code Then F1=True 			
 						Next						
-						Desc = Desc & "      HIDE" & vbCrLf 
-						Desc = Desc & "      CLEAR" & vbCrLf
 						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
