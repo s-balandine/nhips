@@ -1,5 +1,10 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
+BEFORE RECORD
+  HIDE RECID
+  HIDE ID
+  HIDE Q101.1
+END
 
 * RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
 * 
@@ -19,9 +24,6 @@ END
 * Name
 Q1011
   MUSTENTER
-  AFTER ENTRY
-    INCLUDE facility (skip).chk
-  END
   GOTO WRITEREC
 END
 
