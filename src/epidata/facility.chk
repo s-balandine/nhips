@@ -1,10 +1,5 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
-BEFORE RECORD
-  HIDE RECID
-  HIDE ID
-  HIDE Q101.1
-END
 
 * RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
 * 
