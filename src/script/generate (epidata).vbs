@@ -455,6 +455,17 @@ For Each oTable In oTables
 					'ElseIf Len(S)>0 Then
 					'  Desc = Desc & "  " & S & vbCrLf 
 					'End If
+					S = ExtendedAttribute(oColumn, "Enabled")
+					If Len(S)>0 Then
+						Desc = Desc & "  BEFORE ENTRY" & vbCrLf 
+						Desc = Desc & "    IF (" & S & & ") THEN" & vbCrLf 
+						Desc = Desc & "      UNHIDE" & vbCrLf 
+						Desc = Desc & "    ELSE" & vbCrLf 
+						Desc = Desc & "      HIDE" & vbCrLf 
+						Desc = Desc & "      CLEAR" & vbCrLf
+						Desc = Desc & "    END IF" & vbCrLf 	
+						Desc = Desc & "  END" & vbCrLf 	
+					End If
 				End If
 				If oColumn = oTable.Columns.Item(oTable.Columns.Count - 1) Then
 					Desc = Desc & "  GOTO WRITEREC" & vbCrLf	
