@@ -19,36 +19,27 @@ END
 * Identifiers > No. Household
 Q1011
   MUSTENTER
-  COMMENT LEGAL "Household" SHOW
-  TYPE COMMENT ID
   AFTER ENTRY
-    IGNOREMISSING
-    IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
-    ELSE
-      LET ID= ID + "." + Q1012
-    ENDIF
+    INCLUDE household member (skip).chk
   END
-  END
+END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
 Q1012
   MUSTENTER
   AFTER ENTRY
-    IGNOREMISSING
-    IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
-    ELSE
-      LET ID= ID + "." + Q1012
-    ENDIF
+    INCLUDE household member (skip).chk
   END
-  END
+END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
 Q1021
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q103.1 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
@@ -70,6 +61,9 @@ Q1031
   MUSTENTER
   COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q104.1 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -81,6 +75,9 @@ Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_SEX
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q105.1 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
@@ -92,6 +89,9 @@ Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q106.1 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
@@ -103,6 +103,9 @@ Q1061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q107.1 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -113,6 +116,9 @@ Q1071
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q108.1 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
@@ -126,6 +132,9 @@ Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q109.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
@@ -137,6 +146,9 @@ Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
 END
 
 * Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
@@ -148,6 +160,9 @@ Q1092
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE household member (skip).chk
+  END
   GOTO WRITEREC
 END
 

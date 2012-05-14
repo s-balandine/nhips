@@ -20,8 +20,7 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-     IGNOREMISSING
-     LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
+    INCLUDE office keyer (skip).chk
   END
 END
 
@@ -30,8 +29,7 @@ END
 Q1012
   MUSTENTER
   AFTER ENTRY
-     IGNOREMISSING
-     LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
+    INCLUDE office keyer (skip).chk
   END
   GOTO WRITEREC
 END
