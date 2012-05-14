@@ -1,6 +1,16 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+  DEFINE AR _
+  INCLUDE "eligible woman (skip).chk"
+END
+
+AFTER RECORD
+  LET AR="T"
+  INCLUDE "eligible woman (skip).chk"
+END
+
 * RECID | Identifier (HEW_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
