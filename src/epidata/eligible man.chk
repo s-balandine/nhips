@@ -1,137 +1,1288 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-*  | Identifier of Cluster (HSH_IDENTIFIER_OF_CLUSTER) | NUMERIC(3)
+* RECID | Identifier (HEM_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
   KEY UNIQUE 1
   NOENTER
 END
 
-*  | Identifier of Household (HSH_IDENTIFIER_OF_HOUSEHOLD) | NUMERIC(2)
+* ID | Identifier (Natural) (HEM_IDENTIFIER_NATURAL) | VARCHAR(9)
 * 
-RECID
-  KEY UNIQUE 1
+ID
+  KEY UNIQUE 2
   NOENTER
 END
 
-*  | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
-* 
-RECID
-  KEY UNIQUE 1
-  NOENTER
-END
-
-*  | Identifier of Household Member (HHM_IDENTIFIER_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
-* 
-RECID
-  KEY UNIQUE 1
-  NOENTER
-END
-
-* Q100.1 | Name (NAME) | VARCHAR(32)
-* 
-Q1001
+* S101.1 | Respondent (HEM_RESPONDENT) | NUMERIC(5)
+* Identifiers > No. Household member
+S1011
   MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
 END
 
-* Q100.2 | Relationship (HHM_RELATIONSHIP) | NUMERIC(2)
-* 
-* Allowed Values
-*    1: Head
-*    2: Wife or husband
-*    3: Son/daughter
-*    4: Son/daughter-in-law
-*    5: Grandchild
-*    6: Parent
-*    7: Parent-in-law
-*    8: Brother/sister
-*    9: Other relative
-*    10: Adopted/foster child
-*    11: Not related
-*    98: Don't know
-Q1002
-  MUSTENTER
-  COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD
-  TYPE COMMENT LEGAL
-END
-
-* Q100.3 | Sex (HHM_SEX) | NUMERIC(2)
-* 
-* Allowed Values
-*    1: Male
-*    2: Female
-Q1003
-  MUSTENTER
-  COMMENT LEGAL USE D_N_SEX
-  TYPE COMMENT LEGAL
-END
-
-* Q100.4 | Is Living Here (HHM_IS_LIVING_HERE) | NUMERIC(1)
-* 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q1004
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-END
-
-* Q100.5 | Is Stay Last Night (HHM_IS_STAY_LAST_NIGHT) | NUMERIC(1)
-* 
-* Allowed Values
-*    1: Yes
-*    2: No
-Q1005
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-END
-
-* Q100.6 | Age (HHM_AGE) | NUMERIC(2)
-* 
+* S201.1 | Day (HEM_DAY) | NUMERIC(2)
+* Date > Day of interview
 * Allowed Values
 *    98: Don't know
-Q1006
+S2011
+  MUSTENTER
+  RANGE 1 31
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S201.2 | Month (HEM_M) | NUMERIC(2)
+* Date > Month of interview
+* Allowed Values
+*    98: Don't know
+S2012
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S201.3 | Year (HEM_YEAR) | NUMERIC(4)
+* Date > Year of interview
+* Allowed Values
+*    11: 2011
+*    12: 2012
+*    13: 2013
+*    98: Don't know
+S2013
+  MUSTENTER
+  RANGE 2012 2014
+  MISSINGVALUE 11 12 13 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S202.1 | Field Interviewer (HEM_FIELD_INTERVIEWER) | NUMERIC(5)
+* Actors on the field? > Interviewer
+S2021
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S202.2 | Field Supervisor (HEM_FIELD_SUPERVISOR) | NUMERIC(5)
+* Actors on the field? > Supervisor
+S2022
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S203.1 | Result (HEM_RESULT) | NUMERIC(2)
+* Result > Result
+* Allowed Values
+*    1: Completed
+*    2: No household member at home or no competent respondent at home
+*    3: Entire household absent for extended period of time
+*    4: Postponed
+*    5: Refused
+*    6: Dwelling vacant or address not a dwelling
+*    7: Dwelling destroyed
+*    8: Dwelling not found
+*    9: Other
+S2031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S203.2 | Result (Other) (HEM_RESULT_OTHER) | VARCHAR(16)
+* Result > Specify
+S2032
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S204.1 | Office editor (HEM_OFFICE_EDITOR) | NUMERIC(5)
+* Actors at the office? > Editor
+S2041
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S204.2 | Keyer (HEM_KEYER) | NUMERIC(5)
+* Actors at the office? > Keyer
+S2042
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* S205.1 | Number of visits (HEM_NUMBER_OF_VISITS) | NUMERIC(2)
+* Total number of visits
+S2051
+  MUSTENTER
+  RANGE 1 5
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q101.1 | Record Time Hour (HEM_RECORD_TIME_H) | NUMERIC(2)
+* Record the time > Hour
+Q1011
+  MUSTENTER
+  RANGE 0 23
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q101.2 | Record Time Minute (HEM_RECORD_TIME_M) | NUMERIC(2)
+* Record the time > Minute
+Q1012
+  MUSTENTER
+  RANGE 0 59
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q102.1 | Birth Month (HEM_BIRTH_M) | NUMERIC(2)
+* In what month and year were you born? > Month
+* Allowed Values
+*    98: Don't know
+Q1021
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q102.2 | Birth Year (HEM_BIRTH_YEAR) | NUMERIC(4)
+* In what month and year were you born? > Year
+* Allowed Values
+*    9998: Don't know
+Q1022
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q103.1 | Age (HEM_AGE) | NUMERIC(2)
+* How old were you at your last birthday? > Age in completed year
+* Allowed Values
+*    98: Don't know
+Q1031
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
 END
 
-* Q100.7 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
-* 
+* Q104.1 | School (HEM_SCHOOL) | NUMERIC(1)
+* Have you ever attended school?
 * Allowed Values
-*    1: Married or living together
-*    2: Divorced or separated
-*    3: Widowed
-*    4: Never married and never lived together
-Q1007
+*    1: Yes
+*    2: No
+Q1041
   MUSTENTER
-  COMMENT LEGAL USE D_N_MARITAL_STATUS
+  COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
 END
 
-* Q100.8 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
-* 
+* Q105.1 | Highest Educational Level (HEM_HIGHEST_EDUCATIONAL_LEVEL) | NUMERIC(2)
+* What is the highest level of school you attended: primary, secondary, or higher? 
 * Allowed Values
-*    0: Non
-*    1: Oui
-Q1008
+*    1: Primary
+*    2: Post-primary / Vocational
+*    3: Secondary / A level
+*    4: Higher
+Q1051
   MUSTENTER
-  COMMENT LEGAL USE D_N_ELIGIBLE
+  COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
 END
 
-* Q100.9 | Is Eligible Men (HHM_IS_ELIGIBLE_MEN) | NUMERIC(2)
-* 
-* Allowed Values
-*    0: Non
-*    1: Oui
-Q1009
+* Q106.1 | Highest Year of Education (HEM_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
+* What is the highest (grade/form/year) you completed at that level? 
+Q1061
   MUSTENTER
-  COMMENT LEGAL USE D_N_ELIGIBLE
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q108.1 | Literacy (HEM_LITERACY) | NUMERIC(2)
+* Can you read any part of the sentence to me?
+* Allowed Values
+*    1: No, cannont read at all
+*    2: Yes, able to read only part of sentence
+*    3: Yes, able to read whole sentence
+*    4: Not applicable, no card with required language
+*    5: Not applicable, blind or Visually impaired
+Q1081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_LITERACY
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q108.2 | Literacy Language (HEM_LITERACY_LANGUAGE) | VARCHAR(16)
+* Can you read any part of the sentence to me? > Specify
+Q1082
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q109.1 | Place of Residence Before (HEM_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(1)
+* For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
+* Allowed Values
+*    1: Nairobi / Kisumu
+*    2: Other City / Town
+*    3: Countryside
+*    4: Outside Kenya
+Q1091
+  MUSTENTER
+  COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1101 | Residence Duration (HEM_RESIDENCE_DRT) | NUMERIC(2)
+* How long have you been living continuously in Ndhiwa?  > Specify
+* Allowed Values
+*    98: Always
+*    99: Visitor
+Q1101
+  MUSTENTER
+  RANGE 1 97
+  MISSINGVALUE 98 99
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1111 | Type of Place of Residence Before (HEM_TYPE_OF_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(2)
+* Just before you moved here, did you live in a city a town, or in the countryside?
+* Allowed Values
+*    0: Capital, large city
+*    1: Small city
+*    2: Town
+*    3: Countryside
+Q1111
+  MUSTENTER
+  COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1121 | Ethnic (HEM_ETHNIC) | NUMERIC(2)
+* What is your ethnic group/tribe?
+* Allowed Values
+*    1: Embu
+*    2: Kalenjin
+*    3: Kamba
+*    4: Kikuyu
+*    5: Kisii
+*    6: Luhya
+*    7: Luo
+*    8: Masai
+*    9: Meru
+*    10: Mijikenda / Swahili
+*    11: Somali
+*    12: Taita / Taveta
+*    96: Other
+Q1121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_ETHNIC
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1122 | Ethnic Other (HEM_ETHNIC_S) | VARCHAR(16)
+* What is your ethnic group/tribe? > Specify
+Q1122
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1131 | Outside Night (HEM_OUTSIDE_NIGHT) | NUMERIC(2)
+* In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
+Q1131
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1141 | Outside Month (HEM_OUTSIDE_M) | NUMERIC(1)
+* In the last 12 months, have you been away from home for more than one month at a time?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1141
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1151 | Union (HEM_UNION) | NUMERIC(1)
+* Are you currently married or living together with a woman as if married?
+* Allowed Values
+*    1: Yes, currently married
+*    2: Yes, living with a man
+*    3: No, not in union
+Q1151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_UNION_STATUS
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1161 | Marital Statut in Past (HEM_MARITAL_STATUT_IN_PAST) | NUMERIC(1)
+* Have you ever been married or lived together with a woman as if married?
+* Allowed Values
+*    1: Yes, formerly married
+*    2: Yes, lived with a man
+*    3: No
+Q1161
+  MUSTENTER
+  COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1171 | Marital Status (HEM_MARITAL_STATUS) | NUMERIC(1)
+* What is your marital status now: are you widowed, divorced, or separated?
+* Allowed Values
+*    1: Widowed
+*    2: Divorced
+*    3: Separated
+Q1171
+  MUSTENTER
+  COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1181 | Husband Status (HEM_HUSBAND_STATUS) | NUMERIC(2)
+* Is your (wife/partner) living with you now or is he staying elsewhere?
+* Allowed Values
+*    1: Living with her
+*    2: Staying elsewhere
+Q1181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HUSBAND_STATUS
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1191 | Worked in last week 2 (HEM_WORKED_IN_LST_W) | NUMERIC(1)
+* Have you done any work in the last seven days?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1191
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1201 | Work absence (HEM_WORK_ABSENCE) | NUMERIC(1)
+* Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, or any other such reason?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1201
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1211 | Worked in last 12 months (HEM_WORKED_IN_LST_12_MONTHS) | NUMERIC(1)
+* Have you done any work in the last 12 months?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q1211
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1221 | Occupation (HEM_OCCUPATION) | NUMERIC(2)
+* What is your occupation, that is, what kind of work do you mainly do?What is your occupation, that is, what kind of work do you mainly do?
+* Allowed Values
+*    1: ?
+*    2: ?
+*    3: ?
+*    4: ?
+Q1221
+  MUSTENTER
+  COMMENT LEGAL USE D_N_OCCUPATION
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1231 | Work Time (HEM_WORK_TIME) | NUMERIC(1)
+* Do you usually work throughout the year, or do you work seasonally, or only once in a while?
+* Allowed Values
+*    1: All year
+*    2: Seasonal
+*    3: Occasional
+Q1231
+  MUSTENTER
+  COMMENT LEGAL USE D_N_WORK_TIME
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q1241 | Work Earn (HEM_WORK_EARN) | NUMERIC(1)
+* Are you paid in cash or kind for this work or are you not paid at all?
+* Allowed Values
+*    1: Cash only
+*    2: Cash and kind
+*    3: In kind only
+*    4: Not paid
+Q1241
+  MUSTENTER
+  COMMENT LEGAL USE D_N_WORK_EARN
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q201.1 | Birth Given (HEM_BIRTH_GIVEN) | NUMERIC(1)
+* Some men are circumcised. Are you circomcised?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q2011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q202.1 | Child at Home (HEM_CHILD_AT_HOME) | NUMERIC(2)
+* How old were you when circumcision occured?
+* Allowed Values
+*    95: During childhood (<5)
+*    98: Don't know
+Q2021
+  MUSTENTER
+  RANGE 0 94
+  MISSINGVALUE 95 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q203.1 | Sons at Home (HEM_SONS_AT_HOME) | NUMERIC(1)
+* Who circumcised you?
+* Allowed Values
+*    1: Traditional practitioner
+*    2: Family/Friend
+*    3: Health worker/Health professional
+*    4: Religious leader
+*    6: Other
+*    8: Don't know
+Q2031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CIRCUMCISOR
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q204.1 | Daughters at Home (HEM_DAUGHTERS_AT_HOME) | NUMERIC(1)
+* Were did you go to be circumcised?
+* Allowed Values
+*    1: Health facility
+*    2: Home of a health worker/health professsional
+*    3: Own home
+*    4: Other home
+*    8: Don't know
+Q2041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CIRCUMCISION_PLACE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q205.1 | Child Elsewhere (HEM_CHILD_ELSEWHERE) | NUMERIC(1)
+* Do you know that circumcision can prevent getting HIV?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q2051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q206.1 | Sons Elsewhere (HEM_SONS_ELSEWHERE) | NUMERIC(1)
+* I am now going to show you some drawings of penises? Can you ttell me which is looking more to yours?
+* Allowed Values
+*    1: Drawing 1
+*    2: Drawing 2
+*    3: Drawing 3
+*    8: Don't know
+Q2061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DRAWING
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q301.1 | AIDS Disease (HEW_AIDS_DSS) | NUMERIC(1)
+* Have you ever heard of an illness called AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q302.1 | AIDS During Pregnancy (HEW_AIDS_DURING_PGC) | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q302.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3022
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q302.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
+* Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3023
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q303.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
+* Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q3031
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q304.1 | AIDS Test (HEW_AIDS_TEST) | NUMERIC(1)
+* I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q305.1 | AIDS Test Result (HEW_AIDS_TEST_RESULT) | NUMERIC(1)
+* I don't want to know the results, but did you get the results of the test?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q306.1 | AIDS Test When (HEW_AIDS_TEST_WHEN) | NUMERIC(2)
+* How many months ago was your most recent HIV test?
+Q3061
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q307.1 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q3071
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q307.2 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
+* Where was the test done? > Specify
+Q3072
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q308.1 | AIDS Test Place (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
+* Do you know of a place where people can go to get tested for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q3081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q309.1 | AIDS Test Place Where (HEW_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
+* Where is that?
+* Allowed Values
+*    A: Public sector: Government hospital
+*    B: Public sector: Government health center
+*    C: Public sector: Stand-alone VCT Center
+*    D: Public sector: Family planning clinic
+*    E: Public sector: Mobile clinic
+*    F: Public sector: Fieldworker
+*    G: Public sector: Other public
+*    H: Private medical sector: Private hospital/clinic/doctor
+*    I: Private medical sector: Stand-alone VCT Center
+*    J: Private medical sector: Pharmacy
+*    K: Private medical sector: Mobile clinic
+*    L: Private medical sector: Fieldworker
+*    M: Private medical sector: Other private
+*    X: Other
+Q3091
+  MUSTENTER
+  COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q309.2 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
+* Where is that? > Specify
+Q3092
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q404.1 | HIV Test Consent (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
+* Consent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q4041
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q406.1 | HIV Test Consent Respondent (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q4061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q501.1 | AIDS Infection (HEW_AIDS_INFECTION) | NUMERIC(1)
+* Did you know you were infected with AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q502.1 | AIDS Infection Test (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
+* Have you already had a HIV test that showed you were infected with AIDS? 
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q506.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
+* Consent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q5061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q508.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+Q5081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5111 | AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
+* When were you first tested positive for the AIDS virus? > Month
+* Allowed Values
+*    98: Don't know
+Q5111
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5112 | AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
+* When were you first tested positive for the AIDS virus? > Year
+* Allowed Values
+*    9998: Don't know
+Q5112
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5121 | AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
+* Where was the test done?
+* Allowed Values
+*    11: Public sector: Government hospital
+*    12: Public sector: Government health center
+*    13: Public sector: Stand-alone VCT Center
+*    14: Public sector: Family planning clinic
+*    15: Public sector: Mobile clinic
+*    16: Public sector: Fieldworker
+*    17: Public sector: School based clinic
+*    18: Public sector: Other public
+*    21: Private medical sector: Private hospital/clinic/doctor
+*    22: Private medical sector: Stand-alone VCT Center
+*    23: Private medical sector: Pharmacy
+*    24: Private medical sector: Mobile clinic
+*    25: Private medical sector: Fieldworker
+*    26: Private medical sector: School based clinic
+*    27: Private medical sector: Other private
+*    31: Other source: Home
+*    32: Other source: Correctional facility
+*    98: Other
+Q5121
+  MUSTENTER
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5122 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(16)
+* Where was the test done? > Specify
+Q5122
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5131 | AIDS Care (HEW_AIDS_CARE) | NUMERIC(1)
+* After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5131
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5141 | AIDS Blood Sample (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
+* Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q5141
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5151 | AIDS Blood Sample Result (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
+* Did you get the results of this exam?
+* Allowed Values
+*    1: Yes
+*    2: No
+*    8: Don't know
+Q5151
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5161 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
+* Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5161
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5171 | ART Start Month (HEW_ART_START_MONTH) | NUMERIC(2)
+* When did you first start Antiretroviral therapy? > Month
+* Allowed Values
+*    98: Don't know
+Q5171
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5172 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
+* When did you first start Antiretroviral therapy? > Year
+* Allowed Values
+*    9998: Don't know
+Q5172
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5181 | ART Still (HEW_ART_STILL) | NUMERIC(1)
+* Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5181
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5191 | ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
+* When was your last consultation? > Month
+* Allowed Values
+*    98: Don't know
+Q5191
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5192 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
+* When was your last consultation? > Year
+* Allowed Values
+*    9998: Don't know
+Q5192
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5201 | ART Where (HEW_ART_WHERE) | VARCHAR(32)
+* Where are you now receiving ART?
+Q5201
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5202 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
+* Where are you now receiving ART? > Specify
+Q5202
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5211 | ART District (HEW_ART_DISTRICT) | NUMERIC(1)
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+Q5211
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5212 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
+* In which district is this place? > Specify
+Q5212
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5221 | ART Place (HEW_ART_PLACE) | VARCHAR(32)
+* What is the name of this place?
+Q5221
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5231 | AIDS Follow (HEW_AIDS_FOLLOW) | NUMERIC(1)
+* Are you still followed up for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5231
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5241 | AIDS Last Consultation Month (HEW_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
+* When was your last consultation? > Month
+* Allowed Values
+*    98: Don't know
+Q5241
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5242 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
+* When was your last consultation? > Year
+* Allowed Values
+*    9998: Don't know
+Q5242
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5251 | AIDS Where (HEW_AIDS_WHERE) | VARCHAR(32)
+* Where are you now receiving care?
+Q5251
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5252 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
+* Where are you now receiving care? > Specify
+Q5252
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5261 | AIDS District (HEW_AIDS_DISTRICT) | NUMERIC(1)
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+Q5261
+  MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5262 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
+* In which district is this place? > Specify
+Q5262
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5271 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(32)
+* What is the name of this place?
+Q5271
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5281 | AIDS Stop (HEW_AIDS_STOP) | NUMERIC(2)
+* Why did you stop?
+* Allowed Values
+*    1: No one was attending
+*    2: Stock out
+*    3: Unfriendly staff
+*    4: Spontaneous
+*    5: Advised to stop
+*    6: Throught i was cured/feel good
+*    7: Side effect
+*    8: Moved away
+*    9: Transport cost
+*    10: Stop pmtct
+*    96: Other
+Q5281
+  MUSTENTER
+  COMMENT LEGAL USE D_N_AIDS_STOP_REASON
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5282 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
+* Why did you stop? > Specify
+Q5282
+  MUSTENTER
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5321 | ART Pregnancy (HEW_ART_PREGNANCY) | NUMERIC(1)
+* Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5321
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
+END
+
+* Q5331 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
+* After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
+* Allowed Values
+*    1: Yes
+*    2: No
+Q5331
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    INCLUDE eligible man (skip).chk
+  END
   GOTO WRITEREC
 END
 
