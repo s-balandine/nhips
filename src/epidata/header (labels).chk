@@ -184,7 +184,7 @@ LABELBLOCK
     4 "Refused"
     5 "Partly completed"
     6 "Incapacited"
-    97 "Other"
+    7 "Other"
    END
   LABEL D_N_LITERACY
     1 "No, cannont read at all"
