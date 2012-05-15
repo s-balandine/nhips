@@ -653,7 +653,7 @@ Function RepeatColumnCode(Table, ColumnCodeFrom, ColumnCodeTo, Source)
 	For Each Column in Table.Columns
 	    If Column.Code=ColumnCodeTo Then Exit For
 	    If Flag Then
-	    	RepeatColumnCode = RepeatColumnCode & Source & ColumnNameEpi(Column) & vbCrLf   
+	    	RepeatColumnCode = RepeatColumnCode & Replace(Source, "%COLUMN%", ColumnNameEpi(Column)) & vbCrLf   
 	    End if
 		If Column.Code=ColumnCodeFrom Then Flag=True 			
 	Next
