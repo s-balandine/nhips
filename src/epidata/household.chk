@@ -5,11 +5,9 @@ INCLUDE "header (labels).chk"
 * 
 
 
-
 HOUSE
   KEY UNIQUE 1
   NOENTER
-  RELATE HOUSE "household member"
 END
 
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
@@ -33,6 +31,7 @@ Q1011
     ELSE
       LET ID= ID + "." + Q1012
     ENDIF
+    RELATE HOUSE "household member"
   END
 END
 
