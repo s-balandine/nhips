@@ -325,7 +325,7 @@ For Each oTable In oTables
 					    	Exit For
 					    End If
 					    If Flag Then
-					    	SetExtendedAttribute oColumnInternal, "Enabled", ExtendedAttribute(oColumnInternal, "Enabled") & "(" & S1 & ") AND "
+					    	SetExtendedAttribute oColumnInternal, "Enabled", ExtendedAttribute(oColumnInternal, "Enabled") & "(" & S1 & ") OR "
 					    End if
 				    	If oColumnInternal.Code=oColumn.Code Then Flag=True 			
 					Next
@@ -337,7 +337,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			S = ExtendedAttribute(oColumnInternal, "Enabled")
 			If Len(S)>0 Then
-				SetExtendedAttribute oColumnInternal, "Enabled", Mid(S, 1, Len(S)-5)
+				SetExtendedAttribute oColumnInternal, "Enabled", "NOT (" & Mid(S, 1, Len(S)-5) & ")"
 			End If
 		Next 
 		
