@@ -11609,3 +11609,129 @@ Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
 Datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec was revised
 using D:\users\s-balandine\share\nhips\src\epidata\office keyer.qes
 Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible man.qes" "eligible man.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible man.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible man.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "eligible woman.qes" "eligible woman.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev facility.qes facility.rec AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\facility.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC import TXT "field interviewer.csv" "field interviewer.rec" "qes=field interviewer.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\field interviewer.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+4 records with 11 field imported
+
+COMMAND:        EpiC import TXT "field supervisor.csv" "field supervisor.rec" "qes=field supervisor.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\field supervisor.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+4 records with 11 field imported
+
+COMMAND:        EpiC import TXT "office editor.csv" "office editor.rec" "qes=office editor.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\office editor.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\office editor.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+4 records with 11 field imported
+
+COMMAND:        EpiC import TXT "office keyer.csv" "office keyer.rec" "qes=office keyer.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\office keyer.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\office keyer.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+5 records with 11 field imported
+
+COMMAND:        EpiC import TXT facility.csv facility.rec qes=facility.qes delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\facility.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\facility.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\facility.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+2 records with 8 field imported
+
+COMMAND:        EpiC import TXT household.csv household.rec qes=household.qes delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\household.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\household.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\household.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 11): 
+Function failed
+
+COMMAND:        EpiC import TXT "household member.csv" "household member.rec" "qes=household member.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\household member.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\household member.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\household member.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+4 records with 30 field imported
+
+COMMAND:        EpiC import TXT "eligible woman.csv" "eligible woman.rec" "qes=eligible woman.qes" delim=; q=none replace ignorefirst
+15/05/2012 17:13:32
+Imports         D:\users\s-balandine\share\nhips\src\epidata\eligible woman.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 11): Function failed
