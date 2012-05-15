@@ -349,19 +349,19 @@ For Each oTable In oTables
 
 				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
 				
-				S1 = ExtendedAttribute(oColumn, "Skip")
-				S2 = ExtendedAttribute(oColumn, "Skip To")
-				If (Len(S1)+Len(S2))>0 Then
-					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
-					Desc = Desc & "    ELSE" & vbCrLf
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, _
-						"      IF (%COLUMN%=.) THEN" & vbCrLf & _
-						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf & _ 
-						"        GOTO %COLUMN%" & vbCrLf & _
-						"      ENDIF")
-					Desc = Desc & "    ENDIF" & vbCrLf 
+				Desc = Desc & "    IF (" & ColumnName & "=.) "
+				
+				S1 = ExtendedAttribute(oColumn, "Enabled")
+				
+				If Len(S1)>0 Then
+					Desc = Desc & "AND " & S1 & " THEN" & vbCrLf
+				Else
+				    Desc = Desc & "THEN" & vbCrLf 
 				End If
+				
+				Desc = Desc & "        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
+				Desc = Desc & "        GOTO %COLUMN%" & vbCrLf
+				Desc = Desc & "    ENDIF" & vbCrLf 
 
 			End If
 		Next 
