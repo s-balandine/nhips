@@ -477,26 +477,10 @@ For Each oTable In oTables
 					If (Len(S1)+Len(S2))>0 Then
 						Desc = Desc & "  AFTER ENTRY" & vbCrLf 
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-						F1 = False		
-						For Each oColumn1 in oTable.Columns
-						    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
-						    If oColumn1.Code=S2 Then Exit For
-						    If F1 Then
-						    	Desc = Desc & "      HIDE " & oColumn1Name & vbCrLf   
-						    	Desc = Desc & "      CLEAR " & oColumn1Name & vbCrLf   
-						    End if
-							If oColumn1.Code=oColumn.Code Then F1=True 			
-						Next
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  HIDE %COLUMN%")
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
 						Desc = Desc & "    ELSE" & vbCrLf 
-						F1 = False		
-						For Each oColumn1 in oTable.Columns
-						    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
-						    If oColumn1.Code=S2 Then Exit For
-						    If F1 Then
-						    	Desc = Desc & "      UNHIDE " & oColumn1Name & vbCrLf   
-						    End if
-							If oColumn1.Code=oColumn.Code Then F1=True 			
-						Next						
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  UNHIDE %COLUMN%")				
 						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
