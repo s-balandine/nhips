@@ -29,7 +29,7 @@ Q1012
       LET ID= ID + "." + Q1012
     ENDIF
   END
-  END
+END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
