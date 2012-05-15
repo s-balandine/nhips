@@ -4,9 +4,12 @@ INCLUDE "header (labels).chk"
 * ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
 * 
 
+
+
 ID
   KEY UNIQUE 1
   NOENTER
+  RELATE HOUSE "household member"
 END
 
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
