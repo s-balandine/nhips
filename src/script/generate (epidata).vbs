@@ -340,9 +340,9 @@ For Each oTable In oTables
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
 					Desc = Desc & "    ELSE" & vbCrLf
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, _
-						"      IF (%COLUMN%=.) THEN" & vbCrLf 
-						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf 
-						"        GOTO %COLUMN%" & vbCrLf 
+						"      IF (%COLUMN%=.) THEN" & vbCrLf & _
+						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf & _ 
+						"        GOTO %COLUMN%" & vbCrLf & _
 						"      ENDIF")
 					Desc = Desc & "    ENDIF" & vbCrLf 
 				End If
