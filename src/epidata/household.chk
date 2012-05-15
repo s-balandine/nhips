@@ -6,7 +6,7 @@ INCLUDE "header (labels).chk"
 
 
 
-ID
+HOUSE
   KEY UNIQUE 1
   NOENTER
   RELATE HOUSE "household member"
