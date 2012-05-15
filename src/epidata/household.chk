@@ -7,6 +7,7 @@ END
 
 * RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
 * 
+
 RECID
   KEY UNIQUE 1
   NOENTER
@@ -14,6 +15,7 @@ END
 
 * ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
 * 
+
 ID
   KEY UNIQUE 2
   NOENTER
@@ -69,9 +71,9 @@ END
 
 * Q201.1 | Day (HSH_DAY) | NUMERIC(2)
 * Date > Day of interview
-
 * Allowed Values
 *    98: Don't know
+
 Q2011
   MUSTENTER
   RANGE 1 31
@@ -80,9 +82,9 @@ END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
 * Date > Month of interview
-
 * Allowed Values
 *    98: Don't know
+
 Q2012
   MUSTENTER
   RANGE 1 12
@@ -91,12 +93,12 @@ END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
 * Date > Year of interview
-
 * Allowed Values
 *    11: 2011
 *    12: 2012
 *    13: 2013
 *    98: Don't know
+
 Q2013
   MUSTENTER
   RANGE 2012 2014
@@ -121,7 +123,6 @@ END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
 * Result > Result
-
 * Allowed Values
 *    1: Completed
 *    2: No household member at home or no competent respondent at home
@@ -132,6 +133,7 @@ END
 *    7: Dwelling destroyed
 *    8: Dwelling not found
 *    9: Other
+
 Q2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
@@ -173,6 +175,7 @@ END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
 * Total number of visits
+
 Q2051
   MUSTENTER
   RANGE 1 5
