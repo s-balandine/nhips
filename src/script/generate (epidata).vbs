@@ -359,8 +359,9 @@ For Each oTable In oTables
 				    Desc = Desc & "THEN" & vbCrLf 
 				End If
 				
-				Desc = Desc & "        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
-				Desc = Desc & "        GOTO %COLUMN%" & vbCrLf
+				Desc = Desc & "      HELP """ & ExtendedAttribute(oColumn, "NameEpiData") & " is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
+				Desc = Desc & "      GOTO " & ColumnName & vbCrLf
+				Desc = Desc & "      EXIT" & vbCrLf
 				Desc = Desc & "    ENDIF" & vbCrLf 
 
 			End If
