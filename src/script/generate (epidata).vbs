@@ -339,9 +339,9 @@ For Each oTable In oTables
 					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR ")
 					Desc = Desc & "    ELSE" & vbCrLf
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, _
-					"" &
-					"")
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2,
+					"IF (%COLUMN%=.) THEN" & vbCrLf &
+					"  HELP """)
 					Desc = Desc & "    ENDIF" & vbCrLf 
 				End If
 
