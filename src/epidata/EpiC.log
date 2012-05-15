@@ -11565,4 +11565,47 @@ Delimiter:      ;
 Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
-Error during command import (code 11): Function failed
+Error during command import (code 11): 
+Function failed
+
+COMMAND:        EpiC rev "field interviewer.qes" "field interviewer.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field supervisor.qes" "field supervisor.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev household.qes household.rec AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\household.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\household.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "household member.qes" "household member.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\household member.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\household member.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\household member.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office editor.qes" "office editor.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\office editor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office keyer.qes" "office keyer.rec" AUTO FORCE
+15/05/2012 17:13:31
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\office keyer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\office keyer.qes
+Revision can have resulted in loss of data in decimal number fields.
