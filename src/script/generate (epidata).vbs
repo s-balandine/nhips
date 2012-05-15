@@ -308,19 +308,8 @@ For Each oTable In oTables
 
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				
-				WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
-
-				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-				
-				S1 = ExtendedAttribute(oColumn, "Skip")
-				S2 = ExtendedAttribute(oColumn, "Skip To")
-				If (Len(S1)+Len(S2))>0 Then
-					Desc = Desc & "  * Skip after " & ColumnName & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  HIDE %COLUMN%") 
-				End If
-
+			If IsObject(oColumn) And Not (oColumn.Computed) Then	
+				Desc = Desc & ColumnNameEpi(ColumnName) & "H=0" & vbCrLf & vbCrLf
 			End If
 		Next 
 		Desc = Desc & "END" & vbCrLf & vbCrLf
