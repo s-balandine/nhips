@@ -306,6 +306,14 @@ For Each oTable In oTables
 		Desc =         "INCLUDE ""header.chk""" & vbCrLf
 		Desc = Desc &  "INCLUDE ""header (labels).chk""" & vbCrLf & vbCrLf
 
+		Desc = Desc & "BEFORE FILE" & vbCrLf
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then	
+				Desc = Desc & "DEFINE " & ColumnNameEpi(ColumnName) & " #" & vbCrLf & vbCrLf
+			End If
+		Next 
+		Desc = Desc & "END" & vbCrLf & vbCrLf
+
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then	
