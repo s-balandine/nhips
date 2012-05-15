@@ -479,8 +479,10 @@ For Each oTable In oTables
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
 						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      HIDE %COLUMN%")
 						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      CLEAR %COLUMN%")
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      %COLUMN%H=1")
 						Desc = Desc & "    ELSE" & vbCrLf 
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE %COLUMN%")				
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE %COLUMN%")
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      %COLUMN%H=0")				
 						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
