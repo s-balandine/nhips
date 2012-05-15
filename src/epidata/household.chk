@@ -1,6 +1,10 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+END
+
+
 * RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
 * 
 RECID
@@ -19,12 +23,46 @@ END
 * Identifiers > No. Cluster
 Q1011
   MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1011 < 10 THEN
+      LET ID="00" + Q1011
+    ELSE
+      IF Q1011 < 100 THEN
+        LET ID="0" + Q1011
+      ELSE
+        LET ID= Q1011
+      ENDIF
+    ENDIF
+    IF Q1012 < 10 THEN
+      LET ID= ID + "." + "0" + Q1012
+    ELSE
+      LET ID= ID + "." + Q1012
+    ENDIF
+  END
 END
 
 * Q101.2 | Household (HSH_HOUSEHOLD) | NUMERIC(2)
 * Identifiers > No. Household
 Q1012
   MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1011 < 10 THEN
+      LET ID="00" + Q1011
+    ELSE
+      IF Q1011 < 100 THEN
+        LET ID="0" + Q1011
+      ELSE
+        LET ID= Q1011
+      ENDIF
+    ENDIF
+    IF Q1012 < 10 THEN
+      LET ID= ID + "." + "0" + Q1012
+    ELSE
+      LET ID= ID + "." + Q1012
+    ENDIF
+  END
 END
 
 * Q201.1 | Day (HSH_DAY) | NUMERIC(2)
@@ -64,12 +102,14 @@ END
 * Actors on the field? > Interviewer
 Q2021
   MUSTENTER
+  COMMENT LEGAL "Field Interviewer" SHOW
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
 Q2022
   MUSTENTER
+  COMMENT LEGAL "Field Supervisor" SHOW
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -88,6 +128,16 @@ Q2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
+  JUMPS RESET
+    1 SKIPNEXTFIELD
+    2 SKIPNEXTFIELD
+    3 SKIPNEXTFIELD
+    4 SKIPNEXTFIELD
+    5 SKIPNEXTFIELD
+    6 SKIPNEXTFIELD
+    7 SKIPNEXTFIELD
+    8 SKIPNEXTFIELD
+  END
 END
 
 * Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(16)
@@ -100,12 +150,14 @@ END
 * Actors at the office? > Editor
 Q2041
   MUSTENTER
+  COMMENT LEGAL "Office Editor" SHOW
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
 Q2042
   MUSTENTER
+  COMMENT LEGAL "Office Keyer" SHOW
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
