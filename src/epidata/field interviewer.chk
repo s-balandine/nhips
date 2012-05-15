@@ -1,29 +1,27 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-BEFORE FILE
-DEFINE RECID #
-
-DEFINE ID #
-
-DEFINE Q1011 #
-
-DEFINE Q1012 #
-
-END
-
-BEFORE RECORD
-RECIDH=0
-
-IDH=0
-
-Q1011H=0
-
-Q1012H=0
-
-END
-
 AFTER RECORD
+    IF (RECID=.) THEN
+      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO RECID
+      EXIT
+    ENDIF
+    IF (ID=.) THEN
+      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO ID
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
 END
 
 
@@ -49,9 +47,6 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-
-  END
-  AFTER ENTRY
      IGNOREMISSING
      LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
   END
@@ -62,9 +57,6 @@ END
 
 Q1012
   MUSTENTER
-  AFTER ENTRY
-
-  END
   AFTER ENTRY
      IGNOREMISSING
      LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
