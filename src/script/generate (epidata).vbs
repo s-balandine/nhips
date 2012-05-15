@@ -316,48 +316,17 @@ For Each oTable In oTables
 				S2 = ExtendedAttribute(oColumn, "Skip To")
 				If (Len(S1)+Len(S2))>0 Then
 					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-					F1 = False		
-					For Each oColumn1 in oTable.Columns
-					    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
-					    If oColumn1.Code=S2 Then Exit For
-					    If F1 Then
-					    	Desc = Desc & "      HIDE " & oColumn1Name & vbCrLf   
-					    	Desc = Desc & "      CLEAR " & oColumn1Name & vbCrLf   
-					    End if
-						If oColumn1.Code=oColumn.Code Then F1=True 			
-					Next
+					RepeatColumnCode oTable, oColumn.Code, S2, "      HIDE " 
+					RepeatColumnCode oTable, oColumn.Code, S2, "      CLEAR "
 					Desc = Desc & "    ELSE" & vbCrLf 
-					F1 = False		
-					For Each oColumn1 in oTable.Columns
-					    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
-					    If oColumn1.Code=S2 Then Exit For
-					    If F1 Then
-					    	Desc = Desc & "      UNHIDE " & oColumn1Name & vbCrLf   
-					    End if
-						If oColumn1.Code=oColumn.Code Then F1=True 			
-					Next						
+					RepeatColumnCode oTable, oColumn.Code, S2, "      UNHIDE "						
 					Desc = Desc & "    ENDIF" & vbCrLf & vbCrLf 	
 				End If
 
 			End If
 		Next 
 		Desc = Desc & "END" & vbCrLf & vbCrLf
-
-		'Desc = Desc & "AFTER RECORD" & vbCrLf
-		'For Each oColumn in oTable.Columns
-		'    If IsObject(oColumn) And (oColumn.Mandatory) And Not (oColumn.CannotModify) Then
-		'	    WScript.Echo "    Mandatory: " & oColumn.Name
-		'	    ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-		'	    ColumnLabel = ExtendedAttribute (oColumn, "Label")
-		'		Desc = Desc & " IF (" & ColumnName & " = .) THEN" & vbCrLf
-		'		Desc = Desc & "  HELP """ & ColumnLabel & " must be entered"" TYPE=ERROR" & vbCrLf
-		'		Desc = Desc & "  GOTO " & ColumnName & "" & vbCrLf
-		'		Desc = Desc & "  EXIT" & "" & vbCrLf
-		'		Desc = Desc & " ENDIF" & vbCrLf
-		'	End If
-		'Next
-		'Desc = Desc & "END" & vbCrLf
-			
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				
