@@ -306,6 +306,40 @@ For Each oTable In oTables
 		Desc =         "INCLUDE ""header.chk""" & vbCrLf
 		Desc = Desc &  "INCLUDE ""header (labels).chk""" & vbCrLf & vbCrLf
 
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+				WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
+
+				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+				
+				S1 = ExtendedAttribute(oColumn, "Skip")
+				S2 = ExtendedAttribute(oColumn, "Skip To")
+				If (Len(S1)+Len(S2))>0 Then
+					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
+					Desc = Desc & "    ELSE" & vbCrLf
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, _
+						"      IF (%COLUMN%=.) THEN" & vbCrLf & _
+						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf & _ 
+						"        GOTO %COLUMN%" & vbCrLf & _
+						"      ENDIF")
+					Desc = Desc & "    ENDIF" & vbCrLf 
+					Flag = False		
+					RepeatColumnCode = ""
+					For Each oColumnInternal in oTable.Columns
+					    If oColumnInternal.Code=S2 Then 
+					    	Exit For
+					    End If
+					    If Flag Then
+					    	SetExtendedAttribute oColumnInternal, "Enabled", ExtendedAttribute(oColumnInternal, "Enabled") & S1 & " AND "
+					    End if
+				    	If oColumnInternal.Code=S2 Then Flag=True 			
+					Next
+				End If
+
+			End If
+		Next 
+		
 		Desc = Desc & "BEFORE FILE" & vbCrLf
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then	
