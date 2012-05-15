@@ -307,7 +307,7 @@ For Each oTable In oTables
 		Desc = Desc &  "INCLUDE ""header (labels).chk""" & vbCrLf & vbCrLf
 
 		For Each oColumn in oTable.Columns
-			SetExtendedAttribute oColumnInternal, "Enabled", ""
+			SetExtendedAttribute oColumn, "Enabled", ""
 		Next 
 		
 		For Each oColumn in oTable.Columns
@@ -335,7 +335,7 @@ For Each oTable In oTables
 		Next 
 
 		For Each oColumn in oTable.Columns
-			S = ExtendedAttribute(oColumnInternal, "Enabled")
+			S = ExtendedAttribute(oColumn, "Enabled")
 			If Len(S)>0 Then
 				SetExtendedAttribute oColumnInternal, "Enabled", "NOT (" & Mid(S, 1, Len(S)-5) & ")"
 			End If
