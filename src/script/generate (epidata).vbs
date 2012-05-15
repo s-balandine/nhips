@@ -650,11 +650,11 @@ End Function
 
 Function RepeatColumnCode(oTable, ColumnCodeFrom, ColumnCodeTo, Source)
 	Flag = False		
+	RepeatColumnCode = ""
 	For Each oColumn in oTable.Columns
-	    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
 	    If oColumn.Code=ColumnCodeTo Then Exit For
 	    If Flag Then
-	    	Desc = Desc & Source & oColumn1Name & vbCrLf   
+	    	RepeatColumnCode = RepeatColumnCode & Source & ColumnNameEpi(oColumn) & vbCrLf   
 	    End if
 		If oColumn.Code=ColumnCodeFrom Then Flag=True 			
 	Next
