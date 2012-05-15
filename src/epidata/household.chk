@@ -4,7 +4,7 @@ INCLUDE "header (labels).chk"
 * ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
 * 
 
-HOUSE
+ID
   KEY UNIQUE 1
   NOENTER
 END
