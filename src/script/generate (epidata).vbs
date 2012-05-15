@@ -342,7 +342,7 @@ For Each oTable In oTables
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
 				End If
 				If ExtendedAttribute(oColumn, "Skip") <> "" Then 
-					Desc = Desc & "Skip to """ & ExtendedAttribute(oColumn, "Skip To") & """ if (" & ExtendedAttribute(oColumn, "Skip To") & ")" & vbCrLf
+					Desc = Desc & "* Skip to """ & ExtendedAttribute(oColumn, "Skip To") & """ if (" & ExtendedAttribute(oColumn, "Skip To") & ")" & vbCrLf
 				Else
 				    Desc = Desc & vbCrLf
 				End If
