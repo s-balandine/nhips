@@ -1,65 +1,72 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-BEFORE FILE
-DEFINE RECID #
-
-DEFINE ID #
-
-DEFINE Q1011 #
-
-DEFINE Q1012 #
-
-DEFINE Q1021 #
-
-DEFINE Q1031 #
-
-DEFINE Q1041 #
-
-DEFINE Q1051 #
-
-DEFINE Q1061 #
-
-DEFINE Q1071 #
-
-DEFINE Q1081 #
-
-DEFINE Q1091 #
-
-DEFINE Q1092 #
-
-END
-
-BEFORE RECORD
-RECIDH=0
-
-IDH=0
-
-Q1011H=0
-
-Q1012H=0
-
-Q1021H=0
-
-Q1031H=0
-
-Q1041H=0
-
-Q1051H=0
-
-Q1061H=0
-
-Q1071H=0
-
-Q1081H=0
-
-Q1091H=0
-
-Q1092H=0
-
-END
-
 AFTER RECORD
+    IF (RECID=.) THEN
+      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO RECID
+      EXIT
+    ENDIF
+    IF (ID=.) THEN
+      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO ID
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q1021=.) THEN
+      HELP "Q102.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1021
+      EXIT
+    ENDIF
+    IF (Q1031=.) THEN
+      HELP "Q103.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1031
+      EXIT
+    ENDIF
+    IF (Q1041=.) THEN
+      HELP "Q104.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1041
+      EXIT
+    ENDIF
+    IF (Q1051=.) THEN
+      HELP "Q105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1051
+      EXIT
+    ENDIF
+    IF (Q1061=.) THEN
+      HELP "Q106.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1061
+      EXIT
+    ENDIF
+    IF (Q1071=.) THEN
+      HELP "Q107.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1071
+      EXIT
+    ENDIF
+    IF (Q1081=.) THEN
+      HELP "Q108.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1081
+      EXIT
+    ENDIF
+    IF (Q1091=.) THEN
+      HELP "Q109.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1091
+      EXIT
+    ENDIF
+    IF (Q1092=.) THEN
+      HELP "Q109.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1092
+      EXIT
+    ENDIF
 END
 
 
@@ -84,9 +91,6 @@ END
 
 Q1011
   MUSTENTER
-  AFTER ENTRY
-
-  END
   COMMENT LEGAL "Household" SHOW
   TYPE COMMENT ID
   AFTER ENTRY
@@ -105,9 +109,6 @@ Q1011
 Q1012
   MUSTENTER
   AFTER ENTRY
-
-  END
-  AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
       LET ID= ID + "." + "0" + Q1012
@@ -122,9 +123,6 @@ Q1012
 
 Q1021
   MUSTENTER
-  AFTER ENTRY
-
-  END
 END
 
 * Q103.1 | Relationship to head (HHM_RELATIONSHIP_TO_HEAD) | NUMERIC(2)
@@ -147,9 +145,6 @@ Q1031
   MUSTENTER
   COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q104.1 | Sex of household member (HHM_SEX_OF_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -162,9 +157,6 @@ Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_SEX
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q105.1 | Usual resident (HHM_USUAL_RESIDENT) | NUMERIC(1)
@@ -177,9 +169,6 @@ Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q106.1 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
@@ -192,9 +181,6 @@ Q1061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q107.1 | Age of household members (HHM_AGE_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -206,9 +192,6 @@ Q1071
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE 98
-  AFTER ENTRY
-
-  END
 END
 
 * Q108.1 | Marital Status (HHM_MARITAL_STATUS) | NUMERIC(2)
@@ -223,9 +206,6 @@ Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q109.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
@@ -238,9 +218,6 @@ Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
 END
 
 * Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
@@ -253,9 +230,6 @@ Q1092
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
   GOTO WRITEREC
 END
 
