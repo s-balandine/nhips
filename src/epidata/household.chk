@@ -1,85 +1,97 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-BEFORE FILE
-DEFINE RECID #
-
-DEFINE ID #
-
-DEFINE Q1011 #
-
-DEFINE Q1012 #
-
-DEFINE Q2011 #
-
-DEFINE Q2012 #
-
-DEFINE Q2013 #
-
-DEFINE Q2021 #
-
-DEFINE Q2022 #
-
-DEFINE Q2031 #
-
-DEFINE Q2032 #
-
-DEFINE Q2041 #
-
-DEFINE Q2042 #
-
-DEFINE Q2051 #
-
-DEFINE Q2061 #
-
-DEFINE Q2062 #
-
-DEFINE Q2063 #
-
-DEFINE Q2064 #
-
-END
-
-BEFORE RECORD
-RECIDH=0
-
-IDH=0
-
-Q1011H=0
-
-Q1012H=0
-
-Q2011H=0
-
-Q2012H=0
-
-Q2013H=0
-
-Q2021H=0
-
-Q2022H=0
-
-Q2031H=0
-
-Q2032H=0
-
-Q2041H=0
-
-Q2042H=0
-
-Q2051H=0
-
-Q2061H=0
-
-Q2062H=0
-
-Q2063H=0
-
-Q2064H=0
-
-END
-
 AFTER RECORD
+    IF (RECID=.) THEN
+      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO RECID
+      EXIT
+    ENDIF
+    IF (ID=.) THEN
+      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO ID
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q2011=.) THEN
+      HELP "Q201.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2011
+      EXIT
+    ENDIF
+    IF (Q2012=.) THEN
+      HELP "Q201.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2012
+      EXIT
+    ENDIF
+    IF (Q2013=.) THEN
+      HELP "Q201.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2013
+      EXIT
+    ENDIF
+    IF (Q2021=.) THEN
+      HELP "Q202.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2021
+      EXIT
+    ENDIF
+    IF (Q2022=.) THEN
+      HELP "Q202.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2022
+      EXIT
+    ENDIF
+    IF (Q2031=.) THEN
+      HELP "Q203.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2031
+      EXIT
+    ENDIF
+    IF (Q2032=.) THEN
+      HELP "Q203.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2032
+      EXIT
+    ENDIF
+    IF (Q2041=.) THEN
+      HELP "Q204.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2041
+      EXIT
+    ENDIF
+    IF (Q2042=.) THEN
+      HELP "Q204.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2042
+      EXIT
+    ENDIF
+    IF (Q2051=.) THEN
+      HELP "Q205.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2051
+      EXIT
+    ENDIF
+    IF (Q2061=.) THEN
+      HELP "Q206.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2061
+      EXIT
+    ENDIF
+    IF (Q2062=.) THEN
+      HELP "Q206.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2062
+      EXIT
+    ENDIF
+    IF (Q2063=.) THEN
+      HELP "Q206.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2063
+      EXIT
+    ENDIF
+    IF (Q2064=.) THEN
+      HELP "Q206.4 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2064
+      EXIT
+    ENDIF
 END
 
 
@@ -105,9 +117,6 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-
-  END
-  AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
       LET ID="00" + Q1011
@@ -131,9 +140,6 @@ END
 
 Q1012
   MUSTENTER
-  AFTER ENTRY
-
-  END
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
@@ -162,9 +168,6 @@ Q2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
-  AFTER ENTRY
-
-  END
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
@@ -176,9 +179,6 @@ Q2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
-  AFTER ENTRY
-
-  END
 END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
@@ -193,9 +193,6 @@ Q2013
   MUSTENTER
   RANGE 2012 2014
   MISSINGVALUE 11 12 13 98
-  AFTER ENTRY
-
-  END
 END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
@@ -203,9 +200,6 @@ END
 
 Q2021
   MUSTENTER
-  AFTER ENTRY
-
-  END
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
@@ -214,9 +208,6 @@ END
 
 Q2022
   MUSTENTER
-  AFTER ENTRY
-
-  END
   COMMENT LEGAL "Field Supervisor" SHOW
 END
 
@@ -237,9 +228,6 @@ Q2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-
-  END
   JUMPS RESET
     1 SKIPNEXTFIELD
     2 SKIPNEXTFIELD
@@ -257,9 +245,6 @@ END
 
 Q2032
   MUSTENTER
-  AFTER ENTRY
-
-  END
 END
 
 * Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
@@ -267,9 +252,6 @@ END
 
 Q2041
   MUSTENTER
-  AFTER ENTRY
-
-  END
   COMMENT LEGAL "Office Editor" SHOW
 END
 
@@ -278,9 +260,6 @@ END
 
 Q2042
   MUSTENTER
-  AFTER ENTRY
-
-  END
   COMMENT LEGAL "Office Keyer" SHOW
 END
 
@@ -290,9 +269,6 @@ END
 Q2051
   MUSTENTER
   RANGE 1 5
-  AFTER ENTRY
-
-  END
 END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
@@ -301,9 +277,6 @@ END
 Q2061
   MUSTENTER
   RANGE 0 90
-  AFTER ENTRY
-
-  END
 END
 
 * Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
@@ -312,9 +285,6 @@ END
 Q2062
   MUSTENTER
   RANGE 0 20
-  AFTER ENTRY
-
-  END
 END
 
 * Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
@@ -323,9 +293,6 @@ END
 Q2063
   MUSTENTER
   RANGE 0 20
-  AFTER ENTRY
-
-  END
 END
 
 * Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
@@ -333,9 +300,6 @@ END
 
 Q2064
   MUSTENTER
-  AFTER ENTRY
-
-  END
   GOTO WRITEREC
 END
 
