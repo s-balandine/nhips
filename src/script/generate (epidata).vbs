@@ -307,6 +307,10 @@ For Each oTable In oTables
 		Desc = Desc &  "INCLUDE ""header (labels).chk""" & vbCrLf & vbCrLf
 
 		For Each oColumn in oTable.Columns
+			SetExtendedAttribute oColumnInternal, "Enabled", ""
+		Next 
+		
+		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
 
@@ -327,6 +331,13 @@ For Each oTable In oTables
 					Next
 				End If
 
+			End If
+		Next 
+
+		For Each oColumn in oTable.Columns
+			S = ExtendedAttribute(oColumnInternal, "Enabled")
+			If Len(S)>0 Then
+				SetExtendedAttribute oColumnInternal, "Enabled", Mid(S, 1, Len(S)-5)
 			End If
 		Next 
 		
