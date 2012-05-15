@@ -364,95 +364,99 @@ Q603  Consent                    ({Q606.1})  .................................#
 --------------------------------------------------------------------------------
 Q607  Consent Parent             ({Q608.1})  .................................#  
 --------------------------------------------------------------------------------
-Q609  When were you first tested positive for the AIDS virus?
+Q609  Where would you like us to bring the results of the tests?
 
-                                 ({Q611.1})  Month...........................##  
-                                 ({Q611.2})  Year..........................####  
+                                 ({Q609.1})                    <A               >
 --------------------------------------------------------------------------------
-Q612  Where was the test done?   ({Q612.1})  ................................##  
-                                 ({Q612.2})  Specify...........<A               >
+Q6010  When were you first tested positive for the AIDS virus?
+
+                                 ({Q612.1})  Month...........................##  
+                                 ({Q612.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q613  After you discovered you were infected with the virus that causes AIDS, 
+Q613  Where was the test done?   ({Q613.1})  ................................##  
+                                 ({Q613.2})  Specify...........<A               >
+--------------------------------------------------------------------------------
+Q614  After you discovered you were infected with the virus that causes AIDS, 
       did you ever seek care for the AIDS infection?
-
-                                 ({Q613.1})  .................................#  
---------------------------------------------------------------------------------
-Q614  Did you get some blood sample taken to check the CD4 when you first went 
-      to receive care for the AIDS virus?
 
                                  ({Q614.1})  .................................#  
 --------------------------------------------------------------------------------
-Q615  Did you get the results of this exam?
+Q615  Did you get some blood sample taken to check the CD4 when you first went 
+      to receive care for the AIDS virus?
 
                                  ({Q615.1})  .................................#  
 --------------------------------------------------------------------------------
-Q616  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
-      AIDS virus?
+Q616  Did you get the results of this exam?
 
                                  ({Q616.1})  .................................#  
 --------------------------------------------------------------------------------
-Q617  When did you first start Antiretroviral therapy?
-
-                                 ({Q617.1})  Month...........................##  
-                                 ({Q617.2})  Year..........................####  
---------------------------------------------------------------------------------
-Q618  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
+Q617  Have you ever initiated ART, Antiretroviral Treatment, drugs against the 
       AIDS virus?
 
-                                 ({Q618.1})  .................................#  
+                                 ({Q617.1})  .................................#  
 --------------------------------------------------------------------------------
-Q619  When was your last consultation?
+Q618  When did you first start Antiretroviral therapy?
 
-                                 ({Q619.1})  Month...........................##  
-                                 ({Q619.2})  Year..........................####  
+                                 ({Q618.1})  Month...........................##  
+                                 ({Q618.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q620  Where are you now receiving ART?
+Q619  Are you still receiving ART, Antiretroviral Treatment, drugs against the 
+      AIDS virus?
 
-                                 ({Q620.1})    <A                               >
-                                 ({Q620.2})  Specify...........<A               >
+                                 ({Q619.1})  .................................#  
 --------------------------------------------------------------------------------
-Q621  In which district is this place?
+Q620  When was your last consultation?
 
-                                 ({Q621.1})  .................................#  
+                                 ({Q620.1})  Month...........................##  
+                                 ({Q620.2})  Year..........................####  
+--------------------------------------------------------------------------------
+Q621  Where are you now receiving ART?
+
+                                 ({Q621.1})    <A                               >
                                  ({Q621.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
-Q622  What is the name of this place?
+Q622  In which district is this place?
 
-                                 ({Q622.1})    <A                               >
+                                 ({Q622.1})  .................................#  
+                                 ({Q622.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
-Q623  Are you still followed up for the AIDS infection?
+Q623  What is the name of this place?
 
-                                 ({Q623.1})  .................................#  
+                                 ({Q623.1})    <A                               >
 --------------------------------------------------------------------------------
-Q624  When was your last consultation?
+Q624  Are you still followed up for the AIDS infection?
 
-                                 ({Q624.1})  Month...........................##  
-                                 ({Q624.2})  Year..........................####  
+                                 ({Q624.1})  .................................#  
 --------------------------------------------------------------------------------
-Q625  Where are you now receiving care?
+Q625  When was your last consultation?
 
-                                 ({Q625.1})    <A                               >
-                                 ({Q625.2})  Specify...........<A               >
+                                 ({Q625.1})  Month...........................##  
+                                 ({Q625.2})  Year..........................####  
 --------------------------------------------------------------------------------
-Q626  In which district is this place?
+Q626  Where are you now receiving care?
 
-                                 ({Q626.1})  .................................#  
+                                 ({Q626.1})    <A                               >
                                  ({Q626.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
-Q627  What is the name of this place?
+Q627  In which district is this place?
 
-                                 ({Q627.1})    <A                               >
+                                 ({Q627.1})  .................................#  
+                                 ({Q627.2})  Specify...........<A               >
 --------------------------------------------------------------------------------
-Q628  Why did you stop?          ({Q628.1})  ................................##  
-                                 ({Q628.2})  Specify...........<A               >
+Q628  What is the name of this place?
+
+                                 ({Q628.1})    <A                               >
 --------------------------------------------------------------------------------
-Q629  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
+Q629  Why did you stop?          ({Q629.1})  ................................##  
+                                 ({Q629.2})  Specify...........<A               >
+--------------------------------------------------------------------------------
+Q630  Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS 
       virusn during your pregnancy?
 
-                                 ({Q632.1})  .................................#  
+                                 ({Q633.1})  .................................#  
 --------------------------------------------------------------------------------
-Q633  After delivery, did your child receive ART, Antiretroviral Treatment, to 
+Q634  After delivery, did your child receive ART, Antiretroviral Treatment, to 
       prevent acquiring the AIDS virus?
 
-                                 ({Q633.1})  .................................#  
+                                 ({Q634.1})  .................................#  
 
