@@ -427,26 +427,26 @@ For Each oTable In oTables
 					'Desc = Desc & "  AFTER ENTRY" & vbCrLf	
 					'Desc = Desc & "    INCLUDE " & LCase(oTable.Name) & " (skip).chk" & vbCrLf	
 					'Desc = Desc & "  END" & vbCrLf	
-					'S = ExtendedAttribute(oColumn, "Check")
-					'If Right(S, 3)="END" Then
-					'    S = Mid(S, 1, Len(S)-3)
-				'	'	S = Replace(S, "      ", "  ¤¤¤¤")
-					'	S = Replace(S, "     ", "  ¤¤¤")
-					'	S = Replace(S, "    ", "  ¤¤")
-					'	S = Replace(S, "   ", "  ¤")
-					'	S = Replace(S, "  ", vbCrLf & "    ")
-					'	S = Replace(S, "¤", " ")
-					'	Desc = Desc & "  " & S & vbCrLf & "  END" & vbCrLf 
-					'	For Each oBusinessRule in oColumn.AttachedRules
-					'		If IsObject(oBusinessRule) Then
-					'			'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
-					'		End if
-					'	Next
-					'ElseIf Right(S, 1)="¤" Then
-					' 	Desc = Desc & "  " & Replace(S, "¤", vbCrLf & "  ")
-					'ElseIf Len(S)>0 Then
-					'  Desc = Desc & "  " & S & vbCrLf 
-					'End If
+					S = ExtendedAttribute(oColumn, "Check")
+					If Right(S, 3)="END" Then
+					    S = Mid(S, 1, Len(S)-3)
+				'		S = Replace(S, "      ", "  ¤¤¤¤")
+						S = Replace(S, "     ", "  ¤¤¤")
+						S = Replace(S, "    ", "  ¤¤")
+						S = Replace(S, "   ", "  ¤")
+						S = Replace(S, "  ", vbCrLf & "    ")
+						S = Replace(S, "¤", " ")
+						Desc = Desc & "  " & S & vbCrLf & "  END" & vbCrLf 
+						For Each oBusinessRule in oColumn.AttachedRules
+							If IsObject(oBusinessRule) Then
+								'Desc = Desc & "  " & Replace(oBusinessRule.ServerExpression, "::", "  " & vbCrLf) & vbCrLf 
+							End if
+						Next
+					ElseIf Right(S, 1)="¤" Then
+					 	Desc = Desc & "  " & Replace(S, "¤", vbCrLf & "  ")
+					ElseIf Len(S)>0 Then
+					  Desc = Desc & "  " & S & vbCrLf 
+					End If
 					S1 = ExtendedAttribute(oColumn, "Skip")
 					S2 = ExtendedAttribute(oColumn, "Skip To")
 					If (Len(S1)+Len(S2))>0 Then
