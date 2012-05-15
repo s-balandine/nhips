@@ -317,15 +317,13 @@ For Each oTable In oTables
 				If (Len(S1)+Len(S2))>0 Then
 					Flag = False		
 					For Each oColumnInternal in oTable.Columns
-					    S=ExtendedAttribute(oColumnInternal, "Enabled")
 					    If oColumnInternal.Code=S2 Then 
-					    	SetExtendedAttribute oColumnInternal, "Enabled", Mid(S, 1, Len(S)-5)
 					    	Exit For
 					    End If
 					    If Flag Then
-					    	SetExtendedAttribute oColumnInternal, "Enabled", S & S1 & " AND "
+					    	SetExtendedAttribute oColumnInternal, "Enabled", ExtendedAttribute(oColumnInternal, "Enabled") & S1 & " AND "
 					    End if
-				    	If oColumnInternal.Code=S2 Then Flag=True 			
+				    	If oColumnInternal.Code=oColumn.Code Then Flag=True 			
 					Next
 				End If
 
