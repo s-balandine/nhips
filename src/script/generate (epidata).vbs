@@ -341,22 +341,6 @@ For Each oTable In oTables
 			End If
 		Next 
 		
-		Desc = Desc & "BEFORE FILE" & vbCrLf
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then	
-				Desc = Desc & "DEFINE " & ColumnNameEpi(oColumn) & " #" & vbCrLf & vbCrLf
-			End If
-		Next 
-		Desc = Desc & "END" & vbCrLf & vbCrLf
-
-		Desc = Desc & "BEFORE RECORD" & vbCrLf
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then	
-				Desc = Desc & ColumnNameEpi(oColumn) & "H=0" & vbCrLf & vbCrLf
-			End If
-		Next 
-		Desc = Desc & "END" & vbCrLf & vbCrLf
-		
 		Desc = Desc & "AFTER RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
