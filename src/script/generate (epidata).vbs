@@ -648,3 +648,21 @@ Function Max(V1, V2)
   End If
 End Function
 
+Function RepeatColumnCode(oTable, ColumnCodeFrom, ColumnCodeTo, Source)
+	Flag = False		
+	For Each oColumn in oTable.Columns
+	    oColumn1Name = UCase(Replace(ExtendedAttribute(oColumn1, "NameEpiData"), ".", ""))
+	    If oColumn.Code=ColumnCodeTo Then Exit For
+	    If Flag Then
+	    	Desc = Desc & Source & oColumn1Name & vbCrLf   
+	    End if
+		If oColumn.Code=ColumnCodeFrom Then Flag=True 			
+	Next
+End Function
+
+Function ColumnNameEpi(oColumn)
+	ColumnNameEpi = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+End Function
+
+
+
