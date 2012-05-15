@@ -477,10 +477,10 @@ For Each oTable In oTables
 					If (Len(S1)+Len(S2))>0 Then
 						Desc = Desc & "  AFTER ENTRY" & vbCrLf 
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  HIDE %COLUMN%")
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      HIDE %COLUMN%")
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      CLEAR %COLUMN%")
 						Desc = Desc & "    ELSE" & vbCrLf 
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  UNHIDE %COLUMN%")				
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE %COLUMN%")				
 						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
