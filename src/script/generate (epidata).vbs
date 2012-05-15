@@ -351,6 +351,10 @@ For Each oTable In oTables
 		Next 
 		Desc = Desc & "END" & vbCrLf & vbCrLf
 		
+		Set oFileCheck = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Name) & " (skip).chk", ForWriting, true)
+		oFileCheck.ReadAll Check
+		oFileCheck.Close
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				
@@ -449,9 +453,9 @@ For Each oTable In oTables
 						'	Desc = Desc & "  END" & vbCrLf
 						End If
 					End If
-					'Desc = Desc & "  AFTER ENTRY" & vbCrLf	
-					'Desc = Desc & "    INCLUDE " & LCase(oTable.Name) & " (skip).chk" & vbCrLf	
-					'Desc = Desc & "  END" & vbCrLf	
+					Desc = Desc & "  AFTER ENTRY" & vbCrLf	
+					Desc = Desc & "    INCLUDE " & LCase(oTable.Name) & " (skip).chk" & vbCrLf	
+					Desc = Desc & "  END" & vbCrLf	
 					S = ExtendedAttribute(oColumn, "Check")
 					If Right(S, 3)="END" Then
 					    S = Mid(S, 1, Len(S)-3)
