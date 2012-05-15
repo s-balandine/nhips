@@ -636,15 +636,15 @@ Function Max(V1, V2)
 End Function
 
 Function RepeatColumnCode(Table, ColumnCodeFrom, ColumnCodeTo, Source)
-	Flag = False		
-	RepeatColumnCode = ""
-	For Each Column in Table.Columns
-	    If Column.Code=ColumnCodeTo Then Exit For
-	    If Flag Then
-	    	RepeatColumnCode = RepeatColumnCode & Replace(Source, "%COLUMN%", ColumnNameEpi(Column)) & vbCrLf   
-	    End if
-		If Column.Code=ColumnCodeFrom Then Flag=True 			
-	Next
+	'Flag = False		
+	'RepeatColumnCode = ""
+	'For Each Column in Table.Columns
+	'    If Column.Code=ColumnCodeTo Then Exit For
+	'    If Flag Then
+	'    	RepeatColumnCode = RepeatColumnCode & Replace(Source, "%COLUMN%", ColumnNameEpi(Column)) & vbCrLf   
+	'    End if
+'		If Column.Code=ColumnCodeFrom Then Flag=True 			
+'	Next
 End Function
 
 Function ColumnNameEpi(Column)
