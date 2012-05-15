@@ -7,6 +7,7 @@ END
 
 * RECID | Identifier (HHM_IDENTIFIER) | AUTOINCREMENT
 * 
+
 RECID
   KEY UNIQUE 1
   NOENTER
@@ -14,6 +15,7 @@ END
 
 * ID | Identifier (Natural) (HHM_IDENTIFIER_NATURAL) | VARCHAR(9)
 * 
+
 ID
   KEY UNIQUE 2
   NOENTER
@@ -53,6 +55,7 @@ Q1012
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
+
 Q1021
   MUSTENTER
 END
@@ -72,6 +75,7 @@ END
 *    10: Adopted/foster child
 *    11: Not related
 *    98: Don't know
+
 Q1031
   MUSTENTER
   COMMENT LEGAL USE D_N_RELATIONSHIP_TO_HEAD
@@ -83,6 +87,7 @@ END
 * Allowed Values
 *    1: Male
 *    2: Female
+
 Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_SEX
@@ -94,6 +99,7 @@ END
 * Allowed Values
 *    1: Yes
 *    2: No
+
 Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
@@ -105,6 +111,7 @@ END
 * Allowed Values
 *    1: Yes
 *    2: No
+
 Q1061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
@@ -115,6 +122,7 @@ END
 * How old is person?
 * Allowed Values
 *    98: Don't know
+
 Q1071
   MUSTENTER
   RANGE 0 97
@@ -128,6 +136,7 @@ END
 *    2: Divorced or separated
 *    3: Widowed
 *    4: Never married and never lived together
+
 Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS
@@ -136,10 +145,10 @@ END
 
 * Q109.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
 * person eligiblity > Woman
-
 * Allowed Values
 *    0: Non
 *    1: Oui
+
 Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
@@ -148,10 +157,10 @@ END
 
 * Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
 * person eligiblity > Man
-
 * Allowed Values
 *    0: Non
 *    1: Oui
+
 Q1092
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
