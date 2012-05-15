@@ -319,7 +319,7 @@ For Each oTable In oTables
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      HIDE ") 
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      CLEAR ")
 					Desc = Desc & "    ELSE" & vbCrLf 
-					RepeatColumnCode oTable, oColumn.Code, S2, "      UNHIDE "						
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE ")						
 					Desc = Desc & "    ENDIF" & vbCrLf & vbCrLf 	
 				End If
 
@@ -617,20 +617,20 @@ Function Max(V1, V2)
   End If
 End Function
 
-Function RepeatColumnCode(oTable, ColumnCodeFrom, ColumnCodeTo, Source)
+Function RepeatColumnCode(Table, ColumnCodeFrom, ColumnCodeTo, Source)
 	Flag = False		
 	RepeatColumnCode = ""
-	For Each oColumn in oTable.Columns
-	    If oColumn.Code=ColumnCodeTo Then Exit For
+	For Each Column in Table.Columns
+	    If Column.Code=ColumnCodeTo Then Exit For
 	    If Flag Then
-	    	RepeatColumnCode = RepeatColumnCode & Source & ColumnNameEpi(oColumn) & vbCrLf   
+	    	RepeatColumnCode = RepeatColumnCode & Source & ColumnNameEpi(Column) & vbCrLf   
 	    End if
-		If oColumn.Code=ColumnCodeFrom Then Flag=True 			
+		If Column.Code=ColumnCodeFrom Then Flag=True 			
 	Next
 End Function
 
-Function ColumnNameEpi(oColumn)
-	ColumnNameEpi = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+Function ColumnNameEpi(Column)
+	ColumnNameEpi = UCase(Replace(ExtendedAttribute(Column, "NameEpiData"), ".", ""))
 End Function
 
 
