@@ -466,9 +466,6 @@ For Each oTable In oTables
 						'	Desc = Desc & "  END" & vbCrLf
 						End If
 					End If
-					Desc = Desc & "  AFTER ENTRY" & vbCrLf	
-					Desc = Desc & Check & vbCrLf	
-					Desc = Desc & "  END" & vbCrLf	
 					S = ExtendedAttribute(oColumn, "Check")
 					If Right(S, 3)="END" Then
 					    S = Mid(S, 1, Len(S)-3)
@@ -496,10 +493,8 @@ For Each oTable In oTables
 						Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
 						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      HIDE %COLUMN%")
 						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      CLEAR %COLUMN%")
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      %COLUMN%H=1")
 						Desc = Desc & "    ELSE" & vbCrLf 
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE %COLUMN%")
-						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      %COLUMN%H=0")				
+						Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE %COLUMN%")				
 						Desc = Desc & "    ENDIF" & vbCrLf 	
 						Desc = Desc & "  END" & vbCrLf 	
 					End If
