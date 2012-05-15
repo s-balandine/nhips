@@ -337,7 +337,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			S = ExtendedAttribute(oColumn, "Enabled")
 			If Len(S)>0 Then
-				SetExtendedAttribute oColumn, "Enabled", "NOT (" & Mid(S, 1, Len(S)-5) & ")"
+				SetExtendedAttribute oColumn, "Enabled", "NOT (" & Mid(S, 1, Len(S)-4) & ")"
 			End If
 		Next 
 		
