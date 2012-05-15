@@ -315,23 +315,15 @@ For Each oTable In oTables
 				S1 = ExtendedAttribute(oColumn, "Skip")
 				S2 = ExtendedAttribute(oColumn, "Skip To")
 				If (Len(S1)+Len(S2))>0 Then
-					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
-					Desc = Desc & "    ELSE" & vbCrLf
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, _
-						"      IF (%COLUMN%=.) THEN" & vbCrLf & _
-						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf & _ 
-						"        GOTO %COLUMN%" & vbCrLf & _
-						"      ENDIF")
-					Desc = Desc & "    ENDIF" & vbCrLf 
 					Flag = False		
-					RepeatColumnCode = ""
 					For Each oColumnInternal in oTable.Columns
+					    S=ExtendedAttribute(oColumnInternal, "Enabled")
 					    If oColumnInternal.Code=S2 Then 
+					    	SetExtendedAttribute oColumnInternal, "Enabled", Mid(S, 1, Len(S)-5)
 					    	Exit For
 					    End If
 					    If Flag Then
-					    	SetExtendedAttribute oColumnInternal, "Enabled", ExtendedAttribute(oColumnInternal, "Enabled") & S1 & " AND "
+					    	SetExtendedAttribute oColumnInternal, "Enabled", S & S1 & " AND "
 					    End if
 				    	If oColumnInternal.Code=S2 Then Flag=True 			
 					Next
