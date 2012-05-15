@@ -7,6 +7,7 @@ END
 
 * RECID | Identifier (IVW_IDENTIFIER) | AUTOINCREMENT
 * 
+
 RECID
   KEY UNIQUE 1
   NOENTER
@@ -14,6 +15,7 @@ END
 
 * ID | Identifier (Natural) (IVW_IDENTIFIER_NATURAL) | VARCHAR(35)
 * 
+
 ID
   KEY UNIQUE 2
   NOENTER
