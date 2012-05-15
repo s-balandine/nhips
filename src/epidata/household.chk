@@ -2,16 +2,6 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 AFTER RECORD
-    IF (RECID=.) THEN
-      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO RECID
-      EXIT
-    ENDIF
-    IF (ID=.) THEN
-      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO ID
-      EXIT
-    ENDIF
     IF (Q1011=.) THEN
       HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1011
@@ -94,20 +84,11 @@ AFTER RECORD
     ENDIF
 END
 
-
-* RECID | Identifier (HSH_IDENTIFIER) | AUTOINCREMENT
-* 
-
-RECID
-  KEY UNIQUE 1
-  NOENTER
-END
-
 * ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
 * 
 
 ID
-  KEY UNIQUE 2
+  KEY UNIQUE 1
   NOENTER
 END
 
