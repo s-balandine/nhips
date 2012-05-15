@@ -21,6 +21,7 @@ END
 
 * Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
+
 Q1011
   MUSTENTER
   COMMENT LEGAL "Household" SHOW
@@ -37,6 +38,7 @@ Q1011
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
+
 Q1012
   MUSTENTER
   AFTER ENTRY
@@ -134,6 +136,7 @@ END
 
 * Q109.1 | Is Eligible Woman (HHM_IS_ELIGIBLE_WOMAN) | NUMERIC(2)
 * person eligiblity > Woman
+
 * Allowed Values
 *    0: Non
 *    1: Oui
@@ -145,6 +148,7 @@ END
 
 * Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
 * person eligiblity > Man
+
 * Allowed Values
 *    0: Non
 *    1: Oui
