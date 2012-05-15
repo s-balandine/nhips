@@ -2,16 +2,6 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 AFTER RECORD
-    IF (RECID=.) THEN
-      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO RECID
-      EXIT
-    ENDIF
-    IF (ID=.) THEN
-      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO ID
-      EXIT
-    ENDIF
     IF (S1011=.) THEN
       HELP "S101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S1011
