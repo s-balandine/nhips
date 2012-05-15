@@ -315,12 +315,12 @@ For Each oTable In oTables
 				S1 = ExtendedAttribute(oColumn, "Skip")
 				S2 = ExtendedAttribute(oColumn, "Skip To")
 				If (Len(S1)+Len(S2))>0 Then
-					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      HIDE ") 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      CLEAR ")
-					Desc = Desc & "    ELSE" & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "      UNHIDE ")						
-					Desc = Desc & "    ENDIF" & vbCrLf & vbCrLf 	
+					Desc = Desc & "  IF (" & S2 & "<>.) AND (" & S1 & ") THEN" & vbCrLf 
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "    HIDE ") 
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "    CLEAR ")
+					Desc = Desc & "  ELSE" & vbCrLf 
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "    UNHIDE ")						
+					Desc = Desc & "  ENDIF" & vbCrLf & vbCrLf 	
 				End If
 
 			End If
