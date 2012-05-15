@@ -318,7 +318,7 @@ For Each oTable In oTables
 				S2 = ExtendedAttribute(oColumn, "Skip To")
 				If (Len(S1)+Len(S2))>0 Then
 					Desc = Desc & "  * Skip after " & ColumnName & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  HIDE ") 
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  HIDE %COLUMN%") 
 				End If
 
 			End If
@@ -337,13 +337,13 @@ For Each oTable In oTables
 				S2 = ExtendedAttribute(oColumn, "Skip To")
 				If (Len(S1)+Len(S2))>0 Then
 					Desc = Desc & "    IF (" & S1 & ") THEN" & vbCrLf 
-					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR ")
+					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2, "  CLEAR %COLUMN%")
 					Desc = Desc & "    ELSE" & vbCrLf
 					Desc = Desc & RepeatColumnCode(oTable, oColumn.Code, S2,
-						"IF (%COLUMN%=.) THEN" & vbCrLf 
-						"  HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf 
-						"  GOTO %COLUMN%" & vbCrLf 
-						"ENDIF")
+						"      IF (%COLUMN%=.) THEN" & vbCrLf 
+						"        HELP ""%COLUMN% is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf 
+						"        GOTO %COLUMN%" & vbCrLf 
+						"      ENDIF")
 					Desc = Desc & "    ENDIF" & vbCrLf 
 				End If
 
