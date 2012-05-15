@@ -21,6 +21,7 @@ END
 
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
 * Identifiers > No. Cluster
+
 Q1011
   MUSTENTER
   AFTER ENTRY
@@ -44,6 +45,7 @@ END
 
 * Q101.2 | Household (HSH_HOUSEHOLD) | NUMERIC(2)
 * Identifiers > No. Household
+
 Q1012
   MUSTENTER
   AFTER ENTRY
@@ -67,6 +69,7 @@ END
 
 * Q201.1 | Day (HSH_DAY) | NUMERIC(2)
 * Date > Day of interview
+
 * Allowed Values
 *    98: Don't know
 Q2011
@@ -77,6 +80,7 @@ END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
 * Date > Month of interview
+
 * Allowed Values
 *    98: Don't know
 Q2012
@@ -87,6 +91,7 @@ END
 
 * Q201.3 | Year (HSH_YEAR) | NUMERIC(4)
 * Date > Year of interview
+
 * Allowed Values
 *    11: 2011
 *    12: 2012
@@ -100,6 +105,7 @@ END
 
 * Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
+
 Q2021
   MUSTENTER
   COMMENT LEGAL "Field Interviewer" SHOW
@@ -107,6 +113,7 @@ END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
+
 Q2022
   MUSTENTER
   COMMENT LEGAL "Field Supervisor" SHOW
@@ -114,6 +121,7 @@ END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
 * Result > Result
+
 * Allowed Values
 *    1: Completed
 *    2: No household member at home or no competent respondent at home
@@ -142,12 +150,14 @@ END
 
 * Q203.2 | Result (Other) (HSH_RESULT__OTHER_) | VARCHAR(16)
 * Result > Result (Other)
+
 Q2032
   MUSTENTER
 END
 
 * Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
+
 Q2041
   MUSTENTER
   COMMENT LEGAL "Office Editor" SHOW
@@ -155,6 +165,7 @@ END
 
 * Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
+
 Q2042
   MUSTENTER
   COMMENT LEGAL "Office Keyer" SHOW
@@ -169,6 +180,7 @@ END
 
 * Q206.1 | Number of household members (HSH_NUMBER_OF_HOUSEHOLD_MEMBERS) | NUMERIC(2)
 * Check persons in household > Total persons
+
 Q2061
   MUSTENTER
   RANGE 0 90
@@ -176,6 +188,7 @@ END
 
 * Q206.2 | Number of eligible women in HH (HSH_NUMBER_OF_ELIGIBLE_WOMEN_IN_HH) | NUMERIC(2)
 * Check persons in household > Total eligible women
+
 Q2062
   MUSTENTER
   RANGE 0 20
@@ -183,6 +196,7 @@ END
 
 * Q206.3 | Number of eligible men in HH (HSH_NUMBER_OF_ELIGIBLE_MEN_IN_HH) | NUMERIC(2)
 * Check persons in household > Total eligible men
+
 Q2063
   MUSTENTER
   RANGE 0 20
@@ -190,6 +204,7 @@ END
 
 * Q206.4 | Respondent (HSH_RESPONDENT) | NUMERIC(2)
 * Check persons in household > No. of respondent
+
 Q2064
   MUSTENTER
   GOTO WRITEREC
