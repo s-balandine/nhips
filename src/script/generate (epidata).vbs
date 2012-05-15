@@ -340,9 +340,6 @@ For Each oTable In oTables
 				Desc = Desc & "* " & ExtendedAttribute(oColumn, "Question")
 				If ExtendedAttribute(oColumn, "Label") <> "" Then 
 					Desc = Desc & " > " & ExtendedAttribute(oColumn, "Label") & vbCrLf
-				End If
-				If ExtendedAttribute(oColumn, "Skip") <> "" Then 
-					Desc = Desc & "* Skip to """ & ExtendedAttribute(oColumn, "Skip To") & """ if (" & ExtendedAttribute(oColumn, "Skip To") & ")" & vbCrLf
 				Else
 				    Desc = Desc & vbCrLf
 				End If
@@ -357,6 +354,11 @@ For Each oTable In oTables
 							Desc=Desc & "*    " & Value(0) & ": " & Value(1) & vbCrLf 
 						End If
 					Next
+				End If
+				If ExtendedAttribute(oColumn, "Skip") <> "" Then 
+					Desc = Desc & "* Skip to """ & ExtendedAttribute(oColumn, "Skip To") & """ if (" & ExtendedAttribute(oColumn, "Skip") & ")" & vbCrLf
+				Else
+				    Desc = Desc & vbCrLf
 				End If
 				If oColumn.Primary Then 
 				    Desc = Desc & "RECID" & vbCrLf		
@@ -493,6 +495,7 @@ For Each oTable In oTables
 				Desc = Replace(Desc, oColumn.Code & " ", ColumnName & " ")
 				Desc = Replace(Desc, oColumn.Code & ",", ColumnName & ",")
 				Desc = Replace(Desc, oColumn.Code & "+", ColumnName & "+")
+				Desc = Replace(Desc, oColumn.Code & """", ColumnName & """")
 				Desc = Replace(Desc, oColumn.Code & vbCrLf, ColumnName & vbCrLf) 
 			End If
 		Next
