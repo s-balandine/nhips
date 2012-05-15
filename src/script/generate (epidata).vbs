@@ -351,7 +351,7 @@ For Each oTable In oTables
 		Next 
 		Desc = Desc & "END" & vbCrLf & vbCrLf
 		
-		Set oFileCheck = oFileSystemObject.OpenTextFile(strPathSql & "\" & LCase(oTable.Name) & " (skip).chk", ForWriting, true)
+		Set oFileCheck = oFileSystemObject.OpenTextFile((strPathSql & "\" & LCase(oTable.Name) & " (skip).chk", ForReading)
 		Check = oFileCheck.ReadAll
 		oFileCheck.Close
 		
