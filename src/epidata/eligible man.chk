@@ -21,6 +21,7 @@ END
 
 * S101.1 | Respondent (HEM_RESPONDENT) | NUMERIC(5)
 * Identifiers > No. Household member
+
 S1011
   MUSTENTER
   COMMENT LEGAL "Household Member" SHOW
@@ -29,6 +30,7 @@ S1011
 
 * S201.1 | Day (HEM_DAY) | NUMERIC(2)
 * Date > Day of interview
+
 * Allowed Values
 *    98: Don't know
 S2011
@@ -39,6 +41,7 @@ END
 
 * S201.2 | Month (HEM_M) | NUMERIC(2)
 * Date > Month of interview
+
 * Allowed Values
 *    98: Don't know
 S2012
@@ -49,6 +52,7 @@ END
 
 * S201.3 | Year (HEM_YEAR) | NUMERIC(4)
 * Date > Year of interview
+
 * Allowed Values
 *    11: 2011
 *    12: 2012
@@ -62,6 +66,7 @@ END
 
 * S202.1 | Field Interviewer (HEM_FIELD_INTERVIEWER) | NUMERIC(5)
 * Actors on the field? > Interviewer
+
 S2021
   MUSTENTER
   COMMENT LEGAL "Field Interviewer" SHOW
@@ -69,6 +74,7 @@ END
 
 * S202.2 | Field Supervisor (HEM_FIELD_SUPERVISOR) | NUMERIC(5)
 * Actors on the field? > Supervisor
+
 S2022
   MUSTENTER
   COMMENT LEGAL "Field Supervisor" SHOW
@@ -76,6 +82,7 @@ END
 
 * S203.1 | Result (HEM_RESULT) | NUMERIC(2)
 * Result > Result
+
 * Allowed Values
 *    1: Completed
 *    2: No household member at home or no competent respondent at home
@@ -104,12 +111,14 @@ END
 
 * S203.2 | Result (Other) (HEM_RESULT_OTHER) | VARCHAR(16)
 * Result > Specify
+
 S2032
   MUSTENTER
 END
 
 * S204.1 | Office editor (HEM_OFFICE_EDITOR) | NUMERIC(5)
 * Actors at the office? > Editor
+
 S2041
   MUSTENTER
   COMMENT LEGAL "Office Editor" SHOW
@@ -117,6 +126,7 @@ END
 
 * S204.2 | Keyer (HEM_KEYER) | NUMERIC(5)
 * Actors at the office? > Keyer
+
 S2042
   MUSTENTER
   COMMENT LEGAL "Office Keyer" SHOW
@@ -131,6 +141,7 @@ END
 
 * Q101.1 | Record Time Hour (HEM_RECORD_TIME_H) | NUMERIC(2)
 * Record the time > Hour
+
 Q1011
   MUSTENTER
   RANGE 0 23
@@ -139,6 +150,7 @@ END
 
 * Q101.2 | Record Time Minute (HEM_RECORD_TIME_M) | NUMERIC(2)
 * Record the time > Minute
+
 Q1012
   MUSTENTER
   RANGE 0 59
@@ -146,6 +158,7 @@ END
 
 * Q102.1 | Birth Month (HEM_BIRTH_M) | NUMERIC(2)
 * In what month and year were you born? > Month
+
 * Allowed Values
 *    98: Don't know
 Q1021
@@ -156,6 +169,7 @@ END
 
 * Q102.2 | Birth Year (HEM_BIRTH_YEAR) | NUMERIC(4)
 * In what month and year were you born? > Year
+
 * Allowed Values
 *    9998: Don't know
 Q1022
@@ -166,6 +180,7 @@ END
 
 * Q103.1 | Age (HEM_AGE) | NUMERIC(2)
 * How old were you at your last birthday? > Age in completed year
+
 * Allowed Values
 *    98: Don't know
 Q1031
@@ -234,6 +249,7 @@ END
 
 * Q108.2 | Literacy Language (HEM_LITERACY_LANGUAGE) | VARCHAR(16)
 * Can you read any part of the sentence to me? > Specify
+
 Q1082
   MUSTENTER
 END
@@ -253,6 +269,7 @@ END
 
 * Q1101 | Residence Duration (HEM_RESIDENCE_DRT) | NUMERIC(2)
 * How long have you been living continuously in Ndhiwa?  > Specify
+
 * Allowed Values
 *    98: Always
 *    99: Visitor
@@ -317,12 +334,14 @@ END
 
 * Q1122 | Ethnic Other (HEM_ETHNIC_S) | VARCHAR(16)
 * What is your ethnic group/tribe? > Specify
+
 Q1122
   MUSTENTER
 END
 
 * Q1131 | Outside Night (HEM_OUTSIDE_NIGHT) | NUMERIC(2)
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
+
 Q1131
   MUSTENTER
 END
@@ -569,6 +588,7 @@ END
 
 * Q302.1 | AIDS During Pregnancy (HEW_AIDS_DURING_PGC) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
+
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -581,6 +601,7 @@ END
 
 * Q302.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
+
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -593,6 +614,7 @@ END
 
 * Q302.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
+
 * Allowed Values
 *    1: Yes
 *    2: No
@@ -689,6 +711,7 @@ END
 
 * Q307.2 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
+
 Q3072
   MUSTENTER
   JUMPS RESET
@@ -762,6 +785,7 @@ END
 
 * Q309.2 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
 * Where is that? > Specify
+
 Q3092
   MUSTENTER
 END
@@ -895,6 +919,7 @@ END
 
 * Q5111 | AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
 * When were you first tested positive for the AIDS virus? > Month
+
 * Allowed Values
 *    98: Don't know
 Q5111
@@ -910,6 +935,7 @@ END
 
 * Q5112 | AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
 * When were you first tested positive for the AIDS virus? > Year
+
 * Allowed Values
 *    9998: Don't know
 Q5112
@@ -964,6 +990,7 @@ END
 
 * Q5122 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(16)
 * Where was the test done? > Specify
+
 Q5122
   MUSTENTER
 END
@@ -1034,6 +1061,7 @@ END
 
 * Q5171 | ART Start Month (HEW_ART_START_MONTH) | NUMERIC(2)
 * When did you first start Antiretroviral therapy? > Month
+
 * Allowed Values
 *    98: Don't know
 Q5171
@@ -1044,6 +1072,7 @@ END
 
 * Q5172 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
 * When did you first start Antiretroviral therapy? > Year
+
 * Allowed Values
 *    9998: Don't know
 Q5172
@@ -1068,6 +1097,7 @@ END
 
 * Q5191 | ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
 * When was your last consultation? > Month
+
 * Allowed Values
 *    98: Don't know
 Q5191
@@ -1078,6 +1108,7 @@ END
 
 * Q5192 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
+
 * Allowed Values
 *    9998: Don't know
 Q5192
@@ -1100,6 +1131,7 @@ END
 
 * Q5202 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
 * Where are you now receiving ART? > Specify
+
 Q5202
   MUSTENTER
 END
@@ -1121,6 +1153,7 @@ END
 
 * Q5212 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
+
 Q5212
   MUSTENTER
 END
@@ -1158,6 +1191,7 @@ END
 
 * Q5241 | AIDS Last Consultation Month (HEW_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
 * When was your last consultation? > Month
+
 * Allowed Values
 *    98: Don't know
 Q5241
@@ -1168,6 +1202,7 @@ END
 
 * Q5242 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
+
 * Allowed Values
 *    9998: Don't know
 Q5242
@@ -1190,6 +1225,7 @@ END
 
 * Q5252 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
 * Where are you now receiving care? > Specify
+
 Q5252
   MUSTENTER
 END
@@ -1211,6 +1247,7 @@ END
 
 * Q5262 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
+
 Q5262
   MUSTENTER
 END
@@ -1255,6 +1292,7 @@ END
 
 * Q5282 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
 * Why did you stop? > Specify
+
 Q5282
   MUSTENTER
   AFTER ENTRY
