@@ -1,6 +1,9 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+END
+
 
 * HSH | Identifier (HSH_IDENTIFIER) | VARCHAR(6)
 * 
