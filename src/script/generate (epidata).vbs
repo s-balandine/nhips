@@ -395,16 +395,15 @@ For Each oTable In oTables
 				Else
 				    Desc = Desc & vbCrLf
 				End If
+				ColumnName = ColumnNameEpi(oColumn)
 				If oColumn.Primary Then 
 				    Desc = Desc & ExtendedAttribute(oTable, "Trigram") & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  HIDE" & vbCrLf 
 				ElseIf oColumn.ForeignKey Then
-				    Desc = Desc & ColumnNameEpi(oColumn) & vbCrLf		
-				    Desc = Desc & "  KEY UNIQUE 2" & vbCrLf 
-					Desc = Desc & "  NOENTER" & vbCrLf 			
+				    Desc = Desc & ColumnName & vbCrLf		
+				    Desc = Desc & "  KEY 2" & vbCrLf 		
 				ElseIf Not (oColumn.CannotModify) Then
-					ColumnName = ColumnNameEpi(oColumn)
 					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
 					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
