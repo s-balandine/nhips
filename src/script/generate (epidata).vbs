@@ -167,7 +167,7 @@ For Each oTable In oTables
 						
 				If ColumnQuestion<>ColumnQuestionPrev Then
 				    ColumnQuestionPrev = ColumnQuestion
-				    If ColumnQuestionN > 0 Then 
+				    If ColumnQuestionN > 1 Then 
 				    	Desc = Desc & String(NCharWidth, "-") & vbCrLf
 				    End If
 					If ColumnQuestionN > 10 Then 
