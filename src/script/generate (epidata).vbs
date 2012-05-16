@@ -408,7 +408,7 @@ For Each oTable In oTables
 				    Desc = Desc & ExtendedAttribute(oTable, "Trigram") & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
-				ElseIf oColumn.ForeignKey Then
+				ElseIf (oColumn.ForeignKey) And (ExtendedAttribute(oColumn, "Check")="") Then
 				    Desc = Desc & ColumnName & vbCrLf		
 				    Desc = Desc & "  KEY 2" & vbCrLf
 				    Desc = Desc & "  NOENTER" & vbCrLf 		
