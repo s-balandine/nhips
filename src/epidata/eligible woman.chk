@@ -1,6 +1,9 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+END
+
 
 *  | Identifier (HEW_IDENTIFIER) | AUTOINCREMENT
 * 
@@ -852,7 +855,7 @@ Q2031
   RANGE 1 6
 END
 
-* Q204.1 | Last Baby Name (HEW_LAST_BABY_NAME) | VARCHAR(32)
+* Q204.1 | Last Baby Name (HEW_LAST_BABY_NAME) | VARCHAR(20)
 * What name was given to your last baby? > Name
 
 Q2041
@@ -2840,7 +2843,7 @@ Q5222
   MUSTENTER
 END
 
-* Q5231 | ART Place (HEW_ART_PLACE) | VARCHAR(32)
+* Q5231 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
 * What is the name of this place?
 
 Q5231
@@ -2957,7 +2960,7 @@ Q5272
   MUSTENTER
 END
 
-* Q5281 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(32)
+* Q5281 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
 * What is the name of this place?
 * Skip to "Q5331" if (Q5281<>.)
 Q5281
