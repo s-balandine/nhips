@@ -73,7 +73,7 @@ NCharWidth = 80
 NCharMax = 80
 
 Form="Office Keyer"
-FormAll= False
+FormAll= True
 
 For Each oTable In oTables
     
