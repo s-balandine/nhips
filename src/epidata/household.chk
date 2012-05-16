@@ -4,7 +4,7 @@ INCLUDE "header (labels).chk"
 * ID | Identifier (Natural) (HSH_IDENTIFIER_NATURAL) | VARCHAR(6)
 * 
 
-HOUSE
+ID
   KEY UNIQUE 1
   NOENTER
 END
@@ -17,20 +17,20 @@ Q1011
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET HOUSE="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET HOUSE="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET HOUSE= Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET HOUSE= HOUSE + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET HOUSE= HOUSE + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
-    RELATE HOUSE "household member"
+    RELATE ID "household member"
   END
 END
 
@@ -42,18 +42,18 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1011 < 10 THEN
-      LET HOUSE="00" + Q1011
+      LET ID="00" + Q1011
     ELSE
       IF Q1011 < 100 THEN
-        LET HOUSE="0" + Q1011
+        LET ID="0" + Q1011
       ELSE
-        LET HOUSE= Q1011
+        LET ID= Q1011
       ENDIF
     ENDIF
     IF Q1012 < 10 THEN
-      LET HOUSE= HOUSE + "." + "0" + Q1012
+      LET ID= ID + "." + "0" + Q1012
     ELSE
-      LET HOUSE= HOUSE + "." + Q1012
+      LET ID= ID + "." + Q1012
     ENDIF
   END
 END
