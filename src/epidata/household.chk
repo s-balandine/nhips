@@ -14,30 +14,6 @@ HSH
   NOENTER
 END
 
-*  | Identifier2 (EDT_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
-*  | Identifier3 (SPV_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
-*  | Identifier4 (IVW_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
 * Identifiers > No. Cluster
 
@@ -122,20 +98,20 @@ Q2013
   MISSINGVALUE 11 12 13 98
 END
 
-* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | NUMERIC(5)
+* Q202.1 | Field Interviewer (HSH_FIELD_INTERVIEWER) | VARCHAR(4)
 * Actors on the field? > Interviewer
 
 Q2021
-  MUSTENTER
-  COMMENT LEGAL "Field Interviewer" SHOW
+  KEY 2
+  NOENTER
 END
 
-* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | NUMERIC(5)
+* Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(4)
 * Actors on the field? > Supervisor
 
 Q2022
-  MUSTENTER
-  COMMENT LEGAL "Field Supervisor" SHOW
+  KEY 2
+  NOENTER
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -174,20 +150,20 @@ Q2032
   MUSTENTER
 END
 
-* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | NUMERIC(5)
+* Q204.1 | Office editor (HSH_OFFICE_EDITOR) | VARCHAR(4)
 * Actors at the office? > Editor
 
 Q2041
-  MUSTENTER
-  COMMENT LEGAL "Office Editor" SHOW
+  KEY 2
+  NOENTER
 END
 
-* Q204.2 | Keyer (HSH_KEYER) | NUMERIC(5)
+* Q204.2 | Keyer (HSH_KEYER) | VARCHAR(4)
 * Actors at the office? > Keyer
 
 Q2042
-  MUSTENTER
-  COMMENT LEGAL "Office Keyer" SHOW
+  KEY 2
+  NOENTER
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
