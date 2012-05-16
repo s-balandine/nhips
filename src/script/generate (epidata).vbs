@@ -337,6 +337,15 @@ For Each oTable In oTables
 			End If
 		Next 
 		
+		Desc = Desc & "AFTER RECORD" & vbCrLf
+		For Each oColumn in oTable.Columns
+			S = ExtendedAttribute(oColumn, "Check")
+			If InStr("NOENTER", S) Then
+				Desc = Desc & "  HIDE " & ColumnNameEpi(oColumn) & vbCrLf & vbCrLf
+			End If
+		Next
+		Desc = Desc & "END" & vbCrLf & vbCrLf
+
 		'Desc = Desc & "AFTER RECORD" & vbCrLf
 		'For Each oColumn in oTable.Columns
 		'	If IsObject(oColumn) And Not (oColumn.Computed) Then
