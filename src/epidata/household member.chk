@@ -88,12 +88,12 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET HHM= HSH+ "." + "0" + Q1012
+      LET HHM= HHM+ "." + "0" + Q1012
     ELSE
-      LET HHM= HSH+ "." + Q1012
+      LET HHM= HHM+ "." + Q1012
     ENDIF
   END
-END
+  END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
