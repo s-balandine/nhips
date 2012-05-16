@@ -2,11 +2,11 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
-  HIDE Q5001
+  HIDE FCT
 END
 
 
-* Q500.1 | Identifier (FCT_IDENTIFIER) | VARCHAR(4)
+* FCT | Identifier (FCT_IDENTIFIER) | VARCHAR(4)
 * 
 
 FCT
