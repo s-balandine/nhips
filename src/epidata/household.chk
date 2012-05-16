@@ -95,7 +95,7 @@ END
 
 HSH
   KEY UNIQUE 1
-  HIDE
+  NOENTER
 END
 
 * Q101.1 | Cluster (HSH_CLUSTER) | NUMERIC(3)
@@ -290,5 +290,6 @@ Q2064
   AFTER ENTRY
     RELATE HSH "household member"
   END
+  GOTO WRITEREC
 END
 
