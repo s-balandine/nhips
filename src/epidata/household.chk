@@ -67,7 +67,7 @@ Q2011
   RANGE 1 31
   MISSINGVALUE 98
   AFTER ENTRY
-    RELATE Q1011 "household member"
+    RELATE ID "household member"
   END
 END
 
