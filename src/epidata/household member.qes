@@ -1,6 +1,6 @@
 ================================================================================
 NDHIWA HIV IMPACT IN POPULATION SURVEY
-{H}OUSE{H}OLD {M}EMBER QUESTIONNAIRE                                <A         >
+{H}OUSE{H}OLD {M}EMBER QUESTIONNAIRE                                      <A         >
 ================================================================================
 
 1.IDENTIFICATION
@@ -9,7 +9,7 @@ NDHIWA HIV IMPACT IN POPULATION SURVEY
 Q101  Identifiers                ({HSH})     No. Household...............<A     >
                                  ({Q101.2})  No. Household Member............##  
 --------------------------------------------------------------------------------
-Q102  Name                       ({Q102.1})    <A                               >
+Q102  Name                       ({Q102.1})                <A                   >
 --------------------------------------------------------------------------------
 Q103  What is the relationship of (NAME) to the head of the household?
 
