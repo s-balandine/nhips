@@ -208,7 +208,7 @@ For Each oTable In oTables
 					    Desc = Desc & Space(NCharWidth - NCharMax - 12 - 1)
 					End If
 					
-					If oColumn.ForeignKey Then
+					If oColumn.ForeignKey And (ExtendedAttribute(oColumn, "Check")="") Then
 						ColumnNameEpiData = "({" & ExtendedAttribute(oColumn, "NameEpiData") & "})   " & Space(2)
 					Else
 						If ColumnQuestionN > 10 Then 
