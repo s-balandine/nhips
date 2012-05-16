@@ -2,11 +2,11 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
-  HIDE 
+  HIDE HHM
 END
 
 
-*  | Identifier (HHM_IDENTIFIER) | VARCHAR(9)
+* HHM | Identifier (HHM_IDENTIFIER) | VARCHAR(9)
 * 
 
 HHM
@@ -137,9 +137,6 @@ Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_ELIGIBLE
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-    RELATE HHM "eligible man"
-  END
 END
 
 * Q109.2 | Is Eligible Man (HHM_IS_ELIGIBLE_MAN) | NUMERIC(2)
