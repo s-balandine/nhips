@@ -402,7 +402,7 @@ For Each oTable In oTables
 				If oColumn.Primary Then 
 				    Desc = Desc & ExtendedAttribute(oTable, "Trigram") & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
-					Desc = Desc & "  NOENTER" & vbCrLf 
+					Desc = Desc & "  HIDE" & vbCrLf 
 				ElseIf (oColumn.Name="Identifier (Natural)") Then
 				    Desc = Desc & "ID" & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 2" & vbCrLf 
