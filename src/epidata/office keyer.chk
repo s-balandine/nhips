@@ -2,11 +2,12 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
+  HIDE KEY
   HIDE Q1013
 END
 
 
-*  | Identifier (KEY_IDENTIFIER) | VARCHAR(4)
+* KEY | Identifier (KEY_IDENTIFIER) | VARCHAR(4)
 * 
 
 KEY
