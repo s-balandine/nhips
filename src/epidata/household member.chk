@@ -1,6 +1,9 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+END
+
 
 *  | Identifier (HHM_IDENTIFIER) | VARCHAR(9)
 * 
@@ -33,7 +36,7 @@ Q1012
   END
   END
 
-* Q102.1 | Name (HHM_NM) | VARCHAR(32)
+* Q102.1 | Name (HHM_NM) | VARCHAR(20)
 * Name
 
 Q1021
