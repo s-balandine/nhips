@@ -1,31 +1,33 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-
-* RECID | Identifier (FCT_IDENTIFIER) | AUTOINCREMENT
-* 
-
-FCT
-  KEY UNIQUE 1
-  NOENTER
+BEFORE RECORD
 END
 
-* ID | Identifier (Natural) (FCT_IDENTIFIER_NATURAL) | VARCHAR(35)
+
+* Q500.1 | Identifier (FCT_IDENTIFIER) | VARCHAR(4)
 * 
 
-ID
+Q5001
   MUSTENTER
 END
 
-* Q101.1 | Name (FCT_NAME) | VARCHAR(32)
-* Name
+* Q101.1 | Code (FCT_CODE) | VARCHAR(4)
+* Name > Code
 
 Q1011
   MUSTENTER
   AFTER ENTRY
-     IGNOREMISSING
-     LET ID= Q1011
+    LET FCT= Q1011
   END
+END
+
+* Q101.2 | Name (FCT_NM) | VARCHAR(23)
+* Name > Name
+
+Q1012
+  MUSTENTER
+  KEY 2
   GOTO WRITEREC
 END
 
