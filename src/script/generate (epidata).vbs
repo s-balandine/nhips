@@ -414,7 +414,8 @@ For Each oTable In oTables
 				    Desc = Desc & "  NOENTER" & vbCrLf 		
 				ElseIf Not (oColumn.CannotModify) Then
 					Desc = Desc & ColumnName & vbCrLf		
-					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
+					If     oColumn.Displayed And oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
+					If Not oColumn.Displayed Then Desc = Desc & "  NOENTER" & vbCrLf
 					If oColumn.LowValue<>"" And oColumn.HighValue<>"" Then 
 						Desc = Desc & "  RANGE " & oColumn.LowValue & " " & oColumn.HighValue
 						If oColumn.Domain.ListOfValues <> "" Then
