@@ -211,7 +211,7 @@ For Each oTable In oTables
 					End If
 					
 					If oColumn.ForeignKey Then
-						ColumnNameEpiData = "({" & ExtendedAttribute(oColumn, "NameEpiData") & "})  " & Space(2)
+						ColumnNameEpiData = "({" & ExtendedAttribute(oColumn, "NameEpiData") & "})   " & Space(2)
 					Else
 						If ColumnQuestionN > 10 Then 
 							ColumnNameEpiData = "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
