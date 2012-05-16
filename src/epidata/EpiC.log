@@ -15930,3 +15930,30 @@ Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
 2 records with 8 field imported
+
+COMMAND:        EpiC import TXT "household member.csv" "household member.rec" "qes=household member.qes" delim=; q=none replace ignorefirst
+16/05/2012 15:39:34
+Imports         D:\users\s-balandine\share\nhips\src\epidata\household member.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\household member.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\household member.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 11): 
+Function failed
+
+COMMAND:        EpiC import TXT "eligible woman.csv" "eligible woman.rec" "qes=eligible woman.qes" delim=; q=none replace ignorefirst
+16/05/2012 15:39:34
+Imports         D:\users\s-balandine\share\nhips\src\epidata\eligible woman.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+First line:     Included in import
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
+Error during command import (code 11): Function failed
