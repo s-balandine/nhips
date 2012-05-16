@@ -400,7 +400,7 @@ For Each oTable In oTables
 				    Desc = Desc & vbCrLf
 				End If
 				If oColumn.Primary Then 
-				    Desc = Desc & "RECID" & vbCrLf		
+				    Desc = Desc & ExtendedAttribute(oTable, "Trigram") & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				ElseIf (oColumn.Name="Identifier (Natural)") Then
