@@ -344,32 +344,32 @@ For Each oTable In oTables
 		Next
 		Desc = Desc & "END" & vbCrLf & vbCrLf
 
-		'Desc = Desc & "AFTER RECORD" & vbCrLf
-		'For Each oColumn in oTable.Columns
-		'	If IsObject(oColumn) And Not (oColumn.Computed) Then
-		'		
-		'		WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
-'
-'				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-'				
-'				Desc = Desc & "    IF (" & ColumnName & "=.) "
-'				
-'				S1 = ExtendedAttribute(oColumn, "Enabled")
-'				
-'				If Len(S1)>0 Then
-'					Desc = Desc & "AND " & S1 & " THEN" & vbCrLf
-'				Else
-'				    Desc = Desc & "THEN" & vbCrLf 
-'				End If
-'				
-'				Desc = Desc & "      HELP """ & ExtendedAttribute(oColumn, "NameEpiData") & " is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
-'				Desc = Desc & "      GOTO " & ColumnName & vbCrLf
-'				Desc = Desc & "      EXIT" & vbCrLf
-'				Desc = Desc & "    ENDIF" & vbCrLf 
-'
-'			End If
-'		Next 
-'		Desc = Desc & "END" & vbCrLf & vbCrLf
+		Desc = Desc & "AFTER RECORD" & vbCrLf
+		For Each oColumn in oTable.Columns
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+				
+				WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
+
+				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+				
+				Desc = Desc & "    IF (" & ColumnName & "=.) "
+				
+				S1 = ExtendedAttribute(oColumn, "Enabled")
+				
+				If Len(S1)>0 Then
+					Desc = Desc & "AND " & S1 & " THEN" & vbCrLf
+				Else
+				    Desc = Desc & "THEN" & vbCrLf 
+				End If
+				
+				Desc = Desc & "      HELP """ & ExtendedAttribute(oColumn, "NameEpiData") & " is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
+				Desc = Desc & "      GOTO " & ColumnName & vbCrLf
+				Desc = Desc & "      EXIT" & vbCrLf
+				Desc = Desc & "    ENDIF" & vbCrLf 
+
+			End If
+		Next 
+		Desc = Desc & "END" & vbCrLf & vbCrLf
 				
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
