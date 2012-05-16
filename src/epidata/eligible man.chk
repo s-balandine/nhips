@@ -1,6 +1,9 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+BEFORE RECORD
+END
+
 
 * RECID | Identifier (HEM_IDENTIFIER) | AUTOINCREMENT
 * 
@@ -1203,7 +1206,7 @@ Q5212
   MUSTENTER
 END
 
-* Q5221 | ART Place (HEW_ART_PLACE) | VARCHAR(32)
+* Q5221 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
 * What is the name of this place?
 
 Q5221
@@ -1301,7 +1304,7 @@ Q5262
   MUSTENTER
 END
 
-* Q5271 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(32)
+* Q5271 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
 * What is the name of this place?
 
 Q5271
