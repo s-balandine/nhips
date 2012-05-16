@@ -339,12 +339,8 @@ For Each oTable In oTables
 		
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				S = ExtendedAttribute(oColumn, "Check")
-				If InStr("NOENTER", S)>0 Then
-					ColumnName = oColumn.Code
-					Desc = Desc & "  HIDE " & oColumn.Code & vbCrLf
-				End If
+			If IsObject(oColumn) And Not (oColumn.Displayed) Then
+				Desc = Desc & "  HIDE " & oColumn.Code & vbCrLf
 			End If
 		Next
 		Desc = Desc & "END" & vbCrLf & vbCrLf
