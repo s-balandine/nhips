@@ -399,7 +399,7 @@ For Each oTable In oTables
 				If oColumn.Primary Then 
 				    Desc = Desc & ExtendedAttribute(oTable, "Trigram") & vbCrLf		
 				    Desc = Desc & "  KEY UNIQUE 1" & vbCrLf 
-					Desc = Desc & "  HIDE" & vbCrLf 
+					Desc = Desc & "  NOENTER" & vbCrLf 
 				ElseIf oColumn.ForeignKey Then
 				    Desc = Desc & ColumnName & vbCrLf		
 				    Desc = Desc & "  KEY 2" & vbCrLf 		
