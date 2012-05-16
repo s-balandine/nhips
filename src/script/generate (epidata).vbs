@@ -236,7 +236,7 @@ For Each oTable In oTables
 					If Mid(oColumn.DataType, 1, 7)="VARCHAR" Then
 						If Len(ColumnName)=0 Then
 							Desc = Desc & ColumnNameEpiData & Space(NCharMax - oColumn.Length)
-						ElseIf (Len(ColumnName)+ oColumn.Length + 6) >= NCharMax Then
+						ElseIf (Len(ColumnName)+ oColumn.Length) >= NCharMax Then
 							Desc = Desc & Space(10) & ColumnName & ":" & vbCrLf
 							Desc = Desc & Space(NCharWidth - NCharMax - 13)
 							Desc = Desc & ColumnNameEpiData & Space(Max(NCharMax - oColumn.Length, 0))
