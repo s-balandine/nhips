@@ -12417,4 +12417,414 @@ END
 <a:ModificationDate>1337178227</a:ModificationDate>
 <a:Modifier>S-Balandine</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
-<a:Update
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o33"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o34"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o120"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o404">
+<a:ObjectID>B4FB6630-949A-4F46-8A8F-EBEA34C2DF51</a:ObjectID>
+<a:CreationDate>1337177026</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178227</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o116"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o127"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o12">
+<a:ObjectID>77629C81-62B3-4967-A387-50FEB92E8A92</a:ObjectID>
+<a:Name>Reference_2</a:Name>
+<a:Code>REFERENCE_2</a:Code>
+<a:CreationDate>1335191281</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178166</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o35"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o34"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o143"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o405">
+<a:ObjectID>5A03B353-5941-4140-B0FB-3C41C73EB460</a:ObjectID>
+<a:CreationDate>1337177011</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178166</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o139"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o128"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o15">
+<a:ObjectID>C7D3215C-F0CC-4CC5-AC26-60E59DC7F3D1</a:ObjectID>
+<a:Name>Reference_3</a:Name>
+<a:Code>REFERENCE_3</a:Code>
+<a:CreationDate>1335191283</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178157</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o36"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o34"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o148"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o406">
+<a:ObjectID>7B325D2F-A3EB-4B39-8CE7-79854B346333</a:ObjectID>
+<a:CreationDate>1337177002</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178157</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o144"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o131"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o18">
+<a:ObjectID>1E9F3764-16A7-41C9-ABBA-5875DE9132A7</a:ObjectID>
+<a:Name>Reference_4</a:Name>
+<a:Code>REFERENCE_4</a:Code>
+<a:CreationDate>1335191285</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178174</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o37"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o34"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o153"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o407">
+<a:ObjectID>47575640-D623-4514-80B6-2377DDB04172</a:ObjectID>
+<a:CreationDate>1335191313</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178174</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o149"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o132"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o21">
+<a:ObjectID>D1352DB7-852A-4E01-A945-4AEDDBA8C276</a:ObjectID>
+<a:Name>Reference_5</a:Name>
+<a:Code>REFERENCE_5</a:Code>
+<a:CreationDate>1335191428</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337163279</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o34"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o38"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o138"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o408">
+<a:ObjectID>85848F82-DADF-4BEB-AE7F-C72E4D8DA865</a:ObjectID>
+<a:CreationDate>1337162133</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337163279</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o121"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o155"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o24">
+<a:ObjectID>515CE888-0949-4718-901C-7B35084AE259</a:ObjectID>
+<a:Name>Reference_7</a:Name>
+<a:Code>REFERENCE_7</a:Code>
+<a:CreationDate>1335191517</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177983</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..1</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o38"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o39"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o166"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o409">
+<a:ObjectID>94941BF9-F109-46A4-9540-FE6C44893F93</a:ObjectID>
+<a:CreationDate>1337163041</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177983</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o154"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o168"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o26">
+<a:ObjectID>F9DA426C-AD67-4B83-A5CB-2C9F83EBCBAA</a:ObjectID>
+<a:Name>Reference_8</a:Name>
+<a:Code>REFERENCE_8</a:Code>
+<a:CreationDate>1335457920</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177804</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o33"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o39"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o120"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o410">
+<a:ObjectID>86518950-DE60-441F-A805-088779FAF1FD</a:ObjectID>
+<a:CreationDate>1337177026</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177804</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o116"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o172"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o28">
+<a:ObjectID>6ADFFEB1-29F8-4D13-9F73-2DC791DFB827</a:ObjectID>
+<a:Name>Reference_9</a:Name>
+<a:Code>REFERENCE_9</a:Code>
+<a:CreationDate>1335462039</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177873</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o36"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o39"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o148"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o411">
+<a:ObjectID>6A452CE6-0A3F-44CD-8D4B-871D87AC2E51</a:ObjectID>
+<a:CreationDate>1337177002</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177873</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o144"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o176"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o30">
+<a:ObjectID>AF082FFB-91E6-44E0-A7EC-C38CB7510476</a:ObjectID>
+<a:Name>Reference_10</a:Name>
+<a:Code>REFERENCE_10</a:Code>
+<a:CreationDate>1335462090</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177818</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o35"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o39"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o143"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o412">
+<a:ObjectID>5DAC240E-0ECA-4BE5-A8DF-67EF30431A8B</a:ObjectID>
+<a:CreationDate>1337177011</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177818</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o139"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o173"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o32">
+<a:ObjectID>51A06BF7-01EB-4D65-8BFD-004927C3841A</a:ObjectID>
+<a:Name>Reference_11</a:Name>
+<a:Code>REFERENCE_11</a:Code>
+<a:CreationDate>1335462155</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177860</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o37"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o39"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o153"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o413">
+<a:ObjectID>7F985147-C98F-4D85-A45F-1DB9EF607692</a:ObjectID>
+<a:CreationDate>1335462155</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337177860</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o149"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o177"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+</c:References>
+<c:TestDataProfiles>
+<o:TestDataProfile Id="o81">
+<a:ObjectID>E4173972-E8F7-4BC2-BCC4-D3CC4110D20F</a:ObjectID>
+<a:Name>Name First</a:Name>
+<a:Code>NAMEFIRST</a:Code>
+<a:CreationDate>1336667299</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337178323</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:ProfileClass>1</a:ProfileClass>
+<a:ValuesSource>1</a:ValuesSource>
+<a:TestDataProfile.File>%_HOME%\testdata\fname.csv</a:TestDataProfile.File>
+</o:TestDataProfile>
+<o:TestDataProfile Id="o94">
+<a:ObjectID>31CF557E-D43E-4B2F-BA2B-0DB40493C695</a:ObjectID>
+<a:Name>Name Last</a:Name>
+<a:Code>NAMELAST</a:Code>
+<a:CreationDate>1336667328</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337176284</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:ProfileClass>1</a:ProfileClass>
+<a:ValuesSource>1</a:ValuesSource>
+<a:TestDataProfile.File>%_HOME%\testdata\lname.csv</a:TestDataProfile.File>
+</o:TestDataProfile>
+</c:TestDataProfiles>
+<c:DefaultGroups>
+<o:Group Id="o414">
+<a:ObjectID>B6333367-B14F-4E55-9704-6E4C6741ECBE</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1239126767</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1317140082</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o415">
+<a:ObjectID>2480A7D6-BC54-47B2-AE93-E419F8DB70D3</a:ObjectID>
+<a:Name>Epidata</a:Name>
+<a:Code>Epidata</a:Code>
+<a:CreationDate>1318350478</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1318350478</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
+<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
