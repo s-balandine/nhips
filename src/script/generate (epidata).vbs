@@ -135,7 +135,7 @@ For Each oTable In oTables
 			End If
 		Next
 						
-		Desc = Desc & ExtendedAttribute (oTable, "Title")
+		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
