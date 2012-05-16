@@ -339,9 +339,11 @@ For Each oTable In oTables
 		
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
-			S = ExtendedAttribute(oColumn, "Check")
-			If InStr("NOENTER", S)>0 Then
-				Desc = Desc & "  HIDE " & UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", "")) & vbCrLf
+			If IsObject(oColumn) And Not (oColumn.Computed) Then
+				S = ExtendedAttribute(oColumn, "Check")
+				If InStr("NOENTER", S)>0 Then
+					Desc = Desc & "  HIDE " & UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", "")) & vbCrLf
+				End If
 			End If
 		Next
 		Desc = Desc & "END" & vbCrLf & vbCrLf
