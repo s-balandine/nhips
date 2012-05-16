@@ -342,7 +342,7 @@ For Each oTable In oTables
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
 				S = ExtendedAttribute(oColumn, "Check")
 				If InStr("NOENTER", S)>0 Then
-					ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+					ColumnName = oColumn.Code
 					Desc = Desc & "  HIDE " & oColumn.Code & vbCrLf
 				End If
 			End If
