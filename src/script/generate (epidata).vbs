@@ -131,7 +131,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - oColumn.Length + 3)
-				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
+				Desc = Desc & "({" & ExtendedAttribute(oTable, "Trigram") & "}) <A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
 						
