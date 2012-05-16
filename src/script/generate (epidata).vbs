@@ -72,7 +72,7 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="Household"
+Form="Household Member"
 
 For Each oTable In oTables
     
@@ -133,7 +133,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
-				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 6)
+				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 3)
 				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
