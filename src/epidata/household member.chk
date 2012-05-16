@@ -70,7 +70,7 @@ END
 
 HHM
   KEY UNIQUE 1
-  HIDE
+  NOENTER
 END
 
 * HSH | Household (HHM_HOUSEHOLD) | VARCHAR(6)
@@ -78,6 +78,7 @@ END
 
 HSH
   KEY 2
+  NOENTER
 END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
@@ -88,9 +89,9 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET HHM= HHM+ "." + "0" + Q1012
+      LET HHM= HSH+ "." + "0" + Q1012
     ELSE
-      LET HHM= HHM+ "." + Q1012
+      LET HHM= HSH+ "." + Q1012
     ENDIF
   END
   END
