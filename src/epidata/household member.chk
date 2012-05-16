@@ -12,7 +12,7 @@ END
 * Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
 
-HOUSE
+Q1011
   KEY 2
 END
 
