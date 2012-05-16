@@ -402,7 +402,8 @@ For Each oTable In oTables
 					Desc = Desc & "  NOENTER" & vbCrLf 
 				ElseIf oColumn.ForeignKey Then
 				    Desc = Desc & ColumnName & vbCrLf		
-				    Desc = Desc & "  KEY 2" & vbCrLf 		
+				    Desc = Desc & "  KEY 2" & vbCrLf
+				    Desc = Desc & "  NOENTER" & vbCrLf 		
 				ElseIf Not (oColumn.CannotModify) Then
 					Desc = Desc & ColumnName & vbCrLf		
 					If oColumn.Mandatory Then Desc = Desc & "  MUSTENTER" & vbCrLf
