@@ -337,7 +337,7 @@ For Each oTable In oTables
 			End If
 		Next 
 		
-		Desc = Desc & "AFTER RECORD" & vbCrLf
+		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 			S = ExtendedAttribute(oColumn, "Check")
 			If InStr("NOENTER", S) Then
