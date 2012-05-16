@@ -12979,4 +12979,130 @@ END
 <a:Name>Reference_15</a:Name>
 <a:Code>REFERENCE_15</a:Code>
 <a:CreationDate>1337184682</a:CreationDate>
-<a:Creator>S-Balandine</a:Creator
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337184720</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o44"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o53"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o130"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o426">
+<a:ObjectID>62C898AB-27B3-4422-A5BA-5CABDF27F706</a:ObjectID>
+<a:CreationDate>1337184682</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337184720</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o126"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o323"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o43">
+<a:ObjectID>E1798B3A-5F9F-4906-81E0-D1E511DC864A</a:ObjectID>
+<a:Name>Reference_16</a:Name>
+<a:Code>REFERENCE_16</a:Code>
+<a:CreationDate>1337184687</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337184697</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>2</a:UpdateConstraint>
+<a:DeleteConstraint>2</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o48"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o53"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o163"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o427">
+<a:ObjectID>2E4C9573-7BB2-49D8-B7B2-03A20F09709F</a:ObjectID>
+<a:CreationDate>1337184687</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337184697</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<c:Object1>
+<o:Column Ref="o159"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o328"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+</c:References>
+<c:TestDataProfiles>
+<o:TestDataProfile Id="o91">
+<a:ObjectID>E4173972-E8F7-4BC2-BCC4-D3CC4110D20F</a:ObjectID>
+<a:Name>Name First</a:Name>
+<a:Code>NAMEFIRST</a:Code>
+<a:CreationDate>1336667299</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337184504</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:ProfileClass>1</a:ProfileClass>
+<a:ValuesSource>1</a:ValuesSource>
+<a:TestDataProfile.File>%_HOME%\testdata\fname.csv</a:TestDataProfile.File>
+</o:TestDataProfile>
+<o:TestDataProfile Id="o104">
+<a:ObjectID>31CF557E-D43E-4B2F-BA2B-0DB40493C695</a:ObjectID>
+<a:Name>Name Last</a:Name>
+<a:Code>NAMELAST</a:Code>
+<a:CreationDate>1336667328</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1337176284</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:ProfileClass>1</a:ProfileClass>
+<a:ValuesSource>1</a:ValuesSource>
+<a:TestDataProfile.File>%_HOME%\testdata\lname.csv</a:TestDataProfile.File>
+</o:TestDataProfile>
+</c:TestDataProfiles>
+<c:DefaultGroups>
+<o:Group Id="o428">
+<a:ObjectID>B6333367-B14F-4E55-9704-6E4C6741ECBE</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1239126767</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1317140082</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o429">
+<a:ObjectID>2480A7D6-BC54-47B2-AE93-E419F8DB70D3</a:ObjectID>
+<a:Name>Epidata</a:Name>
+<a:Code>Epidata</a:Code>
+<a:CreationDate>1318350478</a:CreationDate>
+<a:Creator>S-Balandine</a:Creator>
+<a:ModificationDate>1318350478</a:ModificationDate>
+<a:Modifier>S-Balandine</a:Modifier>
+<a:TargetModelURL>file:///D|/users/s-balandine/mes projets/meerkat/branches/v0.1-S.Cohuet/src/share/database/dbms/epidata.xdb</a:TargetModelURL>
+<a:TargetModelID>730F40E3-4603-4773-B59C-4DDF1E1AA4C8</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
