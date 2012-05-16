@@ -3,7 +3,6 @@ INCLUDE "header (labels).chk"
 
 BEFORE RECORD
   HIDE 
-
 END
 
 
