@@ -1,20 +1,94 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-* ID | Identifier (Natural) (HHM_IDENTIFIER_NATURAL) | VARCHAR(9)
+AFTER RECORD
+    IF (=.) THEN
+      HELP " is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO 
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q1021=.) THEN
+      HELP "Q102.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1021
+      EXIT
+    ENDIF
+    IF (Q1031=.) THEN
+      HELP "Q103.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1031
+      EXIT
+    ENDIF
+    IF (Q1041=.) THEN
+      HELP "Q104.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1041
+      EXIT
+    ENDIF
+    IF (Q1051=.) THEN
+      HELP "Q105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1051
+      EXIT
+    ENDIF
+    IF (Q1061=.) THEN
+      HELP "Q106.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1061
+      EXIT
+    ENDIF
+    IF (Q1071=.) THEN
+      HELP "Q107.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1071
+      EXIT
+    ENDIF
+    IF (Q1081=.) THEN
+      HELP "Q108.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1081
+      EXIT
+    ENDIF
+    IF (Q1091=.) THEN
+      HELP "Q109.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1091
+      EXIT
+    ENDIF
+    IF (Q1092=.) THEN
+      HELP "Q109.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1092
+      EXIT
+    ENDIF
+END
+
+
+*  | Identifier (HHM_IDENTIFIER) | VARCHAR(9)
 * 
 
-ID
+HHM
   KEY UNIQUE 1
-  NOENTER
+  HIDE
 END
 
 * Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
 * Identifiers > No. Household
 
 Q1011
-  KEY 2
-END
+  MUSTENTER
+  COMMENT LEGAL "Household" SHOW
+  TYPE COMMENT ID
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1012 < 10 THEN
+      LET HHM= HHM+ "." + "0" + Q1012
+    ELSE
+      LET HHM= HHM+ "." + Q1012
+    ENDIF
+  END
+  END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
@@ -24,12 +98,12 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET ID= ID + "." + "0" + Q1012
+      LET HHM= HHM+ "." + "0" + Q1012
     ELSE
-      LET ID= ID + "." + Q1012
+      LET HHM= HHM+ "." + Q1012
     ENDIF
   END
-END
+  END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
@@ -84,7 +158,7 @@ Q1051
   TYPE COMMENT LEGAL
 END
 
-* Q106.1 | Slept last night (HHM_SLEPT_LAST_NIGHT_) | NUMERIC(1)
+* Q106.1 | Slept last night (HHM_SLEPT_LST_NIGHT) | NUMERIC(1)
 * Did person stay here last night?
 * Allowed Values
 *    1: Yes
