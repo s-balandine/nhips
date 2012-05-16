@@ -127,17 +127,17 @@ For Each oTable In oTables
 		ColumnN = 0
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oModel, "Title")
-
+		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
+		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
-				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - oColumn.Length - 3)
+				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 3)
 				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
-		
-		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf			
+						
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
@@ -160,17 +160,9 @@ For Each oTable In oTables
 					End If
 					Desc = Desc & vbCrLf	
 					If ColumnSectionN=1 Then
-						ColumnSection = "{Id}entification"
-						Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection)
-						For Each oColumn2 in oTable.Columns
-							If IsObject(oColumn2)  And (oColumn2.Name="Identifier (Natural)") Then
-								Desc = Desc & Space(Max(NCharWidth - Len(ColumnSection) - oColumn2.Length - 4, 0))
-								Desc = Desc & "<A" & Space(oColumn2.Length) & ">" & vbCrLf
-							End If
-						Next
-					Else
-					    Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
+						ColumnSection = "Identification"
 					End If 
+					Desc = Desc & ColumnSectionNOffset & "." & UCase(ColumnSection) & vbCrLf
 					Desc = Desc & String(NCharWidth, "=") & vbCrLf
 					ColumnQuestionN = 1
 				End If
