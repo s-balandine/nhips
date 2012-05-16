@@ -23,9 +23,7 @@ Q1011
      IGNOREMISSING
      LET P1=POS(" ", Q1012 )
      IF P1>0 THEN
-       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
-    + COPY( Q1012, POS(" ",
-    Q1012 )+1, 1)
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1) + COPY( Q1012, POS(" ", Q1012 )+1, 1)
     ELSE
        LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
     ENDIF
@@ -42,9 +40,7 @@ Q1012
      IGNOREMISSING
      LET P1=POS(" ", Q1012 )
      IF P1>0 THEN
-       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
-    + COPY( Q1012, POS(" ",
-    Q1012 )+1, 1)
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1) + COPY( Q1012, POS(" ", Q1012 )+1, 1)
     ELSE
        LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
     ENDIF
