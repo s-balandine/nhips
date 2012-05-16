@@ -128,7 +128,7 @@ For Each oTable In oTables
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
 		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oTable, "Title") & vbCrLf
+		Desc = Desc & ExtendedAttribute (oTable, "Title")
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
