@@ -23,14 +23,14 @@ echo . > "facility.rec"
 %epic% rev "eligible woman.qes"     "eligible woman.rec"    AUTO FORCE
 %epic% rev "facility.qes"           "facility.rec"          AUTO FORCE
 
-%epic% import TXT "field interviewer.csv" "field interviewer.rec" qes="field interviewer.qes" delim=; q=none replace ignorefirst
-%epic% import TXT "field supervisor.csv"  "field supervisor.rec"  qes="field supervisor.qes"  delim=; q=none replace ignorefirst
-%epic% import TXT "office editor.csv"     "office editor.rec"     qes="office editor.qes"     delim=; q=none replace ignorefirst
-%epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace ignorefirst
-%epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace ignorefirst
-%epic% import TXT "household.csv"         "household.rec"         qes="household.qes"         delim=; q=none replace ignorefirst
-%epic% import TXT "household member.csv"  "household member.rec"  qes="household member.qes"  delim=; q=none replace ignorefirst
-%epic% import TXT "eligible woman.csv"    "eligible woman.rec"    qes="eligible woman.qes"    delim=; q=none replace ignorefirst
+%epic% import TXT "field interviewer.csv" "field interviewer.rec" qes="field interviewer.qes" delim=; q=none replace
+%epic% import TXT "field supervisor.csv"  "field supervisor.rec"  qes="field supervisor.qes"  delim=; q=none replace
+%epic% import TXT "office editor.csv"     "office editor.rec"     qes="office editor.qes"     delim=; q=none replace
+%epic% import TXT "office keyer.csv"      "office keyer.rec"      qes="office keyer.qes"      delim=; q=none replace
+%epic% import TXT "facility.csv"          "facility.rec"          qes="facility.qes"          delim=; q=none replace
+%epic% import TXT "household.csv"         "household.rec"         qes="household.qes"         delim=; q=none replace
+%epic% import TXT "household member.csv"  "household member.rec"  qes="household member.qes"  delim=; q=none replace
+%epic% import TXT "eligible woman.csv"    "eligible woman.rec"    qes="eligible woman.qes"    delim=; q=none replace
 
 echo start "" %epidata% "field interviewer.rec" > "..\..\build\field interviewer.bat" 
 echo start "" %epidata% "field supervisor.rec" > "..\..\build\field supervisor.bat"
