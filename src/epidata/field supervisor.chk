@@ -1,42 +1,58 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-
-* RECID | Identifier (SPV_IDENTIFIER) | AUTOINCREMENT
-* 
-
-SPV
-  KEY UNIQUE 1
-  NOENTER
+BEFORE RECORD
+  HIDE Q1013
 END
 
-* ID | Identifier (Natural) (SPV_IDENTIFIER_NATURAL) | VARCHAR(35)
+
+* Q200.1 | Identifier (SPV_IDENTIFIER) | VARCHAR(4)
 * 
 
-ID
+Q2001
   MUSTENTER
 END
 
-* Q101.1 | Name First (SPV_NAME_FIRST) | VARCHAR(32)
+* Q101.1 | Name First (SPV_NM_FST) | VARCHAR(20)
 * Name > Firstname
 
 Q1011
   MUSTENTER
   AFTER ENTRY
-     IGNOREMISSING
-     LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
+    IGNOREMISSING
+    LET P1=POS(" ", Q1012 )
+    IF P1>0 THEN
+      LET SPV=COPY( Q1011 , 1, 1) + COPY( Q1012 , 1, 1) + COPY( Q1012 , POS(" ", Q1012 )+1, 1)
+    ELSE
+      LET SPV=COPY( Q1011 , 1, 1) + COPY( Q1012 , 1, 1)
+    ENDIF
+    LET Q1013=COPY( Q1011 , 1, 1) + ". " + Q1012
   END
 END
 
-* Q101.2 | Name Last (SPV_NAME_LAST) | VARCHAR(32)
+* Q101.2 | Name Last (SPV_NM_LST) | VARCHAR(20)
 * Name > Lastname
 
 Q1012
   MUSTENTER
   AFTER ENTRY
-     IGNOREMISSING
-     LET ID=COPY( Q1011 , 1, 1) + ". " + Q1012
+    IGNOREMISSING
+    LET P1=POS(" ", Q1012 )
+    IF P1>0 THEN
+      LET SPV=COPY( Q1011 , 1, 1) + COPY( Q1012 , 1, 1) + COPY( Q1012 , POS(" ", Q1012 )+1, 1)
+    ELSE
+      LET SPV=COPY( Q1011 , 1, 1) + COPY( Q1012 , 1, 1)
+    ENDIF
+    LET Q1013=COPY( Q1011 , 1, 1) + ". " + Q1012
   END
+END
+
+* Q101.3 | Name (SPV_NM) | VARCHAR(23)
+* Name > Name
+
+Q1013
+  NOENTER
+  KEY UNIQUE 2
   GOTO WRITEREC
 END
 
