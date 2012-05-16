@@ -287,6 +287,8 @@ END
 
 Q2064
   MUSTENTER
-  GOTO WRITEREC
+  AFTER ENTRY
+    RELATE HSH "household member"
+  END
 END
 
