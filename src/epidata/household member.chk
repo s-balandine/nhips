@@ -7,9 +7,9 @@ AFTER RECORD
       GOTO 
       EXIT
     ENDIF
-    IF (Q1011=.) THEN
-      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1011
+    IF (HSH=.) THEN
+      HELP "HSH is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO HSH
       EXIT
     ENDIF
     IF (Q1012=.) THEN
@@ -73,10 +73,10 @@ HHM
   HIDE
 END
 
-* Q101.1 | Household (HHM_HOUSEHOLD) | NUMERIC(5)
+* HSH | Household (HHM_HOUSEHOLD) | VARCHAR(6)
 * Identifiers > No. Household
 
-Q1011
+HSH
   MUSTENTER
   COMMENT LEGAL "Household" SHOW
   TYPE COMMENT ID
