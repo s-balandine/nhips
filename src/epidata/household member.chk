@@ -14,6 +14,15 @@ END
 
 Q1011
   KEY 2
+  MUSTENTER
+  AFTER ENTRY
+    IGNOREMISSING
+    IF Q1012 < 10 THEN
+      LET ID= ID + "." + "0" + Q1012
+    ELSE
+      LET ID= ID + "." + Q1012
+    ENDIF
+  END
 END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
