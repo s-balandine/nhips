@@ -76,8 +76,8 @@ Form="Household"
 
 For Each oTable In oTables
     
-	If IsObject(oTable) And (oTable.Name=Form) Then
-	'If IsObject(oTable) Then	
+	'If IsObject(oTable) And (oTable.Name=Form) Then
+	If IsObject(oTable) Then	
 				
 		WScript.Echo "  " & oTable.Name
 		
@@ -85,7 +85,6 @@ For Each oTable In oTables
 		NCharMaxColumnSize = 0
 		
 		SectionFirst = ExtendedAttribute (oTable, "SectionFirst")
-		'SectionFirst = 1
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
@@ -295,8 +294,8 @@ oFile.Write Desc & vbCrLf
 oFile.Close
 
 For Each oTable In oTables
-   If IsObject(oTable) And (oTable.Name=Form) Then
-'If IsObject(oTable) Then		
+   'If IsObject(oTable) And (oTable.Name=Form) Then
+   If IsObject(oTable) Then		
 		WScript.Echo "  " & oTable.Name
 				
 		Desc =         "INCLUDE ""header.chk""" & vbCrLf
@@ -337,32 +336,32 @@ For Each oTable In oTables
 			End If
 		Next 
 		
-		Desc = Desc & "AFTER RECORD" & vbCrLf
-		For Each oColumn in oTable.Columns
-			If IsObject(oColumn) And Not (oColumn.Computed) Then
-				
-				WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
-
-				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
-				
-				Desc = Desc & "    IF (" & ColumnName & "=.) "
-				
-				S1 = ExtendedAttribute(oColumn, "Enabled")
-				
-				If Len(S1)>0 Then
-					Desc = Desc & "AND " & S1 & " THEN" & vbCrLf
-				Else
-				    Desc = Desc & "THEN" & vbCrLf 
-				End If
-				
-				Desc = Desc & "      HELP """ & ExtendedAttribute(oColumn, "NameEpiData") & " is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
-				Desc = Desc & "      GOTO " & ColumnName & vbCrLf
-				Desc = Desc & "      EXIT" & vbCrLf
-				Desc = Desc & "    ENDIF" & vbCrLf 
-
-			End If
-		Next 
-		Desc = Desc & "END" & vbCrLf & vbCrLf
+		'Desc = Desc & "AFTER RECORD" & vbCrLf
+		'For Each oColumn in oTable.Columns
+		'	If IsObject(oColumn) And Not (oColumn.Computed) Then
+		'		
+		'		WScript.Echo "    Attribute: " & oColumn.Name & " (" & oColumn.Code & ")"
+'
+'				ColumnName = UCase(Replace(ExtendedAttribute(oColumn, "NameEpiData"), ".", ""))
+'				
+'				Desc = Desc & "    IF (" & ColumnName & "=.) "
+'				
+'				S1 = ExtendedAttribute(oColumn, "Enabled")
+'				
+'				If Len(S1)>0 Then
+'					Desc = Desc & "AND " & S1 & " THEN" & vbCrLf
+'				Else
+'				    Desc = Desc & "THEN" & vbCrLf 
+'				End If
+'				
+'				Desc = Desc & "      HELP """ & ExtendedAttribute(oColumn, "NameEpiData") & " is mandatory.\n\nPlease check the data"" TYPE=WARNING" & vbCrLf
+'				Desc = Desc & "      GOTO " & ColumnName & vbCrLf
+'				Desc = Desc & "      EXIT" & vbCrLf
+'				Desc = Desc & "    ENDIF" & vbCrLf 
+'
+'			End If
+'		Next 
+'		Desc = Desc & "END" & vbCrLf & vbCrLf
 				
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And Not (oColumn.Computed) Then
