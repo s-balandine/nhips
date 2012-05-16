@@ -2,11 +2,11 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
-  HIDE 
+  HIDE HEW
 END
 
 
-*  | Identifier (HEW_IDENTIFIER) | AUTOINCREMENT
+* HEW | Identifier (HEW_IDENTIFIER) | AUTOINCREMENT
 * 
 
 HEW
@@ -14,35 +14,12 @@ HEW
   NOENTER
 END
 
-*  | Identifier2 (EDT_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
-*  | Identifier3 (SPV_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
-*  | Identifier4 (IVW_IDENTIFIER) | VARCHAR(4)
-* 
-
-
-  KEY 2
-  NOENTER
-END
-
-* HHM | Identifier (Natural) (HEW_IDENTIFIER_NATURAL) | VARCHAR(9)
+* HHM | Respondent (HEW_RESPONDENT) | VARCHAR(9)
 * 
 
 HHM
-  MUSTENTER
+  KEY 2
+  NOENTER
 END
 
 * S101.1 | Day (HEW_DAY) | NUMERIC(2)
@@ -81,7 +58,7 @@ S1013
   TYPE COMMENT LEGAL
 END
 
-* S102.1 | Field Interviewer (HEW_FIELD_INTERVIEWER) | NUMERIC(5)
+* S102.1 | Field Interviewer (HEW_FIELD_INTERVIEWER) | VARCHAR(4)
 * Actors on the field? > Interviewer
 
 S1021
@@ -89,7 +66,7 @@ S1021
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
-* S102.2 | Field Supervisor (HEW_FIELD_SUPERVISOR) | NUMERIC(5)
+* S102.2 | Field Supervisor (HEW_FIELD_SUPERVISOR) | VARCHAR(4)
 * Actors on the field? > Supervisor
 
 S1022
@@ -129,7 +106,7 @@ S1032
   MUSTENTER
 END
 
-* S104.1 | Office editor (HEW_OFFICE_EDITOR) | NUMERIC(5)
+* S104.1 | Office editor (HEW_OFFICE_EDITOR) | VARCHAR(4)
 * Actors at the office? > Editor
 
 S1041
@@ -137,7 +114,7 @@ S1041
   COMMENT LEGAL "Office Editor" SHOW
 END
 
-* S104.2 | Keyer (HEW_KEYER) | NUMERIC(5)
+* S104.2 | Keyer (HEW_KEYER) | VARCHAR(4)
 * Actors at the office? > Keyer
 
 S1042
