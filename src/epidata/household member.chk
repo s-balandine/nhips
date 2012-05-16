@@ -77,18 +77,8 @@ END
 * Identifiers > No. Household
 
 HSH
-  MUSTENTER
-  COMMENT LEGAL "Household" SHOW
-  TYPE COMMENT ID
-  AFTER ENTRY
-    IGNOREMISSING
-    IF Q1012 < 10 THEN
-      LET HHM= HHM+ "." + "0" + Q1012
-    ELSE
-      LET HHM= HHM+ "." + Q1012
-    ENDIF
-  END
-  END
+  KEY 2
+END
 
 * Q101.2 | Household Member (HHM_HOUSEHOLD_MEMBER) | NUMERIC(2)
 * Identifiers > No. Household Member
@@ -98,12 +88,12 @@ Q1012
   AFTER ENTRY
     IGNOREMISSING
     IF Q1012 < 10 THEN
-      LET HHM= HHM+ "." + "0" + Q1012
+      LET HHM= HSH+ "." + "0" + Q1012
     ELSE
-      LET HHM= HHM+ "." + Q1012
+      LET HHM= HSH+ "." + Q1012
     ENDIF
   END
-  END
+END
 
 * Q102.1 | Name (HHM_NM) | VARCHAR(32)
 * Name
