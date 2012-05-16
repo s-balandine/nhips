@@ -5,6 +5,24 @@ BEFORE RECORD
   HIDE FCT
 END
 
+AFTER RECORD
+    IF (FCT=.) THEN
+      HELP "FCT is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO FCT
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+END
+
 
 * FCT | Identifier (FCT_IDENTIFIER) | VARCHAR(4)
 * 
