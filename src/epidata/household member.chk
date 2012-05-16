@@ -5,6 +5,69 @@ BEFORE RECORD
   HIDE HHM
 END
 
+AFTER RECORD
+    IF (HHM=.) THEN
+      HELP "HHM is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO HHM
+      EXIT
+    ENDIF
+    IF (HSH=.) THEN
+      HELP "HSH is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO HSH
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q1021=.) THEN
+      HELP "Q102.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1021
+      EXIT
+    ENDIF
+    IF (Q1031=.) THEN
+      HELP "Q103.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1031
+      EXIT
+    ENDIF
+    IF (Q1041=.) THEN
+      HELP "Q104.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1041
+      EXIT
+    ENDIF
+    IF (Q1051=.) THEN
+      HELP "Q105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1051
+      EXIT
+    ENDIF
+    IF (Q1061=.) THEN
+      HELP "Q106.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1061
+      EXIT
+    ENDIF
+    IF (Q1071=.) THEN
+      HELP "Q107.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1071
+      EXIT
+    ENDIF
+    IF (Q1081=.) THEN
+      HELP "Q108.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1081
+      EXIT
+    ENDIF
+    IF (Q1091=.) THEN
+      HELP "Q109.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1091
+      EXIT
+    ENDIF
+    IF (Q1092=.) THEN
+      HELP "Q109.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1092
+      EXIT
+    ENDIF
+END
+
 
 * HHM | Identifier (HHM_IDENTIFIER) | VARCHAR(9)
 * 

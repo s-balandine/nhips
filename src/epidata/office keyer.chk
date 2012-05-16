@@ -6,6 +6,29 @@ BEFORE RECORD
   HIDE Q1013
 END
 
+AFTER RECORD
+    IF (KEY=.) THEN
+      HELP "KEY is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO KEY
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q1013=.) THEN
+      HELP "Q101.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1013
+      EXIT
+    ENDIF
+END
+
 
 * KEY | Identifier (KEY_IDENTIFIER) | VARCHAR(4)
 * 
