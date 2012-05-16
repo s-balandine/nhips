@@ -210,12 +210,16 @@ For Each oTable In oTables
 					    Desc = Desc & Space(NCharWidth - NCharMax - 12 - 1)
 					End If
 					
-					If ColumnQuestionN > 10 Then 
-						ColumnNameEpiData = "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-						SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
+					If oColumn.ForeignKey Then
+						ColumnNameEpiData = ExtendedAttribute(oColumn, "NameEpiData") & "  "
 					Else
-						ColumnNameEpiData = "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
-						SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN
+						If ColumnQuestionN > 10 Then 
+							ColumnNameEpiData = "({" & ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+							SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & ColumnQuestionN-1 & ColumnN
+						Else
+							ColumnNameEpiData = "({" & ColumnPrefix &  ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN & "})" & Space(2)
+							SetExtendedAttribute oColumn, "NameEpiData", ColumnPrefix & ColumnSectionNOffset & "0" & ColumnQuestionN-1 & "." & ColumnN
+						End If
 					End If
 								
 					If Mid(oColumn.DataType, 1, 7)="NUMERIC" Then
