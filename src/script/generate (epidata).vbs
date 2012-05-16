@@ -132,7 +132,7 @@ For Each oTable In oTables
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
 			    WScript.Echo "    Key Primary: " & oColumn.Name
-				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length - 3)
+				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length)
 				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
