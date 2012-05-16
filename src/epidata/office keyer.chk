@@ -1,6 +1,11 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
+AFTER RECORD
+  HIDE 
+
+END
+
 
 *  | Identifier (KEY_IDENTIFIER) | VARCHAR(4)
 * 
@@ -16,8 +21,15 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-    IGNOREMISSING
-    LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1) + COPY( Q1012, POS(" ", Q1012 )+1, 1)
+     IGNOREMISSING
+     LET P1=POS(" ", Q1012 )
+     IF P1>0 THEN
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
+    + COPY( Q1012, POS(" ",
+    Q1012 )+1, 1)
+    ELSE
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
+    ENDIF
     LET Q1013=COPY( Q1011 , 1, 1) + ". " + Q1012
   END
 END
@@ -25,14 +37,28 @@ END
 * Q101.2 | Name Last (KEY_NAME_LAST) | VARCHAR(20)
 * Name > Lastname
 
+Q1012
+  MUSTENTER
+  AFTER ENTRY
+     IGNOREMISSING
+     LET P1=POS(" ", Q1012 )
+     IF P1>0 THEN
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
+    + COPY( Q1012, POS(" ",
+    Q1012 )+1, 1)
+    ELSE
+       LET KEY=COPY( Q1011 , 1, 1) + COPY( Q1012, 1, 1)
+    ENDIF
+    LET Q1013=COPY( Q1011 , 1, 1) + ". " + Q1012
+  END
+END
+
 * Q101.3 | Name (KEY_NM) | VARCHAR(23)
 * Name > Name
 
 Q1013
   MUSTENTER
-  KEY UNIQUE 2
-  NOENTER
-  HIDE
+  KEY UNIQUE 2NOENTER
   GOTO WRITEREC
 END
 
