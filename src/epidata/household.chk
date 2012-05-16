@@ -102,16 +102,16 @@ END
 * Actors on the field? > Interviewer
 
 Q2021
-  KEY 2
-  NOENTER
+  MUSTENTER
+  COMMENT LEGAL "Field Interviewer" SHOW
 END
 
 * Q202.2 | Field Supervisor (HSH_FIELD_SUPERVISOR) | VARCHAR(4)
 * Actors on the field? > Supervisor
 
 Q2022
-  KEY 2
-  NOENTER
+  MUSTENTER
+  COMMENT LEGAL "Field Supervisor" SHOW
 END
 
 * Q203.1 | Result (HSH_RESULT) | NUMERIC(2)
@@ -154,16 +154,16 @@ END
 * Actors at the office? > Editor
 
 Q2041
-  KEY 2
-  NOENTER
+  MUSTENTER
+  COMMENT LEGAL "Office Editor" SHOW
 END
 
 * Q204.2 | Keyer (HSH_KEYER) | VARCHAR(4)
 * Actors at the office? > Keyer
 
 Q2042
-  KEY 2
-  NOENTER
+  MUSTENTER
+  COMMENT LEGAL "Office Keyer" SHOW
 END
 
 * Q205.1 | Number of visits (HSH_NUMBER_OF_VISITS) | NUMERIC(2)
