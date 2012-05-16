@@ -30,7 +30,6 @@ Q1011
     ELSE
       LET ID= ID + "." + Q1012
     ENDIF
-    RELATE ID "household member"
   END
 END
 
@@ -67,6 +66,9 @@ Q2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    RELATE Q1011 "household member"
+  END
 END
 
 * Q201.2 | Month (HSH_MONTH) | NUMERIC(2)
