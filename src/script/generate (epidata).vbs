@@ -126,17 +126,16 @@ For Each oTable In oTables
 		ColumnN = 0
 		
 		Desc = String(NCharWidth, "=") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oModel, "Title") & vbCrLf
-		Desc = Desc & ExtendedAttribute (oTable, "Title")
+		Desc = Desc & ExtendedAttribute (oModel, "Title")
 		
 		For Each oColumn in oTable.Columns
 			If IsObject(oColumn) And oColumn.Primary Then
-			    WScript.Echo "    Key Primary: " & oColumn.Name
-				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oTable, "Title")) - oColumn.Length + 3)
+				Desc = Desc & Space(NCharWidth - Len(ExtendedAttribute(oModel, "Title")) - oColumn.Length + 3)
 				Desc = Desc & "<A" & Space(oColumn.Length) & ">" & vbCrLf
 			End If
 		Next
 						
+		Desc = Desc & ExtendedAttribute (oTable, "Title")
 		Desc = Desc & String(NCharWidth, "=") & vbCrLf
 
 		For Each oColumn in oTable.Columns
