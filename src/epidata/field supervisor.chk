@@ -2,15 +2,17 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
+  HIDE SPV
   HIDE Q1013
 END
 
 
-* Q200.1 | Identifier (SPV_IDENTIFIER) | VARCHAR(4)
+* SPV | Identifier (SPV_IDENTIFIER) | VARCHAR(4)
 * 
 
-Q2001
-  MUSTENTER
+SPV
+  KEY UNIQUE 1
+  NOENTER
 END
 
 * Q101.1 | Name First (SPV_NM_FST) | VARCHAR(20)

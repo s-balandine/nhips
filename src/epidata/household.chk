@@ -2,6 +2,7 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
+  HIDE HSH
 END
 
 
@@ -10,6 +11,30 @@ END
 
 HSH
   KEY UNIQUE 1
+  NOENTER
+END
+
+*  | Identifier2 (EDT_IDENTIFIER) | VARCHAR(4)
+* 
+
+
+  KEY 2
+  NOENTER
+END
+
+*  | Identifier3 (SPV_IDENTIFIER) | VARCHAR(4)
+* 
+
+
+  KEY 2
+  NOENTER
+END
+
+*  | Identifier4 (IVW_IDENTIFIER) | VARCHAR(4)
+* 
+
+
+  KEY 2
   NOENTER
 END
 
