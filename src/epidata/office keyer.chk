@@ -1,9 +1,8 @@
 INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
-AFTER RECORD
+BEFORE RECORD
   HIDE 
-
 END
 
 
