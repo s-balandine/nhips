@@ -5927,7 +5927,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,16=Day of interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Date
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S201.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S101.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5952,7 +5952,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,18=Month of interview
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Date
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S201.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S101.2
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -5978,7 +5978,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,17=Year of interview
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,4=Date
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S201.3
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S101.3
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6000,7 +6000,7 @@ END
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,20=Actors on the field?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,11=Interviewer
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S202.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S102.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,38=COMMENT LEGAL &quot;Field Interviewer&quot; SHOW
 
 </a:ExtendedAttributesText>
@@ -6024,7 +6024,7 @@ END
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,20=Actors on the field?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,10=Supervisor
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S202.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S102.2
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,37=COMMENT LEGAL &quot;Field Supervisor&quot; SHOW
 
 </a:ExtendedAttributesText>
@@ -6054,7 +6054,7 @@ END
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Result
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Result
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S203.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S103.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,13=HEW_RESULT&lt;&gt;7
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_OFFICE_EDITOR
@@ -6075,12 +6075,12 @@ END
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,374={678F9B54-C6F6-4DE9-9B76-3A73E2521206},H1,1=0
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,375={678F9B54-C6F6-4DE9-9B76-3A73E2521206},H1,1=0
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,6=Result
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S203.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,20=NOT ((HEW_RESULT&lt;&gt;7)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S103.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,21=NOT ((HEW_RESULT&lt;&gt;7))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6102,7 +6102,7 @@ END
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,21=Actors at the office?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Editor
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S204.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S104.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,34=COMMENT LEGAL &quot;Office Editor&quot; SHOW
 
 </a:ExtendedAttributesText>
@@ -6125,7 +6125,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Keyer
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,21=Actors at the office?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S204.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S104.2
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,33=COMMENT LEGAL &quot;Office Keyer&quot; SHOW
 
 </a:ExtendedAttributesText>
@@ -6148,7 +6148,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,216={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Characteristics of Interview
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,22=Total number of visits
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S205.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S105.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6172,7 +6172,7 @@ END
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,15=Record the time
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Hour
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q101.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S201.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 
 </a:ExtendedAttributesText>
@@ -6200,7 +6200,7 @@ END
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,15=Record the time
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Minute
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q101.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S201.2
 
 </a:ExtendedAttributesText>
 <c:AttachedRules>
@@ -6228,7 +6228,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q102.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S202.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6253,7 +6253,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=In what month and year were you born?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q102.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S202.2
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6278,7 +6278,7 @@ END
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,21=Age in completed year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,39=How old were you at your last birthday?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q103.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S203.1
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6302,7 +6302,7 @@ END
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,30=Have you ever attended school?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q104.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S204.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,12=HEW_SCHOOL=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,12=HEW_LITERACY
@@ -6328,11 +6328,11 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,396={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=105
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,397={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=105
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,81=What is the highest level of school you attended: primary, secondary, or higher? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q105.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,19=NOT ((HEW_SCHOOL=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S205.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,20=NOT ((HEW_SCHOOL=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6350,14 +6350,14 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,696={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=106
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,697={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=106
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,67=What is the highest (grade/form/year) you completed at that level? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q106.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S206.1
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,19=NOT ((HEW_SCHOOL=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,20=NOT ((HEW_SCHOOL=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,31=HEW_HIGHEST_EDUCATIONAL_LEVEL&gt;2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,29=HEW_PLACE_OF_RESIDENCE_BEFORE
 
@@ -6384,13 +6384,13 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,678={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q108.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S208.1
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,44=Can you read any part of the sentence to me?
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,39=NOT ((HEW_HIGHEST_EDUCATIONAL_LEVEL&gt;=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,39=NOT ((HEW_HIGHEST_EDUCATIONAL_LEVEL&gt;2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,15=HEW_LITERACY&lt;&gt;4
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,29=HEW_PLACE_OF_RESIDENCE_BEFORE
 
@@ -6411,12 +6411,12 @@ END
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,505={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=108
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q108.2
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S208.2
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,44=Can you read any part of the sentence to me?
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,60=NOT ((HEW_HIGHEST_EDUCATIONAL_LEVEL&gt;=2) OR (HEW_LITERACY&lt;&gt;4)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,60=NOT ((HEW_HIGHEST_EDUCATIONAL_LEVEL&gt;2) OR (HEW_LITERACY&lt;&gt;4))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6440,7 +6440,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,417={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=109
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q109.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=S209.1
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,123=For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
@@ -6466,7 +6466,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,547={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=110.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1101
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2101
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,54=How long have you been living continuously in Ndhiwa? 
@@ -6495,11 +6495,11 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,408={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=111
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1111
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,409={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=111
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2111
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,81=Just before you moved here, did you live in a city a town, or in the countryside?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,32=NOT ((HEW_RESIDENCE_DURATION&gt;97)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,33=NOT ((HEW_RESIDENCE_DURATION&gt;97))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6531,12 +6531,12 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,540={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=112
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1121
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,541={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,3=112
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2121
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=What is your ethnic group/tribe?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,32=NOT ((HEW_RESIDENCE_DURATION&gt;97)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,33=NOT ((HEW_RESIDENCE_DURATION&gt;97))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,14=HEW_ETHNIC&lt;&gt;96
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_OUTSIDE_NIGHT
 
@@ -6556,12 +6556,12 @@ END
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,437={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=112.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1122
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,438={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=112.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2122
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=What is your ethnic group/tribe?
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,52=NOT ((HEW_RESIDENCE_DURATION&gt;97) OR (HEW_ETHNIC&lt;&gt;96)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,53=NOT ((HEW_RESIDENCE_DURATION&gt;97) OR (HEW_ETHNIC&lt;&gt;96))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6580,7 +6580,7 @@ END
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,401={BD689E57-5778-4D0D-978A-AA9439188499},ExtQOrder,5=113.1
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1131
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2131
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,16=Number of nights
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,90=In the last 12 months, how many times have you been away from home for one or more nights?
@@ -6605,7 +6605,7 @@ END
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,462={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,86=In the last 12 months, have you been away from home for more than one month at a time?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2141
 {588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,19=HEW_OUTSIDE_NIGHT=0
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,18=HEW_MARITAL_STATUS
@@ -6629,9 +6629,9 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,514={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,26=NOT ((HEW_OUTSIDE_NIGHT=0)
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1151
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,515={4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,27=NOT ((HEW_OUTSIDE_NIGHT=0))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2151
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Are you currently married or living together with a man as if married?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,11=HEW_UNION&lt;3
@@ -6657,10 +6657,10 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,352={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Have you ever been married or lived together with a man as if married?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1161
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,353={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,70=Have you ever been married or lived together with a man as if married?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2161
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,43=NOT ((HEW_OUTSIDE_NIGHT=0) OR (HEW_UNION&lt;3)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,44=NOT ((HEW_OUTSIDE_NIGHT=0) OR (HEW_UNION&lt;3))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6682,11 +6682,11 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,515={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=What is your marital status now: are you widowed, divorced, or separated?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1171
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,516={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=What is your marital status now: are you widowed, divorced, or separated?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2171
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,18=NOT ((HEW_UNION&lt;3)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,19=NOT ((HEW_UNION&lt;3))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,12=HEW_UNION&lt;&gt;.
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,23=HEW_WORKED_IN_LAST_WEEK
 
@@ -6709,10 +6709,10 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,331={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Is your (husband/partner) living with you now or is he staying elsewhere?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1181
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,332={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Is your (husband/partner) living with you now or is he staying elsewhere?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2181
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,19=NOT ((HEW_UNION&lt;&gt;.)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,20=NOT ((HEW_UNION&lt;&gt;.))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6733,7 +6733,7 @@ END
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,453={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,77=Aside from your own housework, have you done any work in the last seven days?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1191
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2191
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,25=HEW_WORKED_IN_LAST_WEEK=1
@@ -6757,11 +6757,11 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,538={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=In the last seven days, have you done any of these things or any other work?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1201
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,539={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=In the last seven days, have you done any of these things or any other work?
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2201
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,32=NOT ((HEW_WORKED_IN_LAST_WEEK=1)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,33=NOT ((HEW_WORKED_IN_LAST_WEEK=1))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,27=HEW_WORKED_IN_LAST_WEEK_2=1
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_OCCUPATION
 
@@ -6783,11 +6783,11 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,668={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,181=Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,669={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,181=Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1211
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2211
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,65=NOT ((HEW_WORKED_IN_LAST_WEEK=1) OR (HEW_WORKED_IN_LAST_WEEK_2=1)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,66=NOT ((HEW_WORKED_IN_LAST_WEEK=1) OR (HEW_WORKED_IN_LAST_WEEK_2=1))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,18=HEW_WORK_ABSENCE=1
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_OCCUPATION
 
@@ -6809,11 +6809,11 @@ END
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,566={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,45=Have you done any work in the last 12 months?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,567={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,45=Have you done any work in the last 12 months?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1221
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2221
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,89=NOT ((HEW_WORKED_IN_LAST_WEEK=1) OR (HEW_WORKED_IN_LAST_WEEK_2=1) OR (HEW_WORK_ABSENCE=1)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,90=NOT ((HEW_WORKED_IN_LAST_WEEK=1) OR (HEW_WORKED_IN_LAST_WEEK_2=1) OR (HEW_WORK_ABSENCE=1))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,30=HEW_WORKED_IN_LAST_12_MONTHS=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_WORK_TIME
 
@@ -6838,7 +6838,7 @@ END
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,956={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,679=What is your occupation, that is, what kind of work do you mainly do?																									
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,957={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,679=What is your occupation, that is, what kind of work do you mainly do?																									
 																									
 																									
 																									
@@ -6860,8 +6860,8 @@ What is your occupation, that is, what kind of work do you mainly do?
 																									
 																									
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1231
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,37=NOT ((HEW_WORKED_IN_LAST_12_MONTHS=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2231
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,38=NOT ((HEW_WORKED_IN_LAST_12_MONTHS=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6882,10 +6882,10 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,368={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=Do you do this work for a member of your family, for someone else, or are you self-employed?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,369={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=Do you do this work for a member of your family, for someone else, or are you self-employed?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1241
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,37=NOT ((HEW_WORKED_IN_LAST_12_MONTHS=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2241
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,38=NOT ((HEW_WORKED_IN_LAST_12_MONTHS=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6908,7 +6908,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,279={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=Do you usually work throughout the year, or do you work seasonally, or only once in a while?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1251
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2251
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6936,7 +6936,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 																									
 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,22=Responden&#39;t background
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1261
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=S2261
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -6958,7 +6958,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,385={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,26=Have you ever given birth?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q201.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q101.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,17=HEW_BIRTH_GIVEN=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_CHILD_DIED
@@ -6981,11 +6981,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,533={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,91=Do you have any sons or daughters to whom you have given birth who are now living with you?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,534={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,91=Do you have any sons or daughters to whom you have given birth who are now living with you?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q202.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q102.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,24=NOT ((HEW_BIRTH_GIVEN=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,25=NOT ((HEW_BIRTH_GIVEN=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,19=HEW_CHILD_AT_HOME=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_CHILD_ELSEWHERE
 
@@ -7007,11 +7007,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,384={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,43=How many sons and daughters live with you? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,385={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,43=How many sons and daughters live with you? 
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,12=Sons at home
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q203.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,49=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_AT_HOME=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q103.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,50=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_AT_HOME=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7031,11 +7031,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,389={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,43=How many sons and daughters live with you? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,390={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,43=How many sons and daughters live with you? 
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,17=Daughters at home
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q203.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,49=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_AT_HOME=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q103.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,50=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_AT_HOME=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7055,11 +7055,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,542={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,102=Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,543={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,102=Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q204.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q104.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,24=NOT ((HEW_BIRTH_GIVEN=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,25=NOT ((HEW_BIRTH_GIVEN=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,21=HEW_CHILD_ELSEWHERE=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_CHILD_DIED
 
@@ -7081,11 +7081,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,394={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=How many sons are alive but do not live with you?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,395={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=How many sons are alive but do not live with you?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,14=Sons elsewhere
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q205.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,51=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_ELSEWHERE=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q105.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,52=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_ELSEWHERE=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7105,11 +7105,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,399={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=How many sons are alive but do not live with you?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,400={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=How many sons are alive but do not live with you?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,19=Daughters elsewhere
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q205.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,51=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_ELSEWHERE=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q105.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,52=NOT ((HEW_BIRTH_GIVEN=2) OR (HEW_CHILD_ELSEWHERE=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7131,7 +7131,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,439={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,77=Have you ever given birth to a boy or girl who was born alive but later died?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q206.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q106.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,16=HEW_CHILD_DIED=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,18=HEW_TOTAL_CHILDREN
@@ -7154,11 +7154,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,345={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=How many boys and girls have died?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,346={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=How many boys and girls have died?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,9=Boys dead
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q207.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,23=NOT ((HEW_CHILD_DIED=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q107.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,24=NOT ((HEW_CHILD_DIED=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7178,11 +7178,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,347={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=How many boys and girls have died?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,348={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=How many boys and girls have died?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,10=Girls dead
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q207.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,23=NOT ((HEW_CHILD_DIED=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q107.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,24=NOT ((HEW_CHILD_DIED=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7205,7 +7205,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,319={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Total children ever born
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,12=Total births
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q208.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q108.1
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,0=
 
 </a:ExtendedAttributesText>
@@ -7230,7 +7230,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,385={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=In what month and year was your last child born?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Months
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2101
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1101
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 
@@ -7256,7 +7256,7 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,565={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=In what month and year was your last child born?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Years
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=Reproduction
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2102
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q1102
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,0=
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,69=(HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)
@@ -7280,13 +7280,13 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,531={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,532={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=Birth history number of last birth
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,20=Birth history number
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q303.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q203.1
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=2
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7305,11 +7305,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,413={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=What name was given to your last baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,414={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=What name was given to your last baby?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Name
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q304.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q204.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7332,10 +7332,10 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,347={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,25=Is last baby still alive?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,348={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,25=Is last baby still alive?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q305.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q205.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7355,11 +7355,11 @@ What is your occupation, that is, what kind of work do you mainly do?
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,557={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,57=Did you see anyone for antenatal care for this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,558={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,57=Did you see anyone for antenatal care for this pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q306.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q206.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,15=HEW_ATNT_CARE=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_DLVR_WHOM
 
@@ -7385,11 +7385,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,553={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,18=Whom did you see? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,554={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,18=Whom did you see? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q307.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q207.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,97=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,98=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,23=HEW_ATNT_CARE_WHOM&lt;&gt;&quot;X&quot;
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_ATNT_CARE_WHERE
 
@@ -7409,11 +7409,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,447={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,18=Whom did you see? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,448={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,18=Whom did you see? 
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q307.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2) OR (HEW_ATNT_CARE_WHOM&lt;&gt;&quot;X&quot;)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q207.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,127=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2) OR (HEW_ATNT_CARE_WHOM&lt;&gt;&quot;X&quot;))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7440,11 +7440,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,655={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,56=Where did you receive antenatal care for this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,656={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,56=Where did you receive antenatal care for this pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q308.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q208.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,97=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,98=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,88=(HEW_ATNT_CARE_WHERE&lt;&gt;&quot;F&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;H&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;X&quot;)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,18=HEW_ATNT_CARE_WHEN
 
@@ -7464,11 +7464,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,550={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,56=Where did you receive antenatal care for this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,551={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,56=Where did you receive antenatal care for this pregnancy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q308.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,191=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2) OR ((HEW_ATNT_CARE_WHERE&lt;&gt;&quot;F&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;H&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;X&quot;))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q208.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,192=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2) OR ((HEW_ATNT_CARE_WHERE&lt;&gt;&quot;F&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;H&quot;) AND (HEW_ATNT_CARE_WHERE&lt;&gt;&quot;X&quot;)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7489,11 +7489,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,490={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=How many months pregnant were you when you first received antenatal care for this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,491={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,92=How many months pregnant were you when you first received antenatal care for this pregnancy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Months
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q309.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,97=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q209.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,98=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7511,11 +7511,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,474={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,68=How many times did you receive antenatal care during this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,475={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,68=How many times did you receive antenatal care during this pregnancy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,14=Numer of times
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3101
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,97=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2101
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,98=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_ATNT_CARE=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7539,11 +7539,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,549={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,46=Who assisted with the delivery of last baby ? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,550={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,46=Who assisted with the delivery of last baby ? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3111
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2111
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,18=HEW_DLVR_WHOM&lt;&gt;&quot;X&quot;
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_DLVR_WHERE
 
@@ -7563,11 +7563,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,448={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,46=Who assisted with the delivery of last baby ? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,449={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,46=Who assisted with the delivery of last baby ? 
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3112
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,100=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_DLVR_WHOM&lt;&gt;&quot;X&quot;)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2112
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,101=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_DLVR_WHOM&lt;&gt;&quot;X&quot;))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7594,11 +7594,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,564={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Where did you give birth to last baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,565={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Where did you give birth to last baby?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3121
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2121
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,76=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,77=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,43=(HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) 
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,12=HEW_BF_STILL
 
@@ -7618,11 +7618,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,458={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Where did you give birth to last baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,459={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Where did you give birth to last baby?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3122
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2122
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,125=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) )
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) ))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7642,11 +7642,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,483={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,484={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Hours
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3131
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,125=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) )
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2131
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) ))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7667,11 +7667,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,482={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,483={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Days
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3132
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,125=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) )
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2132
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) ))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7689,11 +7689,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,483={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,484={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=How long after last baby was delivered did you stay there?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Weeks
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3133
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,125=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) )
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2133
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) ))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7713,12 +7713,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,643={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=Did you ever breastfeed last baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,644={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,34=Did you ever breastfeed last baby?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2141
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,0=
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,125=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) )
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,126=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR ((HEW_DLVR_WHERE=11) OR (HEW_DLVR_WHERE=12) ))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,21=HEW_LAST_BABY_ALIVE=1
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,12=HEW_AIDS_DSS
 
@@ -7740,12 +7740,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,619={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Are you still breastfeeding last baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,620={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,38=Are you still breastfeeding last baby?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3161
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2161
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,103=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_LAST_BABY_ALIVE=1)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,104=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_LAST_BABY_ALIVE=1))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,14=HEW_BF_STILL=1
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,12=HEW_AIDS_DSS
 
@@ -7765,11 +7765,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,485={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,61=What age was last baby when you stopped to breasfeed him/her?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,486={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,61=What age was last baby when you stopped to breasfeed him/her?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Months
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,28=Pregnancy and postnatal care
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3171
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,123=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_LAST_BABY_ALIVE=1) OR (HEW_BF_STILL=1)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q2171
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,124=NOT (((HEW_PREGNANCY_ENDED_YEAR&lt;=2006) AND (HEW_PREGNANCY_ENDED_YEAR&lt;&gt;9998)) OR (HEW_LAST_BABY_ALIVE=1) OR (HEW_BF_STILL=1))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7791,7 +7791,7 @@ X	Other person: Other</a:ListOfValues>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,406={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,46=Have you ever heard of an illness called AIDS?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q401.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q301.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,14=HEW_AIDS_DSS=1
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
@@ -7815,11 +7815,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,388={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,389={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,17=During pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q402.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,21=NOT ((HEW_AIDS_DSS=1)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q302.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,22=NOT ((HEW_AIDS_DSS=1))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7840,11 +7840,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,387={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,388={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,16=During delivery?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q402.2
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,21=NOT ((HEW_AIDS_DSS=1)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q302.2
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,22=NOT ((HEW_AIDS_DSS=1))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7865,11 +7865,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,388={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,389={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,72=Can the virus that causes AIDS be transmitted from a mother to her baby:
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,17=By breastfeeding?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q402.3
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,21=NOT ((HEW_AIDS_DSS=1)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q302.3
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,22=NOT ((HEW_AIDS_DSS=1))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7890,11 +7890,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,640={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,149=Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,641={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,149=Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q403.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q303.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,21=NOT ((HEW_AIDS_DSS=1)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,22=NOT ((HEW_AIDS_DSS=1))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,78=(HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_AIDS_TEST
 
@@ -7916,12 +7916,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,513={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=Were you offered a test for the AIDS virus as part of your antenatal care?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,514={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=Were you offered a test for the AIDS virus as part of your antenatal care?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q407.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q307.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=3
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,105=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,106=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -7941,11 +7941,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,616={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,99=I don&#39;t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,617={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,99=I don&#39;t want to know the results, but were you tested for the AIDS virus as part of your antenatal 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q408.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q308.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,105=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,106=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,20=HEW_AIDS_ATNT_TEST=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_AIDS_TEST
 
@@ -7967,11 +7967,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,548={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,132=How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,549={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,132=How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,6=Months
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q409.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,131=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q309.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,132=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8007,11 +8007,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,656={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,657={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4101
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3101
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,131=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,132=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,100=(HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;96)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,22=HEW_AIDS_ATNT_TEST_GOT
 
@@ -8031,11 +8031,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,545={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,546={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4102
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,237=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;96))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3102
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,238=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;&gt;96)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8055,11 +8055,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,632={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,633={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4111
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3111
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,131=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,132=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,24=HEW_AIDS_ATNT_TEST_GOT=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,25=HEW_AIDS_PGC_TEST_OFFERED
 
@@ -8082,11 +8082,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,743={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,115=All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,744={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,115=All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4121
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3121
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,161=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_ATNT_TEST_GOT=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,162=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_ATNT_TEST_GOT=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,65=(HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,23=HEW_AIDS_PGC_TEST_AFTER
 
@@ -8108,12 +8108,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,795={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,112=Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,796={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,112=Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3141
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,202=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,203=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,27=HEW_AIDS_PGC_TEST_OFFERED=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_AIDS_TEST_PLACE
 
@@ -8135,11 +8135,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,737={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,86=I don&#39;t want to know the results, but were you tested for the AIDS virus at that time?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,738={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,86=I don&#39;t want to know the results, but were you tested for the AIDS virus at that time?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4151
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3151
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,235=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)) OR (HEW_AIDS_PGC_TEST_OFFERED=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,236=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)) OR (HEW_AIDS_PGC_TEST_OFFERED=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,19=HEW_AIDS_PGC_TEST=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_AIDS_TEST_PLACE
 
@@ -8161,10 +8161,10 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,562={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,563={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4161
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,260=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3161
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,261=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR ((HEW_AIDS_ATNT_TEST_WHERE&gt;=21) AND (HEW_AIDS_ATNT_TEST_WHERE&lt;=36)) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8184,10 +8184,10 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,656={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,94=Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,657={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,94=Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4171
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,189=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3171
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,190=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,25=HEW_AIDS_PGC_TEST_AFTER=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_AIDS_TEST_PLACE
 
@@ -8207,12 +8207,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,756={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,757={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,10=Months ago
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4181
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3181
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,220=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,221=NOT ((HEW_AIDS_DSS=1) OR ((HEW_TOTAL_CHILDREN=0) OR (HEW_PREGNANCY_ENDED_YEAR&lt;2010) OR (HEW_ATNT_CARE=2)) OR (HEW_AIDS_ATNT_TEST=2) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,28=HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 
@@ -8234,11 +8234,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,654={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,98=I don&#39;t want to know the results, but have you ever been tested to see if you have the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,655={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,98=I don&#39;t want to know the results, but have you ever been tested to see if you have the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4191
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3191
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,144=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,145=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,15=HEW_AIDS_TEST=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,19=HEW_AIDS_TEST_PLACE
 
@@ -8258,11 +8258,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,634={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,635={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,50=How many months ago was your most recent HIV test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4201
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3201
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,165=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,166=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,21=HEW_AIDS_TEST_WHEN&lt;&gt;.
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 
@@ -8284,10 +8284,10 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,494={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,495={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,74=I don&#39;t want to know the results, but did you get the results of the test?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4211
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,192=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3211
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,193=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8323,10 +8323,10 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,652={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,653={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4221
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,192=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3221
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,193=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,87=(HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) 
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 
@@ -8346,12 +8346,12 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,787={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,788={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4222
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3222
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,285=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) )
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,286=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_PGC_TEST_OFFERED=2) OR (HEW_AIDS_PGC_TEST=2) OR (HEW_AIDS_PGC_TEST_AFTER=2) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST=2) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,24=HEW_AIDS_TEST_WHERE_S&lt;&gt;.
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 
@@ -8373,11 +8373,11 @@ X	Other person: Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,700={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=Do you know of a place where people can go to get tested for the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,701={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,76=Do you know of a place where people can go to get tested for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4231
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3231
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,205=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,206=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,21=HEW_AIDS_TEST_PLACE=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 
@@ -8411,11 +8411,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,751={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,752={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4241
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3241
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,232=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.) OR (HEW_AIDS_TEST_PLACE=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,233=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.) OR (HEW_AIDS_TEST_PLACE=2))
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,20=HEW_HIV_TEST_CONSENT
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,106=(HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;G&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;M&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;X&quot;)
 
@@ -8435,12 +8435,12 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,691={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,692={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Where is that?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,10=HIV / AIDS
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q4242
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q3242
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,344=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.) OR (HEW_AIDS_TEST_PLACE=2) OR ((HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;G&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;M&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;X&quot;))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,345=NOT ((HEW_AIDS_DSS=1) OR (HEW_AIDS_TEST_MOST_RECENT&lt;&gt;.) OR (HEW_AIDS_TEST_WHEN&lt;&gt;.) OR ((HEW_AIDS_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_TEST_WHERE&lt;&gt;27)  AND (HEW_AIDS_TEST_WHERE&lt;&gt;96) ) OR (HEW_AIDS_TEST_WHERE_S&lt;&gt;.) OR (HEW_AIDS_TEST_PLACE=2) OR ((HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;G&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;M&quot;) AND (HEW_AIDS_TEST_PLACE_WHERE&lt;&gt;&quot;X&quot;)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8462,7 +8462,7 @@ X	Other</a:ListOfValues>
 <a:Mandatory>1</a:Mandatory>
 <a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,464={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=HIV Testing
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,7=Consent
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q504.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q404.1
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=3
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,0=
@@ -8487,12 +8487,12 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,513={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=HIV Testing
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,514={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,11=HIV Testing
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Consent Parent
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q506.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q406.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,29=NOT ((HEW_HIV_TEST_CONSENT=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,30=NOT ((HEW_HIV_TEST_CONSENT=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,33=HEW_HIV_TEST_CONSENT_RESPONDENT=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,3=END
 
@@ -8514,11 +8514,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,388={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,389={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,41=Did you know you were infected with AIDS?
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q601.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q501.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,68=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,69=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8538,10 +8538,10 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,566={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Have you already had a HIV test that showed you were infected with AIDS? 
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,567={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,73=Have you already had a HIV test that showed you were infected with AIDS? 
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q602.1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,68=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q502.1
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,69=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,59=((HEW_AGE&gt;=18) AND (HEW_AGE&lt;=49)) OR (HEW_MARITAL_STATUS=4)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,35=HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT
 
@@ -8563,12 +8563,12 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,604={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,605={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,7=Consent
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q606.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q506.1
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=3
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,133=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (((HEW_AGE&gt;=18) AND (HEW_AGE&lt;=49)) OR (HEW_MARITAL_STATUS=4))
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,134=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (((HEW_AGE&gt;=18) AND (HEW_AGE&lt;=49)) OR (HEW_MARITAL_STATUS=4)))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,26=HEW_BLOOD_SAMPLE_CONSENT=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,3=END
 
@@ -8590,12 +8590,12 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,590={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,591={61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,14=Consent Parent
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q608.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q508.1
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=1
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,100=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,101=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,37=HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,3=END
 
@@ -8615,13 +8615,13 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,713={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=Where would you like us to bring the results of the tests?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,714={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,58=Where would you like us to bring the results of the tests?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,0=
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q609.1
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,6=Q509.1
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,0=
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,143=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,144=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,25=HEW_AIDS_INFECTION_TEST=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,3=END
 
@@ -8644,13 +8644,13 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,618={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,55=When were you first tested positive for the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,619={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,55=When were you first tested positive for the AIDS virus?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6121
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5121
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=2
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8671,11 +8671,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(4)</a:DataType>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,512={383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,513={383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {3D63A0BC-A633-42BF-8713-6B019A31525D},Question,55=When were you first tested positive for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6122
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5122
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8711,11 +8711,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,704={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,705={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6131
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5131
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,112=(HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;96)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_AIDS_CARE
 
@@ -8735,11 +8735,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,602={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,603={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,24=Where was the test done?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6132
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,292=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR ((HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;96))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5132
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,293=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR ((HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;18) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;27) AND (HEW_AIDS_POSITIVE_TEST_WHERE&lt;&gt;96)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8759,11 +8759,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,705={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,118=After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,706={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,118=After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6141
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5141
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,15=HEW_AIDS_CARE=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_ART_PREGNANCY
 
@@ -8786,11 +8786,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,755={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,108=Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,756={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,108=Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6151
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5151
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,195=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,196=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,54=(HEW_AIDS_BLOOD_SAMPLE=2) OR (HEW_AIDS_BLOOD_SAMPLE=8)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_ART_INITIATED
 
@@ -8813,10 +8813,10 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,522={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=Did you get the results of this exam?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,523={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,37=Did you get the results of this exam?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6161
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,255=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR ((HEW_AIDS_BLOOD_SAMPLE=2) OR (HEW_AIDS_BLOOD_SAMPLE=8))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5161
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,256=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR ((HEW_AIDS_BLOOD_SAMPLE=2) OR (HEW_AIDS_BLOOD_SAMPLE=8)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8836,11 +8836,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,693={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,84=Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,694={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,84=Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6171
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5171
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,195=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,196=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,19=HEW_ART_INITIATED=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,15=HEW_AIDS_FOLLOW
 
@@ -8863,11 +8863,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,552={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=When did you first start Antiretroviral therapy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,553={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=When did you first start Antiretroviral therapy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6181
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,220=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5181
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,221=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8888,11 +8888,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(4)</a:DataType>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,551={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=When did you first start Antiretroviral therapy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,552={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,48=When did you first start Antiretroviral therapy?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6182
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,220=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5182
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,221=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8912,11 +8912,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,712={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,84=Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,713={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,84=Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6191
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5191
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,220=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,221=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,15=HEW_ART_STILL=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_AIDS_STOP
 
@@ -8939,11 +8939,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,557={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,558={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6201
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5201
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8964,11 +8964,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(4)</a:DataType>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,556={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,557={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6202
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5202
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -8986,11 +8986,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,736={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=Where are you now receiving ART?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,737={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=Where are you now receiving ART?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6211
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5211
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,67=(HEW_ART_WHERE&lt;&gt;18) AND (HEW_ART_WHERE&lt;&gt;27) AND (HEW_ART_WHERE&lt;&gt;96)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,16=HEW_ART_DISTRICT
 
@@ -9010,11 +9010,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,632={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=Where are you now receiving ART?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,633={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=Where are you now receiving ART?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6212
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,314=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2) OR ((HEW_ART_WHERE&lt;&gt;18) AND (HEW_ART_WHERE&lt;&gt;27) AND (HEW_ART_WHERE&lt;&gt;96))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5212
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,315=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2) OR ((HEW_ART_WHERE&lt;&gt;18) AND (HEW_ART_WHERE&lt;&gt;27) AND (HEW_ART_WHERE&lt;&gt;96)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9035,11 +9035,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,685={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,686={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6221
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5221
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,19=HEW_ART_DISTRICT&lt;&gt;3
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_ART_PLACE
 
@@ -9059,11 +9059,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,584={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,585={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6222
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,266=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2) OR (HEW_ART_DISTRICT&lt;&gt;3)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5222
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,267=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2) OR (HEW_ART_DISTRICT&lt;&gt;3))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9082,11 +9082,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,599={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=What is the name of this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,600={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=What is the name of this place?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6231
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5231
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_INITIATED=2) OR (HEW_ART_STILL=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,0=
 
 </a:ExtendedAttributesText>
@@ -9110,11 +9110,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,675={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=Are you still followed up for the AIDS infection?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,676={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,49=Are you still followed up for the AIDS infection?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6241
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5241
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,216=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,217=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,17=HEW_AIDS_FOLLOW=2
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,13=HEW_AIDS_STOP
 
@@ -9137,11 +9137,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,555={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,556={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,5=Month
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6251
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,239=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5251
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,240=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9162,11 +9162,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(4)</a:DataType>
 <a:Length>4</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,554={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,555={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=When was your last consultation?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,4=Year
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6252
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,239=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5252
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,240=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9184,11 +9184,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,739={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,33=Where are you now receiving care?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,740={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,33=Where are you now receiving care?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6261
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5261
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,239=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,240=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,70=(HEW_AIDS_WHERE&lt;&gt;18) AND (HEW_AIDS_WHERE&lt;&gt;27) AND (HEW_AIDS_WHERE&lt;&gt;96)
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_AIDS_DISTRICT
 
@@ -9208,11 +9208,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,634={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,33=Where are you now receiving care?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,635={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,33=Where are you now receiving care?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6262
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,315=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2) OR ((HEW_AIDS_WHERE&lt;&gt;18) AND (HEW_AIDS_WHERE&lt;&gt;27) AND (HEW_AIDS_WHERE&lt;&gt;96))
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5262
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,316=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2) OR ((HEW_AIDS_WHERE&lt;&gt;18) AND (HEW_AIDS_WHERE&lt;&gt;27) AND (HEW_AIDS_WHERE&lt;&gt;96)))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9233,11 +9233,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,685={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,686={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6271
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5271
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,239=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,240=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,20=HEW_AIDS_DISTRICT&lt;&gt;3
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,14=HEW_AIDS_PLACE
 
@@ -9257,11 +9257,11 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,583={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,584={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,32=In which district is this place?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6272
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,265=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2) OR (HEW_AIDS_DISTRICT&lt;&gt;3)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5272
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,266=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2) OR (HEW_AIDS_DISTRICT&lt;&gt;3))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9280,10 +9280,10 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(32)</a:DataType>
 <a:Length>32</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,635={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=What is the name of this place?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,636={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,31=What is the name of this place?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6281
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,239=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5281
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,240=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_ART_STILL=2) OR (HEW_AIDS_FOLLOW=2))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,17=HEW_AIDS_PLACE&lt;&gt;.
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_ART_PREGNANCY
 
@@ -9318,11 +9318,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(2)</a:DataType>
 <a:Length>2</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,649={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,17=Why did you stop?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,650={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,17=Why did you stop?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6291
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5291
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,218=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_AIDS_PLACE&lt;&gt;.)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,219=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_AIDS_PLACE&lt;&gt;.))
 {5119DC04-8890-4E1A-AAF8-0680C13A8C6B},Skip,17=HEW_AIDS_STOP&lt;&gt;96
 {CDA4DC2B-166D-4754-8476-82CD56A40A74},Skip To,17=HEW_ART_PREGNANCY
 
@@ -9342,12 +9342,12 @@ X	Other</a:ListOfValues>
 <a:DataType>VARCHAR(16)</a:DataType>
 <a:Length>16</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,593={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,17=Why did you stop?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,594={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,17=Why did you stop?
 {383F7591-F09F-40CF-9180-821C29B4DB8D},Label,7=Specify
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6292
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5292
 {4C59F958-8BD6-4D50-8EAB-2FB71D14C800},Check,0=
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,241=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_AIDS_PLACE&lt;&gt;.) OR (HEW_AIDS_STOP&lt;&gt;96)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,242=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2) OR (HEW_AIDS_CARE=2) OR (HEW_AIDS_PLACE&lt;&gt;.) OR (HEW_AIDS_STOP&lt;&gt;96))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9367,11 +9367,11 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,562={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,101=Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,563={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,101=Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6331
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5331
 {662982C0-DB3D-4E5E-ACC2-06443A94BEE9},CheckOffset,1=3
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
@@ -9391,10 +9391,10 @@ X	Other</a:ListOfValues>
 <a:DataType>NUMERIC(1)</a:DataType>
 <a:Length>1</a:Length>
 <a:Mandatory>1</a:Mandatory>
-<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,511={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,106=After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
+<a:ExtendedAttributesText>{730F40E3-4603-4773-B59C-4DDF1E1AA4C8},Epidata,512={3D63A0BC-A633-42BF-8713-6B019A31525D},Question,106=After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
 {61228DBB-DF49-4DFE-8A39-2B8E39D065B9},Section,12=ART Coverage
-{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q6341
-{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,174=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2)
+{7CEA958C-BDB7-4F15-80A2-D9C872615A36},NameEpiData,5=Q5341
+{588A9546-4FCF-4BFD-AD96-3D1EE0AF8923},Enabled,175=NOT ((HEW_HIV_TEST_CONSENT=2) OR (HEW_HIV_TEST_CONSENT_RESPONDENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT=2) OR (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT=2) OR (HEW_AIDS_INFECTION_TEST=2))
 
 </a:ExtendedAttributesText>
 <c:Domain>
