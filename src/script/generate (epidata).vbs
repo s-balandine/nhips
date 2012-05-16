@@ -340,7 +340,7 @@ For Each oTable In oTables
 		Desc = Desc & "BEFORE RECORD" & vbCrLf
 		For Each oColumn in oTable.Columns
 			S = ExtendedAttribute(oColumn, "Check")
-			If InStr("NOENTER", S) Then
+			If InStr("NOENTER", S)>0 Then
 				Desc = Desc & "  HIDE " & ColumnNameEpi(oColumn) & vbCrLf & vbCrLf
 			End If
 		Next
