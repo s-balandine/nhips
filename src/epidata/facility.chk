@@ -2,14 +2,16 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
+  HIDE Q5001
 END
 
 
 * Q500.1 | Identifier (FCT_IDENTIFIER) | VARCHAR(4)
 * 
 
-Q5001
-  MUSTENTER
+FCT
+  KEY UNIQUE 1
+  NOENTER
 END
 
 * Q101.1 | Code (FCT_CODE) | VARCHAR(4)
