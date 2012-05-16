@@ -2,15 +2,17 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
+  HIDE IVW
   HIDE Q1013
 END
 
 
-* 00.1 | Identifier (IVW_IDENTIFIER) | VARCHAR(4)
+* IVW | Identifier (IVW_IDENTIFIER) | VARCHAR(4)
 * 
 
-001
-  MUSTENTER
+IVW
+  KEY UNIQUE 1
+  NOENTER
 END
 
 * Q101.1 | Name First (IVW_NM_FST) | VARCHAR(20)
