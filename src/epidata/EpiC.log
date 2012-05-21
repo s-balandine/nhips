@@ -20239,4 +20239,18 @@ Delimiter:      ;
 Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
+Error during command import (code 11): 
+Function failed
+
+COMMAND:        EpiC import TXT "eligible woman.csv" "eligible woman.rec" "qes=eligible woman.qes" delim=; q=none replace
+21/05/2012 17:00:08
+Imports         D:\users\s-balandine\share\nhips\src\epidata\eligible woman.csv
+to              D:\users\s-balandine\share\nhips\src\epidata\eligible woman.rec
+Filetype:       Textfile (delimited format)
+Qes-file used:  D:\users\s-balandine\share\nhips\src\epidata\eligible woman.qes
+First line:     Skipped
+Delimiter:      ;
+Quotes on:      No fields
+Dateformat:     ddmmyyyy
+
 Error during command import (code 11): Function failed
