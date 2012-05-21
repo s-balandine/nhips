@@ -12,10 +12,6 @@ LABELBLOCK
     10 "Stop pmtct"
     96 "Other"
    END
-  LABEL D_T_CHECK
-    Y "Yes"
-    N "No"
-   END
   LABEL D_N_CIRCUMCISION_PLACE
     1 "Health facility"
     2 "Home of a health worker/health professsional"
@@ -118,15 +114,6 @@ LABELBLOCK
     X "Other"
    END
   LABEL D_N_HEALTH_FACILITY_TYPE_3
-    11 "Public sector: Government hospital"
-    12 "Public sector: Government health center"
-    13 "Public sector: Government dispensary"
-    18 "Public sector: Other public"
-    21 "Private medical sector: Private hospital/clinic/doctor"
-    27 "Private medical sector: Other private"
-    96 "Other"
-   END
-  LABEL D_N_HEALTH_FACILITY_TYPE_4
     11 "Home: Your home"
     12 "Home: Other home"
     21 "Public sector: Government hospital"
@@ -161,10 +148,6 @@ LABELBLOCK
     2 "primary / Vocational"
     3 "Secondary / A level"
     4 "Higher"
-   END
-  LABEL D_N_HUSBAND_STATUS
-    1 "Living with her"
-    2 "Staying elsewhere"
    END
   LABEL D_N_INTERVIEW_HOUSEHOLD_RESULT
     1 "Completed"
@@ -209,16 +192,9 @@ LABELBLOCK
     2 "Yes, lived with a man"
     3 "No"
    END
-  LABEL D_N_OCCUPATION
-    1 "?"
-    2 "?"
-    3 "?"
-    4 "?"
-   END
-  LABEL D_N_OUTSIDE
-    1 "One or more nights"
-    2 "One or more months"
-    3 "None"
+  LABEL D_N_PARTNER_STATUS
+    1 "Living with her"
+    2 "Staying elsewhere"
    END
   LABEL D_N_PLACE_OF_RESIDENCE
     1 "Nairobi / Kisumu"
