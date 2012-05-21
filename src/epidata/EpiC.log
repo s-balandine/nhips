@@ -20253,4 +20253,33 @@ Delimiter:      ;
 Quotes on:      No fields
 Dateformat:     ddmmyyyy
 
-Error during command import (code 11): Function failed
+Error during command import (code 11): 
+Function failed
+
+COMMAND:        EpiC rev facility.qes facility.rec AUTO FORCE
+21/05/2012 17:02:02
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\facility.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\facility.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field interviewer.qes" "field interviewer.rec" AUTO FORCE
+21/05/2012 17:02:02
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field interviewer.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field interviewer.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "field supervisor.qes" "field supervisor.rec" AUTO FORCE
+21/05/2012 17:02:02
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\field supervisor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\field supervisor.qes
+Revision can have resulted in loss of data in decimal number fields.
+
+COMMAND:        EpiC rev "office editor.qes" "office editor.rec" AUTO FORCE
+21/05/2012 17:02:02
+Revise datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec
+Datafile D:\users\s-balandine\share\nhips\src\epidata\office editor.rec was revised
+using D:\users\s-balandine\share\nhips\src\epidata\office editor.qes
+Revision can have resulted in loss of data in decimal number fields.
