@@ -72,8 +72,8 @@ WScript.Echo "Création des fichiers QES"
 NCharWidth = 80
 NCharMax = 80
 
-Form="Household"
-FormAll= True
+Form="Eligible Man"
+FormAll= False
 
 For Each oTable In oTables
     
