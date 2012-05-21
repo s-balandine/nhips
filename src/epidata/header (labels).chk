@@ -29,7 +29,7 @@ LABELBLOCK
    END
   LABEL D_N_CONSENT
     1 "Granted"
-    2 "Refused"
+    2 "Adult refused"
    END
   LABEL D_N_DISTRICT
     1 "Ndhiwa district"
