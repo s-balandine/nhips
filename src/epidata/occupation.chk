@@ -1,0 +1,53 @@
+INCLUDE "header.chk"
+INCLUDE "header (labels).chk"
+
+BEFORE RECORD
+  HIDE FCT
+END
+
+AFTER RECORD
+    IF (FCT=.) THEN
+      HELP "FCT is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO FCT
+      EXIT
+    ENDIF
+    IF (Q1011=.) THEN
+      HELP "Q101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1011
+      EXIT
+    ENDIF
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+END
+
+
+* FCT | Identifier (PRO_IDENTIFIER) | VARCHAR(4)
+* 
+
+PRO
+  KEY UNIQUE 1
+  NOENTER
+END
+
+* Q101.1 | Code (PRO_CODE) | VARCHAR(4)
+* Name > Code
+
+Q1011
+  MUSTENTER
+  AFTER ENTRY
+    LET FCT= FCT_CODE
+  END
+END
+
+* Q101.2 | Name (PRO_NM) | VARCHAR(23)
+* Name > Name
+
+Q1012
+  MUSTENTER
+  KEY 2
+  GOTO WRITEREC
+END
+
