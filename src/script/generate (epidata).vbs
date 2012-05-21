@@ -342,6 +342,9 @@ For Each oTable In oTables
 				Desc = Desc & "  HIDE " & oColumn.Code & vbCrLf
 			End If
 		Next
+		If ExtendedAttribute(oTable, "Before Entry")<>"" Then
+			Desc = Desc & ExtendedAttribute(oTable, "Before Entry") & vbCrLf
+		End If
 		Desc = Desc & "END" & vbCrLf & vbCrLf
 
 		Desc = Desc & "AFTER RECORD" & vbCrLf
