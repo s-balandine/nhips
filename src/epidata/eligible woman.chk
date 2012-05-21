@@ -16,56 +16,6 @@ AFTER RECORD
       GOTO HHM
       EXIT
     ENDIF
-    IF (S1011=.) THEN
-      HELP "S101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1011
-      EXIT
-    ENDIF
-    IF (S1012=.) THEN
-      HELP "S101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1012
-      EXIT
-    ENDIF
-    IF (S1013=.) THEN
-      HELP "S101.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1013
-      EXIT
-    ENDIF
-    IF (S1021=.) THEN
-      HELP "S102.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1021
-      EXIT
-    ENDIF
-    IF (S1022=.) THEN
-      HELP "S102.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1022
-      EXIT
-    ENDIF
-    IF (S1031=.) THEN
-      HELP "S103.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1031
-      EXIT
-    ENDIF
-    IF (S1032=.) AND NOT ((S1031<>7)) THEN
-      HELP "S103.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1032
-      EXIT
-    ENDIF
-    IF (S1041=.) THEN
-      HELP "S104.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1041
-      EXIT
-    ENDIF
-    IF (S1042=.) THEN
-      HELP "S104.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1042
-      EXIT
-    ENDIF
-    IF (S1051=.) THEN
-      HELP "S105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1051
-      EXIT
-    ENDIF
     IF (S2011=.) THEN
       HELP "S201.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S2011
@@ -74,6 +24,11 @@ AFTER RECORD
     IF (S2012=.) THEN
       HELP "S201.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S2012
+      EXIT
+    ENDIF
+    IF (S2013=.) THEN
+      HELP "S201.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO S2013
       EXIT
     ENDIF
     IF (S2021=.) THEN
@@ -91,124 +46,24 @@ AFTER RECORD
       GOTO S2031
       EXIT
     ENDIF
+    IF (S2032=.) AND NOT ((S2031<>7)) THEN
+      HELP "S203.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO S2032
+      EXIT
+    ENDIF
     IF (S2041=.) THEN
       HELP "S204.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S2041
       EXIT
     ENDIF
-    IF (S2051=.) AND NOT ((S2041=2)) THEN
+    IF (S2042=.) THEN
+      HELP "S204.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO S2042
+      EXIT
+    ENDIF
+    IF (S2051=.) THEN
       HELP "S205.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S2051
-      EXIT
-    ENDIF
-    IF (S2061=.) AND NOT ((S2041=2)) THEN
-      HELP "S206.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2061
-      EXIT
-    ENDIF
-    IF (S2081=.) AND NOT ((S2051>2)) THEN
-      HELP "S208.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2081
-      EXIT
-    ENDIF
-    IF (S2082=.) AND NOT ((S2051>2) OR (S2081<>4)) THEN
-      HELP "S208.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2082
-      EXIT
-    ENDIF
-    IF (S2091=.) THEN
-      HELP "S209.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2091
-      EXIT
-    ENDIF
-    IF (S2101=.) THEN
-      HELP "S2101 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2101
-      EXIT
-    ENDIF
-    IF (S2111=.) AND NOT ((S2101>97)) THEN
-      HELP "S2111 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2111
-      EXIT
-    ENDIF
-    IF (S2121=.) AND NOT ((S2101>97)) THEN
-      HELP "S2121 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2121
-      EXIT
-    ENDIF
-    IF (S2122=.) AND NOT ((S2101>97) OR (S2121<>96)) THEN
-      HELP "S2122 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2122
-      EXIT
-    ENDIF
-    IF (S2131=.) THEN
-      HELP "S2131 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2131
-      EXIT
-    ENDIF
-    IF (S2141=.) THEN
-      HELP "S2141 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2141
-      EXIT
-    ENDIF
-    IF (S2151=.) AND NOT ((S2131=0)) THEN
-      HELP "S2151 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2151
-      EXIT
-    ENDIF
-    IF (S2161=.) AND NOT ((S2131=0) OR (S2151<3)) THEN
-      HELP "S2161 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2161
-      EXIT
-    ENDIF
-    IF (S2171=.) AND NOT ((S2151<3)) THEN
-      HELP "S2171 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2171
-      EXIT
-    ENDIF
-    IF (S2181=.) AND NOT ((S2151<>.)) THEN
-      HELP "S2181 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2181
-      EXIT
-    ENDIF
-    IF (S2191=.) THEN
-      HELP "S2191 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2191
-      EXIT
-    ENDIF
-    IF (S2201=.) AND NOT ((S2191=1)) THEN
-      HELP "S2201 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2201
-      EXIT
-    ENDIF
-    IF (S2211=.) AND NOT ((S2191=1) OR (S2201=1)) THEN
-      HELP "S2211 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2211
-      EXIT
-    ENDIF
-    IF (S2221=.) AND NOT ((S2191=1) OR (S2201=1) OR (S2211=1)) THEN
-      HELP "S2221 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2221
-      EXIT
-    ENDIF
-    IF (S2231=.) AND NOT ((S2221=2)) THEN
-      HELP "S2231 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2231
-      EXIT
-    ENDIF
-    IF (S2241=.) AND NOT ((S2221=2)) THEN
-      HELP "S2241 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2241
-      EXIT
-    ENDIF
-    IF (S2251=.) THEN
-      HELP "S2251 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2251
-      EXIT
-    ENDIF
-    IF (S2261=.) THEN
-      HELP "S2261 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S2261
       EXIT
     ENDIF
     IF (Q1011=.) THEN
@@ -216,54 +71,54 @@ AFTER RECORD
       GOTO Q1011
       EXIT
     ENDIF
-    IF (Q1021=.) AND NOT ((Q1011=2)) THEN
+    IF (Q1012=.) THEN
+      HELP "Q101.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1012
+      EXIT
+    ENDIF
+    IF (Q1021=.) THEN
       HELP "Q102.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1021
       EXIT
     ENDIF
-    IF (Q1031=.) AND NOT ((Q1011=2) OR (Q1021=2)) THEN
+    IF (Q1022=.) THEN
+      HELP "Q102.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1022
+      EXIT
+    ENDIF
+    IF (Q1031=.) THEN
       HELP "Q103.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1031
       EXIT
     ENDIF
-    IF (Q1032=.) AND NOT ((Q1011=2) OR (Q1021=2)) THEN
-      HELP "Q103.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1032
-      EXIT
-    ENDIF
-    IF (Q1041=.) AND NOT ((Q1011=2)) THEN
+    IF (Q1041=.) THEN
       HELP "Q104.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1041
       EXIT
     ENDIF
-    IF (Q1051=.) AND NOT ((Q1011=2) OR (Q1041=2)) THEN
+    IF (Q1051=.) AND NOT ((Q1041=2)) THEN
       HELP "Q105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1051
       EXIT
     ENDIF
-    IF (Q1052=.) AND NOT ((Q1011=2) OR (Q1041=2)) THEN
-      HELP "Q105.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1052
-      EXIT
-    ENDIF
-    IF (Q1061=.) THEN
+    IF (Q1061=.) AND NOT ((Q1041=2)) THEN
       HELP "Q106.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1061
       EXIT
     ENDIF
-    IF (Q1071=.) AND NOT ((Q1061=2)) THEN
-      HELP "Q107.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1071
-      EXIT
-    ENDIF
-    IF (Q1072=.) AND NOT ((Q1061=2)) THEN
-      HELP "Q107.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1072
-      EXIT
-    ENDIF
-    IF (Q1081=.) THEN
+    IF (Q1081=.) AND NOT ((Q1051>2)) THEN
       HELP "Q108.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1081
+      EXIT
+    ENDIF
+    IF (Q1082=.) AND NOT ((Q1051>2) OR (Q1081<>4)) THEN
+      HELP "Q108.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1082
+      EXIT
+    ENDIF
+    IF (Q1091=.) THEN
+      HELP "Q109.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1091
       EXIT
     ENDIF
     IF (Q1101=.) THEN
@@ -271,425 +126,570 @@ AFTER RECORD
       GOTO Q1101
       EXIT
     ENDIF
-    IF (Q1102=.) THEN
-      HELP "Q1102 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q1102
+    IF (Q1111=.) AND NOT ((Q1101>97)) THEN
+      HELP "Q1111 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1111
       EXIT
     ENDIF
-    IF (Q2031=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
+    IF (Q1121=.) AND NOT ((Q1101>97)) THEN
+      HELP "Q1121 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1121
+      EXIT
+    ENDIF
+    IF (Q1122=.) AND NOT ((Q1101>97) OR (Q1121<>96)) THEN
+      HELP "Q1122 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1122
+      EXIT
+    ENDIF
+    IF (Q1131=.) THEN
+      HELP "Q1131 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1131
+      EXIT
+    ENDIF
+    IF (Q1141=.) AND NOT ((Q1131=0)) THEN
+      HELP "Q1141 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1141
+      EXIT
+    ENDIF
+    IF (Q1151=.) AND NOT ((Q1131=0)) THEN
+      HELP "Q1151 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1151
+      EXIT
+    ENDIF
+    IF (Q1161=.) AND NOT ((Q1131=0) OR (Q1151<3)) THEN
+      HELP "Q1161 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1161
+      EXIT
+    ENDIF
+    IF (Q1171=.) AND NOT ((Q1151<3)) THEN
+      HELP "Q1171 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1171
+      EXIT
+    ENDIF
+    IF (Q1181=.) AND NOT ((Q1171<>.)) THEN
+      HELP "Q1181 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1181
+      EXIT
+    ENDIF
+    IF (Q1191=.) THEN
+      HELP "Q1191 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1191
+      EXIT
+    ENDIF
+    IF (Q1201=.) AND NOT ((Q1191=1)) THEN
+      HELP "Q1201 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1201
+      EXIT
+    ENDIF
+    IF (Q1211=.) AND NOT ((Q1191=1) OR (Q1201=1)) THEN
+      HELP "Q1211 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1211
+      EXIT
+    ENDIF
+    IF (Q1221=.) AND NOT ((Q1191=1) OR (Q1201=1) OR (Q1211=1)) THEN
+      HELP "Q1221 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1221
+      EXIT
+    ENDIF
+    IF (Q1231=.) AND NOT ((Q1221=2)) THEN
+      HELP "Q1231 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1231
+      EXIT
+    ENDIF
+    IF (Q1241=.) AND NOT ((Q1221=2)) THEN
+      HELP "Q1241 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1241
+      EXIT
+    ENDIF
+    IF (Q1251=.) THEN
+      HELP "Q1251 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1251
+      EXIT
+    ENDIF
+    IF (Q1261=.) THEN
+      HELP "Q1261 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q1261
+      EXIT
+    ENDIF
+    IF (Q2011=.) THEN
+      HELP "Q201.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2011
+      EXIT
+    ENDIF
+    IF (Q2021=.) AND NOT ((Q2011=2)) THEN
+      HELP "Q202.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2021
+      EXIT
+    ENDIF
+    IF (Q2031=.) AND NOT ((Q2011=2) OR (Q2021=2)) THEN
       HELP "Q203.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2031
       EXIT
     ENDIF
-    IF (Q2041=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
+    IF (Q2032=.) AND NOT ((Q2011=2) OR (Q2021=2)) THEN
+      HELP "Q203.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2032
+      EXIT
+    ENDIF
+    IF (Q2041=.) AND NOT ((Q2011=2)) THEN
       HELP "Q204.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2041
       EXIT
     ENDIF
-    IF (Q2051=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
+    IF (Q2051=.) AND NOT ((Q2011=2) OR (Q2041=2)) THEN
       HELP "Q205.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2051
       EXIT
     ENDIF
-    IF (Q2061=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
+    IF (Q2052=.) AND NOT ((Q2011=2) OR (Q2041=2)) THEN
+      HELP "Q205.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2052
+      EXIT
+    ENDIF
+    IF (Q2061=.) THEN
       HELP "Q206.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2061
       EXIT
     ENDIF
-    IF (Q2071=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2)) THEN
+    IF (Q2071=.) AND NOT ((Q2061=2)) THEN
       HELP "Q207.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2071
       EXIT
     ENDIF
-    IF (Q2072=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2) OR (Q2071<>"X")) THEN
+    IF (Q2072=.) AND NOT ((Q2061=2)) THEN
       HELP "Q207.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2072
       EXIT
     ENDIF
-    IF (Q2081=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2)) THEN
+    IF (Q2081=.) THEN
       HELP "Q208.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2081
       EXIT
     ENDIF
-    IF (Q2082=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2) OR ((Q2081<>"F") AND (Q2081<>"H") AND (Q2081<>"X"))) THEN
-      HELP "Q208.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2082
-      EXIT
-    ENDIF
-    IF (Q2091=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2)) THEN
-      HELP "Q209.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2091
-      EXIT
-    ENDIF
-    IF (Q2101=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2061=2)) THEN
+    IF (Q2101=.) THEN
       HELP "Q2101 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2101
       EXIT
     ENDIF
-    IF (Q2111=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
-      HELP "Q2111 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2111
+    IF (Q2102=.) THEN
+      HELP "Q2102 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q2102
       EXIT
     ENDIF
-    IF (Q2112=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2111<>"X")) THEN
-      HELP "Q2112 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2112
-      EXIT
-    ENDIF
-    IF (Q2121=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998))) THEN
-      HELP "Q2121 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2121
-      EXIT
-    ENDIF
-    IF (Q2122=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR ((Q2121=11) OR (Q2121=12) )) THEN
-      HELP "Q2122 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2122
-      EXIT
-    ENDIF
-    IF (Q2131=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR ((Q2121=11) OR (Q2121=12) )) THEN
-      HELP "Q2131 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2131
-      EXIT
-    ENDIF
-    IF (Q2132=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR ((Q2121=11) OR (Q2121=12) )) THEN
-      HELP "Q2132 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2132
-      EXIT
-    ENDIF
-    IF (Q2133=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR ((Q2121=11) OR (Q2121=12) )) THEN
-      HELP "Q2133 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2133
-      EXIT
-    ENDIF
-    IF (Q2141=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR ((Q2121=11) OR (Q2121=12) )) THEN
-      HELP "Q2141 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2141
-      EXIT
-    ENDIF
-    IF (Q2161=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2051=1)) THEN
-      HELP "Q2161 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2161
-      EXIT
-    ENDIF
-    IF (Q2171=.) AND NOT (((Q1102<=2006) AND (Q1102<>9998)) OR (Q2051=1) OR (Q2161=1)) THEN
-      HELP "Q2171 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q2171
-      EXIT
-    ENDIF
-    IF (Q3011=.) THEN
-      HELP "Q301.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3011
-      EXIT
-    ENDIF
-    IF (Q3021=.) AND NOT ((Q3011=1)) THEN
-      HELP "Q302.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3021
-      EXIT
-    ENDIF
-    IF (Q3022=.) AND NOT ((Q3011=1)) THEN
-      HELP "Q302.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3022
-      EXIT
-    ENDIF
-    IF (Q3023=.) AND NOT ((Q3011=1)) THEN
-      HELP "Q302.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3023
-      EXIT
-    ENDIF
-    IF (Q3031=.) AND NOT ((Q3011=1)) THEN
+    IF (Q3031=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
       HELP "Q303.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3031
       EXIT
     ENDIF
-    IF (Q3071=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2))) THEN
+    IF (Q3041=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
+      HELP "Q304.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3041
+      EXIT
+    ENDIF
+    IF (Q3051=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
+      HELP "Q305.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3051
+      EXIT
+    ENDIF
+    IF (Q3061=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
+      HELP "Q306.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3061
+      EXIT
+    ENDIF
+    IF (Q3071=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2)) THEN
       HELP "Q307.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3071
       EXIT
     ENDIF
-    IF (Q3081=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2))) THEN
+    IF (Q3072=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2) OR (Q3071<>"X")) THEN
+      HELP "Q307.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3072
+      EXIT
+    ENDIF
+    IF (Q3081=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2)) THEN
       HELP "Q308.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3081
       EXIT
     ENDIF
-    IF (Q3091=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2)) THEN
+    IF (Q3082=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2) OR ((Q3081<>"F") AND (Q3081<>"H") AND (Q3081<>"X"))) THEN
+      HELP "Q308.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3082
+      EXIT
+    ENDIF
+    IF (Q3091=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2)) THEN
       HELP "Q309.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3091
       EXIT
     ENDIF
-    IF (Q3101=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2)) THEN
+    IF (Q3101=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3061=2)) THEN
       HELP "Q3101 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3101
       EXIT
     ENDIF
-    IF (Q3102=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR ((Q3101<>18) AND (Q3101<>27) AND (Q3101<>96))) THEN
-      HELP "Q3102 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3102
-      EXIT
-    ENDIF
-    IF (Q3111=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2)) THEN
+    IF (Q3111=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
       HELP "Q3111 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3111
       EXIT
     ENDIF
-    IF (Q3121=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR (Q3111=2)) THEN
+    IF (Q3112=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3111<>"X")) THEN
+      HELP "Q3112 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3112
+      EXIT
+    ENDIF
+    IF (Q3121=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998))) THEN
       HELP "Q3121 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3121
       EXIT
     ENDIF
-    IF (Q3141=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR ((Q3101>=21) AND (Q3101<=36))) THEN
+    IF (Q3122=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR ((Q3121=11) OR (Q3121=12) )) THEN
+      HELP "Q3122 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3122
+      EXIT
+    ENDIF
+    IF (Q3131=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR ((Q3121=11) OR (Q3121=12) )) THEN
+      HELP "Q3131 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3131
+      EXIT
+    ENDIF
+    IF (Q3132=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR ((Q3121=11) OR (Q3121=12) )) THEN
+      HELP "Q3132 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3132
+      EXIT
+    ENDIF
+    IF (Q3133=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR ((Q3121=11) OR (Q3121=12) )) THEN
+      HELP "Q3133 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q3133
+      EXIT
+    ENDIF
+    IF (Q3141=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR ((Q3121=11) OR (Q3121=12) )) THEN
       HELP "Q3141 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3141
       EXIT
     ENDIF
-    IF (Q3151=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR ((Q3101>=21) AND (Q3101<=36)) OR (Q3141=2)) THEN
-      HELP "Q3151 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3151
-      EXIT
-    ENDIF
-    IF (Q3161=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR ((Q3101>=21) AND (Q3101<=36)) OR (Q3141=2) OR (Q3151=2)) THEN
+    IF (Q3161=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3051=1)) THEN
       HELP "Q3161 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3161
       EXIT
     ENDIF
-    IF (Q3171=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR (Q3141=2) OR (Q3151=2)) THEN
+    IF (Q3171=.) AND NOT (((Q2102<=2006) AND (Q2102<>9998)) OR (Q3051=1) OR (Q3161=1)) THEN
       HELP "Q3171 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3171
       EXIT
     ENDIF
-    IF (Q3181=.) AND NOT ((Q3011=1) OR ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) OR (Q3081=2) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2)) THEN
-      HELP "Q3181 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3181
+    IF (Q4011=.) THEN
+      HELP "Q401.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4011
       EXIT
     ENDIF
-    IF (Q3191=.) AND NOT ((Q3011=1) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2) OR (Q3181<>.)) THEN
-      HELP "Q3191 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3191
+    IF (Q4021=.) AND NOT ((Q4011=1)) THEN
+      HELP "Q402.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4021
       EXIT
     ENDIF
-    IF (Q3201=.) AND NOT ((Q3011=1) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2) OR (Q3181<>.) OR (Q3191=2)) THEN
-      HELP "Q3201 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3201
+    IF (Q4022=.) AND NOT ((Q4011=1)) THEN
+      HELP "Q402.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4022
       EXIT
     ENDIF
-    IF (Q3211=.) AND NOT ((Q3011=1) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2) OR (Q3181<>.) OR (Q3191=2) OR (Q3201<>.)) THEN
-      HELP "Q3211 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3211
+    IF (Q4023=.) AND NOT ((Q4011=1)) THEN
+      HELP "Q402.3 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4023
       EXIT
     ENDIF
-    IF (Q3221=.) AND NOT ((Q3011=1) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2) OR (Q3181<>.) OR (Q3191=2) OR (Q3201<>.)) THEN
-      HELP "Q3221 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3221
+    IF (Q4031=.) AND NOT ((Q4011=1)) THEN
+      HELP "Q403.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4031
       EXIT
     ENDIF
-    IF (Q3222=.) AND NOT ((Q3011=1) OR (Q3141=2) OR (Q3151=2) OR (Q3171=2) OR (Q3181<>.) OR (Q3191=2) OR (Q3201<>.) OR ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) )) THEN
-      HELP "Q3222 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3222
+    IF (Q4071=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2))) THEN
+      HELP "Q407.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4071
       EXIT
     ENDIF
-    IF (Q3231=.) AND NOT ((Q3011=1) OR (Q3181<>.) OR (Q3201<>.) OR ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) ) OR (Q3222<>.)) THEN
-      HELP "Q3231 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3231
+    IF (Q4081=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2))) THEN
+      HELP "Q408.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4081
       EXIT
     ENDIF
-    IF (Q3241=.) AND NOT ((Q3011=1) OR (Q3181<>.) OR (Q3201<>.) OR ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) ) OR (Q3222<>.) OR (Q3231=2)) THEN
-      HELP "Q3241 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3241
+    IF (Q4091=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2)) THEN
+      HELP "Q409.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4091
       EXIT
     ENDIF
-    IF (Q3242=.) AND NOT ((Q3011=1) OR (Q3181<>.) OR (Q3201<>.) OR ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) ) OR (Q3222<>.) OR (Q3231=2) OR ((Q3241<>"G") AND (Q3241<>"M") AND (Q3241<>"X"))) THEN
-      HELP "Q3242 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q3242
+    IF (Q4101=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2)) THEN
+      HELP "Q4101 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4101
       EXIT
     ENDIF
-    IF (Q4041=.) THEN
-      HELP "Q404.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q4041
+    IF (Q4102=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR ((Q4101<>18) AND (Q4101<>27) AND (Q4101<>96))) THEN
+      HELP "Q4102 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4102
       EXIT
     ENDIF
-    IF (Q4061=.) AND NOT ((Q4041=2)) THEN
-      HELP "Q406.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q4061
+    IF (Q4111=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2)) THEN
+      HELP "Q4111 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4111
       EXIT
     ENDIF
-    IF (Q5011=.) AND NOT ((Q4041=2) OR (Q4061=2)) THEN
-      HELP "Q501.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5011
+    IF (Q4121=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR (Q4111=2)) THEN
+      HELP "Q4121 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4121
       EXIT
     ENDIF
-    IF (Q5021=.) AND NOT ((Q4041=2) OR (Q4061=2)) THEN
-      HELP "Q502.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5021
+    IF (Q4141=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR ((Q4101>=21) AND (Q4101<=36))) THEN
+      HELP "Q4141 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4141
       EXIT
     ENDIF
-    IF (Q5061=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (((S2031>=18) AND (S2031<=49)) OR (S2171=4))) THEN
+    IF (Q4151=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR ((Q4101>=21) AND (Q4101<=36)) OR (Q4141=2)) THEN
+      HELP "Q4151 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4151
+      EXIT
+    ENDIF
+    IF (Q4161=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR ((Q4101>=21) AND (Q4101<=36)) OR (Q4141=2) OR (Q4151=2)) THEN
+      HELP "Q4161 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4161
+      EXIT
+    ENDIF
+    IF (Q4171=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR (Q4141=2) OR (Q4151=2)) THEN
+      HELP "Q4171 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4171
+      EXIT
+    ENDIF
+    IF (Q4181=.) AND NOT ((Q4011=1) OR ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) OR (Q4081=2) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2)) THEN
+      HELP "Q4181 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4181
+      EXIT
+    ENDIF
+    IF (Q4191=.) AND NOT ((Q4011=1) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2) OR (Q4181<>.)) THEN
+      HELP "Q4191 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4191
+      EXIT
+    ENDIF
+    IF (Q4201=.) AND NOT ((Q4011=1) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2) OR (Q4181<>.) OR (Q4191=2)) THEN
+      HELP "Q4201 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4201
+      EXIT
+    ENDIF
+    IF (Q4211=.) AND NOT ((Q4011=1) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2) OR (Q4181<>.) OR (Q4191=2) OR (Q4201<>.)) THEN
+      HELP "Q4211 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4211
+      EXIT
+    ENDIF
+    IF (Q4221=.) AND NOT ((Q4011=1) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2) OR (Q4181<>.) OR (Q4191=2) OR (Q4201<>.)) THEN
+      HELP "Q4221 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4221
+      EXIT
+    ENDIF
+    IF (Q4222=.) AND NOT ((Q4011=1) OR (Q4141=2) OR (Q4151=2) OR (Q4171=2) OR (Q4181<>.) OR (Q4191=2) OR (Q4201<>.) OR ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) )) THEN
+      HELP "Q4222 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4222
+      EXIT
+    ENDIF
+    IF (Q4231=.) AND NOT ((Q4011=1) OR (Q4181<>.) OR (Q4201<>.) OR ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) ) OR (Q4222<>.)) THEN
+      HELP "Q4231 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4231
+      EXIT
+    ENDIF
+    IF (Q4241=.) AND NOT ((Q4011=1) OR (Q4181<>.) OR (Q4201<>.) OR ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) ) OR (Q4222<>.) OR (Q4231=2)) THEN
+      HELP "Q4241 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4241
+      EXIT
+    ENDIF
+    IF (Q4242=.) AND NOT ((Q4011=1) OR (Q4181<>.) OR (Q4201<>.) OR ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) ) OR (Q4222<>.) OR (Q4231=2) OR ((Q4241<>"G") AND (Q4241<>"M") AND (Q4241<>"X"))) THEN
+      HELP "Q4242 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q4242
+      EXIT
+    ENDIF
+    IF (Q5041=.) THEN
+      HELP "Q504.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5041
+      EXIT
+    ENDIF
+    IF (Q5061=.) AND NOT ((Q5041=2)) THEN
       HELP "Q506.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5061
       EXIT
     ENDIF
-    IF (Q5081=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2)) THEN
-      HELP "Q508.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5081
+    IF (Q6011=.) AND NOT ((Q5041=2) OR (Q5061=2)) THEN
+      HELP "Q601.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6011
       EXIT
     ENDIF
-    IF (Q5091=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2)) THEN
-      HELP "Q509.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5091
+    IF (Q6021=.) AND NOT ((Q5041=2) OR (Q5061=2)) THEN
+      HELP "Q602.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6021
       EXIT
     ENDIF
-    IF (Q5121=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5121 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5121
+    IF (Q6061=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4))) THEN
+      HELP "Q606.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6061
       EXIT
     ENDIF
-    IF (Q5122=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5122 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5122
+    IF (Q6081=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2)) THEN
+      HELP "Q608.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6081
       EXIT
     ENDIF
-    IF (Q5131=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5131 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5131
+    IF (Q6091=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2)) THEN
+      HELP "Q609.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6091
       EXIT
     ENDIF
-    IF (Q5132=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96))) THEN
-      HELP "Q5132 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5132
+    IF (Q6121=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6121 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6121
       EXIT
     ENDIF
-    IF (Q5141=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5141 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5141
+    IF (Q6122=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6122 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6122
       EXIT
     ENDIF
-    IF (Q5151=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
-      HELP "Q5151 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5151
+    IF (Q6131=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6131 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6131
       EXIT
     ENDIF
-    IF (Q5161=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR ((Q5151=2) OR (Q5151=8))) THEN
-      HELP "Q5161 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5161
+    IF (Q6132=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR ((Q6131<>18) AND (Q6131<>27) AND (Q6131<>96))) THEN
+      HELP "Q6132 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6132
       EXIT
     ENDIF
-    IF (Q5171=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
-      HELP "Q5171 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5171
+    IF (Q6141=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6141 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6141
       EXIT
     ENDIF
-    IF (Q5181=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
-      HELP "Q5181 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5181
+    IF (Q6151=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2)) THEN
+      HELP "Q6151 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6151
       EXIT
     ENDIF
-    IF (Q5182=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
-      HELP "Q5182 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5182
+    IF (Q6161=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR ((Q6151=2) OR (Q6151=8))) THEN
+      HELP "Q6161 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6161
       EXIT
     ENDIF
-    IF (Q5191=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
-      HELP "Q5191 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5191
+    IF (Q6171=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2)) THEN
+      HELP "Q6171 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6171
       EXIT
     ENDIF
-    IF (Q5201=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
-      HELP "Q5201 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5201
+    IF (Q6181=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2)) THEN
+      HELP "Q6181 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6181
       EXIT
     ENDIF
-    IF (Q5202=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
-      HELP "Q5202 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5202
+    IF (Q6182=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2)) THEN
+      HELP "Q6182 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6182
       EXIT
     ENDIF
-    IF (Q5211=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
-      HELP "Q5211 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5211
+    IF (Q6191=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2)) THEN
+      HELP "Q6191 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6191
       EXIT
     ENDIF
-    IF (Q5212=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96))) THEN
-      HELP "Q5212 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5212
+    IF (Q6201=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2)) THEN
+      HELP "Q6201 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6201
       EXIT
     ENDIF
-    IF (Q5221=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
-      HELP "Q5221 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5221
+    IF (Q6202=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2)) THEN
+      HELP "Q6202 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6202
       EXIT
     ENDIF
-    IF (Q5222=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR (Q5221<>3)) THEN
-      HELP "Q5222 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5222
+    IF (Q6211=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2)) THEN
+      HELP "Q6211 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6211
       EXIT
     ENDIF
-    IF (Q5231=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
-      HELP "Q5231 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5231
+    IF (Q6212=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2) OR ((Q6211<>18) AND (Q6211<>27) AND (Q6211<>96))) THEN
+      HELP "Q6212 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6212
       EXIT
     ENDIF
-    IF (Q5241=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2)) THEN
-      HELP "Q5241 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5241
+    IF (Q6221=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2)) THEN
+      HELP "Q6221 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6221
       EXIT
     ENDIF
-    IF (Q5251=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2)) THEN
-      HELP "Q5251 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5251
+    IF (Q6222=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2) OR (Q6221<>3)) THEN
+      HELP "Q6222 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6222
       EXIT
     ENDIF
-    IF (Q5252=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2)) THEN
-      HELP "Q5252 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5252
+    IF (Q6231=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6171=2) OR (Q6191=2)) THEN
+      HELP "Q6231 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6231
       EXIT
     ENDIF
-    IF (Q5261=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2)) THEN
-      HELP "Q5261 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5261
+    IF (Q6241=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2)) THEN
+      HELP "Q6241 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6241
       EXIT
     ENDIF
-    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2) OR ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))) THEN
-      HELP "Q5262 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5262
+    IF (Q6251=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2)) THEN
+      HELP "Q6251 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6251
       EXIT
     ENDIF
-    IF (Q5271=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2)) THEN
-      HELP "Q5271 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5271
+    IF (Q6252=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2)) THEN
+      HELP "Q6252 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6252
       EXIT
     ENDIF
-    IF (Q5272=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2) OR (Q5271<>3)) THEN
-      HELP "Q5272 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5272
+    IF (Q6261=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2)) THEN
+      HELP "Q6261 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6261
       EXIT
     ENDIF
-    IF (Q5281=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5241=2)) THEN
-      HELP "Q5281 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5281
+    IF (Q6262=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2) OR ((Q6261<>18) AND (Q6261<>27) AND (Q6261<>96))) THEN
+      HELP "Q6262 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6262
       EXIT
     ENDIF
-    IF (Q5291=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5281<>.)) THEN
-      HELP "Q5291 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5291
+    IF (Q6271=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2)) THEN
+      HELP "Q6271 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6271
       EXIT
     ENDIF
-    IF (Q5292=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5281<>.) OR (Q5291<>96)) THEN
-      HELP "Q5292 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5292
+    IF (Q6272=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2) OR (Q6271<>3)) THEN
+      HELP "Q6272 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6272
       EXIT
     ENDIF
-    IF (Q5331=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5331 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5331
+    IF (Q6281=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6191=2) OR (Q6241=2)) THEN
+      HELP "Q6281 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6281
       EXIT
     ENDIF
-    IF (Q5341=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
-      HELP "Q5341 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5341
+    IF (Q6291=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6281<>.)) THEN
+      HELP "Q6291 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6291
+      EXIT
+    ENDIF
+    IF (Q6292=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2) OR (Q6141=2) OR (Q6281<>.) OR (Q6291<>96)) THEN
+      HELP "Q6292 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6292
+      EXIT
+    ENDIF
+    IF (Q6331=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6331 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6331
+      EXIT
+    ENDIF
+    IF (Q6341=.) AND NOT ((Q5041=2) OR (Q5061=2) OR (Q6061=2) OR (Q6081=2) OR (Q6021=2)) THEN
+      HELP "Q6341 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q6341
       EXIT
     ENDIF
 END
 
 
-* HEW | Identifier (HEW_IDENTIFIER) | AUTOINCREMENT
+* HEW | Identifier (HEW_IDENTIFIER) | VARCHAR(9)
 * 
 
 HEW
@@ -698,36 +698,39 @@ HEW
 END
 
 * HHM | Respondent (HEW_RESPONDENT) | VARCHAR(9)
-* 
+* Identifiers > No. Household member
 
 HHM
   KEY 2
   NOENTER
 END
 
-* S101.1 | Day (HEW_DAY) | NUMERIC(2)
+* S201.1 | Day (HEW_DAY) | NUMERIC(2)
 * Date > Day of interview
 * Allowed Values
 *    98: Don't know
 
-S1011
+S2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    LET HEW=HHM
+  END
 END
 
-* S101.2 | Month (HEW_M) | NUMERIC(2)
+* S201.2 | Month (HEW_M) | NUMERIC(2)
 * Date > Month of interview
 * Allowed Values
 *    98: Don't know
 
-S1012
+S2012
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* S101.3 | Year (HEW_YEAR) | NUMERIC(4)
+* S201.3 | Year (HEW_YEAR) | NUMERIC(4)
 * Date > Year of interview
 * Allowed Values
 *    11: 2011
@@ -735,29 +738,29 @@ END
 *    13: 2013
 *    98: Don't know
 
-S1013
+S2013
   MUSTENTER
   COMMENT LEGAL USE D_N_YEAR
   TYPE COMMENT LEGAL
 END
 
-* S102.1 | Field Interviewer (HEW_FIELD_INTERVIEWER) | VARCHAR(4)
+* S202.1 | Field Interviewer (HEW_FIELD_INTERVIEWER) | VARCHAR(4)
 * Actors on the field? > Interviewer
 
-S1021
+S2021
   MUSTENTER
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
-* S102.2 | Field Supervisor (HEW_FIELD_SUPERVISOR) | VARCHAR(4)
+* S202.2 | Field Supervisor (HEW_FIELD_SUPERVISOR) | VARCHAR(4)
 * Actors on the field? > Supervisor
 
-S1022
+S2022
   MUSTENTER
   COMMENT LEGAL "Field Supervisor" SHOW
 END
 
-* S103.1 | Result (HEW_RESULT) | NUMERIC(1)
+* S203.1 | Result (HEW_RESULT) | NUMERIC(1)
 * Result > Result
 * Allowed Values
 *    1: Completed
@@ -767,125 +770,125 @@ END
 *    5: Partly completed
 *    6: Incapacited
 *    7: Other
-* Skip to "S1041" if (S1031<>7)
-S1031
+* Skip to "S2041" if (S2031<>7)
+S2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_RESPONDENT_RESULT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S1031<>7) THEN
-      HIDE S1032
-      CLEAR S1032
+    IF (S2031<>7) THEN
+      HIDE S2032
+      CLEAR S2032
     ELSE
-      UNHIDE S1032
+      UNHIDE S2032
     ENDIF
   END
 END
 
-* S103.2 | Result (Other) (HEW_RESULT_OTHER) | VARCHAR(16)
+* S203.2 | Result (Other) (HEW_RESULT_OTHER) | VARCHAR(16)
 * Result > Specify
 
-S1032
+S2032
   MUSTENTER
 END
 
-* S104.1 | Office editor (HEW_OFFICE_EDITOR) | VARCHAR(4)
+* S204.1 | Office editor (HEW_OFFICE_EDITOR) | VARCHAR(4)
 * Actors at the office? > Editor
 
-S1041
+S2041
   MUSTENTER
   COMMENT LEGAL "Office Editor" SHOW
 END
 
-* S104.2 | Keyer (HEW_KEYER) | VARCHAR(4)
+* S204.2 | Keyer (HEW_KEYER) | VARCHAR(4)
 * Actors at the office? > Keyer
 
-S1042
+S2042
   MUSTENTER
   COMMENT LEGAL "Office Keyer" SHOW
 END
 
-* S105.1 | Number of visits (HEW_NUMBER_OF_VISITS) | NUMERIC(2)
+* S205.1 | Number of visits (HEW_NUMBER_OF_VISITS) | NUMERIC(2)
 * Total number of visits
 
-S1051
+S2051
   MUSTENTER
   RANGE 1 5
 END
 
-* S201.1 | Record Time Hour (HEW_RECORD_TIME_H) | NUMERIC(2)
+* Q101.1 | Record Time Hour (HEW_RECORD_TIME_H) | NUMERIC(2)
 * Record the time > Hour
 
-S2011
+Q1011
   MUSTENTER
   RANGE 0 23
 END
 
-* S201.2 | Record Time Minute (HEW_RECORD_TIME_M) | NUMERIC(2)
+* Q101.2 | Record Time Minute (HEW_RECORD_TIME_M) | NUMERIC(2)
 * Record the time > Minute
 
-S2012
+Q1012
   MUSTENTER
   RANGE 0 59
 END
 
-* S202.1 | Birth Month (HEW_BIRTH_M) | NUMERIC(2)
+* Q102.1 | Birth Month (HEW_BIRTH_M) | NUMERIC(2)
 * In what month and year were you born? > Month
 * Allowed Values
 *    98: Don't know
 
-S2021
+Q1021
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* S202.2 | Birth Year (HEW_BIRTH_YEAR) | NUMERIC(4)
+* Q102.2 | Birth Year (HEW_BIRTH_YEAR) | NUMERIC(4)
 * In what month and year were you born? > Year
 * Allowed Values
 *    9998: Don't know
 
-S2022
+Q1022
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* S203.1 | Age (HEW_AGE) | NUMERIC(2)
+* Q103.1 | Age (HEW_AGE) | NUMERIC(2)
 * How old were you at your last birthday? > Age in completed year
 * Allowed Values
 *    98: Don't know
 
-S2031
+Q1031
   MUSTENTER
   RANGE 0 97
   MISSINGVALUE 98
 END
 
-* S204.1 | School (HEW_SCHOOL) | NUMERIC(1)
+* Q104.1 | School (HEW_SCHOOL) | NUMERIC(1)
 * Have you ever attended school?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2081" if (S2041=2)
-S2041
+* Skip to "Q1081" if (Q1041=2)
+Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2041=2) THEN
-      HIDE S2051
-      HIDE S2061
-      CLEAR S2051
-      CLEAR S2061
+    IF (Q1041=2) THEN
+      HIDE Q1051
+      HIDE Q1061
+      CLEAR Q1051
+      CLEAR Q1061
     ELSE
-      UNHIDE S2051
-      UNHIDE S2061
+      UNHIDE Q1051
+      UNHIDE Q1061
     ENDIF
   END
 END
 
-* S205.1 | Highest Educational Level (HEW_HIGHEST_EDUCATIONAL_LEVEL) | NUMERIC(2)
+* Q105.1 | Highest Educational Level (HEW_HIGHEST_EDUCATIONAL_LEVEL) | NUMERIC(2)
 * What is the highest level of school you attended: primary, secondary, or higher? 
 * Allowed Values
 *    1: Primary
@@ -893,31 +896,31 @@ END
 *    3: Secondary / A level
 *    4: Higher
 
-S2051
+Q1051
   MUSTENTER
   COMMENT LEGAL USE D_N_HIGHEST_EDUCATIONAL_LEVEL
   TYPE COMMENT LEGAL
 END
 
-* S206.1 | Highest Year of Education (HEW_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
+* Q106.1 | Highest Year of Education (HEW_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
 * What is the highest (grade/form/year) you completed at that level? 
-* Skip to "S2091" if (S2051>2)
-S2061
+* Skip to "Q1091" if (Q1051>2)
+Q1061
   MUSTENTER
   AFTER ENTRY
-    IF (S2051>2) THEN
-      HIDE S2081
-      HIDE S2082
-      CLEAR S2081
-      CLEAR S2082
+    IF (Q1051>2) THEN
+      HIDE Q1081
+      HIDE Q1082
+      CLEAR Q1081
+      CLEAR Q1082
     ELSE
-      UNHIDE S2081
-      UNHIDE S2082
+      UNHIDE Q1081
+      UNHIDE Q1082
     ENDIF
   END
 END
 
-* S208.1 | Literacy (HEW_LITERACY) | NUMERIC(2)
+* Q108.1 | Literacy (HEW_LITERACY) | NUMERIC(2)
 * Can you read any part of the sentence to me?
 * Allowed Values
 *    1: No, cannont read at all
@@ -925,29 +928,29 @@ END
 *    3: Yes, able to read whole sentence
 *    4: Not applicable, no card with required language
 *    5: Not applicable, blind or Visually impaired
-* Skip to "S2091" if (S2081<>4)
-S2081
+* Skip to "Q1091" if (Q1081<>4)
+Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_LITERACY
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2081<>4) THEN
-      HIDE S2082
-      CLEAR S2082
+    IF (Q1081<>4) THEN
+      HIDE Q1082
+      CLEAR Q1082
     ELSE
-      UNHIDE S2082
+      UNHIDE Q1082
     ENDIF
   END
 END
 
-* S208.2 | Literacy Language (HEW_LITERACY_LANGUAGE) | VARCHAR(16)
+* Q108.2 | Literacy Language (HEW_LITERACY_LANGUAGE) | VARCHAR(16)
 * Can you read any part of the sentence to me? > Specify
 
-S2082
+Q1082
   MUSTENTER
 END
 
-* S209.1 | Place of Residence Before (HEW_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(1)
+* Q109.1 | Place of Residence Before (HEW_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(1)
 * For most of the time until you were 12 years old, did you live in Nairobi, Kisumu, in another city, or in the country side?
 * Allowed Values
 *    1: Nairobi / Kisumu
@@ -955,39 +958,39 @@ END
 *    3: Countryside
 *    4: Outside Kenya
 
-S2091
+Q1091
   MUSTENTER
   COMMENT LEGAL USE D_N_PLACE_OF_RESIDENCE
   TYPE COMMENT LEGAL
 END
 
-* S2101 | Residence Duration (HEW_RESIDENCE_DURATION) | NUMERIC(2)
+* Q1101 | Residence Duration (HEW_RESIDENCE_DRT) | NUMERIC(2)
 * How long have you been living continuously in Ndhiwa?  > Specify
 * Allowed Values
 *    98: Always
 *    99: Visitor
-* Skip to "S2131" if (S2101>97)
-S2101
+* Skip to "Q1131" if (Q1101>97)
+Q1101
   MUSTENTER
   RANGE 1 97
   MISSINGVALUE 98 99
   AFTER ENTRY
-    IF (S2101>97) THEN
-      HIDE S2111
-      HIDE S2121
-      HIDE S2122
-      CLEAR S2111
-      CLEAR S2121
-      CLEAR S2122
+    IF (Q1101>97) THEN
+      HIDE Q1111
+      HIDE Q1121
+      HIDE Q1122
+      CLEAR Q1111
+      CLEAR Q1121
+      CLEAR Q1122
     ELSE
-      UNHIDE S2111
-      UNHIDE S2121
-      UNHIDE S2122
+      UNHIDE Q1111
+      UNHIDE Q1121
+      UNHIDE Q1122
     ENDIF
   END
 END
 
-* S2111 | Type of Place of Residence Before (HEW_TYPE_OF_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(2)
+* Q1111 | Type of Place of Residence Before (HEW_TYPE_OF_PLACE_OF_RESIDENCE_BEFORE) | NUMERIC(2)
 * Just before you moved here, did you live in a city a town, or in the countryside?
 * Allowed Values
 *    0: Capital, large city
@@ -995,13 +998,13 @@ END
 *    2: Town
 *    3: Countryside
 
-S2111
+Q1111
   MUSTENTER
   COMMENT LEGAL USE D_N_TYPE_OF_PLACE_OF_RESIDENCE
   TYPE COMMENT LEGAL
 END
 
-* S2121 | Ethnic (HEW_ETHNIC) | NUMERIC(2)
+* Q1121 | Ethnic (HEW_ETHNIC) | NUMERIC(2)
 * What is your ethnic group/tribe?
 * Allowed Values
 *    1: Embu
@@ -1017,221 +1020,224 @@ END
 *    11: Somali
 *    12: Taita / Taveta
 *    96: Other
-* Skip to "S2131" if (S2121<>96)
-S2121
+* Skip to "Q1131" if (Q1121<>96)
+Q1121
   MUSTENTER
   COMMENT LEGAL USE D_N_ETHNIC
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2121<>96) THEN
-      HIDE S2122
-      CLEAR S2122
+    IF (Q1121<>96) THEN
+      HIDE Q1122
+      CLEAR Q1122
     ELSE
-      UNHIDE S2122
+      UNHIDE Q1122
     ENDIF
   END
 END
 
-* S2122 | Ethnic Other (HEW_ETHNIC_S) | VARCHAR(16)
+* Q1122 | Ethnic Other (HEW_ETHNIC_S) | VARCHAR(16)
 * What is your ethnic group/tribe? > Specify
 
-S2122
+Q1122
   MUSTENTER
 END
 
-* S2131 | Outside Night (HEW_OUTSIDE_NIGHT) | NUMERIC(2)
+* Q1131 | Outside Night (HEW_OUTSIDE_NIGHT) | NUMERIC(2)
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
-
-S2131
+* Skip to "Q1171" if (Q1131=0)
+Q1131
   MUSTENTER
+  AFTER ENTRY
+    IF (Q1131=0) THEN
+      HIDE Q1141
+      HIDE Q1151
+      HIDE Q1161
+      CLEAR Q1141
+      CLEAR Q1151
+      CLEAR Q1161
+    ELSE
+      UNHIDE Q1141
+      UNHIDE Q1151
+      UNHIDE Q1161
+    ENDIF
+  END
 END
 
-* S2141 | Outside Month (HEW_OUTSIDE_MONTH) | NUMERIC(1)
+* Q1141 | Outside Month (HEW_OUTSIDE_MONTH) | NUMERIC(1)
 * In the last 12 months, have you been away from home for more than one month at a time?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2171" if (S2131=0)
-S2141
+
+Q1141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-    IF (S2131=0) THEN
-      HIDE S2151
-      HIDE S2161
-      CLEAR S2151
-      CLEAR S2161
-    ELSE
-      UNHIDE S2151
-      UNHIDE S2161
-    ENDIF
-  END
 END
 
-* S2151 | Union (HEW_UNION) | NUMERIC(1)
+* Q1151 | Union (HEW_UNION) | NUMERIC(1)
 * Are you currently married or living together with a man as if married?
 * Allowed Values
 *    1: Yes, currently married
 *    2: Yes, living with a man
 *    3: No, not in union
-* Skip to "S2181" if (S2151<3)
-S2151
+* Skip to "Q1181" if (Q1151<3)
+Q1151
   MUSTENTER
   COMMENT LEGAL USE D_N_UNION_STATUS
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2151<3) THEN
-      HIDE S2161
-      HIDE S2171
-      CLEAR S2161
-      CLEAR S2171
+    IF (Q1151<3) THEN
+      HIDE Q1161
+      HIDE Q1171
+      CLEAR Q1161
+      CLEAR Q1171
     ELSE
-      UNHIDE S2161
-      UNHIDE S2171
+      UNHIDE Q1161
+      UNHIDE Q1171
     ENDIF
   END
 END
 
-* S2161 | Marital Statut in Past (HEW_MARITAL_STATUT_IN_PAST) | NUMERIC(1)
+* Q1161 | Marital Statut in Past (HEW_MARITAL_STATUT_IN_PAST) | NUMERIC(1)
 * Have you ever been married or lived together with a man as if married?
 * Allowed Values
 *    1: Yes, formerly married
 *    2: Yes, lived with a man
 *    3: No
 
-S2161
+Q1161
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST
   TYPE COMMENT LEGAL
 END
 
-* S2171 | Marital Status (HEW_MARITAL_STATUS) | NUMERIC(1)
+* Q1171 | Marital Status (HEW_MARITAL_STATUS) | NUMERIC(1)
 * What is your marital status now: are you widowed, divorced, or separated?
 * Allowed Values
 *    1: Widowed
 *    2: Divorced
 *    3: Separated
-* Skip to "S2191" if (S2151<>.)
-S2171
+* Skip to "Q1191" if (Q1171<>.)
+Q1171
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2151<>.) THEN
-      HIDE S2181
-      CLEAR S2181
+    IF (Q1171<>.) THEN
+      HIDE Q1181
+      CLEAR Q1181
     ELSE
-      UNHIDE S2181
+      UNHIDE Q1181
     ENDIF
   END
 END
 
-* S2181 | Husband Status (HEW_HUSBAND_STATUS) | NUMERIC(2)
+* Q1181 | Partner Status (HEW_PARTNER_STATUS) | NUMERIC(2)
 * Is your (husband/partner) living with you now or is he staying elsewhere?
 * Allowed Values
 *    1: Living with her
 *    2: Staying elsewhere
 
-S2181
+Q1181
   MUSTENTER
   COMMENT LEGAL USE D_N_HUSBAND_STATUS
   TYPE COMMENT LEGAL
 END
 
-* S2191 | Worked in last week (HEW_WORKED_IN_LAST_WEEK) | NUMERIC(1)
+* Q1191 | Worked in last week (HEW_WORKED_IN_LAST_WEEK) | NUMERIC(1)
 * Aside from your own housework, have you done any work in the last seven days?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2231" if (S2191=1)
-S2191
+* Skip to "Q1231" if (Q1191=1)
+Q1191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2191=1) THEN
-      HIDE S2201
-      HIDE S2211
-      HIDE S2221
-      CLEAR S2201
-      CLEAR S2211
-      CLEAR S2221
+    IF (Q1191=1) THEN
+      HIDE Q1201
+      HIDE Q1211
+      HIDE Q1221
+      CLEAR Q1201
+      CLEAR Q1211
+      CLEAR Q1221
     ELSE
-      UNHIDE S2201
-      UNHIDE S2211
-      UNHIDE S2221
+      UNHIDE Q1201
+      UNHIDE Q1211
+      UNHIDE Q1221
     ENDIF
   END
 END
 
-* S2201 | Worked in last week 2 (HEW_WORKED_IN_LAST_WEEK_2) | NUMERIC(1)
+* Q1201 | Worked in last week 2 (HEW_WORKED_IN_LAST_WEEK_2) | NUMERIC(1)
 * In the last seven days, have you done any of these things or any other work?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2231" if (S2201=1)
-S2201
+* Skip to "Q1231" if (Q1201=1)
+Q1201
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2201=1) THEN
-      HIDE S2211
-      HIDE S2221
-      CLEAR S2211
-      CLEAR S2221
+    IF (Q1201=1) THEN
+      HIDE Q1211
+      HIDE Q1221
+      CLEAR Q1211
+      CLEAR Q1221
     ELSE
-      UNHIDE S2211
-      UNHIDE S2221
+      UNHIDE Q1211
+      UNHIDE Q1221
     ENDIF
   END
 END
 
-* S2211 | Work absence (HEW_WORK_ABSENCE) | NUMERIC(1)
+* Q1211 | Work absence (HEW_WORK_ABSENCE) | NUMERIC(1)
 * Although you did not work in the last seven days, do you have any job or business from which you were absent for leave, illness, vacation, maternity leave, or any other such reason?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2231" if (S2211=1)
-S2211
+* Skip to "Q1231" if (Q1211=1)
+Q1211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2211=1) THEN
-      HIDE S2221
-      CLEAR S2221
+    IF (Q1211=1) THEN
+      HIDE Q1221
+      CLEAR Q1221
     ELSE
-      UNHIDE S2221
+      UNHIDE Q1221
     ENDIF
   END
 END
 
-* S2221 | Worked in last 12 months (HEW_WORKED_IN_LAST_12_MONTHS) | NUMERIC(1)
+* Q1221 | Worked in last 12 months (HEW_WORKED_IN_LAST_12_MONTHS) | NUMERIC(1)
 * Have you done any work in the last 12 months?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "S2251" if (S2221=2)
-S2221
+* Skip to "Q1251" if (Q1221=2)
+Q1221
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (S2221=2) THEN
-      HIDE S2231
-      HIDE S2241
-      CLEAR S2231
-      CLEAR S2241
+    IF (Q1221=2) THEN
+      HIDE Q1231
+      HIDE Q1241
+      CLEAR Q1231
+      CLEAR Q1241
     ELSE
-      UNHIDE S2231
-      UNHIDE S2241
+      UNHIDE Q1231
+      UNHIDE Q1241
     ENDIF
   END
 END
 
-* S2231 | Occupation (HEW_OCCUPATION) | NUMERIC(2)
+* Q1231 | Occupation (HEW_OCCUPATION) | NUMERIC(2)
 * What is your occupation, that is, what kind of work do you mainly do?What is your occupation, that is, what kind of work do you mainly do?
 * Allowed Values
 *    1: ?
@@ -1239,39 +1245,39 @@ END
 *    3: ?
 *    4: ?
 
-S2231
+Q1231
   MUSTENTER
   COMMENT LEGAL USE D_N_OCCUPATION
   TYPE COMMENT LEGAL
 END
 
-* S2241 | Work Class (HEW_WORK_CLASS) | NUMERIC(1)
+* Q1241 | Work Class (HEW_WORK_CLASS) | NUMERIC(1)
 * Do you do this work for a member of your family, for someone else, or are you self-employed?
 * Allowed Values
 *    1: For family member
 *    2: For someone else
 *    3: Self-employed
 
-S2241
+Q1241
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_CLASS
   TYPE COMMENT LEGAL
 END
 
-* S2251 | Work Time (HEW_WORK_TIME) | NUMERIC(1)
+* Q1251 | Work Time (HEW_WORK_TIME) | NUMERIC(1)
 * Do you usually work throughout the year, or do you work seasonally, or only once in a while?
 * Allowed Values
 *    1: All year
 *    2: Seasonal
 *    3: Occasional
 
-S2251
+Q1251
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_TIME
   TYPE COMMENT LEGAL
 END
 
-* S2261 | Work Earn (HEW_WORK_EARN) | NUMERIC(1)
+* Q1261 | Work Earn (HEW_WORK_EARN) | NUMERIC(1)
 * Are you paid in cash or kind for this work or are you not paid at all?
 * Allowed Values
 *    1: Cash only
@@ -1279,292 +1285,131 @@ END
 *    3: In kind only
 *    4: Not paid
 
-S2261
+Q1261
   MUSTENTER
   COMMENT LEGAL USE D_N_WORK_EARN
   TYPE COMMENT LEGAL
 END
 
-* Q101.1 | Birth Given (HEW_BIRTH_GIVEN) | NUMERIC(1)
+* Q201.1 | Birth Given (HEW_BIRTH_GIVEN) | NUMERIC(1)
 * Have you ever given birth?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q1061" if (Q1011=2)
-Q1011
+* Skip to "Q2061" if (Q2011=2)
+Q2011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q1011=2) THEN
-      HIDE Q1021
-      HIDE Q1031
-      HIDE Q1032
-      HIDE Q1041
-      HIDE Q1051
-      HIDE Q1052
-      CLEAR Q1021
-      CLEAR Q1031
-      CLEAR Q1032
-      CLEAR Q1041
-      CLEAR Q1051
-      CLEAR Q1052
+    IF (Q2011=2) THEN
+      HIDE Q2021
+      HIDE Q2031
+      HIDE Q2032
+      HIDE Q2041
+      HIDE Q2051
+      HIDE Q2052
+      CLEAR Q2021
+      CLEAR Q2031
+      CLEAR Q2032
+      CLEAR Q2041
+      CLEAR Q2051
+      CLEAR Q2052
     ELSE
-      UNHIDE Q1021
-      UNHIDE Q1031
-      UNHIDE Q1032
-      UNHIDE Q1041
-      UNHIDE Q1051
-      UNHIDE Q1052
+      UNHIDE Q2021
+      UNHIDE Q2031
+      UNHIDE Q2032
+      UNHIDE Q2041
+      UNHIDE Q2051
+      UNHIDE Q2052
     ENDIF
   END
 END
 
-* Q102.1 | Child at Home (HEW_CHILD_AT_HOME) | NUMERIC(1)
+* Q202.1 | Child at Home (HEW_CHILD_AT_HOME) | NUMERIC(1)
 * Do you have any sons or daughters to whom you have given birth who are now living with you?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q1041" if (Q1021=2)
-Q1021
+* Skip to "Q2041" if (Q2021=2)
+Q2021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q1021=2) THEN
-      HIDE Q1031
-      HIDE Q1032
-      CLEAR Q1031
-      CLEAR Q1032
+    IF (Q2021=2) THEN
+      HIDE Q2031
+      HIDE Q2032
+      CLEAR Q2031
+      CLEAR Q2032
     ELSE
-      UNHIDE Q1031
-      UNHIDE Q1032
+      UNHIDE Q2031
+      UNHIDE Q2032
     ENDIF
   END
 END
 
-* Q103.1 | Sons at Home (HEW_SONS_AT_HOME) | NUMERIC(2)
+* Q203.1 | Sons at Home (HEW_SONS_AT_HOME) | NUMERIC(2)
 * How many sons and daughters live with you?  > Sons at home
 
-Q1031
+Q2031
   MUSTENTER
   RANGE 0 20
 END
 
-* Q103.2 | Daughters at Home (HEW_DAUGHTERS_AT_HOME) | NUMERIC(2)
+* Q203.2 | Daughters at Home (HEW_DAUGHTERS_AT_HOME) | NUMERIC(2)
 * How many sons and daughters live with you?  > Daughters at home
 
-Q1032
+Q2032
   MUSTENTER
   RANGE 0 20
 END
 
-* Q104.1 | Child Elsewhere (HEW_CHILD_ELSEWHERE) | NUMERIC(1)
+* Q204.1 | Child Elsewhere (HEW_CHILD_ELSEWHERE) | NUMERIC(1)
 * Do you have any sons or daughters to whom you have given birth who are alive but do not live with you?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q1061" if (Q1041=2)
-Q1041
+* Skip to "Q2061" if (Q2041=2)
+Q2041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q1041=2) THEN
-      HIDE Q1051
-      HIDE Q1052
-      CLEAR Q1051
-      CLEAR Q1052
+    IF (Q2041=2) THEN
+      HIDE Q2051
+      HIDE Q2052
+      CLEAR Q2051
+      CLEAR Q2052
     ELSE
-      UNHIDE Q1051
-      UNHIDE Q1052
+      UNHIDE Q2051
+      UNHIDE Q2052
     ENDIF
   END
 END
 
-* Q105.1 | Sons Elsewhere (HEW_SONS_ELSEWHERE) | NUMERIC(2)
+* Q205.1 | Sons Elsewhere (HEW_SONS_ELSEWHERE) | NUMERIC(2)
 * How many sons are alive but do not live with you? > Sons elsewhere
 
-Q1051
+Q2051
   MUSTENTER
   RANGE 0 20
 END
 
-* Q105.2 | Daughters Elsewhere (HEW_DAUGHTERS_ELSEWHERE) | NUMERIC(2)
+* Q205.2 | Daughters Elsewhere (HEW_DAUGHTERS_ELSEWHERE) | NUMERIC(2)
 * How many sons are alive but do not live with you? > Daughters elsewhere
 
-Q1052
+Q2052
   MUSTENTER
   RANGE 0 20
 END
 
-* Q106.1 | Child Died (HEW_CHILD_DIED) | NUMERIC(1)
+* Q206.1 | Child Died (HEW_CHILD_DIED) | NUMERIC(1)
 * Have you ever given birth to a boy or girl who was born alive but later died?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q1081" if (Q1061=2)
-Q1061
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-  AFTER ENTRY
-    IF (Q1061=2) THEN
-      HIDE Q1071
-      HIDE Q1072
-      CLEAR Q1071
-      CLEAR Q1072
-    ELSE
-      UNHIDE Q1071
-      UNHIDE Q1072
-    ENDIF
-  END
-END
-
-* Q107.1 | Sons Died (HEW_SONS_DIED) | NUMERIC(2)
-* How many boys and girls have died? > Boys dead
-
-Q1071
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q107.2 | Daughters Died (HEW_DAUGHTERS_DIED) | NUMERIC(2)
-* How many boys and girls have died? > Girls dead
-
-Q1072
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q108.1 | Total Children (HEW_TOTAL_CHILDREN) | NUMERIC(2)
-* Total children ever born > Total births
-
-Q1081
-  MUSTENTER
-  RANGE 0 20
-END
-
-* Q1101 | Pregnancy Ended Month (HEW_PREGNANCY_ENDED_MONTH) | NUMERIC(2)
-* In what month and year was your last child born? > Months
-* Allowed Values
-*    98: Don't know
-
-Q1101
-  MUSTENTER
-  RANGE 1 12
-  MISSINGVALUE 98
-END
-
-* Q1102 | Pregnancy Ended Year (HEW_PREGNANCY_ENDED_YEAR) | NUMERIC(4)
-* In what month and year was your last child born? > Years
-* Allowed Values
-*    9998: Don't know
-* Skip to "Q3011" if ((Q1102<=2006) AND (Q1102<>9998))
-Q1102
-  MUSTENTER
-  RANGE 1920 2012
-  MISSINGVALUE 9998
-  AFTER ENTRY
-    IF ((Q1102<=2006) AND (Q1102<>9998)) THEN
-      HIDE Q2031
-      HIDE Q2041
-      HIDE Q2051
-      HIDE Q2061
-      HIDE Q2071
-      HIDE Q2072
-      HIDE Q2081
-      HIDE Q2082
-      HIDE Q2091
-      HIDE Q2101
-      HIDE Q2111
-      HIDE Q2112
-      HIDE Q2121
-      HIDE Q2122
-      HIDE Q2131
-      HIDE Q2132
-      HIDE Q2133
-      HIDE Q2141
-      HIDE Q2161
-      HIDE Q2171
-      CLEAR Q2031
-      CLEAR Q2041
-      CLEAR Q2051
-      CLEAR Q2061
-      CLEAR Q2071
-      CLEAR Q2072
-      CLEAR Q2081
-      CLEAR Q2082
-      CLEAR Q2091
-      CLEAR Q2101
-      CLEAR Q2111
-      CLEAR Q2112
-      CLEAR Q2121
-      CLEAR Q2122
-      CLEAR Q2131
-      CLEAR Q2132
-      CLEAR Q2133
-      CLEAR Q2141
-      CLEAR Q2161
-      CLEAR Q2171
-    ELSE
-      UNHIDE Q2031
-      UNHIDE Q2041
-      UNHIDE Q2051
-      UNHIDE Q2061
-      UNHIDE Q2071
-      UNHIDE Q2072
-      UNHIDE Q2081
-      UNHIDE Q2082
-      UNHIDE Q2091
-      UNHIDE Q2101
-      UNHIDE Q2111
-      UNHIDE Q2112
-      UNHIDE Q2121
-      UNHIDE Q2122
-      UNHIDE Q2131
-      UNHIDE Q2132
-      UNHIDE Q2133
-      UNHIDE Q2141
-      UNHIDE Q2161
-      UNHIDE Q2171
-    ENDIF
-  END
-END
-
-* Q203.1 | Last Baby Index (HEW_LAST_BABY_INDEX) | NUMERIC(1)
-* Birth history number of last birth > Birth history number
-
-Q2031
-  MUSTENTER
-  RANGE 1 6
-END
-
-* Q204.1 | Last Baby Name (HEW_LAST_BABY_NAME) | VARCHAR(20)
-* What name was given to your last baby? > Name
-
-Q2041
-  MUSTENTER
-END
-
-* Q205.1 | Last Baby Alive (HEW_LAST_BABY_ALIVE) | NUMERIC(1)
-* Is last baby still alive?
-* Allowed Values
-*    1: Yes
-*    2: No
-
-Q2051
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-END
-
-* Q206.1 | Antenatal Care (HEW_ATNT_CARE) | NUMERIC(1)
-* Did you see anyone for antenatal care for this pregnancy?
-* Allowed Values
-*    1: Yes
-*    2: No
-* Skip to "Q2111" if (Q2061=2)
+* Skip to "Q2081" if (Q2061=2)
 Q2061
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
@@ -1573,28 +1418,189 @@ Q2061
     IF (Q2061=2) THEN
       HIDE Q2071
       HIDE Q2072
-      HIDE Q2081
-      HIDE Q2082
-      HIDE Q2091
-      HIDE Q2101
       CLEAR Q2071
       CLEAR Q2072
-      CLEAR Q2081
-      CLEAR Q2082
-      CLEAR Q2091
-      CLEAR Q2101
     ELSE
       UNHIDE Q2071
       UNHIDE Q2072
-      UNHIDE Q2081
-      UNHIDE Q2082
-      UNHIDE Q2091
-      UNHIDE Q2101
     ENDIF
   END
 END
 
-* Q207.1 | Antenatal Care Whom (HEW_ATNT_CARE_WHOM) | VARCHAR(1)
+* Q207.1 | Sons Died (HEW_SONS_DIED) | NUMERIC(2)
+* How many boys and girls have died? > Boys dead
+
+Q2071
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q207.2 | Daughters Died (HEW_DAUGHTERS_DIED) | NUMERIC(2)
+* How many boys and girls have died? > Girls dead
+
+Q2072
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q208.1 | Total Children (HEW_TOTAL_CHILDREN) | NUMERIC(2)
+* Total children ever born > Total births
+
+Q2081
+  MUSTENTER
+  RANGE 0 20
+END
+
+* Q2101 | Pregnancy Ended Month (HEW_PREGNANCY_ENDED_MONTH) | NUMERIC(2)
+* In what month and year was your last child born? > Months
+* Allowed Values
+*    98: Don't know
+
+Q2101
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+END
+
+* Q2102 | Pregnancy Ended Year (HEW_PREGNANCY_ENDED_YEAR) | NUMERIC(4)
+* In what month and year was your last child born? > Years
+* Allowed Values
+*    9998: Don't know
+* Skip to "Q4011" if ((Q2102<=2006) AND (Q2102<>9998))
+Q2102
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+  AFTER ENTRY
+    IF ((Q2102<=2006) AND (Q2102<>9998)) THEN
+      HIDE Q3031
+      HIDE Q3041
+      HIDE Q3051
+      HIDE Q3061
+      HIDE Q3071
+      HIDE Q3072
+      HIDE Q3081
+      HIDE Q3082
+      HIDE Q3091
+      HIDE Q3101
+      HIDE Q3111
+      HIDE Q3112
+      HIDE Q3121
+      HIDE Q3122
+      HIDE Q3131
+      HIDE Q3132
+      HIDE Q3133
+      HIDE Q3141
+      HIDE Q3161
+      HIDE Q3171
+      CLEAR Q3031
+      CLEAR Q3041
+      CLEAR Q3051
+      CLEAR Q3061
+      CLEAR Q3071
+      CLEAR Q3072
+      CLEAR Q3081
+      CLEAR Q3082
+      CLEAR Q3091
+      CLEAR Q3101
+      CLEAR Q3111
+      CLEAR Q3112
+      CLEAR Q3121
+      CLEAR Q3122
+      CLEAR Q3131
+      CLEAR Q3132
+      CLEAR Q3133
+      CLEAR Q3141
+      CLEAR Q3161
+      CLEAR Q3171
+    ELSE
+      UNHIDE Q3031
+      UNHIDE Q3041
+      UNHIDE Q3051
+      UNHIDE Q3061
+      UNHIDE Q3071
+      UNHIDE Q3072
+      UNHIDE Q3081
+      UNHIDE Q3082
+      UNHIDE Q3091
+      UNHIDE Q3101
+      UNHIDE Q3111
+      UNHIDE Q3112
+      UNHIDE Q3121
+      UNHIDE Q3122
+      UNHIDE Q3131
+      UNHIDE Q3132
+      UNHIDE Q3133
+      UNHIDE Q3141
+      UNHIDE Q3161
+      UNHIDE Q3171
+    ENDIF
+  END
+END
+
+* Q303.1 | Last Baby Index (HEW_LAST_BABY_INDEX) | NUMERIC(1)
+* Birth history number of last birth > Birth history number
+
+Q3031
+  MUSTENTER
+  RANGE 1 6
+END
+
+* Q304.1 | Last Baby Name (HEW_LAST_BABY_NAME) | VARCHAR(20)
+* What name was given to your last baby? > Name
+
+Q3041
+  MUSTENTER
+END
+
+* Q305.1 | Last Baby Alive (HEW_LAST_BABY_ALIVE) | NUMERIC(1)
+* Is last baby still alive?
+* Allowed Values
+*    1: Yes
+*    2: No
+
+Q3051
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+END
+
+* Q306.1 | Antenatal Care (HEW_ATNT_CARE) | NUMERIC(1)
+* Did you see anyone for antenatal care for this pregnancy?
+* Allowed Values
+*    1: Yes
+*    2: No
+* Skip to "Q3111" if (Q3061=2)
+Q3061
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (Q3061=2) THEN
+      HIDE Q3071
+      HIDE Q3072
+      HIDE Q3081
+      HIDE Q3082
+      HIDE Q3091
+      HIDE Q3101
+      CLEAR Q3071
+      CLEAR Q3072
+      CLEAR Q3081
+      CLEAR Q3082
+      CLEAR Q3091
+      CLEAR Q3101
+    ELSE
+      UNHIDE Q3071
+      UNHIDE Q3072
+      UNHIDE Q3081
+      UNHIDE Q3082
+      UNHIDE Q3091
+      UNHIDE Q3101
+    ENDIF
+  END
+END
+
+* Q307.1 | Antenatal Care Whom (HEW_ATNT_CARE_WHOM) | VARCHAR(1)
 * Whom did you see? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1603,29 +1609,29 @@ END
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-* Skip to "Q2081" if (Q2071<>"X")
-Q2071
+* Skip to "Q3081" if (Q3071<>"X")
+Q3071
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q2071<>"X") THEN
-      HIDE Q2072
-      CLEAR Q2072
+    IF (Q3071<>"X") THEN
+      HIDE Q3072
+      CLEAR Q3072
     ELSE
-      UNHIDE Q2072
+      UNHIDE Q3072
     ENDIF
   END
 END
 
-* Q207.2 | Antenatal Care Whom Other (HEW_ATNT_CARE_WHOM_S) | VARCHAR(16)
+* Q307.2 | Antenatal Care Whom Other (HEW_ATNT_CARE_WHOM_S) | VARCHAR(16)
 * Whom did you see?  > Specify
 
-Q2072
+Q3072
   MUSTENTER
 END
 
-* Q208.1 | Antenatal Care Where (HEW_ATNT_CARE_WHERE) | VARCHAR(1)
+* Q308.1 | Antenatal Care Where (HEW_ATNT_CARE_WHERE) | VARCHAR(1)
 * Where did you receive antenatal care for this pregnancy?
 * Allowed Values
 *    A: Home: Respondent's home
@@ -1637,47 +1643,47 @@ END
 *    G: Private medical sector: Private hospital, clinic
 *    H: Private medical sector: Other private medical
 *    X: Other
-* Skip to "Q2091" if ((Q2081<>"F") AND (Q2081<>"H") AND (Q2081<>"X"))
-Q2081
+* Skip to "Q3091" if ((Q3081<>"F") AND (Q3081<>"H") AND (Q3081<>"X"))
+Q3081
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORK_PLACE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q2081<>"F") AND (Q2081<>"H") AND (Q2081<>"X")) THEN
-      HIDE Q2082
-      CLEAR Q2082
+    IF ((Q3081<>"F") AND (Q3081<>"H") AND (Q3081<>"X")) THEN
+      HIDE Q3082
+      CLEAR Q3082
     ELSE
-      UNHIDE Q2082
+      UNHIDE Q3082
     ENDIF
   END
 END
 
-* Q208.2 | Antenatal Care Where Other (HEW_ATNT_CARE_WHERE_S) | VARCHAR(16)
+* Q308.2 | Antenatal Care Where Other (HEW_ATNT_CARE_WHERE_S) | VARCHAR(16)
 * Where did you receive antenatal care for this pregnancy? > Specify
 
-Q2082
+Q3082
   MUSTENTER
 END
 
-* Q209.1 | Antenatal Care When (HEW_ATNT_CARE_WHEN) | NUMERIC(2)
+* Q309.1 | Antenatal Care When (HEW_ATNT_CARE_WHEN) | NUMERIC(2)
 * How many months pregnant were you when you first received antenatal care for this pregnancy? > Months
 * Allowed Values
 *    98: Don't know
 
-Q2091
+Q3091
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q2101 | Antenatal Care How Many (HEW_ATNT_CARE_HOW_MANY) | NUMERIC(2)
+* Q3101 | Antenatal Care How Many (HEW_ATNT_CARE_HOW_MANY) | NUMERIC(2)
 * How many times did you receive antenatal care during this pregnancy? > Numer of times
 
-Q2101
+Q3101
   MUSTENTER
 END
 
-* Q2111 | Delivery Whom (HEW_DLVR_WHOM) | VARCHAR(1)
+* Q3111 | Delivery Whom (HEW_DLVR_WHOM) | VARCHAR(1)
 * Who assisted with the delivery of last baby ? 
 * Allowed Values
 *    A: Health personnel: Doctor
@@ -1686,29 +1692,29 @@ END
 *    D: Other person: Traditional birth attendant
 *    E: Other person: Community/village health worker
 *    X: Other person: Other
-* Skip to "Q2121" if (Q2111<>"X")
-Q2111
+* Skip to "Q3121" if (Q3111<>"X")
+Q3111
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_WORKER_TYPE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q2111<>"X") THEN
-      HIDE Q2112
-      CLEAR Q2112
+    IF (Q3111<>"X") THEN
+      HIDE Q3112
+      CLEAR Q3112
     ELSE
-      UNHIDE Q2112
+      UNHIDE Q3112
     ENDIF
   END
 END
 
-* Q2112 | Delivery Whom Other (HEW_DLVR_WHOM_S) | VARCHAR(16)
+* Q3112 | Delivery Whom Other (HEW_DLVR_WHOM_S) | VARCHAR(16)
 * Who assisted with the delivery of last baby ?  > Specify
 
-Q2112
+Q3112
   MUSTENTER
 END
 
-* Q2121 | Delivery Where (HEW_DLVR_WHERE) | NUMERIC(2)
+* Q3121 | Delivery Where (HEW_DLVR_WHERE) | NUMERIC(2)
 * Where did you give birth to last baby?
 * Allowed Values
 *    11: Home: Your home
@@ -1720,366 +1726,366 @@ END
 *    31: Private medical sector: Private hospital/clinic
 *    36: Private medical sector: Other
 *    96: Other
-* Skip to "Q2161" if ((Q2121=11) OR (Q2121=12) )
-Q2121
+* Skip to "Q3161" if ((Q3121=11) OR (Q3121=12) )
+Q3121
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE_4
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q2121=11) OR (Q2121=12) ) THEN
-      HIDE Q2122
-      HIDE Q2131
-      HIDE Q2132
-      HIDE Q2133
-      HIDE Q2141
-      CLEAR Q2122
-      CLEAR Q2131
-      CLEAR Q2132
-      CLEAR Q2133
-      CLEAR Q2141
+    IF ((Q3121=11) OR (Q3121=12) ) THEN
+      HIDE Q3122
+      HIDE Q3131
+      HIDE Q3132
+      HIDE Q3133
+      HIDE Q3141
+      CLEAR Q3122
+      CLEAR Q3131
+      CLEAR Q3132
+      CLEAR Q3133
+      CLEAR Q3141
     ELSE
-      UNHIDE Q2122
-      UNHIDE Q2131
-      UNHIDE Q2132
-      UNHIDE Q2133
-      UNHIDE Q2141
+      UNHIDE Q3122
+      UNHIDE Q3131
+      UNHIDE Q3132
+      UNHIDE Q3133
+      UNHIDE Q3141
     ENDIF
   END
 END
 
-* Q2122 | Delivery Where  Other (HEW_DLVR_WHERE__S) | VARCHAR(16)
+* Q3122 | Delivery Where  Other (HEW_DLVR_WHERE__S) | VARCHAR(16)
 * Where did you give birth to last baby?
 
-Q2122
+Q3122
   MUSTENTER
 END
 
-* Q2131 | Delivery Discharge Hour (HEW_DLVR_DCG_H) | NUMERIC(2)
+* Q3131 | Delivery Discharge Hour (HEW_DLVR_DCG_H) | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Hours
 
-Q2131
+Q3131
   MUSTENTER
   RANGE 0 23
 END
 
-* Q2132 | Delivery Discharge Day (HEW_DLVR_DCG_DAY) | NUMERIC(2)
+* Q3132 | Delivery Discharge Day (HEW_DLVR_DCG_DAY) | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Days
 * Allowed Values
 *    98: Don't know
 
-Q2132
+Q3132
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
 END
 
-* Q2133 | Delivery Discharge Week (HEW_DLVR_DCG_W) | NUMERIC(2)
+* Q3133 | Delivery Discharge Week (HEW_DLVR_DCG_W) | NUMERIC(2)
 * How long after last baby was delivered did you stay there? > Weeks
 
-Q2133
+Q3133
   MUSTENTER
 END
 
-* Q2141 | Breastfeeding (HEW_BF) | NUMERIC(1)
+* Q3141 | Breastfeeding (HEW_BF) | NUMERIC(1)
 * Did you ever breastfeed last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3011" if (Q2051=1)
-Q2141
+* Skip to "Q4011" if (Q3051=1)
+Q3141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q2051=1) THEN
-      HIDE Q2161
-      HIDE Q2171
-      CLEAR Q2161
-      CLEAR Q2171
+    IF (Q3051=1) THEN
+      HIDE Q3161
+      HIDE Q3171
+      CLEAR Q3161
+      CLEAR Q3171
     ELSE
-      UNHIDE Q2161
-      UNHIDE Q2171
+      UNHIDE Q3161
+      UNHIDE Q3171
     ENDIF
   END
 END
 
-* Q2161 | Breastfeeding Still (HEW_BF_STILL) | NUMERIC(1)
+* Q3161 | Breastfeeding Still (HEW_BF_STILL) | NUMERIC(1)
 * Are you still breastfeeding last baby?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3011" if (Q2161=1)
-Q2161
+* Skip to "Q4011" if (Q3161=1)
+Q3161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q2161=1) THEN
-      HIDE Q2171
-      CLEAR Q2171
+    IF (Q3161=1) THEN
+      HIDE Q3171
+      CLEAR Q3171
     ELSE
-      UNHIDE Q2171
+      UNHIDE Q3171
     ENDIF
   END
 END
 
-* Q2171 | Breastfeeding Duration (HEW_BF_DRT) | NUMERIC(2)
+* Q3171 | Breastfeeding Duration (HEW_BF_DRT) | NUMERIC(2)
 * What age was last baby when you stopped to breasfeed him/her? > Months
 
-Q2171
+Q3171
   MUSTENTER
 END
 
-* Q301.1 | AIDS Disease (HEW_AIDS_DSS) | NUMERIC(1)
+* Q401.1 | AIDS Disease (HEW_AIDS_DSS) | NUMERIC(1)
 * Have you ever heard of an illness called AIDS?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q4041" if (Q3011=1)
-Q3011
+* Skip to "Q5041" if (Q4011=1)
+Q4011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3011=1) THEN
-      HIDE Q3021
-      HIDE Q3022
-      HIDE Q3023
-      HIDE Q3031
-      HIDE Q3071
-      HIDE Q3081
-      HIDE Q3091
-      HIDE Q3101
-      HIDE Q3102
-      HIDE Q3111
-      HIDE Q3121
-      HIDE Q3141
-      HIDE Q3151
-      HIDE Q3161
-      HIDE Q3171
-      HIDE Q3181
-      HIDE Q3191
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      HIDE Q3231
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3021
-      CLEAR Q3022
-      CLEAR Q3023
-      CLEAR Q3031
-      CLEAR Q3071
-      CLEAR Q3081
-      CLEAR Q3091
-      CLEAR Q3101
-      CLEAR Q3102
-      CLEAR Q3111
-      CLEAR Q3121
-      CLEAR Q3141
-      CLEAR Q3151
-      CLEAR Q3161
-      CLEAR Q3171
-      CLEAR Q3181
-      CLEAR Q3191
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
-      CLEAR Q3231
-      CLEAR Q3241
-      CLEAR Q3242
+    IF (Q4011=1) THEN
+      HIDE Q4021
+      HIDE Q4022
+      HIDE Q4023
+      HIDE Q4031
+      HIDE Q4071
+      HIDE Q4081
+      HIDE Q4091
+      HIDE Q4101
+      HIDE Q4102
+      HIDE Q4111
+      HIDE Q4121
+      HIDE Q4141
+      HIDE Q4151
+      HIDE Q4161
+      HIDE Q4171
+      HIDE Q4181
+      HIDE Q4191
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      HIDE Q4231
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4021
+      CLEAR Q4022
+      CLEAR Q4023
+      CLEAR Q4031
+      CLEAR Q4071
+      CLEAR Q4081
+      CLEAR Q4091
+      CLEAR Q4101
+      CLEAR Q4102
+      CLEAR Q4111
+      CLEAR Q4121
+      CLEAR Q4141
+      CLEAR Q4151
+      CLEAR Q4161
+      CLEAR Q4171
+      CLEAR Q4181
+      CLEAR Q4191
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
+      CLEAR Q4231
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3021
-      UNHIDE Q3022
-      UNHIDE Q3023
-      UNHIDE Q3031
-      UNHIDE Q3071
-      UNHIDE Q3081
-      UNHIDE Q3091
-      UNHIDE Q3101
-      UNHIDE Q3102
-      UNHIDE Q3111
-      UNHIDE Q3121
-      UNHIDE Q3141
-      UNHIDE Q3151
-      UNHIDE Q3161
-      UNHIDE Q3171
-      UNHIDE Q3181
-      UNHIDE Q3191
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
-      UNHIDE Q3231
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4021
+      UNHIDE Q4022
+      UNHIDE Q4023
+      UNHIDE Q4031
+      UNHIDE Q4071
+      UNHIDE Q4081
+      UNHIDE Q4091
+      UNHIDE Q4101
+      UNHIDE Q4102
+      UNHIDE Q4111
+      UNHIDE Q4121
+      UNHIDE Q4141
+      UNHIDE Q4151
+      UNHIDE Q4161
+      UNHIDE Q4171
+      UNHIDE Q4181
+      UNHIDE Q4191
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
+      UNHIDE Q4231
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q302.1 | AIDS During Pregnancy (HEW_AIDS_DURING_PGC) | NUMERIC(1)
+* Q402.1 | AIDS During Pregnancy (HEW_AIDS_DURING_PGC) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
 
-Q3021
+Q4021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
 END
 
-* Q302.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
+* Q402.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
 
-Q3022
+Q4022
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
 END
 
-* Q302.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
+* Q402.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
 
-Q3023
+Q4023
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
 END
 
-* Q303.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
+* Q403.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
 * Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-* Skip to "Q3191" if ((Q1081=0) OR (Q1102<2010) OR (Q2061=2))
-Q3031
+* Skip to "Q4191" if ((Q2081=0) OR (Q2102<2010) OR (Q3061=2))
+Q4031
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q1081=0) OR (Q1102<2010) OR (Q2061=2)) THEN
-      HIDE Q3071
-      HIDE Q3081
-      HIDE Q3091
-      HIDE Q3101
-      HIDE Q3102
-      HIDE Q3111
-      HIDE Q3121
-      HIDE Q3141
-      HIDE Q3151
-      HIDE Q3161
-      HIDE Q3171
-      HIDE Q3181
-      CLEAR Q3071
-      CLEAR Q3081
-      CLEAR Q3091
-      CLEAR Q3101
-      CLEAR Q3102
-      CLEAR Q3111
-      CLEAR Q3121
-      CLEAR Q3141
-      CLEAR Q3151
-      CLEAR Q3161
-      CLEAR Q3171
-      CLEAR Q3181
+    IF ((Q2081=0) OR (Q2102<2010) OR (Q3061=2)) THEN
+      HIDE Q4071
+      HIDE Q4081
+      HIDE Q4091
+      HIDE Q4101
+      HIDE Q4102
+      HIDE Q4111
+      HIDE Q4121
+      HIDE Q4141
+      HIDE Q4151
+      HIDE Q4161
+      HIDE Q4171
+      HIDE Q4181
+      CLEAR Q4071
+      CLEAR Q4081
+      CLEAR Q4091
+      CLEAR Q4101
+      CLEAR Q4102
+      CLEAR Q4111
+      CLEAR Q4121
+      CLEAR Q4141
+      CLEAR Q4151
+      CLEAR Q4161
+      CLEAR Q4171
+      CLEAR Q4181
     ELSE
-      UNHIDE Q3071
-      UNHIDE Q3081
-      UNHIDE Q3091
-      UNHIDE Q3101
-      UNHIDE Q3102
-      UNHIDE Q3111
-      UNHIDE Q3121
-      UNHIDE Q3141
-      UNHIDE Q3151
-      UNHIDE Q3161
-      UNHIDE Q3171
-      UNHIDE Q3181
+      UNHIDE Q4071
+      UNHIDE Q4081
+      UNHIDE Q4091
+      UNHIDE Q4101
+      UNHIDE Q4102
+      UNHIDE Q4111
+      UNHIDE Q4121
+      UNHIDE Q4141
+      UNHIDE Q4151
+      UNHIDE Q4161
+      UNHIDE Q4171
+      UNHIDE Q4181
     ENDIF
   END
 END
 
-* Q307.1 | AIDS Antenatal Test Offered (HEW_AIDS_ATNT_TEST_OFFERED) | NUMERIC(1)
+* Q407.1 | AIDS Antenatal Test Offered (HEW_AIDS_ATNT_TEST_OFFERED) | NUMERIC(1)
 * Were you offered a test for the AIDS virus as part of your antenatal care?
 * Allowed Values
 *    1: Yes
 *    2: No
 
-Q3071
+Q4071
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
 END
 
-* Q308.1 | AIDS Antenatal Test (HEW_AIDS_ATNT_TEST) | NUMERIC(1)
+* Q408.1 | AIDS Antenatal Test (HEW_AIDS_ATNT_TEST) | NUMERIC(1)
 * I don't want to know the results, but were you tested for the AIDS virus as part of your antenatal 
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3191" if (Q3081=2)
-Q3081
+* Skip to "Q4191" if (Q4081=2)
+Q4081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3081=2) THEN
-      HIDE Q3091
-      HIDE Q3101
-      HIDE Q3102
-      HIDE Q3111
-      HIDE Q3121
-      HIDE Q3141
-      HIDE Q3151
-      HIDE Q3161
-      HIDE Q3171
-      HIDE Q3181
-      CLEAR Q3091
-      CLEAR Q3101
-      CLEAR Q3102
-      CLEAR Q3111
-      CLEAR Q3121
-      CLEAR Q3141
-      CLEAR Q3151
-      CLEAR Q3161
-      CLEAR Q3171
-      CLEAR Q3181
+    IF (Q4081=2) THEN
+      HIDE Q4091
+      HIDE Q4101
+      HIDE Q4102
+      HIDE Q4111
+      HIDE Q4121
+      HIDE Q4141
+      HIDE Q4151
+      HIDE Q4161
+      HIDE Q4171
+      HIDE Q4181
+      CLEAR Q4091
+      CLEAR Q4101
+      CLEAR Q4102
+      CLEAR Q4111
+      CLEAR Q4121
+      CLEAR Q4141
+      CLEAR Q4151
+      CLEAR Q4161
+      CLEAR Q4171
+      CLEAR Q4181
     ELSE
-      UNHIDE Q3091
-      UNHIDE Q3101
-      UNHIDE Q3102
-      UNHIDE Q3111
-      UNHIDE Q3121
-      UNHIDE Q3141
-      UNHIDE Q3151
-      UNHIDE Q3161
-      UNHIDE Q3171
-      UNHIDE Q3181
+      UNHIDE Q4091
+      UNHIDE Q4101
+      UNHIDE Q4102
+      UNHIDE Q4111
+      UNHIDE Q4121
+      UNHIDE Q4141
+      UNHIDE Q4151
+      UNHIDE Q4161
+      UNHIDE Q4171
+      UNHIDE Q4181
     ENDIF
   END
 END
 
-* Q309.1 | AIDS Antenatal Test When (HEW_AIDS_ATNT_TEST_WHEN) | NUMERIC(1)
+* Q409.1 | AIDS Antenatal Test When (HEW_AIDS_ATNT_TEST_WHEN) | NUMERIC(1)
 * How many months pregnant were you when you were first tested for the AIDS virus as a part of your antenatal care for this pregnancy? > Months
 
-Q3091
+Q4091
   MUSTENTER
   RANGE 0 9
 END
 
-* Q3101 | AIDS Antenatal Test Where (HEW_AIDS_ATNT_TEST_WHERE) | NUMERIC(2)
+* Q4101 | AIDS Antenatal Test Where (HEW_AIDS_ATNT_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2100,315 +2106,315 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-* Skip to "Q3111" if ((Q3101<>18) AND (Q3101<>27) AND (Q3101<>96))
-Q3101
+* Skip to "Q4111" if ((Q4101<>18) AND (Q4101<>27) AND (Q4101<>96))
+Q4101
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q3101<>18) AND (Q3101<>27) AND (Q3101<>96)) THEN
-      HIDE Q3102
-      CLEAR Q3102
+    IF ((Q4101<>18) AND (Q4101<>27) AND (Q4101<>96)) THEN
+      HIDE Q4102
+      CLEAR Q4102
     ELSE
-      UNHIDE Q3102
+      UNHIDE Q4102
     ENDIF
   END
 END
 
-* Q3102 | AIDS Antenatal Test Where Other (HEW_AIDS_ATNT_TEST_WHERE_S) | VARCHAR(16)
+* Q4102 | AIDS Antenatal Test Where Other (HEW_AIDS_ATNT_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 
-Q3102
+Q4102
   MUSTENTER
 END
 
-* Q3111 | AIDS Antenatal Test Got (HEW_AIDS_ATNT_TEST_GOT) | NUMERIC(1)
+* Q4111 | AIDS Antenatal Test Got (HEW_AIDS_ATNT_TEST_GOT) | NUMERIC(1)
 * I don't want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3141" if (Q3111=2)
-Q3111
+* Skip to "Q4141" if (Q4111=2)
+Q4111
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3111=2) THEN
-      HIDE Q3121
-      CLEAR Q3121
+    IF (Q4111=2) THEN
+      HIDE Q4121
+      CLEAR Q4121
     ELSE
-      UNHIDE Q3121
+      UNHIDE Q4121
     ENDIF
   END
 END
 
-* Q3121 | AIDS Antenatal Test Counceling (HEW_AIDS_ATNT_TEST_COUNCELING) | NUMERIC(1)
+* Q4121 | AIDS Antenatal Test Counceling (HEW_AIDS_ATNT_TEST_COUNCELING) | NUMERIC(1)
 * All women are supposed to receive counseling after being tested. After you were tested, did you receive counseling?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-* Skip to "Q3171" if ((Q3101>=21) AND (Q3101<=36))
-Q3121
+* Skip to "Q4171" if ((Q4101>=21) AND (Q4101<=36))
+Q4121
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q3101>=21) AND (Q3101<=36)) THEN
-      HIDE Q3141
-      HIDE Q3151
-      HIDE Q3161
-      CLEAR Q3141
-      CLEAR Q3151
-      CLEAR Q3161
+    IF ((Q4101>=21) AND (Q4101<=36)) THEN
+      HIDE Q4141
+      HIDE Q4151
+      HIDE Q4161
+      CLEAR Q4141
+      CLEAR Q4151
+      CLEAR Q4161
     ELSE
-      UNHIDE Q3141
-      UNHIDE Q3151
-      UNHIDE Q3161
+      UNHIDE Q4141
+      UNHIDE Q4151
+      UNHIDE Q4161
     ENDIF
   END
 END
 
-* Q3141 | AIDS Pregnancy Test Offered (HEW_AIDS_PGC_TEST_OFFERED) | NUMERIC(1)
+* Q4141 | AIDS Pregnancy Test Offered (HEW_AIDS_PGC_TEST_OFFERED) | NUMERIC(1)
 * Between the time you went for delivery but before the baby was born, were you offered a test for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3231" if (Q3141=2)
-Q3141
+* Skip to "Q4231" if (Q4141=2)
+Q4141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3141=2) THEN
-      HIDE Q3151
-      HIDE Q3161
-      HIDE Q3171
-      HIDE Q3181
-      HIDE Q3191
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      CLEAR Q3151
-      CLEAR Q3161
-      CLEAR Q3171
-      CLEAR Q3181
-      CLEAR Q3191
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
+    IF (Q4141=2) THEN
+      HIDE Q4151
+      HIDE Q4161
+      HIDE Q4171
+      HIDE Q4181
+      HIDE Q4191
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      CLEAR Q4151
+      CLEAR Q4161
+      CLEAR Q4171
+      CLEAR Q4181
+      CLEAR Q4191
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
     ELSE
-      UNHIDE Q3151
-      UNHIDE Q3161
-      UNHIDE Q3171
-      UNHIDE Q3181
-      UNHIDE Q3191
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
+      UNHIDE Q4151
+      UNHIDE Q4161
+      UNHIDE Q4171
+      UNHIDE Q4181
+      UNHIDE Q4191
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
     ENDIF
   END
 END
 
-* Q3151 | AIDS Pregnancy Test (HEW_AIDS_PGC_TEST) | NUMERIC(1)
+* Q4151 | AIDS Pregnancy Test (HEW_AIDS_PGC_TEST) | NUMERIC(1)
 * I don't want to know the results, but were you tested for the AIDS virus at that time?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3231" if (Q3151=2)
-Q3151
+* Skip to "Q4231" if (Q4151=2)
+Q4151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3151=2) THEN
-      HIDE Q3161
-      HIDE Q3171
-      HIDE Q3181
-      HIDE Q3191
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      CLEAR Q3161
-      CLEAR Q3171
-      CLEAR Q3181
-      CLEAR Q3191
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
+    IF (Q4151=2) THEN
+      HIDE Q4161
+      HIDE Q4171
+      HIDE Q4181
+      HIDE Q4191
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      CLEAR Q4161
+      CLEAR Q4171
+      CLEAR Q4181
+      CLEAR Q4191
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
     ELSE
-      UNHIDE Q3161
-      UNHIDE Q3171
-      UNHIDE Q3181
-      UNHIDE Q3191
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
+      UNHIDE Q4161
+      UNHIDE Q4171
+      UNHIDE Q4181
+      UNHIDE Q4191
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
     ENDIF
   END
 END
 
-* Q3161 | AIDS Pregnancy Test Got (HEW_AIDS_PGC_TEST_GOT) | NUMERIC(1)
+* Q4161 | AIDS Pregnancy Test Got (HEW_AIDS_PGC_TEST_GOT) | NUMERIC(1)
 * I don't want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
 
-Q3161
+Q4161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
 END
 
-* Q3171 | AIDS Pregnancy Test After (HEW_AIDS_PGC_TEST_AFTER) | NUMERIC(1)
+* Q4171 | AIDS Pregnancy Test After (HEW_AIDS_PGC_TEST_AFTER) | NUMERIC(1)
 * Have you been tested for the AIDS virus since that time you were tested during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3231" if (Q3171=2)
-Q3171
+* Skip to "Q4231" if (Q4171=2)
+Q4171
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3171=2) THEN
-      HIDE Q3181
-      HIDE Q3191
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      CLEAR Q3181
-      CLEAR Q3191
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
+    IF (Q4171=2) THEN
+      HIDE Q4181
+      HIDE Q4191
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      CLEAR Q4181
+      CLEAR Q4191
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
     ELSE
-      UNHIDE Q3181
-      UNHIDE Q3191
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
+      UNHIDE Q4181
+      UNHIDE Q4191
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
     ENDIF
   END
 END
 
-* Q3181 | AIDS Test Most Recent (HEW_AIDS_TEST_MOST_RECENT) | NUMERIC(2)
+* Q4181 | AIDS Test Most Recent (HEW_AIDS_TEST_MOST_RECENT) | NUMERIC(2)
 * How many months ago was your most recent HIV test? > Months ago
-* Skip to "Q4041" if (Q3181<>.)
-Q3181
+* Skip to "Q5041" if (Q4181<>.)
+Q4181
   MUSTENTER
   AFTER ENTRY
-    IF (Q3181<>.) THEN
-      HIDE Q3191
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      HIDE Q3231
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3191
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
-      CLEAR Q3231
-      CLEAR Q3241
-      CLEAR Q3242
+    IF (Q4181<>.) THEN
+      HIDE Q4191
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      HIDE Q4231
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4191
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
+      CLEAR Q4231
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3191
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
-      UNHIDE Q3231
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4191
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
+      UNHIDE Q4231
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3191 | AIDS Test (HEW_AIDS_TEST) | NUMERIC(1)
+* Q4191 | AIDS Test (HEW_AIDS_TEST) | NUMERIC(1)
 * I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q3231" if (Q3191=2)
-Q3191
+* Skip to "Q4231" if (Q4191=2)
+Q4191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3191=2) THEN
-      HIDE Q3201
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      CLEAR Q3201
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
+    IF (Q4191=2) THEN
+      HIDE Q4201
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      CLEAR Q4201
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
     ELSE
-      UNHIDE Q3201
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
+      UNHIDE Q4201
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
     ENDIF
   END
 END
 
-* Q3201 | AIDS Test When (HEW_AIDS_TEST_WHEN) | NUMERIC(2)
+* Q4201 | AIDS Test When (HEW_AIDS_TEST_WHEN) | NUMERIC(2)
 * How many months ago was your most recent HIV test?
-* Skip to "Q4041" if (Q3201<>.)
-Q3201
+* Skip to "Q5041" if (Q4201<>.)
+Q4201
   MUSTENTER
   AFTER ENTRY
-    IF (Q3201<>.) THEN
-      HIDE Q3211
-      HIDE Q3221
-      HIDE Q3222
-      HIDE Q3231
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3211
-      CLEAR Q3221
-      CLEAR Q3222
-      CLEAR Q3231
-      CLEAR Q3241
-      CLEAR Q3242
+    IF (Q4201<>.) THEN
+      HIDE Q4211
+      HIDE Q4221
+      HIDE Q4222
+      HIDE Q4231
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4211
+      CLEAR Q4221
+      CLEAR Q4222
+      CLEAR Q4231
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3211
-      UNHIDE Q3221
-      UNHIDE Q3222
-      UNHIDE Q3231
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4211
+      UNHIDE Q4221
+      UNHIDE Q4222
+      UNHIDE Q4231
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3211 | AIDS Test Result (HEW_AIDS_TEST_RESULT) | NUMERIC(1)
+* Q4211 | AIDS Test Result (HEW_AIDS_TEST_RESULT) | NUMERIC(1)
 * I don't want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
 *    2: No
 
-Q3211
+Q4211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
 END
 
-* Q3221 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
+* Q4221 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -2429,75 +2435,75 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-* Skip to "Q4041" if ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) )
-Q3221
+* Skip to "Q5041" if ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) )
+Q4221
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q3221<>18) AND (Q3221<>27)  AND (Q3221<>96) ) THEN
-      HIDE Q3222
-      HIDE Q3231
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3222
-      CLEAR Q3231
-      CLEAR Q3241
-      CLEAR Q3242
+    IF ((Q4221<>18) AND (Q4221<>27)  AND (Q4221<>96) ) THEN
+      HIDE Q4222
+      HIDE Q4231
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4222
+      CLEAR Q4231
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3222
-      UNHIDE Q3231
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4222
+      UNHIDE Q4231
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
+* Q4222 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
-* Skip to "Q4041" if (Q3222<>.)
-Q3222
+* Skip to "Q5041" if (Q4222<>.)
+Q4222
   MUSTENTER
   AFTER ENTRY
-    IF (Q3222<>.) THEN
-      HIDE Q3231
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3231
-      CLEAR Q3241
-      CLEAR Q3242
+    IF (Q4222<>.) THEN
+      HIDE Q4231
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4231
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3231
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4231
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3231 | AIDS Test Place (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
+* Q4231 | AIDS Test Place (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
 * Do you know of a place where people can go to get tested for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q4041" if (Q3231=2)
-Q3231
+* Skip to "Q5041" if (Q4231=2)
+Q4231
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q3231=2) THEN
-      HIDE Q3241
-      HIDE Q3242
-      CLEAR Q3241
-      CLEAR Q3242
+    IF (Q4231=2) THEN
+      HIDE Q4241
+      HIDE Q4242
+      CLEAR Q4241
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3241
-      UNHIDE Q3242
+      UNHIDE Q4241
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3241 | AIDS Test Place Where (HEW_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
+* Q4241 | AIDS Test Place Where (HEW_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
 * Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
@@ -2514,309 +2520,155 @@ END
 *    L: Private medical sector: Fieldworker
 *    M: Private medical sector: Other private
 *    X: Other
-* Skip to "Q4041" if ((Q3241<>"G") AND (Q3241<>"M") AND (Q3241<>"X"))
-Q3241
+* Skip to "Q5041" if ((Q4241<>"G") AND (Q4241<>"M") AND (Q4241<>"X"))
+Q4241
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q3241<>"G") AND (Q3241<>"M") AND (Q3241<>"X")) THEN
-      HIDE Q3242
-      CLEAR Q3242
+    IF ((Q4241<>"G") AND (Q4241<>"M") AND (Q4241<>"X")) THEN
+      HIDE Q4242
+      CLEAR Q4242
     ELSE
-      UNHIDE Q3242
+      UNHIDE Q4242
     ENDIF
   END
 END
 
-* Q3242 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
+* Q4242 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
 * Where is that? > Specify
 
-Q3242
+Q4242
   MUSTENTER
 END
 
-* Q404.1 | HIV Test Consent (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
+* Q504.1 | HIV Test Consent (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
 * Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-* Skip to "END" if (Q4041=2)
-Q4041
+* Skip to "END" if (Q5041=2)
+Q5041
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q4041=2) THEN
-      HIDE Q4061
-      HIDE Q5011
-      HIDE Q5021
+    IF (Q5041=2) THEN
       HIDE Q5061
-      HIDE Q5081
-      HIDE Q5091
-      HIDE Q5121
-      HIDE Q5122
-      HIDE Q5131
-      HIDE Q5132
-      HIDE Q5141
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      HIDE Q5331
-      HIDE Q5341
-      CLEAR Q4061
-      CLEAR Q5011
-      CLEAR Q5021
+      HIDE Q6011
+      HIDE Q6021
+      HIDE Q6061
+      HIDE Q6081
+      HIDE Q6091
+      HIDE Q6121
+      HIDE Q6122
+      HIDE Q6131
+      HIDE Q6132
+      HIDE Q6141
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      HIDE Q6331
+      HIDE Q6341
       CLEAR Q5061
-      CLEAR Q5081
-      CLEAR Q5091
-      CLEAR Q5121
-      CLEAR Q5122
-      CLEAR Q5131
-      CLEAR Q5132
-      CLEAR Q5141
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
-      CLEAR Q5331
-      CLEAR Q5341
+      CLEAR Q6011
+      CLEAR Q6021
+      CLEAR Q6061
+      CLEAR Q6081
+      CLEAR Q6091
+      CLEAR Q6121
+      CLEAR Q6122
+      CLEAR Q6131
+      CLEAR Q6132
+      CLEAR Q6141
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
+      CLEAR Q6331
+      CLEAR Q6341
     ELSE
-      UNHIDE Q4061
-      UNHIDE Q5011
-      UNHIDE Q5021
       UNHIDE Q5061
-      UNHIDE Q5081
-      UNHIDE Q5091
-      UNHIDE Q5121
-      UNHIDE Q5122
-      UNHIDE Q5131
-      UNHIDE Q5132
-      UNHIDE Q5141
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
-      UNHIDE Q5331
-      UNHIDE Q5341
+      UNHIDE Q6011
+      UNHIDE Q6021
+      UNHIDE Q6061
+      UNHIDE Q6081
+      UNHIDE Q6091
+      UNHIDE Q6121
+      UNHIDE Q6122
+      UNHIDE Q6131
+      UNHIDE Q6132
+      UNHIDE Q6141
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
+      UNHIDE Q6331
+      UNHIDE Q6341
     ENDIF
   END
 END
 
-* Q406.1 | HIV Test Consent Respondent (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
+* Q506.1 | HIV Test Consent Respondent (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
-* Allowed Values
-*    1: Granted
-*    2: Refused
-* Skip to "END" if (Q4061=2)
-Q4061
-  MUSTENTER
-  COMMENT LEGAL USE D_N_CONSENT
-  TYPE COMMENT LEGAL
-  AFTER ENTRY
-    IF (Q4061=2) THEN
-      HIDE Q5011
-      HIDE Q5021
-      HIDE Q5061
-      HIDE Q5081
-      HIDE Q5091
-      HIDE Q5121
-      HIDE Q5122
-      HIDE Q5131
-      HIDE Q5132
-      HIDE Q5141
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      HIDE Q5331
-      HIDE Q5341
-      CLEAR Q5011
-      CLEAR Q5021
-      CLEAR Q5061
-      CLEAR Q5081
-      CLEAR Q5091
-      CLEAR Q5121
-      CLEAR Q5122
-      CLEAR Q5131
-      CLEAR Q5132
-      CLEAR Q5141
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
-      CLEAR Q5331
-      CLEAR Q5341
-    ELSE
-      UNHIDE Q5011
-      UNHIDE Q5021
-      UNHIDE Q5061
-      UNHIDE Q5081
-      UNHIDE Q5091
-      UNHIDE Q5121
-      UNHIDE Q5122
-      UNHIDE Q5131
-      UNHIDE Q5132
-      UNHIDE Q5141
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
-      UNHIDE Q5331
-      UNHIDE Q5341
-    ENDIF
-  END
-END
-
-* Q501.1 | AIDS Infection (HEW_AIDS_INFECTION) | NUMERIC(1)
-* Did you know you were infected with AIDS?
-* Allowed Values
-*    1: Yes
-*    2: No
-
-Q5011
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-END
-
-* Q502.1 | AIDS Infection Test (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
-* Have you already had a HIV test that showed you were infected with AIDS? 
-* Allowed Values
-*    1: Yes
-*    2: No
-* Skip to "Q5081" if (((S2031>=18) AND (S2031<=49)) OR (S2171=4))
-Q5021
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-  AFTER ENTRY
-    IF (((S2031>=18) AND (S2031<=49)) OR (S2171=4)) THEN
-      HIDE Q5061
-      CLEAR Q5061
-    ELSE
-      UNHIDE Q5061
-    ENDIF
-  END
-END
-
-* Q506.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
-* Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
@@ -2827,342 +2679,496 @@ Q5061
   TYPE COMMENT LEGAL
   AFTER ENTRY
     IF (Q5061=2) THEN
-      HIDE Q5081
-      HIDE Q5091
-      HIDE Q5121
-      HIDE Q5122
-      HIDE Q5131
-      HIDE Q5132
-      HIDE Q5141
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      HIDE Q5331
-      HIDE Q5341
-      CLEAR Q5081
-      CLEAR Q5091
-      CLEAR Q5121
-      CLEAR Q5122
-      CLEAR Q5131
-      CLEAR Q5132
-      CLEAR Q5141
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
-      CLEAR Q5331
-      CLEAR Q5341
+      HIDE Q6011
+      HIDE Q6021
+      HIDE Q6061
+      HIDE Q6081
+      HIDE Q6091
+      HIDE Q6121
+      HIDE Q6122
+      HIDE Q6131
+      HIDE Q6132
+      HIDE Q6141
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      HIDE Q6331
+      HIDE Q6341
+      CLEAR Q6011
+      CLEAR Q6021
+      CLEAR Q6061
+      CLEAR Q6081
+      CLEAR Q6091
+      CLEAR Q6121
+      CLEAR Q6122
+      CLEAR Q6131
+      CLEAR Q6132
+      CLEAR Q6141
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
+      CLEAR Q6331
+      CLEAR Q6341
     ELSE
-      UNHIDE Q5081
-      UNHIDE Q5091
-      UNHIDE Q5121
-      UNHIDE Q5122
-      UNHIDE Q5131
-      UNHIDE Q5132
-      UNHIDE Q5141
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
-      UNHIDE Q5331
-      UNHIDE Q5341
+      UNHIDE Q6011
+      UNHIDE Q6021
+      UNHIDE Q6061
+      UNHIDE Q6081
+      UNHIDE Q6091
+      UNHIDE Q6121
+      UNHIDE Q6122
+      UNHIDE Q6131
+      UNHIDE Q6132
+      UNHIDE Q6141
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
+      UNHIDE Q6331
+      UNHIDE Q6341
     ENDIF
   END
 END
 
-* Q508.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
-* Consent Parent
+* Q601.1 | AIDS Infection (HEW_AIDS_INFECTION) | NUMERIC(1)
+* Did you know you were infected with AIDS?
+* Allowed Values
+*    1: Yes
+*    2: No
+
+Q6011
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+END
+
+* Q602.1 | AIDS Infection Test (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
+* Have you already had a HIV test that showed you were infected with AIDS? 
+* Allowed Values
+*    1: Yes
+*    2: No
+* Skip to "Q6081" if (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4))
+Q6021
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4)) THEN
+      HIDE Q6061
+      CLEAR Q6061
+    ELSE
+      UNHIDE Q6061
+    ENDIF
+  END
+END
+
+* Q606.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
+* Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-* Skip to "END" if (Q5081=2)
-Q5081
+* Skip to "END" if (Q6061=2)
+Q6061
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5081=2) THEN
-      HIDE Q5091
-      HIDE Q5121
-      HIDE Q5122
-      HIDE Q5131
-      HIDE Q5132
-      HIDE Q5141
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      HIDE Q5331
-      HIDE Q5341
-      CLEAR Q5091
-      CLEAR Q5121
-      CLEAR Q5122
-      CLEAR Q5131
-      CLEAR Q5132
-      CLEAR Q5141
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
-      CLEAR Q5331
-      CLEAR Q5341
+    IF (Q6061=2) THEN
+      HIDE Q6081
+      HIDE Q6091
+      HIDE Q6121
+      HIDE Q6122
+      HIDE Q6131
+      HIDE Q6132
+      HIDE Q6141
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      HIDE Q6331
+      HIDE Q6341
+      CLEAR Q6081
+      CLEAR Q6091
+      CLEAR Q6121
+      CLEAR Q6122
+      CLEAR Q6131
+      CLEAR Q6132
+      CLEAR Q6141
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
+      CLEAR Q6331
+      CLEAR Q6341
     ELSE
-      UNHIDE Q5091
-      UNHIDE Q5121
-      UNHIDE Q5122
-      UNHIDE Q5131
-      UNHIDE Q5132
-      UNHIDE Q5141
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
-      UNHIDE Q5331
-      UNHIDE Q5341
+      UNHIDE Q6081
+      UNHIDE Q6091
+      UNHIDE Q6121
+      UNHIDE Q6122
+      UNHIDE Q6131
+      UNHIDE Q6132
+      UNHIDE Q6141
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
+      UNHIDE Q6331
+      UNHIDE Q6341
     ENDIF
   END
 END
 
-* Q509.1 | AIDS Positive Test Where Bring (HEW_AIDS_POSITIVE_TEST_WHERE_BRING) | VARCHAR(16)
+* Q608.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
+* Consent Parent
+* Allowed Values
+*    1: Granted
+*    2: Refused
+* Skip to "END" if (Q6081=2)
+Q6081
+  MUSTENTER
+  COMMENT LEGAL USE D_N_CONSENT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (Q6081=2) THEN
+      HIDE Q6091
+      HIDE Q6121
+      HIDE Q6122
+      HIDE Q6131
+      HIDE Q6132
+      HIDE Q6141
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      HIDE Q6331
+      HIDE Q6341
+      CLEAR Q6091
+      CLEAR Q6121
+      CLEAR Q6122
+      CLEAR Q6131
+      CLEAR Q6132
+      CLEAR Q6141
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
+      CLEAR Q6331
+      CLEAR Q6341
+    ELSE
+      UNHIDE Q6091
+      UNHIDE Q6121
+      UNHIDE Q6122
+      UNHIDE Q6131
+      UNHIDE Q6132
+      UNHIDE Q6141
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
+      UNHIDE Q6331
+      UNHIDE Q6341
+    ENDIF
+  END
+END
+
+* Q609.1 | AIDS Positive Test Where Bring (HEW_AIDS_POSITIVE_TEST_WHERE_BRING) | VARCHAR(16)
 * Where would you like us to bring the results of the tests?
-* Skip to "END" if (Q5021=2)
-Q5091
+* Skip to "END" if (Q6021=2)
+Q6091
   MUSTENTER
   AFTER ENTRY
-    IF (Q5021=2) THEN
-      HIDE Q5121
-      HIDE Q5122
-      HIDE Q5131
-      HIDE Q5132
-      HIDE Q5141
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      HIDE Q5331
-      HIDE Q5341
-      CLEAR Q5121
-      CLEAR Q5122
-      CLEAR Q5131
-      CLEAR Q5132
-      CLEAR Q5141
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
-      CLEAR Q5331
-      CLEAR Q5341
+    IF (Q6021=2) THEN
+      HIDE Q6121
+      HIDE Q6122
+      HIDE Q6131
+      HIDE Q6132
+      HIDE Q6141
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      HIDE Q6331
+      HIDE Q6341
+      CLEAR Q6121
+      CLEAR Q6122
+      CLEAR Q6131
+      CLEAR Q6132
+      CLEAR Q6141
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
+      CLEAR Q6331
+      CLEAR Q6341
     ELSE
-      UNHIDE Q5121
-      UNHIDE Q5122
-      UNHIDE Q5131
-      UNHIDE Q5132
-      UNHIDE Q5141
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
-      UNHIDE Q5331
-      UNHIDE Q5341
+      UNHIDE Q6121
+      UNHIDE Q6122
+      UNHIDE Q6131
+      UNHIDE Q6132
+      UNHIDE Q6141
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
+      UNHIDE Q6331
+      UNHIDE Q6341
     ENDIF
   END
 END
 
-* Q5121 | AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
+* Q6121 | AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
 * When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5121
+Q6121
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5122 | AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
+* Q6122 | AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
 * When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5122
+Q6122
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5131 | AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
+* Q6131 | AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -3183,487 +3189,487 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-* Skip to "Q5141" if ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96))
-Q5131
+* Skip to "Q6141" if ((Q6131<>18) AND (Q6131<>27) AND (Q6131<>96))
+Q6131
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96)) THEN
-      HIDE Q5132
-      CLEAR Q5132
+    IF ((Q6131<>18) AND (Q6131<>27) AND (Q6131<>96)) THEN
+      HIDE Q6132
+      CLEAR Q6132
     ELSE
-      UNHIDE Q5132
+      UNHIDE Q6132
     ENDIF
   END
 END
 
-* Q5132 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE_S) | VARCHAR(16)
+* Q6132 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 
-Q5132
+Q6132
   MUSTENTER
 END
 
-* Q5141 | AIDS Care (HEW_AIDS_CARE) | NUMERIC(1)
+* Q6141 | AIDS Care (HEW_AIDS_CARE) | NUMERIC(1)
 * After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q5331" if (Q5141=2)
-Q5141
+* Skip to "Q6331" if (Q6141=2)
+Q6141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5141=2) THEN
-      HIDE Q5151
-      HIDE Q5161
-      HIDE Q5171
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      HIDE Q5291
-      HIDE Q5292
-      CLEAR Q5151
-      CLEAR Q5161
-      CLEAR Q5171
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
-      CLEAR Q5291
-      CLEAR Q5292
+    IF (Q6141=2) THEN
+      HIDE Q6151
+      HIDE Q6161
+      HIDE Q6171
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      HIDE Q6291
+      HIDE Q6292
+      CLEAR Q6151
+      CLEAR Q6161
+      CLEAR Q6171
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
+      CLEAR Q6291
+      CLEAR Q6292
     ELSE
-      UNHIDE Q5151
-      UNHIDE Q5161
-      UNHIDE Q5171
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
-      UNHIDE Q5291
-      UNHIDE Q5292
+      UNHIDE Q6151
+      UNHIDE Q6161
+      UNHIDE Q6171
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
+      UNHIDE Q6291
+      UNHIDE Q6292
     ENDIF
   END
 END
 
-* Q5151 | AIDS Blood Sample (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
+* Q6151 | AIDS Blood Sample (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
 * Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-* Skip to "Q5171" if ((Q5151=2) OR (Q5151=8))
-Q5151
+* Skip to "Q6171" if ((Q6151=2) OR (Q6151=8))
+Q6151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF ((Q5151=2) OR (Q5151=8)) THEN
-      HIDE Q5161
-      CLEAR Q5161
+    IF ((Q6151=2) OR (Q6151=8)) THEN
+      HIDE Q6161
+      CLEAR Q6161
     ELSE
-      UNHIDE Q5161
+      UNHIDE Q6161
     ENDIF
   END
 END
 
-* Q5161 | AIDS Blood Sample Result (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
+* Q6161 | AIDS Blood Sample Result (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
 * Did you get the results of this exam?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
 
-Q5161
+Q6161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
 END
 
-* Q5171 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
+* Q6171 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
 * Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q5241" if (Q5171=2)
-Q5171
+* Skip to "Q6241" if (Q6171=2)
+Q6171
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5171=2) THEN
-      HIDE Q5181
-      HIDE Q5182
-      HIDE Q5191
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      CLEAR Q5181
-      CLEAR Q5182
-      CLEAR Q5191
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
+    IF (Q6171=2) THEN
+      HIDE Q6181
+      HIDE Q6182
+      HIDE Q6191
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      CLEAR Q6181
+      CLEAR Q6182
+      CLEAR Q6191
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
     ELSE
-      UNHIDE Q5181
-      UNHIDE Q5182
-      UNHIDE Q5191
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
+      UNHIDE Q6181
+      UNHIDE Q6182
+      UNHIDE Q6191
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
     ENDIF
   END
 END
 
-* Q5181 | ART Start Month (HEW_ART_START_MONTH) | NUMERIC(2)
+* Q6181 | ART Start Month (HEW_ART_START_MONTH) | NUMERIC(2)
 * When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5181
+Q6181
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5182 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
+* Q6182 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
 * When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5182
+Q6182
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5191 | ART Still (HEW_ART_STILL) | NUMERIC(1)
+* Q6191 | ART Still (HEW_ART_STILL) | NUMERIC(1)
 * Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q5291" if (Q5191=2)
-Q5191
+* Skip to "Q6291" if (Q6191=2)
+Q6191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5191=2) THEN
-      HIDE Q5201
-      HIDE Q5202
-      HIDE Q5211
-      HIDE Q5212
-      HIDE Q5221
-      HIDE Q5222
-      HIDE Q5231
-      HIDE Q5241
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      CLEAR Q5201
-      CLEAR Q5202
-      CLEAR Q5211
-      CLEAR Q5212
-      CLEAR Q5221
-      CLEAR Q5222
-      CLEAR Q5231
-      CLEAR Q5241
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
+    IF (Q6191=2) THEN
+      HIDE Q6201
+      HIDE Q6202
+      HIDE Q6211
+      HIDE Q6212
+      HIDE Q6221
+      HIDE Q6222
+      HIDE Q6231
+      HIDE Q6241
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      CLEAR Q6201
+      CLEAR Q6202
+      CLEAR Q6211
+      CLEAR Q6212
+      CLEAR Q6221
+      CLEAR Q6222
+      CLEAR Q6231
+      CLEAR Q6241
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
     ELSE
-      UNHIDE Q5201
-      UNHIDE Q5202
-      UNHIDE Q5211
-      UNHIDE Q5212
-      UNHIDE Q5221
-      UNHIDE Q5222
-      UNHIDE Q5231
-      UNHIDE Q5241
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
+      UNHIDE Q6201
+      UNHIDE Q6202
+      UNHIDE Q6211
+      UNHIDE Q6212
+      UNHIDE Q6221
+      UNHIDE Q6222
+      UNHIDE Q6231
+      UNHIDE Q6241
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
     ENDIF
   END
 END
 
-* Q5201 | ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
+* Q6201 | ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5201
+Q6201
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5202 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
+* Q6202 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5202
+Q6202
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5211 | ART Where (HEW_ART_WHERE) | VARCHAR(32)
+* Q6211 | ART Where (HEW_ART_WHERE) | VARCHAR(32)
 * Where are you now receiving ART?
-* Skip to "Q5221" if ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96))
-Q5211
+* Skip to "Q6221" if ((Q6211<>18) AND (Q6211<>27) AND (Q6211<>96))
+Q6211
   MUSTENTER
   AFTER ENTRY
-    IF ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96)) THEN
-      HIDE Q5212
-      CLEAR Q5212
+    IF ((Q6211<>18) AND (Q6211<>27) AND (Q6211<>96)) THEN
+      HIDE Q6212
+      CLEAR Q6212
     ELSE
-      UNHIDE Q5212
+      UNHIDE Q6212
     ENDIF
   END
 END
 
-* Q5212 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
+* Q6212 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
 * Where are you now receiving ART? > Specify
 
-Q5212
+Q6212
   MUSTENTER
 END
 
-* Q5221 | ART District (HEW_ART_DISTRICT) | NUMERIC(1)
+* Q6221 | ART District (HEW_ART_DISTRICT) | NUMERIC(1)
 * In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
 *    3: Other
-* Skip to "Q5231" if (Q5221<>3)
-Q5221
+* Skip to "Q6231" if (Q6221<>3)
+Q6221
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5221<>3) THEN
-      HIDE Q5222
-      CLEAR Q5222
+    IF (Q6221<>3) THEN
+      HIDE Q6222
+      CLEAR Q6222
     ELSE
-      UNHIDE Q5222
+      UNHIDE Q6222
     ENDIF
   END
 END
 
-* Q5222 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
+* Q6222 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
 
-Q5222
+Q6222
   MUSTENTER
 END
 
-* Q5231 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
+* Q6231 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
 * What is the name of this place?
 
-Q5231
+Q6231
   MUSTENTER
 END
 
-* Q5241 | AIDS Follow (HEW_AIDS_FOLLOW) | NUMERIC(1)
+* Q6241 | AIDS Follow (HEW_AIDS_FOLLOW) | NUMERIC(1)
 * Are you still followed up for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-* Skip to "Q5291" if (Q5241=2)
-Q5241
+* Skip to "Q6291" if (Q6241=2)
+Q6241
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5241=2) THEN
-      HIDE Q5251
-      HIDE Q5252
-      HIDE Q5261
-      HIDE Q5262
-      HIDE Q5271
-      HIDE Q5272
-      HIDE Q5281
-      CLEAR Q5251
-      CLEAR Q5252
-      CLEAR Q5261
-      CLEAR Q5262
-      CLEAR Q5271
-      CLEAR Q5272
-      CLEAR Q5281
+    IF (Q6241=2) THEN
+      HIDE Q6251
+      HIDE Q6252
+      HIDE Q6261
+      HIDE Q6262
+      HIDE Q6271
+      HIDE Q6272
+      HIDE Q6281
+      CLEAR Q6251
+      CLEAR Q6252
+      CLEAR Q6261
+      CLEAR Q6262
+      CLEAR Q6271
+      CLEAR Q6272
+      CLEAR Q6281
     ELSE
-      UNHIDE Q5251
-      UNHIDE Q5252
-      UNHIDE Q5261
-      UNHIDE Q5262
-      UNHIDE Q5271
-      UNHIDE Q5272
-      UNHIDE Q5281
+      UNHIDE Q6251
+      UNHIDE Q6252
+      UNHIDE Q6261
+      UNHIDE Q6262
+      UNHIDE Q6271
+      UNHIDE Q6272
+      UNHIDE Q6281
     ENDIF
   END
 END
 
-* Q5251 | AIDS Last Consultation Month (HEW_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
+* Q6251 | AIDS Last Consultation Month (HEW_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5251
+Q6251
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5252 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
+* Q6252 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5252
+Q6252
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5261 | AIDS Where (HEW_AIDS_WHERE) | VARCHAR(32)
+* Q6261 | AIDS Where (HEW_AIDS_WHERE) | VARCHAR(32)
 * Where are you now receiving care?
-* Skip to "Q5271" if ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))
-Q5261
+* Skip to "Q6271" if ((Q6261<>18) AND (Q6261<>27) AND (Q6261<>96))
+Q6261
   MUSTENTER
   AFTER ENTRY
-    IF ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96)) THEN
-      HIDE Q5262
-      CLEAR Q5262
+    IF ((Q6261<>18) AND (Q6261<>27) AND (Q6261<>96)) THEN
+      HIDE Q6262
+      CLEAR Q6262
     ELSE
-      UNHIDE Q5262
+      UNHIDE Q6262
     ENDIF
   END
 END
 
-* Q5262 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
+* Q6262 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
 * Where are you now receiving care? > Specify
 
-Q5262
+Q6262
   MUSTENTER
 END
 
-* Q5271 | AIDS District (HEW_AIDS_DISTRICT) | NUMERIC(1)
+* Q6271 | AIDS District (HEW_AIDS_DISTRICT) | NUMERIC(1)
 * In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
 *    3: Other
-* Skip to "Q5281" if (Q5271<>3)
-Q5271
+* Skip to "Q6281" if (Q6271<>3)
+Q6271
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5271<>3) THEN
-      HIDE Q5272
-      CLEAR Q5272
+    IF (Q6271<>3) THEN
+      HIDE Q6272
+      CLEAR Q6272
     ELSE
-      UNHIDE Q5272
+      UNHIDE Q6272
     ENDIF
   END
 END
 
-* Q5272 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
+* Q6272 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
 
-Q5272
+Q6272
   MUSTENTER
 END
 
-* Q5281 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
+* Q6281 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
 * What is the name of this place?
-* Skip to "Q5331" if (Q5281<>.)
-Q5281
+* Skip to "Q6331" if (Q6281<>.)
+Q6281
   MUSTENTER
   AFTER ENTRY
-    IF (Q5281<>.) THEN
-      HIDE Q5291
-      HIDE Q5292
-      CLEAR Q5291
-      CLEAR Q5292
+    IF (Q6281<>.) THEN
+      HIDE Q6291
+      HIDE Q6292
+      CLEAR Q6291
+      CLEAR Q6292
     ELSE
-      UNHIDE Q5291
-      UNHIDE Q5292
+      UNHIDE Q6291
+      UNHIDE Q6292
     ENDIF
   END
 END
 
-* Q5291 | AIDS Stop (HEW_AIDS_STOP) | NUMERIC(2)
+* Q6291 | AIDS Stop (HEW_AIDS_STOP) | NUMERIC(2)
 * Why did you stop?
 * Allowed Values
 *    1: No one was attending
@@ -3677,47 +3683,47 @@ END
 *    9: Transport cost
 *    10: Stop pmtct
 *    96: Other
-* Skip to "Q5331" if (Q5291<>96)
-Q5291
+* Skip to "Q6331" if (Q6291<>96)
+Q6291
   MUSTENTER
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF (Q5291<>96) THEN
-      HIDE Q5292
-      CLEAR Q5292
+    IF (Q6291<>96) THEN
+      HIDE Q6292
+      CLEAR Q6292
     ELSE
-      UNHIDE Q5292
+      UNHIDE Q6292
     ENDIF
   END
 END
 
-* Q5292 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
+* Q6292 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
 * Why did you stop? > Specify
 
-Q5292
+Q6292
   MUSTENTER
 END
 
-* Q5331 | ART Pregnancy (HEW_ART_PREGNANCY) | NUMERIC(1)
+* Q6331 | ART Pregnancy (HEW_ART_PREGNANCY) | NUMERIC(1)
 * Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
 * Allowed Values
 *    1: Yes
 *    2: No
 
-Q5331
+Q6331
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
 END
 
-* Q5341 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
+* Q6341 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
 * After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
 
-Q5341
+Q6341
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
