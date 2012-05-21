@@ -1141,7 +1141,7 @@ END
 
 Q1181
   MUSTENTER
-  COMMENT LEGAL USE D_N_HUSBAND_STATUS
+  COMMENT LEGAL USE D_N_PARTNER_STATUS
   TYPE COMMENT LEGAL
 END
 
@@ -1237,18 +1237,12 @@ Q1221
   END
 END
 
-* Q1231 | Occupation (HEW_OCCUPATION) | NUMERIC(2)
+* Q1231 | Occupation (HEW_OCCUPATION) | NUMERIC(5)
 * What is your occupation, that is, what kind of work do you mainly do?What is your occupation, that is, what kind of work do you mainly do?
-* Allowed Values
-*    1: ?
-*    2: ?
-*    3: ?
-*    4: ?
 
 Q1231
   MUSTENTER
-  COMMENT LEGAL USE D_N_OCCUPATION
-  TYPE COMMENT LEGAL
+  COMMENT LEGAL "Occupation"
 END
 
 * Q1241 | Work Class (HEW_WORK_CLASS) | NUMERIC(1)
@@ -1729,7 +1723,7 @@ END
 * Skip to "Q3161" if ((Q3121=11) OR (Q3121=12) )
 Q3121
   MUSTENTER
-  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE_4
+  COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE_3
   TYPE COMMENT LEGAL
   AFTER ENTRY
     IF ((Q3121=11) OR (Q3121=12) ) THEN
@@ -2546,7 +2540,7 @@ END
 * Consent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q5041=2)
 Q5041
   MUSTENTER
@@ -2671,7 +2665,7 @@ END
 * Consent Parent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q5061=2)
 Q5061
   MUSTENTER
@@ -2825,7 +2819,7 @@ END
 * Consent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q6061=2)
 Q6061
   MUSTENTER
@@ -2938,7 +2932,7 @@ END
 * Consent Parent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q6081=2)
 Q6081
   MUSTENTER
@@ -3534,11 +3528,12 @@ Q6222
   MUSTENTER
 END
 
-* Q6231 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
+* Q6231 | ART Place (HEW_ART_PLACE) | NUMERIC(5)
 * What is the name of this place?
 
 Q6231
   MUSTENTER
+  COMMENT LEGAL "Facility"
 END
 
 * Q6241 | AIDS Follow (HEW_AIDS_FOLLOW) | NUMERIC(1)
@@ -3651,11 +3646,12 @@ Q6272
   MUSTENTER
 END
 
-* Q6281 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
+* Q6281 | AIDS Place (HEW_AIDS_PLACE) | NUMERIC(5)
 * What is the name of this place?
 * Skip to "Q6331" if (Q6281<>.)
 Q6281
   MUSTENTER
+  COMMENT LEGAL "Facility"
   AFTER ENTRY
     IF (Q6281<>.) THEN
       HIDE Q6291
