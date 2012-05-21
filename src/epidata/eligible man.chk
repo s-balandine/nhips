@@ -356,117 +356,117 @@ AFTER RECORD
       GOTO Q5141
       EXIT
     ENDIF
-    IF (Q5151=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5151=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
       HELP "Q5151 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5151
       EXIT
     ENDIF
-    IF (Q5161=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5161=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5151<>1)) THEN
       HELP "Q5161 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5161
       EXIT
     ENDIF
-    IF (Q5171=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5171=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
       HELP "Q5171 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5171
       EXIT
     ENDIF
-    IF (Q5181=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5181=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
       HELP "Q5181 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5181
       EXIT
     ENDIF
-    IF (Q5182=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5182=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
       HELP "Q5182 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5182
       EXIT
     ENDIF
-    IF (Q5191=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5191=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
       HELP "Q5191 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5191
       EXIT
     ENDIF
-    IF (Q5201=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5201=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5201 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5201
       EXIT
     ENDIF
-    IF (Q5202=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5202=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5202 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5202
       EXIT
     ENDIF
-    IF (Q5211=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5211=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5211 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5211
       EXIT
     ENDIF
-    IF (Q5212=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5212=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96))) THEN
       HELP "Q5212 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5212
       EXIT
     ENDIF
-    IF (Q5221=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5221=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5221 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5221
       EXIT
     ENDIF
-    IF (Q5222=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5222=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR (Q5221<>3)) THEN
       HELP "Q5222 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5222
       EXIT
     ENDIF
-    IF (Q5231=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5231=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5231 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5231
       EXIT
     ENDIF
-    IF (Q5241=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5241=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.)) THEN
       HELP "Q5241 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5241
       EXIT
     ENDIF
-    IF (Q5251=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5251=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5251 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5251
       EXIT
     ENDIF
-    IF (Q5252=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5252=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5252 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5252
       EXIT
     ENDIF
-    IF (Q5261=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5261=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5261 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5261
       EXIT
     ENDIF
-    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))) THEN
       HELP "Q5262 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5262
       EXIT
     ENDIF
-    IF (Q5271=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5271=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5271 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5271
       EXIT
     ENDIF
-    IF (Q5272=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5272=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR (Q5271<>3)) THEN
       HELP "Q5272 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5272
       EXIT
     ENDIF
-    IF (Q5281=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5281=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S)) THEN
       HELP "Q5281 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5281
       EXIT
     ENDIF
-    IF (Q5291=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
+    IF (Q5291=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5231<>.) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S) OR (Q5281<>.)) THEN
       HELP "Q5291 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5291
       EXIT
     ENDIF
-    IF (Q5292=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5291<>96)) THEN
+    IF (Q5292=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5231<>.) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S) OR (Q5281<>.) OR (Q5291<>96)) THEN
       HELP "Q5292 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5292
       EXIT
@@ -939,7 +939,7 @@ END
 
 Q1181
   MUSTENTER
-  COMMENT LEGAL USE D_N_HUSBAND_STATUS
+  COMMENT LEGAL USE D_N_PARTNER_STATUS
   TYPE COMMENT LEGAL
 END
 
@@ -1012,18 +1012,12 @@ Q1211
   END
 END
 
-* Q1221 | Occupation (HEM_OCCUPATION) | NUMERIC(2)
+* Q1221 | Occupation (HEM_OCCUPATION) | NUMERIC(5)
 * What is your occupation, that is, what kind of work do you mainly do?What is your occupation, that is, what kind of work do you mainly do?
-* Allowed Values
-*    1: ?
-*    2: ?
-*    3: ?
-*    4: ?
 
 Q1221
   MUSTENTER
-  COMMENT LEGAL USE D_N_OCCUPATION
-  TYPE COMMENT LEGAL
+  COMMENT LEGAL "Occupation"
 END
 
 * Q1231 | Work Time (HEM_WORK_TIME) | NUMERIC(1)
@@ -1410,7 +1404,7 @@ END
 * Consent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q4041=2)
 Q4041
   MUSTENTER
@@ -1529,7 +1523,7 @@ END
 * Consent Parent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q4061=2)
 Q4061
   MUSTENTER
@@ -1677,7 +1671,7 @@ END
 * Consent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q5061=2)
 Q5061
   MUSTENTER
@@ -1784,7 +1778,7 @@ END
 * Consent Parent
 * Allowed Values
 *    1: Granted
-*    2: Refused
+*    2: Adult refused
 * Skip to "END" if (Q5081=2)
 Q5081
   MUSTENTER
@@ -2368,11 +2362,12 @@ Q5222
   MUSTENTER
 END
 
-* Q5231 | ART Place (HEM_ART_PLACE) | VARCHAR(20)
+* Q5231 | ART Place (HEM_ART_PLACE) | NUMERIC(5)
 * What is the name of this place?
 * Skip to "END" if (Q5231<>.)
 Q5231
   MUSTENTER
+  COMMENT LEGAL "Facility"
   AFTER ENTRY
     IF (Q5231<>.) THEN
       HIDE Q5241
@@ -2543,11 +2538,12 @@ Q5272
   END
 END
 
-* Q5281 | AIDS Place (HEM_AIDS_PLACE) | VARCHAR(20)
+* Q5281 | AIDS Place (HEM_AIDS_PLACE) | NUMERIC(5)
 * What is the name of this place?
 * Skip to "END" if (Q5281<>.)
 Q5281
   MUSTENTER
+  COMMENT LEGAL "Facility"
   AFTER ENTRY
     IF (Q5281<>.) THEN
       HIDE Q5291
