@@ -11,9 +11,9 @@ AFTER RECORD
       GOTO HEM
       EXIT
     ENDIF
-    IF (S1011=.) THEN
-      HELP "S101.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO S1011
+    IF (HHM=.) THEN
+      HELP "HHM is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO HHM
       EXIT
     ENDIF
     IF (S2011=.) THEN
@@ -441,7 +441,7 @@ AFTER RECORD
       GOTO Q5261
       EXIT
     ENDIF
-    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))) THEN
+    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5262 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5262
       EXIT
@@ -482,10 +482,10 @@ HEM
   NOENTER
 END
 
-* S101.1 | Respondent (HEM_RESPONDENT) | VARCHAR(9)
+* HHM | Respondent (HEM_RESPONDENT) | VARCHAR(9)
 * Identifiers > No. Household member
 
-S1011
+HHM
   MUSTENTER
   TYPE COMMENT ID
   END
@@ -525,7 +525,8 @@ END
 
 S2013
   MUSTENTER
-  MISSINGVALUE 11 12 13 98
+  COMMENT LEGAL USE D_N_YEAR
+  TYPE COMMENT LEGAL
 END
 
 * S202.1 | Field Interviewer (HEM_FIELD_INTERVIEWER) | VARCHAR(4)
@@ -1883,9 +1884,8 @@ Q5081
   END
 END
 
-* Q509.1 | AIDS Positive Test Where Bring (HEM_AIDS_POSITIVE_TEST_WHERE_BRING) | TEXT(1)
+* Q509.1 | AIDS Positive Test Where Bring (HEM_AIDS_POSITIVE_TEST_WHERE_BRING) | VARCHAR(16)
 * Where would you like us to bring the results of the tests?
-* Allowed Values
 * Skip to "END" if (Q5021=2)
 Q5091
   MUSTENTER
