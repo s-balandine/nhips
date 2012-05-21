@@ -2,18 +2,13 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
-  HIDE RECID
+  HIDE HEM
 END
 
 AFTER RECORD
-    IF (RECID=.) THEN
-      HELP "RECID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO RECID
-      EXIT
-    ENDIF
-    IF (ID=.) THEN
-      HELP "ID is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO ID
+    IF (HEM=.) THEN
+      HELP "HEM is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO HEM
       EXIT
     ENDIF
     IF (S1011=.) THEN
@@ -51,7 +46,7 @@ AFTER RECORD
       GOTO S2031
       EXIT
     ENDIF
-    IF (S2032=.) THEN
+    IF (S2032=.) AND NOT ((S2031<>7)) THEN
       HELP "S203.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO S2032
       EXIT
@@ -101,22 +96,22 @@ AFTER RECORD
       GOTO Q1041
       EXIT
     ENDIF
-    IF (Q1051=.) THEN
+    IF (Q1051=.) AND NOT ((Q1041=2)) THEN
       HELP "Q105.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1051
       EXIT
     ENDIF
-    IF (Q1061=.) THEN
+    IF (Q1061=.) AND NOT ((Q1041=2)) THEN
       HELP "Q106.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1061
       EXIT
     ENDIF
-    IF (Q1081=.) THEN
+    IF (Q1081=.) AND NOT ((Q1051>2)) THEN
       HELP "Q108.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1081
       EXIT
     ENDIF
-    IF (Q1082=.) THEN
+    IF (Q1082=.) AND NOT ((Q1051>2) OR (Q1081<>4)) THEN
       HELP "Q108.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1082
       EXIT
@@ -131,17 +126,17 @@ AFTER RECORD
       GOTO Q1101
       EXIT
     ENDIF
-    IF (Q1111=.) THEN
+    IF (Q1111=.) AND NOT ((Q1101>97)) THEN
       HELP "Q1111 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1111
       EXIT
     ENDIF
-    IF (Q1121=.) THEN
+    IF (Q1121=.) AND NOT ((Q1101>97)) THEN
       HELP "Q1121 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1121
       EXIT
     ENDIF
-    IF (Q1122=.) THEN
+    IF (Q1122=.) AND NOT ((Q1101>97) OR (Q1121<>96)) THEN
       HELP "Q1122 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1122
       EXIT
@@ -151,27 +146,27 @@ AFTER RECORD
       GOTO Q1131
       EXIT
     ENDIF
-    IF (Q1141=.) THEN
+    IF (Q1141=.) AND NOT ((Q1131=0)) THEN
       HELP "Q1141 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1141
       EXIT
     ENDIF
-    IF (Q1151=.) THEN
+    IF (Q1151=.) AND NOT ((Q1131=0)) THEN
       HELP "Q1151 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1151
       EXIT
     ENDIF
-    IF (Q1161=.) THEN
+    IF (Q1161=.) AND NOT ((Q1131=0) OR (Q1151<3)) THEN
       HELP "Q1161 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1161
       EXIT
     ENDIF
-    IF (Q1171=.) THEN
+    IF (Q1171=.) AND NOT ((Q1151<3) OR (Q1161=3)) THEN
       HELP "Q1171 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1171
       EXIT
     ENDIF
-    IF (Q1181=.) THEN
+    IF (Q1181=.) AND NOT ((Q1161=3) OR (Q1171<>.)) THEN
       HELP "Q1181 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1181
       EXIT
@@ -181,27 +176,27 @@ AFTER RECORD
       GOTO Q1191
       EXIT
     ENDIF
-    IF (Q1201=.) THEN
+    IF (Q1201=.) AND NOT ((Q1191=1)) THEN
       HELP "Q1201 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1201
       EXIT
     ENDIF
-    IF (Q1211=.) THEN
+    IF (Q1211=.) AND NOT ((Q1191=1) OR (Q1201=1)) THEN
       HELP "Q1211 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1211
       EXIT
     ENDIF
-    IF (Q1221=.) THEN
+    IF (Q1221=.) AND NOT ((Q1211=2)) THEN
       HELP "Q1221 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1221
       EXIT
     ENDIF
-    IF (Q1231=.) THEN
+    IF (Q1231=.) AND NOT ((Q1211=2)) THEN
       HELP "Q1231 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1231
       EXIT
     ENDIF
-    IF (Q1241=.) THEN
+    IF (Q1241=.) AND NOT ((Q1211=2)) THEN
       HELP "Q1241 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q1241
       EXIT
@@ -211,12 +206,12 @@ AFTER RECORD
       GOTO Q2011
       EXIT
     ENDIF
-    IF (Q2021=.) THEN
+    IF (Q2021=.) AND NOT ((Q2011<>1)) THEN
       HELP "Q202.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2021
       EXIT
     ENDIF
-    IF (Q2031=.) THEN
+    IF (Q2031=.) AND NOT ((Q2011<>1)) THEN
       HELP "Q203.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q2031
       EXIT
@@ -266,37 +261,37 @@ AFTER RECORD
       GOTO Q3041
       EXIT
     ENDIF
-    IF (Q3051=.) THEN
+    IF (Q3051=.) AND NOT ((Q3041=2)) THEN
       HELP "Q305.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3051
       EXIT
     ENDIF
-    IF (Q3061=.) THEN
+    IF (Q3061=.) AND NOT ((Q3041=2)) THEN
       HELP "Q306.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3061
       EXIT
     ENDIF
-    IF (Q3071=.) THEN
+    IF (Q3071=.) AND NOT ((Q3041=2) OR (Q3061<>.)) THEN
       HELP "Q307.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3071
       EXIT
     ENDIF
-    IF (Q3072=.) THEN
+    IF (Q3072=.) AND NOT ((Q3041=2) OR (Q3061<>.) OR ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96))) THEN
       HELP "Q307.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3072
       EXIT
     ENDIF
-    IF (Q3081=.) THEN
+    IF (Q3081=.) AND NOT ((Q3061<>.) OR ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96)) OR (HEM_AIDS_TEST_WHERE_S)) THEN
       HELP "Q308.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3081
       EXIT
     ENDIF
-    IF (Q3091=.) THEN
+    IF (Q3091=.) AND NOT ((Q3061<>.) OR ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96)) OR (HEM_AIDS_TEST_WHERE_S) OR (Q3081=2)) THEN
       HELP "Q309.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3091
       EXIT
     ENDIF
-    IF (Q3092=.) THEN
+    IF (Q3092=.) AND NOT ((Q3061<>.) OR ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96)) OR (HEM_AIDS_TEST_WHERE_S) OR (Q3081=2) OR ((Q3091<>"G") AND (Q3091<>"M") AND (Q3091<>"X"))) THEN
       HELP "Q309.2 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q3092
       EXIT
@@ -306,185 +301,180 @@ AFTER RECORD
       GOTO Q4041
       EXIT
     ENDIF
-    IF (Q4061=.) THEN
+    IF (Q4061=.) AND NOT ((Q4041=2)) THEN
       HELP "Q406.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q4061
       EXIT
     ENDIF
-    IF (Q5011=.) THEN
+    IF (Q5011=.) AND NOT ((Q4041=2) OR (Q4061=2)) THEN
       HELP "Q501.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5011
       EXIT
     ENDIF
-    IF (Q5021=.) THEN
+    IF (Q5021=.) AND NOT ((Q4041=2) OR (Q4061=2)) THEN
       HELP "Q502.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5021
       EXIT
     ENDIF
-    IF (Q5061=.) THEN
+    IF (Q5061=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4))) THEN
       HELP "Q506.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5061
       EXIT
     ENDIF
-    IF (Q5081=.) THEN
+    IF (Q5081=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2)) THEN
       HELP "Q508.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5081
       EXIT
     ENDIF
-    IF (Q5111=.) THEN
-      HELP "Q5111 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5111
+    IF (Q5091=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2)) THEN
+      HELP "Q509.1 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5091
       EXIT
     ENDIF
-    IF (Q5112=.) THEN
-      HELP "Q5112 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5112
-      EXIT
-    ENDIF
-    IF (Q5121=.) THEN
+    IF (Q5121=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
       HELP "Q5121 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5121
       EXIT
     ENDIF
-    IF (Q5122=.) THEN
+    IF (Q5122=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
       HELP "Q5122 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5122
       EXIT
     ENDIF
-    IF (Q5131=.) THEN
+    IF (Q5131=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
       HELP "Q5131 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5131
       EXIT
     ENDIF
-    IF (Q5141=.) THEN
+    IF (Q5132=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96))) THEN
+      HELP "Q5132 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5132
+      EXIT
+    ENDIF
+    IF (Q5141=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2)) THEN
       HELP "Q5141 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5141
       EXIT
     ENDIF
-    IF (Q5151=.) THEN
+    IF (Q5151=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
       HELP "Q5151 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5151
       EXIT
     ENDIF
-    IF (Q5161=.) THEN
+    IF (Q5161=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5151<>1)) THEN
       HELP "Q5161 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5161
       EXIT
     ENDIF
-    IF (Q5171=.) THEN
+    IF (Q5171=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2)) THEN
       HELP "Q5171 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5171
       EXIT
     ENDIF
-    IF (Q5172=.) THEN
-      HELP "Q5172 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5172
-      EXIT
-    ENDIF
-    IF (Q5181=.) THEN
+    IF (Q5181=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
       HELP "Q5181 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5181
       EXIT
     ENDIF
-    IF (Q5191=.) THEN
+    IF (Q5182=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
+      HELP "Q5182 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5182
+      EXIT
+    ENDIF
+    IF (Q5191=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2)) THEN
       HELP "Q5191 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5191
       EXIT
     ENDIF
-    IF (Q5192=.) THEN
-      HELP "Q5192 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5192
-      EXIT
-    ENDIF
-    IF (Q5201=.) THEN
+    IF (Q5201=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5201 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5201
       EXIT
     ENDIF
-    IF (Q5202=.) THEN
+    IF (Q5202=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5202 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5202
       EXIT
     ENDIF
-    IF (Q5211=.) THEN
+    IF (Q5211=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5211 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5211
       EXIT
     ENDIF
-    IF (Q5212=.) THEN
+    IF (Q5212=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96))) THEN
       HELP "Q5212 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5212
       EXIT
     ENDIF
-    IF (Q5221=.) THEN
+    IF (Q5221=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5221 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5221
       EXIT
     ENDIF
-    IF (Q5231=.) THEN
+    IF (Q5222=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2) OR (Q5221<>3)) THEN
+      HELP "Q5222 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5222
+      EXIT
+    ENDIF
+    IF (Q5231=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5171=2) OR (Q5191=2)) THEN
       HELP "Q5231 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5231
       EXIT
     ENDIF
-    IF (Q5241=.) THEN
+    IF (Q5241=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.)) THEN
       HELP "Q5241 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5241
       EXIT
     ENDIF
-    IF (Q5242=.) THEN
-      HELP "Q5242 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5242
-      EXIT
-    ENDIF
-    IF (Q5251=.) THEN
+    IF (Q5251=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5251 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5251
       EXIT
     ENDIF
-    IF (Q5252=.) THEN
+    IF (Q5252=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5252 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5252
       EXIT
     ENDIF
-    IF (Q5261=.) THEN
+    IF (Q5261=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5261 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5261
       EXIT
     ENDIF
-    IF (Q5262=.) THEN
+    IF (Q5262=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))) THEN
       HELP "Q5262 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5262
       EXIT
     ENDIF
-    IF (Q5271=.) THEN
+    IF (Q5271=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2)) THEN
       HELP "Q5271 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5271
       EXIT
     ENDIF
-    IF (Q5281=.) THEN
+    IF (Q5272=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR (Q5271<>3)) THEN
+      HELP "Q5272 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5272
+      EXIT
+    ENDIF
+    IF (Q5281=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5191=2) OR (Q5231<>.) OR (Q5241=2) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S)) THEN
       HELP "Q5281 is mandatory.\n\nPlease check the data" TYPE=WARNING
       GOTO Q5281
       EXIT
     ENDIF
-    IF (Q5282=.) THEN
-      HELP "Q5282 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5282
+    IF (Q5291=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5231<>.) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S) OR (Q5281<>.)) THEN
+      HELP "Q5291 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5291
       EXIT
     ENDIF
-    IF (Q5321=.) THEN
-      HELP "Q5321 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5321
-      EXIT
-    ENDIF
-    IF (Q5331=.) THEN
-      HELP "Q5331 is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO Q5331
+    IF (Q5292=.) AND NOT ((Q4041=2) OR (Q4061=2) OR (Q5061=2) OR (Q5081=2) OR (Q5021=2) OR (Q5141=2) OR (Q5231<>.) OR (Q5271<>3) OR (HEM_AIDS_DISTRICT_S) OR (Q5281<>.) OR (Q5291<>96)) THEN
+      HELP "Q5292 is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO Q5292
       EXIT
     ENDIF
 END
 
 
-* RECID | Identifier (HEM_IDENTIFIER) | AUTOINCREMENT
+* HEM | Identifier (HEM_IDENTIFIER) | VARCHAR(9)
 * 
 
 HEM
@@ -492,19 +482,11 @@ HEM
   NOENTER
 END
 
-* ID | Identifier (Natural) (HEM_IDENTIFIER_NATURAL) | VARCHAR(9)
-* 
-
-ID
-  MUSTENTER
-END
-
-* S101.1 | Respondent (HEM_RESPONDENT) | NUMERIC(5)
+* S101.1 | Respondent (HEM_RESPONDENT) | VARCHAR(9)
 * Identifiers > No. Household member
 
 S1011
   MUSTENTER
-  COMMENT LEGAL "Household Member" SHOW
   TYPE COMMENT ID
   END
 
@@ -517,6 +499,9 @@ S2011
   MUSTENTER
   RANGE 1 31
   MISSINGVALUE 98
+  AFTER ENTRY
+    LET HEM=HHM
+  END
 END
 
 * S201.2 | Month (HEM_M) | NUMERIC(2)
@@ -544,7 +529,7 @@ S2013
   MISSINGVALUE 11 12 13 98
 END
 
-* S202.1 | Field Interviewer (HEM_FIELD_INTERVIEWER) | NUMERIC(5)
+* S202.1 | Field Interviewer (HEM_FIELD_INTERVIEWER) | VARCHAR(4)
 * Actors on the field? > Interviewer
 
 S2021
@@ -552,7 +537,7 @@ S2021
   COMMENT LEGAL "Field Interviewer" SHOW
 END
 
-* S202.2 | Field Supervisor (HEM_FIELD_SUPERVISOR) | NUMERIC(5)
+* S202.2 | Field Supervisor (HEM_FIELD_SUPERVISOR) | VARCHAR(4)
 * Actors on the field? > Supervisor
 
 S2022
@@ -572,20 +557,18 @@ END
 *    7: Dwelling destroyed
 *    8: Dwelling not found
 *    9: Other
-
+* Skip to "S2041" if (S2031<>7)
 S2031
   MUSTENTER
   COMMENT LEGAL USE D_N_INTERVIEW_HOUSEHOLD_RESULT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (S2031<>7) THEN
+      HIDE S2032
+      CLEAR S2032
+    ELSE
+      UNHIDE S2032
+    ENDIF
   END
 END
 
@@ -596,7 +579,7 @@ S2032
   MUSTENTER
 END
 
-* S204.1 | Office editor (HEM_OFFICE_EDITOR) | NUMERIC(5)
+* S204.1 | Office editor (HEM_OFFICE_EDITOR) | VARCHAR(4)
 * Actors at the office? > Editor
 
 S2041
@@ -604,7 +587,7 @@ S2041
   COMMENT LEGAL "Office Editor" SHOW
 END
 
-* S204.2 | Keyer (HEM_KEYER) | NUMERIC(5)
+* S204.2 | Keyer (HEM_KEYER) | VARCHAR(4)
 * Actors at the office? > Keyer
 
 S2042
@@ -626,7 +609,6 @@ END
 Q1011
   MUSTENTER
   RANGE 0 23
-  TOPOFSCREEN
 END
 
 * Q101.2 | Record Time Minute (HEM_RECORD_TIME_M) | NUMERIC(2)
@@ -675,13 +657,21 @@ END
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q1081" if (Q1041=2)
 Q1041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 HEW_LITERACY
+  AFTER ENTRY
+    IF (Q1041=2) THEN
+      HIDE Q1051
+      HIDE Q1061
+      CLEAR Q1051
+      CLEAR Q1061
+    ELSE
+      UNHIDE Q1051
+      UNHIDE Q1061
+    ENDIF
   END
 END
 
@@ -701,12 +691,18 @@ END
 
 * Q106.1 | Highest Year of Education (HEM_HIGHEST_YEAR_OF_EDUCATION) | NUMERIC(2)
 * What is the highest (grade/form/year) you completed at that level? 
-
+* Skip to "Q1091" if (Q1051>2)
 Q1061
   MUSTENTER
   AFTER ENTRY
-    IF HEW_HIGHEST_EDUCATIONAL_LEVEL >2 THEN
-      GOTO HEW_PLACE_OF_RESIDENCE_BEFORE
+    IF (Q1051>2) THEN
+      HIDE Q1081
+      HIDE Q1082
+      CLEAR Q1081
+      CLEAR Q1082
+    ELSE
+      UNHIDE Q1081
+      UNHIDE Q1082
     ENDIF
   END
 END
@@ -719,16 +715,18 @@ END
 *    3: Yes, able to read whole sentence
 *    4: Not applicable, no card with required language
 *    5: Not applicable, blind or Visually impaired
-
+* Skip to "Q1091" if (Q1081<>4)
 Q1081
   MUSTENTER
   COMMENT LEGAL USE D_N_LITERACY
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q1081<>4) THEN
+      HIDE Q1082
+      CLEAR Q1082
+    ELSE
+      UNHIDE Q1082
+    ENDIF
   END
 END
 
@@ -758,14 +756,28 @@ END
 * Allowed Values
 *    98: Always
 *    99: Visitor
-
+* Skip to "Q1131" if (Q1101>97)
 Q1101
   MUSTENTER
   RANGE 1 97
   MISSINGVALUE 98 99
-  JUMPS RESET
+  
     98 HEW_OUTSIDE_NIGHT
     99 HEW_OUTSIDE_NIGHT
+  END
+  AFTER ENTRY
+    IF (Q1101>97) THEN
+      HIDE Q1111
+      HIDE Q1121
+      HIDE Q1122
+      CLEAR Q1111
+      CLEAR Q1121
+      CLEAR Q1122
+    ELSE
+      UNHIDE Q1111
+      UNHIDE Q1121
+      UNHIDE Q1122
+    ENDIF
   END
 END
 
@@ -799,24 +811,18 @@ END
 *    11: Somali
 *    12: Taita / Taveta
 *    96: Other
-
+* Skip to "Q1131" if (Q1121<>96)
 Q1121
   MUSTENTER
   COMMENT LEGAL USE D_N_ETHNIC
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
-    9 SKIPNEXTFIELD
-    10 SKIPNEXTFIELD
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q1121<>96) THEN
+      HIDE Q1122
+      CLEAR Q1122
+    ELSE
+      UNHIDE Q1122
+    ENDIF
   END
 END
 
@@ -829,9 +835,23 @@ END
 
 * Q1131 | Outside Night (HEM_OUTSIDE_NIGHT) | NUMERIC(2)
 * In the last 12 months, how many times have you been away from home for one or more nights? > Number of nights
-
+* Skip to "Q1171" if (Q1131=0)
 Q1131
   MUSTENTER
+  AFTER ENTRY
+    IF (Q1131=0) THEN
+      HIDE Q1141
+      HIDE Q1151
+      HIDE Q1161
+      CLEAR Q1141
+      CLEAR Q1151
+      CLEAR Q1161
+    ELSE
+      UNHIDE Q1141
+      UNHIDE Q1151
+      UNHIDE Q1161
+    ENDIF
+  END
 END
 
 * Q1141 | Outside Month (HEM_OUTSIDE_M) | NUMERIC(1)
@@ -852,14 +872,21 @@ END
 *    1: Yes, currently married
 *    2: Yes, living with a man
 *    3: No, not in union
-
+* Skip to "Q1181" if (Q1151<3)
 Q1151
   MUSTENTER
   COMMENT LEGAL USE D_N_UNION_STATUS
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 HEW_HUSBAND_STATUS
-    2 HEW_HUSBAND_STATUS
+  AFTER ENTRY
+    IF (Q1151<3) THEN
+      HIDE Q1161
+      HIDE Q1171
+      CLEAR Q1161
+      CLEAR Q1171
+    ELSE
+      UNHIDE Q1161
+      UNHIDE Q1171
+    ENDIF
   END
 END
 
@@ -869,11 +896,22 @@ END
 *    1: Yes, formerly married
 *    2: Yes, lived with a man
 *    3: No
-
+* Skip to "Q1191" if (Q1161=3)
 Q1161
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_IN_PAST
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (Q1161=3) THEN
+      HIDE Q1171
+      HIDE Q1181
+      CLEAR Q1171
+      CLEAR Q1181
+    ELSE
+      UNHIDE Q1171
+      UNHIDE Q1181
+    ENDIF
+  END
 END
 
 * Q1171 | Marital Status (HEM_MARITAL_STATUS) | NUMERIC(1)
@@ -882,19 +920,22 @@ END
 *    1: Widowed
 *    2: Divorced
 *    3: Separated
-
+* Skip to "Q1191" if (Q1171<>.)
 Q1171
   MUSTENTER
   COMMENT LEGAL USE D_N_MARITAL_STATUS_DETAIL
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q1171<>.) THEN
+      HIDE Q1181
+      CLEAR Q1181
+    ELSE
+      UNHIDE Q1181
+    ENDIF
   END
 END
 
-* Q1181 | Husband Status (HEM_HUSBAND_STATUS) | NUMERIC(2)
+* Q1181 | Partner Status (HEM_PARTNER_STATUS) | NUMERIC(2)
 * Is your (wife/partner) living with you now or is he staying elsewhere?
 * Allowed Values
 *    1: Living with her
@@ -906,18 +947,26 @@ Q1181
   TYPE COMMENT LEGAL
 END
 
-* Q1191 | Worked in last week 2 (HEM_WORKED_IN_LST_W) | NUMERIC(1)
+* Q1191 | Worked in last week (HEM_WORKED_IN_LST_W) | NUMERIC(1)
 * Have you done any work in the last seven days?
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q1221" if (Q1191=1)
 Q1191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 HEW_OCCUPATION
+  AFTER ENTRY
+    IF (Q1191=1) THEN
+      HIDE Q1201
+      HIDE Q1211
+      CLEAR Q1201
+      CLEAR Q1211
+    ELSE
+      UNHIDE Q1201
+      UNHIDE Q1211
+    ENDIF
   END
 END
 
@@ -926,13 +975,18 @@ END
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q1221" if (Q1201=1)
 Q1201
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 HEW_OCCUPATION
+  AFTER ENTRY
+    IF (Q1201=1) THEN
+      HIDE Q1211
+      CLEAR Q1211
+    ELSE
+      UNHIDE Q1211
+    ENDIF
   END
 END
 
@@ -941,13 +995,24 @@ END
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q2011" if (Q1211=2)
 Q1211
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 HEW_WORK_TIME
+  AFTER ENTRY
+    IF (Q1211=2) THEN
+      HIDE Q1221
+      HIDE Q1231
+      HIDE Q1241
+      CLEAR Q1221
+      CLEAR Q1231
+      CLEAR Q1241
+    ELSE
+      UNHIDE Q1221
+      UNHIDE Q1231
+      UNHIDE Q1241
+    ENDIF
   END
 END
 
@@ -992,23 +1057,31 @@ Q1241
   TYPE COMMENT LEGAL
 END
 
-* Q201.1 | Birth Given (HEM_BIRTH_GIVEN) | NUMERIC(1)
+* Q201.1 | Circumcised (HEM_CIRCUMCISED) | NUMERIC(1)
 * Some men are circumcised. Are you circomcised?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-
+* Skip to "Q2041" if (Q2011<>1)
 Q2011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 HEW_CHILD_DIED
+  AFTER ENTRY
+    IF (Q2011<>1) THEN
+      HIDE Q2021
+      HIDE Q2031
+      CLEAR Q2021
+      CLEAR Q2031
+    ELSE
+      UNHIDE Q2021
+      UNHIDE Q2031
+    ENDIF
   END
 END
 
-* Q202.1 | Child at Home (HEM_CHILD_AT_HOME) | NUMERIC(2)
+* Q202.1 | Circumcised Age (HEM_CIRCUMCISED_AGE) | NUMERIC(2)
 * How old were you when circumcision occured?
 * Allowed Values
 *    95: During childhood (<5)
@@ -1020,7 +1093,7 @@ Q2021
   MISSINGVALUE 95 98
 END
 
-* Q203.1 | Sons at Home (HEM_SONS_AT_HOME) | NUMERIC(1)
+* Q203.1 | Circumcised Who (HEM_CIRCUMCISED_WHO) | NUMERIC(1)
 * Who circumcised you?
 * Allowed Values
 *    1: Traditional practitioner
@@ -1036,7 +1109,7 @@ Q2031
   TYPE COMMENT LEGAL
 END
 
-* Q204.1 | Daughters at Home (HEM_DAUGHTERS_AT_HOME) | NUMERIC(1)
+* Q204.1 | Circumcised Where (HEM_CIRCUMCISED_WHERE) | NUMERIC(1)
 * Were did you go to be circumcised?
 * Allowed Values
 *    1: Health facility
@@ -1051,7 +1124,7 @@ Q2041
   TYPE COMMENT LEGAL
 END
 
-* Q205.1 | Child Elsewhere (HEM_CHILD_ELSEWHERE) | NUMERIC(1)
+* Q205.1 | Circumcised AIDS (HEM_CIRCUMCISED_AIDS) | NUMERIC(1)
 * Do you know that circumcision can prevent getting HIV?
 * Allowed Values
 *    1: Yes
@@ -1063,7 +1136,7 @@ Q2051
   TYPE COMMENT LEGAL
 END
 
-* Q206.1 | Sons Elsewhere (HEM_SONS_ELSEWHERE) | NUMERIC(1)
+* Q206.1 | Circumcised Penis (HEM_CIRCUMCISED_PENIS) | NUMERIC(1)
 * I am now going to show you some drawings of penises? Can you ttell me which is looking more to yours?
 * Allowed Values
 *    1: Drawing 1
@@ -1077,7 +1150,7 @@ Q2061
   TYPE COMMENT LEGAL
 END
 
-* Q301.1 | AIDS Disease (HEW_AIDS_DSS) | NUMERIC(1)
+* Q301.1 | AIDS Disease (HEM_AIDS_DSS) | NUMERIC(1)
 * Have you ever heard of an illness called AIDS?
 * Allowed Values
 *    1: Yes
@@ -1087,12 +1160,9 @@ Q3011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 SKIPNEXTFIELD
-  END
 END
 
-* Q302.1 | AIDS During Pregnancy (HEW_AIDS_DURING_PGC) | NUMERIC(1)
+* Q302.1 | AIDS During Pregnancy (HEM_AIDS_DURING_PGC) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During pregnancy?
 * Allowed Values
 *    1: Yes
@@ -1105,7 +1175,7 @@ Q3021
   TYPE COMMENT LEGAL
 END
 
-* Q302.2 | AIDS During Delivery (HEW_AIDS_DURING_DLVR) | NUMERIC(1)
+* Q302.2 | AIDS During Delivery (HEM_AIDS_DURING_DLVR) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > During delivery?
 * Allowed Values
 *    1: Yes
@@ -1118,7 +1188,7 @@ Q3022
   TYPE COMMENT LEGAL
 END
 
-* Q302.3 | AIDS By Breastfeeding (HEW_AIDS_BY_BF) | NUMERIC(1)
+* Q302.3 | AIDS By Breastfeeding (HEM_AIDS_BY_BF) | NUMERIC(1)
 * Can the virus that causes AIDS be transmitted from a mother to her baby: > By breastfeeding?
 * Allowed Values
 *    1: Yes
@@ -1131,7 +1201,7 @@ Q3023
   TYPE COMMENT LEGAL
 END
 
-* Q303.1 | AIDS Drug Given (HEW_AIDS_DRUG_GIVEN) | NUMERIC(1)
+* Q303.1 | AIDS Drug Given (HEM_AIDS_DRUG_GIVEN) | NUMERIC(1)
 * Are there any special drugs that a doctor or a nurse can give to a woman infected with the AIDS virus to reduce the risk of transmission to the baby?
 * Allowed Values
 *    1: Yes
@@ -1142,35 +1212,38 @@ Q3031
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
-  AFTER ENTRY
-    IF HEW_TOTAL_CHILDREN = 0 THEN
-      GOTO Q3041
-    ENDIF
-    IF HEW_PREGNANCY_ENDED_YEAR < 2010 THEN
-      GOTO Q3041
-    ENDIF
-    IF HEW_ATNT_CARE = 2 THEN
-      GOTO Q3041
-    ENDIF
-  END
 END
 
-* Q304.1 | AIDS Test (HEW_AIDS_TEST) | NUMERIC(1)
+* Q304.1 | AIDS Test (HEM_AIDS_TEST) | NUMERIC(1)
 * I don't want to know the results, but have you ever been tested to see if you have the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q3081" if (Q3041=2)
 Q3041
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q3081
+  AFTER ENTRY
+    IF (Q3041=2) THEN
+      HIDE Q3051
+      HIDE Q3061
+      HIDE Q3071
+      HIDE Q3072
+      CLEAR Q3051
+      CLEAR Q3061
+      CLEAR Q3071
+      CLEAR Q3072
+    ELSE
+      UNHIDE Q3051
+      UNHIDE Q3061
+      UNHIDE Q3071
+      UNHIDE Q3072
+    ENDIF
   END
 END
 
-* Q305.1 | AIDS Test Result (HEW_AIDS_TEST_RESULT) | NUMERIC(1)
+* Q305.1 | AIDS Test Result (HEM_AIDS_TEST_RESULT) | NUMERIC(1)
 * I don't want to know the results, but did you get the results of the test?
 * Allowed Values
 *    1: Yes
@@ -1182,17 +1255,34 @@ Q3051
   TYPE COMMENT LEGAL
 END
 
-* Q306.1 | AIDS Test When (HEW_AIDS_TEST_WHEN) | NUMERIC(2)
+* Q306.1 | AIDS Test When (HEM_AIDS_TEST_WHEN) | NUMERIC(2)
 * How many months ago was your most recent HIV test?
-
+* Skip to "Q4041" if (Q3061<>.)
 Q3061
   MUSTENTER
   AFTER ENTRY
-    GOTO Q4041
+    IF (Q3061<>.) THEN
+      HIDE Q3071
+      HIDE Q3072
+      HIDE Q3081
+      HIDE Q3091
+      HIDE Q3092
+      CLEAR Q3071
+      CLEAR Q3072
+      CLEAR Q3081
+      CLEAR Q3091
+      CLEAR Q3092
+    ELSE
+      UNHIDE Q3071
+      UNHIDE Q3072
+      UNHIDE Q3081
+      UNHIDE Q3091
+      UNHIDE Q3092
+    ENDIF
   END
 END
 
-* Q307.1 | AIDS Test Where (HEW_AIDS_TEST_WHERE) | NUMERIC(2)
+* Q307.1 | AIDS Test Where (HEM_AIDS_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -1213,53 +1303,75 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-
+* Skip to "Q4041" if ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96))
 Q3071
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
-END
-
-* Q307.2 | AIDS Test Where Other (HEW_AIDS_TEST_WHERE_S) | VARCHAR(16)
-* Where was the test done? > Specify
-
-Q3072
-  MUSTENTER
-  JUMPS RESET
-    11 Q4041
-    12 Q4041
-    13 Q4041
-    14 Q4041
-    15 Q4041
-    16 Q4041
-    17 Q4041
-    21 Q4041
-    22 Q4041
-    23 Q4041
-    24 Q4041
-    25 Q4041
-    26 Q4041
-    31 Q4041
-    32 Q4041
+  AFTER ENTRY
+    IF ((Q3071<>18) AND (Q3071<>27) AND (Q3071<>96)) THEN
+      HIDE Q3072
+      HIDE Q3081
+      HIDE Q3091
+      HIDE Q3092
+      CLEAR Q3072
+      CLEAR Q3081
+      CLEAR Q3091
+      CLEAR Q3092
+    ELSE
+      UNHIDE Q3072
+      UNHIDE Q3081
+      UNHIDE Q3091
+      UNHIDE Q3092
+    ENDIF
   END
 END
 
-* Q308.1 | AIDS Test Place (HEW_AIDS_TEST_PLACE) | NUMERIC(1)
+* Q307.2 | AIDS Test Where Other (HEM_AIDS_TEST_WHERE_S) | VARCHAR(16)
+* Where was the test done? > Specify
+* Skip to "Q4041" if (HEM_AIDS_TEST_WHERE_S)
+Q3072
+  MUSTENTER
+  AFTER ENTRY
+    IF (HEM_AIDS_TEST_WHERE_S) THEN
+      HIDE Q3081
+      HIDE Q3091
+      HIDE Q3092
+      CLEAR Q3081
+      CLEAR Q3091
+      CLEAR Q3092
+    ELSE
+      UNHIDE Q3081
+      UNHIDE Q3091
+      UNHIDE Q3092
+    ENDIF
+  END
+END
+
+* Q308.1 | AIDS Test Place (HEM_AIDS_TEST_PLACE) | NUMERIC(1)
 * Do you know of a place where people can go to get tested for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q4041" if (Q3081=2)
 Q3081
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    GOTO Q4041
+    IF (Q3081=2) THEN
+      HIDE Q3091
+      HIDE Q3092
+      CLEAR Q3091
+      CLEAR Q3092
+    ELSE
+      UNHIDE Q3091
+      UNHIDE Q3092
+    ENDIF
   END
 END
 
-* Q309.1 | AIDS Test Place Where (HEW_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
+* Q309.1 | AIDS Test Place Where (HEM_AIDS_TEST_PLACE_WHERE) | VARCHAR(1)
 * Where is that?
 * Allowed Values
 *    A: Public sector: Government hospital
@@ -1276,88 +1388,264 @@ END
 *    L: Private medical sector: Fieldworker
 *    M: Private medical sector: Other private
 *    X: Other
-
+* Skip to "Q4041" if ((Q3091<>"G") AND (Q3091<>"M") AND (Q3091<>"X"))
 Q3091
   MUSTENTER
   COMMENT LEGAL USE D_T_HEALTH_FACILITY_TYPE_2
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    A SKIPNEXTFIELD
-    B SKIPNEXTFIELD
-    C SKIPNEXTFIELD
-    D SKIPNEXTFIELD
-    E SKIPNEXTFIELD
-    F SKIPNEXTFIELD
-    H SKIPNEXTFIELD
-    I SKIPNEXTFIELD
-    J SKIPNEXTFIELD
-    K SKIPNEXTFIELD
-    L SKIPNEXTFIELD
+  AFTER ENTRY
+    IF ((Q3091<>"G") AND (Q3091<>"M") AND (Q3091<>"X")) THEN
+      HIDE Q3092
+      CLEAR Q3092
+    ELSE
+      UNHIDE Q3092
+    ENDIF
   END
 END
 
-* Q309.2 | AIDS Test Place Where Other (HEW_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
+* Q309.2 | AIDS Test Place Where Other (HEM_AIDS_TEST_PLACE_WHERE_S) | VARCHAR(16)
 * Where is that? > Specify
 
 Q3092
   MUSTENTER
 END
 
-* Q404.1 | HIV Test Consent (HEW_HIV_TEST_CONSENT) | NUMERIC(1)
+* Q404.1 | HIV Test Consent (HEM_HIV_TEST_CONSENT) | NUMERIC(1)
 * Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-
+* Skip to "END" if (Q4041=2)
 Q4041
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
-  BEFORE ENTRY
-    IF ( HEW_BIRTH_YEAR <> 98) THEN
-      LET AGE = HEW_BIRTH_YEAR
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = AGE + ( HEW_BIRTH_MONTH / 12)
-      ENDIF
-    ELSE
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = HEW_BIRTH_MONTH / 12
-      ELSE
-        LET AGE = 98
-      ENDIF
-    ENDIF
-    IF (AGE>=18) AND (AGE<=49) THEN
-      GOTO Q4061
-    ENDIF
-    IF ( HEW_MARITAL_STATUS <> 4 THEN
-      GOTO Q4061
-    ENDIF
-  END
   AFTER ENTRY
-    IF Q4041 =2 THEN
-      GOTO WRITEREC
+    IF (Q4041=2) THEN
+      HIDE Q4061
+      HIDE Q5011
+      HIDE Q5021
+      HIDE Q5061
+      HIDE Q5081
+      HIDE Q5091
+      HIDE Q5121
+      HIDE Q5122
+      HIDE Q5131
+      HIDE Q5132
+      HIDE Q5141
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q4061
+      CLEAR Q5011
+      CLEAR Q5021
+      CLEAR Q5061
+      CLEAR Q5081
+      CLEAR Q5091
+      CLEAR Q5121
+      CLEAR Q5122
+      CLEAR Q5131
+      CLEAR Q5132
+      CLEAR Q5141
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q4061
+      UNHIDE Q5011
+      UNHIDE Q5021
+      UNHIDE Q5061
+      UNHIDE Q5081
+      UNHIDE Q5091
+      UNHIDE Q5121
+      UNHIDE Q5122
+      UNHIDE Q5131
+      UNHIDE Q5132
+      UNHIDE Q5141
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
     ENDIF
   END
-  END
+END
 
-* Q406.1 | HIV Test Consent Respondent (HEW_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
+* Q406.1 | HIV Test Consent Respondent (HEM_HIV_TEST_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-
+* Skip to "END" if (Q4061=2)
 Q4061
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q4061 =2 THEN
-      GOTO WRITEREC
+    IF (Q4061=2) THEN
+      HIDE Q5011
+      HIDE Q5021
+      HIDE Q5061
+      HIDE Q5081
+      HIDE Q5091
+      HIDE Q5121
+      HIDE Q5122
+      HIDE Q5131
+      HIDE Q5132
+      HIDE Q5141
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5011
+      CLEAR Q5021
+      CLEAR Q5061
+      CLEAR Q5081
+      CLEAR Q5091
+      CLEAR Q5121
+      CLEAR Q5122
+      CLEAR Q5131
+      CLEAR Q5132
+      CLEAR Q5141
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5011
+      UNHIDE Q5021
+      UNHIDE Q5061
+      UNHIDE Q5081
+      UNHIDE Q5091
+      UNHIDE Q5121
+      UNHIDE Q5122
+      UNHIDE Q5131
+      UNHIDE Q5132
+      UNHIDE Q5141
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
     ENDIF
   END
 END
 
-* Q501.1 | AIDS Infection (HEW_AIDS_INFECTION) | NUMERIC(1)
+* Q501.1 | AIDS Infection (HEM_AIDS_INFECTION) | NUMERIC(1)
 * Did you know you were infected with AIDS?
 * Allowed Values
 *    1: Yes
@@ -1367,103 +1655,359 @@ Q5011
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  TOPOFSCREEN
 END
 
-* Q502.1 | AIDS Infection Test (HEW_AIDS_INFECTION_TEST) | NUMERIC(1)
+* Q502.1 | AIDS Infection Test (HEM_AIDS_INFECTION_TEST) | NUMERIC(1)
 * Have you already had a HIV test that showed you were infected with AIDS? 
 * Allowed Values
 *    1: Yes
 *    2: No
-
+* Skip to "Q5081" if (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4))
 Q5021
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (((Q1031>=18) AND (Q1031<=49)) OR (Q1171=4)) THEN
+      HIDE Q5061
+      CLEAR Q5061
+    ELSE
+      UNHIDE Q5061
+    ENDIF
+  END
 END
 
-* Q506.1 | Blood Sample Consent (HEW_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
+* Q506.1 | Blood Sample Consent (HEM_BLOOD_SAMPLE_CONSENT) | NUMERIC(1)
 * Consent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-
+* Skip to "END" if (Q5061=2)
 Q5061
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
-  BEFORE ENTRY
-    IF ( HEW_BIRTH_YEAR <> 98) THEN
-      LET AGE = HEW_BIRTH_YEAR
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = AGE + ( HEW_BIRTH_MONTH / 12)
-      ENDIF
-    ELSE
-      IF ( HEW_BIRTH_MONTH <> 98) THEN
-        LET AGE = HEW_BIRTH_MONTH / 12
-      ELSE
-        LET AGE = 98
-      ENDIF
-    ENDIF
-    IF (AGE>=18) AND (AGE<=49) THEN
-      GOTO Q5081
-    ENDIF
-    IF ( HEW_MARITAL_STATUS <> 4 THEN
-      GOTO Q5081
-    ENDIF
-  END
   AFTER ENTRY
-    IF Q5061 =2 THEN
-      GOTO WRITEREC
+    IF (Q5061=2) THEN
+      HIDE Q5081
+      HIDE Q5091
+      HIDE Q5121
+      HIDE Q5122
+      HIDE Q5131
+      HIDE Q5132
+      HIDE Q5141
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5081
+      CLEAR Q5091
+      CLEAR Q5121
+      CLEAR Q5122
+      CLEAR Q5131
+      CLEAR Q5132
+      CLEAR Q5141
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5081
+      UNHIDE Q5091
+      UNHIDE Q5121
+      UNHIDE Q5122
+      UNHIDE Q5131
+      UNHIDE Q5132
+      UNHIDE Q5141
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
     ENDIF
   END
-  END
+END
 
-* Q508.1 | Blood Sample Consent Respondent (HEW_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
+* Q508.1 | Blood Sample Consent Respondent (HEM_BLOOD_SAMPLE_CONSENT_RESPONDENT) | NUMERIC(1)
 * Consent Parent
 * Allowed Values
 *    1: Granted
 *    2: Refused
-
+* Skip to "END" if (Q5081=2)
 Q5081
   MUSTENTER
   COMMENT LEGAL USE D_N_CONSENT
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF Q5081 =2 THEN
-      GOTO WRITEREC
+    IF (Q5081=2) THEN
+      HIDE Q5091
+      HIDE Q5121
+      HIDE Q5122
+      HIDE Q5131
+      HIDE Q5132
+      HIDE Q5141
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5091
+      CLEAR Q5121
+      CLEAR Q5122
+      CLEAR Q5131
+      CLEAR Q5132
+      CLEAR Q5141
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5091
+      UNHIDE Q5121
+      UNHIDE Q5122
+      UNHIDE Q5131
+      UNHIDE Q5132
+      UNHIDE Q5141
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
     ENDIF
   END
 END
 
-* Q5111 | AIDS Positive Test Month (HEW_AIDS_POSITIVE_TEST_MONTH) | NUMERIC(2)
+* Q509.1 | AIDS Positive Test Where Bring (HEM_AIDS_POSITIVE_TEST_WHERE_BRING) | TEXT(1)
+* Where would you like us to bring the results of the tests?
+* Allowed Values
+* Skip to "END" if (Q5021=2)
+Q5091
+  MUSTENTER
+  AFTER ENTRY
+    IF (Q5021=2) THEN
+      HIDE Q5121
+      HIDE Q5122
+      HIDE Q5131
+      HIDE Q5132
+      HIDE Q5141
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5121
+      CLEAR Q5122
+      CLEAR Q5131
+      CLEAR Q5132
+      CLEAR Q5141
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5121
+      UNHIDE Q5122
+      UNHIDE Q5131
+      UNHIDE Q5132
+      UNHIDE Q5141
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
+  END
+END
+
+* Q5121 | AIDS Positive Test Month (HEM_AIDS_POSITIVE_TEST_M) | NUMERIC(2)
 * When were you first tested positive for the AIDS virus? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5111
+Q5121
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
-  BEFORE ENTRY
-    IF ( Q5021 =2 THEN
-      GOTO WRITEREC
-    ENDIF
-  END
 END
 
-* Q5112 | AIDS Positive Test Year (HEW_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
+* Q5122 | AIDS Positive Test Year (HEM_AIDS_POSITIVE_TEST_YEAR) | NUMERIC(4)
 * When were you first tested positive for the AIDS virus? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5112
+Q5122
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5121 | AIDS Positive Test Where (HEW_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
+* Q5131 | AIDS Positive Test Where (HEM_AIDS_POSITIVE_TEST_WHERE) | NUMERIC(2)
 * Where was the test done?
 * Allowed Values
 *    11: Public sector: Government hospital
@@ -1484,313 +2028,545 @@ END
 *    31: Other source: Home
 *    32: Other source: Correctional facility
 *    98: Other
-
-Q5121
+* Skip to "Q5141" if ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96))
+Q5131
   MUSTENTER
   COMMENT LEGAL USE D_N_HEALTH_FACILITY_TYPE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-     14 SKIPNEXTFIELD
-    15 SKIPNEXTFIELD
-    16 SKIPNEXTFIELD
-    17 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
-    22 SKIPNEXTFIELD
-    23 SKIPNEXTFIELD
-    24 SKIPNEXTFIELD
-    25 SKIPNEXTFIELD
-    26 SKIPNEXTFIELD
-    31 SKIPNEXTFIELD
-    32 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF ((Q5131<>18) AND (Q5131<>27) AND (Q5131<>96)) THEN
+      HIDE Q5132
+      CLEAR Q5132
+    ELSE
+      UNHIDE Q5132
+    ENDIF
   END
 END
 
-* Q5122 | AIDS Positive Test Where Other (HEW_AIDS_POSITIVE_TEST_WHERE__OTHER_) | VARCHAR(16)
+* Q5132 | AIDS Positive Test Where Other (HEM_AIDS_POSITIVE_TEST_WHERE_S) | VARCHAR(16)
 * Where was the test done? > Specify
 
-Q5122
+Q5132
   MUSTENTER
 END
 
-* Q5131 | AIDS Care (HEW_AIDS_CARE) | NUMERIC(1)
+* Q5141 | AIDS Care (HEM_AIDS_CARE) | NUMERIC(1)
 * After you discovered you were infected with the virus that causes AIDS, did you ever seek care for the AIDS infection?
 * Allowed Values
 *    1: Yes
 *    2: No
-
-Q5131
+* Skip to "END" if (Q5141=2)
+Q5141
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
   AFTER ENTRY
-    IF HEW_TOTAL_CHILDREN =0 THEN
-      GOTO WRITEREC
-     ENDIF
-    IF HEW_PREGNANCY_ENDED_YEAR <2010 THEN
-      GOTO WRITEREC
-     ENDIF
-    IF HEW_ANTENATAL_CARE =2 THEN
-      GOTO WRITEREC
-     ENDIF
+    IF (Q5141=2) THEN
+      HIDE Q5151
+      HIDE Q5161
+      HIDE Q5171
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5151
+      CLEAR Q5161
+      CLEAR Q5171
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5151
+      UNHIDE Q5161
+      UNHIDE Q5171
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
   END
 END
 
-* Q5141 | AIDS Blood Sample (HEW_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
+* Q5151 | AIDS Blood Sample (HEM_AIDS_BLOOD_SAMPLE) | NUMERIC(1)
 * Did you get some blood sample taken to check the CD4 when you first went to receive care for the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
-
-Q5141
+* Skip to "Q5171" if (Q5151<>1)
+Q5151
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q5151<>1) THEN
+      HIDE Q5161
+      CLEAR Q5161
+    ELSE
+      UNHIDE Q5161
+    ENDIF
   END
 END
 
-* Q5151 | AIDS Blood Sample Result (HEW_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
+* Q5161 | AIDS Blood Sample Result (HEM_AIDS_BLOOD_SAMPLE_RESULT) | NUMERIC(1)
 * Did you get the results of this exam?
 * Allowed Values
 *    1: Yes
 *    2: No
 *    8: Don't know
 
-Q5151
+Q5161
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO_OR_IGNORE
   TYPE COMMENT LEGAL
 END
 
-* Q5161 | ART Initiated (HEW_ART_INITIATED) | NUMERIC(1)
+* Q5171 | ART Initiated (HEM_ART_INITIATED) | NUMERIC(1)
 * Have you ever initiated ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-
-Q5161
+* Skip to "Q5241" if (Q5171=2)
+Q5171
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q5231
+  AFTER ENTRY
+    IF (Q5171=2) THEN
+      HIDE Q5181
+      HIDE Q5182
+      HIDE Q5191
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      CLEAR Q5181
+      CLEAR Q5182
+      CLEAR Q5191
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+    ELSE
+      UNHIDE Q5181
+      UNHIDE Q5182
+      UNHIDE Q5191
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+    ENDIF
   END
 END
 
-* Q5171 | ART Start Month (HEW_ART_START_MONTH) | NUMERIC(2)
+* Q5181 | ART Start Month (HEM_ART_START_M) | NUMERIC(2)
 * When did you first start Antiretroviral therapy? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5171
+Q5181
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5172 | ART Start Year (HEW_ART_START_YEAR) | NUMERIC(4)
+* Q5182 | ART Start Year (HEM_ART_START_YEAR) | NUMERIC(4)
 * When did you first start Antiretroviral therapy? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5172
+Q5182
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5181 | ART Still (HEW_ART_STILL) | NUMERIC(1)
+* Q5191 | ART Still (HEM_ART_STILL) | NUMERIC(1)
 * Are you still receiving ART, Antiretroviral Treatment, drugs against the AIDS virus?
 * Allowed Values
 *    1: Yes
 *    2: No
-
-Q5181
+* Skip to "Q5291" if (Q5191=2)
+Q5191
   MUSTENTER
   COMMENT LEGAL USE D_N_YES_OR_NO
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q5281
+  AFTER ENTRY
+    IF (Q5191=2) THEN
+      HIDE Q5201
+      HIDE Q5202
+      HIDE Q5211
+      HIDE Q5212
+      HIDE Q5221
+      HIDE Q5222
+      HIDE Q5231
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      CLEAR Q5201
+      CLEAR Q5202
+      CLEAR Q5211
+      CLEAR Q5212
+      CLEAR Q5221
+      CLEAR Q5222
+      CLEAR Q5231
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+    ELSE
+      UNHIDE Q5201
+      UNHIDE Q5202
+      UNHIDE Q5211
+      UNHIDE Q5212
+      UNHIDE Q5221
+      UNHIDE Q5222
+      UNHIDE Q5231
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+    ENDIF
   END
 END
 
-* Q5191 | ART Last Consultation Month (HEW_ART_LAST_CONSULTATION_MONTH) | NUMERIC(2)
+* Q5201 | ART Last Consultation Month (HEM_ART_LST_CONSULTATION_M) | NUMERIC(2)
 * When was your last consultation? > Month
 * Allowed Values
 *    98: Don't know
 
-Q5191
+Q5201
   MUSTENTER
   RANGE 1 12
   MISSINGVALUE 98
 END
 
-* Q5192 | ART Last Consultation Year (HEW_ART_LAST_CONSULTATION_YEAR) | NUMERIC(4)
+* Q5202 | ART Last Consultation Year (HEM_ART_LST_CONSULTATION_YEAR) | NUMERIC(4)
 * When was your last consultation? > Year
 * Allowed Values
 *    9998: Don't know
 
-Q5192
+Q5202
   MUSTENTER
   RANGE 1920 2012
   MISSINGVALUE 9998
 END
 
-* Q5201 | ART Where (HEW_ART_WHERE) | VARCHAR(32)
+* Q5211 | ART Where (HEM_ART_WHERE) | VARCHAR(32)
 * Where are you now receiving ART?
-
-Q5201
-  MUSTENTER
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
-  END
-END
-
-* Q5202 | ART Where Other (HEW_ART_WHERE_S) | VARCHAR(16)
-* Where are you now receiving ART? > Specify
-
-Q5202
-  MUSTENTER
-END
-
-* Q5211 | ART District (HEW_ART_DISTRICT) | NUMERIC(1)
-* In which district is this place?
-* Allowed Values
-*    1: Ndhiwa district
-*    2: Homa bay
-*    3: Other
-
+* Skip to "Q5221" if ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96))
 Q5211
   MUSTENTER
-  COMMENT LEGAL USE D_N_DISTRICT
-  TYPE COMMENT LEGAL
-  JUMPS RESET
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF ((Q5211<>18) AND (Q5211<>27) AND (Q5211<>96)) THEN
+      HIDE Q5212
+      CLEAR Q5212
+    ELSE
+      UNHIDE Q5212
+    ENDIF
   END
 END
 
-* Q5212 | ART District Other (HEW_ART_DISTRICT_S) | VARCHAR(16)
-* In which district is this place? > Specify
+* Q5212 | ART Where Other (HEM_ART_WHERE_S) | VARCHAR(16)
+* Where are you now receiving ART? > Specify
 
 Q5212
   MUSTENTER
 END
 
-* Q5221 | ART Place (HEW_ART_PLACE) | VARCHAR(20)
-* What is the name of this place?
-
-Q5221
-  MUSTENTER
-  AFTER ENTRY
-    IF HEW_TOTAL_CHILDREN =0 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF HEW_PREGNANCY_ENDED_YEAR <2010 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF HEW_ANTENATAL_CARE =2 THEN
-      GOTO WRITEREC
-    ENDIF
-  END
-END
-
-* Q5231 | AIDS Follow (HEW_AIDS_FOLLOW) | NUMERIC(1)
-* Are you still followed up for the AIDS infection?
-* Allowed Values
-*    1: Yes
-*    2: No
-
-Q5231
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-  JUMPS RESET
-    2 Q5281
-  END
-END
-
-* Q5241 | AIDS Last Consultation Month (HEW_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
-* When was your last consultation? > Month
-* Allowed Values
-*    98: Don't know
-
-Q5241
-  MUSTENTER
-  RANGE 1 12
-  MISSINGVALUE 98
-END
-
-* Q5242 | AIDS Last Consultation Year (HEW_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
-* When was your last consultation? > Year
-* Allowed Values
-*    9998: Don't know
-
-Q5242
-  MUSTENTER
-  RANGE 1920 2012
-  MISSINGVALUE 9998
-END
-
-* Q5251 | AIDS Where (HEW_AIDS_WHERE) | VARCHAR(32)
-* Where are you now receiving care?
-
-Q5251
-  MUSTENTER
-  JUMPS RESET
-    11 SKIPNEXTFIELD
-    12 SKIPNEXTFIELD
-    13 SKIPNEXTFIELD
-    21 SKIPNEXTFIELD
-  END
-END
-
-* Q5252 | AIDS Where Other (HEW_AIDS_WHERE_S) | VARCHAR(16)
-* Where are you now receiving care? > Specify
-
-Q5252
-  MUSTENTER
-END
-
-* Q5261 | AIDS District (HEW_AIDS_DISTRICT) | NUMERIC(1)
+* Q5221 | ART District (HEM_ART_DISTRICT) | NUMERIC(1)
 * In which district is this place?
 * Allowed Values
 *    1: Ndhiwa district
 *    2: Homa bay
 *    3: Other
-
-Q5261
+* Skip to "Q5231" if (Q5221<>3)
+Q5221
   MUSTENTER
   COMMENT LEGAL USE D_N_DISTRICT
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    3 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q5221<>3) THEN
+      HIDE Q5222
+      CLEAR Q5222
+    ELSE
+      UNHIDE Q5222
+    ENDIF
   END
 END
 
-* Q5262 | AIDS District Other (HEW_AIDS_DISTRICT_S) | VARCHAR(16)
+* Q5222 | ART District Other (HEM_ART_DISTRICT_S) | VARCHAR(16)
 * In which district is this place? > Specify
+
+Q5222
+  MUSTENTER
+END
+
+* Q5231 | ART Place (HEM_ART_PLACE) | VARCHAR(20)
+* What is the name of this place?
+* Skip to "END" if (Q5231<>.)
+Q5231
+  MUSTENTER
+  AFTER ENTRY
+    IF (Q5231<>.) THEN
+      HIDE Q5241
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5241
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5241
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
+  END
+END
+
+* Q5241 | AIDS Follow (HEM_AIDS_FOLLOW) | NUMERIC(1)
+* Are you still followed up for the AIDS infection?
+* Allowed Values
+*    1: Yes
+*    2: No
+* Skip to "Q5291" if (Q5241=2)
+Q5241
+  MUSTENTER
+  COMMENT LEGAL USE D_N_YES_OR_NO
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (Q5241=2) THEN
+      HIDE Q5251
+      HIDE Q5252
+      HIDE Q5261
+      HIDE Q5262
+      HIDE Q5271
+      HIDE Q5272
+      HIDE Q5281
+      CLEAR Q5251
+      CLEAR Q5252
+      CLEAR Q5261
+      CLEAR Q5262
+      CLEAR Q5271
+      CLEAR Q5272
+      CLEAR Q5281
+    ELSE
+      UNHIDE Q5251
+      UNHIDE Q5252
+      UNHIDE Q5261
+      UNHIDE Q5262
+      UNHIDE Q5271
+      UNHIDE Q5272
+      UNHIDE Q5281
+    ENDIF
+  END
+END
+
+* Q5251 | AIDS Last Consultation Month (HEM_AIDS_LST_CONSULTATION_M) | NUMERIC(2)
+* When was your last consultation? > Month
+* Allowed Values
+*    98: Don't know
+
+Q5251
+  MUSTENTER
+  RANGE 1 12
+  MISSINGVALUE 98
+END
+
+* Q5252 | AIDS Last Consultation Year (HEM_AIDS_LST_CONSULTATION_YEAR) | NUMERIC(4)
+* When was your last consultation? > Year
+* Allowed Values
+*    9998: Don't know
+
+Q5252
+  MUSTENTER
+  RANGE 1920 2012
+  MISSINGVALUE 9998
+END
+
+* Q5261 | AIDS Where (HEM_AIDS_WHERE) | VARCHAR(32)
+* Where are you now receiving care?
+* Skip to "Q5271" if ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96))
+Q5261
+  MUSTENTER
+  AFTER ENTRY
+    IF ((Q5261<>18) AND (Q5261<>27) AND (Q5261<>96)) THEN
+      HIDE Q5262
+      CLEAR Q5262
+    ELSE
+      UNHIDE Q5262
+    ENDIF
+  END
+END
+
+* Q5262 | AIDS Where Other (HEM_AIDS_WHERE_S) | VARCHAR(16)
+* Where are you now receiving care? > Specify
 
 Q5262
   MUSTENTER
 END
 
-* Q5271 | AIDS Place (HEW_AIDS_PLACE) | VARCHAR(20)
-* What is the name of this place?
-
+* Q5271 | AIDS District (HEM_AIDS_DISTRICT) | NUMERIC(1)
+* In which district is this place?
+* Allowed Values
+*    1: Ndhiwa district
+*    2: Homa bay
+*    3: Other
+* Skip to "END" if (Q5271<>3)
 Q5271
   MUSTENTER
+  COMMENT LEGAL USE D_N_DISTRICT
+  TYPE COMMENT LEGAL
+  AFTER ENTRY
+    IF (Q5271<>3) THEN
+      HIDE Q5272
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5272
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5272
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
+  END
 END
 
-* Q5281 | AIDS Stop (HEW_AIDS_STOP) | NUMERIC(2)
+* Q5272 | AIDS District Other (HEM_AIDS_DISTRICT_S) | VARCHAR(16)
+* In which district is this place? > Specify
+* Skip to "END" if (HEM_AIDS_DISTRICT_S)
+Q5272
+  MUSTENTER
+  AFTER ENTRY
+    IF (HEM_AIDS_DISTRICT_S) THEN
+      HIDE Q5281
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5281
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5281
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
+  END
+END
+
+* Q5281 | AIDS Place (HEM_AIDS_PLACE) | VARCHAR(20)
+* What is the name of this place?
+* Skip to "END" if (Q5281<>.)
+Q5281
+  MUSTENTER
+  AFTER ENTRY
+    IF (Q5281<>.) THEN
+      HIDE Q5291
+      HIDE Q5292
+      CLEAR Q5291
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5291
+      UNHIDE Q5292
+    ENDIF
+  END
+END
+
+* Q5291 | AIDS Stop (HEM_AIDS_STOP) | NUMERIC(2)
 * Why did you stop?
 * Allowed Values
 *    1: No one was attending
@@ -1804,65 +2580,26 @@ END
 *    9: Transport cost
 *    10: Stop pmtct
 *    96: Other
-
-Q5281
+* Skip to "END" if (Q5291<>96)
+Q5291
   MUSTENTER
   COMMENT LEGAL USE D_N_AIDS_STOP_REASON
   TYPE COMMENT LEGAL
-  JUMPS RESET
-    1 SKIPNEXTFIELD
-    2 SKIPNEXTFIELD
-    3 SKIPNEXTFIELD
-    4 SKIPNEXTFIELD
-    5 SKIPNEXTFIELD
-    6 SKIPNEXTFIELD
-    7 SKIPNEXTFIELD
-    8 SKIPNEXTFIELD
-    9 SKIPNEXTFIELD
-    10 SKIPNEXTFIELD
+  AFTER ENTRY
+    IF (Q5291<>96) THEN
+      HIDE Q5292
+      CLEAR Q5292
+    ELSE
+      UNHIDE Q5292
+    ENDIF
   END
 END
 
-* Q5282 | AIDS Stop Other (HEW_AIDS_STOP_S) | VARCHAR(16)
+* Q5292 | AIDS Stop Other (HEM_AIDS_STOP_S) | VARCHAR(16)
 * Why did you stop? > Specify
 
-Q5282
+Q5292
   MUSTENTER
-  AFTER ENTRY
-    IF HEW_TOTAL_CHILDREN = 0 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF HEW_PREGNANCY_ENDED_YEAR < 2010 THEN
-      GOTO WRITEREC
-    ENDIF
-    IF HEW_ATNT_CARE = 2 THEN
-      GOTO WRITEREC
-    ENDIF
-  END
-END
-
-* Q5321 | ART Pregnancy (HEW_ART_PREGNANCY) | NUMERIC(1)
-* Did you receiving ART, Antiretroviral Treatment, drugs against the AIDS virusn during your pregnancy?
-* Allowed Values
-*    1: Yes
-*    2: No
-
-Q5321
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
-END
-
-* Q5331 | ART Delivery (HEW_ART_DELIVERY) | NUMERIC(1)
-* After delivery, did your child receive ART, Antiretroviral Treatment, to prevent acquiring the AIDS virus?
-* Allowed Values
-*    1: Yes
-*    2: No
-
-Q5331
-  MUSTENTER
-  COMMENT LEGAL USE D_N_YES_OR_NO
-  TYPE COMMENT LEGAL
   GOTO WRITEREC
 END
 
