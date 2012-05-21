@@ -2,13 +2,13 @@ INCLUDE "header.chk"
 INCLUDE "header (labels).chk"
 
 BEFORE RECORD
-  HIDE FCT
+  HIDE PRO
 END
 
 AFTER RECORD
-    IF (FCT=.) THEN
-      HELP "FCT is mandatory.\n\nPlease check the data" TYPE=WARNING
-      GOTO FCT
+    IF (PRO=.) THEN
+      HELP "PRO is mandatory.\n\nPlease check the data" TYPE=WARNING
+      GOTO PRO
       EXIT
     ENDIF
     IF (Q1011=.) THEN
@@ -24,7 +24,7 @@ AFTER RECORD
 END
 
 
-* FCT | Identifier (PRO_IDENTIFIER) | VARCHAR(4)
+* PRO | Identifier (PRO_IDENTIFIER) | VARCHAR(4)
 * 
 
 PRO
@@ -38,7 +38,7 @@ END
 Q1011
   MUSTENTER
   AFTER ENTRY
-    LET FCT= FCT_CODE
+    LET PRO= PRO_CODE
   END
 END
 
