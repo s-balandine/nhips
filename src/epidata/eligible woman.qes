@@ -123,7 +123,7 @@ Q122  Have you done any work in the last 12 months?
 Q123  What is your occupation, that is, what kind of work do you mainly 
       do?																																																																																																																																																																																																																																																																																																																																					What is your occupation, that is, what kind of work do you mainly do?																																																																																																																																																																															
 
-                                 ({Q123.1})  ................................##  
+                                 ({Q123.1})  .............................#####  
 --------------------------------------------------------------------------------
 Q124  Do you do this work for a member of your family, for someone else, or are 
       you self-employed?
@@ -413,7 +413,7 @@ Q622  In which district is this place?
 --------------------------------------------------------------------------------
 Q623  What is the name of this place?
 
-                                 ({Q623.1})                <A                   >
+                                 ({Q623.1})  .............................#####  
 --------------------------------------------------------------------------------
 Q624  Are you still followed up for the AIDS infection?
 
@@ -436,7 +436,7 @@ Q627  In which district is this place?
 --------------------------------------------------------------------------------
 Q628  What is the name of this place?
 
-                                 ({Q628.1})                <A                   >
+                                 ({Q628.1})  .............................#####  
 --------------------------------------------------------------------------------
 Q629  Why did you stop?          ({Q629.1})  ................................##  
                                  ({Q629.2})  Specify...........<A               >
