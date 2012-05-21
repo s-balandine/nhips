@@ -32,15 +32,13 @@ echo . > "facility.rec"
 %epic% import TXT "household member.csv"  "household member.rec"  qes="household member.qes"  delim=; q=none replace
 %epic% import TXT "eligible woman.csv"    "eligible woman.rec"    qes="eligible woman.qes"    delim=; q=none replace
 
+echo start "" %epidata% "facility.rec" > "..\..\build\facility.bat"
 echo start "" %epidata% "field interviewer.rec" > "..\..\build\field interviewer.bat" 
 echo start "" %epidata% "field supervisor.rec" > "..\..\build\field supervisor.bat"
-echo start "" %epidata% "household.rec" > "..\..\build\household.bat"
-echo start "" %epidata% "household member.rec" > "..\..\build\household member.bat"
 echo start "" %epidata% "office editor.rec" > "..\..\build\office editor.bat"
 echo start "" %epidata% "office keyer.rec" > "..\..\build\office keyer.bat"
-echo start "" %epidata% "eligible man.rec" > "..\..\build\eligible man.bat"
-echo start "" %epidata% "eligible woman.rec" > "..\..\build\eligible woman.bat"
-echo start "" %epidata% "facility.rec" > "..\..\build\facility.bat"
+echo start "" %epidata% "occupation.rec" > "..\..\build\occupation.bat"
+echo start "" %epidata% "household.rec" > "..\..\build\household.bat"
 
 del  ..\..\build\*.eix
 
